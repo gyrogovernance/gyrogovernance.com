@@ -1,0 +1,183 @@
+---
+import { Image } from 'astro:assets'
+
+import { Quote } from 'astro-pure/advanced'
+import { PostPreview } from 'astro-pure/components/pages'
+import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
+import { Button, Card, Icon, Label } from 'astro-pure/user'
+import PageLayout from '@/layouts/BaseLayout.astro'
+import ProjectCard from '@/components/home/ProjectCard.astro'
+import Section from '@/components/home/Section.astro'
+import SkillLayout from '@/components/home/SkillLayout.astro'
+import avatar from '@/assets/avatar.png'
+import config from '@/site-config'
+
+const researchAreas = ['AI Governance', 'Machine Learning', 'Ethical AI', 'Policy Research']
+const technologies = ['Python', 'TensorFlow', 'PyTorch', 'R']
+const domains = ['Healthcare AI', 'Financial AI', 'Autonomous Systems']
+
+const MAX_POSTS = 10
+const allPosts = await getBlogCollection()
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
+---
+
+<PageLayout meta={{ title: 'Home' }} highlightColor='#659EB9'>
+  <main class='flex w-full flex-col items-center'>
+    <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
+      <Image
+        src={avatar}
+        alt='profile'
+        class='h-28 w-auto rounded-full border p-1'
+        loading='eager'
+      />
+
+      <div class='flex flex-col items-center gap-y-4'>
+        <h1 class='text-3xl font-bold'>{config.author}</h1>
+        <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
+          <Label title='AI Research & Development'>
+            <Icon name='location' class='size-5' slot='icon' />
+          </Label>
+          <Label
+            title='GitHub'
+            as='a'
+            href='https://github.com/gyrogovernance'
+            target='_blank'
+          >
+            <Icon name='github' class='size-5' slot='icon' />
+          </Label>
+        </div>
+      </div>
+
+      {/* Research Focus */}
+      <a
+        href='/research'
+        class='flex flex-row items-center gap-x-3 rounded-full border bg-background px-4 py-2 text-sm shadow-sm transition-shadow hover:shadow-md'
+      >
+        <span class='relative flex items-center justify-center'>
+          <span
+            class='absolute size-2 animate-ping rounded-full border border-blue-400 bg-blue-400 opacity-75'
+          ></span>
+          <span class='size-2 rounded-full bg-blue-400'></span>
+        </span>
+        <p class='font-medium text-muted-foreground'>View Research</p>
+      </a>
+    </section>
+
+    <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
+      <Section title='About'>
+        <p class='text-muted-foreground'>AI Research & Development Organization</p>
+        <p class='text-muted-foreground'>
+          Gyro Governance is dedicated to advancing AI research and development through innovative 
+          governance solutions. We focus on creating ethical, transparent, and accountable AI systems 
+          that benefit society while addressing the complex challenges of AI governance.
+        </p>
+        <Button title='Learn more about us' class='w-fit self-end' href='/about' variant='ahead' />
+      </Section>
+      {
+        allPostsByDate.length > 0 && (
+          <Section title='Posts'>
+            <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
+              {allPostsByDate.map((p) => (
+                <li class='flex flex-col gap-x-2 sm:flex-row'>
+                  <PostPreview post={p} />
+                </li>
+              ))}
+            </ul>
+            <Button title='More posts' class='w-fit self-end' href='/blog' variant='ahead' />
+          </Section>
+        )
+      }
+
+      {
+        /* <Section title='Experience'>
+      <Card
+        heading='Lorem Ipsum'
+        subheading='Sit amet consectetur'
+        date='Dec 2022 - Nov 2023'
+        imagePath='/src/assets/about-astro.png'
+        altText='Lorem, ipsum dolor sit'
+        imageClass='h-12 w-auto md:-start-16'
+      >
+        <ul class='ms-4 list-disc text-muted-foreground'>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
+            molestiae laboriosam pariatur!
+
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
+          </li>
+        </ul>
+      </Card>
+      <Card
+        heading='Lorem Ipsum'
+        subheading='Sit amet consectetur'
+        date='Dec 2022 - Nov 2023'
+        imagePath='/src/assets/about-astro.png'
+        altText='Lorem, ipsum dolor sit'
+        imageClass='h-12 w-auto md:-start-16'
+      />
+    </Section> */
+      }
+      <Section title='Research Focus'>
+        <Card
+          as='a'
+          heading='AI Governance Framework'
+          subheading='Developing comprehensive frameworks for responsible AI development and deployment'
+          date='2024 - Present'
+          href='/research'
+        >
+          <ul class='ms-4 list-disc text-muted-foreground'>
+            <li>Ethical AI principles and implementation guidelines</li>
+            <li>Transparency and accountability mechanisms</li>
+            <li>Risk assessment and mitigation strategies</li>
+          </ul>
+        </Card>
+      </Section>
+
+      <Section title='Research Projects'>
+        <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
+          <ProjectCard
+            href='/research'
+            heading='Ethical AI Framework'
+            subheading='Comprehensive guidelines for responsible AI development'
+            imagePath='/src/assets/projects/alex-tyson-2BAXJ7ha74s-unsplash.jpg'
+          />
+          <ProjectCard
+            href='/research'
+            heading='AI Transparency Tools'
+            subheading='Open-source tools for AI explainability and accountability'
+            imagePath='/src/assets/projects/angelica-teran-Bk9hpaXHK4o-unsplash.jpg'
+          />
+          <ProjectCard
+            href='/research'
+            heading='Governance Metrics'
+            subheading='Quantitative measures for AI system governance assessment'
+            imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg'
+          />
+          <ProjectCard
+            href='/projects'
+            heading='More Research'
+            subheading='Explore all our research initiatives'
+            imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
+          />
+        </div>
+      </Section>
+
+      <Section title='Publications'>
+        <Card
+          as='a'
+          heading='AI Governance Best Practices'
+          subheading='A comprehensive guide to implementing effective AI governance frameworks in organizations. This publication covers key principles, implementation strategies, and case studies from leading organizations.'
+          date='December 2024'
+          href='/research'
+        />
+      </Section>
+
+      <Section title='Expertise'>
+        <SkillLayout title='Research Areas' skills={researchAreas} />
+        <SkillLayout title='Technologies' skills={technologies} />
+        <SkillLayout title='Application Domains' skills={domains} />
+      </Section>
+    </div>
+    <Quote class='mt-12' />
+  </main>
+</PageLayout>
