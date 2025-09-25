@@ -86,6 +86,15 @@ const socialImageURL = new URL(ogImage ? ogImage : '/images/social-card.png', As
 {/* Styles */}
 <link rel='stylesheet' href='/styles/global.css' />
 
+{/* Google Analytics */}
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-NMGW4YQM28' is:inline></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NMGW4YQM28');
+</script>
+
 {
   /* User script*/
   prod && (

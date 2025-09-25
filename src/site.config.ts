@@ -35,25 +35,12 @@ export const theme: ThemeUserConfig = {
 
   // Still in test
   head: [
-    /* Google Analytics */
-    {
-      tag: 'script',
-      attrs: { 
-        async: true, 
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-NMGW4YQM28' 
-      },
-      content: ''
-    },
-    {
-      tag: 'script',
-      attrs: {},
-      content: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-NMGW4YQM28');
-      `
-    }
+    /* Telegram channel */
+    // {
+    //   tag: 'meta',
+    //   attrs: { name: 'telegram:channel', content: '@cworld0_cn' },
+    //   content: ''
+    // }
   ],
   customCss: [],
 
