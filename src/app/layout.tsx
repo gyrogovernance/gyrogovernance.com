@@ -110,13 +110,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-white shadow-sm border-b" role="banner">
+        <header className="bg-surface/95 backdrop-blur-sm border-b border-border shadow-lg animate-slide-in-left" role="banner">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center space-x-8">
                 <Link
                   href="/"
-                  className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
+                  className="text-2xl font-bold bg-gradient-to-r from-apple-blue to-apple-purple bg-clip-text text-transparent hover:from-apple-purple hover:to-apple-pink transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-apple-blue focus:ring-offset-2 rounded p-1"
                   aria-label="Gyro Governance - Home"
                 >
                   Gyro Governance
@@ -124,14 +124,14 @@ export default function RootLayout({
                 <nav className="hidden md:flex space-x-8" role="navigation" aria-label="Main navigation">
                   <Link
                     href="/"
-                    className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="text-foreground-secondary hover:text-foreground px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-surface-elevated focus:outline-none focus:ring-2 focus:ring-apple-blue focus:ring-offset-2 card-hover"
                     aria-label="Home page"
                   >
                     Home
                   </Link>
                   <Link
                     href="/about"
-                    className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="text-foreground-secondary hover:text-foreground px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-surface-elevated focus:outline-none focus:ring-2 focus:ring-apple-blue focus:ring-offset-2 card-hover"
                     aria-label="About Gyro Governance"
                   >
                     About
@@ -143,7 +143,7 @@ export default function RootLayout({
                   href="https://korompilias.github.io/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50 animate-pulse-glow"
                   aria-label="Visit Author's personal website (opens in new tab)"
                 >
                   Author
@@ -153,15 +153,15 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main role="main">
+        <main role="main" className="animate-fade-in-up">
           {children}
         </main>
 
-        <footer className="bg-white border-t mt-16" role="contentinfo">
+        <footer className="bg-surface-elevated/50 backdrop-blur-sm border-t border-border mt-16 animate-fade-in-up" role="contentinfo">
           <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-            <div className="text-center text-gray-600">
-              <p>&copy; 2024 Gyro Governance. All rights reserved.</p>
-              <p className="mt-2 text-sm">
+            <div className="text-center">
+              <p className="text-foreground-secondary font-medium">&copy; 2024 Gyro Governance. All rights reserved.</p>
+              <p className="mt-2 text-sm text-foreground-tertiary">
                 Advancing AI governance through innovative research and development solutions
               </p>
             </div>

@@ -1,26 +1,235 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Apple Watch OS Color Palette - Light Theme */
+  --apple-blue: #007aff;
+  --apple-green: #34c759;
+  --apple-orange: #ff9500;
+  --apple-pink: #ff2d70;
+  --apple-purple: #af52de;
+  --apple-yellow: #ffcc00;
+  --apple-red: #ff3b30;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Light Theme */
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --foreground: #1d1d1f;
+  --foreground-secondary: #86868b;
+  --foreground-tertiary: #a1a1a6;
+  --border: #e5e5e7;
+  --border-secondary: #f2f2f7;
+
+  /* Gradient Colors */
+  --gradient-start: #667eea;
+  --gradient-middle: #764ba2;
+  --gradient-end: #f093fb;
+  --gradient-accent: #f5576c;
+  --gradient-secondary: #4facfe;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark Theme */
+    --background: #000000;
+    --surface: #1c1c1e;
+    --surface-elevated: #2c2c2e;
+    --foreground: #ffffff;
+    --foreground-secondary: #8e8e93;
+    --foreground-tertiary: #48484a;
+    --border: #38383a;
+    --border-secondary: #1c1c1e;
+
+    /* Gradient Colors - Darker variants */
+    --gradient-start: #4c63d2;
+    --gradient-middle: #5a4b7c;
+    --gradient-end: #b85fc4;
+    --gradient-accent: #d43c5c;
+    --gradient-secondary: #3a8bd9;
   }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-tertiary: var(--foreground-tertiary);
+  --color-border: var(--border);
+  --color-border-secondary: var(--border-secondary);
+
+  /* Apple Watch OS Colors */
+  --color-apple-blue: var(--apple-blue);
+  --color-apple-green: var(--apple-green);
+  --color-apple-orange: var(--apple-orange);
+  --color-apple-pink: var(--apple-pink);
+  --color-apple-purple: var(--apple-purple);
+  --color-apple-yellow: var(--apple-yellow);
+  --color-apple-red: var(--apple-red);
+
+  /* Gradient Colors */
+  --color-gradient-start: var(--gradient-start);
+  --color-gradient-middle: var(--gradient-middle);
+  --color-gradient-end: var(--gradient-end);
+  --color-gradient-accent: var(--gradient-accent);
+  --color-gradient-secondary: var(--gradient-secondary);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Gradient Blob Backgrounds */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+body::before {
+  background: radial-gradient(
+    circle at 20% 80%,
+    rgba(102, 126, 234, 0.15) 0%,
+    transparent 50%
+  );
+  animation: blob1 20s infinite ease-in-out;
+}
+
+body::after {
+  background: radial-gradient(
+    circle at 80% 20%,
+    rgba(240, 147, 251, 0.15) 0%,
+    transparent 50%
+  );
+  animation: blob2 25s infinite ease-in-out reverse;
+}
+
+@keyframes blob1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes blob2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 40px) scale(1.2);
+  }
+}
+
+/* Enhanced animations for interactive elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 122, 255, 0.6);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--apple-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg,
+    var(--border-secondary) 0px,
+    var(--surface-elevated) 40px,
+    var(--border-secondary) 80px
+  );
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
 }

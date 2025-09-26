@@ -1,53 +1,67 @@
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">About Gyro Governance</h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+      <div className="animate-fade-in-up">
+        <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-center">
+          <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
+            About Gyro Governance
+          </span>
+        </h1>
 
         {/* Intro Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Introduction</h2>
-          <p className="text-gray-600 mb-4">
-            Gyro Governance is at the forefront of AI research and development, focusing on creating
-            sustainable and ethical frameworks for artificial intelligence systems. Our work bridges
-            the gap between theoretical physics and practical AI governance solutions.
-          </p>
-          <p className="text-gray-600 mb-4">
-            We believe that the future of AI lies not just in technological advancement, but in
-            developing robust governance models that ensure AI systems remain aligned with human
-            values and societal needs.
-          </p>
+        <section className="mb-12 animate-fade-in-up">
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            <span className="bg-gradient-to-r from-apple-blue to-apple-green bg-clip-text text-transparent">
+              Introduction
+            </span>
+          </h2>
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
+            <p className="text-foreground-secondary mb-4 leading-relaxed">
+              Gyro Governance is at the forefront of AI research and development, focusing on creating
+              sustainable and ethical frameworks for artificial intelligence systems. Our work bridges
+              the gap between theoretical physics and practical AI governance solutions.
+            </p>
+            <p className="text-foreground-secondary mb-4 leading-relaxed">
+              We believe that the future of AI lies not just in technological advancement, but in
+              developing robust governance models that ensure AI systems remain aligned with human
+              values and societal needs.
+            </p>
+          </div>
         </section>
 
         {/* Accomplishments Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Accomplishments</h2>
+        <section className="mb-12 animate-fade-in-up">
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            <span className="bg-gradient-to-r from-apple-orange to-apple-red bg-clip-text text-transparent">
+              Accomplishments
+            </span>
+          </h2>
           <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
                 Mathematical Physics Foundations
               </h3>
-              <p className="text-gray-600">
+              <p className="text-foreground-secondary leading-relaxed">
                 Developed novel mathematical frameworks that apply gyroscopic physics principles
                 to AI system architecture, enabling more stable and predictable AI behavior.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
                 AI Alignment Protocols
               </h3>
-              <p className="text-gray-600">
+              <p className="text-foreground-secondary leading-relaxed">
                 Created comprehensive diagnostic tools and protocols for evaluating and ensuring
                 AI system alignment with human values and objectives.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
                 Governance Frameworks
               </h3>
-              <p className="text-gray-600">
+              <p className="text-foreground-secondary leading-relaxed">
                 Established practical governance models that can be implemented across different
                 AI systems and organizational structures.
               </p>
@@ -56,18 +70,24 @@ export default function About() {
         </section>
 
         {/* Mission Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Our Mission</h2>
-          <p className="text-gray-600 mb-4">
-            To advance the field of AI governance through innovative research that combines
-            mathematical rigor with practical implementation. We are committed to developing
-            solutions that make AI systems more transparent, accountable, and beneficial to society.
-          </p>
-          <p className="text-gray-600">
-            Our research spans multiple disciplines, from theoretical physics to practical
-            engineering, ensuring that our solutions are both scientifically sound and
-            practically applicable.
-          </p>
+        <section className="mb-12 animate-fade-in-up">
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            <span className="bg-gradient-to-r from-apple-pink to-apple-purple bg-clip-text text-transparent">
+              Our Mission
+            </span>
+          </h2>
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
+            <p className="text-foreground-secondary mb-4 leading-relaxed">
+              To advance the field of AI governance through innovative research that combines
+              mathematical rigor with practical implementation. We are committed to developing
+              solutions that make AI systems more transparent, accountable, and beneficial to society.
+            </p>
+            <p className="text-foreground-secondary leading-relaxed">
+              Our research spans multiple disciplines, from theoretical physics to practical
+              engineering, ensuring that our solutions are both scientifically sound and
+              practically applicable.
+            </p>
+          </div>
         </section>
       </div>
     </div>
