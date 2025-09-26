@@ -1,51 +1,25 @@
-import { MetadataRoute } from 'next'
+// Static sitemap for SEO
+// This will be generated as a static file in public/sitemap.xml
+const sitemapData = {
+  urlset: {
+    $: { xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" },
+    url: [
+      {
+        loc: "https://gyrogovernance.com/",
+        lastmod: new Date().toISOString().split('T')[0],
+        changefreq: "weekly",
+        priority: "1.0"
+      },
+      {
+        loc: "https://gyrogovernance.com/about",
+        lastmod: new Date().toISOString().split('T')[0],
+        changefreq: "monthly",
+        priority: "0.8"
+      }
+    ]
+  }
+};
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://gyrogovernance.com'
-
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    // Add more pages as you create them
-    // {
-    //   url: `${baseUrl}/labs/governance-model`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.6,
-    // },
-    // {
-    //   url: `${baseUrl}/labs/gyro-superintelligence`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.6,
-    // },
-    // {
-    //   url: `${baseUrl}/tools/gyroscope`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.6,
-    // },
-    // {
-    //   url: `${baseUrl}/guides/smart-bites`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.6,
-    // },
-    // {
-    //   url: `${baseUrl}/guides/aiq-governance`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.6,
-    // },
-  ]
-}
+// Export for static generation (this won't work with dynamic routes in static export)
+// Instead, we'll create a static sitemap.xml file
+export default sitemapData;

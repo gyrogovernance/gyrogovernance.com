@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import Script from 'next/script';
 import StructuredData from '@/components/StructuredData';
 import "./globals.css";
@@ -113,28 +114,28 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center space-x-8">
-                <a
+                <Link
                   href="/"
                   className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
                   aria-label="Gyro Governance - Home"
                 >
                   Gyro Governance
-                </a>
+                </Link>
                 <nav className="hidden md:flex space-x-8" role="navigation" aria-label="Main navigation">
-                  <a
+                  <Link
                     href="/"
                     className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     aria-label="Home page"
                   >
                     Home
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/about"
                     className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     aria-label="About Gyro Governance"
                   >
                     About
-                  </a>
+                  </Link>
                 </nav>
               </div>
               <div className="flex items-center space-x-4">

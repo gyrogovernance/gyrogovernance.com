@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -10,19 +12,19 @@ export default function Home() {
           Advancing AI governance through innovative research and development solutions
         </p>
         <div className="mt-8 flex justify-center space-x-4">
-          <a
+          <Link
             href="/about"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             aria-label="Learn more about Gyro Governance"
           >
             Learn More
-          </a>
+          </Link>
           <a
             href="https://korompilias.github.io/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
-            aria-label="Visit Author's personal website"
+            className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            aria-label="Visit Author's personal website (opens in new tab)"
           >
             Author
           </a>
@@ -40,13 +42,14 @@ export default function Home() {
             <p className="text-gray-600 mb-4">
               Mathematical Physics Foundations for AI governance frameworks
             </p>
-            <a
+            {/* <a
               href="/labs/governance-model"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
               aria-label="Learn more about Common Governance Model"
             >
               Learn more →
-            </a>
+            </a> */}
+            <span className="text-gray-400 text-sm italic">Coming soon</span>
           </article>
 
           <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -56,13 +59,14 @@ export default function Home() {
             <p className="text-gray-600 mb-4">
               Gyroscopic Physics AGI/ASI Architecture research and development
             </p>
-            <a
+            {/* <a
               href="/labs/gyro-superintelligence"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
               aria-label="Learn more about Gyro-Superintelligence"
             >
               Learn more →
-            </a>
+            </a> */}
+            <span className="text-gray-400 text-sm italic">Coming soon</span>
           </article>
         </div>
       </section>
@@ -78,13 +82,14 @@ export default function Home() {
             <p className="text-gray-600 mb-4">
               LLM Alignment Protocol & Diagnostics for AI safety and reliability
             </p>
-            <a
+            {/* <a
               href="/tools/gyroscope"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
               aria-label="Learn more about Gyroscope tool"
             >
               Learn more →
-            </a>
+            </a> */}
+            <span className="text-gray-400 text-sm italic">Coming soon</span>
           </article>
         </div>
       </section>
@@ -100,13 +105,14 @@ export default function Home() {
             <p className="text-gray-600 mb-4">
               Practical Prompt Engineering techniques for AI interaction
             </p>
-            <a
+            {/* <a
               href="/guides/smart-bites"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
               aria-label="Learn more about Smart Bites prompt engineering"
             >
               Learn more →
-            </a>
+            </a> */}
+            <span className="text-gray-400 text-sm italic">Coming soon</span>
           </article>
 
           <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
@@ -116,13 +122,14 @@ export default function Home() {
             <p className="text-gray-600 mb-4">
               Model Behavior Evaluation Framework for AI governance
             </p>
-            <a
+            {/* <a
               href="/guides/aiq-governance"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
               aria-label="Learn more about AI.Q Governance framework"
             >
               Learn more →
-            </a>
+            </a> */}
+            <span className="text-gray-400 text-sm italic">Coming soon</span>
           </article>
         </div>
       </section>
