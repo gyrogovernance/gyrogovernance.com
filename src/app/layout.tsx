@@ -132,37 +132,36 @@ export default function RootLayout({
                   <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
             <div className="flex justify-between items-center h-16">
-              <div className="flex items-center space-x-8">
+              <div className="flex items-center">
                 <Link
                   href="/"
-                  className="flex items-center space-x-3 text-2xl font-bold bg-gradient-to-r from-apple-blue to-apple-purple bg-clip-text text-transparent hover:from-apple-purple hover:to-apple-pink transition-all duration-300 focus:outline-none rounded p-1"
+                  className="flex items-center focus:outline-none rounded p-1 hover:opacity-80 transition-opacity duration-300"
                   aria-label="Gyro Governance - Home"
                 >
                   <img 
-                    src="/assets/gyrogovernance_logo.svg" 
+                    src="/assets/gyrogovernance_logo.png" 
                     alt="Gyro Governance Logo" 
-                    className="h-8 w-8 flex-shrink-0"
+                    className="h-10 w-10"
                   />
-                  Gyro Governance
                 </Link>
-                          <nav className="hidden md:flex space-x-4" role="navigation" aria-label="Main navigation">
-                            <Link
-                              href="/"
-                              className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
-                              aria-label="Home page"
-                            >
-                              Home
-                            </Link>
-                            <Link
-                              href="/about"
-                              className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
-                              aria-label="About Gyro Governance"
-                            >
-                              About
-                            </Link>
-                          </nav>
               </div>
               <div className="flex items-center space-x-4">
+                <nav className="hidden md:flex space-x-1" role="navigation" aria-label="Main navigation">
+                  <Link
+                    href="/"
+                    className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
+                    aria-label="Home page"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
+                    aria-label="About Gyro Governance"
+                  >
+                    About
+                  </Link>
+                </nav>
                 <ThemeToggle />
                 <a
                   href="https://korompilias.github.io/"
@@ -188,9 +187,9 @@ export default function RootLayout({
               <p className="text-foreground-secondary font-medium">BASIL KOROMPILIAS | 2025 | CC BY-SA 4.0</p>
               <div className="mt-4 flex justify-center">
                 <img 
-                  src="/assets/gyrogovernance_logo.svg" 
+                  src="/assets/gyrogovernance_stamp.svg" 
                   alt="Gyro Governance Logo" 
-                  className="h-6 w-6 opacity-40 hover:opacity-60 transition-opacity duration-200"
+                  className="h-30 w-30 opacity-30 hover:opacity-60 transition-opacity duration-200"
                 />
               </div>
             </div>

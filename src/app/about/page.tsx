@@ -11,7 +11,7 @@ export default function About() {
                 {/* Intro Section */}
                 <section className="mb-12 animate-fade-in-up">
                   <div className="flex items-center justify-center mb-6">
-                    <div className="text-12xl mr-4">🌐</div>
+                    <div className="text-12xl mr-4"></div>
                     <h2 className="text-2xl font-semibold text-foreground">
                       Introduction
                     </h2>
@@ -33,7 +33,7 @@ export default function About() {
                 {/* Accomplishments Section */}
                 <section className="mb-12 animate-fade-in-up">
                   <div className="flex items-center justify-center mb-6">
-                    <div className="text-12xl mr-4">🏆</div>
+                    <div className="text-12xl mr-4"></div>
                     <h2 className="text-2xl font-semibold text-foreground">
                       Accomplishments
                     </h2>
@@ -89,7 +89,7 @@ export default function About() {
                 {/* Mission Section */}
                 <section className="mb-12 animate-fade-in-up">
                   <div className="flex items-center justify-center mb-6">
-                    <div className="text-12xl mr-4">🚀</div>
+                    <div className="text-12xl mr-4"></div>
                     <h2 className="text-2xl font-semibold text-foreground">
                       Our Mission
                     </h2>
