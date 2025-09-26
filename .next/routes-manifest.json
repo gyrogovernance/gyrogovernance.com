@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/gyrogovernance.com",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/gyrogovernance.com",
-      "destination": "/gyrogovernance.com/",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/gyrogovernance\\.com$"
-    },
     {
       "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
       "destination": "/:file",
@@ -58,12 +50,6 @@
       "regex": "^/about(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/about(?:/)?$"
-    },
-    {
-      "page": "/favicon.ico",
-      "regex": "^/favicon\\.ico(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/favicon\\.ico(?:/)?$"
     }
   ],
   "dataRoutes": [],
