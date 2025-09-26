@@ -17,7 +17,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-6 text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-          Advancing AI governance through research that makes language models 30-50% smarter and safer
+          Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <Link
