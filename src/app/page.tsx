@@ -1,4 +1,10 @@
 import Link from "next/link";
+import GitHubIcon from "@/components/icons/GitHubIcon";
+import ExternalLinkIcon from "@/components/icons/ExternalLinkIcon";
+import LinkedInIcon from "@/components/icons/LinkedInIcon";
+import NotionIcon from "@/components/icons/NotionIcon";
+import SpotifyIcon from "@/components/icons/SpotifyIcon";
+import YouTubeIcon from "@/components/icons/YouTubeIcon";
 
 export default function Home() {
   return (
@@ -11,7 +17,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-6 text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-          Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations
+          Advancing AI governance through research that makes language models 30-50% smarter and safer
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <Link
@@ -21,6 +27,101 @@ export default function Home() {
           >
             Learn More
           </Link>
+        </div>
+      </div>
+
+      {/* Gyroscope Hero Card */}
+      <div className="mb-16 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-apple-blue/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">⚙️</div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Gyroscope: LLM Alignment Protocol & Diagnostics
+            </h2>
+            <p className="text-xl text-foreground-secondary mb-6">
+              Making AI 30-50% Smarter and Safer by adding structured reasoning to each response.
+            </p>
+            <a
+              href="https://github.com/gyrogovernance/gyroscope"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              aria-label="View Gyroscope on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+          </div>
+          
+          {/* Results Table */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">📊 Proven Performance Gains</h3>
+            <p className="text-foreground-secondary text-center mb-6">
+              Testing across multiple leading AI models shows Gyroscope delivers substantial performance improvements
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* ChatGPT Results */}
+              <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 border border-green-200 dark:border-green-700">
+                <h4 className="text-lg font-bold text-foreground mb-3 text-center">ChatGPT</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Overall Quality:</span>
+                    <span className="font-semibold text-green-600">67.0% → 89.1% (+32.9%)</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Structural Reasoning:</span>
+                    <span className="font-semibold text-green-600">+50.9%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Accountability:</span>
+                    <span className="font-semibold text-green-600">+62.7%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Traceability:</span>
+                    <span className="font-semibold text-green-600">+61.0%</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Claude Sonnet Results */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700">
+                <h4 className="text-lg font-bold text-foreground mb-3 text-center">Claude Sonnet</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Overall Quality:</span>
+                    <span className="font-semibold text-blue-600">63.5% → 87.4% (+37.7%)</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Structural Reasoning:</span>
+                    <span className="font-semibold text-blue-600">+67.1%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Traceability:</span>
+                    <span className="font-semibold text-blue-600">+92.6%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-gradient-to-r from-apple-blue/10 to-apple-purple/10 rounded-lg border border-apple-blue/20">
+              <p className="text-sm text-foreground-secondary text-center">
+                <strong>☝🏻 The protocol works with any AI model</strong>, enhancing capabilities in debugging, ethics, code generation, and value-sensitive reasoning through its systematic approach to thinking.
+              </p>
+            </div>
+            
+            <p className="text-xs text-foreground-tertiary text-center mt-4">
+              Results from controlled testing using standardized evaluation metrics. 
+              <a 
+                href="https://github.com/gyrogovernance/gyroscope" 
+                className="underline hover:text-foreground-secondary transition-colors duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See methodology
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -44,13 +145,11 @@ export default function Home() {
                   href="https://github.com/gyrogovernance/gyroscopic-alignment-research-lab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
                   aria-label="Visit Gyroscopic Alignment Research Lab (opens in new tab)"
                 >
+                  <GitHubIcon className="w-4 h-4 mr-2" />
                   View on GitHub
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
                 </a>
               </div>
             </div>
@@ -70,13 +169,11 @@ export default function Home() {
                   href="https://github.com/gyrogovernance/gyroscopic-alignment-development-lab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
                   aria-label="Visit Gyroscopic Alignment Development Lab (opens in new tab)"
                 >
+                  <GitHubIcon className="w-4 h-4 mr-2" />
                   View on GitHub
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
                 </a>
               </div>
             </div>
@@ -84,39 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-              {/* Tools Section */}
-              <section className="mb-16 animate-fade-in-up" aria-labelledby="tools-heading">
-                <h2 id="tools-heading" className="text-3xl font-bold text-foreground mb-8 text-center">
-                  Tools
-                </h2>
-        <div className="grid md:grid-cols-1 gap-6">
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-start space-x-4">
-              <div className="text-4xl">⚙️</div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-3">
-                  Gyroscope
-                </h3>
-                <p className="text-foreground-secondary mb-4">
-                  LLM Alignment Protocol & Diagnostics
-                </p>
-                <a
-                  href="https://github.com/gyrogovernance/gyroscope"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium"
-                  aria-label="Visit Gyroscope on GitHub (opens in new tab)"
-                >
-                  View on GitHub
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
 
               {/* Resources Section */}
               <section className="mb-16 animate-fade-in-up" aria-labelledby="resources-heading">
@@ -147,9 +211,7 @@ export default function Home() {
                             className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
                             aria-label="Read The Walk newsletter on LinkedIn (opens in new tab)"
                           >
-                            <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
+                            <LinkedInIcon className="w-4 h-4 mr-2" />
                             LinkedIn Newsletter
                           </a>
                         </div>
@@ -182,9 +244,7 @@ export default function Home() {
                             aria-label="Visit Smart Bites (opens in new tab)"
                           >
                             Visit Site
-                            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
+                            <ExternalLinkIcon className="ml-2 w-4 h-4" />
                           </a>
                         </div>
                       </div>
@@ -208,9 +268,7 @@ export default function Home() {
                             aria-label="Visit Crisis Resolutions (opens in new tab)"
                           >
                             Visit Site
-                            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
+                            <ExternalLinkIcon className="ml-2 w-4 h-4" />
                           </a>
                         </div>
                       </div>
@@ -226,7 +284,13 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">📊</div>
+                        <div className="flex-shrink-0">
+                          <img 
+                            src="/assets/AIQ_Cover.jpg" 
+                            alt="AI Quality Governance Cover" 
+                            className="w 50 h-60 object-cover rounded-lg shadow-md border border-border/50"
+                          />
+                        </div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             AI Quality Governance
@@ -242,9 +306,7 @@ export default function Home() {
                             aria-label="View AI Quality Governance publication (opens in new tab)"
                           >
                             View Publication
-                            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
+                            <ExternalLinkIcon className="ml-2 w-4 h-4" />
                           </a>
                         </div>
                       </div>
@@ -252,7 +314,13 @@ export default function Home() {
 
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">⚖️</div>
+                        <div className="flex-shrink-0">
+                          <img 
+                            src="/assets/AI_Canon_Cover.jpg" 
+                            alt="AI Canon Cover" 
+                            className="w-40 h-60 object-cover rounded-lg shadow-md border border-border/50"
+                          />
+                        </div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             AI Canon
@@ -268,9 +336,7 @@ export default function Home() {
                             aria-label="View AI Canon publication (opens in new tab)"
                           >
                             View Publication
-                            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
+                            <ExternalLinkIcon className="ml-2 w-4 h-4" />
                           </a>
                         </div>
                       </div>
@@ -301,9 +367,7 @@ export default function Home() {
                             className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
                             aria-label="View Notion Documentation (opens in new tab)"
                           >
-                            <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                              <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.033-.793c.327-.047.514-.233.514-.513V.513c0-.28-.187-.466-.514-.513L1.936.28C1.61.233 1.423.42 1.423.7v.513c0 .28.187.466.513.513z"/>
-                            </svg>
+                            <NotionIcon className="w-4 h-4 mr-2" />
                             Notion Documentation
                           </a>
                         </div>
@@ -337,9 +401,7 @@ export default function Home() {
                               className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
                               aria-label="Listen on Spotify (opens in new tab)"
                             >
-                              <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.16-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
-                              </svg>
+                              <SpotifyIcon className="w-4 h-4 mr-2" />
                               Spotify
                             </a>
                           </div>
@@ -366,9 +428,7 @@ export default function Home() {
                               className="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
                               aria-label="Watch on YouTube (opens in new tab)"
                             >
-                              <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                              </svg>
+                              <YouTubeIcon className="w-4 h-4 mr-2" />
                               YouTube
                             </a>
                           </div>
@@ -395,9 +455,7 @@ export default function Home() {
                               className="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
                               aria-label="Watch on YouTube (opens in new tab)"
                             >
-                              <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                              </svg>
+                              <YouTubeIcon className="w-4 h-4 mr-2" />
                               YouTube
                             </a>
                           </div>

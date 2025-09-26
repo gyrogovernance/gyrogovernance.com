@@ -8,62 +8,54 @@ export default function About() {
           </span>
         </h1>
 
-                {/* Intro Section */}
-                <section className="mb-12 animate-fade-in-up">
-                  <div className="flex items-center justify-center mb-6">
-                    <div className="text-12xl mr-4"></div>
-                    <h2 className="text-2xl font-semibold text-foreground">
-                      Introduction
-                    </h2>
-                  </div>
+        {/* Intro Section */}
+        <section className="mb-12 animate-fade-in-up">
+          <div className="flex items-center justify-center mb-6">
+            <div className="text-12xl mr-4"></div>
+            <h2 className="text-2xl font-semibold text-foreground">
+              Introduction
+            </h2>
+          </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <p className="text-foreground-secondary mb-4 leading-relaxed">
-              Gyro Governance is at the forefront of AI research and development, focusing on creating
-              sustainable and ethical frameworks for artificial intelligence systems. Our work bridges
-              the gap between theoretical physics and practical AI governance solutions.
+            <p className="text-foreground-secondary mb-4 leading-relaxed text-lg font-semibold">
+              Gyro Governance specializes in alignment and governance research for artificial intelligence, 
+              with a focus on mathematical frameworks derived from physics principles. Established in 2013, 
+              the work bridges theoretical foundations with practical implementation strategies.
             </p>
             <p className="text-foreground-secondary mb-4 leading-relaxed">
-              We believe that the future of AI lies not just in technological advancement, but in
-              developing robust governance models that ensure AI systems remain aligned with human
-              values and societal needs.
+              The research addresses critical challenges in machine learning systems through 
+              approaches based on gyroscopic dynamics and structural coherence. This unique perspective 
+              enables the development of more robust and interpretable computational architectures.
+            </p>
+            <p className="text-foreground-secondary leading-relaxed">
+              Beyond technological innovation, the focus extends to ethical frameworks and governance 
+              models that ensure these systems serve societal needs while maintaining transparency 
+              and accountability.
             </p>
           </div>
         </section>
 
-                {/* Accomplishments Section */}
-                <section className="mb-12 animate-fade-in-up">
-                  <div className="flex items-center justify-center mb-6">
-                    <div className="text-12xl mr-4"></div>
-                    <h2 className="text-2xl font-semibold text-foreground">
-                      Accomplishments
-                    </h2>
-                  </div>
+        {/* Accomplishments Section */}
+        <section className="mb-12 animate-fade-in-up">
+          <div className="flex items-center justify-center mb-6">
+            <div className="text-12xl mr-4"></div>
+            <h2 className="text-2xl font-semibold text-foreground">
+              Key Developments
+            </h2>
+          </div>
           <div className="space-y-6">
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
-              <div className="flex items-start space-x-4">
-                <div className="text-5xl">🔬</div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Mathematical Physics Foundations
-                  </h3>
-                  <p className="text-foreground-secondary leading-relaxed">
-                    Developed novel mathematical frameworks that apply gyroscopic physics principles
-                    to AI system architecture, enabling more stable and predictable AI behavior.
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
               <div className="flex items-start space-x-4">
                 <div className="text-5xl">🎯</div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-foreground mb-3">
-                    AI Alignment Protocols
+                    Alignment Protocols & Diagnostics
                   </h3>
                   <p className="text-foreground-secondary leading-relaxed">
-                    Created comprehensive diagnostic tools and protocols for evaluating and ensuring
-                    AI system alignment with human values and objectives.
+                    The Gyroscope Protocol demonstrates measurable improvements in language model performance: 
+                    32.9% uplift in output quality, 50.9% improvement in structural reasoning, 62.7% increase 
+                    in accountability, 61.0% in traceability, and 54.9% in behavioral integrity. These protocols 
+                    provide quantitative metrics for transparency and ethical coherence without requiring model retraining.
                   </p>
                 </div>
               </div>
@@ -74,11 +66,28 @@ export default function About() {
                 <div className="text-5xl">⚖️</div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Governance Frameworks
+                    Governance Architecture
                   </h3>
                   <p className="text-foreground-secondary leading-relaxed">
-                    Established practical governance models that can be implemented across different
-                    AI systems and organizational structures.
+                    Practical frameworks for oversight and decision-making that can be adapted across 
+                    different organizational contexts. These models emphasize participatory approaches 
+                    and structural accountability mechanisms for responsible deployment of intelligent systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
+              <div className="flex items-start space-x-4">
+                <div className="text-5xl">🔬</div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Mathematical Physics Foundations
+                  </h3>
+                  <p className="text-foreground-secondary leading-relaxed">
+                    Research into fundamental mathematical frameworks that apply gyroscopic physics principles 
+                    to questions of stability, coherence, and dynamics in complex systems. This theoretical work 
+                    provides the foundation for understanding alignment and governance challenges from first principles.
                   </p>
                 </div>
               </div>
@@ -86,24 +95,24 @@ export default function About() {
           </div>
         </section>
 
-                {/* Mission Section */}
-                <section className="mb-12 animate-fade-in-up">
-                  <div className="flex items-center justify-center mb-6">
-                    <div className="text-12xl mr-4"></div>
-                    <h2 className="text-2xl font-semibold text-foreground">
-                      Our Mission
-                    </h2>
-                  </div>
+        {/* Mission Section */}
+        <section className="mb-12 animate-fade-in-up">
+          <div className="flex items-center justify-center mb-6">
+            <div className="text-12xl mr-4"></div>
+            <h2 className="text-2xl font-semibold text-foreground">
+              Research Focus
+            </h2>
+          </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <p className="text-foreground-secondary mb-4 leading-relaxed">
-              To advance the field of AI governance through innovative research that combines
-              mathematical rigor with practical implementation. We are committed to developing
-              solutions that make AI systems more transparent, accountable, and beneficial to society.
+            <p className="text-foreground-secondary mb-4 leading-relaxed text-lg font-semibold">
+              The research combines mathematical rigor with practical engineering to address 
+              fundamental challenges in machine intelligence. This interdisciplinary approach 
+              draws from physics, philosophy, and systems theory to create robust solutions.
             </p>
             <p className="text-foreground-secondary leading-relaxed">
-              Our research spans multiple disciplines, from theoretical physics to practical
-              engineering, ensuring that our solutions are both scientifically sound and
-              practically applicable.
+              Current projects explore superintelligence architectures, behavioral alignment 
+              mechanisms, and governance protocols that prioritize transparency and human values. 
+              All developments are documented through open-source repositories and educational resources.
             </p>
           </div>
         </section>
