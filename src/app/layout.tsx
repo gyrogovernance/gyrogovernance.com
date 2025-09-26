@@ -52,6 +52,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+  },
   openGraph: {
     title: "Gyro Governance - AI Research and Development",
     description: "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture.",
@@ -125,9 +135,14 @@ export default function RootLayout({
               <div className="flex items-center space-x-8">
                 <Link
                   href="/"
-                  className="text-2xl font-bold bg-gradient-to-r from-apple-blue to-apple-purple bg-clip-text text-transparent hover:from-apple-purple hover:to-apple-pink transition-all duration-300 focus:outline-none rounded p-1"
+                  className="flex items-center space-x-3 text-2xl font-bold bg-gradient-to-r from-apple-blue to-apple-purple bg-clip-text text-transparent hover:from-apple-purple hover:to-apple-pink transition-all duration-300 focus:outline-none rounded p-1"
                   aria-label="Gyro Governance - Home"
                 >
+                  <img 
+                    src="/assets/gyrogovernance_logo.svg" 
+                    alt="Gyro Governance Logo" 
+                    className="h-8 w-8 flex-shrink-0"
+                  />
                   Gyro Governance
                 </Link>
                           <nav className="hidden md:flex space-x-4" role="navigation" aria-label="Main navigation">
@@ -171,6 +186,13 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <p className="text-foreground-secondary font-medium">BASIL KOROMPILIAS | 2025 | CC BY-SA 4.0</p>
+              <div className="mt-4 flex justify-center">
+                <img 
+                  src="/assets/gyrogovernance_logo.svg" 
+                  alt="Gyro Governance Logo" 
+                  className="h-6 w-6 opacity-40 hover:opacity-60 transition-opacity duration-200"
+                />
+              </div>
             </div>
           </div>
         </footer>
