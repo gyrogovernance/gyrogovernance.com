@@ -8,13 +8,14 @@ export default function About() {
           </span>
         </h1>
 
-        {/* Intro Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <h2 className="text-2xl font-semibold text-foreground mb-6">
-            <span className="bg-gradient-to-r from-apple-blue to-apple-green bg-clip-text text-transparent">
-              Introduction
-            </span>
-          </h2>
+                {/* Intro Section */}
+                <section className="mb-12 animate-fade-in-up">
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="text-12xl mr-4">🌐</div>
+                    <h2 className="text-2xl font-semibold text-foreground">
+                      Introduction
+                    </h2>
+                  </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
             <p className="text-foreground-secondary mb-4 leading-relaxed">
               Gyro Governance is at the forefront of AI research and development, focusing on creating
@@ -29,53 +30,70 @@ export default function About() {
           </div>
         </section>
 
-        {/* Accomplishments Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <h2 className="text-2xl font-semibold text-foreground mb-6">
-            <span className="bg-gradient-to-r from-apple-orange to-apple-red bg-clip-text text-transparent">
-              Accomplishments
-            </span>
-          </h2>
+                {/* Accomplishments Section */}
+                <section className="mb-12 animate-fade-in-up">
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="text-12xl mr-4">🏆</div>
+                    <h2 className="text-2xl font-semibold text-foreground">
+                      Accomplishments
+                    </h2>
+                  </div>
           <div className="space-y-6">
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                Mathematical Physics Foundations
-              </h3>
-              <p className="text-foreground-secondary leading-relaxed">
-                Developed novel mathematical frameworks that apply gyroscopic physics principles
-                to AI system architecture, enabling more stable and predictable AI behavior.
-              </p>
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
+              <div className="flex items-start space-x-4">
+                <div className="text-5xl">🔬</div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Mathematical Physics Foundations
+                  </h3>
+                  <p className="text-foreground-secondary leading-relaxed">
+                    Developed novel mathematical frameworks that apply gyroscopic physics principles
+                    to AI system architecture, enabling more stable and predictable AI behavior.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                AI Alignment Protocols
-              </h3>
-              <p className="text-foreground-secondary leading-relaxed">
-                Created comprehensive diagnostic tools and protocols for evaluating and ensuring
-                AI system alignment with human values and objectives.
-              </p>
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
+              <div className="flex items-start space-x-4">
+                <div className="text-5xl">🎯</div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    AI Alignment Protocols
+                  </h3>
+                  <p className="text-foreground-secondary leading-relaxed">
+                    Created comprehensive diagnostic tools and protocols for evaluating and ensuring
+                    AI system alignment with human values and objectives.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                Governance Frameworks
-              </h3>
-              <p className="text-foreground-secondary leading-relaxed">
-                Established practical governance models that can be implemented across different
-                AI systems and organizational structures.
-              </p>
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
+              <div className="flex items-start space-x-4">
+                <div className="text-5xl">⚖️</div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Governance Frameworks
+                  </h3>
+                  <p className="text-foreground-secondary leading-relaxed">
+                    Established practical governance models that can be implemented across different
+                    AI systems and organizational structures.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <h2 className="text-2xl font-semibold text-foreground mb-6">
-            <span className="bg-gradient-to-r from-apple-pink to-apple-purple bg-clip-text text-transparent">
-              Our Mission
-            </span>
-          </h2>
+                {/* Mission Section */}
+                <section className="mb-12 animate-fade-in-up">
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="text-12xl mr-4">🚀</div>
+                    <h2 className="text-2xl font-semibold text-foreground">
+                      Our Mission
+                    </h2>
+                  </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
             <p className="text-foreground-secondary mb-4 leading-relaxed">
               To advance the field of AI governance through innovative research that combines

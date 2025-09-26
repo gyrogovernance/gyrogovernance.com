@@ -1,7 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  /* Apple Watch OS Color Palette - Light Theme */
+  /* 1. Typography System */
+  --font-family-base: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font sizes - rem for accessibility */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* 2. Apple Watch OS Color Palette */
   --apple-blue: #007aff;
   --apple-green: #34c759;
   --apple-orange: #ff9500;
@@ -10,54 +27,114 @@
   --apple-yellow: #ffcc00;
   --apple-red: #ff3b30;
 
-  /* Light Theme */
-  --background: #f8f9fa;
-  --surface: #ffffff;
-  --surface-elevated: #ffffff;
-  --foreground: #1d1d1f;
-  --foreground-secondary: #86868b;
-  --foreground-tertiary: #a1a1a6;
-  --border: #e5e5e7;
-  --border-secondary: #f2f2f7;
+  /* 3. Refined Color Contrast System - WCAG AAA */
+  --text-primary: rgba(0, 0, 0, 0.95);
+  --text-secondary: rgba(0, 0, 0, 0.75);
+  --text-tertiary: rgba(0, 0, 0, 0.55);
 
-  /* Gradient Colors */
-  --gradient-start: #667eea;
-  --gradient-middle: #764ba2;
-  --gradient-end: #f093fb;
-  --gradient-accent: #f5576c;
-  --gradient-secondary: #4facfe;
+  --bg-base: #ffffff;
+  --bg-surface: #fafafa;
+  --bg-elevated: #ffffff;
+  --bg-overlay: rgba(255, 255, 255, 0.9);
+
+  /* 4. macOS-Style Border System */
+  --border-primary: rgba(0, 0, 0, 0.1);
+  --border-secondary: rgba(0, 0, 0, 0.05);
+  --border-hairline: rgba(0, 0, 0, 0.04);
+  
+  /* Double Border System */
+  --border-inner: rgba(255, 255, 255, 0.8);
+  --border-outer: rgba(0, 0, 0, 0.1);
+  --border-inner-dark: rgba(255, 255, 255, 0.1);
+  --border-outer-dark: rgba(255, 255, 255, 0.1);
+
+  /* 5. Enhanced Blur & Transparency System */
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 24px;
+  --blur-xl: 40px;
+
+  --surface-opacity-light: 0.7;
+  --surface-opacity-medium: 0.85;
+  --surface-opacity-heavy: 0.95;
+
+  /* 6. Refined Shadow System */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+
+  --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.15);
+  --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.15);
+
+  /* 7. Z-index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark Theme */
-    --background: #000000;
-    --surface: #1c1c1e;
-    --surface-elevated: #2c2c2e;
-    --foreground: #ffffff;
-    --foreground-secondary: #8e8e93;
-    --foreground-tertiary: #48484a;
-    --border: #38383a;
-    --border-secondary: #1c1c1e;
+.dark {
+  /* Dark Theme Overrides */
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-tertiary: rgba(255, 255, 255, 0.55);
 
-    /* Gradient Colors - Darker variants */
-    --gradient-start: #4c63d2;
-    --gradient-middle: #5a4b7c;
-    --gradient-end: #b85fc4;
-    --gradient-accent: #d43c5c;
-    --gradient-secondary: #3a8bd9;
-  }
+  --bg-base: #0a0a0a;
+  --bg-surface: #141414;
+  --bg-elevated: #1f1f1f;
+  --bg-overlay: rgba(20, 20, 20, 0.9);
+
+  /* Dark mode borders - critical for surface differentiation */
+  --border-primary: rgba(255, 255, 255, 0.15);
+  --border-secondary: rgba(255, 255, 255, 0.08);
+  --border-hairline: rgba(0, 0, 0, 0.5);
+  
+  /* Dark mode double borders */
+  --border-inner: rgba(255, 255, 255, 0.1);
+  --border-outer: rgba(255, 255, 255, 0.05);
+
+  /* Dark mode shadows - deeper and more dramatic */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 30px rgba(0, 0, 0, 0.5);
+
+  --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.25);
+  --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.25);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-surface: var(--surface);
-  --color-surface-elevated: var(--surface-elevated);
-  --color-foreground: var(--foreground);
-  --color-foreground-secondary: var(--foreground-secondary);
-  --color-foreground-tertiary: var(--foreground-tertiary);
-  --color-border: var(--border);
-  --color-border-secondary: var(--border-secondary);
+  /* Typography */
+  --font-family-base: var(--font-family-base);
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+  --font-weight-extrabold: var(--font-weight-extrabold);
+
+  /* Text sizes */
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-4xl: var(--text-4xl);
+
+  /* Colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-overlay: var(--bg-overlay);
 
   /* Apple Watch OS Colors */
   --color-apple-blue: var(--apple-blue);
@@ -68,88 +145,223 @@
   --color-apple-yellow: var(--apple-yellow);
   --color-apple-red: var(--apple-red);
 
-  /* Gradient Colors */
-  --color-gradient-start: var(--gradient-start);
-  --color-gradient-middle: var(--gradient-middle);
-  --color-gradient-end: var(--gradient-end);
-  --color-gradient-accent: var(--gradient-accent);
-  --color-gradient-secondary: var(--gradient-secondary);
+  /* Border System */
+  --color-border-primary: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+  --color-border-hairline: var(--border-hairline);
+  
+  /* Double Border System */
+  --color-border-inner: var(--border-inner);
+  --color-border-outer: var(--border-outer);
 
-  --font-sans: var(--font-geist-sans);
+  /* Blur & Transparency */
+  --blur-xs: var(--blur-xs);
+  --blur-sm: var(--blur-sm);
+  --blur-md: var(--blur-md);
+  --blur-lg: var(--blur-lg);
+  --blur-xl: var(--blur-xl);
+
+  --surface-opacity-light: var(--surface-opacity-light);
+  --surface-opacity-medium: var(--surface-opacity-medium);
+  --surface-opacity-heavy: var(--surface-opacity-heavy);
+
+  /* Shadow System */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-primary: var(--shadow-primary);
+  --shadow-success: var(--shadow-success);
+
+  /* Z-index */
+  --z-dropdown: var(--z-dropdown);
+  --z-sticky: var(--z-sticky);
+  --z-fixed: var(--z-fixed);
+  --z-modal-backdrop: var(--z-modal-backdrop);
+  --z-modal: var(--z-modal);
+  --z-popover: var(--z-popover);
+  --z-tooltip: var(--z-tooltip);
+
+  /* Legacy support */
+  --color-background: var(--bg-base);
+  --color-surface: var(--bg-surface);
+  --color-surface-elevated: var(--bg-elevated);
+  --color-foreground: var(--text-primary);
+  --color-foreground-secondary: var(--text-secondary);
+  --color-foreground-tertiary: var(--text-tertiary);
+  --color-border: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+
+  --font-sans: var(--font-family-base);
   --font-mono: var(--font-geist-mono);
 }
 
+/* 8. Performance Optimizations */
 * {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* GPU acceleration for animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 9. Typography System */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: var(--font-weight-normal);
+  background: var(--bg-base);
+  color: var(--text-primary);
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* Gradient Blob Backgrounds */
-body::before,
-body::after {
-  content: '';
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+}
+
+/* 10. Enhanced Blob Background System */
+.blob-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  overflow: hidden;
   z-index: -1;
-  opacity: 0.6;
+  pointer-events: none;
+  contain: layout style paint;
 }
 
-body::before {
-  background: radial-gradient(
-    circle at 20% 80%,
-    rgba(102, 126, 234, 0.15) 0%,
-    transparent 50%
-  );
-  animation: blob1 20s infinite ease-in-out;
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.30;
+  transition: opacity 0.3s ease;
 }
 
-body::after {
-  background: radial-gradient(
-    circle at 80% 20%,
-    rgba(240, 147, 251, 0.15) 0%,
-    transparent 50%
-  );
-  animation: blob2 25s infinite ease-in-out reverse;
+.blob-1 {
+  width: 600px;
+  height: 600px;
+  background-color: #FF6B95; /* Pink */
+  top: -200px;
+  right: -200px;
 }
 
-@keyframes blob1 {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(30px, -50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
+.blob-2 {
+  width: 700px;
+  height: 700px;
+  background-color: #7B68EE; /* Purple */
+  bottom: -300px;
+  left: -300px;
 }
 
-@keyframes blob2 {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(-40px, 40px) scale(1.2);
-  }
+.blob-3 {
+  width: 400px;
+  height: 400px;
+  background-color: #61DBFB; /* Cyan */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Enhanced animations for interactive elements */
+/* Dark mode blob adjustments */
+.dark .blob-1 {
+  background-color: #FF8FA3; /* Lighter pink for dark mode */
+}
+
+.dark .blob-2 {
+  background-color: #9B8AFF; /* Lighter purple for dark mode */
+}
+
+.dark .blob-3 {
+  background-color: #7DE5FF; /* Lighter cyan for dark mode */
+}
+
+/* 11. Surface and Component Systems */
+.surface-card {
+  background: rgba(255, 255, 255, var(--surface-opacity-heavy));
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  border: 1px solid var(--border-inner);
+  box-shadow: 
+    0 0 0 1px var(--border-outer),
+    var(--shadow-md);
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .surface-card {
+  background: rgba(30, 30, 30, var(--surface-opacity-heavy));
+}
+
+.surface-border {
+  position: relative;
+  border: 1px solid var(--border-inner);
+  box-shadow:
+    0 0 0 1px var(--border-outer),
+    var(--shadow-md);
+  border-radius: 8px;
+}
+
+.dark .surface-border {
+  box-shadow:
+    0 0 0 1px var(--border-outer),
+    var(--shadow-md);
+}
+
+.top-navigation {
+  position: sticky;
+  top: 0;
+  background: var(--bg-overlay);
+  backdrop-filter: blur(var(--blur-lg)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(180%);
+  border-bottom: 1px solid var(--border-primary);
+  box-shadow: var(--shadow-sm);
+  z-index: var(--z-sticky);
+}
+
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-inner);
+  box-shadow:
+    0 0 0 1px var(--border-outer),
+    var(--shadow-md);
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px var(--border-outer),
+    0 0 0 2px var(--border-inner),
+    var(--shadow-lg);
+}
+
+.card-container {
+  contain: layout style;
+}
+
+/* 12. Animation System */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -160,7 +372,7 @@ body::after {
 @keyframes slideInFromLeft {
   from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
@@ -168,53 +380,6 @@ body::after {
   }
 }
 
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(0, 122, 255, 0.6);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.animate-slide-in-left {
-  animation: slideInFromLeft 0.5s ease-out forwards;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-/* Smooth transitions for theme switching */
-* {
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Enhanced focus states for accessibility */
-*:focus-visible {
-  outline: 2px solid var(--apple-blue);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
-
-/* Smooth hover effects */
-.card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-              0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-/* Loading skeleton animation */
 @keyframes shimmer {
   0% {
     background-position: -200px 0;
@@ -224,12 +389,43 @@ body::after {
   }
 }
 
+/* Animation classes with performance optimization */
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* 13. Enhanced Focus States & Accessibility */
+*:focus-visible {
+  outline: 2px solid var(--apple-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Loading skeleton with new design system */
 .skeleton {
   background: linear-gradient(90deg,
     var(--border-secondary) 0px,
-    var(--surface-elevated) 40px,
+    var(--bg-elevated) 40px,
     var(--border-secondary) 80px
   );
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite ease-in-out;
+}
+
+/* 14. Legacy Support and Overrides */
+.card-hover {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Force dark mode text color for Author button */
+.dark .author-button {
+  color: #93c5fd !important; /* blue-200 equivalent */
 }

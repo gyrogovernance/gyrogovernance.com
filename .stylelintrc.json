@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "css/no-unknown-at-rules": [
+      true,
+      {
+        "ignoreAtRules": ["theme"]
+      }
+    ]
+  }
+}
