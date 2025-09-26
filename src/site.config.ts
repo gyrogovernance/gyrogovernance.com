@@ -24,7 +24,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: 'src/assets/gyroscope.png',
+    src: 'src/assets/gyrogovernance_logo.png',
     alt: 'Gyro Governance Logo'
   },
 
@@ -48,9 +48,7 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Home', link: '/' },
-      { title: 'Research', link: '/research' },
       { title: 'About', link: '/about' },
-      { title: 'Blog', link: '/blog' },
       { title: 'Projects', link: '/projects' }
     ]
   },
@@ -122,14 +120,14 @@ export const integ: IntegrationUserConfig = {
   pagefind: true,
   // Add a random quote to the footer (default on homepage footer)
   // See: https://astro-pure.js.org/docs/integrations/advanced#web-content-render
-  quote: {
-    // https://developer.hitokoto.cn/sentence/#%E8%AF%B7%E6%B1%82%E5%9C%B0%E5%9D%80
-    // server: 'https://v1.hitokoto.cn/?c=i',
-    // target: (data) => (data as { hitokoto: string }).hitokoto || 'Error'
-    // https://github.com/lukePeavey/quotable
-    server: 'https://api.quotable.io/quotes/random?maxLength=60',
-    target: `(data) => data[0].content || 'Error'`
-  },
+  // quote: {
+  //   // https://developer.hitokoto.cn/sentence/#%E8%AF%B7%E6%B1%82%E5%9C%B0%E5%9D%80
+  //   // server: 'https://v1.hitokoto.cn/?c=i',
+  //   // target: (data) => (data as { hitokoto: string }).hitokoto || 'Error'
+  //   // https://github.com/lukePeavey/quotable
+  //   server: 'https://api.quotable.io/quotes/random?maxLength=60',
+  //   target: `(data) => data[0].content || 'Error'`
+  // },
   // UnoCSS typography
   // See: https://unocss.dev/presets/typography
   typography: {
@@ -148,24 +146,16 @@ export const integ: IntegrationUserConfig = {
       className: 'zoomable'
     }
   },
-  // Comment system
+  // Comment system - Disabled for GitHub Pages (static hosting)
   waline: {
-    enable: true,
-    // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
-    // Refer https://waline.js.org/en/guide/features/emoji.html
-    emoji: ['bmoji', 'weibo'],
-    // Refer https://waline.js.org/en/reference/client/props.html
-    additionalConfigs: {
-      // search: false,
-      pageview: true,
-      comment: true,
-      locale: {
-        reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
-      },
-      imageUploader: false
-    }
+    enable: false
+  },
+  // Add a random quote to the footer (default on homepage footer)
+  // See: https://astro-pure.js.org/docs/integrations/advanced#web-content-render
+  quote: {
+    // Disabled quote system
+    server: '',
+    target: `() => 'Quote system disabled'`
   }
 }
 
