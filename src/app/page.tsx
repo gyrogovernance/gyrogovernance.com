@@ -466,6 +466,33 @@ export default function Home() {
                         </div>
                       </div>
                     </article>
+
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                      <div className="flex items-start space-x-4">
+                        <div className="text-4xl">⚛️</div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-foreground mb-3">
+                            Quantum AI Research
+                          </h4>
+                          <p className="text-foreground-secondary mb-2 font-medium">
+                            Architecting Qubit-Tensor-Chain (QTC)
+                          </p>
+                          <p className="text-foreground-secondary mb-4">
+                            The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
+                          </p>
+                          <a
+                            href="https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                            aria-label="View Quantum AI Research on Notion (opens in new tab)"
+                          >
+                            <NotionIcon className="w-4 h-4 mr-2" />
+                            Notion Documentation
+                          </a>
+                        </div>
+                      </div>
+                    </article>
                   </div>
                 </div>
 
