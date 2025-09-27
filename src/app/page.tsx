@@ -133,20 +133,24 @@ export default function Home() {
                 </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-start space-x-4">
-              <div className="text-4xl">🔬</div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-3">
-                  Gyroscopic Alignment Research Lab
-                </h3>
-                <p className="text-foreground-secondary mb-4">
-                  Mathematical Physics Foundations
-                </p>
+            <div className="flex h-full">
+              <div className="flex items-center justify-center mr-4">
+                <div className="text-8xl">💫</div>
+              </div>
+              <div className="flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Mathematical Physics Foundations
+                  </h3>
+                  <p className="text-foreground-secondary">
+                    Gyroscopic Alignment Research Lab
+                  </p>
+                </div>
                 <a
                   href="https://github.com/gyrogovernance/gyroscopic-alignment-research-lab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
                   aria-label="Visit Gyroscopic Alignment Research Lab (opens in new tab)"
                 >
                   <GitHubIcon className="w-4 h-4 mr-2" />
@@ -157,20 +161,24 @@ export default function Home() {
           </article>
 
           <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-start space-x-4">
-              <div className="text-4xl">🧠</div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-3">
-                  Gyroscopic Alignment Development Lab
-                </h3>
-                <p className="text-foreground-secondary mb-4">
-                  Artificial Superintelligence Architecture (ASI/AGI)
-                </p>
+            <div className="flex h-full">
+              <div className="flex items-center justify-center mr-4">
+                <div className="text-8xl">👶</div>
+              </div>
+              <div className="flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Artificial Superintelligence Architecture (ASI/AGI)
+                  </h3>
+                  <p className="text-foreground-secondary">
+                    Gyroscopic Alignment Development Lab
+                  </p>
+                </div>
                 <a
                   href="https://github.com/gyrogovernance/gyroscopic-alignment-development-lab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
                   aria-label="Visit Gyroscopic Alignment Development Lab (opens in new tab)"
                 >
                   <GitHubIcon className="w-4 h-4 mr-2" />
@@ -197,7 +205,15 @@ export default function Home() {
                   <div className="grid md:grid-cols-1 gap-6">
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">🚶</div>
+                        <div className="flex-shrink-0">
+                          <Image 
+                            src="/assets/the_walk_cover.jpg" 
+                            alt="The Walk Newsletter Cover" 
+                            width={200}
+                            height={200}
+                            className="h-50 w-auto object-cover rounded-lg shadow-md border border-border/50"
+                          />
+                        </div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             The Walk
@@ -229,7 +245,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">💡</div>
+                        <div className="text-8xl">🍟</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Smart Bites
@@ -253,7 +269,7 @@ export default function Home() {
 
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">🛡️</div>
+                        <div className="text-8xl">🛡️</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Crisis Resolutions
@@ -289,7 +305,7 @@ export default function Home() {
                         style={{ backgroundImage: 'url(/assets/clean-dataset.jpg)' }}
                       ></div>
                       <div className="relative z-10 flex items-start space-x-4">
-                        <div className="text-4xl">🧹</div>
+                        <div className="text-4xl">🌟</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Clean
@@ -329,7 +345,7 @@ export default function Home() {
                         style={{ backgroundImage: 'url(/assets/pure-dataset.jpg)' }}
                       ></div>
                       <div className="relative z-10 flex items-start space-x-4">
-                        <div className="text-4xl">✨</div>
+                        <div className="text-4xl">🪷</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Pure
@@ -445,7 +461,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-1 gap-6">
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">📚</div>
+                        <div className="text-6xl">🧠</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Safe Superintelligence by Design
@@ -469,7 +485,7 @@ export default function Home() {
 
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-4xl">⚛️</div>
+                        <div className="text-6xl">⚛️</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Quantum AI Research

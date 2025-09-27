@@ -1,26 +1,22 @@
+import Image from "next/image";
+import LinkedInIcon from "@/components/icons/LinkedInIcon";
+
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
       <div className="animate-fade-in-up">
         <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-center">
           <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
-            About Gyro Governance
+            About
           </span>
         </h1>
 
         {/* Intro Section */}
         <section className="mb-12 animate-fade-in-up">
-          <div className="flex items-center justify-center mb-6">
-            <div className="text-12xl mr-4"></div>
-            <h2 className="text-2xl font-semibold text-foreground">
-              Introduction
-            </h2>
-          </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <p className="text-foreground-secondary mb-4 leading-relaxed text-lg font-semibold">
-              Gyro Governance specializes in alignment and governance research for artificial intelligence, 
-              with a focus on mathematical frameworks derived from physics principles. Established in 2013, 
-              the work bridges theoretical foundations with practical implementation strategies.
+            <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
+              Gyro Governance is a Lab Established in 2013,specializing in Artificial Intelligence Research and Development, 
+              with a focus on Alignment, and Governance, through Mathematical Physics Foundations.
             </p>
             <p className="text-foreground-secondary mb-4 leading-relaxed">
               The research addresses critical challenges in machine learning systems through 
@@ -38,8 +34,7 @@ export default function About() {
         {/* Key Developments Section */}
         <section className="mb-12 animate-fade-in-up">
           <div className="flex items-center justify-center mb-6">
-            <div className="text-12xl mr-4">🎯</div>
-            <h2 className="text-2xl font-semibold text-foreground">
+            <h2 className="text-2xl font-semibold text-foreground-secondary">
               Key Developments
             </h2>
           </div>
@@ -149,21 +144,65 @@ export default function About() {
         <section className="mb-12 animate-fade-in-up">
           <div className="flex items-center justify-center mb-6">
             <div className="text-12xl mr-4"></div>
-            <h2 className="text-2xl font-semibold text-foreground">
+            <h2 className="text-2xl font-semibold text-foreground-secondary">
               Research Focus
             </h2>
           </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <p className="text-foreground-secondary mb-4 leading-relaxed text-lg font-semibold">
+            <p className="text-foreground-secondary mb-4 leading-relaxed text-xl font-semibold">
               The research combines mathematical rigor with practical engineering to address 
-              fundamental challenges in machine intelligence. This interdisciplinary approach 
-              draws from physics, philosophy, and systems theory to create robust solutions.
+              fundamental challenges in machine intelligence, such as AI Risks, Hallucinations, 
+              Sycophancy, and Bias. 
+              This interdisciplinary approach draws from Physics, Philosophy, and Systems Theory
+              to create robust solutions, and governance models aligned with the UN Sustainable Development Goals.
             </p>
             <p className="text-foreground-secondary leading-relaxed">
               Current projects explore superintelligence architectures, behavioral alignment 
               mechanisms, and governance protocols that prioritize transparency and human values. 
               All developments are documented through open-source repositories and educational resources.
             </p>
+          </div>
+        </section>
+
+        {/* Founder Section */}
+        <section className="mb-12 animate-fade-in-up">
+          <div className="flex items-center justify-center mb-6">
+            <h2 className="text-2xl font-semibold text-foreground-secondary">
+              Founder & AI Governance Lead
+            </h2>
+          </div>
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
+            <div className="flex h-full">
+              <div className="flex items-center justify-center mr-6">
+                <Image 
+                  src="/assets/Basil_Korompilias.png" 
+                  alt="Basil Korompilias" 
+                  width={120}
+                  height={120}
+                  className="w-45 h-45 object-cover rounded-full shadow-md border border-border/50"
+                />
+              </div>
+              <div className="flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Basil Korompilias
+                  </h3>
+                  <p className="text-foreground-secondary leading-relaxed">
+                    AI Governance Lead with over two decades of multidisciplinary experience spanning product design, change management and applied research.
+                  </p>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/korompilias"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
+                  aria-label="Visit Basil Korompilias LinkedIn profile (opens in new tab)"
+                >
+                  <LinkedInIcon className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
