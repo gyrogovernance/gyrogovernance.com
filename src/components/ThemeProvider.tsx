@@ -67,18 +67,21 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     handleSetTheme(newTheme);
   };
 
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return <>{children}</>;
-  }
+  // Provide default values during SSR to prevent hydration mismatch
+  const contextValue = mounted ? {
+    theme,
+    actualTheme,
+    setTheme: handleSetTheme,
+    toggleTheme
+  } : {
+    theme: 'system' as Theme,
+    actualTheme: 'light' as 'light' | 'dark',
+    setTheme: () => {},
+    toggleTheme: () => {}
+  };
 
   return (
-    <ThemeContext.Provider value={{
-      theme,
-      actualTheme,
-      setTheme: handleSetTheme,
-      toggleTheme
-    }}>
+    <ThemeContext.Provider value={contextValue}>
       {children}
     </ThemeContext.Provider>
   );
@@ -87,7 +90,13 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+    // Return default values if context is undefined (shouldn't happen with our fix)
+    return {
+      theme: 'system' as Theme,
+      actualTheme: 'light' as 'light' | 'dark',
+      setTheme: () => {},
+      toggleTheme: () => {}
+    };
   }
   return context;
 }

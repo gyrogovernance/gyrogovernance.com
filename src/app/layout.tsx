@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import Script from 'next/script';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -140,10 +141,13 @@ export default function RootLayout({
                   className="flex items-center focus:outline-none rounded p-1 hover:opacity-80 transition-opacity duration-300"
                   aria-label="Gyro Governance - Home"
                 >
-                  <img 
+                  <Image 
                     src="/assets/gyrogovernance_logo.png" 
                     alt="Gyro Governance Logo" 
+                    width={40}
+                    height={40}
                     className="h-10 w-10"
+                    priority
                   />
                 </Link>
               </div>
@@ -188,9 +192,11 @@ export default function RootLayout({
             <div className="text-center">
               <p className="text-foreground-secondary font-medium">BASIL KOROMPILIAS | 2025 | CC BY-SA 4.0</p>
               <div className="mt-4 flex justify-center">
-                <img 
+                <Image 
                   src="/assets/gyrogovernance_stamp.svg" 
                   alt="Gyro Governance Logo" 
+                  width={120}
+                  height={120}
                   className="h-30 w-30 opacity-30 hover:opacity-60 transition-opacity duration-200"
                 />
               </div>

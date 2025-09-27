@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import GitHubIcon from "@/components/icons/GitHubIcon";
 import ExternalLinkIcon from "@/components/icons/ExternalLinkIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
@@ -373,10 +374,12 @@ export default function Home() {
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
-                          <img 
+                          <Image 
                             src="/assets/AIQ_Cover.jpg" 
                             alt="AI Quality Governance Cover" 
-                            className="w 50 h-60 object-cover rounded-lg shadow-md border border-border/50"
+                            width={200}
+                            height={240}
+                            className="w-50 h-60 object-cover rounded-lg shadow-md border border-border/50"
                           />
                         </div>
                         <div className="flex-1">
@@ -403,9 +406,11 @@ export default function Home() {
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
-                          <img 
+                          <Image 
                             src="/assets/AI_Canon_Cover.jpg" 
                             alt="AI Canon Cover" 
+                            width={160}
+                            height={240}
                             className="w-40 h-60 object-cover rounded-lg shadow-md border border-border/50"
                           />
                         </div>
