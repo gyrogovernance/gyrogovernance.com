@@ -15,7 +15,7 @@ export default function About() {
         <section className="mb-12 animate-fade-in-up">
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
             <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
-              Gyro Governance is a Lab Established in 2013,specializing in Artificial Intelligence Research and Development, 
+              Gyro Governance is a Lab Established in 2013, specializing in Artificial Intelligence Research and Development, 
               with a focus on Alignment, and Governance, through Mathematical Physics Foundations.
             </p>
             <p className="text-foreground-secondary mb-4 leading-relaxed">
