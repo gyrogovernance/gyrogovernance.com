@@ -192,7 +192,7 @@ export default function RootLayout({
                   <footer className="bg-surface-elevated/50 backdrop-blur-sm border-t border-border mt-16" role="contentinfo">
           <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <p className="text-foreground-secondary font-medium">BASIL KOROMPILIAS | 2025 | CC BY-SA 4.0</p>
+              <p className="text-foreground-secondary font-medium">GYRO GOVERNANCE | 2025 | CC BY-SA 4.0</p>
               <div className="mt-4 flex justify-center">
                 <Image 
                   src="/assets/gyrogovernance_stamp.svg" 
