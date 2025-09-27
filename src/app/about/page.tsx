@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
+import EmailIcon from "@/components/icons/EmailIcon";
 
 export default function About() {
   return (
@@ -191,16 +192,34 @@ export default function About() {
                     AI Governance Lead with over two decades of multidisciplinary experience spanning product design, change management and applied research.
                   </p>
                 </div>
-                <a
-                  href="https://www.linkedin.com/in/korompilias"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
-                  aria-label="Visit Basil Korompilias LinkedIn profile (opens in new tab)"
-                >
-                  <LinkedInIcon className="w-4 h-4 mr-2" />
-                  LinkedIn
-                </a>
+                <div className="flex items-center gap-3 mt-4">
+                  <a
+                    href="https://korompilias.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                    aria-label="Visit Basil Korompilias personal website (opens in new tab)"
+                  >
+                    Website
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/korompilias"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                    aria-label="Visit Basil Korompilias LinkedIn profile (opens in new tab)"
+                  >
+                    <LinkedInIcon className="w-4 h-4 mr-2" />
+                    LinkedIn
+                  </a>
+                  <a
+                    href="mailto:basilkorompilias@gmail.com"
+                    className="inline-flex items-center justify-center w-10 h-10 bg-gray-600 hover:bg-gray-700 text-white rounded-full transition-colors duration-300"
+                    aria-label="Send email to Basil Korompilias"
+                  >
+                    <EmailIcon className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

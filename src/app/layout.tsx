@@ -6,6 +6,7 @@ import Script from 'next/script';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeToggle from '@/components/ThemeToggle';
 import StructuredData from '@/components/StructuredData';
+import GitHubIcon from '@/components/icons/GitHubIcon';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -170,13 +171,14 @@ export default function RootLayout({
                 </nav>
                 <ThemeToggle />
                 <a
-                  href="https://korompilias.github.io/"
+                  href="https://github.com/gyrogovernance"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300/50"
-                  aria-label="Visit Author's personal website (opens in new tab)"
+                  className="bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50 inline-flex items-center"
+                  aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
                 >
-                  Author
+                  <GitHubIcon className="w-4 h-4 mr-2" />
+                  GitHub
                 </a>
               </div>
             </div>
