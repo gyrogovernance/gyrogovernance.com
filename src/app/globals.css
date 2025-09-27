@@ -429,3 +429,70 @@ h1, h2, h3, h4, h5, h6 {
 .dark .author-button {
   color: #93c5fd !important; /* blue-200 equivalent */
 }
+
+/* 15. Table Dark Mode Support */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-secondary);
+  color: var(--text-primary);
+}
+
+th {
+  background: var(--bg-surface);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border-primary);
+}
+
+tr:hover {
+  background: var(--bg-surface);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Dark mode specific table overrides */
+.dark table {
+  background: var(--bg-elevated);
+  border-color: var(--border-primary);
+}
+
+.dark th {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-bottom-color: var(--border-primary);
+}
+
+.dark td {
+  color: var(--text-primary);
+  border-bottom-color: var(--border-secondary);
+}
+
+.dark tr:hover {
+  background: var(--bg-surface);
+}
+
+/* Ensure any nested tables also respect dark mode */
+.dark table table {
+  background: var(--bg-base);
+}
+
+.dark table table th {
+  background: var(--bg-surface);
+}
+
+.dark table table td {
+  background: var(--bg-elevated);
+}

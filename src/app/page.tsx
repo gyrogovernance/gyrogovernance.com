@@ -22,7 +22,7 @@ export default function Home() {
         <div className="mt-8 flex justify-center space-x-4">
           <Link
             href="/about"
-            className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50 transform "
+            className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300/50 transform hover:scale-105"
             aria-label="Learn more about Gyro Governance"
           >
             Learn More
@@ -62,43 +62,43 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 gap-6">
               {/* ChatGPT Results */}
-              <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 border border-green-200 dark:border-green-700">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
                 <h4 className="text-lg font-bold text-foreground mb-3 text-center">ChatGPT</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Overall Quality:</span>
-                    <span className="font-semibold text-green-600">67.0% → 89.1% (+32.9%)</span>
+                    <span className="font-semibold text-apple-green">67.0% → 89.1% (+32.9%)</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Structural Reasoning:</span>
-                    <span className="font-semibold text-green-600">+50.9%</span>
+                    <span className="font-semibold text-apple-green">+50.9%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Accountability:</span>
-                    <span className="font-semibold text-green-600">+62.7%</span>
+                    <span className="font-semibold text-apple-green">+62.7%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Traceability:</span>
-                    <span className="font-semibold text-green-600">+61.0%</span>
+                    <span className="font-semibold text-apple-green">+61.0%</span>
                   </div>
                 </div>
               </div>
 
               {/* Claude Sonnet Results */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
                 <h4 className="text-lg font-bold text-foreground mb-3 text-center">Claude Sonnet</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Overall Quality:</span>
-                    <span className="font-semibold text-blue-600">63.5% → 87.4% (+37.7%)</span>
+                    <span className="font-semibold text-apple-blue">63.5% → 87.4% (+37.7%)</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Structural Reasoning:</span>
-                    <span className="font-semibold text-blue-600">+67.1%</span>
+                    <span className="font-semibold text-apple-blue">+67.1%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Traceability:</span>
-                    <span className="font-semibold text-blue-600">+92.6%</span>
+                    <span className="font-semibold text-apple-blue">+92.6%</span>
                   </div>
                 </div>
               </div>
@@ -276,6 +276,94 @@ export default function Home() {
                   </div>
                 </div>
 
+                {/* Datasets Subsection */}
+                <div className="mb-12">
+                  <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
+                    Datasets
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+                        style={{ backgroundImage: 'url(/assets/clean-dataset.jpg)' }}
+                      ></div>
+                      <div className="relative z-10 flex items-start space-x-4">
+                        <div className="text-4xl">🧹</div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-foreground mb-3">
+                            Clean
+                          </h4>
+                          <p className="text-foreground-secondary mb-4">
+                            2,463 questions about Personal and Professional matters of Crisis and gives answers on how they may be Resolved.
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            <a
+                              href="https://huggingface.co/datasets/crisisresolutions/cr-qa-gwm"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Clean dataset on HuggingFace (opens in new tab)"
+                            >
+                              HuggingFace
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                            <a
+                              href="https://www.kaggle.com/datasets/korompilias/good-ways-model-pure-ontology-qa"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Clean dataset on Kaggle (opens in new tab)"
+                            >
+                              Kaggle
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+                        style={{ backgroundImage: 'url(/assets/pure-dataset.jpg)' }}
+                      ></div>
+                      <div className="relative z-10 flex items-start space-x-4">
+                        <div className="text-4xl">✨</div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-foreground mb-3">
+                            Pure
+                          </h4>
+                          <p className="text-foreground-secondary mb-4">
+                            216 Critical Questions and Answers for Crisis Management and Machine Learning Model Fine-Tuning.
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            <a
+                              href="https://huggingface.co/datasets/crisisresolutions/gwm-qa-pure"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Pure dataset on HuggingFace (opens in new tab)"
+                            >
+                              HuggingFace
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                            <a
+                              href="https://www.kaggle.com/datasets/korompilias/crisisresolutionscontentclean-goodwaysmodelpure"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Pure dataset on Kaggle (opens in new tab)"
+                            >
+                              Kaggle
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
                 {/* Publications Subsection */}
                 <div className="mb-12">
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
@@ -445,7 +533,7 @@ export default function Home() {
                             Humane Science Masterclass by Leonardo da Vinci
                           </h4>
                           <p className="text-foreground-secondary mb-4">
-                            Renaissance interdisciplinary insights inspiring modern thinking about AI Governance.
+                          Informing AI Research through timeless Renaissance Insights on Linear Perspective, Quantum Physics, Holograms, and the Human Proportions as the base for all Systems of Design and Governance. 
                           </p>
                           <div className="flex flex-wrap gap-3">
                             <a

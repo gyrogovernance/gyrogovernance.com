@@ -35,32 +35,81 @@ export default function About() {
           </div>
         </section>
 
-        {/* Accomplishments Section */}
+        {/* Key Developments Section */}
         <section className="mb-12 animate-fade-in-up">
           <div className="flex items-center justify-center mb-6">
-            <div className="text-12xl mr-4"></div>
+            <div className="text-12xl mr-4">🎯</div>
             <h2 className="text-2xl font-semibold text-foreground">
               Key Developments
             </h2>
           </div>
           <div className="space-y-6">
+            {/* Alignment Protocols & Diagnostics - Table Format */}
             <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
-              <div className="flex items-start space-x-4">
-                <div className="text-5xl">🎯</div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Alignment Protocols & Diagnostics
-                  </h3>
-                  <p className="text-foreground-secondary leading-relaxed">
-                    The Gyroscope Protocol demonstrates measurable improvements in language model performance: 
-                    32.9% uplift in output quality, 50.9% improvement in structural reasoning, 62.7% increase 
-                    in accountability, 61.0% in traceability, and 54.9% in behavioral integrity. These protocols 
-                    provide quantitative metrics for transparency and ethical coherence without requiring model retraining.
-                  </p>
+              <div className="flex items-center space-x-3 mb-6">
+                <span className="text-4xl">🎯</span>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">Alignment Protocols & Diagnostics</h3>
+                  <p className="text-sm text-foreground-tertiary">Gyroscope Protocol Performance Metrics</p>
                 </div>
               </div>
+              
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[600px]">
+                  <thead>
+                    <tr>
+                      <th className="text-left py-3 px-4 text-sm font-semibold text-foreground">Metric</th>
+                      <th className="text-left py-3 px-4 text-sm font-semibold text-foreground">Improvement</th>
+                      <th className="text-left py-3 px-4 text-sm font-semibold text-foreground">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border-secondary">
+                      <td className="py-3 px-4 text-foreground-secondary">Output Quality</td>
+                      <td className="py-3 px-4">
+                        <span className="font-semibold text-apple-green">+32.9%</span>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-secondary text-sm">Measurable improvement in response quality</td>
+                    </tr>
+                    <tr className="border-b border-border-secondary">
+                      <td className="py-3 px-4 text-foreground-secondary">Structural Reasoning</td>
+                      <td className="py-3 px-4">
+                        <span className="font-semibold text-apple-green">+50.9%</span>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-secondary text-sm">Enhanced logical structure and coherence</td>
+                    </tr>
+                    <tr className="border-b border-border-secondary">
+                      <td className="py-3 px-4 text-foreground-secondary">Accountability</td>
+                      <td className="py-3 px-4">
+                        <span className="font-semibold text-apple-green">+62.7%</span>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-secondary text-sm">Improved responsibility and traceability</td>
+                    </tr>
+                    <tr className="border-b border-border-secondary">
+                      <td className="py-3 px-4 text-foreground-secondary">Traceability</td>
+                      <td className="py-3 px-4">
+                        <span className="font-semibold text-apple-green">+61.0%</span>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-secondary text-sm">Better tracking of decision processes</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 px-4 text-foreground-secondary">Behavioral Integrity</td>
+                      <td className="py-3 px-4">
+                        <span className="font-semibold text-apple-green">+54.9%</span>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-secondary text-sm">Enhanced ethical consistency and alignment</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <p className="text-foreground-secondary leading-relaxed mt-4 text-sm">
+                These protocols provide quantitative metrics for transparency and ethical coherence without requiring model retraining. 
+                The Gyroscope Protocol demonstrates measurable improvements in language model performance across multiple dimensions.
+              </p>
             </div>
 
+            {/* Governance Architecture - Card Format */}
             <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
               <div className="flex items-start space-x-4">
                 <div className="text-5xl">⚖️</div>
@@ -77,6 +126,7 @@ export default function About() {
               </div>
             </div>
 
+            {/* Mathematical Physics Foundations - Card Format */}
             <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
               <div className="flex items-start space-x-4">
                 <div className="text-5xl">🔬</div>
@@ -116,6 +166,7 @@ export default function About() {
             </p>
           </div>
         </section>
+
       </div>
     </div>
   );

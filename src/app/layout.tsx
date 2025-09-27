@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import Link from "next/link";
 import Script from 'next/script';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeToggle from '@/components/ThemeToggle';
 import StructuredData from '@/components/StructuredData';
 import "./globals.css";
@@ -124,6 +125,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} antialiased`}
         >
+        <ThemeProvider>
         <div className="blob-container">
           <div className="blob blob-1"></div>
           <div className="blob blob-2"></div>
@@ -195,6 +197,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        </ThemeProvider>
       </body>
     </html>
   );
