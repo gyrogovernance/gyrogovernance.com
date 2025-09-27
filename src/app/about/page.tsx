@@ -15,8 +15,8 @@ export default function About() {
         <section className="mb-12 animate-fade-in-up">
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
             <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
-              Gyro Governance is a Lab Established in 2013, specializing in Artificial Intelligence Research and Development, 
-              with a focus on Alignment, and Governance, through Mathematical Physics Foundations.
+            Gyro Governance is a research lab established in 2013, specializing in artificial intelligence alignment 
+            and governance through mathematical physics foundations.
             </p>
             <p className="text-foreground-secondary mb-4 leading-relaxed">
               The research addresses critical challenges in machine learning systems through 
@@ -153,7 +153,7 @@ export default function About() {
               The research combines mathematical rigor with practical engineering to address 
               fundamental challenges in machine intelligence, such as AI Risks, Hallucinations, 
               Sycophancy, and Bias. 
-              This interdisciplinary approach draws from Physics, Philosophy, and Systems Theory
+              This interdisciplinary approach draws from physics, philosophy, and systems theory
               to create robust solutions, and governance models aligned with the UN Sustainable Development Goals.
             </p>
             <p className="text-foreground-secondary leading-relaxed">
@@ -176,7 +176,7 @@ export default function About() {
               <div className="flex items-center justify-center mr-6">
                 <Image 
                   src="/assets/Basil_Korompilias.png" 
-                  alt="Basil Korompilias" 
+                  alt="Basil Korompilias - Founder and AI Governance Lead at Gyro Governance" 
                   width={120}
                   height={120}
                   className="w-45 h-45 object-cover rounded-full shadow-md border border-border/50"
