@@ -6,6 +6,7 @@ import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import NotionIcon from "@/components/icons/NotionIcon";
 import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
+import { listFeaturedArticles } from "@/lib/articles";
 
 export default function Home() {
   return (
@@ -55,17 +56,17 @@ export default function Home() {
           </div>
           
           {/* Results Table */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 border border-border/50">
-            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">📊 Proven Performance Gains</h3>
-            <p className="text-foreground-secondary text-center mb-6">
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6 text-center">📊 Proven Performance Gains</h3>
+            <p className="text-foreground-secondary text-center mb-4 sm:mb-6 text-sm sm:text-base">
               Testing across multiple leading AI models shows Gyroscope delivers substantial performance improvements
             </p>
             
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-6">
               {/* ChatGPT Results */}
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                <h4 className="text-lg font-bold text-foreground mb-3 text-center">ChatGPT</h4>
-                <div className="space-y-2 text-sm">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+                <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">ChatGPT</h4>
+                <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Overall Quality:</span>
                     <span className="font-semibold text-apple-green">67.0% → 89.1% (+32.9%)</span>
@@ -86,9 +87,9 @@ export default function Home() {
               </div>
 
               {/* Claude Sonnet Results */}
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
-                <h4 className="text-lg font-bold text-foreground mb-3 text-center">Claude Sonnet</h4>
-                <div className="space-y-2 text-sm">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+                <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">Claude Sonnet</h4>
+                <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <div className="flex justify-between">
                     <span className="text-foreground-secondary">Overall Quality:</span>
                     <span className="font-semibold text-apple-blue">63.5% → 87.4% (+37.7%)</span>
@@ -598,6 +599,55 @@ export default function Home() {
                         </div>
                       </div>
                     </article>
+                  </div>
+                </div>
+
+                {/* Articles Subsection */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
+                    Articles
+                  </h3>
+                  <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
+                    {listFeaturedArticles().slice(0, 3).map((article) => (
+                      <article
+                        key={article.slug}
+                        className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300"
+                      >
+                        <div className="flex flex-col h-full">
+                          {article.coverImage && (
+                            <div className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60">
+                              <Image
+                                src={article.coverImage}
+                                alt={article.title}
+                                fill
+                                className="object-cover hover:scale-[1.02] transition-transform duration-200"
+                              />
+                            </div>
+                          )}
+                          <div className="flex-1 flex flex-col">
+                            <div className="flex items-center text-xs text-foreground-tertiary mb-2">
+                              <span className="uppercase tracking-wide">{article.category}</span>
+                              <span className="mx-2">•</span>
+                              <time dateTime={article.date}>{new Date(article.date).toLocaleDateString()}</time>
+                            </div>
+                            <h4 className="text-lg font-semibold text-foreground mb-3 hover:text-apple-blue transition-colors duration-200">
+                              <Link href={`/articles/${article.slug}`}>{article.title}</Link>
+                            </h4>
+                            <p className="text-sm text-foreground-secondary mb-4 line-clamp-3 flex-1">
+                              {article.excerpt}
+                            </p>
+                            <Link
+                              href={`/articles/${article.slug}`}
+                              className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-apple-blue/30 bg-apple-blue/10 text-apple-blue hover:text-white hover:bg-apple-blue transition-colors duration-200 font-semibold text-sm"
+                              aria-label={`Read more: ${article.title}`}
+                            >
+                              <span className="text-base">👓</span>
+                              <span>Read more</span>
+                            </Link>
+                          </div>
+                        </div>
+                      </article>
+                    ))}
                   </div>
                 </div>
               </section>

@@ -173,26 +173,27 @@ export default function About() {
             </h2>
           </div>
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <div className="flex h-full">
-              <div className="flex items-center justify-center mr-6">
+            <div className="flex flex-col md:flex-row h-full">
+              {/* Image - Above name on mobile, left side on desktop */}
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:mr-6">
                 <Image 
                   src="/assets/Basil_Korompilias.png" 
                   alt="Basil Korompilias - Founder and AI Governance Lead at Gyro Governance" 
                   width={120}
                   height={120}
-                  className="w-45 h-45 object-cover rounded-full shadow-md border border-border/50"
+                  className="w-32 h-32 md:w-45 md:h-45 object-cover rounded-full shadow-md border border-border/50"
                 />
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                  <h3 className="text-xl font-semibold text-foreground mb-3 text-center md:text-left">
                     Basil Korompilias
                   </h3>
-                  <p className="text-foreground-secondary leading-relaxed">
+                  <p className="text-foreground-secondary leading-relaxed text-center md:text-left">
                     AI Governance Lead with over two decades of multidisciplinary experience spanning product design, change management and applied research.
                   </p>
                 </div>
-                <div className="flex items-center gap-3 mt-4">
+                <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
                   <a
                     href="https://korompilias.github.io/"
                     target="_blank"
@@ -213,9 +214,10 @@ export default function About() {
                     LinkedIn
                   </a>
                   <a
-                    href="mailto:basilkorompilias@gmail.com"
+                    href="mailto:basilkorompilias@gmail.com?subject=Contact from Gyro Governance Website"
                     className="inline-flex items-center justify-center w-10 h-10 bg-gray-600 hover:bg-gray-700 text-white rounded-full transition-colors duration-300"
                     aria-label="Send email to Basil Korompilias"
+                    title="Send email to basilkorompilias@gmail.com"
                   >
                     <EmailIcon className="w-4 h-4" />
                   </a>
