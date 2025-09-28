@@ -22,29 +22,29 @@ export const articlesData: ArticleMeta[] = [
     excerpt: "A unifying governance model grounded in gyroscopic stability and core constructs from mathematical physics for robust, auditable AI systems.",
     category: "reports",
     date: "2025-09-28",
-    coverImage: "/og-image.png",
+    coverImage: "/assets/CGM_Cover.png",
     featured: true,
     tags: ["governance", "physics", "alignment"]
   },
   {
     slug: "gyroscope-ai-protocol",
-    title: "Gyroscope AI Protocol: Structured Reasoning for LLM Alignment",
-    excerpt: "A comprehensive protocol for enhancing Large Language Model performance through structured reasoning and gyroscopic alignment principles.",
-    category: "featured",
-    date: "2025-01-15",
-    coverImage: "/og-image.png",
+    title: "Gyroscope: Governance Protocol for Recursive AI Alignment",
+    excerpt: "A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint.",
+    category: "reports",
+    date: "2025-09-28",
+    coverImage: "/assets/gyroscope_cover.png",
     featured: true,
-    tags: ["AI", "protocol", "alignment", "reasoning"]
+    tags: ["governance", "alignment"]
   },
   {
     slug: "gyroscopic-superintelligence",
-    title: "Gyroscopic Superintelligence: Mathematical Foundations for AGI Architecture",
-    excerpt: "Exploring the mathematical physics foundations for Artificial General Intelligence through gyroscopic stability principles and recursive alignment.",
-    category: "featured",
-    date: "2025-01-10",
-    coverImage: "/og-image.png",
+    title: "Gyroscopic Superintelligence: A Physics-Based Architecture",
+    excerpt: "GyroSI is a complete architectural specification of intelligence as a physical system. Instead of approximating reasoning through statistical training, it encodes intelligence as recursive alignment grounded in gyroscopic physics.",
+    category: "reports",
+    date: "2025-09-28",
+    coverImage: "/assets/GyroSI_Cover.png",
     featured: true,
-    tags: ["AGI", "superintelligence", "mathematics", "physics"]
+    tags: ["superintelligence", "governance", "physics", "alignment"]
   }
 ];
 
