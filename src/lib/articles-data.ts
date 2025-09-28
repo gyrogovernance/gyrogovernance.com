@@ -32,7 +32,7 @@ export const articlesData: ArticleMeta[] = [
     excerpt: "A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint.",
     category: "reports",
     date: "2025-09-28",
-    coverImage: "/assets/gyroscope_cover.png",
+    coverImage: "/assets/Gyroscope_Cover.png",
     featured: true,
     tags: ["governance", "alignment"]
   },
