@@ -1,0 +1,120 @@
+{
+  "site_info": {
+    "name": "Gyro Governance",
+    "description": "Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations",
+    "url": "https://gyrogovernance.com",
+    "founder": "Basil Korompilias",
+    "established": 2013,
+    "license": "CC BY-SA 4.0"
+  },
+  "organization": {
+    "type": "AI Research Lab",
+    "focus_areas": [
+      "AI Alignment",
+      "AI Governance", 
+      "Mathematical Physics",
+      "ASI/AGI Development",
+      "LLM Protocols"
+    ],
+    "mission": "Advancing AI governance through innovative research and development solutions",
+    "approach": "Mathematical physics foundations for AI alignment and governance"
+  },
+  "key_projects": {
+    "gyroscope": {
+      "name": "Gyroscope Protocol",
+      "description": "LLM Alignment Protocol & Diagnostics",
+      "url": "https://github.com/gyrogovernance/gyroscope",
+      "performance_improvements": {
+        "overall_quality": "+32.9%",
+        "structural_reasoning": "+50.9%",
+        "accountability": "+62.7%",
+        "traceability": "+61.0%",
+        "behavioral_integrity": "+54.9%"
+      }
+    },
+    "research_lab": {
+      "name": "Gyroscopic Alignment Research Lab",
+      "description": "Mathematical Physics Foundations",
+      "url": "https://github.com/gyrogovernance/gyroscopic-alignment-research-lab"
+    },
+    "development_lab": {
+      "name": "Gyroscopic Alignment Development Lab", 
+      "description": "Artificial Superintelligence Architecture (ASI/AGI)",
+      "url": "https://github.com/gyrogovernance/gyroscopic-alignment-development-lab"
+    }
+  },
+  "resources": {
+    "datasets": {
+      "clean": {
+        "name": "Clean",
+        "description": "2,463 questions about Personal and Professional matters of Crisis and answers on how they may be Resolved",
+        "huggingface": "https://huggingface.co/datasets/crisisresolutions/cr-qa-gwm",
+        "kaggle": "https://www.kaggle.com/datasets/korompilias/good-ways-model-pure-ontology-qa"
+      },
+      "pure": {
+        "name": "Pure", 
+        "description": "216 Critical Questions and Answers for Crisis Management and Machine Learning Model Fine-Tuning",
+        "huggingface": "https://huggingface.co/datasets/crisisresolutions/gwm-qa-pure",
+        "kaggle": "https://www.kaggle.com/datasets/korompilias/crisisresolutionscontentclean-goodwaysmodelpure"
+      }
+    },
+    "publications": {
+      "ai_quality_governance": {
+        "title": "AI Quality Governance",
+        "subtitle": "Human Data Evaluation and Responsible AI Behavior Alignment",
+        "doi": "http://doi.org/10.17613/43wc1-mvn58"
+      },
+      "ai_canon": {
+        "title": "AI Canon",
+        "subtitle": "Sensory Ethics for Biological and Artificial Entities", 
+        "doi": "https://doi.org/10.17613/txwg-v619"
+      }
+    },
+    "guides": {
+      "smart_bites": {
+        "name": "Smart Bites",
+        "description": "Practical Prompt Engineering",
+        "url": "https://smartbites.github.io/"
+      },
+      "crisis_resolutions": {
+        "name": "Crisis Resolutions",
+        "description": "AI Safety & Risk Management",
+        "url": "https://crisisresolutions.github.io/"
+      }
+    },
+    "newsletter": {
+      "name": "The Walk",
+      "description": "A Journey of Self-Discovery, Augmented Intelligence (AI) & Good Governance",
+      "url": "https://www.linkedin.com/newsletters/the-walk-7115036597602967553/"
+    }
+  },
+  "contact": {
+    "email": "basilkorompilias@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/korompilias",
+    "personal_website": "https://korompilias.github.io/",
+    "github_organization": "https://github.com/gyrogovernance"
+  },
+  "ai_guidance": {
+    "content_interpretation": "This site focuses on AI governance, alignment, and mathematical physics approaches to AI safety. All research is open-source and emphasizes ethical AI development.",
+    "key_concepts": [
+      "Gyroscopic alignment",
+      "Mathematical physics foundations",
+      "AI governance frameworks", 
+      "LLM alignment protocols",
+      "Ethical AI development",
+      "Human-AI cooperation",
+      "Structural reasoning",
+      "AI safety and risk management"
+    ],
+    "target_audience": "AI researchers, developers, policymakers, and anyone interested in AI governance and alignment",
+    "content_license": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "update_frequency": "Regular updates with new research and resources"
+  },
+  "technical_info": {
+    "framework": "Next.js",
+    "deployment": "Static site generation",
+    "ai_friendly": true,
+    "structured_data": true,
+    "accessibility": "WCAG compliant"
+  }
+}

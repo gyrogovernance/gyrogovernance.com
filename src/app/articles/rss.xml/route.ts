@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { listArticles, getArticleBySlug } from '@/lib/articles';
+import { listArticles } from '@/lib/articles';
 
 export const dynamic = 'force-static';
 
@@ -16,7 +16,6 @@ export async function GET() {
   const site = 'https://gyrogovernance.com';
   const metas = listArticles();
   const items = metas.slice(0, 30).map((m) => {
-    const a = getArticleBySlug(m.slug);
     const link = `${site}/articles/${m.slug}`;
     return `
       <item>

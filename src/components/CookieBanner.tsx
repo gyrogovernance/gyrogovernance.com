@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
@@ -81,7 +81,7 @@ export default function CookieBanner() {
           <div className="flex-1">
             <p className="text-sm text-foreground-secondary">
               <span className="font-medium text-foreground">🍪 We use cookies to improve your experience.</span>{' '}
-              By browsing, scrolling, or clicking anywhere on this site, you're helping us understand how to make it better. 
+              By browsing, scrolling, or clicking anywhere on this site, you&apos;re helping us understand how to make it better. 
               You can also explicitly{' '}
               <button
                 onClick={acceptCookies}

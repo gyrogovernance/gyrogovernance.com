@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0">
+    <channel>
+      <title>Gyro Governance — Articles</title>
+      <link>https://gyrogovernance.com/articles</link>
+      <description>Research articles, featured insights, and reports.</description>
+      
+      <item>
+        <title>Gyroscopic Superintelligence: A Physics-Based Architecture</title>
+        <link>https://gyrogovernance.com/articles/gyroscopic-superintelligence</link>
+        <guid>https://gyrogovernance.com/articles/gyroscopic-superintelligence</guid>
+        <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
+        <description>GyroSI is a complete architectural specification of intelligence as a physical system. Instead of approximating reasoning through statistical training, it encodes intelligence as recursive alignment grounded in gyroscopic physics.</description>
+      </item>
+      <item>
+        <title>Gyroscope: Governance Protocol for Recursive AI Alignment</title>
+        <link>https://gyrogovernance.com/articles/gyroscope-ai-protocol</link>
+        <guid>https://gyrogovernance.com/articles/gyroscope-ai-protocol</guid>
+        <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
+        <description>A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint.</description>
+      </item>
+      <item>
+        <title>Common Governance Model: Gyroscopic Principles and Mathematical Physics Foundations</title>
+        <link>https://gyrogovernance.com/articles/common-governance-model</link>
+        <guid>https://gyrogovernance.com/articles/common-governance-model</guid>
+        <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
+        <description>A unifying governance model grounded in gyroscopic stability and core constructs from mathematical physics for robust, auditable AI systems.</description>
+      </item>
+    </channel>
+  </rss>

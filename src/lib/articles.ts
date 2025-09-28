@@ -64,7 +64,7 @@ export function listArticles(category?: ArticleCategory, tag?: string): ArticleM
   return items
     .slice()
     .sort((a, b) => (a.date < b.date ? 1 : -1))
-    .map(({ content, ...meta }) => meta);
+    .map(({ content, ...meta }) => meta); // eslint-disable-line @typescript-eslint/no-unused-vars
 }
 
 export function getArticleBySlug(slug: string): Article | undefined {
@@ -100,7 +100,7 @@ export function listFeaturedArticles(tag?: string): ArticleMeta[] {
   return items
     .slice()
     .sort((a, b) => (a.date < b.date ? 1 : -1))
-    .map(({ content, ...meta }) => meta);
+    .map(({ content, ...meta }) => meta); // eslint-disable-line @typescript-eslint/no-unused-vars
 }
 
 
