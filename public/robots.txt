@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://gyrogovernance.com/sitemap.xml
+Sitemap: https://gyrogovernance.com/articles/rss.xml

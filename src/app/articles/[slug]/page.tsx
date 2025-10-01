@@ -14,8 +14,9 @@ export async function generateStaticParams() {
   return metas.map((a) => ({ slug: a.slug }));
 }
 
-export function generateMetadata({ params }: { params: Params }): Metadata {
-  const article = getArticleBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
   if (!article) return { title: "Article" };
   return {
     title: article.title,
@@ -28,8 +29,9 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
   };
 }
 
-export default function ArticlePage({ params }: { params: Params }) {
-  const article = getArticleBySlug(params.slug);
+export default async function ArticlePage({ params }: { params: Promise<Params> }) {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
   if (!article) {
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
