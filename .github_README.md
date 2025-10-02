@@ -57,6 +57,7 @@ Evaluation laboratory specializing in AI safety diagnostics and assessment frame
 
 Behaviour laboratory focused on AI quality governance and tools development.
 
+Showcasing:
 Gyroscope - An Advanced LLM alignment protocol and diagnostic tools for ensuring AI safety and coherence. Delivers 30-50% improvements in quality, reasoning, accountability, traceability, and integrity across models like ChatGPT and Claude Sonnet.
 
 ---
