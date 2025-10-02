@@ -110,19 +110,19 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
               <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex h-full">
                   <div className="flex items-center justify-center mr-4">
-                    <div className="text-5xl">💫</div>
+                    <div className="text-5xl">⚡</div>
                   </div>
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
                       <h3 className="text-lg font-semibold text-foreground mb-1">
-                        Mathematical Physics Foundations
+                        Mathematical Physics Science
                       </h3>
                       <p className="text-foreground-secondary">
                         Gyroscopic Alignment Research Lab
                       </p>
                     </div>
                     <a
-                      href="https://github.com/gyrogovernance/gyroscopic-alignment-research-lab"
+                      href="https://github.com/gyrogovernance/science"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
@@ -149,11 +149,65 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                       </p>
                     </div>
                     <a
-                      href="https://github.com/gyrogovernance/gyroscopic-alignment-development-lab"
+                      href="https://github.com/gyrogovernance/superintelligence"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
                       aria-label="Visit Gyroscopic Alignment Development Lab (opens in new tab)"
+                    >
+                      View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                <div className="flex h-full">
+                  <div className="flex items-center justify-center mr-4">
+                    <div className="text-5xl">🌟</div>
+                  </div>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-1">
+                        AI Safety Diagnostics
+                      </h3>
+                      <p className="text-foreground-secondary">
+                        Gyroscopic Alignment Evaluation Lab
+                      </p>
+                    </div>
+                    <a
+                      href="https://github.com/gyrogovernance/diagnostics"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
+                      aria-label="Visit Gyroscopic Alignment Evaluation Lab (opens in new tab)"
+                    >
+                      View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                <div className="flex h-full">
+                  <div className="flex items-center justify-center mr-4">
+                    <div className="text-5xl">🧭</div>
+                  </div>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-1">
+                        AI Quality Governance
+                      </h3>
+                      <p className="text-foreground-secondary">
+                        Gyroscopic Alignment Behaviour Lab
+                      </p>
+                    </div>
+                    <a
+                      href="https://github.com/gyrogovernance/tools"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
+                      aria-label="Visit Gyroscopic Alignment Behaviour Lab (opens in new tab)"
                     >
                       View on GitHub
                     </a>

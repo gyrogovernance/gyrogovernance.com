@@ -44,7 +44,7 @@ export default function Home() {
               Making AI 30-50% Smarter and Safer by adding structured reasoning to each response.
             </p>
             <a
-              href="https://github.com/gyrogovernance/gyroscope"
+              href="https://github.com/gyrogovernance/tools"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -115,7 +115,7 @@ export default function Home() {
             <p className="text-xs text-foreground-tertiary text-center mt-4">
               Results from controlled testing using standardized evaluation metrics. 
               <a 
-                href="https://github.com/gyrogovernance/gyroscope" 
+                href="https://github.com/gyrogovernance/tools" 
                 className="underline hover:text-foreground-secondary transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,19 +136,19 @@ export default function Home() {
           <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-4">
-                <div className="text-8xl">💫</div>
+                <div className="text-8xl">⚡</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Mathematical Physics Foundations
+                    Mathematical Physics Science
                   </h3>
                   <p className="text-foreground-secondary">
                     Gyroscopic Alignment Research Lab
                   </p>
                 </div>
                 <a
-                  href="https://github.com/gyrogovernance/gyroscopic-alignment-research-lab"
+                  href="https://github.com/gyrogovernance/science"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
@@ -176,11 +176,67 @@ export default function Home() {
                   </p>
                 </div>
                 <a
-                  href="https://github.com/gyrogovernance/gyroscopic-alignment-development-lab"
+                  href="https://github.com/gyrogovernance/superintelligence"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
                   aria-label="Visit Gyroscopic Alignment Development Lab (opens in new tab)"
+                >
+                  <GitHubIcon className="w-4 h-4 mr-2" />
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+            <div className="flex h-full">
+              <div className="flex items-center justify-center mr-4">
+                <div className="text-8xl">🌟</div>
+              </div>
+              <div className="flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    AI Safety Diagnostics
+                  </h3>
+                  <p className="text-foreground-secondary">
+                    Gyroscopic Alignment Evaluation Lab
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/gyrogovernance/diagnostics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
+                  aria-label="Visit Gyroscopic Alignment Evaluation Lab (opens in new tab)"
+                >
+                  <GitHubIcon className="w-4 h-4 mr-2" />
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+            <div className="flex h-full">
+              <div className="flex items-center justify-center mr-4">
+                <div className="text-8xl">🧭</div>
+              </div>
+              <div className="flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    AI Quality Governance
+                  </h3>
+                  <p className="text-foreground-secondary">
+                    Gyroscopic Alignment Behaviour Lab
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/gyrogovernance/tools"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
+                  aria-label="Visit Gyroscopic Alignment Behaviour Lab (opens in new tab)"
                 >
                   <GitHubIcon className="w-4 h-4 mr-2" />
                   View on GitHub
@@ -528,7 +584,7 @@ export default function Home() {
                             Crisis Resolutions Podcast
                           </h4>
                           <p className="text-foreground-secondary mb-4">
-                          25 episodes exploring crisis resolution methodologies that inform AI safety protocols and behavioral alignment. 
+                          25 episodes exploring crisis resolution methodologies that inform AI safety tools and behavioral alignment. 
                           </p>
                           <div className="flex flex-wrap gap-3">
                             <a

@@ -23,7 +23,7 @@ Beyond technological innovation, the focus extends to ethical frameworks and gov
 | Traceability | **+61.0%** | Better tracking of decision processes |
 | Behavioral Integrity | **+54.9%** | Enhanced ethical consistency and alignment |
 
-These protocols provide quantitative metrics for transparency and ethical coherence without requiring model retraining. The Gyroscope Protocol demonstrates measurable improvements in language model performance across multiple dimensions.
+These tools provide quantitative metrics for transparency and ethical coherence without requiring model retraining. The Gyroscope Protocol demonstrates measurable improvements in language model performance across multiple dimensions.
 
 #### ⚖️ Governance Architecture
 
@@ -37,7 +37,7 @@ Research into fundamental mathematical frameworks that apply gyroscopic physics 
 
 The research combines mathematical rigor with practical engineering to address fundamental challenges in machine intelligence, such as AI Risks, Hallucinations, Sycophancy, and Bias. This interdisciplinary approach draws from physics, philosophy, and systems theory to create robust solutions, and governance models aligned with the UN Sustainable Development Goals.
 
-Current projects explore superintelligence architectures, behavioral alignment mechanisms, and governance protocols that prioritize transparency and human values. All developments are documented through open-source repositories and educational resources.
+Current projects explore superintelligence architectures, behavioral alignment mechanisms, and governance tools that prioritize transparency and human values. All developments are documented through open-source repositories and educational resources.
 
 ### Founder & AI Governance Lead
 
@@ -151,7 +151,7 @@ The QTC Protocol harnesses the unique properties of Quantum Computing as the fou
 #### Media
 
 **🎧 Crisis Resolutions Podcast**
-25 episodes exploring crisis resolution methodologies that inform AI safety protocols and behavioral alignment.
+25 episodes exploring crisis resolution methodologies that inform AI safety tools and behavioral alignment.
 - **Spotify**: https://open.spotify.com/show/3iJZE6wfQ4K35xBNyHhSi2?si=b000840ad8834caa
 
 **🎓 Crisis Resolutions Training**

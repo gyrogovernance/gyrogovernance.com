@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     default: "Gyro Governance - AI Research and Development",
     template: "%s | Gyro Governance"
   },
-  description: "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment protocols.",
+  description: "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment tools.",
   keywords: [
     "AI governance",
     "artificial intelligence",

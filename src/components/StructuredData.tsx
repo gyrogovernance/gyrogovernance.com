@@ -5,7 +5,7 @@ export default function StructuredData() {
     "name": "Gyro Governance",
     "url": "https://gyrogovernance.com",
     "logo": "https://gyrogovernance.com/og-image.png",
-    "description": "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment protocols.",
+    "description": "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment tools.",
     "foundingDate": "2024",
     "sameAs": [
       "https://github.com/korompilias"

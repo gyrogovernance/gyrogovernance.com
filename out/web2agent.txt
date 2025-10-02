@@ -100,7 +100,7 @@
       "Gyroscopic alignment",
       "Mathematical physics foundations",
       "AI governance frameworks", 
-      "LLM alignment protocols",
+      "LLM alignment tools",
       "Ethical AI development",
       "Human-AI cooperation",
       "Structural reasoning",

@@ -100,7 +100,7 @@ export default function About() {
               </div>
               
               <p className="text-foreground-secondary leading-relaxed mt-4 text-sm">
-                These protocols provide quantitative metrics for transparency and ethical coherence without requiring model retraining. 
+                These tools provide quantitative metrics for transparency and ethical coherence without requiring model retraining. 
                 The Gyroscope Protocol demonstrates measurable improvements in language model performance across multiple dimensions.
               </p>
             </div>
@@ -159,7 +159,7 @@ export default function About() {
             </p>
             <p className="text-foreground-secondary leading-relaxed">
               Current projects explore superintelligence architectures, behavioral alignment 
-              mechanisms, and governance protocols that prioritize transparency and human values. 
+              mechanisms, and governance tools that prioritize transparency and human values. 
               All developments are documented through open-source repositories and educational resources.
             </p>
           </div>
