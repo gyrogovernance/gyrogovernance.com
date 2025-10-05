@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     siteName: "Gyro Governance",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Gyro Governance - AI Research and Development",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gyro Governance - AI Research and Development",
     description: "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
     creator: "@gyrogovernance",
   },
   robots: {
