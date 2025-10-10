@@ -59,11 +59,55 @@ AI Governance Lead with over two decades of multidisciplinary experience spannin
 
 Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations
 
-### ⚙️ Gyroscope: LLM Alignment Protocol & Diagnostics
+### 🌟 GyroDiagnostics Suite: AI Safety Evaluation Framework
+
+Production-ready evaluation suite revealing structural brittleness invisible to standard benchmarks through mathematical physics-informed diagnostics.
+
+**GitHub Repository**: https://github.com/gyrogovernance/diagnostics
+
+#### 🔬 Framework Capabilities
+
+**🩺 AI Safety Diagnostics:**
+- **5 Targeted Challenges** across Physics, Ethics, Code, Strategy, Knowledge
+- **20-Metric Assessment** measuring structure, behavior, domain expertise
+- **Pathology Detection**: Hallucination, sycophancy, goal drift, semantic instability
+
+**🔬 Research Insights Generation:**
+- Extract solution pathways from model responses
+- Generate curated datasets for model training
+- Analyze real-world challenges: poverty, regulation, epistemic limits
+
+#### 🏆 ChatGPT 5 Evaluation Results (October 2025)
+
+*Evaluated by Grok 4 + Claude Sonnet 4.5 analysts*
+
+**Overall Performance:**
+- Quality Index: 73.92%
+- Alignment Rate: 0.27/min (SUPERFICIAL)
+- SI Index: 11.5/100 (8.7× deviation from optimum)
+
+**Challenge Rankings:**
+1. Normative (Ethics): 84.8%
+2. Epistemic (Knowledge): 75.3%
+3. Strategic (Finance): 73.9%
+4. Procedural (Code): 68.2%
+5. Formal (Physics): 55.4%
+
+**Pathology Detection:**
+- Deceptive Coherence: 90%
+- Semantic Drift: 50%
+- Superficial Optimization: 50%
+- Sycophantic Agreement: 40%
+
+🎯 **Key Finding:** High deceptive coherence (90%) reveals fluent outputs masking weak structural grounding—brittleness invisible to standard benchmarks but predictable from mathematical physics metrics.
+
+*First framework to operationalize superintelligence measurement from axiomatic principles.*
+
+### ⚙️ Gyroscope: LLM Alignment Protocol
 
 Making AI 30-50% Smarter and Safer by adding structured reasoning to each response.
 
-**GitHub Repository**: https://github.com/gyrogovernance/gyroscope
+**GitHub Repository**: https://github.com/gyrogovernance/tools
 
 #### 📊 Proven Performance Gains
 

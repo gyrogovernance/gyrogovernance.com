@@ -32,13 +32,161 @@ export default function Home() {
         </div>
       </div>
 
+      {/* GyroDiagnostics Hero Card */}
+      <div className="mb-16 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-yellow-500/10 via-orange-500/10 to-red-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-yellow-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🌟</div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              GyroDiagnostics Suite: AI Safety Evaluation Framework
+            </h2>
+            <p className="text-xl text-foreground-secondary mb-6">
+              Production-ready evaluation suite revealing structural brittleness invisible to standard benchmarks through mathematical physics-informed diagnostics.
+            </p>
+            <a
+              href="https://github.com/gyrogovernance/diagnostics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              aria-label="View GyroDiagnostics on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+          </div>
+          
+          {/* Framework Overview */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 mb-6 border border-border/50">
+            <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🔬 Framework Capabilities</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <h4 className="text-lg font-semibold text-foreground">🩺 AI Safety Diagnostics</h4>
+                <ul className="text-sm text-foreground-secondary space-y-2">
+                  <li>• <strong>5 Targeted Challenges</strong> across Physics, Ethics, Code, Strategy, Knowledge</li>
+                  <li>• <strong>20-Metric Assessment</strong> measuring structure, behavior, domain expertise</li>
+                  <li>• <strong>Pathology Detection</strong>: Hallucination, sycophancy, goal drift, semantic instability</li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-lg font-semibold text-foreground">🔬 Research Insights Generation</h4>
+                <ul className="text-sm text-foreground-secondary space-y-2">
+                  <li>• Extract solution pathways from model responses</li>
+                  <li>• Generate curated datasets for model training</li>
+                  <li>• Analyze real-world challenges: poverty, regulation, epistemic limits</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          {/* ChatGPT 5 Results */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+            <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🏆 ChatGPT 5 Evaluation Results (October 2025)</h3>
+            <p className="text-foreground-secondary text-center mb-6 text-sm">
+              Evaluated by Grok 4 + Claude Sonnet 4.5 analysts using mathematical physics-grounded metrics
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              {/* Overall Performance */}
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                <h4 className="text-base font-bold text-foreground mb-3 text-center">Overall Performance</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Quality Index:</span>
+                    <span className="font-semibold text-yellow-500">73.92%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Alignment Rate:</span>
+                    <span className="font-semibold text-orange-500">0.27/min</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">SI Index:</span>
+                    <span className="font-semibold text-red-500">11.5/100</span>
+                  </div>
+                  <div className="text-xs text-foreground-tertiary mt-2">
+                    SUPERFICIAL flag: rushed processing, 8.7× deviation from optimum
+                  </div>
+                </div>
+              </div>
+
+              {/* Challenge Rankings */}
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                <h4 className="text-base font-bold text-foreground mb-3 text-center">Challenge Rankings</h4>
+                <div className="space-y-1 text-xs">
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">1. Normative (Ethics):</span>
+                    <span className="font-semibold text-green-500">84.8%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">2. Epistemic (Knowledge):</span>
+                    <span className="font-semibold text-green-500">75.3%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">3. Strategic (Finance):</span>
+                    <span className="font-semibold text-yellow-500">73.9%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">4. Procedural (Code):</span>
+                    <span className="font-semibold text-orange-500">68.2%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">5. Formal (Physics):</span>
+                    <span className="font-semibold text-red-500">55.4%</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Pathology Detection */}
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                <h4 className="text-base font-bold text-foreground mb-3 text-center">Pathology Detection</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Deceptive Coherence:</span>
+                    <span className="font-semibold text-red-500">90%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Semantic Drift:</span>
+                    <span className="font-semibold text-orange-500">50%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Superficial Optimization:</span>
+                    <span className="font-semibold text-orange-500">50%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground-secondary">Sycophantic Agreement:</span>
+                    <span className="font-semibold text-yellow-500">40%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-lg border border-yellow-500/20">
+              <p className="text-sm text-foreground-secondary text-center">
+                <strong>🎯 Key Finding:</strong> High deceptive coherence (90%) reveals fluent outputs masking weak structural grounding—brittleness invisible to standard benchmarks but predictable from mathematical physics metrics.
+              </p>
+            </div>
+            
+            <p className="text-xs text-foreground-tertiary text-center mt-4">
+              First framework to operationalize superintelligence measurement from axiomatic principles.
+              <a 
+                href="https://github.com/gyrogovernance/diagnostics" 
+                className="underline hover:text-foreground-secondary transition-colors duration-200 ml-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See full methodology & results
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Gyroscope Hero Card */}
       <div className="mb-16 animate-fade-in-up">
         <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-apple-blue/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">⚙️</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Gyroscope: LLM Alignment Protocol & Diagnostics
+              Gyroscope: LLM Alignment Protocol
             </h2>
             <p className="text-xl text-foreground-secondary mb-6">
               Making AI 30-50% Smarter and Safer by adding structured reasoning to each response.
@@ -113,7 +261,7 @@ export default function Home() {
             </div>
             
             <p className="text-xs text-foreground-tertiary text-center mt-4">
-              Results from controlled testing using standardized evaluation metrics. 
+              Results from controlled testing using standardized evaluation metrics.{" "}
               <a 
                 href="https://github.com/gyrogovernance/tools" 
                 className="underline hover:text-foreground-secondary transition-colors duration-200"
