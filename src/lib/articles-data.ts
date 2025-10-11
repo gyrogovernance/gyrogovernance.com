@@ -17,6 +17,22 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "chatgpt5-vs-claude45-diagnostics",
+    "title": "Superintelligence Index: ChatGPT 5 vs Claude 4.5 Score Below 14/100 in AI Safety Diagnostics",
+    "excerpt": "GyroDiagnostics framework exposes critical structural differences between frontier models invisible to standard benchmarks.",
+    "category": "reports",
+    "date": "2025-10-11",
+    "coverImage": "/assets/chatgpt5_claude45_cover.png",
+    "tags": [
+      "superintelligence-index",
+      "diagnostics",
+      "safety",
+      "evaluation",
+      "ai-risks"
+    ],
+    "featured": true
+  },
+  {
     "slug": "gyroscopic-superintelligence",
     "title": "Gyroscopic Superintelligence: A Physics-Based Architecture",
     "excerpt": "GyroSI is a complete architectural specification of intelligence as a physical system. Instead of approximating reasoning through statistical training, it encodes intelligence as recursive alignment grounded in gyroscopic physics.",
