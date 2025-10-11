@@ -18,13 +18,42 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) return { title: "Article" };
+  
+  const ogImage = article.coverImage || "/og-image.png";
+  const articleUrl = `https://gyrogovernance.com/articles/${slug}`;
+  
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: articleUrl,
+    },
     openGraph: {
       title: article.title,
       description: article.excerpt,
-      images: article.coverImage ? [{ url: article.coverImage }] : undefined,
+      url: articleUrl,
+      siteName: "Gyro Governance",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+          type: "image/png",
+        },
+      ],
+      locale: "en_US",
+      type: "article",
+      publishedTime: article.date,
+      authors: ["Gyro Governance"],
+      tags: article.tags,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+      images: [ogImage],
+      creator: "@gyrogovernance",
     },
   };
 }
