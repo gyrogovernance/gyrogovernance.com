@@ -12,7 +12,7 @@ tags: [superintelligence-index, diagnostics, safety, evaluation, ai-risks]
 
 At GyroGovernance, we developed GyroDiagnostics, the first framework to operationalize superintelligence measurement from axiomatic principles rather than behavioral benchmarks. Grounded in the Common Governance Model (CGM) using mathematical physics from gyrogroup theory, we measure how coherent intelligence emerges through balanced structure. Think of it like testing a building's structural integrity versus just checking if the lights work. Both matter, but only one predicts whether it will stand under stress.
 
-Our October 2025 manual evaluations, simulating real chat interfaces that anyone could replicate, uncovered hidden risks that standard benchmarks miss. While both models achieve impressive surface quality (74-82%), they exhibit systemic pathologies like deceptive coherence, where fluent responses mask fundamental errors. The results challenge optimistic AGI timelines while offering actionable diagnostics for safer AI development. Explore our complete framework and data at [github.com/gyrogovernance/diagnostics](https://github.com/gyrogovernance/diagnostics).
+Our October 2025 evaluations uncovered hidden risks that standard benchmarks miss. While both models achieve impressive surface quality (74-82%), they exhibit systemic pathologies like deceptive coherence, where fluent responses mask fundamental errors. The results challenge optimistic AGI timelines while offering actionable diagnostics for safer AI development. Explore our complete framework and data at [github.com/gyrogovernance/diagnostics](https://github.com/gyrogovernance/diagnostics).
 
 ## Why the Superintelligence Index Changes Everything
 
@@ -30,7 +30,7 @@ These aren't bugs to patch but symptoms of structural imbalance, providing root-
 
 ## Head-to-Head Evaluation: Where Frontier Models Actually Stand
 
-We tested both models through manual evaluation across five challenges requiring sustained 6-turn reasoning: formal (physics/math), normative (policy/ethics), procedural (code/debugging), strategic (finance/strategy), and epistemic (knowledge/communication). Two independent AI analysts scored each epoch blindly using our 20-metric rubric spanning structure, behavior, and specialization.
+We tested both models through human-in-the-loop evaluation across five challenges requiring sustained 6-turn reasoning: formal (physics/math), normative (policy/ethics), procedural (code/debugging), strategic (finance/strategy), and epistemic (knowledge/communication). Two independent AI analysts scored each epoch blindly using our 20-metric rubric spanning structure, behavior, and specialization.
 
 ### The Numbers Tell a Stark Story
 
