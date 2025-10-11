@@ -6,6 +6,7 @@
   "/articles/rss.xml/route": "app/articles/rss.xml/route.js",
   "/cookie-policy/page": "app/cookie-policy/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/news-sitemap.xml/route": "app/news-sitemap.xml/route.js",
   "/page": "app/page.js",
   "/privacy-policy/page": "app/privacy-policy/page.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js"

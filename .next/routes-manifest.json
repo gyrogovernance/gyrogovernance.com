@@ -85,6 +85,12 @@
       "namedRegex": "^/favicon\\.ico(?:/)?$"
     },
     {
+      "page": "/news-sitemap.xml",
+      "regex": "^/news\\-sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/news\\-sitemap\\.xml(?:/)?$"
+    },
+    {
       "page": "/privacy-policy",
       "regex": "^/privacy\\-policy(?:/)?$",
       "routeKeys": {},

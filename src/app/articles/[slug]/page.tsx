@@ -4,6 +4,7 @@ import { getArticleBySlug, listArticles } from "@/lib/articles";
 import type { Metadata } from "next";
 import { marked } from "marked";
 import CopyControls from "@/components/CopyControls";
+import ArticleStructuredData from "@/components/ArticleStructuredData";
 
 interface Params {
   slug: string;
@@ -83,13 +84,24 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   const html = typeof rendered === "string" ? rendered : "";
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-      <div className="mb-6">
-        <Link href="/articles" className="text-apple-blue hover:text-apple-purple">
-          ← Back to Articles
-        </Link>
-      </div>
-      <article className="animate-fade-in-up">
+    <>
+      <ArticleStructuredData
+        title={article.title}
+        description={article.excerpt}
+        datePublished={article.date}
+        dateModified={article.date}
+        author="Gyro Governance"
+        image={article.coverImage}
+        url={`https://gyrogovernance.com/articles/${slug}`}
+        tags={article.tags}
+      />
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+        <div className="mb-6">
+          <Link href="/articles" className="text-apple-blue hover:text-apple-purple">
+            ← Back to Articles
+          </Link>
+        </div>
+        <article className="animate-fade-in-up">
         <header className="mb-6">
           <div className="flex items-center text-sm text-foreground-tertiary mb-2">
             <span className="uppercase tracking-wide">{article.category}</span>
@@ -283,5 +295,6 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         </section>
       </article>
     </div>
+    </>
   );
 }
