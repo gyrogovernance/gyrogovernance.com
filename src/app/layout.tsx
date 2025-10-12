@@ -126,6 +126,7 @@ export default function RootLayout({
             body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; }
             .critical-content { contain: layout style paint; }
             .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
+            @font-face { font-family: 'Nunito'; font-display: swap; }
           `
         }} />
         <StructuredData />
@@ -179,6 +180,8 @@ export default function RootLayout({
                     height={40}
                     className="h-10 w-10"
                     priority
+                    loading="eager"
+                    sizes="40px"
                   />
                 </Link>
               </div>

@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
+    reactRemoveProperties: process.env.NODE_ENV === 'production',
   },
   // GitHub Pages deployment - try without base path first
   // basePath: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com' : '',

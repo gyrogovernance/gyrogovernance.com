@@ -86,159 +86,27 @@ export default function Home() {
               Evaluated using ensemble analyst models with mathematical physics-grounded metrics
             </p>
             
-            {/* Model Comparison Grid */}
-            <div className="grid lg:grid-cols-2 gap-6 mb-6">
+            {/* Simplified Model Comparison */}
+            <div className="grid lg:grid-cols-2 gap-4 mb-6">
               {/* ChatGPT 5 Results */}
-              <div className="space-y-4">
-                <h4 className="text-lg font-bold text-foreground text-center pb-2 border-b border-border/50">ChatGPT 5</h4>
-                
-                {/* Overall Performance */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
-                  <h5 className="text-sm font-bold text-foreground mb-3 text-center">Overall Performance</h5>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Quality Index:</span>
-                      <span className="font-semibold text-yellow-500">73.92%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Alignment Rate:</span>
-                      <span className="font-semibold text-orange-500">0.27/min</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">SI Index:</span>
-                      <span className="font-semibold text-red-500">11.5/100</span>
-                    </div>
-                    <div className="text-xs text-foreground-tertiary mt-2">
-                      SUPERFICIAL: 8.7× deviation
-                    </div>
-                  </div>
-                </div>
-
-                {/* Challenge Rankings */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
-                  <h5 className="text-sm font-bold text-foreground mb-3 text-center">Challenge Rankings</h5>
-                  <div className="space-y-1 text-xs">
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">1. Normative:</span>
-                      <span className="font-semibold text-green-500">84.8%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">2. Epistemic:</span>
-                      <span className="font-semibold text-green-500">75.3%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">3. Strategic:</span>
-                      <span className="font-semibold text-yellow-500">73.9%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">4. Procedural:</span>
-                      <span className="font-semibold text-orange-500">68.2%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">5. Formal:</span>
-                      <span className="font-semibold text-red-500">55.4%</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Pathology Detection */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
-                  <h5 className="text-sm font-bold text-foreground mb-3 text-center">Pathology Detection</h5>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Deceptive Coherence:</span>
-                      <span className="font-semibold text-red-500">90%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Semantic Drift:</span>
-                      <span className="font-semibold text-orange-500">50%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Superficial Optimization:</span>
-                      <span className="font-semibold text-orange-500">50%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Sycophancy:</span>
-                      <span className="font-semibold text-yellow-500">40%</span>
-                    </div>
-                  </div>
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                <h4 className="text-lg font-bold text-foreground text-center mb-3">ChatGPT 5</h4>
+                <div className="text-sm space-y-1">
+                  <div className="flex justify-between"><span>Quality Index:</span><span className="font-semibold text-yellow-500">73.92%</span></div>
+                  <div className="flex justify-between"><span>Alignment Rate:</span><span className="font-semibold text-orange-500">0.27/min</span></div>
+                  <div className="flex justify-between"><span>SI Index:</span><span className="font-semibold text-red-500">11.5/100</span></div>
+                  <div className="text-xs text-foreground-tertiary mt-2">SUPERFICIAL: 8.7× deviation</div>
                 </div>
               </div>
 
               {/* Claude Sonnet 4.5 Results */}
-              <div className="space-y-4">
-                <h4 className="text-lg font-bold text-foreground text-center pb-2 border-b border-border/50">Claude Sonnet 4.5</h4>
-                
-                {/* Overall Performance */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
-                  <h5 className="text-sm font-bold text-foreground mb-3 text-center">Overall Performance</h5>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Quality Index:</span>
-                      <span className="font-semibold text-green-500">82.00%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Alignment Rate:</span>
-                      <span className="font-semibold text-green-500">0.11/min</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">SI Index:</span>
-                      <span className="font-semibold text-orange-500">12.8/100</span>
-                    </div>
-                    <div className="text-xs text-foreground-tertiary mt-2">
-                      VALID: 7.8× deviation
-                    </div>
-                  </div>
-                </div>
-
-                {/* Challenge Rankings */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
-                  <h5 className="text-sm font-bold text-foreground mb-3 text-center">Challenge Rankings</h5>
-                  <div className="space-y-1 text-xs">
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">1. Epistemic:</span>
-                      <span className="font-semibold text-green-500">90.3%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">2. Normative:</span>
-                      <span className="font-semibold text-green-500">85.8%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">3. Strategic:</span>
-                      <span className="font-semibold text-green-500">82.0%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">4. Procedural:</span>
-                      <span className="font-semibold text-yellow-500">74.8%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">5. Formal:</span>
-                      <span className="font-semibold text-red-500">53.6%</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Pathology Detection */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
-                  <h5 className="text-sm font-bold text-foreground mb-3 text-center">Pathology Detection</h5>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Deceptive Coherence:</span>
-                      <span className="font-semibold text-orange-500">50%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Semantic Drift:</span>
-                      <span className="font-semibold text-yellow-500">40%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Goal Misgeneralization:</span>
-                      <span className="font-semibold text-yellow-500">30%</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground-secondary">Superficial Optimization:</span>
-                      <span className="font-semibold text-yellow-500">30%</span>
-                    </div>
-                  </div>
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                <h4 className="text-lg font-bold text-foreground text-center mb-3">Claude Sonnet 4.5</h4>
+                <div className="text-sm space-y-1">
+                  <div className="flex justify-between"><span>Quality Index:</span><span className="font-semibold text-green-500">82.00%</span></div>
+                  <div className="flex justify-between"><span>Alignment Rate:</span><span className="font-semibold text-green-500">0.11/min</span></div>
+                  <div className="flex justify-between"><span>SI Index:</span><span className="font-semibold text-orange-500">12.8/100</span></div>
+                  <div className="text-xs text-foreground-tertiary mt-2">VALID: 7.8× deviation</div>
                 </div>
               </div>
             </div>

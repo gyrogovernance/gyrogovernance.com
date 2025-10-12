@@ -88,7 +88,8 @@
     },
     "logging": {},
     "compiler": {
-      "removeConsole": true
+      "removeConsole": true,
+      "reactRemoveProperties": true
     },
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
