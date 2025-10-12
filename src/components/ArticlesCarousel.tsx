@@ -112,10 +112,10 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
                   <Link
                     href={`/articles/${article.slug}`}
                     className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-apple-blue/30 bg-apple-blue/10 text-apple-blue hover:text-white hover:bg-apple-blue transition-colors duration-200 font-semibold text-sm"
-                    aria-label={`Read more: ${article.title}`}
+                    aria-label={`Read full article: ${article.title}`}
                   >
                     <span className="text-base">👓</span>
-                    <span>Read more</span>
+                    <span>Read full article</span>
                   </Link>
                 </div>
               </div>

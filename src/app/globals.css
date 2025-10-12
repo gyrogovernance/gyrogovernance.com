@@ -27,10 +27,10 @@
   --apple-yellow: #ffcc00;
   --apple-red: #ff3b30;
 
-  /* 3. Refined Color Contrast System - WCAG AAA */
-  --text-primary: rgba(0, 0, 0, 0.95);
-  --text-secondary: rgba(0, 0, 0, 0.75);
-  --text-tertiary: rgba(0, 0, 0, 0.55);
+  /* 3. Enhanced Color Contrast System - WCAG AAA */
+  --text-primary: rgba(0, 0, 0, 0.98);
+  --text-secondary: rgba(0, 0, 0, 0.85);
+  --text-tertiary: rgba(0, 0, 0, 0.65);
 
   --bg-base: #ffffff;
   --bg-surface: #fafafa;
@@ -80,9 +80,9 @@
 
 .dark {
   /* Dark Theme Overrides */
-  --text-primary: rgba(255, 255, 255, 0.95);
-  --text-secondary: rgba(255, 255, 255, 0.75);
-  --text-tertiary: rgba(255, 255, 255, 0.55);
+  --text-primary: rgba(255, 255, 255, 0.98);
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-tertiary: rgba(255, 255, 255, 0.65);
 
   --bg-base: #0a0a0a;
   --bg-surface: #141414;
@@ -209,6 +209,18 @@
   will-change: transform;
 }
 
+/* Critical above-the-fold styles */
+.critical-content {
+  contain: layout style paint;
+}
+
+/* Optimize animations for performance */
+@supports (will-change: transform) {
+  .animate-fade-in-up {
+    will-change: transform, opacity;
+  }
+}
+
 /* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -233,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* 10. Enhanced Blob Background System */
+/* 10. Blob Background System - Original Sizes, No Animation */
 .blob-container {
   position: fixed;
   top: 0;
@@ -249,9 +261,8 @@ h1, h2, h3, h4, h5, h6 {
 .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.20;
-  transition: opacity 0.3s ease;
+  filter: blur(120px);
+  opacity: 0.2;
 }
 
 .blob-1 {
@@ -405,6 +416,31 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 
+/* Improved touch targets for mobile accessibility */
+button, 
+a, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"],
+[role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure proper spacing for touch targets */
+.nav-link, 
+.mobile-nav-link {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Loading skeleton with new design system */
 .skeleton {
   background: linear-gradient(90deg,
@@ -482,6 +518,17 @@ tr:last-child td {
 
 .dark tr:hover {
   background: var(--bg-surface);
+}
+
+/* Custom responsive padding for hero blocks */
+.p-8 {
+  padding: 1.5rem; /* Reduced from default 2rem */
+}
+
+@media (max-width: 768px) {
+  .p-8 {
+    padding: 1rem; /* Much smaller on mobile */
+  }
 }
 
 /* Ensure any nested tables also respect dark mode */

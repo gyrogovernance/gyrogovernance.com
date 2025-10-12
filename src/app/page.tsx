@@ -11,7 +11,7 @@ import { listFeaturedArticles } from "@/lib/articles";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 critical-content">
       {/* Hero Section */}
       <div className="text-center mb-16 animate-fade-in-up">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">

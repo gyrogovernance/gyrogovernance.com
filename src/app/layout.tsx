@@ -14,17 +14,26 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial'],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  fallback: ['ui-monospace', 'monospace'],
 });
 
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial'],
 });
 
 export const metadata: Metadata = {
@@ -111,13 +120,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Critical CSS for above-the-fold content */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; }
+            .critical-content { contain: layout style paint; }
+            .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
+          `
+        }} />
         <StructuredData />
-        {/* Google Analytics - GDPR Compliant */}
+        {/* Google Analytics - GDPR Compliant - Non-blocking */}
         <Script
-          async
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-JKP3TVGR91"
         />
-        <Script id="google-analytics">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -170,21 +187,21 @@ export default function RootLayout({
                 <nav className="hidden md:flex space-x-1" role="navigation" aria-label="Main navigation">
                   <Link
                     href="/"
-                    className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
+                    className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none"
                     aria-label="Home page"
                   >
                     Home
                   </Link>
                   <Link
                     href="/about"
-                    className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
+                    className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none"
                     aria-label="About Gyro Governance"
                   >
                     About
                   </Link>
                   <Link
                     href="/articles"
-                    className="text-foreground-secondary hover:text-apple-blue px-3 py-2 text-sm font-bold transition-all duration-200 focus:outline-none"
+                    className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none"
                     aria-label="Articles"
                   >
                     Articles
@@ -224,23 +241,23 @@ export default function RootLayout({
               {/* Main Menu Navigation */}
               <nav className="mt-6" role="navigation" aria-label="Footer navigation">
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
-                  <Link href="/" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Home
                   </Link>
                   <span className="text-foreground-tertiary">•</span>
-                  <Link href="/about" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/about" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     About
                   </Link>
                   <span className="text-foreground-tertiary">•</span>
-                  <Link href="/articles" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/articles" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Articles
                   </Link>
                   <span className="text-foreground-tertiary">•</span>
-                  <Link href="/privacy-policy" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/privacy-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Privacy Policy
                   </Link>
                   <span className="text-foreground-tertiary">•</span>
-                  <Link href="/cookie-policy" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/cookie-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Cookie Policy
                   </Link>
                 </div>

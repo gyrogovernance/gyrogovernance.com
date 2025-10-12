@@ -17,14 +17,14 @@
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
-    "generateEtags": true,
+    "generateEtags": false,
     "pageExtensions": [
       "tsx",
       "ts",
       "jsx",
       "js"
     ],
-    "poweredByHeader": true,
+    "poweredByHeader": false,
     "compress": true,
     "images": {
       "deviceSizes": [
@@ -56,8 +56,8 @@
       "formats": [
         "image/webp"
       ],
-      "dangerouslyAllowSVG": false,
-      "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
+      "dangerouslyAllowSVG": true,
+      "contentSecurityPolicy": "default-src 'self'; script-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
       "remotePatterns": [],
       "unoptimized": true
@@ -87,7 +87,9 @@
       "keepAlive": true
     },
     "logging": {},
-    "compiler": {},
+    "compiler": {
+      "removeConsole": true
+    },
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
     "output": "export",
@@ -205,6 +207,7 @@
       "browserDebugInfoInTerminal": false,
       "optimizeRouterScrolling": false,
       "optimizePackageImports": [
+        "@heroicons/react",
         "lucide-react",
         "date-fns",
         "lodash-es",
