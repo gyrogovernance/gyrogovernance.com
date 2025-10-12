@@ -460,6 +460,12 @@ footer .nav-link {
   min-width: auto;
 }
 
+/* Pagination dots should be small */
+button[aria-label^="Go to page"] {
+  min-height: unset;
+  min-width: unset;
+}
+
 /* Loading skeleton with new design system */
 .skeleton {
   background: linear-gradient(90deg,

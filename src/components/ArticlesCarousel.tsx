@@ -72,7 +72,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
       )}
 
       {/* Articles Grid with Transition */}
-      <div className="overflow-hidden">
+      <div>
         <div
           className="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-all duration-500 ease-in-out"
           style={{
