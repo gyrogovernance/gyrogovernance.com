@@ -1,10 +1,10 @@
 ---
 title: "Common Governance Model: Gyroscopic Principles and Mathematical Physics Foundations"
 excerpt: "A unifying governance model grounded in gyroscopic stability and core constructs from mathematical physics for robust, auditable AI systems."
-category: "reports"
+category: "research"
 date: "2025-09-28"
 coverImage: "/assets/CGM_Cover.png"
-featured: true
+featured: false
 tags: [governance, physics, alignment]
 ---
 

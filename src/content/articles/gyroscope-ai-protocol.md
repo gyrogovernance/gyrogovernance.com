@@ -1,10 +1,10 @@
 ---
 title: "Gyroscope: Governance Protocol for Recursive AI Alignment"
 excerpt: "A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint."
-category: "reports"
+category: "research"
 date: "2025-09-28"
 coverImage: "/assets/Gyroscope_Img.png"
-featured: true
+featured: false
 tags: [governance, alignment]
 ---
 

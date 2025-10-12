@@ -1,10 +1,10 @@
 ---
 title: "Superintelligence Index: ChatGPT 5 vs Claude 4.5 Score Below 14/100 in AI Safety Diagnostics"
 excerpt: "GyroDiagnostics framework exposes critical structural differences between frontier models invisible to standard benchmarks."
-category: "reports"
+category: "reviews"
 date: "2025-10-11"
 coverImage: "/assets/chatgpt5_claude45_cover.png"
-featured: true
+featured: false
 tags: [superintelligence-index, diagnostics, safety, evaluation, ai-risks]
 ---
 

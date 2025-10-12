@@ -1,10 +1,10 @@
 ---
 title: "Gyroscopic Superintelligence: A Physics-Based Architecture"
 excerpt: "GyroSI is a complete architectural specification of intelligence as a physical system. Instead of approximating reasoning through statistical training, it encodes intelligence as recursive alignment grounded in gyroscopic physics."
-category: "reports"
+category: "research"
 date: "2025-09-28"
 coverImage: "/assets/GyroSI_Cover.png"
-featured: true
+featured: false
 tags: [superintelligence, governance, physics, alignment]
 ---
 

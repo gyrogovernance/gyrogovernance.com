@@ -73,7 +73,7 @@ const articlesData = [
         "slug": "chatgpt5-vs-claude45-diagnostics",
         "title": "Superintelligence Index: ChatGPT 5 vs Claude 4.5 Score Below 14/100 in AI Safety Diagnostics",
         "excerpt": "GyroDiagnostics framework exposes critical structural differences between frontier models invisible to standard benchmarks.",
-        "category": "reports",
+        "category": "reviews",
         "date": "2025-10-11",
         "coverImage": "/assets/chatgpt5_claude45_cover.png",
         "tags": [
@@ -83,13 +83,13 @@ const articlesData = [
             "evaluation",
             "ai-risks"
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "gyroscopic-superintelligence",
         "title": "Gyroscopic Superintelligence: A Physics-Based Architecture",
         "excerpt": "GyroSI is a complete architectural specification of intelligence as a physical system. Instead of approximating reasoning through statistical training, it encodes intelligence as recursive alignment grounded in gyroscopic physics.",
-        "category": "reports",
+        "category": "research",
         "date": "2025-09-28",
         "coverImage": "/assets/GyroSI_Cover.png",
         "tags": [
@@ -98,26 +98,26 @@ const articlesData = [
             "physics",
             "alignment"
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "gyroscope-ai-protocol",
         "title": "Gyroscope: Governance Protocol for Recursive AI Alignment",
         "excerpt": "A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint.",
-        "category": "reports",
+        "category": "research",
         "date": "2025-09-28",
         "coverImage": "/assets/Gyroscope_Img.png",
         "tags": [
             "governance",
             "alignment"
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "common-governance-model",
         "title": "Common Governance Model: Gyroscopic Principles and Mathematical Physics Foundations",
         "excerpt": "A unifying governance model grounded in gyroscopic stability and core constructs from mathematical physics for robust, auditable AI systems.",
-        "category": "reports",
+        "category": "research",
         "date": "2025-09-28",
         "coverImage": "/assets/CGM_Cover.png",
         "tags": [
@@ -125,14 +125,14 @@ const articlesData = [
             "physics",
             "alignment"
         ],
-        "featured": true
+        "featured": false
     }
 ];
 function getArticlesData() {
     return articlesData;
 }
 function getFeaturedArticlesData() {
-    return articlesData.filter((article)=>article.featured === true || article.category === 'featured');
+    return articlesData.filter((article)=>article.featured === true);
 }
 function getAllTagsData() {
     const tags = new Set();
@@ -176,26 +176,30 @@ const categories = [
     {
         key: "reports",
         label: "Reports"
+    },
+    {
+        key: "reviews",
+        label: "Reviews"
+    },
+    {
+        key: "research",
+        label: "Research"
     }
 ];
 function ArticlesPageClient() {
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(undefined);
-    const [selectedTag, setSelectedTag] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(undefined);
     const [page, setPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     const PAGE_SIZE = 6;
     // Get all data
     const allArticles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$articles$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getArticlesData"])();
     const featuredArticles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$articles$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFeaturedArticlesData"])();
-    const allTags = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$articles$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAllTagsData"])();
     // Update state from URL params on mount and when searchParams change
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const category = searchParams.get('category');
-        const tag = searchParams.get('tag') || undefined;
         const pageNum = Math.max(1, parseInt(searchParams.get('page') || '1', 10) || 1);
         setSelected(category || undefined);
-        setSelectedTag(tag);
         setPage(pageNum);
     }, [
         searchParams
@@ -208,28 +212,25 @@ function ArticlesPageClient() {
         if (selected === 'reports') {
             return allArticles.filter((article)=>article.category === 'reports');
         }
+        if (selected === 'reviews') {
+            return allArticles.filter((article)=>article.category === 'reviews');
+        }
+        if (selected === 'research') {
+            return allArticles.filter((article)=>article.category === 'research');
+        }
         return allArticles;
     }, [
         selected,
         allArticles,
         featuredArticles
     ]);
-    // Filter by tag if selected
-    const tagFilteredArticles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
-        if (!selectedTag) return filteredArticles;
-        return filteredArticles.filter((article)=>article.tags?.some((tag)=>tag.toLowerCase() === selectedTag.toLowerCase()));
-    }, [
-        filteredArticles,
-        selectedTag
-    ]);
     // Pagination
-    const totalPages = Math.max(1, Math.ceil(tagFilteredArticles.length / PAGE_SIZE));
-    const items = tagFilteredArticles.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+    const totalPages = Math.max(1, Math.ceil(filteredArticles.length / PAGE_SIZE));
+    const items = filteredArticles.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
     // Update URL when filters change
-    const updateURL = (newCategory, newTag, newPage)=>{
+    const updateURL = (newCategory, newPage)=>{
         const params = new URLSearchParams();
         if (newCategory) params.set('category', newCategory);
-        if (newTag) params.set('tag', newTag);
         if (newPage && newPage > 1) params.set('page', newPage.toString());
         const queryString = params.toString();
         const newURL = queryString ? `/articles?${queryString}` : '/articles';
@@ -238,16 +239,11 @@ function ArticlesPageClient() {
     const handleCategoryChange = (category)=>{
         setSelected(category);
         setPage(1);
-        updateURL(category, selectedTag, 1);
-    };
-    const handleTagChange = (tag)=>{
-        setSelectedTag(tag);
-        setPage(1);
-        updateURL(selected, tag, 1);
+        updateURL(category, 1);
     };
     const handlePageChange = (newPage)=>{
         setPage(newPage);
-        updateURL(selected, selectedTag, newPage);
+        updateURL(selected, newPage);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10",
@@ -262,12 +258,12 @@ function ArticlesPageClient() {
                             children: "Articles"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                            lineNumber: 95,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                        lineNumber: 94,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -275,17 +271,17 @@ function ArticlesPageClient() {
                         children: "Explore featured insights and quarterly reports on AI governance and alignment."
                     }, void 0, false, {
                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                        lineNumber: 99,
+                        lineNumber: 88,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                lineNumber: 93,
+                lineNumber: 82,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap gap-2 justify-center mb-6",
+                className: "flex flex-wrap gap-2 justify-center mb-8",
                 children: categories.map((c)=>{
                     const isActive = (c.key ?? undefined) === selected;
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -295,46 +291,13 @@ function ArticlesPageClient() {
                         children: c.label
                     }, c.label, false, {
                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                        lineNumber: 108,
+                        lineNumber: 97,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                lineNumber: 104,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap gap-2 justify-center mb-8",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>handleTagChange(undefined),
-                        className: "px-3 py-1.5 rounded-full text-xs font-semibold transition-colors duration-200 border " + (!selectedTag ? "bg-blue-600 text-white border-blue-600" : "bg-surface-elevated/60 text-foreground-secondary border-border hover:text-foreground"),
-                        children: "All tags"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                        lineNumber: 126,
-                        columnNumber: 9
-                    }, this),
-                    allTags.map((t)=>{
-                        const isActive = selectedTag?.toLowerCase() === t.toLowerCase();
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>handleTagChange(t),
-                            className: "px-3 py-1.5 rounded-full text-xs font-semibold transition-colors duration-200 border " + (isActive ? "bg-blue-600 text-white border-blue-600" : "bg-surface-elevated/60 text-foreground-secondary border-border hover:text-foreground"),
-                            children: [
-                                "#",
-                                t
-                            ]
-                        }, t, true, {
-                            fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                            lineNumber: 138,
-                            columnNumber: 13
-                        }, this);
-                    })
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                lineNumber: 125,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -353,7 +316,7 @@ function ArticlesPageClient() {
                                             className: "absolute inset-0 z-10"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 123,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -365,13 +328,13 @@ function ArticlesPageClient() {
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 124,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 122,
                                     columnNumber: 17
                                 }, this) : null,
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,7 +345,7 @@ function ArticlesPageClient() {
                                             children: a.category
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 135,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -390,7 +353,7 @@ function ArticlesPageClient() {
                                             children: "•"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 136,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("time", {
@@ -402,13 +365,13 @@ function ArticlesPageClient() {
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 137,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 134,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -418,12 +381,12 @@ function ArticlesPageClient() {
                                         children: a.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 144,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 143,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -431,7 +394,7 @@ function ArticlesPageClient() {
                                     children: a.excerpt
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 146,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -446,41 +409,41 @@ function ArticlesPageClient() {
                                                 children: "👓"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 153,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "Read more"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 154,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                        lineNumber: 186,
+                                        lineNumber: 148,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 147,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                            lineNumber: 158,
+                            lineNumber: 120,
                             columnNumber: 13
                         }, this)
                     }, a.slug, false, {
                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                        lineNumber: 154,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                lineNumber: 152,
+                lineNumber: 114,
                 columnNumber: 7
             }, this),
             totalPages > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -496,13 +459,13 @@ function ArticlesPageClient() {
                         children: p
                     }, p, false, {
                         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                        lineNumber: 205,
+                        lineNumber: 167,
                         columnNumber: 15
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                lineNumber: 201,
+                lineNumber: 163,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -514,18 +477,18 @@ function ArticlesPageClient() {
                     children: "RSS"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                    lineNumber: 222,
+                    lineNumber: 184,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ArticlesPageClient.tsx",
-                lineNumber: 221,
+                lineNumber: 183,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ArticlesPageClient.tsx",
-        lineNumber: 92,
+        lineNumber: 81,
         columnNumber: 5
     }, this);
 }

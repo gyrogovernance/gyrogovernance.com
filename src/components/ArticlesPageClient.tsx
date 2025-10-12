@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { getArticlesData, getAllTagsData, getFeaturedArticlesData } from "@/lib/articles-data";
+import { getArticlesData, getFeaturedArticlesData } from "@/lib/articles-data";
 import { useState, useEffect, useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
@@ -10,29 +10,27 @@ const categories = [
   { key: undefined, label: "All" },
   { key: "featured", label: "Featured" },
   { key: "reports", label: "Reports" },
+  { key: "reviews", label: "Reviews" },
+  { key: "research", label: "Research" },
 ] as const;
 
 export default function ArticlesPageClient() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const [selected, setSelected] = useState<"featured" | "reports" | undefined>(undefined);
-  const [selectedTag, setSelectedTag] = useState<string | undefined>(undefined);
+  const [selected, setSelected] = useState<"featured" | "reports" | "reviews" | "research" | undefined>(undefined);
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 6;
 
   // Get all data
   const allArticles = getArticlesData();
   const featuredArticles = getFeaturedArticlesData();
-  const allTags = getAllTagsData();
 
   // Update state from URL params on mount and when searchParams change
   useEffect(() => {
-    const category = searchParams.get('category') as "featured" | "reports" | undefined;
-    const tag = searchParams.get('tag') || undefined;
+    const category = searchParams.get('category') as "featured" | "reports" | "reviews" | "research" | undefined;
     const pageNum = Math.max(1, parseInt(searchParams.get('page') || '1', 10) || 1);
     
     setSelected(category || undefined);
-    setSelectedTag(tag);
     setPage(pageNum);
   }, [searchParams]);
 
@@ -44,26 +42,23 @@ export default function ArticlesPageClient() {
     if (selected === 'reports') {
       return allArticles.filter(article => article.category === 'reports');
     }
+    if (selected === 'reviews') {
+      return allArticles.filter(article => article.category === 'reviews');
+    }
+    if (selected === 'research') {
+      return allArticles.filter(article => article.category === 'research');
+    }
     return allArticles;
   }, [selected, allArticles, featuredArticles]);
 
-  // Filter by tag if selected
-  const tagFilteredArticles = useMemo(() => {
-    if (!selectedTag) return filteredArticles;
-    return filteredArticles.filter(article => 
-      article.tags?.some(tag => tag.toLowerCase() === selectedTag.toLowerCase())
-    );
-  }, [filteredArticles, selectedTag]);
-
   // Pagination
-  const totalPages = Math.max(1, Math.ceil(tagFilteredArticles.length / PAGE_SIZE));
-  const items = tagFilteredArticles.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const totalPages = Math.max(1, Math.ceil(filteredArticles.length / PAGE_SIZE));
+  const items = filteredArticles.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   // Update URL when filters change
-  const updateURL = (newCategory?: string, newTag?: string, newPage?: number) => {
+  const updateURL = (newCategory?: string, newPage?: number) => {
     const params = new URLSearchParams();
     if (newCategory) params.set('category', newCategory);
-    if (newTag) params.set('tag', newTag);
     if (newPage && newPage > 1) params.set('page', newPage.toString());
     
     const queryString = params.toString();
@@ -71,21 +66,15 @@ export default function ArticlesPageClient() {
     router.push(newURL);
   };
 
-  const handleCategoryChange = (category: "featured" | "reports" | undefined) => {
+  const handleCategoryChange = (category: "featured" | "reports" | "reviews" | "research" | undefined) => {
     setSelected(category);
     setPage(1);
-    updateURL(category, selectedTag, 1);
-  };
-
-  const handleTagChange = (tag: string | undefined) => {
-    setSelectedTag(tag);
-    setPage(1);
-    updateURL(selected, tag, 1);
+    updateURL(category, 1);
   };
 
   const handlePageChange = (newPage: number) => {
     setPage(newPage);
-    updateURL(selected, selectedTag, newPage);
+    updateURL(selected, newPage);
   };
 
   return (
@@ -101,7 +90,7 @@ export default function ArticlesPageClient() {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-2 justify-center mb-6">
+      <div className="flex flex-wrap gap-2 justify-center mb-8">
         {categories.map((c) => {
           const isActive = (c.key ?? undefined) === selected;
           return (
@@ -117,33 +106,6 @@ export default function ArticlesPageClient() {
               aria-current={isActive ? "page" : undefined}
             >
               {c.label}
-            </button>
-          );
-        })}
-      </div>
-
-      <div className="flex flex-wrap gap-2 justify-center mb-8">
-        <button
-          onClick={() => handleTagChange(undefined)}
-          className={
-            "px-3 py-1.5 rounded-full text-xs font-semibold transition-colors duration-200 border " +
-            (!selectedTag ? "bg-blue-600 text-white border-blue-600" : "bg-surface-elevated/60 text-foreground-secondary border-border hover:text-foreground")
-          }
-        >
-          All tags
-        </button>
-        {allTags.map((t) => {
-          const isActive = selectedTag?.toLowerCase() === t.toLowerCase();
-          return (
-            <button
-              key={t}
-              onClick={() => handleTagChange(t)}
-              className={
-                "px-3 py-1.5 rounded-full text-xs font-semibold transition-colors duration-200 border " +
-                (isActive ? "bg-blue-600 text-white border-blue-600" : "bg-surface-elevated/60 text-foreground-secondary border-border hover:text-foreground")
-              }
-            >
-              #{t}
             </button>
           );
         })}
