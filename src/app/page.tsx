@@ -26,9 +26,8 @@ export default function Home() {
           <Link
             href="/about"
             className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300/50 transform hover:scale-105"
-            aria-label="Learn more about Gyro Governance"
           >
-            Learn More
+            About Gyro Governance
           </Link>
         </div>
       </div>
@@ -693,7 +692,7 @@ export default function Home() {
                               href="https://open.spotify.com/show/3iJZE6wfQ4K35xBNyHhSi2?si=b000840ad8834caa"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                              className="inline-flex items-center px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-medium rounded-full transition-colors duration-300"
                               aria-label="Listen on Spotify (opens in new tab)"
                             >
                               <SpotifyIcon className="w-4 h-4 mr-2" />

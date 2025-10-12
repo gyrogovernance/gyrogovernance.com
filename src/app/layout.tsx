@@ -118,7 +118,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         {/* Cache control hints for static assets */}
         <meta httpEquiv="Cache-Control" content="public, max-age=31536000, immutable" />
