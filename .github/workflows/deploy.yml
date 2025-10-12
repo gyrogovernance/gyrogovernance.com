@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,24 +20,32 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-          
+
       - name: Install dependencies
         run: npm ci
-        
-      - name: Build for GitHub Pages
-        run: npm run build:github
+
+      - name: Build for static export
+        run: npm run build
         env:
           NODE_ENV: production
-          
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
+          NEXT_TELEMETRY_DISABLED: 1
+
+      - name: Optimize images (if needed)
+        run: |
+          echo "Images are already optimized for static export"
+          # Future: Add image optimization here if needed
+
+      - name: Ensure .nojekyll file exists
+        run: |
+          touch ./out/.nojekyll
+          echo "GitHub Pages optimization: .nojekyll file created"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
