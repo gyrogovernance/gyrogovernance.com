@@ -453,6 +453,13 @@ input[type="reset"],
   justify-content: center;
 }
 
+/* Remove padding from footer nav links - they don't need large touch targets */
+footer .nav-link {
+  padding: 0;
+  min-height: auto;
+  min-width: auto;
+}
+
 /* Loading skeleton with new design system */
 .skeleton {
   background: linear-gradient(90deg,

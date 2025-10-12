@@ -322,23 +322,23 @@ export default function RootLayout({
               
               {/* Main Menu Navigation */}
               <nav className="mt-6" role="navigation" aria-label="Footer navigation">
-                <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm">
                   <Link href="/" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Home
                   </Link>
-                  <span className="text-foreground-tertiary">•</span>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
                   <Link href="/about" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     About Gyro Governance
                   </Link>
-                  <span className="text-foreground-tertiary">•</span>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
                   <Link href="/articles" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Articles
                   </Link>
-                  <span className="text-foreground-tertiary">•</span>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
                   <Link href="/privacy-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Privacy Policy
                   </Link>
-                  <span className="text-foreground-tertiary">•</span>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
                   <Link href="/cookie-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Cookie Policy
                   </Link>

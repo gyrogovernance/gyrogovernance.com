@@ -132,15 +132,15 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
 
       {/* Pagination Dots */}
       {showControls && (
-        <div className="flex justify-center items-center mt-8 gap-2">
+        <div className="flex justify-center items-center mt-8 gap-2 p-2 bg-surface-elevated/40 backdrop-blur-sm rounded-full border border-border/30 w-fit mx-auto shadow-sm">
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-apple-blue/50 ${
+              className={`rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-apple-blue/50 focus:ring-offset-2 ${
                 index === currentIndex
-                  ? 'w-8 bg-apple-blue'
-                  : 'w-2 bg-foreground-tertiary hover:bg-foreground-secondary'
+                  ? 'w-6 h-2 bg-gradient-to-r from-apple-blue to-apple-purple shadow-md shadow-apple-blue/30'
+                  : 'w-2 h-2 bg-foreground-tertiary/50 hover:bg-foreground-secondary'
               }`}
               aria-label={`Go to page ${index + 1}`}
             />
