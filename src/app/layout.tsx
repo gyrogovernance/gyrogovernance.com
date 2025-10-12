@@ -123,19 +123,31 @@ export default function RootLayout({
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
           __html: `
-            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; }
+            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #ffffff; color: rgba(0,0,0,0.98); }
             .critical-content { contain: layout style paint; }
             .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
+            .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; }
+            .blob-1 { width: 600px; height: 600px; background-color: #FF6B95; top: -200px; right: -200px; }
+            .blob-2 { width: 700px; height: 700px; background-color: #7B68EE; bottom: -300px; left: -300px; }
+            .blob-3 { width: 400px; height: 400px; background-color: #61DBFB; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+            .nav-link { min-height: 44px; min-width: 44px; padding: 12px 16px; display: inline-flex; align-items: center; justify-content: center; }
+            .p-8 { padding: 1.5rem; }
+            @media (max-width: 768px) { .p-8 { padding: 1rem; } }
             @font-face { font-family: 'Nunito'; font-display: swap; }
           `
         }} />
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        {/* CSS will be automatically optimized by Next.js */}
         <StructuredData />
-        {/* Google Analytics - GDPR Compliant - Non-blocking */}
+        {/* Google Analytics - GDPR Compliant - Optimized */}
         <Script
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-JKP3TVGR91"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -146,17 +158,21 @@ export default function RootLayout({
               'analytics_storage': 'denied'
             });
             
-            // Initialize GA with consent mode
+            // Initialize GA with consent mode - minimal config
             gtag('config', 'G-JKP3TVGR91', {
               'anonymize_ip': true,
               'allow_google_signals': false,
-              'allow_ad_personalization_signals': false
+              'allow_ad_personalization_signals': false,
+              'transport_type': 'beacon',
+              'page_title': document.title,
+              'page_location': window.location.href
             });
           `}
         </Script>
       </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} antialiased`}
+          suppressHydrationWarning={true}
         >
         <ThemeProvider>
         <div className="blob-container">
@@ -182,6 +198,8 @@ export default function RootLayout({
                     priority
                     loading="eager"
                     sizes="40px"
+                    quality={75}
+                    placeholder="empty"
                   />
                 </Link>
               </div>
@@ -249,7 +267,7 @@ export default function RootLayout({
                   </Link>
                   <span className="text-foreground-tertiary">•</span>
                   <Link href="/about" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
-                    About
+                    About Gyro Governance
                   </Link>
                   <span className="text-foreground-tertiary">•</span>
                   <Link href="/articles" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
@@ -272,6 +290,8 @@ export default function RootLayout({
                   width={120}
                   height={120}
                   className="h-30 w-30 opacity-30 hover:opacity-60 transition-opacity duration-200"
+                  loading="lazy"
+                  sizes="120px"
                 />
               </div>
             </div>

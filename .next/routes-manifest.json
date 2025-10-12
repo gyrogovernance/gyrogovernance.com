@@ -2,8 +2,16 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/gyrogovernance.com",
   "redirects": [
+    {
+      "source": "/gyrogovernance.com",
+      "destination": "/gyrogovernance.com/",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/gyrogovernance\\.com$"
+    },
     {
       "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
       "destination": "/:file",
@@ -27,7 +35,13 @@
   ],
   "headers": [],
   "rewrites": {
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/gyrogovernance.com//_next/:path+",
+        "destination": "/gyrogovernance.com/_next/:path+",
+        "regex": "^/gyrogovernance\\.com//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
     "afterFiles": [],
     "fallback": []
   },

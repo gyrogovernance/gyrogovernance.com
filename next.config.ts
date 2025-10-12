@@ -14,14 +14,15 @@ const nextConfig: NextConfig = {
   generateEtags: false,
   experimental: {
     optimizePackageImports: ['@heroicons/react'],
+    esmExternals: true,
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
-    reactRemoveProperties: process.env.NODE_ENV === 'production',
+    reactRemoveProperties: process.env.NODE_ENV === 'production' ? { properties: ['^data-testid$'] } : false,
   },
-  // GitHub Pages deployment - try without base path first
-  // basePath: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com' : '',
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com/' : '',
+  // GitHub Pages deployment
+  basePath: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com/' : '',
 };
 
 export default nextConfig;

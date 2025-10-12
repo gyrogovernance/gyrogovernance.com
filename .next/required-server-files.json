@@ -13,7 +13,7 @@
     "typedRoutes": false,
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "",
+    "assetPrefix": "/gyrogovernance.com/",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
@@ -47,7 +47,7 @@
         256,
         384
       ],
-      "path": "/_next/image/",
+      "path": "/gyrogovernance.com/_next/image/",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -70,9 +70,9 @@
       "pagesBufferLength": 5
     },
     "amp": {
-      "canonicalBase": ""
+      "canonicalBase": "/gyrogovernance.com"
     },
-    "basePath": "",
+    "basePath": "/gyrogovernance.com",
     "sassOptions": {},
     "trailingSlash": true,
     "i18n": null,
@@ -89,7 +89,11 @@
     "logging": {},
     "compiler": {
       "removeConsole": true,
-      "reactRemoveProperties": true
+      "reactRemoveProperties": {
+        "properties": [
+          "^data-testid$"
+        ]
+      }
     },
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
@@ -305,6 +309,8 @@
     ".next\\server\\functions-config-manifest.json",
     ".next\\server\\middleware-manifest.json",
     ".next\\server\\middleware-build-manifest.js",
+    ".next\\server\\middleware-react-loadable-manifest.js",
+    ".next\\react-loadable-manifest.json",
     ".next\\server\\app-paths-manifest.json",
     ".next\\app-path-routes-manifest.json",
     ".next\\app-build-manifest.json",
