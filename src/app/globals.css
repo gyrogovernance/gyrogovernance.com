@@ -223,7 +223,7 @@
 
 /* Critical above-the-fold styles */
 .critical-content {
-  contain: layout style paint;
+  /* Removed contain property as it was clipping carousel arrows */
 }
 
 /* Optimize animations for performance */

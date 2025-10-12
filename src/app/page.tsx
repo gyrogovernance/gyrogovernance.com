@@ -369,6 +369,8 @@ export default function Home() {
                             width={200}
                             height={200}
                             className="h-50 w-auto object-cover rounded-lg shadow-md border border-border/50"
+                            sizes="200px"
+                            loading="lazy"
                           />
                         </div>
                         <div className="flex-1">

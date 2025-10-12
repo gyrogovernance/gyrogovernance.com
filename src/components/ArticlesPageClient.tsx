@@ -164,6 +164,8 @@ export default function ArticlesPageClient() {
                     alt={a.title}
                     fill
                     className="object-cover group-hover:scale-[1.02] transition-transform duration-200"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                    loading="lazy"
                   />
                 </div>
               ) : null}

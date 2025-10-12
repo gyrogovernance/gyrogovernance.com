@@ -36,15 +36,22 @@ jobs:
           NODE_ENV: production
           NEXT_TELEMETRY_DISABLED: 1
 
-      - name: Optimize images (if needed)
+      - name: Check image optimization
         run: |
-          echo "Images are already optimized for static export"
-          # Future: Add image optimization here if needed
+          node scripts/optimize-images.mjs
+          echo "✅ Image optimization check complete"
 
       - name: Ensure .nojekyll file exists
         run: |
           touch ./out/.nojekyll
           echo "GitHub Pages optimization: .nojekyll file created"
+
+      - name: Add cache headers configuration
+        run: |
+          if [ -f ./public/_headers ]; then
+            cp ./public/_headers ./out/_headers
+            echo "Cache headers file copied for better hosting compatibility"
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

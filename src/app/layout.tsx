@@ -120,6 +120,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Cache control hints for static assets */}
+        <meta httpEquiv="Cache-Control" content="public, max-age=31536000, immutable" />
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
           __html: `
@@ -147,17 +149,16 @@ export default function RootLayout({
               --link-color: #66b3ff;
               --link-hover: #99ccff;
             }
-            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: var(--bg-base); color: var(--text-primary); }
-            .critical-content { contain: layout style paint; }
+            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: var(--bg-base); color: var(--text-primary); transition: background-color 0.3s ease, color 0.3s ease; }
             .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
-            .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; }
+            .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; will-change: transform; }
             .blob-1 { width: 600px; height: 600px; background-color: #FF6B95; top: -200px; right: -200px; }
             .blob-2 { width: 700px; height: 700px; background-color: #7B68EE; bottom: -300px; left: -300px; }
             .blob-3 { width: 400px; height: 400px; background-color: #61DBFB; top: 50%; left: 50%; transform: translate(-50%, -50%); }
             .dark .blob-1 { background-color: #FF8FA3; }
             .dark .blob-2 { background-color: #9B8AFF; }
             .dark .blob-3 { background-color: #7DE5FF; }
-            .nav-link { min-height: 44px; min-width: 44px; padding: 12px 16px; display: inline-flex; align-items: center; justify-content: center; }
+            .nav-link { min-height: 44px; min-width: 44px; }
             .p-8 { padding: 1.5rem; }
             @media (max-width: 768px) { .p-8 { padding: 1rem; } }
             @font-face { font-family: 'Nunito'; font-display: swap; }
@@ -167,33 +168,67 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        {/* DNS prefetch for faster lookups */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         {/* CSS will be automatically optimized by Next.js */}
         <StructuredData />
-        {/* Google Analytics - GDPR Compliant - Optimized */}
-        <Script
-          strategy="lazyOnload"
-          src="https://www.googletagmanager.com/gtag/js?id=G-JKP3TVGR91"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
+        {/* Google Analytics - Ultra-delayed loading after user interaction */}
+        <Script id="google-analytics-delayed" strategy="lazyOnload">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            // Delay GA loading until after page is interactive and user has scrolled or clicked
+            let gaLoaded = false;
             
-            // Set default consent state to denied
-            gtag('consent', 'default', {
-              'analytics_storage': 'denied'
-            });
+            function loadGA() {
+              if (gaLoaded) return;
+              gaLoaded = true;
+              
+              // Load GA script
+              const script = document.createElement('script');
+              script.async = true;
+              script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JKP3TVGR91';
+              document.head.appendChild(script);
+              
+              // Initialize GA
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
+              gtag('js', new Date());
+              
+              // Set default consent state to denied
+              gtag('consent', 'default', {
+                'analytics_storage': 'denied'
+              });
+              
+              // Initialize GA with consent mode - minimal config
+              gtag('config', 'G-JKP3TVGR91', {
+                'anonymize_ip': true,
+                'allow_google_signals': false,
+                'allow_ad_personalization_signals': false,
+                'transport_type': 'beacon',
+                'page_title': document.title,
+                'page_location': window.location.href
+              });
+            }
             
-            // Initialize GA with consent mode - minimal config
-            gtag('config', 'G-JKP3TVGR91', {
-              'anonymize_ip': true,
-              'allow_google_signals': false,
-              'allow_ad_personalization_signals': false,
-              'transport_type': 'beacon',
-              'page_title': document.title,
-              'page_location': window.location.href
-            });
+            // Load after 3 seconds OR after first user interaction (whichever comes first)
+            const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+            const timeout = setTimeout(loadGA, 3000);
+            
+            function handleInteraction() {
+              clearTimeout(timeout);
+              loadGA();
+              events.forEach(event => window.removeEventListener(event, handleInteraction));
+            }
+            
+            // Wait for page to be fully loaded
+            if (document.readyState === 'complete') {
+              events.forEach(event => window.addEventListener(event, handleInteraction, { once: true, passive: true }));
+            } else {
+              window.addEventListener('load', () => {
+                events.forEach(event => window.addEventListener(event, handleInteraction, { once: true, passive: true }));
+              });
+            }
           `}
         </Script>
       </head>
@@ -217,7 +252,7 @@ export default function RootLayout({
                   aria-label="Gyro Governance - Home"
                 >
                   <Image 
-                    src="/assets/gyrogovernance_logo.png" 
+                    src="/assets/gyrogovernance_logo.svg" 
                     alt="Gyro Governance Logo" 
                     width={40}
                     height={40}
@@ -225,7 +260,6 @@ export default function RootLayout({
                     priority
                     loading="eager"
                     sizes="40px"
-                    quality={75}
                     placeholder="empty"
                   />
                 </Link>

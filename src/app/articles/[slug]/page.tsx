@@ -274,6 +274,8 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                     width={160}
                     height={160}
                     className="w-40 h-40 object-cover rounded-lg border border-border/50"
+                    sizes="160px"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex-1">
