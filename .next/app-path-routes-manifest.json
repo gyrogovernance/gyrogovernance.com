@@ -1,13 +1,13 @@
 {
   "/_not-found/page": "/_not-found",
-  "/about/page": "/about",
-  "/articles/[slug]/page": "/articles/[slug]",
-  "/articles/page": "/articles",
-  "/articles/rss.xml/route": "/articles/rss.xml",
-  "/cookie-policy/page": "/cookie-policy",
   "/favicon.ico/route": "/favicon.ico",
+  "/articles/rss.xml/route": "/articles/rss.xml",
   "/news-sitemap.xml/route": "/news-sitemap.xml",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/about/page": "/about",
   "/page": "/",
+  "/articles/page": "/articles",
+  "/cookie-policy/page": "/cookie-policy",
   "/privacy-policy/page": "/privacy-policy",
-  "/sitemap.xml/route": "/sitemap.xml"
+  "/articles/[slug]/page": "/articles/[slug]"
 }

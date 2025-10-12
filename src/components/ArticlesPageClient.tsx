@@ -170,7 +170,11 @@ export default function ArticlesPageClient() {
               <div className="flex items-center text-xs text-foreground-tertiary mb-2">
                 <span className="uppercase tracking-wide">{a.category}</span>
                 <span className="mx-2">•</span>
-                <time dateTime={a.date}>{new Date(a.date).toLocaleDateString()}</time>
+                <time dateTime={a.date}>{new Date(a.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: '2-digit',
+                  day: '2-digit'
+                })}</time>
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-apple-blue transition-colors duration-200">
                 <Link href={`/articles/${a.slug}`}>{a.title}</Link>

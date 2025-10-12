@@ -123,13 +123,40 @@ export default function RootLayout({
         {/* Critical CSS for above-the-fold content */}
         <style dangerouslySetInnerHTML={{
           __html: `
-            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #ffffff; color: rgba(0,0,0,0.98); }
+            :root {
+              --text-primary: rgba(0, 0, 0, 0.98);
+              --text-secondary: rgba(0, 0, 0, 0.85);
+              --text-tertiary: rgba(0, 0, 0, 0.65);
+              --bg-base: #ffffff;
+              --bg-surface: #fafafa;
+              --bg-elevated: #ffffff;
+              --border-primary: rgba(0, 0, 0, 0.1);
+              --border-secondary: rgba(0, 0, 0, 0.05);
+              --link-color: #0056b3;
+              --link-hover: #003d82;
+            }
+            .dark {
+              --text-primary: rgba(255, 255, 255, 0.98);
+              --text-secondary: rgba(255, 255, 255, 0.85);
+              --text-tertiary: rgba(255, 255, 255, 0.65);
+              --bg-base: #0a0a0a;
+              --bg-surface: #141414;
+              --bg-elevated: #1f1f1f;
+              --border-primary: rgba(255, 255, 255, 0.15);
+              --border-secondary: rgba(255, 255, 255, 0.08);
+              --link-color: #66b3ff;
+              --link-hover: #99ccff;
+            }
+            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: var(--bg-base); color: var(--text-primary); }
             .critical-content { contain: layout style paint; }
             .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
             .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; }
             .blob-1 { width: 600px; height: 600px; background-color: #FF6B95; top: -200px; right: -200px; }
             .blob-2 { width: 700px; height: 700px; background-color: #7B68EE; bottom: -300px; left: -300px; }
             .blob-3 { width: 400px; height: 400px; background-color: #61DBFB; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+            .dark .blob-1 { background-color: #FF8FA3; }
+            .dark .blob-2 { background-color: #9B8AFF; }
+            .dark .blob-3 { background-color: #7DE5FF; }
             .nav-link { min-height: 44px; min-width: 44px; padding: 12px 16px; display: inline-flex; align-items: center; justify-content: center; }
             .p-8 { padding: 1.5rem; }
             @media (max-width: 768px) { .p-8 { padding: 1rem; } }

@@ -107,7 +107,11 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             <span className="uppercase tracking-wide">{article.category}</span>
             <span className="mx-2">•</span>
             <time dateTime={article.date}>
-              {new Date(article.date).toLocaleDateString()}
+              {new Date(article.date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit'
+              })}
             </time>
           </div>
           <h1 className="text-4xl font-bold text-foreground mb-4">

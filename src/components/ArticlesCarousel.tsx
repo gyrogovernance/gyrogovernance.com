@@ -100,7 +100,11 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
                     <span className="uppercase tracking-wide">{article.category}</span>
                     <span className="mx-2">•</span>
                     <time dateTime={article.date}>
-                      {new Date(article.date).toLocaleDateString()}
+                      {new Date(article.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: '2-digit',
+                        day: '2-digit'
+                      })}
                     </time>
                   </div>
                   <h4 className="text-lg font-semibold text-foreground mb-3 hover:text-apple-blue transition-colors duration-200">

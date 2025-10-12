@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "prebuild": "node scripts/generate-articles-data.mjs",
-    "build": "next build --turbopack",
+    "build": "next build",
     "export": "npm run prebuild && next build",
     "start": "next start",
     "lint": "eslint"
