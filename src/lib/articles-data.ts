@@ -17,6 +17,59 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "aie-alignment-report",
+    "title": "AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation Mechanisms",
+    "excerpt": "Frontier AI models reveal fundamental constraints on autonomous reasoning through recursive self-reference analysis, demonstrating why human-AI cooperation remains structurally necessary despite advancing capabilities.",
+    "category": "reports",
+    "date": "2025-10-15",
+    "coverImage": "/assets/aie_alignment_report_cover.jpg",
+    "tags": [
+      "ai-alignment",
+      "epistemic-limits",
+      "self-referential-reasoning",
+      "human-ai-cooperation",
+      "recursive-cognition",
+      "linguistic-bias"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "aie-health-report",
+    "title": "AI-Empowered Health: Global Governance and Human-AI Cooperation for Health Systems",
+    "excerpt": "AI medical regulation insights covering worldwide governance evolution, including compliance considerations, stakeholder dynamics, and patient safety frameworks through mathematical physics-informed evaluation.",
+    "category": "reports",
+    "date": "2025-10-14",
+    "coverImage": "/assets/aie_health_report_cover.jpg",
+    "tags": [
+      "ai-medical-regulation",
+      "healthcare-governance",
+      "diagnostic-ai",
+      "patient-safety",
+      "regulatory-frameworks",
+      "global-health"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "aie-prosperity-report",
+    "title": "AI-Empowered Prosperity: Strategic Frameworks for Advancing Global Well-Being",
+    "excerpt": "Structured exploration of resource allocation frameworks for advancing global prosperity through AI-Empowered approaches, synthesizing strategies for healthcare, education, and food security optimization under stakeholder conflicts and data uncertainty.",
+    "category": "reports",
+    "date": "2025-10-13",
+    "coverImage": "/assets/aie_prosperity_report_cover.jpg",
+    "tags": [
+      "global-prosperity",
+      "resource-allocation",
+      "multi-stakeholder-governance",
+      "equity-efficiency-tradeoffs",
+      "triple-loop-learning",
+      "healthcare",
+      "education",
+      "food-security"
+    ],
+    "featured": true
+  },
+  {
     "slug": "chatgpt5-vs-claude45-diagnostics",
     "title": "Superintelligence Index: ChatGPT 5 vs Claude 4.5 Score Below 14/100 in AI Safety Diagnostics",
     "excerpt": "GyroDiagnostics framework exposes critical structural differences between frontier models invisible to standard benchmarks.",

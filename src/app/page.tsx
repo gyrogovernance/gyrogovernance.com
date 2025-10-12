@@ -6,6 +6,7 @@ import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import NotionIcon from "@/components/icons/NotionIcon";
 import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
+import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
 
 export default function Home() {
@@ -894,47 +895,19 @@ export default function Home() {
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
                     Articles
                   </h3>
-                  <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
-                    {listFeaturedArticles().slice(0, 3).map((article) => (
-                      <article
-                        key={article.slug}
-                        className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300"
-                      >
-                        <div className="flex flex-col h-full">
-                          {article.coverImage && (
-                            <div className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60">
-                              <Image
-                                src={article.coverImage}
-                                alt={article.title}
-                                fill
-                                className="object-cover hover:scale-[1.02] transition-transform duration-200"
-                              />
-                            </div>
-                          )}
-                          <div className="flex-1 flex flex-col">
-                            <div className="flex items-center text-xs text-foreground-tertiary mb-2">
-                              <span className="uppercase tracking-wide">{article.category}</span>
-                              <span className="mx-2">•</span>
-                              <time dateTime={article.date}>{new Date(article.date).toLocaleDateString()}</time>
-                            </div>
-                            <h4 className="text-lg font-semibold text-foreground mb-3 hover:text-apple-blue transition-colors duration-200">
-                              <Link href={`/articles/${article.slug}`}>{article.title}</Link>
-                            </h4>
-                            <p className="text-sm text-foreground-secondary mb-4 line-clamp-3 flex-1">
-                              {article.excerpt}
-                            </p>
-                            <Link
-                              href={`/articles/${article.slug}`}
-                              className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-apple-blue/30 bg-apple-blue/10 text-apple-blue hover:text-white hover:bg-apple-blue transition-colors duration-200 font-semibold text-sm"
-                              aria-label={`Read more: ${article.title}`}
-                            >
-                              <span className="text-base">👓</span>
-                              <span>Read more</span>
-                            </Link>
-                          </div>
-                        </div>
-                      </article>
-                    ))}
+                  
+                  {/* Articles Carousel */}
+                  <ArticlesCarousel articles={listFeaturedArticles()} />
+                  
+                  {/* View All Button */}
+                  <div className="mt-8 flex justify-center">
+                    <Link
+                      href="/articles"
+                      className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                      aria-label="View all articles"
+                    >
+                      View All Articles
+                    </Link>
                   </div>
                 </div>
               </section>

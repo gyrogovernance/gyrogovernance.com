@@ -1,6 +1,35 @@
 {
   "version": 4,
   "routes": {
+    "/articles/rss.xml": {
+      "initialHeaders": {
+        "cache-control": "s-maxage=300, stale-while-revalidate=86400",
+        "content-type": "application/rss+xml; charset=utf-8",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/articles/layout,_N_T_/articles/rss.xml/layout,_N_T_/articles/rss.xml/route,_N_T_/articles/rss.xml/"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/articles/rss.xml",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/favicon.ico": {
       "initialHeaders": {
         "cache-control": "public, max-age=0, must-revalidate",
@@ -45,59 +74,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/articles",
       "dataRoute": "/articles.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/about": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/about",
-      "dataRoute": "/about.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/news-sitemap.xml": {
-      "initialHeaders": {
-        "cache-control": "s-maxage=3600, stale-while-revalidate=86400",
-        "content-type": "application/xml; charset=utf-8",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/news-sitemap.xml/layout,_N_T_/news-sitemap.xml/route,_N_T_/news-sitemap.xml/"
-      },
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/news-sitemap.xml",
-      "dataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -156,7 +132,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/privacy-policy": {
+    "/articles/aie-alignment-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -169,8 +145,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/privacy-policy",
-      "dataRoute": "/privacy-policy.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/aie-alignment-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -180,12 +156,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sitemap.xml": {
-      "initialHeaders": {
-        "cache-control": "s-maxage=86400, stale-while-revalidate=604800",
-        "content-type": "application/xml; charset=utf-8",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml/"
-      },
+    "/articles/aie-health-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -198,8 +169,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/sitemap.xml",
-      "dataRoute": null,
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/aie-health-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -209,12 +180,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/rss.xml": {
-      "initialHeaders": {
-        "cache-control": "s-maxage=300, stale-while-revalidate=86400",
-        "content-type": "application/rss+xml; charset=utf-8",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/articles/layout,_N_T_/articles/rss.xml/layout,_N_T_/articles/rss.xml/route,_N_T_/articles/rss.xml/"
-      },
+    "/articles/aie-prosperity-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -227,32 +193,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/rss.xml",
-      "dataRoute": null,
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/aie-prosperity-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -357,6 +299,136 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/privacy-policy": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/privacy-policy",
+      "dataRoute": "/privacy-policy.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/news-sitemap.xml": {
+      "initialHeaders": {
+        "cache-control": "s-maxage=3600, stale-while-revalidate=86400",
+        "content-type": "application/xml; charset=utf-8",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/news-sitemap.xml/layout,_N_T_/news-sitemap.xml/route,_N_T_/news-sitemap.xml/"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/news-sitemap.xml",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sitemap.xml": {
+      "initialHeaders": {
+        "cache-control": "s-maxage=86400, stale-while-revalidate=604800",
+        "content-type": "application/xml; charset=utf-8",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml/"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/sitemap.xml",
+      "dataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/about": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/about",
+      "dataRoute": "/about.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {
@@ -388,8 +460,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "5cd50b81c40ac32621061c2d354dd2d4",
-    "previewModeSigningKey": "8465e6f9591be69ea4bc9c522d4dca889052fcad0d8499f993c8bbcafb4f3ce1",
-    "previewModeEncryptionKey": "a7be97e9803e962ea808853ba9acfa8d2dd8c90164178a06d4e5b1e3bc8cf27c"
+    "previewModeId": "93e31e251f8c91073898bbbdb8f185da",
+    "previewModeSigningKey": "b20c83fdb61ef69121cdbb97628c052a1aa7c55bc98263f915a49401ac6816ca",
+    "previewModeEncryptionKey": "3b2ffe70042ee722a22a2782d80d1935078eb586b9f2491c144d7373094f1874"
   }
 }
