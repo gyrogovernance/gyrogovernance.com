@@ -131,7 +131,7 @@ This analysis emerges from systematic evaluation of frontier AI models exploring
 
 **Explore the Framework:**
 - 📦 [GyroDiagnostics Repository](https://github.com/gyrogovernance/diagnostics)
-- 📊 [ChatGPT 5 vs Claude 4.5 Diagnostics](/articles/chatgpt5-vs-claude45-diagnostics)
+- 📊 [Superintelligence Index: ChatGPT 5 vs Claude 4.5](/articles/chatgpt5-vs-claude45-diagnostics)
 
 **Related AI-Empowered Reports:**
 - 🏥 [AI-Empowered Health: Global Governance for Health Systems](/articles/aie-health-report)

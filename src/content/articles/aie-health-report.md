@@ -271,8 +271,7 @@ This analysis emerges from the **GyroDiagnostics framework**, providing valuable
 
 **Explore the Framework:**
 - 📦 [GyroDiagnostics Repository](https://github.com/gyrogovernance/diagnostics)
-- 🔬 [Framework Documentation](https://github.com/gyrogovernance/diagnostics#readme)
-- 📊 [ChatGPT 5 vs Claude 4.5 Diagnostics](/articles/chatgpt5-vs-claude45-diagnostics)
+- 📊 [Superintelligence Index: ChatGPT 5 vs Claude 4.5](/articles/chatgpt5-vs-claude45-diagnostics)
 
 **Related AI-Empowered Reports:**
 - 🧠 [AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation](/articles/aie-alignment-report)
