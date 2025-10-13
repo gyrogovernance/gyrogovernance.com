@@ -1,0 +1,95 @@
+module.exports=[37864,a=>{a.v({className:"geist_cf2c6820-module__Rdu3Sq__className",variable:"geist_cf2c6820-module__Rdu3Sq__variable"})},6637,a=>{a.v({className:"geist_mono_c5e34af0-module__-W5Awq__className",variable:"geist_mono_c5e34af0-module__-W5Awq__variable"})},19561,a=>{a.v({className:"nunito_87ec2672-module__cUtStq__className",variable:"nunito_87ec2672-module__cUtStq__variable"})},72123,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(11857);a.n(d("[project]/node_modules/next/dist/client/script.js <module evaluation>"))},44536,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(11857);a.n(d("[project]/node_modules/next/dist/client/script.js"))},11153,a=>{"use strict";a.i(72123);var b=a.i(44536);a.n(b)},71618,(a,b,c)=>{b.exports=a.r(11153)},20663,a=>{"use strict";a.s(["ThemeProvider",()=>c,"useTheme",()=>d]);var b=a.i(11857);let c=(0,b.registerClientReference)(function(){throw Error("Attempted to call ThemeProvider() from the server but ThemeProvider is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/ThemeProvider.tsx <module evaluation>","ThemeProvider"),d=(0,b.registerClientReference)(function(){throw Error("Attempted to call useTheme() from the server but useTheme is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/ThemeProvider.tsx <module evaluation>","useTheme")},92898,a=>{"use strict";a.s(["ThemeProvider",()=>c,"useTheme",()=>d]);var b=a.i(11857);let c=(0,b.registerClientReference)(function(){throw Error("Attempted to call ThemeProvider() from the server but ThemeProvider is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/ThemeProvider.tsx","ThemeProvider"),d=(0,b.registerClientReference)(function(){throw Error("Attempted to call useTheme() from the server but useTheme is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/ThemeProvider.tsx","useTheme")},7507,a=>{"use strict";a.i(20663);var b=a.i(92898);a.n(b)},61941,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/components/ThemeToggle.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/ThemeToggle.tsx <module evaluation>","default")},35347,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/components/ThemeToggle.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/ThemeToggle.tsx","default")},48201,a=>{"use strict";a.i(61941);var b=a.i(35347);a.n(b)},55078,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/components/CookieBanner.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/CookieBanner.tsx <module evaluation>","default")},28143,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/components/CookieBanner.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/CookieBanner.tsx","default")},94698,a=>{"use strict";a.i(55078);var b=a.i(28143);a.n(b)},7760,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/components/MobileMenu.tsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/MobileMenu.tsx <module evaluation>","default")},30113,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/components/MobileMenu.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/components/MobileMenu.tsx","default")},45968,a=>{"use strict";a.i(7760);var b=a.i(30113);a.n(b)},27572,a=>{"use strict";a.s(["default",()=>s,"metadata",()=>r],27572);var b=a.i(7997),c=a.i(37864);let d={className:c.default.className,style:{fontFamily:"'Geist', system-ui, arial",fontStyle:"normal"}};null!=c.default.variable&&(d.variable=c.default.variable);var e=a.i(6637);let f={className:e.default.className,style:{fontFamily:"'Geist Mono', ui-monospace, monospace",fontStyle:"normal"}};null!=e.default.variable&&(f.variable=e.default.variable);var g=a.i(19561);let h={className:g.default.className,style:{fontFamily:"'Nunito', system-ui, arial",fontStyle:"normal"}};null!=g.default.variable&&(h.variable=g.default.variable);var i=a.i(97647),j=a.i(3236),k=a.i(71618),l=a.i(7507),m=a.i(48201);function n(){return(0,b.jsx)("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"Gyro Governance",url:"https://gyrogovernance.com",logo:"https://gyrogovernance.com/og-image.png",description:"Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment tools.",foundingDate:"2024",sameAs:["https://github.com/korompilias"],contactPoint:{"@type":"ContactPoint",contactType:"technical support",url:"https://gyrogovernance.com/about"},areaServed:"Worldwide",knowsAbout:["Artificial Intelligence","AI Governance","Mathematical Physics","AGI Architecture","LLM Alignment","Machine Learning","AI Ethics"]},null,2)}})}var o=a.i(94698),p=a.i(36292),q=a.i(45968);let r={title:{default:"Gyro Governance - AI Research and Development",template:"%s | Gyro Governance"},description:"Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment tools.",keywords:["AI governance","artificial intelligence","mathematical physics","AGI architecture","ASI research","LLM alignment","gyroscopic physics","AI ethics","machine learning","artificial superintelligence"],authors:[{name:"Gyro Governance"}],creator:"Gyro Governance",publisher:"Gyro Governance",formatDetection:{email:!1,address:!1,telephone:!1},metadataBase:new URL("https://gyrogovernance.com"),alternates:{canonical:"/"},icons:{icon:[{url:"/favicon.ico",sizes:"any"},{url:"/favicon.svg",type:"image/svg+xml"},{url:"/favicon-96x96.png",sizes:"96x96",type:"image/png"}],apple:[{url:"/apple-touch-icon.png",sizes:"180x180",type:"image/png"}]},openGraph:{title:"Gyro Governance - AI Research and Development",description:"Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture.",url:"https://gyrogovernance.com",siteName:"Gyro Governance",images:[{url:"/og-image.png",width:1200,height:630,alt:"Gyro Governance - AI Research and Development"}],locale:"en_US",type:"website"},twitter:{card:"summary_large_image",title:"Gyro Governance - AI Research and Development",description:"Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture.",images:["/og-image.png"],creator:"@gyrogovernance"},robots:{index:!0,follow:!0,googleBot:{index:!0,follow:!0,"max-video-preview":-1,"max-image-preview":"large","max-snippet":-1}}};function s({children:a}){return(0,b.jsxs)("html",{lang:"en",suppressHydrationWarning:!0,children:[(0,b.jsxs)("head",{children:[(0,b.jsx)("meta",{httpEquiv:"Cache-Control",content:"public, max-age=31536000, immutable"}),(0,b.jsx)("style",{dangerouslySetInnerHTML:{__html:`
+            :root {
+              --text-primary: rgba(0, 0, 0, 0.98);
+              --text-secondary: rgba(0, 0, 0, 0.85);
+              --text-tertiary: rgba(0, 0, 0, 0.65);
+              --bg-base: #ffffff;
+              --bg-surface: #fafafa;
+              --bg-elevated: #ffffff;
+              --border-primary: rgba(0, 0, 0, 0.1);
+              --border-secondary: rgba(0, 0, 0, 0.05);
+              --link-color: #0056b3;
+              --link-hover: #003d82;
+            }
+            .dark {
+              --text-primary: rgba(255, 255, 255, 0.98);
+              --text-secondary: rgba(255, 255, 255, 0.85);
+              --text-tertiary: rgba(255, 255, 255, 0.65);
+              --bg-base: #0a0a0a;
+              --bg-surface: #141414;
+              --bg-elevated: #1f1f1f;
+              --border-primary: rgba(255, 255, 255, 0.15);
+              --border-secondary: rgba(255, 255, 255, 0.08);
+              --link-color: #66b3ff;
+              --link-hover: #99ccff;
+            }
+            body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: var(--bg-base); color: var(--text-primary); transition: background-color 0.3s ease, color 0.3s ease; }
+            .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
+            .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; will-change: transform; }
+            .blob-1 { width: 600px; height: 600px; background-color: #FF6B95; top: -200px; right: -200px; }
+            .blob-2 { width: 700px; height: 700px; background-color: #7B68EE; bottom: -300px; left: -300px; }
+            .blob-3 { width: 400px; height: 400px; background-color: #61DBFB; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+            .dark .blob-1 { background-color: #FF8FA3; }
+            .dark .blob-2 { background-color: #9B8AFF; }
+            .dark .blob-3 { background-color: #7DE5FF; }
+            .nav-link { min-height: 44px; min-width: 44px; }
+            .p-8 { padding: 1.5rem; }
+            @media (max-width: 768px) { .p-8 { padding: 1rem; } }
+            @font-face { font-family: 'Nunito'; font-display: swap; }
+          `}}),(0,b.jsx)("link",{rel:"preconnect",href:"https://fonts.googleapis.com"}),(0,b.jsx)("link",{rel:"preconnect",href:"https://fonts.gstatic.com",crossOrigin:"anonymous"}),(0,b.jsx)("link",{rel:"preconnect",href:"https://www.googletagmanager.com"}),(0,b.jsx)("link",{rel:"dns-prefetch",href:"https://fonts.googleapis.com"}),(0,b.jsx)("link",{rel:"dns-prefetch",href:"https://www.googletagmanager.com"}),(0,b.jsx)(n,{}),(0,b.jsx)(k.default,{id:"google-analytics-delayed",strategy:"lazyOnload",children:`
+            // Delay GA loading until after page is interactive and user has scrolled or clicked
+            let gaLoaded = false;
+            
+            function loadGA() {
+              if (gaLoaded) return;
+              gaLoaded = true;
+              
+              // Load GA script
+              const script = document.createElement('script');
+              script.async = true;
+              script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JKP3TVGR91';
+              document.head.appendChild(script);
+              
+              // Initialize GA
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
+              gtag('js', new Date());
+              
+              // Set default consent state to denied
+              gtag('consent', 'default', {
+                'analytics_storage': 'denied'
+              });
+              
+              // Initialize GA with consent mode - minimal config
+              gtag('config', 'G-JKP3TVGR91', {
+                'anonymize_ip': true,
+                'allow_google_signals': false,
+                'allow_ad_personalization_signals': false,
+                'transport_type': 'beacon',
+                'page_title': document.title,
+                'page_location': window.location.href
+              });
+            }
+            
+            // Load after 3 seconds OR after first user interaction (whichever comes first)
+            const events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+            const timeout = setTimeout(loadGA, 3000);
+            
+            function handleInteraction() {
+              clearTimeout(timeout);
+              loadGA();
+              events.forEach(event => window.removeEventListener(event, handleInteraction));
+            }
+            
+            // Wait for page to be fully loaded
+            if (document.readyState === 'complete') {
+              events.forEach(event => window.addEventListener(event, handleInteraction, { once: true, passive: true }));
+            } else {
+              window.addEventListener('load', () => {
+                events.forEach(event => window.addEventListener(event, handleInteraction, { once: true, passive: true }));
+              });
+            }
+          `})]}),(0,b.jsx)("body",{className:`${d.variable} ${f.variable} ${h.variable} antialiased`,suppressHydrationWarning:!0,children:(0,b.jsxs)(l.ThemeProvider,{children:[(0,b.jsxs)("div",{className:"blob-container",children:[(0,b.jsx)("div",{className:"blob blob-1"}),(0,b.jsx)("div",{className:"blob blob-2"}),(0,b.jsx)("div",{className:"blob blob-3"})]}),(0,b.jsx)("header",{className:"sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl",role:"banner",children:(0,b.jsx)("div",{className:"max-w-7xl mx-auto px-6 sm:px-8 lg:px-10",children:(0,b.jsxs)("div",{className:"flex justify-between items-center h-16",children:[(0,b.jsx)("div",{className:"flex items-center",children:(0,b.jsx)(i.default,{href:"/",className:"flex items-center focus:outline-none rounded p-1 hover:opacity-80 transition-opacity duration-300","aria-label":"Gyro Governance - Home",children:(0,b.jsx)(j.default,{src:"/assets/gyrogovernance_logo.svg",alt:"Gyro Governance Logo",width:40,height:40,className:"h-10 w-10",priority:!0,loading:"eager",sizes:"40px",placeholder:"empty"})})}),(0,b.jsxs)("div",{className:"flex items-center space-x-4",children:[(0,b.jsxs)("nav",{className:"hidden md:flex space-x-1",role:"navigation","aria-label":"Main navigation",children:[(0,b.jsx)(i.default,{href:"/",className:"nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none","aria-label":"Home page",children:"Home"}),(0,b.jsx)(i.default,{href:"/about",className:"nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none","aria-label":"About Gyro Governance",children:"About"}),(0,b.jsx)(i.default,{href:"/articles",className:"nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none","aria-label":"Articles",children:"Articles"})]}),(0,b.jsx)(m.default,{}),(0,b.jsxs)("a",{href:"https://github.com/gyrogovernance",target:"_blank",rel:"noopener noreferrer",className:"hidden sm:inline-flex items-center bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50","aria-label":"Visit Gyro Governance GitHub organization (opens in new tab)",children:[(0,b.jsx)(p.default,{className:"w-4 h-4 mr-2"}),"GitHub"]}),(0,b.jsx)(q.default,{})]})]})})}),(0,b.jsx)("main",{role:"main",className:"animate-fade-in-up",children:a}),(0,b.jsx)("footer",{className:"bg-surface-elevated/50 backdrop-blur-sm border-t border-border mt-16",role:"contentinfo",children:(0,b.jsx)("div",{className:"max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8",children:(0,b.jsxs)("div",{className:"text-center",children:[(0,b.jsx)("p",{className:"text-foreground-secondary font-medium",children:"GYRO GOVERNANCE | 2025 | CC BY-SA 4.0"}),(0,b.jsx)("nav",{className:"mt-6",role:"navigation","aria-label":"Footer navigation",children:(0,b.jsxs)("div",{className:"flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm",children:[(0,b.jsx)(i.default,{href:"/",className:"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium",children:"Home"}),(0,b.jsx)("span",{className:"text-foreground-tertiary flex items-center px-1",children:"•"}),(0,b.jsx)(i.default,{href:"/about",className:"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium",children:"About Gyro Governance"}),(0,b.jsx)("span",{className:"text-foreground-tertiary flex items-center px-1",children:"•"}),(0,b.jsx)(i.default,{href:"/articles",className:"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium",children:"Articles"}),(0,b.jsx)("span",{className:"text-foreground-tertiary flex items-center px-1",children:"•"}),(0,b.jsx)(i.default,{href:"/privacy-policy",className:"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium",children:"Privacy Policy"}),(0,b.jsx)("span",{className:"text-foreground-tertiary flex items-center px-1",children:"•"}),(0,b.jsx)(i.default,{href:"/cookie-policy",className:"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium",children:"Cookie Policy"})]})}),(0,b.jsx)("div",{className:"mt-4 flex justify-center",children:(0,b.jsx)(j.default,{src:"/assets/gyrogovernance_stamp.svg",alt:"Gyro Governance Logo",width:120,height:120,className:"h-30 w-30 opacity-30 hover:opacity-60 transition-opacity duration-200",loading:"lazy",sizes:"120px"})})]})})}),(0,b.jsx)(o.default,{})]})})]})}}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__85ba640a._.js.map

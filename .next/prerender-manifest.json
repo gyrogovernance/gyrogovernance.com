@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "d1a5263dffff64dd059cb59960a2c172",
-    "previewModeSigningKey": "385ac1d23875df27797bdea3885fcf0e87490a6fc656d82f8fb906f5968f7e89",
-    "previewModeEncryptionKey": "61f74c3011930979bb66d58d38bc392e1b6ac38862211901c93023180e809ba6"
-  }
-}
+{"version":4,"routes":{"/articles/aie-alignment-report":{},"/articles/aie-health-report":{},"/articles/aie-prosperity-report":{},"/articles/chatgpt5-vs-claude45-diagnostics":{},"/articles/gyroscopic-superintelligence":{},"/articles/gyroscope-ai-protocol":{},"/articles/common-governance-model":{}},"dynamicRoutes":{"/articles/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/articles/[slug]","routeRegex":"^\\/articles\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"8176192f7c95649ae1a21e05f08ad327","previewModeSigningKey":"07718d2cc3b6afea8a117a586f96787ed21a30c8bcfaa2de05aa2a9f3fd91430","previewModeEncryptionKey":"898e785f2e2529f3a133d4de644434223c4cc275817116c72ca2847491a76c4b"}}

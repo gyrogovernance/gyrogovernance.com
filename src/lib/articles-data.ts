@@ -19,7 +19,7 @@ export const articlesData: ArticleMeta[] = [
   {
     "slug": "aie-alignment-report",
     "title": "AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation Mechanisms",
-    "excerpt": "Frontier AI models reveal fundamental constraints on autonomous reasoning through recursive self-reference analysis, demonstrating why human-AI cooperation remains structurally necessary despite advancing capabilities.",
+    "excerpt": "Frontier AI models reveal fundamental constraints on autonomous reasoning through self-reference analysis, demonstrating why human-AI cooperation remains structurally necessary despite advancing capabilities.",
     "category": "reports",
     "date": "2025-10-15",
     "coverImage": "/assets/aie_alignment_report_cover.jpg",

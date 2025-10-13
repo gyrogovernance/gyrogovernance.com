@@ -604,10 +604,19 @@ tr:last-child td {
 .prose ol { list-style: decimal; }
 .prose code { background: var(--bg-surface); padding: 0.15em 0.35em; border-radius: 4px; font-family: var(--font-mono); }
 .prose pre { background: var(--bg-surface); padding: 1rem; border-radius: 8px; overflow: auto; }
-.prose a { color: var(--apple-blue); text-decoration: underline; }
 .prose table { margin: 1.5em 0; }
 .prose blockquote { border-left: 4px solid var(--border-primary); padding-left: 1rem; color: var(--text-secondary); margin: 1.25em 0; }
 
+/* Prose link styles for light mode */
+.prose a {
+  color: #2563eb; /* blue-600 for light mode */
+  text-decoration: underline;
+}
+.prose a:hover {
+  color: #1d4ed8; /* blue-700 for light mode */
+}
+
+/* Prose styles for dark mode */
 .prose-invert {
   color: var(--text-secondary);
 }
@@ -615,4 +624,10 @@ tr:last-child td {
 .prose-invert h2,
 .prose-invert h3,
 .prose-invert h4 { color: var(--text-primary); }
-.prose-invert a { color: #93c5fd; }
+.prose-invert a { 
+  color: #93c5fd; /* blue-300 for dark mode */
+  text-decoration: underline;
+}
+.prose-invert a:hover {
+  color: #bfdbfe; /* blue-200 for dark mode */
+}

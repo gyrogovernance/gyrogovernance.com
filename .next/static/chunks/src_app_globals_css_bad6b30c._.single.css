@@ -3003,11 +3003,6 @@ tr:last-child td {
   overflow: auto;
 }
 
-.prose a {
-  color: var(--apple-blue);
-  text-decoration: underline;
-}
-
 .prose table {
   margin: 1.5em 0;
 }
@@ -3017,6 +3012,15 @@ tr:last-child td {
   color: var(--text-secondary);
   margin: 1.25em 0;
   padding-left: 1rem;
+}
+
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #1d4ed8;
 }
 
 .prose-invert {
@@ -3029,6 +3033,11 @@ tr:last-child td {
 
 .prose-invert a {
   color: #93c5fd;
+  text-decoration: underline;
+}
+
+.prose-invert a:hover {
+  color: #bfdbfe;
 }
 
 @property --tw-translate-x {

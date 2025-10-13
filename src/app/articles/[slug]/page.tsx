@@ -130,7 +130,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         </header>
 
         {/* Content only */}
-        <div className="prose prose-invert max-w-none text-foreground-secondary leading-relaxed">
+        <div className="prose dark:prose-invert max-w-none text-foreground-secondary leading-relaxed">
           <div
             id="article-content"
             dangerouslySetInnerHTML={{ __html: html }}
