@@ -7,6 +7,7 @@ interface ArticleStructuredDataProps {
   image?: string;
   url: string;
   tags?: string[];
+  category?: string;
 }
 
 export default function ArticleStructuredData({
@@ -18,11 +19,16 @@ export default function ArticleStructuredData({
   image,
   url,
   tags,
+  category,
 }: ArticleStructuredDataProps) {
+  // Use NewsArticle for reviews (Google News indexing), ScholarlyArticle for research/reports
+  const articleType = category === "reviews" ? "NewsArticle" : "ScholarlyArticle";
+  
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": articleType,
     "headline": title,
+    "abstract": description,
     "description": description,
     "image": image ? `https://gyrogovernance.com${image}` : "https://gyrogovernance.com/og-image.png",
     "datePublished": datePublished,
@@ -35,6 +41,7 @@ export default function ArticleStructuredData({
     "publisher": {
       "@type": "Organization",
       "name": "Gyro Governance",
+      "url": "https://gyrogovernance.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://gyrogovernance.com/og-image.png",
@@ -47,8 +54,24 @@ export default function ArticleStructuredData({
       "@id": url
     },
     "keywords": tags?.join(", "),
-    "articleSection": "AI Research",
-    "inLanguage": "en-US"
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "AI Safety"
+      },
+      {
+        "@type": "Thing",
+        "name": "AI Alignment"
+      },
+      {
+        "@type": "Thing",
+        "name": "AI Governance"
+      }
+    ],
+    "articleSection": "AI Safety Research",
+    "isAccessibleForFree": true,
+    "inLanguage": "en-US",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
   };
 
   return (

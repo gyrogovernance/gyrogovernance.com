@@ -5,7 +5,7 @@ category: "research"
 date: "2025-09-28"
 coverImage: "/assets/GyroSI_Cover.png"
 featured: false
-tags: [superintelligence, governance, physics, alignment]
+tags: ["AGI Safety", "Superintelligence Alignment", "AI Governance", "Mathematical Physics", "AI Architecture", "AI Safety Research", "AI Alignment Theory", "AI Control Problem", "Artificial General Intelligence", "Superintelligence", "AI Risk Assessment", "AI Safety Frameworks", "Responsible AI Development", "AI Accountability", "Mechanistic Interpretability", "Scalable Oversight", "AI Value Alignment"]
 ---
 
 > GyroSI defines intelligence as a physical architecture where recursive gyroscopic alignment replaces statistical approximation, producing a finite, auditable state space that unifies governance, memory, and computation.

@@ -94,6 +94,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         image={article.coverImage}
         url={`https://gyrogovernance.com/articles/${slug}`}
         tags={article.tags}
+        category={article.category}
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="mb-6">

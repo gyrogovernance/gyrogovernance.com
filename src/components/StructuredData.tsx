@@ -3,27 +3,58 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Gyro Governance",
+    "alternateName": "GyroGovernance",
     "url": "https://gyrogovernance.com",
     "logo": "https://gyrogovernance.com/og-image.png",
-    "description": "Advancing AI governance through innovative research and development solutions. Mathematical physics foundations for AGI/ASI architecture and LLM alignment tools.",
-    "foundingDate": "2024",
+    "description": "Research lab specializing in AI safety evaluation, alignment metrics, and governance through mathematical physics foundations. Developing frontier AI safety frameworks and superintelligence alignment tools.",
+    "foundingDate": "2013",
+    "founder": {
+      "@type": "Person",
+      "name": "Basil Korompilias",
+      "url": "https://korompilias.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/korompilias",
+        "https://github.com/korompilias"
+      ],
+      "jobTitle": "AI Governance Lead"
+    },
     "sameAs": [
-      "https://github.com/korompilias"
+      "https://github.com/gyrogovernance",
+      "https://github.com/korompilias",
+      "https://www.linkedin.com/in/korompilias"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "contactType": "technical support",
+      "contactType": "research inquiries",
+      "email": "basilkorompilias@gmail.com",
       "url": "https://gyrogovernance.com/about"
     },
     "areaServed": "Worldwide",
     "knowsAbout": [
-      "Artificial Intelligence",
+      "AI Safety Evaluation",
+      "AI Alignment Metrics",
+      "Frontier AI Safety",
       "AI Governance",
       "Mathematical Physics",
-      "AGI Architecture",
+      "AGI Safety",
+      "Superintelligence Alignment",
       "LLM Alignment",
-      "Machine Learning",
-      "AI Ethics"
+      "AI Risk Assessment",
+      "Independent AI Testing",
+      "AI Pathology Detection",
+      "Structural AI Alignment",
+      "Gyroscopic Dynamics",
+      "AI Control Mechanisms",
+      "AI Safety Frameworks"
+    ],
+    "researchArea": [
+      "Artificial Intelligence Safety",
+      "AI Alignment Theory",
+      "Frontier Model Evaluation",
+      "AI Governance Frameworks",
+      "Mathematical Physics Applications",
+      "Superintelligence Architecture",
+      "AI Pathology Detection"
     ]
   };
 

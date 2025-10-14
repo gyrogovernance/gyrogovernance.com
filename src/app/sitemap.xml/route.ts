@@ -17,6 +17,8 @@ export async function GET() {
     { loc: site, lastmod: '2025-09-28', changefreq: 'weekly', priority: 1.0 },
     { loc: `${site}/about`, lastmod: '2024-09-26', changefreq: 'monthly', priority: 0.8 },
     { loc: `${site}/articles`, lastmod: '2025-09-28', changefreq: 'weekly', priority: 0.9 },
+    { loc: `${site}/github`, lastmod: '2025-10-14', changefreq: 'monthly', priority: 0.8 },
+    { loc: `${site}/glossary`, lastmod: '2025-10-14', changefreq: 'monthly', priority: 0.8 },
     { loc: `${site}/privacy-policy`, lastmod: '2024-09-26', changefreq: 'yearly', priority: 0.3 },
     { loc: `${site}/cookie-policy`, lastmod: '2024-09-26', changefreq: 'yearly', priority: 0.3 },
   ];

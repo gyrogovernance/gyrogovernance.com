@@ -1,6 +1,15 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
   "/articles/[slug]/page": "app/articles/[slug]/page.js",
   "/articles/page": "app/articles/page.js",
+  "/articles/rss.xml/route": "app/articles/rss.xml/route.js",
+  "/cookie-policy/page": "app/cookie-policy/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/github/page": "app/github/page.js",
+  "/glossary/page": "app/glossary/page.js",
+  "/news-sitemap.xml/route": "app/news-sitemap.xml/route.js",
+  "/page": "app/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }

@@ -5,7 +5,7 @@ category: "research"
 date: "2025-09-28"
 coverImage: "/assets/CGM_Cover.png"
 featured: false
-tags: [governance, physics, alignment]
+tags: ["AI Governance", "Mathematical Physics", "AI Alignment Theory", "Gyroscopic Dynamics", "AI Safety Frameworks", "Structural AI Alignment", "AI Control Theory", "Mathematical Foundations", "AI Risk Assessment", "Responsible AI Development", "AI Accountability", "AI Transparency", "AI Safety Research", "Mechanistic Interpretability", "Scalable Oversight"]
 ---
 
 >  **This report introduces the mathematical physics foundations behind Gyro Governance. It shows how gyroscopic principles offer a rigorous framework for alignment, stability, and recursive self-consistency in AI systems. These foundations are the axioms that inform how we design robust governance models for advanced intelligence.**

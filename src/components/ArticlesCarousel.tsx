@@ -14,6 +14,11 @@ interface ArticlesCarouselProps {
 export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  // Minimum swipe distance (in px) to trigger a swipe
+  const minSwipeDistance = 50;
 
   // Detect screen size
   useEffect(() => {
@@ -30,7 +35,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
     return () => window.removeEventListener('resize', checkMobile);
   }, [isMobile]);
 
-  const itemsPerPage = isMobile ? 1 : 3;
+  const itemsPerPage = isMobile ? 1 : 2;
   const totalPages = Math.ceil(articles.length / itemsPerPage);
 
   const goToPrevious = () => {
@@ -46,24 +51,81 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
     (currentIndex + 1) * itemsPerPage
   );
 
-  // Only show carousel controls if there are more articles than can fit in one view
-  const showControls = articles.length > itemsPerPage;
+  // Only show carousel controls if there are multiple pages
+  const showControls = totalPages > 1;
+
+  // Handle touch/swipe events
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrevious();
+    }
+  };
+
+  // Handle mouse drag events (for touchpad)
+  const onMouseDown = (e: React.MouseEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.clientX);
+  };
+
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (touchStart === null) return;
+    setTouchEnd(e.clientX);
+  };
+
+  const onMouseUp = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrevious();
+    }
+    
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  const onMouseLeave = () => {
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
 
   return (
-    <div className="relative px-12 sm:px-16 lg:px-0">
-      {/* Navigation Arrows - positioned outside on large screens, inside on mobile */}
+    <div className="relative px-12 sm:px-16">
+      {/* Navigation Arrows - positioned inside the container */}
       {showControls && (
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-0 lg:left-0 lg:-translate-x-14 top-1/2 -translate-y-1/2 z-10 bg-surface-elevated/95 backdrop-blur-md hover:bg-apple-blue text-foreground hover:text-white p-2 sm:p-3 rounded-full shadow-lg border border-border/50 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-surface-elevated/95 backdrop-blur-md hover:bg-apple-blue text-foreground hover:text-white p-2 sm:p-3 rounded-full shadow-lg border border-border/50 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
             aria-label="Previous articles"
           >
             <ChevronLeftIcon className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-0 lg:right-0 lg:translate-x-14 top-1/2 -translate-y-1/2 z-10 bg-surface-elevated/95 backdrop-blur-md hover:bg-apple-blue text-foreground hover:text-white p-2 sm:p-3 rounded-full shadow-lg border border-border/50 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-surface-elevated/95 backdrop-blur-md hover:bg-apple-blue text-foreground hover:text-white p-2 sm:p-3 rounded-full shadow-lg border border-border/50 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
             aria-label="Next articles"
           >
             <ChevronRightIcon className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -72,9 +134,18 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
       )}
 
       {/* Articles Grid with Transition */}
-      <div>
+      <div
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseLeave={onMouseLeave}
+        className="cursor-grab active:cursor-grabbing"
+      >
         <div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-all duration-500 ease-in-out"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 transition-all duration-500 ease-in-out select-none"
           style={{
             opacity: 1,
           }}

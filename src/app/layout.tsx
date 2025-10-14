@@ -243,7 +243,7 @@ export default function RootLayout({
           <div className="blob blob-3"></div>
         </div>
                   <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <Link
@@ -316,7 +316,7 @@ export default function RootLayout({
                   </main>
 
                   <footer className="bg-surface-elevated/50 backdrop-blur-sm border-t border-border mt-16" role="contentinfo">
-          <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <p className="text-foreground-secondary font-medium">GYRO GOVERNANCE | 2025 | CC BY-SA 4.0</p>
               
@@ -333,6 +333,14 @@ export default function RootLayout({
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
                   <Link href="/articles" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Articles
+                  </Link>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
+                  <Link href="/github" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                    GitHub
+                  </Link>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
+                  <Link href="/glossary" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                    Glossary
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
                   <Link href="/privacy-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">

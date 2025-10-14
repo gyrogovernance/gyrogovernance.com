@@ -1,0 +1,15 @@
+{
+  "pages": {
+    "/github/page": [
+      "static/chunks/ff1a16fafef87110.js",
+      "static/chunks/7dc95fbec1e0051b.js",
+      "static/chunks/7384dae4edfb0024.css",
+      "static/chunks/9c79b191ada14fea.js",
+      "static/chunks/0e3f28ede6de7847.js",
+      "static/chunks/54ef473466c6507a.js",
+      "static/chunks/079d5ede7af38810.js",
+      "static/chunks/9ea5322c0c7643ae.js",
+      "static/chunks/turbopack-d8d5549789653891.js"
+    ]
+  }
+}

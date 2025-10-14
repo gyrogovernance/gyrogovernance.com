@@ -5,7 +5,7 @@ category: "research"
 date: "2025-09-28"
 coverImage: "/assets/Gyroscope_Img.png"
 featured: false
-tags: [governance, alignment]
+tags: ["LLM Alignment", "AI Safety Protocol", "AI Governance", "Scalable Oversight", "AI Accountability", "AI Alignment Metrics", "AI Risk Assessment", "AI Safety Frameworks", "Responsible AI Development", "AI Transparency", "Foundation Models", "Large Language Models", "AI Model Evaluation", "AI Control Mechanisms", "AI Safety Research", "Interpretability Research"]
 ---
 
 ## Introduction

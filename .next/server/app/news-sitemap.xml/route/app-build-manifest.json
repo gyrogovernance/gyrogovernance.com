@@ -1,11 +1,11 @@
 {
   "pages": {
     "/news-sitemap.xml/route": [
-      "static/chunks/78dfcfb5bc0e0b23.js",
+      "static/chunks/0e3f28ede6de7847.js",
       "static/chunks/54ef473466c6507a.js",
       "static/chunks/079d5ede7af38810.js",
       "static/chunks/9ea5322c0c7643ae.js",
-      "static/chunks/turbopack-9b4d409ddb3ee532.js"
+      "static/chunks/turbopack-d8d5549789653891.js"
     ]
   }
 }
