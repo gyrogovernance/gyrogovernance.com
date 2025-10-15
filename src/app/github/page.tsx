@@ -108,7 +108,7 @@ export default function GitHub() {
       keywords: ["Mathematical Physics", "AI Alignment Theory", "Gyroscopic Dynamics", "Research"]
     },
     {
-      name: "Gyroscopic Alignment Development Lab",
+      name: "Gyroscopic Alignment Models Lab",
       description: "AGI Safety Architecture - Superintelligence alignment architectures and safe AI system design",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
@@ -152,7 +152,7 @@ export default function GitHub() {
     },
     {
       emoji: '👶',
-      name: 'Gyroscopic Alignment Development Lab',
+      name: 'Gyroscopic Alignment Models Lab',
       title: 'Artificial Superintelligence Architecture (ASI/AGI)',
       description: 'AGI safety research and superintelligence alignment architectures addressing fundamental challenges in artificial general intelligence development. Explores AI control problem solutions, AI value alignment frameworks, and mechanisms for safe superintelligence by design. Addresses coherence degradation, AI autonomy risks, and behavioral alignment in advanced AI systems. Develops AI governance tools and safety frameworks that prioritize AI transparency, human values, and responsible AI development for transformative AI.',
       url: 'https://github.com/gyrogovernance/superintelligence',

@@ -38,7 +38,7 @@
       "url": "https://github.com/gyrogovernance/gyroscopic-alignment-research-lab"
     },
     "development_lab": {
-      "name": "Gyroscopic Alignment Development Lab", 
+      "name": "Gyroscopic Alignment Models Lab", 
       "description": "Artificial Superintelligence Architecture (ASI/AGI)",
       "url": "https://github.com/gyrogovernance/gyroscopic-alignment-development-lab"
     }

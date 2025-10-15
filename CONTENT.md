@@ -127,7 +127,7 @@ Testing across multiple leading AI models shows Gyroscope delivers substantial p
 - **GitHub**: https://github.com/gyrogovernance/gyroscopic-alignment-research-lab
 
 #### 👶 Artificial Superintelligence Architecture (ASI/AGI)
-**Gyroscopic Alignment Development Lab**
+**Gyroscopic Alignment Models Lab**
 - **GitHub**: https://github.com/gyrogovernance/gyroscopic-alignment-development-lab
 
 ### Resources

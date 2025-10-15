@@ -191,7 +191,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                         Artificial Superintelligence Architecture (ASI/AGI)
                       </h3>
                       <p className="text-foreground-secondary">
-                        Gyroscopic Alignment Development Lab
+                        Gyroscopic Alignment Models Lab
                       </p>
                     </div>
                     <a
@@ -199,7 +199,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
-                      aria-label="Visit Gyroscopic Alignment Development Lab (opens in new tab)"
+                      aria-label="Visit Gyroscopic Alignment Models Lab (opens in new tab)"
                     >
                       View on GitHub
                     </a>

@@ -36,7 +36,7 @@ Key developments include:
 
 Research laboratory focused on developing mathematical physics foundations for AI alignment and governance.
 
-### Artificial Superintelligence Architecture (ASI/AGI): Gyroscopic Alignment Development Lab
+### Artificial Superintelligence Architecture (ASI/AGI): Gyroscopic Alignment Models Lab
 **Artificial Superintelligence Architecture (ASI/AGI)**
 
 [![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=flat-square&logo=github)](https://github.com/gyrogovernance/superintelligence)

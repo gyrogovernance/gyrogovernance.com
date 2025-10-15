@@ -271,7 +271,7 @@ export default function Home() {
                     Artificial Superintelligence Architecture (ASI/AGI)
                   </h3>
                   <p className="text-foreground-secondary">
-                    Gyroscopic Alignment Development Lab
+                    Gyroscopic Alignment Models Lab
                   </p>
                 </div>
                 <a
@@ -279,7 +279,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300 mt-4 self-start"
-                  aria-label="Visit Gyroscopic Alignment Development Lab (opens in new tab)"
+                  aria-label="Visit Gyroscopic Alignment Models Lab (opens in new tab)"
                 >
                   <GitHubIcon className="w-4 h-4 mr-2" />
                   View on GitHub
