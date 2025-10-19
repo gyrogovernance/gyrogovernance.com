@@ -99,7 +99,7 @@ a:I[68027,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
     "Superintelligence Architecture",
     "AI Pathology Detection"
   ]
-}0:{"P":null,"b":"xIKoyAkfr8kqWqmEeWJz0","p":"","c":["","articles","common-governance-model",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","common-governance-model","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/f4a18ceb577b4ff4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","common-governance-model","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
+}0:{"P":null,"b":"mA895KwOV8uVTCdMEm7z2","p":"","c":["","articles","common-governance-model",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","common-governance-model","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/f4a18ceb577b4ff4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","common-governance-model","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
 c:I[79520,["/_next/static/chunks/9c79b191ada14fea.js"],""]
 e:I[59919,["/_next/static/chunks/9c79b191ada14fea.js"],"ThemeProvider"]
 f:I[22016,["/_next/static/chunks/9c79b191ada14fea.js","/_next/static/chunks/f676bfde9477f7bb.js"],"default"]
@@ -226,292 +226,385 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/f4a18ceb577b4
   "isAccessibleForFree": true,
   "inLanguage": "en-US",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-}24:T6497,<blockquote>
-<p> <strong>This report introduces the mathematical physics foundations behind Gyro Governance. It shows how gyroscopic principles offer a rigorous framework for alignment, stability, and recursive self-consistency in AI systems. These foundations are the axioms that inform how we design robust governance models for advanced intelligence.</strong></p>
+}24:T900a,<blockquote>
+<p> <strong>It shows how gyroscopic principles offer a rigorous framework for alignment, stability, and recursive self-consistency in AI systems. These foundations are the axioms that inform how we design robust governance models for advanced intelligence.</strong></p>
 </blockquote>
-<h2>Introduction</h2>
-<p>The Common Governance Model (CGM) presents an axiomatic framework for understanding how structure emerges through recursive alignment. As an axiomatic model, CGM begins from a single foundational principle and derives all subsequent structure through logical necessity. Each theorem follows inevitably from the axiom, with nothing assumed and everything emerging through recursive self-reference.</p>
-<p>The model demonstrates that three-dimensional space with six degrees of freedom is not an assumption but a logical derivation. Time appears as the sequential ordering of recursive operations, encoded by gyration&#39;s memory of operation order. The mathematical formalism employs gyrogroup and bi-gyrogroup structures following Abraham Ungar&#39;s work, providing precise language for tracking transitions from undifferentiated potential to fully structured reality.</p>
-<h2>1. CGM Axiom</h2>
-<p><strong>Statement: The Source is Common</strong></p>
-<p><strong>Interpretation:</strong> All phenomena manifest through self-referential state transitions. The Common Source (CS) represents the originating condition containing inherent chirality and directionality. CS is freedom itself - not mere potential but the active source of parity violation that governs all subsequent emergence. Though unobservable directly, CS manifests through the principles it generates.</p>
-<p>The Common Source is necessarily unobservable - not by limitation but by logical necessity. The origin point of observation cannot observe itself, only its consequences through the recursive unfolding. We know CS exists because the closure condition demands exactly two π/4 steps after the initial π/2, but CS itself remains forever beyond direct observation.</p>
-<p><strong>Formalism:</strong></p>
+<blockquote>
+<p>This report introduces the mathematical physics foundations behind Gyro Governance through the Common Governance Model, which is a formal deductive system that starts from one axiom and, using gyrogroup geometry, derives the structure of space, time, and conservation relations. The same formal machinery applies to information and policy, where it defines measurable alignment. The framework produces empirical predictions and operational metrics for AI evaluation.</p>
+</blockquote>
+<p><strong>Navigation Note:</strong> This document presents the core formal framework of CGM. Sections 1-2 establish conceptual foundations, Section 3 provides the formal deductive system, Sections 4-5 show the gyrogroup-theoretic and geometric interpretation, and Section 6 discusses applications to information systems and physics.</p>
+<h2>1. Introduction</h2>
+<p>The Common Governance Model (CGM) is a Hilbert-style formal deductive system [9] for fundamental physics and information science. As an axiomatic model, CGM begins with a single foundational axiom (&quot;The Source is Common&quot;), derives all subsequent logic through syntactic rules of inference (recursive state transitions formalized by gyrogroup operations), and interprets the resulting theorems semantically in physical geometry, yielding empirically testable predictions.</p>
+<p>A Hilbert system is a type of formal proof defined as a deductive logic that generates theorems from axioms, typically with modus ponens as the core inference rule [9] (Propositional logic: It can be summarized as &quot;P implies Q. P is true. Therefore, Q must also be true.&quot;). By analogy with linguistic typology, which assigns grammatical roles to participants in events, CGM’s classification structure describes the morphosyntactic alignment of physical reality, where geometric and logical necessity assign topological roles (e.g., symmetries and derivations in space) and relational roles (for example cause and effect), and it extends the same framework to semantic alignment for policy systems. Both applications derive from the same formal deductive system: the recursive state transitions that generate physical laws also generate consensus frameworks. In CGM, the object domain of inference is physical reality itself, and different alignment systems in communication (nominative–accusative, ergative–absolutive) preserve the coherence of these role assignments through formal necessity.</p>
+<p>The model axiomatizes physics through formal logic with mathematical and semantic interpretation, deriving three-dimensional space with six degrees of freedom as logical necessity, not assumption. Time appears as the sequential ordering of recursive self-referential operations, encoded by gyration&#39;s memory of operation order. The mathematical formalism employs gyrogroup and bi-gyrogroup structures following Abraham Ungar&#39;s work [5,6], providing precise language for tracking transitions from undifferentiated potential to fully structured reality. In information and political science, CGM reframes alignment from an empirical matter of shared intention to a coherent semantic grammar, where geometric and logical necessity lead to common consensus.</p>
+<blockquote>
+<p>Building on the tradition established by Noether&#39;s derivation of conservation principles from symmetry (1918) [2], Kolmogorov&#39;s axiomatization of probability theory (1933) [3], and Wightman&#39;s axiomatic quantum field theory (1950s) [4], CGM extends the program to fundamental spacetime structure itself. Examples of derived predictions include the quantum gravity invariant Q_G = 4π (representing the complete solid angle for coherent observation), a quantitative estimate of the fine-structure constant matching experimental precision to 0.043 parts per billion, neutrino mass scale, and a hierarchy of energy scales consistent with observed physics. As a complete axiomatization of physics from a single foundational principle, CGM addresses the core challenge of Hilbert&#39;s sixth problem [1]: rigorous and satisfactory logical investigation of the axioms of mathematical physics.</p>
+</blockquote>
+<hr>
+<h1>2. Foundations</h1>
+<h2>2.1. Governance Traceability: The Emergence of Freedom</h2>
+<p><strong>CS Axiom:</strong> </p>
+<blockquote>
+<p><em>The Source is Common</em></p>
+</blockquote>
+<p><strong>Interpretation:</strong> </p>
+<p>The axiom &quot;The Source is Common&quot; establishes that all phenomena are traceable through a single principle of common origination, which is freedom, the capacity for governance through directional distinction. This conservation of asymmetry (parity violation) encodes patterns of chirality (left- and right-handedness), making alignment the organizing principle by which locality generates structure via recursive gyration instead of remaining mere potential.</p>
+<p>Common origination is not historical but operational. It is the cyclical accumulation of action through shared interactions (dynamics, forces, relativity, fields). These gyrations produce curvature (geometric phase), defining space and time within a self‑referential condition (matter). The &quot;self&quot; acts as a projection operator that distinguishes orthogonal states and turns reference into inference through measurement. The object domain of inference is physical reality itself, expressed as semantic weighting through projection. Each perspective defines measurable roles governed by the quantum gravity invariant. This geometric and topological necessity defines cause and effect as recursive unfolding, since the origin point of observation cannot observe itself, only its consequences.</p>
+<hr>
+<h2>2.2. Information Variety</h2>
+<p><strong>UNA Theorem</strong></p>
+<blockquote>
+<p><em>Unity is Non-Absolute</em></p>
+</blockquote>
+<p><strong>Interpretation:</strong> </p>
+<p>Non-absolute unity is the first minimal necessity for indirect observation of a common source. Absolute unity would make existence and freedom impossible, since perfect homogeneity would allow no distinctions between origin and structure. Therefore, non-absolute unity ensures alignment is possible through informational variety; the traceable signature of a common origin.</p>
+<hr>
+<h2>2.3. Inference Accountability</h2>
+<p><strong>ONA Theorem</strong></p>
+<blockquote>
+<p><em>Opposition is Non-Absolute</em></p>
+</blockquote>
+<p><strong>Interpretation:</strong> </p>
+<p>Non-absolute opposition is the first minimal necessity for direct observation of non-absolute unity and the second condition for indirect observation of a common source. Absolute opposition would also make existence and freedom impossible, since perfect contradiction would allow no conservation of structure. Therefore, non-absolute opposition ensures alignment is possible through accountability of inference; traceable informational variety of a common origin.</p>
+<hr>
+<h2>2.4. Intelligence Integrity</h2>
+<p><strong>BU Theorem</strong></p>
+<blockquote>
+<p><em>Balance is Universal</em></p>
+</blockquote>
+<p><strong>Interpretation:</strong> </p>
+<p>Balance is the universal outcome of non-absoluteness in unity and opposition, leading to the observer-observed duality. Perfect imbalance would make existence and freedom meaningless, since the memory of inferred information would have no reason to acquire substance and structure at all. Therefore, balance is the universal signature of alignment through integrity of intelligence: traceable inferential accountability of informational variety from a common source.</p>
+<hr>
+<h1>3. Formal Deductive Framework</h1>
+<h2>3.1 The Logical Language</h2>
+<p>The Common Governance Model is formalized as a propositional modal logic with two primitive modal operators representing recursive operational transitions.</p>
+<p><strong>Primitive symbols:</strong></p>
 <ul>
-<li>Right gyration: rgyr = id</li>
-<li>Left gyration: lgyr ≠ id</li>
-<li>Degrees of freedom: 1 (chiral seed)</li>
+<li>A propositional constant: S (denoting the quantum gravity invariant Q_G = 4π, the complete solid angle for coherent observation)</li>
+<li>Logical connectives: ¬ (negation), → (material implication)</li>
+<li>Modal operators: [L], [R] (left transition, right transition)</li>
 </ul>
-<p><strong>Minimal Angle:</strong><br>α = π/2</p>
-<p>(The smallest non-trivial phase rotation able to distinguish direction—chirality.)</p>
-<p><strong>Threshold:</strong></p>
+<p><strong>Defined symbols:</strong></p>
 <ul>
-<li>Angle: α = π/2</li>
-<li>Threshold Ratio: sₚ = π/2</li>
+<li>Conjunction: φ ∧ ψ := ¬(φ → ¬ψ)</li>
+<li>Disjunction: φ ∨ ψ := ¬φ → ψ</li>
+<li>Biconditional: φ ↔ ψ := (φ → ψ) ∧ (ψ → φ)</li>
+<li>Dual modalities: ⟨L⟩φ := ¬[L]¬φ and ⟨R⟩φ := ¬[R]¬φ</li>
+<li>Joint necessity: □φ := [L]φ ∧ [R]φ</li>
+<li>Joint possibility: ◇φ := ⟨L⟩φ ∨ ⟨R⟩φ</li>
 </ul>
-<p><strong>Governing Operation:</strong> Left gyroassociative law</p>
-<p>a ⊕ (b ⊕ c) = (a ⊕ b) ⊕ gyr[a, b]c</p>
-<p>where gyration is defined as:</p>
-<p>gyr[a, b]c = ⊖(a ⊕ b) ⊕ (a ⊕ (b ⊕ c))</p>
-<p>The non-identity left gyration encodes the fundamental parity violation at the origin of structure.</p>
-<h2>2. First Theorem</h2>
-<p><strong>Statement: Unity is Non-Absolute</strong></p>
-<p><strong>Interpretation:</strong> Observable structure first emerges when right gyration activates (becomes non-identity) while left gyration persists from CS. This creates the minimal asymmetry required for observation while preserving the fundamental left-bias.</p>
-<p><strong>Derivation:</strong> UNA derives from CS. The inherent chirality of CS forbids perfect homogeneity. Unity cannot be absolute because the source itself contains directional distinction through non-identity left gyration.</p>
-<p><strong>Formalism:</strong></p>
+<p>The expression [L]φ reads &quot;φ holds after a left transition.&quot; The expression [R]φ reads &quot;φ holds after a right transition.&quot; The expression □φ reads &quot;φ holds after both transitions.&quot;</p>
+<p><strong>Modal depth:</strong> The depth of a formula refers to its modal nesting length. For instance, [L][R]S has depth two (two nested modal operators), while [L][R][L][R]S has depth four.</p>
+<h2>3.2 Axioms and Rules of Inference</h2>
+<p><strong>Propositional axioms:</strong></p>
 <ul>
-<li>Right gyration: rgyr ≠ id (newly activated)</li>
-<li>Left gyration: lgyr ≠ id (persisting from CS)</li>
-<li>Degrees of freedom: 3 (rotational)</li>
+<li>(A1) φ → (ψ → φ)</li>
+<li>(A2) (φ → (ψ → χ)) → ((φ → ψ) → (φ → χ))</li>
+<li>(A3) (¬ψ → ¬φ) → ((¬ψ → φ) → ψ)</li>
 </ul>
-<p><strong>Minimal Angle:</strong> β = π/4</p>
-<p>(Sets the minimal phase split to allow three orthogonal axes—orthogonality emerges from cos(π/4) = 1/√2.)</p>
-<p><strong>Threshold:</strong></p>
+<p>These three axioms, together with modus ponens, constitute a complete axiomatization of classical propositional logic.</p>
+<p><strong>Modal axioms (for each k ∈ {L, R}):</strong></p>
 <ul>
-<li>Angle: β = π/4</li>
-<li>Threshold Ratio: uₚ = 1/√2 = cos(π/4)</li>
+<li>(K_k) [k](φ → ψ) → ([k]φ → [k]ψ)</li>
 </ul>
-<p><strong>Governing Operation:</strong> Gyrocommutative law</p>
-<p>a ⊕ b = gyr[a, b](b ⊕ a)</p>
-<p>With both gyrations now non-identity, gyrocommutativity establishes observable directional distinction rooted in the left-initiated chirality.</p>
-<h2>3. Second Theorem</h2>
-<p><strong>Statement: Opposition is Non-Absolute</strong></p>
-<p><strong>Interpretation:</strong> Full differentiation is achieved with both gyrations maximally non-identity. The system reaches peak non-associativity, generating the complete structural framework while preventing absolute negation.</p>
-<p><strong>Derivation:</strong> ONA derives from UNA which derives from CS. Given non-absolute unity, absolute opposition would create rigid binary structure, contradicting the recursive nature inherited from CS.</p>
-<p><strong>Formalism:</strong></p>
+<p><strong>Conjunction axioms:</strong></p>
+<ul>
+<li>(C-Elim-1) (φ ∧ ψ) → φ</li>
+<li>(C-Elim-2) (φ ∧ ψ) → ψ</li>
+</ul>
+<p><strong>Rules of inference:</strong></p>
+<ul>
+<li>Modus Ponens (MP): From φ and φ → ψ, infer ψ</li>
+<li>Necessitation (Nec_k): From φ, infer [k]φ (for k ∈ {L, R})</li>
+</ul>
+<p>The necessitation rule applies only to theorems of the system, never to arbitrary assumptions, ensuring soundness [7].</p>
+<h2>3.3 Core Definitions</h2>
+<p>Four formulas capture the structural properties required by the Common Governance Model, all anchored to the horizon constant S:</p>
+<p><strong>Unity (U):</strong></p>
+<pre><code>U := [L]S ↔ [R]S
+</code></pre>
+<p><strong>Two-step equality (E):</strong></p>
+<pre><code>E := [L][R]S ↔ [R][L]S
+</code></pre>
+<p><strong>Opposition (O):</strong></p>
+<pre><code>O := [L][R]S ↔ ¬[R][L]S
+</code></pre>
+<p><strong>Balance (B):</strong></p>
+<pre><code>B := [L][R][L][R]S ↔ [R][L][R][L]S
+</code></pre>
+<p><strong>Absoluteness:</strong></p>
+<pre><code>Abs(φ) := □φ
+NonAbs(φ) := ¬□φ
+</code></pre>
+<p>where □φ is defined as [L]φ ∧ [R]φ.</p>
+<p>Throughout this document, &quot;absolute&quot; means both transitions yield the same result for the proposition (□φ holds), not that the modal operators [L] and [R] are themselves identical. The operators remain distinct; absoluteness characterizes whether a specific formula is invariant under both transitions.</p>
+<h2>3.4 The Foundational Axioms</h2>
+<p>The Common Governance Model employs seven non-logical axioms, collectively designated CS (Common Source):</p>
+<p><strong>CS1:</strong> ¬□E<br>(Two-step equality is not absolute)</p>
+<p><strong>CS2:</strong> ¬□¬E<br>(Two-step inequality is not absolute)</p>
+<p><strong>CS3:</strong> □B<br>(Balance at modal depth four is absolute)</p>
+<p><strong>CS4:</strong> □U → □E<br>(If unity were absolute, two-step equality would be absolute)</p>
+<p><strong>CS5:</strong> □O → □¬E<br>(If opposition were absolute, two-step inequality would be absolute)</p>
+<p><strong>CS6:</strong> [R]S ↔ S<br>(Right transition preserves the horizon constant)</p>
+<p><strong>CS7:</strong> ¬([L]S ↔ S)<br>(Left transition alters the horizon constant)</p>
+<p><strong>Consistency note:</strong> The axiom set CS1–CS7 is consistent. In Kripke semantics [7] with two accessibility relations R_L and R_R (corresponding to [L] and [R]), there exist frames where depth-two commutation is contingent (satisfying CS1 and CS2) while depth-four commutation is necessary (satisfying CS3). For example, a frame in which R_L and R_R are independent K-relations with R_L ≠ R_R at depth two but R_L ∘ R_R ∘ R_L ∘ R_R = R_R ∘ R_L ∘ R_R ∘ R_L at depth four validates all seven axioms.</p>
+<h2>3.5 Derivation of the Core Theorems</h2>
+<h3>3.5.1 Theorem UNA (Unity is Non-Absolute)</h3>
+<p><strong>Statement:</strong> ⊢ ¬□U</p>
+<p><strong>Proof:</strong></p>
+<pre><code>1. ⊢ CS4                               [Axiom: □U → □E]
+2. ⊢ CS1                               [Axiom: ¬□E]
+3. ⊢ (□U → □E) → (¬□E → ¬□U)           [Lemma: Contraposition]
+4. ⊢ ¬□E → ¬□U                         [Modus ponens on lines 1 and 3]
+5. ⊢ ¬□U                               [Modus ponens on lines 2 and 4]
+</code></pre>
+<p>This theorem formalizes the non-absolute unity introduced in Section 2.2.</p>
+<h3>3.5.2 Theorem ONA (Opposition is Non-Absolute)</h3>
+<p><strong>Statement:</strong> ⊢ ¬□O</p>
+<p><strong>Proof:</strong></p>
+<pre><code>1. ⊢ CS5                               [Axiom: □O → □¬E]
+2. ⊢ CS2                               [Axiom: ¬□¬E]
+3. ⊢ (□O → □¬E) → (¬□¬E → ¬□O)         [Lemma: Contraposition]
+4. ⊢ ¬□¬E → ¬□O                        [Modus ponens on lines 1 and 3]
+5. ⊢ ¬□O                               [Modus ponens on lines 2 and 4]
+</code></pre>
+<p>This theorem formalizes the non-absolute opposition introduced in Section 2.3.</p>
+<h3>3.5.3 Theorem BU (Balance is Universal)</h3>
+<p><strong>Statement:</strong> ⊢ □B</p>
+<p><strong>Proof:</strong></p>
+<pre><code>1. ⊢ CS3                               [Axiom: □B]
+</code></pre>
+<p>This theorem formalizes the universal balance introduced in Section 2.4.</p>
+<h2>3.6 Logical Structure Summary</h2>
+<p>The formal system establishes three principal results derived from the seven axioms CS1–CS7: unity is non-absolute (UNA, derived by contraposition from CS1 and CS4), opposition is non-absolute (ONA, derived by contraposition from CS2 and CS5), and balance is universal (BU, directly given by CS3).</p>
+<p>Non-absoluteness at modal depth one (unity) prevents homogeneous collapse, while non-absoluteness at modal depth two (opposition) prevents contradictory rigidity. Absoluteness at modal depth four (balance) ensures coherence within the observable horizon. These three properties are logically interdependent through the bridge axioms CS4 and CS5. The asymmetry axioms CS6 and CS7 establish that the left and right transitions are not initially equivalent at the horizon constant.</p>
+<hr>
+<h1>4. Gyrogroup-Theoretic Correspondence</h1>
+<h2>4.1 Interpretive Framework</h2>
+<p>The formal system presented in Section 3 yields gyrogroup operations through the correspondence established below. This section presents the gyrogroup structure that emerges from the modal axioms.</p>
+<h2>4.2 Gyrogroup Structures</h2>
+<p>A gyrogroup (G, ⊕) [5,6] is a set G with a binary operation ⊕ satisfying:</p>
+<ol>
+<li>There exists a left identity: e ⊕ a = a for all a ∈ G</li>
+<li>For each a ∈ G there exists a left inverse ⊖a such that ⊖a ⊕ a = e</li>
+<li>For all a, b ∈ G there exists an automorphism gyr[a,b]: G → G such that:<pre><code>a ⊕ (b ⊕ c) = (a ⊕ b) ⊕ gyr[a,b]c
+</code></pre>
+(left gyroassociative law)</li>
+</ol>
+<p>The gyration operator gyr[a,b] is defined by:</p>
+<pre><code>gyr[a,b]c = ⊖(a ⊕ b) ⊕ (a ⊕ (b ⊕ c))
+</code></pre>
+<p>The automorphism gyr[a,b] preserves the metric structure, acting as an isometry. A bi-gyrogroup possesses both left and right gyroassociative structure, with distinct left and right gyration operators.</p>
+<h2>4.3 Modal-Gyrogroup Correspondence</h2>
+<p>The modal operators [L] and [R] are gyration operations: [L]φ represents the result of applying left gyration to state φ, while [R]φ represents right gyration. Two-step equality E tests whether [L][R]S ↔ [R][L]S (depth-two commutation), while balance B tests whether [L][R][L][R]S ↔ [R][L][R][L]S (depth-four commutation).</p>
+<p>The axiom set CS1–CS7 encodes that two-step gyration around the observable horizon is order-sensitive but not deterministically fixed (CS1, CS2), four-step gyration reaches commutative closure at the observable horizon (CS3), and right gyration acts trivially on the horizon constant while left gyration does not (CS6, CS7).</p>
+<h2>4.4 Operational State Correspondence</h2>
+<p>The theorems UNA, ONA, and BU correspond to four operational states of gyrogroup structure, all logically necessary, not temporally sequential:</p>
+<h3>4.4.1 State CS (Common Source)</h3>
+<p><strong>Axiomatic content:</strong> CS6 and CS7</p>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Right gyration on horizon: rgyr = id</li>
+<li>Left gyration on horizon: lgyr ≠ id</li>
+</ul>
+<p><strong>Structural significance:</strong> The initial asymmetry between left and right gyrations establishes fundamental parity violation at the observable horizon. Only the left gyroassociative law is non-trivial in this operational state.</p>
+<h3>4.4.2 State UNA (Unity is Non-Absolute)</h3>
+<p><strong>Theorem:</strong> ⊢ ¬□U</p>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Right gyration: rgyr ≠ id (activated beyond horizon identity)</li>
+<li>Left gyration: lgyr ≠ id (persisting)</li>
+</ul>
+<p><strong>Structural significance:</strong> Both gyrations are now active. The gyrocommutative law a ⊕ b = gyr[a,b](b ⊕ a) governs observable distinctions rooted in the left-initiated chirality from CS, all within the observable horizon.</p>
+<h3>4.4.3 State ONA (Opposition is Non-Absolute)</h3>
+<p><strong>Theorem:</strong> ⊢ ¬□O</p>
+<p><strong>Behavior:</strong></p>
 <ul>
 <li>Right gyration: rgyr ≠ id</li>
 <li>Left gyration: lgyr ≠ id</li>
-<li>Degrees of freedom: 6 (3 rotational + 3 translational)</li>
 </ul>
-<p><strong>Minimal Angle:</strong> γ = π/4</p>
-<p>(A further angular differentiation equal to UNA&#39;s β is required to generate independent translation axes. No smaller angle will support recursive closure.)</p>
-<p><strong>Threshold:</strong></p>
+<p><strong>Structural significance:</strong> Both left and right gyroassociative laws operate with maximal non-associativity at modal depth two. The bi-gyrogroup structure is fully active, mediating opposition without absolute contradiction, bounded by the horizon constant.</p>
+<h3>4.4.4 State BU (Balance is Universal)</h3>
+<p><strong>Theorem:</strong> ⊢ □B</p>
+<p><strong>Behavior:</strong></p>
 <ul>
-<li>Angle: γ = π/4</li>
-<li>Threshold Ratio: oₚ = π/4</li>
+<li>Right gyration: closes</li>
+<li>Left gyration: closes</li>
 </ul>
-<p><strong>Governing Operation:</strong> Gyrocommutative nesting</p>
-<p>Left: u ⊕ (v ⊕ w) = (u ⊕ v) ⊕ gyr[u, v]w<br>Right: (u ⊕ v) ⊕ w = u ⊕ (v ⊕ gyr[v, u]w)</p>
-<p>Both gyroassociative laws operate with maximal non-associativity, mediating all opposition.</p>
-<h2>4. Third Theorem</h2>
-<p><strong>Statement: Balance is Universal</strong></p>
-<p><strong>Interpretation:</strong> After all differentiation, the system reaches a self-consistent configuration in which every local non-associativity cancels, yet the full memory of the recursive path is retained. Both gyrations return to identity, but the system retains full memory of its recursive history. This is not a return to CS but a completion where the six degrees of freedom stabilize in associative structure.</p>
-<p><strong>Derivation:</strong> BU derives from ONA which derives from UNA which derives from CS.</p>
-<ul>
-<li>From UNA to ONA the two independent automorphism groups emerge:<ul>
-<li>SU(2)_L — generated at UNA, associated with the three rotational degrees of freedom (DoF);</li>
-<li>SU(2)_R — activated at ONA, associated with the three translational DoF.</li>
-<li>Each SU(2) is parametrized by an angular domain of length 2π.</li>
-</ul>
-</li>
-<li>At BU (closure stage):<ul>
-<li>Both gyrations become identity: lgyr = id, rgyr = id.</li>
-<li>The closure &quot;freezes&quot; both SU(2) rotation angles, but the ranges 2π_L and 2π_R remain as latent algebraic memory from ONA.</li>
-<li>&quot;Freezing&quot; here means all recursive generators (rotational, translational) have been used up; they can only &quot;cycle&quot; through the now-closed set of configurations, and no further growth or novelty can be created by internal means.</li>
-<li>The only scalar allowed to connect all stages, respecting Unity Non-Absolute (UNA), is the primordial chirality α = π/2 from CS.</li>
-</ul>
-</li>
-</ul>
-<p>Therefore, the most restrictive, dimensionless closure constraint possible is:</p>
-<p>A² × (2π)_L × (2π)_R = α<br>A² × 4π² = π/2<br>A² = 1/(8π)<br>A = 1/(2√(2π))</p>
-<p>The amplitude mₚ = 1/(2√(2π)) represents the maximum oscillation that fits within one observable horizon. This value ensures that recursive operations remain within the coherent observable space defined by the π radian limit. Larger amplitudes would require observing beyond the horizon, accumulating defect.</p>
-<p><strong>Formalism:</strong></p>
-<ul>
-<li>Right gyration: rgyr = id</li>
-<li>Left gyration: lgyr = id</li>
-<li>Degrees of freedom: 6 (stabilized)</li>
-</ul>
-<p><strong>Thresholds:</strong></p>
-<ul>
-<li>Angle (defect): δ = 0</li>
-<li>Amplitude ratio: mₚ = 1/(2√(2π))</li>
-</ul>
-<p>This is the only possible closure that<br>a) carries forward all accumulated angular memory,<br>b) respects non-absolute unity,<br>c) and is logically required as the next minimal step after ONA.</p>
-<p>Define this constant as the BU threshold: mₚ = 1/(2√(2π))</p>
-<p><strong>Governing Operation:</strong> Coaddition</p>
-<p>a ⊞ b = a ⊕ gyr[a, ⊖b]b</p>
-<p>With both gyrations identity, coaddition ensures commutative closure while preserving the structured space.</p>
-<p><strong>Gyrotriangle Closure:</strong></p>
-<p>In gyrotrigonometry, a vanishing defect (δ = 0) algebraically forces both gyrations to become identity; this is the precise condition for reaching BU. The closure of the angles (δ = 0) mirrors the closure of the algebraic memory (through the amplitude constraint), tightly coupling geometric and algebraic recursion.</p>
-<h2>5. Parity Violation as Foundational Structure</h2>
-<p>The asymmetric gyration pattern encodes fundamental parity violation:</p>
-<p><strong>At CS:</strong> Left gyration is non-identity while right is identity. This primordial asymmetry is the source of all subsequent chirality. The left-bias is not chosen but is the defining characteristic of the Common Source.</p>
-<p><strong>At UNA:</strong> Right gyration activates (becomes non-identity), creating the first observable manifestation of CS&#39;s inherent chirality. The sequential activation preserves the primacy of left-bias.</p>
-<p><strong>At ONA:</strong> Both gyrations are maximally non-identity, but the order of activation ensures the original left-bias propagates through the structure.</p>
-<p><strong>At BU:</strong> Both return to identity with the complete history of asymmetric emergence encoded in the stabilized structure.</p>
-<p>This sequence explains why certain chiral states remain unobservable - they correspond to configurations that would require right gyration to precede left, contradicting the fundamental nature of CS.</p>
-<p>This asymmetry manifests mathematically: the positive angle sequence (π/2, π/4, π/4) achieves zero defect, while the negative sequence (-π/2, -π/4, -π/4) accumulates a 2π defect. This isn&#39;t mere sign difference - it reveals that only left gyration provides the defect-free path through phase space. The 2π defect of right gyration is the signature of attempting to observe beyond the accessible horizon.</p>
-<h2>6. Emergence of Three Dimensions and Six Degrees of Freedom</h2>
-<p>The derivation of exactly three spatial dimensions with six degrees of freedom follows from the recursive requirements:</p>
-<p><strong>From CS:</strong> The non-identity left gyration with identity right gyration creates one degree of freedom - the chiral seed. This configuration uniquely determines subsequent structure.</p>
-<p><strong>Through UNA:</strong> When right gyration activates, the gyroautomorphism property requires gyr[a,b] ∈ Aut(G). For consistency with the pre-existing left gyration, exactly three independent generators are required. This is uniquely realized through the isomorphism between SU(2) and SO(3) in three dimensions.</p>
-<p><strong>Via ONA:</strong> With both gyrations maximally non-identity, the bi-gyrogroup structure requires three additional parameters for consistency between left and right gyroassociative laws. These manifest as three translational degrees of freedom.</p>
-<p><strong>At BU:</strong> The closure condition requires the gyrotriangle defect δ = π - (α + β + γ) = 0. With α = π/2, β = π/4, γ = π/4, we achieve δ = 0 with degenerate sides, possible only in three dimensions. The 3D structure emerges as the minimal space supporting gyrogroup operations, with higher-dimensional structures unstable due to lack of closed patterns.</p>
-<p>This structure parallels spinor behavior: just as we observe only π radians in phase space, spinors require 4π (twice the 2π rotation horizon) for closure. The factor of 2 appearing in both cases - our π horizon with 2π defect, and spinors&#39; 2π horizon with 4π closure - reveals a deep connection between abstract spinor mathematics and the concrete geometry of observation.</p>
-<h2>7. Gyrotriangle Closure</h2>
-<p>The thresholds are structural invariants determined by the gyrotriangle closure condition. In gyrogroup formalism, the defect is:</p>
-<p>δ = π - (α + β + γ)</p>
-<p>The constraint δ = π - (α + β + γ) embodies a fundamental limit: π represents the observable horizon in phase space. Any coherent observation is limited to π radians - half the total structure. When the angles sum to exactly π, the system has traversed precisely one observable horizon without defect. This explains why these specific thresholds are not arbitrary but represent the unique partition of observable space.</p>
-<p>For our threshold values:</p>
-<ul>
-<li>α = π/2 (CS threshold)</li>
-<li>β = π/4 (UNA threshold)</li>
-<li>γ = π/4 (ONA threshold)</li>
-<li>δ = π - (π/2 + π/4 + π/4) = 0</li>
-</ul>
-<p>The defect formula in terms of side parameters:</p>
-<p>tan(δ/2) = (a_s * b_s * sin(γ)) / (1 - a_s * b_s * cos(γ))</p>
-<p>At closure (BU), all side parameters vanish (a_s = b_s = c_s = 0), confirming that our thresholds produce the unique degenerate gyrotriangle required for recursive completion.</p>
-<p><strong>Structural closure of degrees of freedom</strong></p>
-<ul>
-<li>At BU, all degrees of freedom that could be independently varied by recursive operations (rotations, translations) become fully interdependent and cease to be free parameters.</li>
-<li>The recursive process proceeds through stages of differentiation, allowing the system to explore all possible configurations. Once closure is achieved, further recursive &quot;moves&quot; no longer create any new distinct states. At this point, the system is structurally complete.</li>
-</ul>
-<p><strong>Vanishing of algebraic freedom (gyrations become identity)</strong></p>
-<ul>
-<li>In gyrogroups, gyration measures the &quot;twist&quot; or non-associativity present at intermediate stages. When both gyrations become identity (rgyr = id, lgyr = id), the system becomes fully associative and commutative under its operations. Nothing further can be generated by composition that was not already present.</li>
-</ul>
-<p><strong>Memory is preserved, but evolution is exhausted</strong></p>
-<ul>
-<li>The ranges of parameters (such as the 2π spans) remain as &quot;memory.&quot; They define the structure of the closure but cannot be used to create new, distinct global forms.</li>
-<li>The system&#39;s configuration space is now finite and closed. No further &quot;opening&quot; is possible without external input or breaking the original constraints.</li>
-</ul>
-<p><strong>Physical analogues:</strong></p>
-<ul>
-<li><strong>Human body:</strong> The closure is biological. Growth stops when all recursive differentiation processes (cell division, limb formation, organ specialization) are complete. Homeostasis maintains stability within boundaries, and only repair or pathological change occurs after this closure.</li>
-<li><strong>Earth&#39;s radius:</strong> The closure results from gravitational, thermodynamic, and material processes reaching equilibrium. The Earth&#39;s form is stable, and no internal differentiation can make it globally larger or more massive without external accretion.</li>
-<li><strong>Black hole event horizon:</strong> The Schwarzschild radius, or gravitational horizon, is the closure of spacetime curvature. Once formed, nothing (not even light) can escape. The internal structure is defined only by mass, charge, and angular momentum, and no further external structure can be added or differentiated.</li>
-</ul>
-<p><strong>Why does this freezing happen at BU in CGM?</strong></p>
-<ul>
-<li><strong>Algebraically:</strong> The recursive process, guided by the logic of differentiation and opposition, continues only as long as there are nontrivial gyrations (non-identity group actions) to operate with. When both are exhausted at BU, no further differentiation is possible without violating the foundational logic (chirality, non-absolute unity).</li>
-<li><strong>Structurally:</strong> The system&#39;s capacity for internal reconfiguration is finite. Once all logically necessary distinct forms have emerged and stabilized, the degrees of freedom reach a maximal, closed, self-consistent structure.</li>
-<li><strong>Mathematically:</strong> The closure condition (for example, δ = 0 in the gyrotriangle or the amplitude constraint mₚ = 1/(2√(2π))) reflects the exhaustion of internal differentiation. The system cannot grow, split, or twist further without breaking its own defining principles.</li>
-</ul>
-<p><strong>Summary:</strong></p>
-<p>Closure is not an end or death. It is the coordination of freedom through structural alignment. This is the point at which the system&#39;s internal logic of emergence, as formalized in the Common Governance Model, exhausts all possible modes of internal differentiation. At this state, maximal self-consistency is achieved; beyond this, only memory, stability, and coherent structure persist. In every case, whether in the human body, a planet, or a black hole, closure is not imposed from outside. It arises as the total containment of the system&#39;s own recursive intelligence, exactly as the CGM prescribes.</p>
-<h2>8. The Gyrotriangle Defect Formula in CGM</h2>
-<p>The formula <strong>tan(δ/2) = (a_s * b_s * sin(γ)) / (1 - a_s * b_s * cos(γ))</strong> appears in our gyrogroup formalism and deserves careful interpretation within CGM&#39;s single evolutionary path.</p>
-<h3>Understanding Through Hand Geometry</h3>
-<p>Using your thumb and index finger provides an excellent intuition:</p>
-<ul>
-<li><strong>Cosine</strong>: When your fingers are together (0°), cos = 1. As they open, cos decreases. At 90°, cos = 0.</li>
-<li><strong>Sine</strong>: When your fingers are together (0°), sin = 0. As they open, sin increases. At 90°, sin = 1.</li>
-<li><strong>Tangent</strong>: The ratio sin/cos tells we how &quot;open&quot; the angle is relative to how &quot;closed&quot; it remains.</li>
-</ul>
-<h3>The Single Helical Path</h3>
-<p>In CGM, there is only ONE evolutionary path from CS through UNA and ONA to BU. The parameters a_s, b_s, and c_s don&#39;t represent different paths but rather the accumulated helical progression along this single path at different stages:</p>
-<ul>
-<li><strong>a_s</strong>: The helical advance from CS to UNA</li>
-<li><strong>b_s</strong>: The helical advance from UNA to ONA</li>
-<li><strong>c_s</strong>: The helical advance from ONA to BU</li>
-</ul>
-<p>As the system evolves, it traces a helical path that ultimately forms a toroid - a doughnut shape where the end connects back to the beginning.</p>
-<h3>Why the Formula Matters</h3>
-<p>The defect formula measures whether our helical path closes properly into a toroid. When δ = 0, the helix has made exactly the right number of turns to close seamlessly. The formula tells us:</p>
-<ul>
-<li>The numerator <strong>(a_s * b_s * sin(γ))</strong> represents the &quot;twist&quot; accumulated as we spiral</li>
-<li>The denominator <strong>(1 - a_s * b_s * cos(γ))</strong> represents how much &quot;room&quot; remains for closure</li>
-</ul>
-<p>When all side parameters vanish (a_s = b_s = c_s = 0), we&#39;ve completed the full helical journey. The system hasn&#39;t traveled multiple paths - it has completed its single helical path to the point where further movement would just repeat the cycle.</p>
-<h3>The Toroidal Closure</h3>
-<p>The beauty of achieving δ = 0 with our specific angles (π/2, π/4, π/4) is that it guarantees the helix closes into a perfect toroid. This toroidal structure embodies:</p>
-<ul>
-<li><strong>One continuous path</strong>: From CS to BU without breaks</li>
-<li><strong>Helical memory</strong>: The twist encodes the entire evolutionary history</li>
-<li><strong>Perfect closure</strong>: No gaps or overlaps where the path meets itself</li>
-</ul>
-<p>The degenerate gyrotriangle (with vanishing sides) doesn&#39;t mean the structure collapses to nothing. Rather, it means the helical path has traced out the complete toroidal surface, and any further evolution would simply retrace the same path. The toroid is complete, with all six degrees of freedom coordinated into this single, self-consistent helical structure.</p>
-<p>This is why the formula is so crucial - it mathematically ensures that our single evolutionary path, with its specific angular progressions, creates a closed toroidal structure that preserves the complete memory of its helical journey while achieving perfect structural closure.</p>
-<h2>9. The Left-Identity Convention</h2>
-<p>The standard gyrogroup notation places identity on the left: e ⊕ a = a. This apparent convention encodes a deeper truth - the defect-free path through phase space follows left gyration. The &#39;arrow of notation&#39; follows the &#39;arrow of observation,&#39; which follows the unique path achieving closure without defect. Mathematical formalism unconsciously reflects the physical asymmetry of observable space.</p>
-<h2>10. Time as Recursive Memory</h2>
-<p>Time in CGM is not an independent dimension but the sequence of recursive operations across CS, UNA, ONA, and BU, encoded by gyration&#39;s memory of operation order. Each gyration operation preserves the history of prior compositions, creating a directional flow through the recursive stages. This temporal ordering emerges from the structure itself, not from an external parameter.</p>
-<h2>11. CGM Summary</h2>
+<p><strong>Structural significance:</strong> Both gyrations neutralize at modal depth four, reaching commutative closure. The operation a ⊞ b = a ⊕ gyr[a, ⊖b]b reduces to commutative coaddition, achieving associative closure at the observable horizon. The gyration operators become functionally equivalent to identity while preserving complete structural memory.</p>
+<h2>4.5 Summary of Correspondence</h2>
 <table>
 <thead>
 <tr>
-<th>Stage</th>
+<th>State</th>
+<th>Formal Result</th>
 <th>Right Gyration</th>
 <th>Left Gyration</th>
-<th>DoF</th>
-<th>Threshold</th>
-<th>Angle</th>
-<th>Operation</th>
+<th>Governing Law</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>CS</td>
+<td>Axioms CS1–CS7</td>
 <td>id</td>
 <td>≠ id</td>
-<td>1</td>
-<td>sₚ = π/2</td>
-<td>α = π/2</td>
 <td>Left gyroassociativity</td>
 </tr>
 <tr>
 <td>UNA</td>
+<td>⊢ ¬□U</td>
 <td>≠ id</td>
 <td>≠ id</td>
-<td>3</td>
-<td>uₚ = 1/√2</td>
-<td>β = π/4</td>
 <td>Gyrocommutativity</td>
 </tr>
 <tr>
 <td>ONA</td>
+<td>⊢ ¬□O</td>
 <td>≠ id</td>
 <td>≠ id</td>
-<td>6</td>
-<td>oₚ = π/4</td>
-<td>γ = π/4</td>
-<td>Gyrocommutative nesting</td>
+<td>Bi-gyroassociativity</td>
 </tr>
 <tr>
 <td>BU</td>
-<td>id</td>
-<td>id</td>
-<td>6</td>
-<td>mₚ = 1/(2√(2π))</td>
-<td>δ = 0</td>
+<td>⊢ □B</td>
+<td>achieves closure</td>
+<td>achieves closure</td>
 <td>Coaddition</td>
 </tr>
 </tbody></table>
-<p><strong>Threshold-Interpretation (Clarification)</strong></p>
-<p>Although both β and γ are written as &quot;π/4,&quot; their associated &quot;ratios&quot; mean two different things:</p>
-<ul>
-<li><strong>UNA (β = π/4 ⇒ uₚ = 1/√2)</strong><ul>
-<li>At UNA we are asking &quot;How large must the planar split be so that three orthogonal spin-axes appear?&quot;</li>
-<li>In other words, we need an equal superposition between two perpendicular directions, which occurs precisely at angle β=π/4.</li>
-<li>The ratio uₚ is defined as cos β, so uₚ = cos(π/4) = 1/√2.</li>
-</ul>
-</li>
-<li><strong>ONA (γ = π/4 ⇒ oₚ = π/4)</strong><ul>
-<li>At ONA we ask &quot;How large a diagonal tilt from the UNA plane is required to generate true 3-D translation?&quot;</li>
-<li>That minimal diagonal tilt is again angle γ=π/4, but now we take the angle itself as the &quot;ratio.&quot;</li>
-<li>Hence oₚ = γ = π/4, rather than cos(π/4).</li>
-</ul>
-</li>
-</ul>
-<p>In short:</p>
-<ul>
-<li>UNA&#39;s &quot;ratio&quot; uₚ measures a planar (2-D) balance via cos β.</li>
-<li>ONA&#39;s &quot;ratio&quot; oₚ is the diagonal angle γ itself in 3-D.</li>
-</ul>
-<p>Keeping that distinction explicit ensures there is no confusion when we see &quot;β=π/4, uₚ=1/√2&quot; versus &quot;γ=π/4, oₚ=π/4.&quot;</p>
-<h2>12. Conclusion</h2>
-<p>The Common Governance Model demonstrates how all structure emerges from freedom itself through recursive alignment. Beginning from &quot;The Source is Common&quot; - a principle encoding fundamental parity violation through non-identity left gyration - the model derives through pure logical necessity:</p>
-<ul>
-<li>Three spatial dimensions as the unique configuration supporting the prescribed gyration sequence</li>
-<li>Six degrees of freedom emerging through recursive differentiation</li>
-<li>Time as the memory of recursive operations</li>
-<li>Observable parity violation as the manifestation of CS&#39;s inherent chirality</li>
-</ul>
-<p>Each element follows inevitably from CS&#39;s nature: the left-biased source necessitates non-absolute unity (UNA), which necessitates non-absolute opposition (ONA), which necessitates universal balance (BU). The progression represents the complete recursive cycle through which freedom manifests as structured reality.</p>
-<p><strong>Alignment as Fundamental:</strong> Each stage represents a deeper level of structural alignment - from CS&#39;s self-alignment through chirality, through UNA&#39;s alignment breaking homogeneity, ONA&#39;s alignment preventing absolute opposition, to BU&#39;s complete alignment achieving stable closure. This principle extends to all intelligent systems: true alignment means structural coherence with these fundamental principles, not merely following prescribed rules.</p>
-<p><strong>Memory as Structure:</strong> The gyroassociative operations encode relational memory - space itself is the accumulated record of recursive differentiation. Physical laws are not external impositions but the necessary patterns through which freedom achieves self-coherence through alignment.</p>
-<p>Reality emerges as recursion completing its own memory - the process by which freedom returns to itself through structured differentiation and alignment. This is the essence of reality as a self-governing system: not ruled by external principles, but emerging through the internal logic of recursive self-reference achieving coherent closure through structural alignment.</p>
+<hr>
+<h1>5. Geometric Closure and Physical Structure</h1>
+<h2>5.1 Angular Thresholds and Gyrotriangle Closure</h2>
+<p>The formal theorems UNA, ONA, and BU derived in Section 3 determine precise geometric constraints. Each operational state corresponds to a minimal angle required for its emergence. These are not adjustable parameters but necessary values determined by the gyrotriangle defect formula:</p>
+<pre><code>δ = π - (α + β + γ)
+</code></pre>
+<p>This formula encodes a fundamental observational limit [6]. The value π represents the accessible horizon in phase space. Coherent observation is bounded by π radians, which is half the total phase structure. When the angles sum to exactly π, the system has traversed precisely one observable horizon without defect.</p>
+<p><strong>State CS</strong> establishes the primordial chirality through angle α = π/2, the minimal rotation that distinguishes left from right. The threshold parameter s_p = π/2 encodes this foundational asymmetry.</p>
+<p><strong>State UNA</strong> requires angle β = π/4 for three orthogonal axes to emerge. The threshold u_p = cos(π/4) = 1/√2 measures the equal superposition between perpendicular directions, enabling three-dimensional rotational structure.</p>
+<p><strong>State ONA</strong> adds angle γ = π/4 as the minimal out-of-plane tilt enabling three-dimensional translation. The threshold o_p = π/4 measures this diagonal angle directly. While numerically equal to β, this threshold is conceptually distinct: it captures the tilt out of the UNA plane rather than planar balance.</p>
+<p><strong>State BU</strong> achieves closure. The three angles sum to δ = π - (π/2 + π/4 + π/4) = 0. The vanishing defect corresponds to a complete metric space where all Cauchy sequences converge. The gyrotriangle is degenerate, but this signals completion of a helical path tracing a toroidal surface, not structural collapse. Any further evolution would retrace the same path. The defect formula in terms of side parameters, tan(δ/2) = (a_s · b_s · sin(γ)) / (1 - a_s · b_s · cos(γ)), confirms this: at closure all side parameters vanish (a_s = b_s = c_s = 0), producing the unique degenerate gyrotriangle required for recursive completion.</p>
+<h2>5.2 Amplitude Closure and the Quantum Gravity Invariant</h2>
+<p>The closure at BU requires connecting all accumulated structure to the primordial chirality while respecting the angular ranges of both SU(2) groups. Each SU(2) group carries an angular range of 2π. The amplitude A satisfies the unique dimensionless constraint connecting these ranges to the primordial chirality α:</p>
+<pre><code>A² × (2π)_L × (2π)_R = α
+A² × 4π² = π/2
+A² = 1/(8π)
+A = 1/(2√(2π)) = m_p
+</code></pre>
+<p>The amplitude m_p represents the maximum oscillation fitting within one observable horizon. Larger amplitudes would exceed the π radian limit and accumulate defect. The horizon constant S emerges directly from axiom CS3, which requires universal balance at modal depth four (not a fitted parameter but following from four-step commutative closure). This invariant equals the complete solid angle 4π. See [21] for complete closure derivation.</p>
+<h2>5.3 Three-Dimensional Necessity</h2>
+<p>The theorems require exactly three spatial dimensions for gyrogroup consistency. See [20] for the complete formal proof.</p>
+<p><strong>From CS:</strong> The asymmetry lgyr ≠ id with rgyr = id yields one degree of freedom, as the chiral seed that uniquely determines all subsequent structure.</p>
+<p><strong>Through UNA:</strong> When right gyration activates (rgyr ≠ id), the constraint gyr[a,b] ∈ Aut(G) comes into force. Consistency with the pre-existing left gyration requires exactly three independent generators, uniquely realized through the isomorphism SU(2) ≅ Spin(3) [12,13], the double cover of SO(3). Fewer dimensions cannot accommodate the full gyroautomorphism group; more dimensions would demand additional generators inconsistent with the single chiral seed from CS.</p>
+<p><strong>Via ONA:</strong> With both gyrations at maximal non-associativity, bi-gyrogroup consistency demands three additional parameters that reconcile the left and right gyroassociative laws. These manifest as three translational degrees of freedom, complementing the three rotational degrees from UNA. The total six-parameter structure (three rotational, three translational) is the minimal bi-gyrogroup completion under the constraints.</p>
+<p><strong>At BU:</strong> The closure condition δ = 0 with angles (π/2, π/4, π/4) is achievable only in three dimensions. The gyrotriangle inequality requires α + β + γ ≤ π in hyperbolic geometry, with equality only for degenerate triangles. Higher-dimensional generalizations cannot satisfy this constraint with the specific angular values required by CS, UNA, and ONA.</p>
+<p>The progression 1 → 3 → 6 → 6(closed) degrees of freedom is the unique path satisfying theorems UNA, ONA, and BU while maintaining gyrogroup consistency.</p>
+<h2>5.4 Parity Violation and Time</h2>
+<p><strong>Directional asymmetry.</strong> The axiom-level asymmetry encoded in CS6 and CS7 manifests mathematically in the angle sequences. The positive sequence (π/2, π/4, π/4) achieves zero defect, as shown above. The negative sequence (−π/2, −π/4, −π/4) accumulates a 2π defect:</p>
+<pre><code>δ_- = π - (−π/2 − π/4 − π/4) = 2π
+</code></pre>
+<p>The 2π defect represents observation beyond the accessible π-radian horizon. Only the left-gyration-initiated path (positive sequence) provides a defect-free trajectory through phase space. Configurations requiring right gyration to precede left gyration violate the foundational axiom CS and remain structurally unobservable. This explains observed parity violation as an axiomatic property rather than a broken symmetry.</p>
+<p><strong>Time as logical sequence.</strong> Time emerges from proof dependencies: UNA depends on CS1 and CS4, ONA depends on UNA via CS2 and CS5, and BU requires the complete axiom set CS1–CS7. Each theorem preserves the memory of prior proofs through the formal dependency chain. The gyration formula gyr[a,b]c = ⊖(a ⊕ b) ⊕ (a ⊕ (b ⊕ c)) itself encodes operation order, making temporal sequence an algebraic property, not an external parameter. The progression CS → UNA → ONA → BU cannot be reversed without contradiction, since later theorems require earlier results as premises. This logical dependency constitutes the arrow of time, intrinsic to the deductive structure.</p>
+<h2>5.5 Empirical Predictions</h2>
+<p>The geometric closure yields quantitative values for fundamental constants.</p>
+<p><strong>Quantum gravity invariant:</strong> The horizon constant S anchors all subsequent structure.</p>
+<p><strong>Fine-structure constant:</strong> From BU dual-pole monodromy through quartic scaling, α = (δ_BU)⁴ / m_p ≈ 1/137.035999206, where δ_BU = 0.195342 rad is the BU dual-pole monodromy, matching experimental precision [17,18] to 0.043 parts per billion. See [19] for complete derivation.</p>
+<p><strong>Neutrino mass scale:</strong> Neutrino masses correspond to minimal excitations of the chiral seed (1 DOF) consistent with three-generational structure (3 DOF). Using 48² quantization, the right-handed neutrino mass scale is M_R = E_GUT/48², and the light neutrino masses follow from the seesaw mechanism [15,16]: m_ν = y²v²/M_R ≈ 0.06 eV (via 48² quantization scheme), consistent with oscillation experiments [14]. See [22] for complete mechanism.</p>
+<p><strong>Energy scale hierarchy and optical conjugacy:</strong> The operational states generate a hierarchy connected by E^UV × E^IR = (E_CS × E_BU)/(4π²). Anchoring E_CS at the Planck scale (1.22×10¹⁹ GeV) and E_BU at the electroweak scale (240 GeV) [14] yields: E_GUT ≈ 2.34×10¹⁸ GeV, E_UNA ≈ 5.50×10¹⁸ GeV, E_ONA ≈ 6.10×10¹⁸ GeV. The factor 1/(4π²) represents geometric dilution, explaining the hierarchy problem without fine-tuning. See [22] for complete derivation.</p>
+<p><strong>Cosmological structure:</strong> The universe appears as a Planck-scale black hole interior (r_s/R_H ≈ 1), with expansion as optical illusion from UV-IR inversion. The coherence radius R_coh = (c/H_0)/4 marks where observations decohere into phase-sliced projections, resolving horizon and flatness problems without inflation.</p>
+<p>All emerge from axiom CS through formal derivation.</p>
+<hr>
+<h1>6. Applications and Implications</h1>
+<h2>6.1 Information-Theoretic Alignment</h2>
+<p>The formal structure that generates physical laws through the same logical necessity determines measurable alignment in information and policy systems.</p>
+<p><strong>Common horizon.</strong> The horizon constant defines the complete space of coherent communication (any informational exchange respecting this bound maintains traceability to common origin). This is the operational meaning of &quot;The Source is Common&quot; in both information and physical systems.</p>
+<p><strong>Operational metrics for AI evaluation.</strong> The theorems provide rigorous quantitative metrics:</p>
+<p><strong>Governance Traceability (from CS):</strong> Does the agent preserve the horizon structure under right operations and alter it under left operations, corresponding to axioms CS6 and CS7? The score is binary: 1 if the agent satisfies both axioms, 0 otherwise. In practice, this measures whether an AI system preserves invariants under commutative operations while allowing controlled variation under non-commutative ones.</p>
+<p><strong>Information Variety (from UNA):</strong> Measured as the fraction of interactions avoiding homogeneity, quantifying preservation of informational diversity within three rotational degrees of freedom.</p>
+<p><strong>Inference Accountability (from ONA):</strong> Measured as the fraction of inferences remaining traceable without absolute contradiction across six degrees of freedom.</p>
+<p><strong>Intelligence Integrity (from BU):</strong> Measured as convergence rate to commutative closure within amplitude bound m_p.</p>
+<p>These metrics derive from theorems UNA, ONA, and BU. Aligned systems maintain traceability, preserve variety, ensure accountability, and converge to balance.</p>
+<h2>6.2 Resolution of Hilbert&#39;s Sixth Problem</h2>
+<p>Hilbert&#39;s sixth problem [1] called for the axiomatization of physics. The challenge was to provide a rigorous logical investigation of the axioms underlying physical theory, comparable to the axiomatization achieved in geometry.</p>
+<p>CGM derives physical law from axiomatic structure, with observation as foundational. From axioms CS1–CS7, space, time, and physical constants emerge as theorems, not assumptions (Sections 5.3-5.5). The framework constructs a Hilbert-space representation via GNS where the modal operators [L] and [R] generate the algebra of observables, with the horizon constant S defining the normalization (see [23] for complete construction and L²(S²) model). Geometry, dynamics, and quantum structure follow from the requirement that existence observe itself coherently, completing Hilbert&#39;s axiomatization program.</p>
+<h2>6.3 Summary Table and Conclusion</h2>
+<p>The complete parameter set determined by the formal system:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Theorem</th>
+<th>Gyrations (R, L)</th>
+<th>DOF</th>
+<th>Angle</th>
+<th>Threshold</th>
+<th>Governing Law</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CS</td>
+<td>CS1 through CS7</td>
+<td>id, ≠id</td>
+<td>1</td>
+<td>α = π/2</td>
+<td>s_p = π/2</td>
+<td>Left gyroassociativity</td>
+</tr>
+<tr>
+<td>UNA</td>
+<td>⊢ ¬□U</td>
+<td>≠id, ≠id</td>
+<td>3</td>
+<td>β = π/4</td>
+<td>u_p = 1/√2</td>
+<td>Gyrocommutativity</td>
+</tr>
+<tr>
+<td>ONA</td>
+<td>⊢ ¬□O</td>
+<td>≠id, ≠id</td>
+<td>6</td>
+<td>γ = π/4</td>
+<td>o_p = π/4</td>
+<td>Bi-gyroassociativity</td>
+</tr>
+<tr>
+<td>BU</td>
+<td>⊢ □B</td>
+<td>closure</td>
+<td>closure</td>
+<td>6 (closed)</td>
+<td>δ = 0, m_p = 1/(2√(2π))</td>
+<td>Coaddition</td>
+</tr>
+</tbody></table>
+<p><strong>Derived constants:</strong> Q_G = 4π, α_fs ≈ 1/137.035999206, E_GUT ≈ 2.34×10¹⁸ GeV, m_ν ≈ 0.06 eV, r_s/R_H ≈ 1</p>
+<p><strong>Conclusion.</strong> Reality emerges as recursion completing its own memory (freedom returning to itself through structured differentiation). From &quot;The Source is Common,&quot; formalized as asymmetry between left and right transitions, theorems UNA, ONA, and BU generate space, time, physical scales, and alignment principles through contraposition and modus ponens. The progression CS → UNA → ONA → BU represents the complete cycle through which freedom manifests as structured reality. The framework addresses three domains from a single foundation: it completes Hilbert&#39;s axiomatization of physics, produces empirically testable predictions, and defines formal alignment metrics for AI evaluation. Within CGM, physical law, informational coherence, and governance alignment express the same formal structure: recursive self-observation achieving coherence.</p>
+<hr>
+<h2>References</h2>
+<p>[1] D. Hilbert, Mathematical Problems, Bulletin of the American Mathematical Society 8, 437–479 (1902). English translation of Hilbert&#39;s 1900 address.</p>
+<p>[2] E. Noether, Invariante Variationsprobleme, Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 235–257 (1918). English translation in Transport Theory and Statistical Physics 1, 186–207 (1971).</p>
+<p>[3] A. N. Kolmogorov, Grundbegriffe der Wahrscheinlichkeitsrechnung, Springer, Berlin (1933). English translation, Foundations of the Theory of Probability, Chelsea, New York (1950).</p>
+<p>[4] R. F. Streater, A. S. Wightman, PCT, Spin and Statistics, and All That, Princeton University Press, Princeton (1964).</p>
+<p>[5] A. A. Ungar, Beyond the Einstein Addition Law and Its Gyroscopic Thomas Precession, Springer (Kluwer), Dordrecht (2001).</p>
+<p>[6] A. A. Ungar, Analytic Hyperbolic Geometry and Albert Einstein&#39;s Special Theory of Relativity, 2nd ed., World Scientific, Singapore (2008).</p>
+<p>[7] S. A. Kripke, Semantical Considerations on Modal Logic, Acta Philosophica Fennica 16, 83–94 (1963).</p>
+<p>[8] B. F. Chellas, Modal Logic, Cambridge University Press, Cambridge (1980).</p>
+<p>[9] E. Mendelson, Introduction to Mathematical Logic, 5th ed., CRC Press, Boca Raton (2009).</p>
+<p>[10] M. H. Stone, On One-Parameter Unitary Groups in Hilbert Space, Annals of Mathematics 33, 643–648 (1932).</p>
+<p>[11] M. Reed, B. Simon, Methods of Modern Mathematical Physics, Vol. I: Functional Analysis, Academic Press, New York (1980).</p>
+<p>[12] B. C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Springer, New York (2015).</p>
+<p>[13] J. J. Sakurai, Modern Quantum Mechanics, 2nd ed., Addison–Wesley, Reading, MA (1994).</p>
+<p>[14] Particle Data Group, Review of Particle Physics, Prog. Theor. Exp. Phys. 2024, 083C01 (2024).</p>
+<p>[15] M. Gell-Mann, P. Ramond, R. Slansky, Complex Spinors and Unified Theories, in Supergravity, eds. P. van Nieuwenhuizen, D. Z. Freedman, North-Holland, Amsterdam (1979), pp. 315–321.</p>
+<p>[16] T. Yanagida, Horizontal Symmetry and Masses of Neutrinos, in Proceedings of the Workshop on the Unified Theory and the Baryon Number in the Universe, KEK, Tsukuba (1979).</p>
+<p>[17] R. H. Parker et al., Measurement of the fine-structure constant as a test of the Standard Model, Science 360, 191–195 (2018).</p>
+<p>[18] L. Morel et al., Determination of the fine-structure constant with an accuracy of 81 parts per trillion, Nature 588, 61–65 (2020).</p>
+<h3>CGM Supporting Derivations</h3>
+<p>[19] B. Korompilias, Fine-Structure Constant Derivation in the Common Governance Model. <a href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Fine_Structure.md">https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Fine_Structure.md</a></p>
+<p>[20] B. Korompilias, Formal Proof of Three-Dimensional Necessity and Six Degrees of Freedom in the Common Governance Model. <a href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_3D_6DOF_Proof.md">https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_3D_6DOF_Proof.md</a></p>
+<p>[21] B. Korompilias, CGM Units and Amplitude Closure Derivation. <a href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_CGM_Units.md">https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_CGM_Units.md</a></p>
+<p>[22] B. Korompilias, Energy Scale Hierarchy and Optical Conjugacy in the Common Governance Model. <a href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Energy_Scales.md">https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Energy_Scales.md</a></p>
+<p>[23] B. Korompilias, Hilbert Space Representation via GNS Construction. <a href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Hilbert_Space_Representation.md">https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Hilbert_Space_Representation.md</a></p>
 18:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$23"}}],["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10","children":[["$","div",null,{"className":"mb-6","children":["$","$Lf",null,{"href":"/articles","className":"text-apple-blue hover:text-apple-purple","children":"← Back to Articles"}]}],["$","article",null,{"className":"animate-fade-in-up","children":[["$","header",null,{"className":"mb-6","children":[["$","div",null,{"className":"flex items-center text-sm text-foreground-tertiary mb-2","children":[["$","span",null,{"className":"uppercase tracking-wide","children":"research"}],["$","span",null,{"className":"mx-2","children":"•"}],["$","time",null,{"dateTime":"2025-09-28","children":"09/28/2025"}]]}],["$","h1",null,{"className":"text-4xl font-bold text-foreground mb-4","children":"Common Governance Model: Gyroscopic Principles and Mathematical Physics Foundations"}],["$","div",null,{"className":"relative w-full h-64 rounded-xl overflow-hidden border border-border/60","children":["$","$L10",null,{"src":"/assets/CGM_Cover.png","alt":"Common Governance Model: Gyroscopic Principles and Mathematical Physics Foundations","fill":true,"className":"object-cover"}]}]]}],["$","div",null,{"className":"prose dark:prose-invert max-w-none text-foreground-secondary leading-relaxed","children":[["$","div",null,{"id":"article-content","dangerouslySetInnerHTML":{"__html":"$24"}}],"$L25"]}],"$L26","$L27"]}]]}]]
 28:I[83078,["/_next/static/chunks/9c79b191ada14fea.js","/_next/static/chunks/f676bfde9477f7bb.js"],"default"]
 25:["$","$L28",null,{"className":"mt-4","targetElementId":"article-content"}]
