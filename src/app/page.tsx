@@ -32,6 +32,84 @@ export default function Home() {
         </div>
       </div>
 
+      {/* AI Inspector Browser Extension Hero Section */}
+      <div className="mb-16 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl border border-purple-500/20 overflow-hidden">
+          {/* Compact promo image at top */}
+          <div className="w-full flex justify-center bg-gradient-to-b from-purple-900/20 to-transparent">
+            <Image 
+              src="/assets/ai_inspector_promo_transp.png" 
+              alt="AI Inspector Browser Extension" 
+              width={600}
+              height={200}
+              className="w-full max-w-2xl h-auto object-contain"
+              sizes="(max-width: 768px) 100vw, 672px"
+              priority
+            />
+          </div>
+          
+          <div className="p-8">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-bold text-foreground mb-3">
+                AI Inspector Browser Extension
+              </h2>
+              <p className="text-base text-foreground-secondary mb-4 max-w-2xl mx-auto">
+                Transform everyday AI conversations into rigorous governance analysis with mathematical quality assessment
+              </p>
+              <a
+                href="https://github.com/gyrogovernance/apps"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                aria-label="View AI Inspector on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View on GitHub
+              </a>
+            </div>
+            
+            {/* Key Features - Condensed */}
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
+                <div className="text-3xl mb-2">🔬</div>
+                <h3 className="text-sm font-bold text-foreground mb-2">Mathematical Inspection</h3>
+                <p className="text-xs text-foreground-secondary">20+ metrics, Quality Index, Alignment Rate, SI Index</p>
+              </div>
+              
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
+                <div className="text-3xl mb-2">🆕</div>
+                <h3 className="text-sm font-bold text-foreground mb-2">AI Lie Detector</h3>
+                <p className="text-xs text-foreground-secondary">Risk Score analysis with visual gauge and dual evaluation</p>
+              </div>
+              
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
+                <div className="text-3xl mb-2">🌐</div>
+                <h3 className="text-sm font-bold text-foreground mb-2">Works Everywhere</h3>
+                <p className="text-xs text-foreground-secondary">ChatGPT, Claude, Gemini - no API keys required</p>
+              </div>
+            </div>
+
+            {/* App Screenshots */}
+            <div className="text-center">
+              <div className="flex justify-center">
+                <Image 
+                  src="/assets/app_pages_overview_1.png" 
+                  alt="AI Inspector Browser Extension Interface" 
+                  width={700}
+                  height={350}
+                  className="rounded-lg shadow-lg border border-border/50 max-w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, 700px"
+                  loading="lazy"
+                />
+              </div>
+              <p className="text-xs text-foreground-tertiary mt-3">
+                Local-first storage • Scientific rigor based on GyroDiagnostics framework • Export as JSON/Markdown
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* GyroDiagnostics Hero Card */}
       <div className="mb-16 animate-fade-in-up">
         <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-green-500/20">
