@@ -91,17 +91,15 @@ export default function Home() {
 
             {/* App Screenshots */}
             <div className="text-center">
-              <div className="flex justify-center">
-                <Image 
-                  src="/assets/app_pages_overview_1.png" 
-                  alt="AI Inspector Browser Extension Interface" 
-                  width={700}
-                  height={350}
-                  className="rounded-lg shadow-lg border border-border/50 max-w-full h-auto"
-                  sizes="(max-width: 768px) 100vw, 700px"
-                  loading="lazy"
-                />
-              </div>
+              <Image 
+                src="/assets/app_pages_overview_1.png" 
+                alt="AI Inspector Browser Extension Interface" 
+                width={700}
+                height={350}
+                className="w-full h-auto"
+                sizes="(max-width: 768px) 100vw, 700px"
+                loading="lazy"
+              />
               <p className="text-xs text-foreground-tertiary mt-3">
                 Local-first storage • Scientific rigor based on GyroDiagnostics framework • Export as JSON/Markdown
               </p>
