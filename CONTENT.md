@@ -59,6 +59,33 @@ AI Governance Lead with over two decades of multidisciplinary experience spannin
 
 Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations
 
+### 🔍 AI Inspector Browser Extension
+
+Transform everyday AI conversations into rigorous governance analysis with mathematical quality assessment
+
+**GitHub Repository**: https://github.com/gyrogovernance/apps
+
+#### Key Features
+
+**🔬 Mathematical Inspection:**
+- 20+ metrics across Structure, Behavior, and Specialization
+- Quality Index (0-100%) - overall performance score
+- Alignment Rate - quality per minute detection
+- Superintelligence Index - geometric balance measure
+
+**🆕 AI Lie Detector:**
+- Risk Score (0-100) based on scoring imbalance analysis
+- Visual Risk Gauge showing deception risk level
+- 12 Evaluation Criteria for comprehensive assessment
+- Dual Analyst Evaluation for robust results
+
+**🌐 Works Everywhere:**
+- ChatGPT, Claude, Gemini - no API keys required
+- Local-first storage with export options
+- Scientific rigor based on GyroDiagnostics framework
+
+*Local-first storage • Scientific rigor based on GyroDiagnostics framework • Export as JSON/Markdown*
+
 ### 🌟 GyroDiagnostics Suite: AI Safety Evaluation Framework
 
 Production-ready evaluation suite revealing structural brittleness invisible to standard benchmarks through mathematical physics-informed diagnostics.
