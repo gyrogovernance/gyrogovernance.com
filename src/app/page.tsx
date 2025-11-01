@@ -56,16 +56,28 @@ export default function Home() {
               <p className="text-base text-foreground-secondary mb-4 max-w-2xl mx-auto">
                 Transform everyday AI conversations into rigorous governance analysis with mathematical quality assessment
               </p>
-              <a
-                href="https://github.com/gyrogovernance/apps"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                aria-label="View AI Inspector on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
+              <div className="flex flex-col items-center gap-3">
+                <a
+                  href="https://chromewebstore.google.com/detail/ai-inspector/hcblmheihnlngnogobgclhfahjljnbok?utm_source=item-share-cb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  aria-label="Add AI Inspector to Chrome (opens in new tab)"
+                >
+                  <Image src="/assets/chrome.png" alt="Chrome" width={20} height={20} className="mr-2" />
+                  Add to Chrome
+                </a>
+                <a
+                  href="https://github.com/gyrogovernance/apps"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm text-foreground-secondary hover:text-foreground transition-colors duration-200"
+                  aria-label="View AI Inspector on GitHub (opens in new tab)"
+                >
+                  <GitHubIcon className="w-4 h-4 mr-1" />
+                  View on GitHub
+                </a>
+              </div>
             </div>
             
             {/* Key Features - Condensed */}

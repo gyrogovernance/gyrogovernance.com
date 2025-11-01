@@ -63,6 +63,8 @@ Advancing AI governance through innovative research and development solutions wi
 
 Transform everyday AI conversations into rigorous governance analysis with mathematical quality assessment
 
+**Chrome Web Store**: https://chromewebstore.google.com/detail/ai-inspector/hcblmheihnlngnogobgclhfahjljnbok?utm_source=item-share-cb
+
 **GitHub Repository**: https://github.com/gyrogovernance/apps
 
 #### Key Features
