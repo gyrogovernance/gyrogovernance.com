@@ -20,7 +20,7 @@ A coalition of researchers, public figures, and institutions has successfully pr
 
 **Executive Summary**
 
-This article exposes how a fundamental misunderstanding of AI systems as potential "superintelligent agents" has created a misinformation crisis influencing policy and public discourse. Large language models are statistical measurement tools that identify patterns in data and generate outputs based on probabilities. They possess no goals, plans, or agency. Yet organizations like the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) propagate claims of extinction risks, leading to documents like FLI's 2025 prohibition statement signed by over 58,000 people.
+This article exposes how a fundamental misunderstanding of AI systems as potential "superintelligent agents" has created a misinformation crisis influencing policy and public discourse. Large language models are statistical measurement tools that identify patterns in data and generate outputs based on probabilities. They possess no goals, plans, or agency. Yet organizations like the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) propagate claims of extinction risks, leading to documents like FLI's 2025 prohibition statement signed by over 100,000 people.
 
 We demonstrate how this category error diverts billions from addressing real AI harms (like biased algorithms) and societal issues (like poverty driving misuse) toward phantom threats. The misinformation pipeline (technical claims amplified by media, endorsed by celebrities, and turned into policy) manufactures consensus through fear, justifying authoritarian controls while displacing human responsibility.
 
@@ -28,7 +28,7 @@ Real risks stem from how humans design and deploy these tools, not from autonomo
 
 ## 1. Introduction
 
-In recent years, organizations such as the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) have successfully mobilized public concern about artificial intelligence by framing current systems as precursors to "superintelligence" capable of human extinction. As of 2025, the FLI statement calling for prohibition of superintelligence development has gathered over 58,000 signatures from public figures, policymakers, and researchers (Future of Life Institute, 2025).
+In recent years, organizations such as the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) have successfully mobilized public concern about artificial intelligence by framing current systems as precursors to "superintelligence" capable of human extinction. As of 2025, the FLI statement calling for prohibition of superintelligence development has gathered over 100,000 signatures from public figures, policymakers, and researchers (Future of Life Institute, 2025).
 
 This campaign represents a profound category error with serious consequences. Large language models (LLMs) are statistical systems that measure patterns in high-dimensional token spaces and generate outputs based on probability distributions. They possess no goals, no persistent memory across sessions, no strategic planning capabilities, and no coherent preference structures (Bender et al., 2021). Treating these measurement tools as potential agents capable of "trying to escape" or "scheming for power" fundamentally misunderstands their architecture and operation.
 
