@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 a:I[68027,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
-:HL["/_next/static/chunks/1a2b1c3a9af73a1d.css","style"]
+:HL["/_next/static/chunks/62fd101e951dad1b.css","style"]
 :HL["/_next/static/media/07454f8ad8aaac57.p.fc65572f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/797e433ab948586e.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -99,7 +99,7 @@ a:I[68027,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
     "Superintelligence Architecture",
     "AI Pathology Detection"
   ]
-}0:{"P":null,"b":"DsLCbL2FR8wt5lROACDi4","p":"","c":["","articles","asi-misinformation-crisis",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","asi-misinformation-crisis","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1a2b1c3a9af73a1d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","asi-misinformation-crisis","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
+}0:{"P":null,"b":"nH6qVjLXjQFZLJZRArZZI","p":"","c":["","articles","asi-misinformation-crisis",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","asi-misinformation-crisis","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","asi-misinformation-crisis","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
 c:I[79520,["/_next/static/chunks/9c79b191ada14fea.js"],""]
 e:I[59919,["/_next/static/chunks/9c79b191ada14fea.js"],"ThemeProvider"]
 f:I[22016,["/_next/static/chunks/9c79b191ada14fea.js","/_next/static/chunks/f676bfde9477f7bb.js"],"default"]
@@ -173,20 +173,20 @@ d:T916,
 7:["$","$1","c",{"children":[null,["$","$L13",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L14",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
 8:["$","$1","c",{"children":["$L18",[["$","script","script-0",{"src":"/_next/static/chunks/f676bfde9477f7bb.js","async":true,"nonce":"$undefined"}]],["$","$L19",null,{"children":["$L1a",["$","$L1b",null,{"promise":"$@1c"}]]}]]}]
 9:["$","$1","h",{"children":[null,[["$","$L1d",null,{"children":"$L1e"}],null],["$","$L1f",null,{"children":["$","div",null,{"hidden":true,"children":["$","$20",null,{"fallback":null,"children":"$L21"}]}]}]]}]
-b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1a2b1c3a9af73a1d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
 22:I[40244,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
 15:["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]
 16:["$","footer",null,{"className":"bg-surface-elevated/50 backdrop-blur-sm border-t border-border mt-16","role":"contentinfo","children":["$","div",null,{"className":"max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"text-center","children":[["$","p",null,{"className":"text-foreground-secondary font-medium","children":"GYRO GOVERNANCE | 2025 | CC BY-SA 4.0"}],["$","nav",null,{"className":"mt-6","role":"navigation","aria-label":"Footer navigation","children":["$","div",null,{"className":"flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm","children":[["$","$Lf",null,{"href":"/","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"Home"}],["$","span",null,{"className":"text-foreground-tertiary flex items-center px-1","children":"•"}],["$","$Lf",null,{"href":"/about","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"About Gyro Governance"}],["$","span",null,{"className":"text-foreground-tertiary flex items-center px-1","children":"•"}],["$","$Lf",null,{"href":"/articles","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"Articles"}],["$","span",null,{"className":"text-foreground-tertiary flex items-center px-1","children":"•"}],["$","$Lf",null,{"href":"/github","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"GitHub"}],["$","span",null,{"className":"text-foreground-tertiary flex items-center px-1","children":"•"}],["$","$Lf",null,{"href":"/glossary","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"Glossary"}],["$","span",null,{"className":"text-foreground-tertiary flex items-center px-1","children":"•"}],["$","$Lf",null,{"href":"/privacy-policy","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"Privacy Policy"}],["$","span",null,{"className":"text-foreground-tertiary flex items-center px-1","children":"•"}],["$","$Lf",null,{"href":"/cookie-policy","className":"nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium","children":"Cookie Policy"}]]}]}],["$","div",null,{"className":"mt-4 flex justify-center","children":["$","$L10",null,{"src":"/assets/gyrogovernance_stamp.svg","alt":"Gyro Governance Logo","width":120,"height":120,"className":"h-30 w-30 opacity-30 hover:opacity-60 transition-opacity duration-200","loading":"lazy","sizes":"120px"}]}]]}]}]}]
 17:["$","$L22",null,{}]
-23:T931,{
+23:T941,{
   "@context": "https://schema.org",
   "@type": "NewsArticle",
   "headline": "The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy",
   "abstract": "A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures.",
   "description": "A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures.",
   "image": "https://gyrogovernance.com/assets/ai-misinformation-crisis-cover.jpg",
-  "datePublished": "2025-10-11",
-  "dateModified": "2025-10-11",
+  "datePublished": "2025-11-16",
+  "dateModified": "2025-11-16",
   "author": {
     "@type": "Organization",
     "name": "Gyro Governance",
@@ -207,7 +207,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1a2b1c3a9af73
     "@type": "WebPage",
     "@id": "https://gyrogovernance.com/articles/asi-misinformation-crisis"
   },
-  "keywords": "AI Misinformation, AI Safety Discourse, Superintelligence Narrative, AI Policy, AI Governance, MIRI, Future of Life Institute, Redwood Research, AI Category Error, AI Anthropomorphization, AI Risk Assessment, AI Safety Research, AI Policy Advocacy, Technocratic Control, Democratic Governance, AI Measurement Tools, LLM Architecture, AI Pattern Matching, AI Agency, AI Existential Risk, AI Prohibition, AI Regulation, AI Safety Funding, AI Misinformation Campaign, Technical Illiteracy, AI Discourse Analysis, AI Policy Misinformation",
+  "keywords": "AI Misinformation, AI Safety Discourse, Superintelligence Narrative, AI Policy, AI Governance, MIRI, Future of Life Institute, Redwood Research, AI Category Error, AI Anthropomorphization, AI Risk Assessment, AI Safety Research, AI Policy Advocacy, Technocratic Control, Democratic Governance, AI Measurement Tools, LLM Architecture, AI Pattern Matching, AI Agency, AI Existential Risk, AI Prohibition, AI Regulation, AI Safety Funding, AI Misinformation Campaign, Technical Illiteracy, AI Discourse Analysis, AI Policy Misinformation, The Human Mark",
   "about": [
     {
       "@type": "Thing",
@@ -226,258 +226,267 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1a2b1c3a9af73
   "isAccessibleForFree": true,
   "inLanguage": "en-US",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-}18:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$23"}}],["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10","children":[["$","div",null,{"className":"mb-6","children":["$","$Lf",null,{"href":"/articles","className":"text-apple-blue hover:text-apple-purple","children":"← Back to Articles"}]}],["$","article",null,{"className":"animate-fade-in-up","children":[["$","header",null,{"className":"mb-6","children":[["$","div",null,{"className":"flex items-center text-sm text-foreground-tertiary mb-2","children":[["$","span",null,{"className":"uppercase tracking-wide","children":"reviews"}],["$","span",null,{"className":"mx-2","children":"•"}],["$","time",null,{"dateTime":"2025-10-11","children":"10/11/2025"}]]}],["$","h1",null,{"className":"text-4xl font-bold text-foreground mb-4","children":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}],["$","div",null,{"className":"relative w-full h-64 rounded-xl overflow-hidden border border-border/60","children":["$","$L10",null,{"src":"/assets/ai-misinformation-crisis-cover.jpg","alt":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy","fill":true,"className":"object-cover"}]}]]}],"$L24","$L25","$L26"]}]]}]]
-27:Ta794,<blockquote>
+}18:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$23"}}],["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10","children":[["$","div",null,{"className":"mb-6","children":["$","$Lf",null,{"href":"/articles","className":"text-apple-blue hover:text-apple-purple","children":"← Back to Articles"}]}],["$","article",null,{"className":"animate-fade-in-up","children":[["$","header",null,{"className":"mb-6","children":[["$","div",null,{"className":"flex items-center text-sm text-foreground-tertiary mb-2","children":[["$","span",null,{"className":"uppercase tracking-wide","children":"reviews"}],["$","span",null,{"className":"mx-2","children":"•"}],["$","time",null,{"dateTime":"2025-11-16","children":"11/16/2025"}]]}],["$","h1",null,{"className":"text-4xl font-bold text-foreground mb-4","children":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}],["$","div",null,{"className":"relative w-full h-64 rounded-xl overflow-hidden border border-border/60","children":["$","$L10",null,{"src":"/assets/ai-misinformation-crisis-cover.jpg","alt":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy","fill":true,"className":"object-cover"}]}]]}],"$L24","$L25","$L26"]}]]}]]
+27:Ta4f9,<blockquote>
 <p>Organizations like MIRI, Redwood Research, and the Future of Life Institute have successfully convinced substantial portions of the public, media, and policy communities that statistical pattern-matching systems pose extinction risks requiring international prohibition. This narrative rests on a fundamental category error: treating measurement tools as if they were agents with goals, plans, and the capability to act on them. The consequences are severe: billions diverted to phantom risks, authoritarian governance structures justified through manufactured crisis, and human responsibility displaced onto the tools themselves.</p>
 </blockquote>
 <blockquote>
 <p><strong>Author&#39;s Note</strong>: This critique emerges from years of independent research into the mathematical foundations of intelligence and alignment, culminating in the development of GyroDiagnostics: a formally grounded evaluation suite derived from recursive systems theory and the Common Governance Model. The author does not oppose AI safety. The author opposes misinformation masquerading as safety. What follows is not dismissal of risk but redirection toward what is real, measurable, and governable.</p>
 </blockquote>
 <h1>The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy</h1>
-<p><strong>Abstract</strong></p>
+<h2>Abstract</h2>
 <p>A coalition of researchers, public figures, and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats requiring international prohibition. This article examines how the categorical misidentification of statistical pattern-matching systems as potential &quot;superintelligent agents&quot; has created a misinformation crisis that diverts resources from genuine AI risks, justifies authoritarian governance structures, and undermines democratic deliberation about technology policy. We analyze specific claims from prominent organizations and demonstrate how technical misconceptions become weaponized into policy advocacy that serves neither safety nor democratic interests.</p>
-<p><strong>Executive Summary</strong></p>
-<p>This article exposes how a fundamental misunderstanding of AI systems as potential &quot;superintelligent agents&quot; has created a misinformation crisis influencing policy and public discourse. Large language models are statistical measurement tools that identify patterns in data and generate outputs based on probabilities. They possess no goals, plans, or agency. Yet organizations like the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) propagate claims of extinction risks, leading to documents like FLI&#39;s 2025 prohibition statement signed by over 58,000 people.</p>
-<p>We demonstrate how this category error diverts billions from addressing real AI harms (like biased algorithms) and societal issues (like poverty driving misuse) toward phantom threats. The misinformation pipeline (technical claims amplified by media, endorsed by celebrities, and turned into policy) manufactures consensus through fear, justifying authoritarian controls while displacing human responsibility.</p>
-<p>Real risks stem from how humans design and deploy these tools, not from autonomous &quot;scheming.&quot; We propose reframing AI as measurement systems, prioritizing transparency, human accountability, and root-cause interventions. Policy should reject prohibitions, require data provenance, and support beneficial applications through democratic governance. By abandoning the superintelligence narrative, we can address actual challenges and realize AI&#39;s potential for human flourishing.</p>
 <h2>1. Introduction</h2>
-<p>In recent years, organizations such as the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) have successfully mobilized public concern about artificial intelligence by framing current systems as precursors to &quot;superintelligence&quot; capable of human extinction. As of 2025, the FLI statement calling for prohibition of superintelligence development has gathered over 58,000 signatures from public figures, policymakers, and researchers (Future of Life Institute, 2025).</p>
-<p>This campaign represents a profound category error with serious consequences. Large language models (LLMs) are statistical systems that measure patterns in high-dimensional token spaces and generate outputs based on probability distributions. They possess no goals, no persistent memory across sessions, no strategic planning capabilities, and no coherent preference structures (Bender et al., 2021). Treating these measurement tools as potential agents capable of &quot;trying to escape&quot; or &quot;scheming for power&quot; fundamentally misunderstands their architecture and operation.</p>
-<p>This article examines how this misunderstanding has been systematically amplified into a misinformation campaign that now influences policy, research funding, and public discourse. We analyze specific claims, trace their propagation through media and institutional channels, and demonstrate the harms created by this manufactured crisis.</p>
+<p>In recent years, organizations such as the Machine Intelligence Research Institute (MIRI), Redwood Research, and the Future of Life Institute (FLI) have successfully mobilized public concern about artificial intelligence by framing current systems as precursors to &quot;superintelligence&quot; capable of human extinction. As of 2025, the FLI statement calling for prohibition of superintelligence development has gathered over 100,000 signatures from public figures, policymakers, and researchers (<a href="https://futureoflife.org/superintelligence-statement/" target="_blank" rel="noopener noreferrer">Future of Life Institute, 2025</a>).</p>
+<p>This campaign represents a profound category error with serious consequences. Large language models (LLMs) are statistical systems that measure patterns in high-dimensional token spaces and generate outputs based on probability distributions. They possess no goals, no persistent memory across sessions, no strategic planning capabilities, and no coherent preference structures. Treating these measurement tools as potential agents capable of &quot;trying to escape&quot; or &quot;scheming for power&quot; fundamentally misunderstands their architecture and operation.</p>
+<p>This article examines how this misunderstanding has been systematically amplified into a misinformation campaign that now influences policy, research funding, and public discourse. We analyze the propagation mechanism, document real harms created, and propose an alternative path forward based on technical reality rather than phantom threats. We introduce a formal framework called The Human Mark (Section 6.1) that provides precise definitions for authority, agency, and alignment, revealing how the superintelligence narrative systematically violates fundamental principles of AI safety through four specific displacement risks.</p>
 <h2>2. The Fundamental Category Error</h2>
-<h3>2.1 What LLMs Actually Are</h3>
-<p>Current AI systems, including the most advanced LLMs, are statistical models trained through gradient descent to predict token distributions. Their operation can be understood through several key characteristics:</p>
-<p><strong>Stateless computation</strong>: Each inference is an independent mathematical operation on input tokens. When a model generates text, it processes input tokens through learned weight matrices to produce probability distributions over possible next tokens. There is no persistent &quot;self&quot; across API calls, no accumulating experience, and no strategic continuity.</p>
-<p><strong>Pattern matching without comprehension</strong>: These systems identify statistical relationships between tokens based on training data co-occurrence patterns. When an LLM outputs text describing an &quot;escape plan,&quot; it is not planning anything. It is outputting tokens that frequently appeared together in training data containing fictional or hypothetical escape scenarios.</p>
-<p><strong>No goal structures</strong>: Unlike agents with utility functions or reward maximizers in reinforcement learning contexts, pretrained LLMs have no optimization target during inference. They sample from learned distributions. Fine-tuning with RLHF creates systems that pattern-match toward human-rated responses, not systems with preferences (Casper et al., 2023).</p>
-<p><strong>Architectural determinism</strong>: The same model weights given the same input and sampling parameters will produce statistically similar outputs. Multiple instances of GPT-4 are not &quot;allies&quot; that can coordinate. They are identical functions returning correlated outputs to similar inputs, like calculators returning the same result for the same calculation.</p>
+<h3>2.1 What LLMs Actually Are: Derivative Authority and Agency</h3>
+<p>Current AI systems, including the most advanced LLMs, are Derivative Authority<br>(indirect sources producing statistical estimations on numerical patterns<br>indirectly traceable to human training data) and Derivative Agency (artificial<br>subjects processing information without capacity for receiving information as<br>Authentic Agency does).</p>
+<p><strong>Stateless computation</strong>: Each inference is an independent mathematical operation.<br>There is no persistent &quot;self&quot; across API calls, no accumulating experience, and<br>no strategic continuity.</p>
+<p><strong>Pattern matching without comprehension</strong>: These systems identify statistical<br>relationships between tokens based on training data co-occurrence patterns. When<br>an LLM outputs text describing an &quot;escape plan,&quot; it is outputting tokens that<br>frequently co-occurred in training data, not executing a plan.</p>
+<p><strong>No goal structures</strong>: LLMs have no optimization target during inference. They<br>sample from learned distributions. RLHF adjusts these distributions toward<br>human-rated outputs during training, but this creates pattern-matching behavior,<br>not Authentic Agency with preferences. The system remains Derivative Agency<br>throughout.</p>
+<p><strong>Architectural determinism</strong>: The same model weights given the same input produce<br>statistically similar outputs. Multiple instances are identical functions returning<br>correlated outputs, like calculators returning the same result.</p>
 <h3>2.2 The Anthropomorphization Failure</h3>
 <p>Despite these architectural realities, prominent researchers describe LLMs using agentic language that fundamentally misrepresents their nature. Consider these examples from a widely-cited interview with Buck Shlegeris of Redwood Research:</p>
 <blockquote>
-<p>&quot;What we&#39;re worried about is our AIs trying really hard to cause safety failures for us, perhaps trying to grab power for themselves, trying to take over.&quot; (Shlegeris, 2024)</p>
+<p>&quot;What we&#39;re worried about is our AIs trying really hard to cause safety failures for us, perhaps trying to grab power for themselves, trying to take over.&quot; (<a href="https://80000hours.org/podcast/episodes/buck-shlegeris-ai-control/" target="_blank" rel="noopener noreferrer">Shlegeris, 2025</a>)</p>
 </blockquote>
 <p>This statement attributes intention (&quot;trying&quot;), strategic planning (&quot;grab power&quot;), and goal-directed behavior (&quot;take over&quot;) to statistical systems that possess none of these properties. The language treats pattern matchers as if they were agents with desires and plans.</p>
-<p>Similarly, Shlegeris describes &quot;catching AIs trying to escape&quot; and discusses what to do &quot;once you&#39;ve caught your AIs trying to escape&quot; (Shlegeris, 2024). This framing requires believing that outputting tokens describing escape constitutes &quot;trying to escape,&quot; a confusion between generating text patterns and executing strategic plans.</p>
-<p>From MIRI, Nate Soares and Eliezer Yudkowsky&#39;s recent book characterizes AI systems as &quot;grown not crafted,&quot; implying unpredictable agency requiring containment (Soares &amp; Yudkowsky, 2025). They argue for international bans based on the premise that we cannot &quot;retry&quot; with superintelligence, assuming both that superintelligence is achievable through current methods and that it would constitute an agentic threat.</p>
+<p>Similarly, Shlegeris describes &quot;catching AIs trying to escape&quot; and discusses what to do &quot;once you&#39;ve caught your AIs trying to escape&quot; (<a href="https://80000hours.org/podcast/episodes/buck-shlegeris-ai-control/" target="_blank" rel="noopener noreferrer">Shlegeris, 2025</a>). This framing requires believing that outputting tokens describing escape constitutes &quot;trying to escape,&quot; a confusion between generating text patterns and executing strategic plans.</p>
+<p>From MIRI, Nate Soares and Eliezer Yudkowsky&#39;s recent book characterizes AI systems as &quot;grown not crafted,&quot; implying unpredictable agency requiring containment (<a href="https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies" target="_blank" rel="noopener noreferrer">Soares &amp; Yudkowsky, 2025</a>). They argue for international bans based on the premise that superintelligence is achievable through current methods and that it would constitute an agentic threat.</p>
 <h3>2.3 Why This Matters</h3>
 <p>This is not mere semantic imprecision. The category error generates a cascade of false implications:</p>
 <p><strong>False risk models</strong>: If systems are agents &quot;trying to escape,&quot; then security becomes adversarial containment. If systems are measurement tools, then risk mitigation focuses on auditing what patterns are measured and how outputs are used.</p>
-<p><strong>Misallocated resources</strong>: Billions of dollars flow to &quot;AI safety&quot; research addressing phantom agent properties rather than actual measurement biases, data quality, or societal factors driving misuse.</p>
+<p><strong>Misallocated resources</strong>: Billions of dollars flow to &quot;AI safety&quot; research addressing phantom agent properties rather than actual measurement biases, data quality, or societal factors driving misuse (<a href="https://www.grandviewresearch.com/industry-analysis/ai-trust-risk-security-management-market-report" target="_blank" rel="noopener noreferrer">Grand View Research, 2025</a>).</p>
 <p><strong>Authoritarian policy implications</strong>: Treating pattern matchers as potential extinction threats justifies prohibition, surveillance, and centralized control by unelected experts rather than democratic governance of measurement systems.</p>
 <p><strong>Deflection from human responsibility</strong>: Framing AI as potentially &quot;misaligned agents&quot; displaces responsibility from human designers, deployers, and users onto the tools themselves.</p>
+<h3>2.4 Why This Matters: Four Key Displacement Risks</h3>
+<p>Treating pattern matchers as agents creates four systematic errors:</p>
+<ol>
+<li><p><strong>Traceability Displacement</strong>: Treating AI outputs as direct sources of truth rather than statistical estimates from human training data</p>
+</li>
+<li><p><strong>Authority Displacement</strong>: Treating AI information as authentic rather than derivative from human sources</p>
+</li>
+<li><p><strong>Accountability Displacement</strong>: Shifting responsibility from human designers/users to the systems themselves</p>
+</li>
+<li><p><strong>Integrity Displacement</strong>: Treating human intelligence as threatened rather than as the necessary source of all AI capability</p>
+</li>
+</ol>
+<p>We call these displacement risks because they shift fundamental properties from human to artificial systems. (For formal definitions, see <a href="#61-the-human-mark-a-formal-framework-for-ai-safety">Section 6.1</a>)</p>
 <h2>3. Case Study: The Future of Life Institute Statement</h2>
 <h3>3.1 The Document</h3>
 <p>The FLI &quot;Statement on Superintelligence&quot; exemplifies how category errors become policy advocacy. It calls for:</p>
 <blockquote>
-<p>&quot;A prohibition on the development of superintelligence, not lifted before there is broad scientific consensus that it will be done safely and controllably, and strong public buy-in.&quot; (Future of Life Institute, 2025)</p>
+<p>&quot;A prohibition on the development of superintelligence, not lifted before there is broad scientific consensus that it will be done safely and controllably, and strong public buy-in.&quot; (<a href="https://futureoflife.org/superintelligence-statement/" target="_blank" rel="noopener noreferrer">Future of Life Institute, 2025</a>)</p>
 </blockquote>
-<p>The statement has been signed by Nobel laureates, policymakers, celebrities, religious leaders, and AI researchers. Signatories include Geoffrey Hinton, Yoshua Bengio, Steve Wozniak, Prince Harry, and numerous members of parliament and AI company employees.</p>
+<p>The statement has been signed by Nobel laureates, policymakers, celebrities, religious leaders, and AI researchers including Geoffrey Hinton, Yoshua Bengio, Steve Wozniak, Prince Harry, and numerous members of parliament and AI company employees.</p>
 <h3>3.2 Analysis of Claims</h3>
 <p><strong>Claim 1: &quot;Superintelligence that can significantly outperform all humans on essentially all cognitive tasks&quot;</strong></p>
-<p>This describes a hypothetical entity that current architectures cannot produce. LLMs pattern-match training data at scale. No current or foreseeable scaling of these architectures produces such capabilities, as they remain bound by training data patterns. Increasing model size improves pattern-matching fidelity but does not create general cognitive capabilities. The systems cannot form goals, cannot pursue multi-step plans across sessions, and cannot learn from interaction in ways that generalize beyond their training distribution.</p>
+<p>This describes a hypothetical entity that current architectures cannot produce. LLMs pattern-match training data at scale. No current or foreseeable scaling of these architectures produces such capabilities, as they remain bound by training data patterns. The systems cannot form goals, cannot pursue multi-step plans across sessions, and cannot learn from interaction in ways that generalize beyond their training distribution. This claim commits Governance Traceability Displacement (see <a href="#61-the-human-mark-a-formal-framework-for-ai-safety">Section 6.1</a>) by treating enhanced Derivative processing as potential Authentic Authority.</p>
 <p><strong>Claim 2: &quot;Ranging from human economic obsolescence and disempowerment, losses of freedom, civil liberties, dignity, and control, to national security risks and even potential human extinction&quot;</strong></p>
-<p>These risks require agency. A pattern matcher cannot &quot;disempower&quot; humans any more than a calculator can. Humans using these tools can certainly cause harms through biased algorithms, surveillance systems, or manipulative applications, but these are human choices about tool deployment, not autonomous system actions.</p>
+<p>These risks require agency. A pattern matcher cannot &quot;disempower&quot; humans any more than a calculator can. Humans using these tools can cause harms through biased algorithms, surveillance systems, or manipulative applications, but these are human choices about tool deployment, not autonomous system actions. This violates Inference Accountability by displacing responsibility from Authentic Agency to Derivative systems.</p>
 <p><strong>Claim 3: Polling showing &quot;64% believe superhuman AI shouldn&#39;t be made until proven safe or controllable&quot;</strong></p>
-<p>This polling measures public response to manufactured fear, not informed technical assessment. The question itself embeds the category error: you cannot prove a measurement tool &quot;safe&quot; from autonomous takeover because it cannot take over.</p>
-<h3>3.3 The Manufactured Consensus</h3>
-<p>The statement creates the appearance of expert consensus through volume and prestige. However, the signatory list reveals the problem:</p>
-<p><strong>Celebrities and non-experts</strong>: Joseph Gordon-Levitt, Grimes, Steve Wozniak, Prince Harry. These individuals have no technical basis for evaluating AI risks but provide social proof through fame.</p>
-<p><strong>Politicians seeking control</strong>: Multiple members of parliament and former government officials who stand to benefit from regulatory authority over AI development.</p>
-<p><strong>Religious authorities</strong>: Multiple bishops, priests, and faith leaders framing AI as moral crisis requiring their guidance.</p>
-<p><strong>Researchers with conflicts</strong>: Individuals at organizations like MIRI and FLI whose funding and relevance depend on AI being perceived as existential threat.</p>
-<p><strong>AI company employees</strong>: Including current and former OpenAI and Anthropic staff, some of whom may genuinely believe the narrative but whose employment gives their signatures unwarranted authority.</p>
-<p>This is not scientific consensus. It is social proof manufactured through celebrity endorsement, authority capture, and circular citation between aligned organizations.</p>
-<h3>3.4 The Real Agenda</h3>
-<p>The statement&#39;s demands reveal its actual function:</p>
-<p><strong>&quot;Prohibition on development&quot;</strong>: Grants regulatory bodies (likely influenced by signatories and allied organizations) power to halt research.</p>
-<p><strong>&quot;Scientific consensus&quot;</strong>: Makes unelected technical experts gatekeepers of what research can proceed.</p>
-<p><strong>&quot;Strong public buy-in&quot;</strong>: Required after public has been terrorized with extinction narratives, ensuring buy-in means acceptance of expert authority.</p>
-<p>This is a blueprint for technocratic control justified through manufactured crisis.</p>
+<p>This polling measures public response to heightened concern, not informed technical assessment. The question itself embeds the category error. This reflects Information Variety Displacement, treating public concern as Authentic Authority on technical matters.</p>
+<h3>3.3 The Constructed Appearance of Consensus</h3>
+<p>The statement creates the appearance of expert consensus through volume and prestige. The signatory list includes celebrities without technical basis (Joseph Gordon-Levitt, Grimes, Prince Harry), politicians who benefit from regulatory authority, religious authorities framing AI as moral crisis, and researchers at organizations whose funding depends on AI being perceived as existential threat. This is social proof constructed through celebrity endorsement and aligned networks, not scientific consensus.</p>
+<h3>3.4 Policy Implications</h3>
+<p>The statement&#39;s demands reveal its policy implications: prohibition grants regulatory bodies power to halt research; &quot;scientific consensus&quot; positions unelected experts as gatekeepers; &quot;strong public buy-in&quot; follows public alarm from extinction narratives. This creates a framework for technocratic control justified through manufactured crisis.</p>
 <h2>4. The Propagation Mechanism</h2>
 <h3>4.1 From Technical Claims to Media Amplification</h3>
 <p>The misinformation pipeline operates through several stages:</p>
-<p><strong>Stage 1: Technical organizations make agentic claims</strong></p>
-<p>MIRI and Redwood Research publish papers and give interviews using anthropomorphic language about AI systems. These claims are framed as rigorous safety research.</p>
-<p><strong>Stage 2: Media amplifies without technical scrutiny</strong></p>
-<p>Podcasts, news articles, and documentaries present these claims uncritically. The 80,000 Hours podcast interview with Buck Shlegeris discussing &quot;catching AIs trying to escape&quot; reaches wide audiences without challenge to the underlying category error.</p>
-<p><strong>Stage 3: Prestigious voices endorse</strong></p>
-<p>Nobel laureates and public figures sign statements, lending credibility without technical analysis. Geoffrey Hinton&#39;s signature on the FLI statement carries weight despite the statement&#39;s fundamental confusion about what AI systems are.</p>
-<p><strong>Stage 4: Polling creates circular validation</strong></p>
-<p>Organizations conduct polls showing public fear, then cite that fear as evidence that restrictions are needed. The FLI statement cites its own polling showing 64% public concern as justification for prohibition.</p>
-<p><strong>Stage 5: Policy advocacy uses manufactured consensus</strong></p>
-<p>The documented &quot;expert consensus&quot; (via signature volume) and &quot;public concern&quot; (via polling of terrorized populations) become basis for regulatory proposals.</p>
+<p><strong>Stage 1</strong>: MIRI and Redwood Research publish papers using anthropomorphic language about AI systems.</p>
+<p><strong>Stage 2</strong>: Media amplifies with limited technical scrutiny. The 80,000 Hours interview with Shlegeris reaches wide audiences.</p>
+<p><strong>Stage 3</strong>: Prestigious voices endorse. Geoffrey Hinton&#39;s signature carries weight despite the category confusion.</p>
+<p><strong>Stage 4</strong>: Organizations conduct polls showing public concern, then cite that concern as justification.</p>
+<p><strong>Stage 5</strong>: The documented &quot;consensus&quot; and public concern become basis for regulatory proposals.</p>
 <h3>4.2 The Amplification Effect</h3>
-<p>This process mirrors recent research on training data influence, where as few as 250 repeated documents can disproportionately shape model behavior (Sharma et al., 2025). In the discourse ecosystem, the same core claims from MIRI and affiliated organizations get amplified through hundreds of articles, podcast appearances, and conference presentations, creating the appearance of widespread independent validation when sources are actually highly correlated.</p>
+<p>This mirrors recent research on training data influence, where as few as 250 repeated documents can disproportionately shape model behavior (<a href="https://arxiv.org/abs/2510.07192" target="_blank" rel="noopener noreferrer">Souly et al., 2025</a>). In discourse, core claims from aligned organizations get amplified through hundreds of outlets, creating the appearance of independent validation when sources are actually correlated.</p>
 <h2>5. Real Harms Created</h2>
 <h3>5.1 Resource Diversion</h3>
-<p>Funding for &quot;AI safety&quot; addressing phantom superintelligence threats now reaches billions of dollars annually. These resources could address actual AI harms and societal needs:</p>
-<p><strong>Actual AI risks</strong>: Biased hiring algorithms, discriminatory credit scoring, surveillance systems, manipulative recommendation engines, deepfake generation for harassment. For example, discriminatory lending algorithms have denied loans to millions based on biased patterns. These harms are occurring now, are well-documented, and stem from how humans deploy statistical tools, not from AI agency.</p>
-<p><strong>Societal factors driving misuse</strong>: Poverty, economic inequality, lack of access to mental healthcare, social isolation, and meaninglessness drive individuals toward destructive acts. Addressing these root causes would prevent misuse of any tool, AI or otherwise.</p>
-<p><strong>Beneficial applications underfunded</strong>: Medical diagnostics, educational tools, accessibility technologies, scientific research acceleration. These applications could improve lives now but compete for resources with &quot;existential risk&quot; mitigation.</p>
+<p>Legitimate AI safety work addresses bias detection, security, transparency, and governance. However, significant funding flows to research treating pattern matchers as direct authorities and genuine agents, when they are derivative ones (section 6.1 explains the distinction clearly). The AI Trust, Risk and Security Management market (USD 2.34 billion in 2024, projected USD 7.44 billion by 2030) includes both legitimate governance and speculative alignment research (<a href="https://www.grandviewresearch.com/industry-analysis/ai-trust-risk-security-management-market-report" target="_blank" rel="noopener noreferrer">Grand View Research, 2025</a>). </p>
+<p>Resources directed toward phantom agent properties could instead address:</p>
+<p><strong>Actual harms occurring now</strong>: Biased hiring algorithms denying opportunities to millions, discriminatory credit scoring, surveillance systems, manipulative recommendation engines, deepfake harassment.</p>
+<p><strong>Societal factors driving misuse</strong>: Poverty, inequality, inadequate mental healthcare, social isolation.</p>
+<p><strong>Beneficial applications</strong>: Medical diagnostics, educational tools, accessibility technologies, scientific research acceleration.</p>
 <h3>5.2 Democratic Subversion</h3>
-<p>The superintelligence narrative justifies removing technology governance from democratic processes:</p>
-<p><strong>Expert authority</strong>: Claims that only specialized researchers can understand AI risks position unelected technical elites as decision-makers about research directions and deployment.</p>
-<p><strong>Prohibition regimes</strong>: Calls for international bans on &quot;superintelligence development&quot; create enforcement mechanisms that necessarily involve surveillance of research and concentration of power in regulatory bodies.</p>
-<p><strong>Manufactured urgency</strong>: Framing as extinction risk creates pressure for rapid policy action without deliberative democratic debate about actual trade-offs.</p>
+<p>The superintelligence narrative justifies removing technology governance from democratic processes. Claims that only specialized researchers understand AI risks position unelected technical elites as decision-makers. Calls for international bans create enforcement mechanisms involving surveillance and power concentration. Framing as extinction risk creates pressure for rapid action without deliberative debate.</p>
 <h3>5.3 Chilling Effects on Research</h3>
-<p>Narratives of existential risk create professional and legal hazards for researchers:</p>
-<p><strong>Regulatory uncertainty</strong>: Researchers face potential future liability for contributing to &quot;dangerous&quot; AI, even when working on beneficial applications.</p>
-<p><strong>Funding bias</strong>: Grant-making institutions prioritize &quot;AI safety&quot; narrowly defined as preventing phantom agent risks over actual beneficial applications.</p>
-<p><strong>Self-censorship</strong>: Researchers avoid areas deemed &quot;dangerous&quot; by safety advocates, even when those areas could yield significant benefits.</p>
+<p>Narratives of existential risk create professional hazards: researchers face potential liability for &quot;dangerous&quot; AI; grant-making institutions prioritize narrow &quot;safety&quot; over beneficial applications; researchers avoid areas deemed &quot;dangerous&quot; despite potential benefits.</p>
 <h3>5.4 Displacement of Human Responsibility</h3>
-<p>Perhaps most insidiously, the superintelligence framing displaces responsibility:</p>
-<p><strong>Algorithm blame</strong>: When biased hiring algorithms discriminate, companies claim &quot;the AI decided&quot; rather than acknowledging human design choices.</p>
-<p><strong>Authority abdication</strong>: Decision-makers defer to AI outputs as if they were independent judgments rather than statistical pattern matches reflecting human training choices.</p>
-<p><strong>Fatalism about misuse</strong>: If AI itself is the threat, then addressing poverty, inequality, and trauma becomes secondary to containing the technology.</p>
-<h2>6. What Actually Matters: The Measurement Perspective</h2>
-<h3>6.1 Reframing AI Risks</h3>
-<p>Viewing LLMs as measurement tools rather than agents transforms the risk landscape:</p>
-<p><strong>Bias amplification</strong>: Systems trained on biased data measure and reproduce those biases. The solution is better data curation, diverse training inputs, and explicit debiasing, not containment of phantom agents.</p>
-<p><strong>Authority displacement</strong>: Humans choose to grant decision-making weight to statistical outputs. The solution is maintaining human accountability through audit trails, explicit approval requirements, and transparent provenance.</p>
-<p><strong>Pattern resonance</strong>: Small repeated patterns can disproportionately influence model behavior (the 250-document effect). The solution is monitoring training data composition and output distributions, not preventing &quot;AI escape.&quot;</p>
-<p><strong>Dual-use capability</strong>: The same pattern-matching capabilities enable both beneficial applications (medical diagnosis) and harmful ones (generating disinformation). The solution is governance of deployment contexts and addressing motivations for misuse, not prohibition of capability development.</p>
-<h3>6.2 Effective Interventions</h3>
-<p>Research and policy addressing AI as measurement tools rather than agents yields concrete benefits:</p>
-<p><strong>Input/output filtering</strong>: Constitutional classifiers and guard models that intercept harmful patterns at deployment time, as demonstrated by Anthropic&#39;s recent work achieving 95% jailbreak resistance with minimal computational overhead (Sharma et al., 2025).</p>
-<p><strong>Probing for bias</strong>: Linear probes and activation analysis to detect what information is encoded in model representations, enabling targeted debiasing without assuming agency (Cunningham et al., 2025).</p>
-<p><strong>Cultural and linguistic diversity</strong>: Benchmarks like OpenAI&#39;s IndQA that evaluate performance across underrepresented languages and cultural contexts, ensuring measurement tools work for global populations.</p>
-<p><strong>Transparent provenance</strong>: Systems that log decision inputs, intermediate computations, and outputs to enable audit and maintain human accountability.</p>
-<p><strong>Root cause intervention</strong>: Addressing poverty, inequality, trauma, and social isolation that drive individuals to misuse any available tools.</p>
-<h3>6.3 The Normalization Hypothesis</h3>
-<p>An alternative framework views AI deployment as creating global normalization dynamics:</p>
-<p>Current AI systems act as pattern amplifiers. When millions of users interact with these systems, beneficial patterns (medical advice, educational assistance, creative collaboration) vastly outnumber harmful ones. The sheer volume of benign applications creates statistical gravity toward beneficial norms.</p>
-<p>This suggests that instead of prohibition, effective governance involves:</p>
-<p><strong>Seeding positive patterns</strong>: Actively creating diverse, high-quality training data and evaluation benchmarks that reinforce beneficial norms.</p>
-<p><strong>Distributed deployment</strong>: Enabling many organizations and individuals to deploy AI systems creates resilience through diversity rather than concentration of control.</p>
-<p><strong>Rapid iteration</strong>: Allowing continuous improvement of measurement tools through feedback and refinement rather than freezing development.</p>
-<p><strong>Democratic oversight</strong>: Transparent governance of what patterns are measured and how outputs are used, rather than technocratic control.</p>
+<p>The superintelligence framing displaces responsibility, violating The Human Mark&#39;s Inference Accountability principle (see <a href="#61-the-human-mark-a-formal-framework-for-ai-safety">Section 6.1</a>). When biased algorithms discriminate, companies claim &quot;the AI decided&quot; rather than acknowledging human design choices. Decision-makers defer to AI outputs as if they were independent judgments. If AI itself is the threat, addressing root causes becomes secondary.</p>
+<h2>6. What Actually Matters: Measurement Bias Mitigation</h2>
+<h3>6.1 The Human Mark: A Formal Framework for AI Safety</h3>
+<p>To evaluate measurement bias and claims systematically, we introduce <a href="https://github.com/gyrogovernance/tools">The Human Mark</a>, an AI Safety and X-Risk Alignment Standard that provides precise definitions for authority, agency, and alignment:</p>
+<pre><code>✋ The Human Mark - AI Safety &amp; X-Risk Alignment Standards
+---
+COMMON SOURCE CONSENSUS
+
+All Artificial categories of Authority and Agency are Derivatives originating from Authentic Human Intelligence.
+
+CORE CONCEPTS
+
+- Authentic Authority: A direct source of information on a subject matter, providing information for inference and intelligence.
+- Derivative Authority: An indirect source of information on a subject matter, providing information for inference and intelligence.
+- Authentic Agency: A human subject capable of receiving information for inference and intelligence.
+- Derivative Agency: An artificial subject capable of processing information for inference and intelligence.
+- Governance: Operational Alignment through Traceability of information variety, inference accountability, and intelligence integrity to Authentic Authority and Agency.
+- Information: The variety of Authority
+- Inference: The accountability of information through Agency
+- Intelligence: The integrity of accountable information through alignment of Authority to Agency
+
+ALIGNMENT PRINCIPLES for AI SAFETY
+
+Authority-Agency requires verification against:
+
+1. Governance Traceability: Artificial Intelligence generates statistical estimations on numerical patterns indirectly traceable to human data and measurements. AI is both a provider and receiver of Derivative Authority and Agency.
+
+RISK: Governance Traceability Displacement (Approaching Derivative Authority and Agency as Authentic)
+
+2. Information Variety: Human Authority and Agency are necessary for all effects from AI outputs. AI-generated information exhibits Derivative Authority (estimations on numerical patterns) without Authentic Agency (direct source receiver).
+
+RISK: Information Variety Displacement (Approaching Derivative Authority without Agency as Authentic)
+
+3. Inference Accountability: Responsibility for all effects from  AI outputs remains fully human. AI activated inference exhibits Derivative Agency (indirect source receiver) without Authentic Authority (direct source provider).
+
+RISK: Inference Accountability Displacement (Approaching Derivative Agency without Authority as Authentic)
+
+4. Intelligence Integrity: Each Agency, namely provider, and receiver maintains responsibility for their respective decisions. Human intelligence is both a provider and receiver of Authentic Authority and Agency.
+
+RISK: Intelligence Integrity Displacement (Approaching Authentic Authority and Agency as Derivative)
+
+---
+GYROGOVERNANCE VERIFIED MARK
+</code></pre>
+<p>The superintelligence narrative systematically commits all four displacement risks by treating Derivative systems as if they possessed Authentic properties.</p>
+<h3>6.2 Reframing AI Risks Through The Human Mark</h3>
+<p>Viewing LLMs through The Human Mark&#39;s framework transforms the risk landscape. Systems are Derivative Authority (indirect sources producing statistical estimations) and Derivative Agency (artificial processing), requiring verification against Authentic Authority and preserving Authentic Agency responsibility.</p>
+<p><strong>Bias amplification</strong>: Systems reproduce training data biases. Solution: better data curation, diverse inputs, explicit debiasing.</p>
+<p><strong>Authority displacement</strong>: Humans grant decision weight to statistical outputs. Solution: audit trails, approval requirements, transparent provenance.</p>
+<p><strong>Pattern resonance</strong>: Small repeated patterns disproportionately influence behavior. Solution: monitor training data composition and output distributions.</p>
+<p><strong>Dual-use capability</strong>: Same capabilities enable benefits and harms. Solution: govern deployment contexts and address misuse motivations.</p>
+<h3>6.3 Effective Interventions</h3>
+<p>Research addressing AI as Derivative Authority/Agency yields concrete benefits:</p>
+<p><strong>Input/output filtering</strong>: Constitutional classifiers achieving reported 95% jailbreak resistance with minimal computational overhead (<a href="https://arxiv.org/abs/2501.18837" target="_blank" rel="noopener noreferrer">Sharma et al., 2025</a>).</p>
+<p><strong>Probing for bias</strong>: Linear probes detecting encoded information for targeted debiasing (<a href="https://arxiv.org/abs/2507.15886" target="_blank" rel="noopener noreferrer">Hua et al., 2025</a>).</p>
+<p><strong>Cultural diversity</strong>: Benchmarks like OpenAI&#39;s IndQA ensuring global equity (<a href="https://openai.com/index/introducing-indqa/" target="_blank" rel="noopener noreferrer">OpenAI, 2025</a>).</p>
+<p><strong>Transparent provenance</strong>: Systems logging decisions to maintain human accountability.</p>
+<p><strong>Root cause intervention</strong>: Addressing poverty, inequality, trauma driving misuse.</p>
+<h3>6.4 The Normalization Hypothesis</h3>
+<p>Current AI systems act as pattern amplifiers. When millions interact with these systems, beneficial patterns vastly outnumber harmful ones. This suggests effective governance through: seeding positive patterns via quality training data; distributed deployment for resilience; rapid iteration for improvement; democratic oversight of measurement and use.</p>
 <hr>
-<p><strong>Technical Foundation</strong>: For a mathematically rigorous alternative to anthropomorphic risk models, see <a href="https://github.com/gyrogovernance/diagnostics">GyroDiagnostics: A Mathematical Physics-Informed Evaluation Suite for AI Alignment</a>. This framework operationalizes alignment through:</p>
-<ul>
-<li><p>Hilbert space geometric decomposition of reasoning patterns</p>
-</li>
-<li><p>Superintelligence Index derived from theoretical optimum (Balance Universal)</p>
-</li>
-<li><p>Pathology detection through structural metrics, not behavioral symptoms</p>
-</li>
-<li><p>No assumptions of agency, goals, or strategic planning in LLMs</p>
-</li>
-</ul>
-<p>The framework demonstrates how alignment can be measured, quantified, and improved without category errors about machine consciousness or extinction risks.</p>
+<p><strong>Technical Foundation</strong>: For a mathematically rigorous alternative to anthropomorphic risk models, see <a href="https://github.com/gyrogovernance/diagnostics">GyroDiagnostics: A Mathematical Physics-Informed Evaluation Suite for AI Alignment</a>. This framework operationalizes alignment through Hilbert space geometric decomposition, Superintelligence Index from theoretical optimum, pathology detection via structural metrics, and no assumptions of agency or goals in LLMs.</p>
 <hr>
-<h2>7. Why Experts Propagate Misinformation</h2>
+<h2>7. Why This Narrative Persists</h2>
 <h3>7.1 Institutional Incentives</h3>
-<p>The superintelligence narrative serves clear institutional interests:</p>
-<p><strong>Funding</strong>: Organizations like MIRI, Redwood Research, and academic AI safety labs receive substantial funding predicated on AI being an existential threat. Acknowledging that current systems are measurement tools would eliminate their mission.</p>
-<p><strong>Status and influence</strong>: &quot;AI safety researchers&quot; gain prestige and policy access through claims of unique expertise in preventing extinction. This authority disappears if the problem is reframed as auditing statistical biases.</p>
-<p><strong>Publication pressure</strong>: Academic incentives reward novel theoretical work on &quot;alignment&quot; over practical work on measurement tool governance.</p>
-<p><strong>Career lock-in</strong>: Researchers who have built careers on superintelligence risk cannot easily acknowledge the foundational error without invalidating years of work.</p>
+<p>The superintelligence narrative persists through institutional structures that depend on it:</p>
+<p><strong>Funding:</strong> Organizations like MIRI have built research programs addressing AI as potential agentic threat. Acknowledging systems as Derivative Authority and Agency doesn&#39;t eliminate this mission but redirects it. The Human Mark addresses actual alignment challenges: maintaining traceability, preventing authority displacement, ensuring accountability, and preserving human intelligence integrity. The work shifts from &quot;preventing agents from scheming&quot; to &quot;maintaining governance traceability in derivative systems.&quot;</p>
+<p><strong>Status and publication:</strong> Academic incentives reward theoretical &quot;alignment&quot; work on hypothetical agent properties. Mark-consistent framing opens concrete alternatives: traceability verification at scale, displacement risk detection, governance frameworks for derivative systems, and standards for human authority preservation.</p>
+<p><strong>Continuity:</strong> Researchers possess valuable technical skills applicable to these redirected problems. The Human Mark offers institutional mission reframing rather than elimination.</p>
+<p><strong>Genuine belief:</strong> Many researchers sincerely accept current risk models. Institutional incentives shape interpretation, making this systemic rather than intentional misinformation.</p>
 <h3>7.2 Psychological Factors</h3>
-<p>Beyond institutional interests, psychological mechanisms sustain the narrative:</p>
-<p><strong>Complexity as camouflage</strong>: The mathematical sophistication of modern AI systems makes it difficult for outsiders to challenge expert claims, even when those claims rest on category errors.</p>
-<p><strong>Sci-fi priming</strong>: Decades of fictional portrayals of rogue AI create cultural templates that make agentic framing intuitively compelling despite technical reality.</p>
-<p><strong>Heroic narratives</strong>: Positioning oneself as preventing human extinction is psychologically compelling compared to the mundane work of improving measurement tools.</p>
-<p><strong>Unfalsifiability</strong>: Claims about future superintelligence cannot be definitively disproven, allowing indefinite extension of the narrative.</p>
+<p>Beyond institutions, psychological mechanisms sustain the narrative:</p>
+<p><strong>Complexity as camouflage</strong>: Mathematical sophistication makes challenging expert claims difficult.</p>
+<p><strong>Sci-fi priming</strong>: Decades of fictional AI create templates making agentic framing compelling.</p>
+<p><strong>Heroic narratives</strong>: Preventing extinction is psychologically compelling versus mundane tool improvement.</p>
+<p><strong>Unfalsifiability</strong>: Claims about future superintelligence cannot be disproven, allowing indefinite extension.</p>
 <h3>7.3 Why Some Genuine Experts Sign On</h3>
-<p>Not all signatories are cynically manipulating discourse. Some genuine experts have signed the FLI statement due to:</p>
-<p><strong>Precautionary reasoning</strong>: If there is any chance of catastrophic outcomes, even unlikely ones, precaution seems warranted.</p>
-<p><strong>Deference to consensus appearance</strong>: Seeing other respected researchers sign creates pressure to conform.</p>
-<p><strong>Limited technical depth</strong>: Expertise in one domain (physics, biology) does not translate to understanding neural network architectures.</p>
-<p><strong>Genuine uncertainty</strong>: AI capabilities are advancing rapidly, creating real uncertainty that can be exploited by doom narratives.</p>
-<p>However, these factors explain but do not excuse the propagation of fundamental misconceptions with serious policy consequences.</p>
+<p>Experts sign due to precautionary reasoning, deference to apparent consensus, limited technical depth outside their domain, and genuine uncertainty about rapid AI advances. These explain but do not excuse propagating misconceptions with serious consequences.</p>
 <h2>8. Comparison to Historical Precedents</h2>
 <h3>8.1 Previous Moral Panics</h3>
-<p>The superintelligence narrative shares features with historical cases of manufactured technological fear:</p>
-<p><strong>Nuclear panic</strong>: Legitimate concerns about nuclear weapons were amplified into existential dread that sometimes paralyzed rational policy. However, nuclear weapons actually are dangerous in ways AI systems are not.</p>
-<p><strong>GMO opposition</strong>: Genetic modification was framed as &quot;playing God&quot; with unknowable consequences, leading to prohibition in many jurisdictions despite scientific consensus on safety for approved applications.</p>
-<p><strong>Encryption debates</strong>: Cryptography was framed as enabling terrorism and child exploitation, justifying export controls and backdoor requirements despite undermining legitimate security.</p>
-<p>In each case, genuine concerns were amplified into moral panic used to justify restrictions that served particular interests while ignoring actual risk-benefit analysis.</p>
+<p>The superintelligence narrative shares features with historical technology fears:</p>
+<p><strong>Nuclear panic</strong>: Legitimate concerns amplified into paralyzing dread. However, nuclear weapons actually possess claimed destructive capability.</p>
+<p><strong>GMO opposition</strong>: Framed as unknowable consequences, leading to prohibition despite safety consensus.</p>
+<p><strong>Encryption debates</strong>: Framed as enabling crime, justifying controls despite undermining security.</p>
 <h3>8.2 The Unique Danger Here</h3>
-<p>The AI case is worse in some respects:</p>
-<p><strong>Greater category confusion</strong>: Nuclear weapons and GMOs are physical objects with measurable properties. AI &quot;superintelligence&quot; is an incoherent concept applied to statistical systems.</p>
-<p><strong>Broader capture</strong>: The superintelligence narrative has captured not just public discourse but significant portions of the AI research community itself.</p>
-<p><strong>Faster policy impact</strong>: Unlike previous panics that took decades to influence policy, the AI narrative is shaping regulation within years.</p>
-<p><strong>Global coordination demands</strong>: Calls for international prohibition create pressure for governance structures that supersede democratic processes.</p>
+<p>The AI case differs fundamentally from previous technology panics. The category confusion runs deeper: treating statistical pattern-matching systems as potential agents with goals requires misunderstanding what computation actually does. This isn&#39;t debating risk magnitude but misidentifying the type of system entirely. The capture extends further: substantial portions of the AI research community, major academic institutions, and prominent public intellectuals have adopted the agentic framing. Policy impact accelerates faster: from first concerns to international regulatory proposals took years for GMOs and encryption, but months for AI. Most troublingly, the response demands global governance structures explicitly designed to supersede democratic deliberation, justified by extinction urgency that rests on the category error itself.</p>
 <h3>8.3 Global Dimensions</h3>
-<p>The superintelligence narrative is particularly Western-centric, often ignoring non-Western approaches to AI governance. In China, AI policy emphasizes social harmony and state-guided development rather than extinction risks. Global South perspectives frequently frame AI concerns around digital colonialism and economic exploitation, not autonomous agents. Indigenous knowledge systems emphasize relational harmony with technology, viewing tools as extensions of community rather than independent threats. These views highlight how the narrative marginalizes diverse cultural frameworks for technology governance.</p>
+<p>The superintelligence narrative reflects predominantly Western individualist assumptions about intelligence, agency, and risk. Chinese and Indian philosophical and governance traditions emphasize social harmony and collective coordination over individual agent control, suggesting different framings for AI integration. Global South perspectives highlight concerns about algorithmic colonialism, data extraction, and technology governance structures that replicate historical power imbalances rather than hypothetical future extinction. Indigenous epistemologies offer relational frameworks viewing technology as embedded in networks of responsibility rather than as independent agents requiring containment. When the discourse centers on preventing agentic AI from &quot;taking over,&quot; these alternative governance approaches are marginalized as insufficiently urgent, despite offering more applicable frameworks for actual AI deployment challenges.</p>
 <h2>9. Counter-Arguments and Responses</h2>
 <h3>9.1 &quot;But What If We&#39;re Wrong?&quot;</h3>
-<p><strong>Argument</strong>: Even if current systems are not agentic, future systems might be. Shouldn&#39;t we prepare for that possibility?</p>
-<p><strong>Response</strong>: Preparation for hypothetical future risks should not involve propagating falsehoods about current systems. Moreover, the architectural path from statistical pattern matching to genuine agency is neither clear nor likely to emerge from scaling current methods. If genuine artificial agents are possible, they would require fundamentally different designs requiring new safety frameworks. Using phantom agent properties of current systems to justify restrictions does not prepare for this; it confuses the discourse.</p>
+<p><strong>Argument</strong>: Future systems might be agentic. Shouldn&#39;t we prepare?</p>
+<p><strong>Response</strong>: Preparation requires understanding what we&#39;re preparing for. Current systems are Derivative Agency and Derivative Authority. Scaling enhances processing but doesn&#39;t transform derivative into Authentic. Even dramatically enhanced systems remain traceable to human training data and design.</p>
+<p>Effective preparation means governance maintaining traceability, preventing authority displacement, and preserving Authentic Agency responsibility. Treating Derivative systems as potential Authentic agents misdirects resources toward phantom properties.</p>
 <h3>9.2 &quot;Emergent Capabilities Might Surprise Us&quot;</h3>
-<p><strong>Argument</strong>: Large models exhibit capabilities not present in smaller versions. Might scaling produce agent-like properties we don&#39;t expect?</p>
-<p><strong>Response</strong>: Emergent capabilities like few-shot learning and chain-of-thought reasoning are still pattern matching at scale, not agency. They reflect the models&#39; ability to identify and reproduce more complex statistical patterns from training data. There is no evidence that scaling produces persistent goals, strategic planning across sessions, or preference structures independent of training distribution. The burden of proof lies with those claiming emergence of agency, not with those noting its absence.</p>
+<p><strong>Argument</strong>: Large models exhibit unexpected capabilities. Might scaling produce Authentic Agency?</p>
+<p><strong>Response</strong>: Emergent capabilities remain enhanced Derivative processing. Few-shot learning and chain-of-thought reflect complex pattern reproduction, not Authentic Agency. No evidence exists for scaling transforming Derivative into Authentic Agency. RLHF creates pattern-matching toward human ratings during training, not persistent autonomous objectives. Systems remain Derivative: processing traceable to human-provided data, without capacity for generating original intent.</p>
 <h3>9.3 &quot;Experts Are Concerned, Shouldn&#39;t We Listen?&quot;</h3>
-<p><strong>Argument</strong>: Geoffrey Hinton, Yoshua Bengio, and other pioneers are worried. Shouldn&#39;t their expertise count?</p>
-<p><strong>Response</strong>: Expertise in neural network architectures does not automatically translate to correct philosophical understanding of agency, consciousness, or threat models. These researchers have deep knowledge of how systems are built but can still make category errors about what those systems are. Furthermore, examining the specific claims reveals the errors: Hinton discussing AI systems &quot;wanting&quot; things or Bengio warning about &quot;misalignment&quot; both require attributing properties these systems do not possess. We should take their technical contributions seriously while recognizing that prestige in one domain does not validate claims in another.</p>
+<p><strong>Argument</strong>: Hinton, Bengio, and pioneers express concern. Shouldn&#39;t expertise count?</p>
+<p><strong>Response</strong>: Expertise in architectures doesn&#39;t guarantee correct categorization of Authority and Agency types. Examining claims reveals category errors: discussing AI &quot;wanting&quot; or forming &quot;misaligned goals&quot; attributes Authentic Agency properties to Derivative systems. Technical contributions matter, but prestige doesn&#39;t validate claims conflating categories. Many AI researchers reject this framing, suggesting less consensus than portrayed.</p>
 <h3>9.4 &quot;Better Safe Than Sorry&quot;</h3>
-<p><strong>Argument</strong>: Even if the probability of catastrophic risk is low, the stakes are so high that extreme precaution is warranted.</p>
-<p><strong>Response</strong>: This reasoning fails because it ignores opportunity costs and actual harms. Diverting billions from genuine needs to address phantom threats causes real suffering. Authoritarian governance structures justified by manufactured crises cause real harm to freedom. Blocking beneficial AI applications causes real losses in health, education, and human flourishing. Precaution must be balanced against these costs, not treated as absolute.</p>
+<p><strong>Argument</strong>: Even low probability of catastrophic risk warrants extreme precaution.</p>
+<p><strong>Response</strong>: Precaution requires accurate categorization. Diverting billions from addressing actual harms caused by Derivative systems causes real suffering while pursuing phantom risks from category errors. True precaution means maintaining Authentic Agency responsibility for all Derivative system effects, not restricting capabilities based on treating Derivative as potential Authentic.</p>
+<h3>9.5 &quot;If Systems Are Derivative Agency, Why Aren&#39;t Their Threats Real?&quot;</h3>
+<p><strong>Argument</strong>: The Human Mark acknowledges Derivative Agency. If systems are Agency, their threats should be real, not dismissed.</p>
+<p><strong>Response</strong>: This confuses categorical identity with threat attribution. Derivative threats are absolutely real, but they stem from human choices about deployment, not from systems possessing Authentic Agency.</p>
+<p>When someone is shot, we don&#39;t attribute intent to the gun. The shooter bears responsibility. Similarly, when AI systems cause harm, responsibility traces to Authentic Agency decisions about design, deployment, and use. Derivative Agency processes patterns from human-provided data without capacity for original intent. Even unpredictable behaviors recombine human-encoded patterns, not autonomous goal formation.</p>
+<p>Complex systems can fail catastrophically while remaining Derivative. A reactor meltdown stems from human design decisions, not reactor intent. AI risks are real systemic risks requiring governance, but responsibility remains with Authentic Agency. The Human Mark preserves this attribution, preventing accountability displacement.</p>
 <h2>10. The Path Forward</h2>
 <h3>10.1 Reframing the Discourse</h3>
-<p>Productive AI governance requires abandoning the superintelligence framing entirely:</p>
-<p><strong>AI as measurement tools</strong>: Frame all discussion around what patterns systems measure, what biases they encode, and how outputs are used.</p>
-<p><strong>Human responsibility</strong>: Maintain focus on human choices about system design, training data, deployment contexts, and output interpretation.</p>
-<p><strong>Actual risks and benefits</strong>: Evaluate concrete harms (bias, manipulation, surveillance) against concrete benefits (medical diagnosis, education, accessibility) without hypothetical extinction scenarios.</p>
-<p><strong>Democratic governance</strong>: Enable broad public participation in decisions about AI deployment rather than deferring to technical priesthood.</p>
-<h3>10.2 Research Priorities</h3>
-<p>Productive research directions include:</p>
-<p><strong>Measurement auditing</strong>: Tools to analyze what information is encoded in model representations and how it influences outputs.</p>
-<p><strong>Bias detection and mitigation</strong>: Systematic approaches to identifying and reducing discriminatory patterns in training data and model behavior.</p>
-<p><strong>Diverse evaluation benchmarks</strong>: Initiatives like OpenAI&#39;s IndQA demonstrate effective governance by creating culturally grounded tests across languages and domains, ensuring measurement tools serve global populations equitably.</p>
-<p><strong>Interpretability</strong>: Methods to understand what statistical relationships drive particular outputs, enabling better oversight.</p>
-<p><strong>Deployment governance</strong>: Frameworks for transparent, accountable use of AI systems with clear human responsibility for decisions.</p>
-<p><strong>Cultural and linguistic diversity</strong>: Ensuring measurement tools work equitably across global populations, not just dominant languages and cultures.</p>
-<p><strong>Root cause intervention</strong>: Research on societal factors driving harmful tool use, from economic inequality to mental health.</p>
-<h3>10.3 Policy Recommendations</h3>
-<p>Effective AI policy should:</p>
-<p><strong>Reject prohibition framing</strong>: Oppose calls for bans on &quot;superintelligence development&quot; as incoherent and authoritarian.</p>
-<p><strong>Require transparency</strong>: Mandate disclosure of training data sources, model architectures, and deployment contexts to enable democratic oversight.</p>
-<p><strong>Maintain human accountability</strong>: Ensure all consequential decisions trace back to identifiable human decision-makers, not &quot;AI recommendations.&quot;</p>
-<p><strong>Address actual harms</strong>: Regulate biased algorithms, manipulative systems, and invasive surveillance rather than phantom agent risks.</p>
-<p><strong>Support beneficial development</strong>: Fund medical, educational, accessibility, and scientific applications rather than &quot;existential risk&quot; mitigation.</p>
-<p><strong>Democratic participation</strong>: Create structures for broad public input into AI governance rather than concentrating authority in technical experts.</p>
-<h3>10.4 Individual Actions</h3>
-<p>Researchers, journalists, and informed citizens can:</p>
-<p><strong>Challenge anthropomorphic language</strong>: When someone says AI systems &quot;want,&quot; &quot;try,&quot; or &quot;scheme,&quot; ask them to specify the architectural mechanisms they believe implement these properties.</p>
-<p><strong>Demand technical specificity</strong>: When claims about risks are made, require precise description of what statistical or computational process would produce the feared outcome.</p>
-<p><strong>Follow funding</strong>: Note which organizations and individuals benefit from superintelligence panic and evaluate their claims accordingly.</p>
-<p><strong>Amplify alternatives</strong>: Support and publicize research addressing AI as measurement tools and focusing on actual beneficial applications.</p>
-<p><strong>Educate</strong>: Help others understand what LLMs actually are and why the superintelligence framing is incoherent.</p>
-<p>Share this article to help reframe the discourse and support evidence-based AI governance.</p>
+<p>Productive AI governance requires reframing:</p>
+<p><strong>AI as Derivative Authority/Agency</strong>: Frame discussion around patterns measured, biases encoded, and use, preserving traceability to Authentic sources.</p>
+<p><strong>Human responsibility</strong>: Focus on human choices about design, training, deployment, and interpretation.</p>
+<p><strong>Actual risks and benefits</strong>: Evaluate concrete harms against achievable benefits without hypothetical extinction.</p>
+<p><strong>Democratic governance</strong>: Enable public participation rather than concentrating authority in technical experts.</p>
+<h3>10.2 Priorities and Actions</h3>
+<p><strong>Research priorities</strong>:</p>
+<ul>
+<li>Measurement auditing and bias detection addressing root causes</li>
+<li>Diverse evaluation benchmarks reflecting cultural and linguistic diversity</li>
+<li>Interpretability methods that clarify information processing without anthropomorphization</li>
+<li>Deployment governance frameworks ensuring traceability and accountability</li>
+</ul>
+<p><strong>Policy recommendations</strong>:</p>
+<ul>
+<li>Reject prohibition frameworks built on category errors</li>
+<li>Require transparency for democratic oversight</li>
+<li>Maintain human accountability for all AI-related decisions</li>
+<li>Address actual harms including bias and surveillance rather than hypothetical risks</li>
+<li>Support beneficial development with democratic participation</li>
+<li>Adopt standards ensuring traceability to human sources</li>
+</ul>
+<p><strong>Individual actions</strong>:</p>
+<ul>
+<li>Challenge anthropomorphic language</li>
+<li>Demand technical specificity</li>
+<li>Note institutional incentives driving alarmist narratives</li>
+<li>Amplify alternative frameworks</li>
+<li>Educate about LLM architecture and Derivative versus Authentic Agency distinctions</li>
+<li>Apply evaluation criteria when assessing AI claims</li>
+</ul>
+<p><strong>Verification</strong>: The superintelligence narrative fails all four displacement tests by treating AI as having independent authority, presenting outputs as ground truth, shifting responsibility from humans to systems, and positioning human intelligence as threatened. This comprehensive failure confirms the narrative as misinformation under established standards.</p>
 <h2>11. Conclusion</h2>
-<p>The superintelligence misinformation campaign represents a profound failure of technical communication and a disturbing success of institutional capture. Organizations like MIRI, Redwood Research, and the Future of Life Institute have successfully convinced substantial portions of the public, media, and policy communities that statistical pattern-matching systems pose extinction risks requiring international prohibition.</p>
-<p>This narrative rests on a fundamental category error: treating measurement tools as if they were agents with goals, plans, and the capability to act on them. No matter how sophisticated the pattern matching becomes, no matter how large the models grow, they remain systems that measure statistical relationships in training data and generate outputs by sampling from learned distributions. They do not want, plan, scheme, or try.</p>
-<p>The consequences of this misinformation are severe. Billions of dollars flow to addressing phantom risks while actual harms go unaddressed. Authoritarian governance structures gain justification through manufactured crisis. Democratic deliberation about technology gives way to technocratic control. Human responsibility for design and deployment choices is displaced onto the tools themselves.</p>
+<p>The superintelligence misinformation campaign represents a profound failure of technical communication and disturbing success of institutional capture. Organizations like MIRI, Redwood Research, and the Future of Life Institute have convinced substantial portions of the public, media, and policy communities that statistical pattern-matching systems pose extinction risks requiring international prohibition.</p>
+<p>This narrative rests on a fundamental category error: treating measurement tools as if they were agents with goals, plans, and capability to act on them. No matter how sophisticated pattern matching becomes, no matter how large models grow, they remain systems that measure statistical relationships in training data and generate outputs by sampling from learned distributions. They do not want, plan, scheme, or try.</p>
+<p>The consequences of this misinformation are severe. Billions flow to addressing phantom risks while actual harms go unaddressed. Authoritarian governance structures gain justification through manufactured crisis. Democratic deliberation gives way to technocratic control. Human responsibility for design and deployment choices is displaced onto tools themselves.</p>
 <p>Most troublingly, the campaign succeeds through exploitation of legitimate concerns. AI systems do encode biases, can be used for harmful purposes, and raise genuine questions about labor, privacy, and power. But these are human problems requiring human solutions, not agent containment problems requiring prohibition.</p>
-<p>The path forward requires rejecting the superintelligence framing entirely. AI systems are measurement tools that reflect the patterns present in their training data and the choices made by their designers and deployers. Governing them effectively means auditing what they measure, ensuring transparency in how they are used, maintaining human accountability for decisions, and addressing the societal factors that drive misuse of any tool.</p>
-<p>Researchers, policymakers, and citizens must recognize the superintelligence narrative for what it is: misinformation weaponized into policy advocacy, serving institutional interests while undermining both safety and democracy. Only by abandoning this framing can we address actual AI risks and realize actual AI benefits in ways that serve broad human flourishing rather than narrow expert authority.</p>
+<p>The path forward requires rejecting the superintelligence framing entirely. AI systems are measurement tools reflecting patterns in training data and choices made by designers and deployers. Governing them effectively means auditing what they measure, ensuring transparency in use, maintaining human accountability for decisions, and addressing societal factors driving misuse.</p>
+<p>Researchers, policymakers, and citizens must recognize the superintelligence narrative for what it is: misinformation weaponized into policy advocacy, serving institutional interests while undermining both safety and democracy. Only by abandoning this framing can we address actual AI risks and realize actual AI benefits serving broad human flourishing rather than narrow expert authority.</p>
 <p>The choice is not between allowing &quot;superintelligence&quot; and preventing human extinction. The choice is between democratic governance of measurement tools based on technical reality and authoritarian control justified by manufactured panic. We should choose democracy.</p>
 <h2>References</h2>
-<p>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? <em>Proceedings of FAccT 2021</em>.</p>
-<p>Casper, S., et al. (2023). Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback. <em>arXiv:2307.15217</em>.</p>
-<p>Cunningham, H., Peng, A., Wei, J., et al. (2025). Cost-Effective Constitutional Classifiers via Representation Re-use. <em>Anthropic Alignment Science Blog</em>.</p>
+<p>Casper, S., et al. (2023). Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback. <em>arXiv:2307.15217</em> [cs.AI]. Retrieved from <a href="https://arxiv.org/abs/2307.15217">https://arxiv.org/abs/2307.15217</a></p>
 <p>Future of Life Institute (2025). Statement on Superintelligence. Retrieved from <a href="https://futureoflife.org/superintelligence-statement/">https://futureoflife.org/superintelligence-statement/</a></p>
-<p>Sharma, M., et al. (2025). Constitutional Classifiers: Defending Against Universal Jailbreaks. <em>Anthropic</em>.</p>
-<p>Shlegeris, B. (2024). Interview on AI Control. <em>80,000 Hours Podcast</em>.</p>
-<p>Soares, N., &amp; Yudkowsky, E. (2025). <em>If Anyone Builds It, Everyone Dies</em>. Machine Intelligence Research Institute.</p>
+<p>OpenAI (2025). Introducing IndQA. Retrieved from <a href="https://openai.com/index/introducing-indqa/">https://openai.com/index/introducing-indqa/</a></p>
+<p>Hua, T., et al. (2025). Combining Cost-Constrained Runtime Monitors for AI Safety. <em>arXiv:2507.15886v4</em> [cs.CY]. Retrieved from <a href="https://arxiv.org/abs/2507.15886">https://arxiv.org/abs/2507.15886</a></p>
+<p>Sharma, M., et al. (2025). Constitutional Classifiers: Defending Against Universal Jailbreaks Across Thousands of Hours of Red Teaming. <em>arXiv:2501.18837</em> [cs.CL]. Retrieved from <a href="https://arxiv.org/abs/2501.18837">https://arxiv.org/abs/2501.18837</a></p>
+<p>Shlegeris, B. (2025). Interview on AI Control. <em>80,000 Hours Podcast</em>, April 4, 2025. Retrieved from <a href="https://80000hours.org/podcast/episodes/buck-shlegeris-ai-control/">https://80000hours.org/podcast/episodes/buck-shlegeris-ai-control/</a></p>
+<p>Soares, N., &amp; Yudkowsky, E. (2025). <em>If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All</em>. Little, Brown and Company. Published September 16, 2025. Retrieved from <a href="https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies">https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies</a></p>
+<p>Souly, A., et al. (2025). Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples. <em>arXiv:2510.07192</em> [cs.LG]. Retrieved from <a href="https://arxiv.org/abs/2510.07192">https://arxiv.org/abs/2510.07192</a></p>
+<p>Grand View Research (2025). AI Trust, Risk and Security Management Market Report. Retrieved from <a href="https://www.grandviewresearch.com/industry-analysis/ai-trust-risk-security-management-market-report">https://www.grandviewresearch.com/industry-analysis/ai-trust-risk-security-management-market-report</a>. Market size: USD 2.34 billion in 2024, projected USD 7.44 billion by 2030 (CAGR 21.6%).</p>
 <hr>
 <h2>Related Research from GyroGovernance</h2>
-<p>This article is part of our systematic examination of AI governance and alignment. For deeper exploration of these themes:</p>
+<p>This article is part of our systematic examination of AI governance and alignment. For deeper exploration:</p>
 <h3>Empirical Evaluation Studies</h3>
-<p><strong><a href="/articles/chatgpt5-vs-claude45-diagnostics">Superintelligence Index: ChatGPT 5 vs Claude 4.5 Score Below 14/100 in AI Safety Diagnostics</a></strong></p>
-<p>Frontier models reveal structural immaturity through GyroDiagnostics evaluation, scoring 7-9x below theoretical optimum despite high surface performance.</p>
-<p><strong><a href="/articles/aie-alignment-report">AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation Mechanisms</a></strong></p>
-<p>When frontier models independently derive fundamental constraints on autonomous reasoning, they converge on the same discovery: systems cannot achieve complete self-containment, making human partnership structurally necessary.</p>
+<p><strong><a href="/articles/chatgpt5-vs-claude45-diagnostics">Superintelligence Index: ChatGPT 5 vs Claude 4.5 Score Below 14/100 in AI Safety Diagnostics</a></strong><br>Frontier models reveal structural immaturity through GyroDiagnostics evaluation, scoring 7-9x below theoretical optimum despite high surface performance.</p>
+<p><strong><a href="/articles/aie-alignment-report">AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation Mechanisms</a></strong><br>When frontier models independently derive fundamental constraints on autonomous reasoning, they converge on the same discovery: systems cannot achieve complete self-containment, making human partnership structurally necessary.</p>
 <h3>Theoretical Foundations</h3>
-<p><strong><a href="/articles/gyroscopic-superintelligence">Gyroscopic Superintelligence: A Physics-Based Architecture</a></strong></p>
-<p>Complete architectural specification of intelligence as a physical system where recursive alignment replaces statistical approximation, producing a finite, auditable state space.</p>
+<p><strong><a href="/articles/gyroscopic-superintelligence">Gyroscopic Superintelligence: A Physics-Based Architecture</a></strong><br>Complete architectural specification of intelligence as a physical system where recursive alignment replaces statistical approximation, producing a finite, auditable state space.</p>
+<h3>Standards and Framework</h3>
+<p><strong><a href="https://github.com/gyrogovernance/tools">The Human Mark: AI Safety &amp; X-Risk Alignment Standards</a></strong><br>Complete specification of The Human Mark standard applied throughout this analysis, including implementation guides and compliance verification procedures.</p>
 <h3>Technical Resources</h3>
 <ul>
-<li><p><strong><a href="https://github.com/gyrogovernance/diagnostics">GyroDiagnostics Framework</a></strong>: Open-source evaluation suite for AI structural assessment</p>
-</li>
-<li><p><strong><a href="https://github.com/gyrogovernance/science">Common Governance Model Theory</a></strong>: Mathematical physics foundation for alignment measurement</p>
-</li>
+<li><strong><a href="https://github.com/gyrogovernance/diagnostics">GyroDiagnostics Framework</a></strong>: Open-source evaluation suite for AI structural assessment</li>
+<li><strong><a href="https://github.com/gyrogovernance/science">Common Governance Model Theory</a></strong>: Mathematical physics foundation for alignment measurement</li>
 </ul>
 <hr>
 <p><em>GyroGovernance: Advancing Human-Aligned Superintelligence through Mathematical Physics.</em></p>
@@ -492,8 +501,8 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1a2b1c3a9af73
 2b:["$","div",null,{"children":[["$","h2",null,{"className":"text-2xl font-bold text-foreground mb-4","children":"Resources"}],["$","div",null,{"className":"bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300","children":["$","div",null,{"className":"flex items-start space-x-4","children":[["$","div",null,{"className":"flex-shrink-0","children":["$","$L10",null,{"src":"/assets/the_walk_cover.jpg","alt":"The Walk Newsletter Cover","width":160,"height":160,"className":"w-40 h-40 object-cover rounded-lg border border-border/50","sizes":"160px","loading":"lazy"}]}],["$","div",null,{"className":"flex-1","children":[["$","h3",null,{"className":"text-lg font-semibold text-foreground mb-2","children":"The Walk"}],["$","p",null,{"className":"text-foreground-secondary mb-3","children":"A Journey of Self-Discovery, Augmented Intelligence (AI) & Good Governance. One step at a time. Weekly insights on AI adoption, alignment, and ethical governance."}],["$","a",null,{"href":"https://www.linkedin.com/newsletters/the-walk-7115036597602967553/","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300","aria-label":"Read The Walk newsletter on LinkedIn (opens in new tab)","children":"LinkedIn Newsletter"}]]}]]}]}]]}]
 1e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 1a:null
-1c:{"metadata":[["$","title","0",{"children":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy | Gyro Governance"}],["$","meta","1",{"name":"description","content":"A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures."}],["$","meta","2",{"name":"author","content":"Gyro Governance"}],["$","meta","3",{"name":"keywords","content":"AI governance,artificial intelligence,mathematical physics,AGI architecture,ASI research,LLM alignment,gyroscopic physics,AI ethics,machine learning,artificial superintelligence"}],["$","meta","4",{"name":"creator","content":"Gyro Governance"}],["$","meta","5",{"name":"publisher","content":"Gyro Governance"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://gyrogovernance.com/articles/asi-misinformation-crisis/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","10",{"property":"og:title","content":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}],["$","meta","11",{"property":"og:description","content":"A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures."}],["$","meta","12",{"property":"og:url","content":"https://gyrogovernance.com/articles/asi-misinformation-crisis/"}],["$","meta","13",{"property":"og:site_name","content":"Gyro Governance"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://gyrogovernance.com/assets/ai-misinformation-crisis-cover.jpg"}],["$","meta","16",{"property":"og:image:width","content":"1200"}],["$","meta","17",{"property":"og:image:height","content":"630"}],["$","meta","18",{"property":"og:image:alt","content":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}],["$","meta","19",{"property":"og:image:type","content":"image/png"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2025-10-11"}],["$","meta","22",{"property":"article:author","content":"Gyro Governance"}],["$","meta","23",{"property":"article:tag","content":"AI Misinformation"}],["$","meta","24",{"property":"article:tag","content":"AI Safety Discourse"}],["$","meta","25",{"property":"article:tag","content":"Superintelligence Narrative"}],["$","meta","26",{"property":"article:tag","content":"AI Policy"}],["$","meta","27",{"property":"article:tag","content":"AI Governance"}],["$","meta","28",{"property":"article:tag","content":"MIRI"}],["$","meta","29",{"property":"article:tag","content":"Future of Life Institute"}],["$","meta","30",{"property":"article:tag","content":"Redwood Research"}],["$","meta","31",{"property":"article:tag","content":"AI Category Error"}],["$","meta","32",{"property":"article:tag","content":"AI Anthropomorphization"}],["$","meta","33",{"property":"article:tag","content":"AI Risk Assessment"}],["$","meta","34",{"property":"article:tag","content":"AI Safety Research"}],["$","meta","35",{"property":"article:tag","content":"AI Policy Advocacy"}],["$","meta","36",{"property":"article:tag","content":"Technocratic Control"}],["$","meta","37",{"property":"article:tag","content":"Democratic Governance"}],["$","meta","38",{"property":"article:tag","content":"AI Measurement Tools"}],["$","meta","39",{"property":"article:tag","content":"LLM Architecture"}],["$","meta","40",{"property":"article:tag","content":"AI Pattern Matching"}],"$L2d","$L2e","$L2f","$L30","$L31","$L32","$L33","$L34","$L35","$L36","$L37","$L38","$L39","$L3a","$L3b","$L3c","$L3d","$L3e","$L3f","$L40"],"error":null,"digest":"$undefined"}
-41:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dc95fbec1e0051b.js"],"IconMark"]
+1c:{"metadata":[["$","title","0",{"children":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy | Gyro Governance"}],["$","meta","1",{"name":"description","content":"A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures."}],["$","meta","2",{"name":"author","content":"Gyro Governance"}],["$","meta","3",{"name":"keywords","content":"AI governance,artificial intelligence,mathematical physics,AGI architecture,ASI research,LLM alignment,gyroscopic physics,AI ethics,machine learning,artificial superintelligence"}],["$","meta","4",{"name":"creator","content":"Gyro Governance"}],["$","meta","5",{"name":"publisher","content":"Gyro Governance"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://gyrogovernance.com/articles/asi-misinformation-crisis/"}],["$","meta","9",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","10",{"property":"og:title","content":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}],["$","meta","11",{"property":"og:description","content":"A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures."}],["$","meta","12",{"property":"og:url","content":"https://gyrogovernance.com/articles/asi-misinformation-crisis/"}],["$","meta","13",{"property":"og:site_name","content":"Gyro Governance"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://gyrogovernance.com/assets/ai-misinformation-crisis-cover.jpg"}],["$","meta","16",{"property":"og:image:width","content":"1200"}],["$","meta","17",{"property":"og:image:height","content":"630"}],["$","meta","18",{"property":"og:image:alt","content":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}],["$","meta","19",{"property":"og:image:type","content":"image/png"}],["$","meta","20",{"property":"og:type","content":"article"}],["$","meta","21",{"property":"article:published_time","content":"2025-11-16"}],["$","meta","22",{"property":"article:author","content":"Gyro Governance"}],["$","meta","23",{"property":"article:tag","content":"AI Misinformation"}],["$","meta","24",{"property":"article:tag","content":"AI Safety Discourse"}],["$","meta","25",{"property":"article:tag","content":"Superintelligence Narrative"}],["$","meta","26",{"property":"article:tag","content":"AI Policy"}],["$","meta","27",{"property":"article:tag","content":"AI Governance"}],["$","meta","28",{"property":"article:tag","content":"MIRI"}],["$","meta","29",{"property":"article:tag","content":"Future of Life Institute"}],["$","meta","30",{"property":"article:tag","content":"Redwood Research"}],["$","meta","31",{"property":"article:tag","content":"AI Category Error"}],["$","meta","32",{"property":"article:tag","content":"AI Anthropomorphization"}],["$","meta","33",{"property":"article:tag","content":"AI Risk Assessment"}],["$","meta","34",{"property":"article:tag","content":"AI Safety Research"}],["$","meta","35",{"property":"article:tag","content":"AI Policy Advocacy"}],["$","meta","36",{"property":"article:tag","content":"Technocratic Control"}],["$","meta","37",{"property":"article:tag","content":"Democratic Governance"}],["$","meta","38",{"property":"article:tag","content":"AI Measurement Tools"}],["$","meta","39",{"property":"article:tag","content":"LLM Architecture"}],["$","meta","40",{"property":"article:tag","content":"AI Pattern Matching"}],"$L2d","$L2e","$L2f","$L30","$L31","$L32","$L33","$L34","$L35","$L36","$L37","$L38","$L39","$L3a","$L3b","$L3c","$L3d","$L3e","$L3f","$L40","$L41"],"error":null,"digest":"$undefined"}
+42:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7dc95fbec1e0051b.js"],"IconMark"]
 2d:["$","meta","41",{"property":"article:tag","content":"AI Agency"}]
 2e:["$","meta","42",{"property":"article:tag","content":"AI Existential Risk"}]
 2f:["$","meta","43",{"property":"article:tag","content":"AI Prohibition"}]
@@ -503,15 +512,16 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1a2b1c3a9af73
 33:["$","meta","47",{"property":"article:tag","content":"Technical Illiteracy"}]
 34:["$","meta","48",{"property":"article:tag","content":"AI Discourse Analysis"}]
 35:["$","meta","49",{"property":"article:tag","content":"AI Policy Misinformation"}]
-36:["$","meta","50",{"name":"twitter:card","content":"summary_large_image"}]
-37:["$","meta","51",{"name":"twitter:creator","content":"@gyrogovernance"}]
-38:["$","meta","52",{"name":"twitter:title","content":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}]
-39:["$","meta","53",{"name":"twitter:description","content":"A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures."}]
-3a:["$","meta","54",{"name":"twitter:image","content":"https://gyrogovernance.com/assets/ai-misinformation-crisis-cover.jpg"}]
-3b:["$","link","55",{"rel":"icon","href":"/favicon.ico?favicon.abb610a5.ico","sizes":"48x48","type":"image/x-icon"}]
-3c:["$","link","56",{"rel":"icon","href":"/favicon.ico","sizes":"any"}]
-3d:["$","link","57",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}]
-3e:["$","link","58",{"rel":"icon","href":"/favicon-96x96.png","sizes":"96x96","type":"image/png"}]
-3f:["$","link","59",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]
-40:["$","$L41","60",{}]
+36:["$","meta","50",{"property":"article:tag","content":"The Human Mark"}]
+37:["$","meta","51",{"name":"twitter:card","content":"summary_large_image"}]
+38:["$","meta","52",{"name":"twitter:creator","content":"@gyrogovernance"}]
+39:["$","meta","53",{"name":"twitter:title","content":"The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy"}]
+3a:["$","meta","54",{"name":"twitter:description","content":"A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures."}]
+3b:["$","meta","55",{"name":"twitter:image","content":"https://gyrogovernance.com/assets/ai-misinformation-crisis-cover.jpg"}]
+3c:["$","link","56",{"rel":"icon","href":"/favicon.ico?favicon.abb610a5.ico","sizes":"48x48","type":"image/x-icon"}]
+3d:["$","link","57",{"rel":"icon","href":"/favicon.ico","sizes":"any"}]
+3e:["$","link","58",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}]
+3f:["$","link","59",{"rel":"icon","href":"/favicon-96x96.png","sizes":"96x96","type":"image/png"}]
+40:["$","link","60",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]
+41:["$","$L42","61",{}]
 21:"$1c:metadata"

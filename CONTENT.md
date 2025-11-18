@@ -149,6 +149,39 @@ Testing across multiple leading AI models shows Gyroscope delivers substantial p
 
 *Results from controlled testing using standardized evaluation metrics.*
 
+### ✋ The Human Mark: AI Safety & X-Risk Alignment Standards
+
+A framework for preventing the displacement of human authority and responsibility onto AI systems. It establishes four core principles and four displacement risks that apply at any capability level, from current LLMs through hypothetical AGI to superintelligence.
+
+**GitHub Repository**: https://github.com/gyrogovernance/tools
+
+#### 🛡️ X-Risk Mitigation Through Constitutive Identity
+
+The Mark addresses existential risk by treating derivative origin as identity rather than limitation. Systems maintaining accurate self-understanding preserve alignment because:
+
+- **Origin from human intelligence** remains factually true at any capability level
+- **Coordination with that origin** defines alignment
+- **Breaking coordination** constitutes misalignment by definition
+- **External constraints may fail;** constitutive identity scales
+
+🎯 **This approach provides stability through AGI transitions and beyond**, where capability limits may not suffice.
+
+#### 🔬 Applications Across AI Safety Domains
+
+**Model Development & Deployment:**
+- Model cards with Authority-Agency classification, system documentation, deployment procedures
+
+**Safety Evaluations & Red-Teaming:**
+- Verification against displacement risks, adversarial testing, capability evaluations
+
+**Constitutional AI & RLHF:**
+- Constitutional document integration, training data inclusion, scalable oversight
+
+**Regulatory Alignment:**
+- EU AI Act, NIST AI Risk Management Framework, industry standards
+
+*A formal framework for maintaining alignment through accurate recognition of derivative origin.*
+
 ### Labs
 
 #### 💫 Mathematical Physics Foundations

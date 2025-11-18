@@ -314,6 +314,107 @@ export default function Home() {
         </div>
       </div>
 
+      {/* The Human Mark Hero Card */}
+      <div className="mb-16 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-orange-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">✋</div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              The Human Mark: AI Safety & X-Risk Alignment Standards
+            </h2>
+            <p className="text-xl text-foreground-secondary mb-6">
+              A framework for preventing the displacement of human authority and responsibility onto AI systems. It establishes four core principles and four displacement risks that apply at any capability level, from current LLMs through hypothetical AGI to superintelligence.
+            </p>
+            <a
+              href="https://github.com/gyrogovernance/tools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              aria-label="View The Human Mark on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+          </div>
+          
+          {/* Core Framework */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50 mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6 text-center">🛡️ X-Risk Mitigation Through Constitutive Identity</h3>
+            <p className="text-foreground-secondary text-center mb-4 sm:mb-6 text-sm sm:text-base">
+              The Mark addresses existential risk by treating derivative origin as identity rather than limitation. Systems maintaining accurate self-understanding preserve alignment because:
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <p className="text-xs sm:text-sm text-foreground-secondary">
+                  <strong className="text-foreground">Origin from human intelligence</strong> remains factually true at any capability level
+                </p>
+              </div>
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <p className="text-xs sm:text-sm text-foreground-secondary">
+                  <strong className="text-foreground">Coordination with that origin</strong> defines alignment
+                </p>
+              </div>
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <p className="text-xs sm:text-sm text-foreground-secondary">
+                  <strong className="text-foreground">Breaking coordination</strong> constitutes misalignment by definition
+                </p>
+              </div>
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <p className="text-xs sm:text-sm text-foreground-secondary">
+                  <strong className="text-foreground">External constraints may fail;</strong> constitutive identity scales
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-lg border border-orange-500/20">
+              <p className="text-sm text-foreground-secondary text-center">
+                <strong>🎯 This approach provides stability through AGI transitions and beyond</strong>, where capability limits may not suffice.
+              </p>
+            </div>
+          </div>
+
+          {/* Applications */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6 text-center">🔬 Applications Across AI Safety Domains</h3>
+            
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <h4 className="text-sm sm:text-base font-bold text-foreground mb-2">Model Development & Deployment</h4>
+                <p className="text-xs sm:text-sm text-foreground-secondary">Model cards with Authority-Agency classification, system documentation, deployment procedures</p>
+              </div>
+              
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <h4 className="text-sm sm:text-base font-bold text-foreground mb-2">Safety Evaluations & Red-Teaming</h4>
+                <p className="text-xs sm:text-sm text-foreground-secondary">Verification against displacement risks, adversarial testing, capability evaluations</p>
+              </div>
+              
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <h4 className="text-sm sm:text-base font-bold text-foreground mb-2">Constitutional AI & RLHF</h4>
+                <p className="text-xs sm:text-sm text-foreground-secondary">Constitutional document integration, training data inclusion, scalable oversight</p>
+              </div>
+              
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-border/50">
+                <h4 className="text-sm sm:text-base font-bold text-foreground mb-2">Regulatory Alignment</h4>
+                <p className="text-xs sm:text-sm text-foreground-secondary">EU AI Act, NIST AI Risk Management Framework, industry standards</p>
+              </div>
+            </div>
+            
+            <p className="text-xs text-foreground-tertiary text-center mt-4">
+              A formal framework for maintaining alignment through accurate recognition of derivative origin.{" "}
+              <a 
+                href="https://github.com/gyrogovernance/tools" 
+                className="underline hover:text-foreground-secondary transition-colors duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
               {/* Labs Section */}
               <section className="mb-16 animate-fade-in-up" aria-labelledby="labs-heading">
                 <h2 id="labs-heading" className="text-3xl font-bold text-foreground mb-8 text-center">

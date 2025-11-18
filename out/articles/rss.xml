@@ -6,6 +6,13 @@
       <description>Research articles, featured insights, and reports.</description>
       
       <item>
+        <title>The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy</title>
+        <link>https://gyrogovernance.com/articles/asi-misinformation-crisis</link>
+        <guid>https://gyrogovernance.com/articles/asi-misinformation-crisis</guid>
+        <pubDate>Sun, 16 Nov 2025 00:00:00 GMT</pubDate>
+        <description>A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures.</description>
+      </item>
+      <item>
         <title>AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation Mechanisms in Frontier Models</title>
         <link>https://gyrogovernance.com/articles/aie-alignment-report</link>
         <guid>https://gyrogovernance.com/articles/aie-alignment-report</guid>
@@ -34,13 +41,6 @@
         <description>GyroDiagnostics framework exposes critical structural differences between frontier models invisible to standard benchmarks.</description>
       </item>
       <item>
-        <title>The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy</title>
-        <link>https://gyrogovernance.com/articles/asi-misinformation-crisis</link>
-        <guid>https://gyrogovernance.com/articles/asi-misinformation-crisis</guid>
-        <pubDate>Sat, 11 Oct 2025 00:00:00 GMT</pubDate>
-        <description>A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures.</description>
-      </item>
-      <item>
         <title>Gyroscopic Superintelligence: A Physics-Based Architecture</title>
         <link>https://gyrogovernance.com/articles/gyroscopic-superintelligence</link>
         <guid>https://gyrogovernance.com/articles/gyroscopic-superintelligence</guid>
@@ -55,11 +55,11 @@
         <description>A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint.</description>
       </item>
       <item>
-        <title>Common Governance Model: Gyroscopic Principles and Mathematical Physics Foundations</title>
+        <title>The Common Governance Model: From Modal Logic to Physical Structure</title>
         <link>https://gyrogovernance.com/articles/common-governance-model</link>
         <guid>https://gyrogovernance.com/articles/common-governance-model</guid>
         <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
-        <description>A unifying governance model grounded in gyroscopic stability and core constructs from mathematical physics for robust, auditable AI systems.</description>
+        <description>A unifying governance model grounded in mathematical physics for robust, auditable AI systems.</description>
       </item>
     </channel>
   </rss>

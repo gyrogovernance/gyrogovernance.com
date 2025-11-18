@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://gyrogovernance.com/articles/asi-misinformation-crisis</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-16T00:00:00.000Z</news:publication_date>
+      <news:title>The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy</news:title>
+      <news:keywords>AI Misinformation, AI Safety Discourse, Superintelligence Narrative, AI Policy, AI Governance, MIRI, Future of Life Institute, Redwood Research, AI Category Error, AI Anthropomorphization, AI Risk Assessment, AI Safety Research, AI Policy Advocacy, Technocratic Control, Democratic Governance, AI Measurement Tools, LLM Architecture, AI Pattern Matching, AI Agency, AI Existential Risk, AI Prohibition, AI Regulation, AI Safety Funding, AI Misinformation Campaign, Technical Illiteracy, AI Discourse Analysis, AI Policy Misinformation, The Human Mark</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://gyrogovernance.com/articles/aie-alignment-report</loc>
     <news:news>
       <news:publication>

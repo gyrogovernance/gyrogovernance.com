@@ -603,7 +603,8 @@ tr:last-child td {
 .prose ul { list-style: disc; }
 .prose ol { list-style: decimal; }
 .prose code { background: var(--bg-surface); padding: 0.15em 0.35em; border-radius: 4px; font-family: var(--font-mono); }
-.prose pre { background: var(--bg-surface); padding: 1rem; border-radius: 8px; overflow: auto; }
+.prose pre { background: var(--bg-surface); padding: 1rem; border-radius: 8px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word; }
+.prose pre code { white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word; }
 .prose table { margin: 1.5em 0; }
 .prose blockquote { border-left: 4px solid var(--border-primary); padding-left: 1rem; color: var(--text-secondary); margin: 1.25em 0; }
 
