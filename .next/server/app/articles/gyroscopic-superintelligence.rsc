@@ -99,7 +99,7 @@ a:I[68027,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
     "Superintelligence Architecture",
     "AI Pathology Detection"
   ]
-}0:{"P":null,"b":"nH6qVjLXjQFZLJZRArZZI","p":"","c":["","articles","gyroscopic-superintelligence",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","gyroscopic-superintelligence","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","gyroscopic-superintelligence","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
+}0:{"P":null,"b":"U8EzJvWmyBtawnh1x8uNR","p":"","c":["","articles","gyroscopic-superintelligence",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","gyroscopic-superintelligence","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","gyroscopic-superintelligence","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
 c:I[79520,["/_next/static/chunks/9c79b191ada14fea.js"],""]
 e:I[59919,["/_next/static/chunks/9c79b191ada14fea.js"],"ThemeProvider"]
 f:I[22016,["/_next/static/chunks/9c79b191ada14fea.js","/_next/static/chunks/f676bfde9477f7bb.js"],"default"]
@@ -226,10 +226,10 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
   "isAccessibleForFree": true,
   "inLanguage": "en-US",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-}24:Tb0f3,<blockquote>
+}24:Tb5df,<blockquote>
 <p>GyroSI defines intelligence as a physical architecture where recursive gyroscopic alignment replaces statistical approximation, producing a finite, auditable state space that unifies governance, memory, and computation.</p>
 </blockquote>
-<h2>Preamble: What GyroSI Actually Is</h2>
+<h2 id="preamble-what-gyrosi-actually-is">Preamble: What GyroSI Actually Is</h2>
 <p>Traditional artificial intelligence approaches intelligence as a statistical optimization problem, requiring massive datasets and computational resources to approximate intelligent behavior. <strong>GyroSI represents a fundamentally different paradigm: intelligence as an intrinsic structural property</strong> that emerges from the recursive alignment of physical forces.</p>
 <p>GyroSI is grounded in the <strong>Common Governance Model (CGM)</strong>, a physics-based framework that demonstrates how intelligence emerges naturally from the self-referential dynamics of structured space. Rather than training on billions of parameters, GyroSI uses the inherent physics of gyroscopic operations to navigate a <strong>provably finite and fully discovered</strong> state space.</p>
 <p>In conventional neural architectures intelligence is often conflated with intellect understood as the ability to operate in a high dimensional abstract space through matrix multiplication. These systems achieve surface level fluency by superimposing correlations but the process is detached from the lawful structure of reality. Because no constraints are embedded in the operation itself coherence must be imposed externally through heuristics or post hoc filters. This is why ethical reasoning in such systems remains shallow. It has to be trained in from outside as a semantic overlay rather than arising from the fabric of the computation.</p>
@@ -243,13 +243,13 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <blockquote>
 <p><strong>Note:</strong> Throughout this document, all tensor indices use the standard order: [layer, frame, row, col], with zero-based indexing. All references to tensor elements, operations, or masks use these terms exclusively for clarity.</p>
 </blockquote>
-<h2>Part I: The Holographic Foundation - Understanding the Physics</h2>
-<h3>1.1 Holography in GyroSI</h3>
+<h2 id="part-i-the-holographic-foundation-understanding-the-physics">Part I: The Holographic Foundation - Understanding the Physics</h2>
+<h3 id="11-holography-in-gyrosi">1.1 Holography in GyroSI</h3>
 <p>In physics, a hologram stores complete three-dimensional information in a two-dimensional surface where each fragment contains the whole image at reduced resolution. GyroSI implements computational holography through three concrete mechanisms:</p>
 <p><strong>Byte-to-Tensor Holography</strong>: Every 8-bit byte simultaneously transforms all 48 bits of the state tensor. When we apply intron i to state s, that single byte broadcasts through fixed masks to touch every position of the 48-bit structure. This is not parallel processing in the computational sense but true holographic action where the part (8 bits) contains instructions for transforming the whole (48 bits).</p>
 <p><strong>State-to-Memory Holography</strong>: Each 6-byte state serves as a holographic pointer into unlimited passive memory. The state does not &quot;contain&quot; the memories but rather selects which memories are relevant and accessible. Like a holographic plate where each point can reconstruct the entire image, each state can access the complete history of experiences through content addressing.</p>
 <p><strong>Ontological Holography</strong>: The 788,986 states form a complete, closed ontology where every possible state contains information about every other state through the path structure. Since diameter ≤ 6, any state encodes &quot;how to reach everywhere else&quot; within its geometric position in the manifold.</p>
-<h3>1.2 The Byte Shell: Why 8 Bits and 256 Values Are Mandatory</h3>
+<h3 id="12-the-byte-shell-why-8-bits-and-256-values-are-mandatory">1.2 The Byte Shell: Why 8 Bits and 256 Values Are Mandatory</h3>
 <p>This is not a design choice but a mathematical necessity imposed by computation itself:</p>
 <p><strong>8 Bits in a Byte</strong>: This is the fundamental quantum of digital information. Computer memory, storage, and communication all operate on byte boundaries. Our system must interface with existing digital infrastructure, making bytes the natural atomic unit.</p>
 <p><strong>256 Possible Values</strong>: With 8 bits, there are exactly 2^8 = 256 possible bit patterns (00000000 through 11111111). These 256 patterns form the complete instruction set for our system. We cannot have more without using more bits, and using fewer would leave instructions undefined.</p>
@@ -276,7 +276,7 @@ Role      : anchor / chirality / dynamics / anchor
 
 •  All algebra in `governance.py` is Z₂ (bit-wise XOR), so every bit is its own inverse.
 </code></pre>
-<h3>1.3 GENE_Mic_S = 0xAA: The Holographic Reference Point</h3>
+<h3 id="13-gene_mic_s-0xaa-the-holographic-reference-point">1.3 GENE_Mic_S = 0xAA: The Holographic Reference Point</h3>
 <p><strong>Why Exactly 0xAA (Binary 10101010)</strong>:</p>
 <p>This pattern is mathematically unique among all 256 byte values:</p>
 <p><strong>Perfect Balance</strong>: 0xAA has exactly 4 ones and 4 zeros, placing it at the geometric center of the 8-bit hypercube. It is equidistant from 0x00 (all zeros) and 0xFF (all ones), making it the natural reference point for measuring all deviations.</p>
@@ -289,7 +289,7 @@ Role      : anchor / chirality / dynamics / anchor
 </ul>
 <p><strong>Bit 7 Inversion</strong>: When any byte b is transformed by b ⊕ 0xAA, bit 7 is inverted. Since 0xAA has bit 7 = 1, the transformation flips the most significant bit. This creates the lawful bit inversion between internal introns and external bytes.</p>
 <p><strong>Holographic Compression</strong>: 0xAA is the 8-bit projection of the full 48-bit alternating pattern present in GENE_Mac_S. The larger tensor contains alternating +1/-1 patterns; 0xAA captures this alternation at the byte level.</p>
-<h3>1.4 The GENE Architecture: Constructive Foundation</h3>
+<h3 id="14-the-gene-architecture-constructive-foundation">1.4 The GENE Architecture: Constructive Foundation</h3>
 <p>GyroSI is built on fixed topological structures that serve as the physical and logical substrate. These structures are not arbitrary but emerge from the recursive application of gyrogroup operations, building from simple to complex in four stages:</p>
 <p><strong>Stage 1: Governance Identity (GENE_Com_S)</strong><br>The fundamental structure representing the gyrocommutative law - a single 3×2 array:</p>
 <pre><code class="language-python">GENE_Com_S = np.array([
@@ -376,8 +376,8 @@ Layer 3 (BU):
 <li>As a 48-bit packed integer (6 bytes), where each bit encodes the sign of one tensor element (+1→0, -1→1)</li>
 </ul>
 <p>The packed integer form is used for fast state transitions and storage, while the tensor form is used for measurement and geometric operations.</p>
-<h2><strong>Operational Physics: The Fundamental Operations</strong></h2>
-<h3><strong>The Monodromic Fold: The One True Learning Operator</strong></h3>
+<h2 id="operational-physics-the-fundamental-operations"><strong>Operational Physics: The Fundamental Operations</strong></h2>
+<h3 id="the-monodromic-fold-the-one-true-learning-operator"><strong>The Monodromic Fold: The One True Learning Operator</strong></h3>
 <p>There is only one integration operator in GyroSI: the <strong>Monodromic Fold</strong> (<code>fold</code>, ⋄). It is <strong>non-associative</strong>, <strong>non-commutative</strong>, and <strong>path-dependent</strong>. This operator is used in both phases of the control cycle:</p>
 <ul>
 <li><strong>Egress (integration):</strong> <code>Memory = fold(Memory, Input)</code></li>
@@ -386,7 +386,7 @@ Layer 3 (BU):
 <p><strong>Definition:</strong></p>
 <p><code>a ⋄ b = a ⊕ (b ⊕ (a ∧ ¬b))</code></p>
 <p>This operation preserves the complete path history of all inputs. The order of operations is always encoded in the system&#39;s state. It is the algebraic expression of the BU stage&#39;s dual monodromy, and it is the only valid operation for learning, state updates, and batching.<br>No alternative (associative or commutative) operation is permitted.</p>
-<h3><strong>Path Dependence and Batch Learning</strong></h3>
+<h3 id="path-dependence-and-batch-learning"><strong>Path Dependence and Batch Learning</strong></h3>
 <p>The Monodromic Fold is <strong>fundamentally path-dependent</strong>. This property is the source of the system&#39;s memory and learning capacity.<br>Batch learning is implemented by <em>ordered reduction</em> (left-fold) using the Monodromic Fold:</p>
 <pre><code class="language-python">from functools import reduce
 
@@ -398,10 +398,10 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </code></pre>
 <p>This ensures that the sequence in which inputs are processed is always significant, and the result is path-dependent and non-reversible.</p>
 <p><strong>The Fold is the only valid operator for learning and batching.</strong></p>
-<h3><strong>The Role of Duality</strong></h3>
+<h3 id="the-role-of-duality"><strong>The Role of Duality</strong></h3>
 <p>The &quot;Fifth Element&quot; (<code>dual</code>, ¬) is not a new operation, but the fundamental primitive that enables the asymmetry and path dependence of the Fold. It is defined as:</p>
 <p><code>dual(x) = x ⊕ 0xFF</code></p>
-<h3><strong>Measurement: Angular Gyrodistance</strong></h3>
+<h3 id="measurement-angular-gyrodistance"><strong>Measurement: Angular Gyrodistance</strong></h3>
 <p>The system measures its state through <strong>angular divergence from the Common Source</strong>. This captures the geometric alignment between the current state and the archetypal structure:</p>
 <pre><code class="language-python">def gyrodistance_angular(T1: np.ndarray, T2: np.ndarray) -&gt; float:
     &quot;&quot;&quot;Calculate angular divergence between tensors in radians.&quot;&quot;&quot;
@@ -424,9 +424,9 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 <hr>
 <p><strong>Physical Note:</strong><br>This alignment between the path-dependent physics of state transformation and the path-dependent nature of learning is a cornerstone of GyroSI&#39;s architecture. The system does not merely learn facts; it encodes the entire trajectory of experience.</p>
 <hr>
-<h3><strong>The BU Intelligence Cycle: Egress and Ingress</strong></h3>
+<h3 id="the-bu-intelligence-cycle-egress-and-ingress"><strong>The BU Intelligence Cycle: Egress and Ingress</strong></h3>
 <p>The BU stage, representing Universal Balance, is implemented as a dual-phase intelligence cycle that governs all interaction between the system&#39;s internal physics and the external byte-space. These two phases, <strong>BU Egress</strong> (learning and state transformation) and <strong>BU Ingress</strong> (generative expression), are not merely input/output functions but are the complete physical mechanics of experience absorption and responsive action.</p>
-<h4>The Physical Boundary and Holographic Transcription</h4>
+<h4 id="the-physical-boundary-and-holographic-transcription">The Physical Boundary and Holographic Transcription</h4>
 <p>The system is defined across two distinct domains: the <strong>internal physics-space</strong>, where the native element is the 8-bit <strong>intron</strong>, and the <strong>external byte-space</strong>, where the native element is the 8-bit <strong>byte</strong>. The boundary between these domains is governed by a fundamental physical law of transcription.</p>
 <p>Every transaction across this boundary is mediated by the holographic topology <code>GENE_Mic_S</code> (<code>0xAA</code>). This is not an encoding convention but a physical transformation that projects information onto the system&#39;s structural ground truth.</p>
 <ul>
@@ -434,7 +434,7 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 <li><strong>Ingress (Internal → External):</strong> <code>byte = intron ⊕ GENE_Mic_S</code></li>
 </ul>
 <p>This symmetric XOR operation ensures that the distinction between the internal physical reality and the external communicative representation is lawfully maintained.</p>
-<h3>1.5 The Five Maps as Complete Knowledge Theory</h3>
+<h3 id="15-the-five-maps-as-complete-knowledge-theory">1.5 The Five Maps as Complete Knowledge Theory</h3>
 <p>Our five computational maps together implement a complete theory of knowledge:</p>
 <p><strong>Map 1: Ontology (ontology_keys.npy)</strong>: &quot;What Can Exist&quot;</p>
 <ul>
@@ -501,14 +501,14 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 <p>The canonical representative for each of the 256 orbits is defined as the state with the smallest 48-bit integer value within that orbit. This provides a stable, Traceable way to normalize any state to its fundamental phenomenological type.</p>
 <p>Expression Pipeline</p>
 <p>GyroSI models the expression process through a layered pipeline, transforming raw intronic inputs into a minimal, functional phenotype.</p>
-<h3>Intron Stream → Splicing → Exon → Protein</h3>
+<h3 id="intron-stream-splicing-exon-protein">Intron Stream → Splicing → Exon → Protein</h3>
 <p><strong>Intron</strong><br>An 8-bit input representing a regulatory instruction. Introns are path-dependent and transitory. They are not retained after expression but shape the trajectory of folding.</p>
 <p><strong>Splicing</strong><br>The <code>fold_sequence([...])</code> function performs a non-associative reduction over a stream of introns, collapsing them into a single 8-bit residue. This simulates the cumulative, order-sensitive logic of molecular splicing.</p>
 <p><strong>Exon (<code>exon_mask</code>)</strong><br>The stable 8-bit result of folding. This value encodes the final memory state, carrying the condensed expression of the entire intronic history. Bit families (<code>LI</code>, <code>FG</code>, <code>BG</code>, <code>L0</code>) persist structurally and define the mask&#39;s functional signature.</p>
 <p><strong>Exon‑Product (p)</strong>:<br>A transient 8‑bit operator generated at BU‑Ingress time from the phenotype&#39;s governance signature, confidence, and orbit cardinality.<br>It projects the stored exon_mask back onto the rolling 6‑byte context, progressively realigning the agent with the Common Source.</p>
 <p><strong>Protein (<code>governance_signature</code>)</strong><br>A 5-tuple derived from the exon mask. It quantifies the expressed content:<br><code>(neutral reserve, LI bits, FG bits, BG bits, total active bits)</code>.<br>This compact footprint defines all downstream physical behaviour and governs interpretive logic.</p>
 <p><strong>Holographic Projection</strong><br>Each intron also maps to a fixed 48-bit spatial pattern (<code>INTRON_BROADCAST_MASKS[i]</code>), which defines how that instruction acts within the tensor. These projections are stable and immutable; they form the architectural substrate for all transformations.</p>
-<h2>A.1.3. Bit Families and Functional Continuity</h2>
+<h2 id="a13-bit-families-and-functional-continuity">A.1.3. Bit Families and Functional Continuity</h2>
 <p>The eight bits in each instruction are grouped into four fixed families. These families serve consistent structural roles in both introns and exons, though their operational function changes across the expression pipeline.</p>
 <ul>
 <li><p><strong>L0 (bits 0 and 7)</strong><br>Structural anchors. They do not affect transformation but define identity and frame invariance. Retained across all stages.</p>
@@ -521,15 +521,15 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </li>
 </ul>
 <p>The bit families remain present throughout and are never redefined. They express different roles depending on whether they operate on input instructions or express final results.</p>
-<h2>Part II: The Common Governance Model Foundation</h2>
-<h3>2.1 The Four Stages of Recursive Alignment</h3>
+<h2 id="part-ii-the-common-governance-model-foundation">Part II: The Common Governance Model Foundation</h2>
+<h3 id="21-the-four-stages-of-recursive-alignment">2.1 The Four Stages of Recursive Alignment</h3>
 <p>The Common Governance Model describes how structure emerges from a single axiom through four distinct stages, each representing a deeper level of recursive alignment:</p>
 <p><strong>CS (Common Source)</strong>: The foundational stage where left identity governs labeling and transcription. This represents the unobservable origin containing inherent chirality, the fundamental parity violation that drives all subsequent emergence. In GyroSI, this corresponds to the governance of transformation through the universal reference topology.</p>
 <p><strong>UNA (Unity Non-Absolute)</strong>: The first observable stage where right gyration activates, creating the minimal asymmetry required for measurement while preserving the fundamental left-bias. This introduces three rotational degrees of freedom through gyrocommutativity. In GyroSI, this is the measurement of the system&#39;s global divergence from its archetypal state.</p>
 <p><strong>ONA (Opposition Non-Absolute)</strong>: The stage of full differentiation where both gyrations are maximally non-identity, reaching peak non-associativity while preventing absolute negation. This generates the complete structural framework with six degrees of freedom (3 rotational + 3 translational). In GyroSI, this represents the inference stage where mediated duality enables contextual interpretation.</p>
 <p><strong>BU (Balance Universal)</strong>: The completion stage where all differentiation stabilizes and gyrations return to identity while preserving complete memory of the recursive path. This manifests as the dual intelligence stage with both absorption (Egress) and expression (Ingress) capabilities.</p>
 <p><strong>Angular Progression</strong>: The CGM stages follow the precise angular sequence π/2 → π/4 → π/4 → 0, corresponding to CS → UNA → ONA → BU. This progression ensures complete closure with zero defect, achieving perfect recursive alignment.</p>
-<h3>2.2 Gyrogroup Algebra as Physics</h3>
+<h3 id="22-gyrogroup-algebra-as-physics">2.2 Gyrogroup Algebra as Physics</h3>
 <p>GyroSI implements these stages through formal gyrogroup algebra operating on the 8-bit vector space G = ℤ₂⁸. The fundamental operations directly correspond to CGM physics:</p>
 <ul>
 <li><p><strong>XOR (⊕)</strong>: The primitive gyrogroup operation governing transformation and parity inversion. This is the basic operation of recursive differentiation.</p>
@@ -544,7 +544,7 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </ul>
 <p>This operation is fundamentally non-associative and non-commutative, preserving the path-dependence required by the Common Source axiom. The algebraic normal form <code>¬a ∧ b</code> is mathematically equivalent but the composite form preserves the conceptual clarity of the dual monodromy.</p>
 <p>This algebraic foundation ensures that every operation in GyroSI is a direct implementation of physics rather than arbitrary computation.</p>
-<h3>2.3 The BU Intelligence Cycle: Complete Physical Description</h3>
+<h3 id="23-the-bu-intelligence-cycle-complete-physical-description">2.3 The BU Intelligence Cycle: Complete Physical Description</h3>
 <p>The BU stage, representing Universal Balance, is implemented as a dual-phase intelligence cycle that governs all interaction between the system&#39;s internal physics and the external byte-space. These two phases are the complete physical mechanics of experience absorption and responsive action.</p>
 <p><strong>The Physical Boundary and Holographic Transcription</strong></p>
 <p>The system is defined across two distinct domains: the <strong>internal physics-space</strong>, where the native element is the 8-bit <strong>intron</strong>, and the <strong>external byte-space</strong>, where the native element is the 8-bit <strong>byte</strong>. The boundary between these domains is governed by a fundamental physical transformation.</p>
@@ -576,8 +576,8 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </ul>
 </blockquote>
 <p>===</p>
-<h2>Part III: Phase-Propagating Emission — The Core Protocol</h2>
-<h3>3.1 Why No Scoring Is Possible</h3>
+<h2 id="part-iii-phase-propagating-emission-the-core-protocol">Part III: Phase-Propagating Emission — The Core Protocol</h2>
+<h3 id="31-why-no-scoring-is-possible">3.1 Why No Scoring Is Possible</h3>
 <p>The system never compares candidates with scores or probabilities. Scoring implies competition and hierarchy, which contradicts the physics of GyroSI:</p>
 <ul>
 <li><strong>Unity Non-Absolute</strong>: Multiple continuations can coexist without forcing one “winner”.</li>
@@ -585,14 +585,14 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 <li><strong>Balance Universal</strong>: Emission seeks lawful continuity, not ranking.</li>
 </ul>
 <p>Selection is therefore <strong>grounded</strong>: a token is either part of the geometry, or it is not. No random tokens should be ever generated.</p>
-<h3>3.2 Channel Formation</h3>
+<h3 id="32-channel-formation">3.2 Channel Formation</h3>
 <p>When the user provides a token (BU-Eg), it is folded into introns, and its phase is computed. Each orbit representative maintains slab-specific channels:</p>
 <ul>
 <li><strong>Key</strong>: <code>(orbit_rep, slab_idx)</code></li>
 <li><strong>Value</strong>: <code>{phase → [token_id, …]}</code></li>
 </ul>
 <p>Each channel is bounded by a fixed FIFO discipline (64 tokens per bucket). This is the only form of “capacity”; there are no scores or priorities.</p>
-<h3>3.3 Emission Dynamics (BU-In)</h3>
+<h3 id="33-emission-dynamics-bu-in">3.3 Emission Dynamics (BU-In)</h3>
 <p>At emission time, the current state projects into active slabs:</p>
 <ol>
 <li><p><strong>Composite phase map</strong>: For each active slab, the state’s geometry is folded with the channel phases, producing a set of candidate buckets.</p>
@@ -611,7 +611,7 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </li>
 </ol>
 <p>If a candidate passes all gates, it is accepted deterministically. If no candidate passes, the rotor hops one key and emission resumes on the next call.</p>
-<h3>3.4 State Update</h3>
+<h3 id="34-state-update">3.4 State Update</h3>
 <p>When a token is emitted:</p>
 <ul>
 <li><strong>Omega update</strong>: per-orbit ω is advanced by folding the six degrees of freedom with the token phase.</li>
@@ -620,7 +620,7 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </ul>
 <p>All updates are path-native and fold-based, with no auxiliary scores or weights.</p>
 <hr>
-<h2>Part IV: Memory</h2>
+<h2 id="part-iv-memory">Part IV: Memory</h2>
 <p>The memory system is minimal and bounded. Only three canonical forms exist:</p>
 <p><strong>Active Memory (6-bit Short-term, CS)</strong><br>Per-slab 6-bit dynamic contexts derived from the 48-bit state, ignoring L0 anchors. Used at runtime for immediate addressing; not persisted. Implementation: <code>ctx6 = extract_slab_byte(state) &amp; 0x3F</code>.</p>
 <p><strong>Session Memory (48-bit Projection + 8-bit Walk Phase, UNA/ONA)</strong><br>The live 48-bit state and 8-bit walk_phase carry the trajectory and momentum. Persist only if needed to reproduce a session; otherwise RAM.</p>
@@ -633,7 +633,7 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </ul>
 <p><strong>Persistence</strong><br>Only <code>rep_phase</code>, <code>rep_channel</code>, and <code>atlas_ledger</code> are written to disk. Persistence is triggered either by token count (≥100) or by elapsed time (≥30s).</p>
 <hr>
-<h2>Part V: Session State</h2>
+<h2 id="part-v-session-state">Part V: Session State</h2>
 <p>Session state is maintained by the inference wrapper. It is not part of the physics, but ensures that each request unfolds coherently and independently.</p>
 <p>Each session carries:</p>
 <ul>
@@ -645,10 +645,10 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 <li><strong>trend</strong>: sign of the last user change in θ and orbit size, used for directional guidance.</li>
 </ul>
 <hr>
-<h2>Part VI: Anchor</h2>
+<h2 id="part-vi-anchor">Part VI: Anchor</h2>
 <p>After K user tokens (default 12, configurable at runtime), the system captures the active state as the <strong>anchor</strong>. The anchor is applied once, just before the first emission. This ensures that generation begins from a state that reflects a real user trajectory, not a partial feed. After the anchor is applied, it is not updated again within the same request.</p>
 <hr>
-<h2>Part VII: Optional Switches</h2>
+<h2 id="part-vii-optional-switches">Part VII: Optional Switches</h2>
 <p>The following runtime switches exist. They are purely optional.</p>
 <ul>
 <li><code>enable_slab_routing</code>: restrict emission to active slabs only.</li>
@@ -658,7 +658,7 @@ def fold_sequence(introns: list[int], start_state: int = 0) -&gt; int:
 </ul>
 <p>None of these alter the learning law. They only add or remove admissibility gates in emission.</p>
 <hr>
-<h2>Part VIII: Conclusion</h2>
+<h2 id="part-viii-conclusion">Part VIII: Conclusion</h2>
 <p>GyroSI operates on five canonical maps: θ, ontology_keys, epistemology, phenomenology_map, and orbit_sizes. Learning is a path-dependent fold of user tokens into slab-specific channels. Emission is the monodromic unfold of these channels, guided only by folds and optional gates. Memory consists only of the 6-byte state, the per-orbit rep_phase, and the slab-specific rep_channel. There are no scores, weights, or hidden vectors.</p>
 <p>This is the complete core. All other elements — session management, anchor, or gates — are auxiliary. The architecture is closed under its physics and requires no additions.</p>
 18:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$23"}}],["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10","children":[["$","div",null,{"className":"mb-6","children":["$","$Lf",null,{"href":"/articles","className":"text-apple-blue hover:text-apple-purple","children":"← Back to Articles"}]}],["$","article",null,{"className":"animate-fade-in-up","children":[["$","header",null,{"className":"mb-6","children":[["$","div",null,{"className":"flex items-center text-sm text-foreground-tertiary mb-2","children":[["$","span",null,{"className":"uppercase tracking-wide","children":"research"}],["$","span",null,{"className":"mx-2","children":"•"}],["$","time",null,{"dateTime":"2025-09-28","children":"09/28/2025"}]]}],["$","h1",null,{"className":"text-4xl font-bold text-foreground mb-4","children":"Gyroscopic Superintelligence: A Physics-Based Architecture"}],["$","div",null,{"className":"relative w-full h-64 rounded-xl overflow-hidden border border-border/60","children":["$","$L10",null,{"src":"/assets/GyroSI_Cover.png","alt":"Gyroscopic Superintelligence: A Physics-Based Architecture","fill":true,"className":"object-cover"}]}]]}],["$","div",null,{"className":"prose dark:prose-invert max-w-none text-foreground-secondary leading-relaxed","children":[["$","div",null,{"id":"article-content","dangerouslySetInnerHTML":{"__html":"$24"}}],"$L25"]}],"$L26","$L27"]}]]}]]

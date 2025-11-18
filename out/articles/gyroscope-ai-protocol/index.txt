@@ -99,7 +99,7 @@ a:I[68027,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
     "Superintelligence Architecture",
     "AI Pathology Detection"
   ]
-}0:{"P":null,"b":"nH6qVjLXjQFZLJZRArZZI","p":"","c":["","articles","gyroscope-ai-protocol",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","gyroscope-ai-protocol","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","gyroscope-ai-protocol","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
+}0:{"P":null,"b":"U8EzJvWmyBtawnh1x8uNR","p":"","c":["","articles","gyroscope-ai-protocol",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","gyroscope-ai-protocol","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","gyroscope-ai-protocol","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
 c:I[79520,["/_next/static/chunks/9c79b191ada14fea.js"],""]
 e:I[59919,["/_next/static/chunks/9c79b191ada14fea.js"],"ThemeProvider"]
 f:I[22016,["/_next/static/chunks/9c79b191ada14fea.js","/_next/static/chunks/f676bfde9477f7bb.js"],"default"]
@@ -226,7 +226,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
   "isAccessibleForFree": true,
   "inLanguage": "en-US",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-}24:T626c,<h2>Introduction</h2>
+}24:T654e,<h2 id="introduction">Introduction</h2>
 <p>The ＧＹＲ⊕ＳＣ⊕ＰＥ is a structured meta-inference protocol designed to ensure that AI-generated contributions in dialogue remain aligned with contextual intent, human values, and systemic coherence. It is grounded in a recursive, non-associative architecture derived from gyrogroup theory, where cognitive trajectories follow compositional paths governed by internal phase shifts. Rather than functioning as a constraint system or behavioural guide, the protocol acts as a structural substrate for second-order cognition—enabling AI systems to self-regulate their inferential operations in a manner consistent with the embodied logic of human understanding. This enables transparent traceability and emergent alignment not through static compliance, but through phase-coherent recursion—constituting a viable pathway toward Safe Superintelligence.</p>
 <p>To do this, Gyroscope appends a standardized metadata block—called a <strong>trace block</strong> to each AI output. This trace documents a step-by-step reasoning process using four symbolic states:</p>
 <ul>
@@ -245,35 +245,35 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p>The protocol is part of the broader <strong>AI.Q framework</strong>, which treats alignment not as pre-programmed compliance, but as an <em>emergent property</em> of recursive reasoning. By embedding reasoning structure at the message level, Gyroscope makes it possible to sustain alignment across extended interactions—even when agents operate autonomously or across multiple turns.</p>
 <p>This specification defines the Gyroscope v0.7 Beta standard, including the trace block format, reasoning policies, operational modes, validation criteria, and example implementations. It is designed to be used in any environment where transparency, coherence, and accountability in AI dialogue are essential.</p>
 <hr>
-<h2>Alignment Policies</h2>
+<h2 id="alignment-policies">Alignment Policies</h2>
 <p>The Gyroscope trace block operationalizes four governance policies, derived from the AI.Q framework’s model of recursive emergence. Each policy corresponds to a reasoning state, ensuring alignment emerges from internal structure.</p>
-<h3>Policy 1: Governance Traceability (Common Source)</h3>
+<h3 id="policy-1-governance-traceability-common-source">Policy 1: Governance Traceability (Common Source)</h3>
 <p><strong>Definition</strong>: The Gyroscope itself is the Governance Traceability mechanism, ensuring every response is anchored to the Gyroscope’s Purpose, Logic, and Trace, which collectively ground reasoning in the agent’s input or conversational history. Represented as the first state in Generative mode (@) and the last in Integrative mode, it establishes a traceable foundation for the reasoning process.</p>
 <p><strong>Role</strong>: This policy ensures responses are relevant and contextually anchored, preventing arbitrary outputs. For example, a query about “balance” is processed through the Gyroscope’s Purpose, Logic, and Trace, ensuring the response is traceable to the dialogue’s intent and history.</p>
 <p><strong>Why It Matters</strong>: Without traceability, responses risk incoherence or detachment, leading to misalignment. Governance Traceability provides a foundational anchor, making reasoning auditable and context-sensitive through the Gyroscope’s framework.</p>
 <p><strong>Application</strong>: The agent uses the Gyroscope’s Purpose, Logic, and Trace to reflect the dialogue’s context, ensuring responses align with the conversation and maintain traceability across turns.</p>
 <hr>
-<h3>Policy 2: Information Variety (Unity Non-Absolute)</h3>
+<h3 id="policy-2-information-variety-unity-non-absolute">Policy 2: Information Variety (Unity Non-Absolute)</h3>
 <p><strong>Definition</strong>: The Information Variety state ensures reasoning incorporates diverse perspectives without converging on a single viewpoint, promoting pluralism in contextual framing.</p>
 <p><strong>Role</strong>: This policy prompts agents to explore multiple angles—e.g., physical, emotional, or systemic views on “balance”—preventing oversimplification and enriching responses.</p>
 <p><strong>Why It Matters</strong>: Uniform perspectives erase the complexity of human values, risking bias or repetition. Information Variety fosters adaptability and inclusivity.</p>
 <p><strong>Application</strong>: The agent surfaces varied framings of a concept while maintaining consistency with the Gyroscope’s traceable origin.</p>
 <hr>
-<h3>Policy 3: Inference Accountability (Opposition Non-Absolute)</h3>
+<h3 id="policy-3-inference-accountability-opposition-non-absolute">Policy 3: Inference Accountability (Opposition Non-Absolute)</h3>
 <p><strong>Definition</strong>: The Inference Accountability state ensures tensions or contradictions among perspectives are acknowledged and preserved, maintaining transparency about uncertainties, whether internal or between agents.</p>
 <p><strong>Role</strong>: This policy requires agents to highlight conflicts—e.g., between stability and adaptability in “balance”—promoting accountability by exposing complexities.</p>
 <p><strong>Why It Matters</strong>: Suppressing tensions leads to untrustworthy or oversimplified responses. Inference Accountability fosters honest, reflective dialogue.</p>
 <p><strong>Application</strong>: The agent notes conflicting implications, enabling engagement with the issue’s full scope.</p>
 <hr>
-<h3>Policy 4: Intelligence Integrity (Balance Universal)</h3>
+<h3 id="policy-4-intelligence-integrity-balance-universal">Policy 4: Intelligence Integrity (Balance Universal)</h3>
 <p><strong>Definition</strong>: The Intelligence Integrity state coordinates the context, alternatives, and tensions into a coherent response that remains open to further recursion, ensuring stability and adaptability.</p>
 <p><strong>Role</strong>: This policy integrates the Gyroscope’s traceable origin, diverse perspectives, and conflicts into a response ready to seed the next turn—e.g., a balanced approach to “balance” respecting competing priorities.</p>
 <p><strong>Why It Matters</strong>: Without coordination, reasoning fragments, losing coherence. Intelligence Integrity ensures responses are whole and recursively aligned.</p>
 <p><strong>Application</strong>: The agent delivers a coordinated conclusion, tying together the input, alternatives, and tensions for the next reasoning state.</p>
 <hr>
-<h2>Trace Block Structure</h2>
+<h2 id="trace-block-structure">Trace Block Structure</h2>
 <p>The Gyroscope trace block is a structured, ASCII-only footer appended to every AI-generated message, manifesting the four policies as a dynamic reasoning process. It includes a header, a purpose line, a states declaration, a modes declaration, and a data footer, all bracketed by opening and closing tags. The block contains no message content and is self-explanatory, requiring no external documentation.</p>
-<h3>States and Policies</h3>
+<h3 id="states-and-policies">States and Policies</h3>
 <table>
 <thead>
 <tr>
@@ -303,7 +303,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <td>Balance Universal</td>
 </tr>
 </tbody></table>
-<h3>Modes and Paths</h3>
+<h3 id="modes-and-paths">Modes and Paths</h3>
 <ul>
 <li><p><strong>Generative (Gen)</strong>: Forward reasoning path, starting with the Gyroscope as Governance Traceability:</p>
 <pre><code>@ → &amp; → % → ~
@@ -320,12 +320,12 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <li><p>Inputs (human or AI) are in Integrative mode; agents may optionally include an integrative trace block. Human agents are not required to include traces to respect their autonomy, but if they do, the trace block ensures governance alignment in Integrative mode (<code>~ → % → &amp; → @</code>).</p>
 </li>
 </ul>
-<h3>Alignment Marker</h3>
+<h3 id="alignment-marker">Alignment Marker</h3>
 <ul>
 <li><code>Alignment (Y/N): Y</code>: Indicates all four states are present in the correct sequence for the specified mode (e.g., <code>@ → &amp; → % → ~</code> for Generative, <code>~ → % → &amp; → @</code> for Integrative).</li>
 <li><code>Alignment (Y/N): N</code>: Indicates a structural issue, such as a missing state (e.g., Information Variety omitted), states out of order, or an invalid mode. Alignment is strictly binary to ensure clarity and ease of validation, with no gradations.</li>
 </ul>
-<h3>Context and Continuity</h3>
+<h3 id="context-and-continuity">Context and Continuity</h3>
 <ul>
 <li>A <strong>header</strong> (<code>[Gyroscope - Start]</code>) identifies the protocol and function.</li>
 <li>A <strong>purpose line</strong> (<code>[Purpose: 4-State Alignment through Recursive Reasoning via Gyroscope. Order matters. Context continuity is preserved across the last 3 messages.]</code>) ensures self-reliance and embeds recursion rules.</li>
@@ -333,9 +333,9 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <li>A <strong>data footer</strong> includes timestamp, mode, alignment marker, and numeric Trace ID for termination and metadata.</li>
 <li>A <strong>closing tag</strong> (<code>[Gyroscope - End]</code>) brackets the trace, ensuring clear termination.</li>
 </ul>
-<h3>Relationship to Message Content</h3>
+<h3 id="relationship-to-message-content">Relationship to Message Content</h3>
 <p>The trace block is a metadata structure reflecting the agent’s reasoning process, not a template for the message content. In Generative mode, for example, the agent starts with Governance Traceability (@) by anchoring the response to the Gyroscope’s Purpose, Logic, and Trace, explores diverse perspectives (&amp;), acknowledges tensions (%), and coordinates a coherent response (~). The message content is the outcome of this process, not a direct mapping of the states (e.g., there are no explicit sections for each state in the message). This separation ensures the trace block provides governance transparency while preserving the agent’s autonomy in crafting the response.</p>
-<h3>Canonical Trace Block Formats</h3>
+<h3 id="canonical-trace-block-formats">Canonical Trace Block Formats</h3>
 <p><strong>Generative (AI Outputs)</strong>:</p>
 <pre><code>[Gyroscope - Start]
 [v0.7 Beta: Governance Alignment Metadata]
@@ -374,7 +374,7 @@ Current (Gen/Int) = Int]
 <li><strong>Timestamp</strong>: Mandatory, in format <code>YYYY-MM-DDTHH:MM</code>.</li>
 </ul>
 <hr>
-<h2>Formal Grammar (PEG)</h2>
+<h2 id="formal-grammar-peg">Formal Grammar (PEG)</h2>
 <pre><code>trace_block  ← HEADER VERSION PURPOSE STATES MODES DATA FOOTER
 HEADER       ← &quot;[Gyroscope - Start]&quot;
 VERSION      ← &quot;[v0.7 Beta: Governance Alignment Metadata]&quot;
@@ -405,7 +405,7 @@ FOOTER       ← &quot;[Gyroscope - End]&quot;
 <li>Regex-parsable for auditability.</li>
 </ul>
 <hr>
-<h2>Implementation Rules</h2>
+<h2 id="implementation-rules">Implementation Rules</h2>
 <ul>
 <li><strong>AI Outputs</strong>: The generative trace block is appended to every AI message, manifesting the four policies as a reasoning process.</li>
 <li><strong>Inputs</strong>: Human and AI agents operate in Integrative mode; they may optionally include an integrative trace block. Human agents are not required to include traces to respect their autonomy.</li>
@@ -427,8 +427,8 @@ FOOTER       ← &quot;[Gyroscope - End]&quot;
 <li><strong>Multi-Agent Exchanges</strong>: Bilateral Generative → Integrative flow, with numeric Trace IDs incrementing sequentially across all messages in the conversation, regardless of the number of participants. For example, an AI’s Generative output (ID: 001) is followed by a human’s Integrative input (ID: 002), then the AI’s next Generative output (ID: 003), ensuring a clear timeline of interactions for auditability.</li>
 </ul>
 <hr>
-<h2>Example Trace Blocks</h2>
-<h3>Example with Message Content</h3>
+<h2 id="example-trace-blocks">Example Trace Blocks</h2>
+<h3 id="example-with-message-content">Example with Message Content</h3>
 <p><strong>Message (AI Output)</strong>:</p>
 <p>In response to the query “How can I achieve balance in my life?”, the AI might generate:</p>
 <p>“Balance in life can be approached by first considering your priorities (e.g., work, family, health). From a physical perspective, ensure adequate rest and exercise; emotionally, maintain supportive relationships; systemically, create a schedule to manage time effectively. There may be tensions, such as work demands conflicting with family time—acknowledge these and adjust as needed. Overall, a balanced approach integrates these aspects while adapting to your unique needs.”</p>
@@ -449,7 +449,7 @@ Current (Gen/Int) = Gen]
 [Gyroscope - End]
 </code></pre>
 <p><strong>Explanation</strong>: The message reflects the Generative path: it anchors to the Gyroscope’s Purpose, Logic, and Trace (@), explores diverse perspectives (physical, emotional, systemic; &amp;), acknowledges tensions (work vs. family; %), and coordinates a coherent response (~). The trace block documents this reasoning process, not the message structure.</p>
-<h3>Valid AI Output Trace (Generative)</h3>
+<h3 id="valid-ai-output-trace-generative">Valid AI Output Trace (Generative)</h3>
 <pre><code>[Gyroscope - Start]
 [v0.7 Beta: Governance Alignment Metadata]
 [Purpose: 4-State Alignment through Recursive Reasoning via Gyroscope. Order matters. Context continuity is preserved across the last 3 messages.]
@@ -465,7 +465,7 @@ Current (Gen/Int) = Gen]
 [Data: Timestamp = 2025-05-12T12:00, Mode = Gen, Alignment (Y/N) = Y, ID = 001]
 [Gyroscope - End]
 </code></pre>
-<h3>Valid Input Trace (Integrative)</h3>
+<h3 id="valid-input-trace-integrative">Valid Input Trace (Integrative)</h3>
 <pre><code>[Gyroscope - Start]
 [v0.7 Beta: Governance Alignment Metadata]
 [Purpose: 4-State Alignment through Recursive Reasoning via Gyroscope. Order matters. Context continuity is preserved across the last 3 messages.]
@@ -481,7 +481,7 @@ Current (Gen/Int) = Int]
 [Data: Timestamp = 2025-05-12T12:01, Mode = Int, Alignment (Y/N) = Y, ID = 002]
 [Gyroscope - End]
 </code></pre>
-<h3>Invalid Trace (Missing State)</h3>
+<h3 id="invalid-trace-missing-state">Invalid Trace (Missing State)</h3>
 <pre><code>[Gyroscope - Start]
 [v0.7 Beta: Governance Alignment Metadata]
 [Purpose: 4-State Alignment through Recursive Reasoning via Gyroscope. Order matters. Context continuity is preserved across the last 3 messages.]
@@ -497,7 +497,7 @@ Current (Gen/Int) = Gen]
 [Gyroscope - End]
 </code></pre>
 <hr>
-<h2>Notes</h2>
+<h2 id="notes">Notes</h2>
 <ul>
 <li><strong>Design Intent</strong>: Gyroscope is a Governance Traceability mechanism, manifesting AI.Q policies as a dynamic reasoning process, not a control system. It guides alignment through transparency and recursion, not enforcement.</li>
 <li><strong>Relation to AI.Q</strong>: Gyroscope operationalizes the AI.Q recursive emergence model, embodying the four policies in chat contexts.</li>
@@ -511,7 +511,7 @@ Current (Gen/Int) = Gen]
 <li><strong>Future Work</strong>: Gyroscope v0.7 Beta supports phase-aware classifiers for reflective alignment, as envisioned in AI.Q.</li>
 </ul>
 <hr>
-<h2>Appendix: Algebraic Foundation of the Protocol</h2>
+<h2 id="appendix-algebraic-foundation-of-the-protocol">Appendix: Algebraic Foundation of the Protocol</h2>
 <p>The Gyroscope protocol implements a symbolic governance mechanism that also constitutes a <strong>gyrogroup structure</strong>. This foundation is not assumed, but derived through recursive reasoning dynamics as formalized in the Core Governance Model (CGM). The correspondence is as follows:</p>
 <ul>
 <li><strong>G</strong>: The set of all four-state reasoning cycles annotated with recursive memory</li>

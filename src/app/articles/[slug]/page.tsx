@@ -73,15 +73,44 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
     );
   }
 
+  // Function to generate GitHub-style heading IDs from text
+  const generateHeadingId = (text: string): string => {
+    if (!text || typeof text !== 'string') {
+      return '';
+    }
+    // Strip HTML tags if present and get plain text
+    const plainText = text.replace(/<[^>]*>/g, '');
+    return plainText
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '') // Remove special characters (keeps alphanumeric, spaces, hyphens)
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+      .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+  };
+
   // Configure markdown renderer
   const setMarkedOptions = (
     marked as unknown as { setOptions: (o: { gfm?: boolean; breaks?: boolean }) => void }
   ).setOptions;
   setMarkedOptions({ gfm: true, breaks: true });
 
-  // Render HTML directly
+  // Render HTML normally first
   const rendered = marked(article.content);
-  const html = typeof rendered === "string" ? rendered : "";
+  let html = typeof rendered === "string" ? rendered : "";
+
+  // Post-process HTML to add IDs to headings (simple regex-based approach)
+  // This doesn't interfere with marked's configuration and is safer
+  html = html.replace(/<h([1-6])>(.*?)<\/h[1-6]>/gi, (match, level, content) => {
+    // Extract text content from the heading (remove any HTML tags inside)
+    const textContent = content.replace(/<[^>]*>/g, '').trim();
+    const id = generateHeadingId(textContent);
+    // Only add id if we have valid content
+    if (id) {
+      return `<h${level} id="${id}">${content}</h${level}>`;
+    }
+    return match;
+  });
 
   return (
     <>

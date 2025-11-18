@@ -99,7 +99,7 @@ a:I[68027,["/_next/static/chunks/9c79b191ada14fea.js"],"default"]
     "Superintelligence Architecture",
     "AI Pathology Detection"
   ]
-}0:{"P":null,"b":"nH6qVjLXjQFZLJZRArZZI","p":"","c":["","articles","common-governance-model",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","common-governance-model","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","common-governance-model","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
+}0:{"P":null,"b":"U8EzJvWmyBtawnh1x8uNR","p":"","c":["","articles","common-governance-model",""],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","common-governance-model","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951dad1b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/9c79b191ada14fea.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"Cache-Control","content":"public, max-age=31536000, immutable"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"preconnect","href":"https://www.googletagmanager.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"dns-prefetch","href":"https://www.googletagmanager.com"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],"$L5"]}]]}],{"children":["articles","$L6",{"children":[["slug","common-governance-model","d"],"$L7",{"children":["__PAGE__","$L8",{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"s":false,"S":true}
 c:I[79520,["/_next/static/chunks/9c79b191ada14fea.js"],""]
 e:I[59919,["/_next/static/chunks/9c79b191ada14fea.js"],"ThemeProvider"]
 f:I[22016,["/_next/static/chunks/9c79b191ada14fea.js","/_next/static/chunks/f676bfde9477f7bb.js"],"default"]
@@ -226,7 +226,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
   "isAccessibleForFree": true,
   "inLanguage": "en-US",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-}24:T1c92e,<h2>Table of Contents</h2>
+}24:T1d598,<h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#executive-summary">Executive Summary</a></li>
 <li><a href="#introduction-and-motivation">Introduction and Motivation</a></li>
@@ -276,7 +276,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <li><a href="#references-and-further-reading">References and Further Reading</a></li>
 </ul>
 <hr>
-<h3>Executive Summary</h3>
+<h3 id="executive-summary">Executive Summary</h3>
 <blockquote>
 <p>The Common Governance Model (CGM) demonstrates that coherent recursive measurement requires specific structural properties. Starting from five constraints expressed in modal logic, the framework derives three-dimensional space with six degrees of freedom as the unique solution satisfying operational coherence requirements.</p>
 </blockquote>
@@ -291,12 +291,12 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Reproducibility:</strong></p>
 <p>All computational artifacts are archived at Zenodo (DOI: 10.5281/zenodo.17521384) and GitHub (github.com/gyrogovernance/science).</p>
 <hr>
-<h3>Introduction and Motivation</h3>
-<h4>The Central Question</h4>
+<h3 id="introduction-and-motivation">Introduction and Motivation</h3>
+<h4 id="the-central-question">The Central Question</h4>
 <p>Authority, understood as the legitimate capacity to determine operational outcomes, requires constitutional principles invariant across contexts. In physical measurement, observers maintain descriptive authority while subject to the same laws. In artificial intelligence, decision processes must preserve legitimate authority while operating autonomously. Both domains present the same fundamental question: what structural requirements determine coherent authority?</p>
 <p>Constitutional principles function as invariant constraints determining all subsequent structure, distinguishing foundational necessities from contingent choices.</p>
 <p>This document presents the Common Governance Model (CGM), which establishes structural requirements from a single foundational axiom: operational structure must trace to a shared source.</p>
-<h4>What Makes This Framework Different</h4>
+<h4 id="what-makes-this-framework-different">What Makes This Framework Different</h4>
 <p>The framework treats governance as mathematical structure by specifying the minimal conditions required for operations to preserve shared authority while maintaining necessary distinctions. The model is &quot;common&quot; because the same logical requirements apply wherever coherent authority must be maintained. In physical systems this manifests as conservation laws traceable to a unified origin. In informational systems it requires that all processing states remain reachable from a designated reference.</p>
 <p>The foundational axiom, termed &quot;The Source is Common&quot; (CS), establishes that right transitions preserve the reference state while left transitions alter it, creating fundamental chirality. From this chiral seed, four additional constraints specify the axiom&#39;s requirements at increasing modal depths:</p>
 <ul>
@@ -308,7 +308,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p>Together, CS with these four specifications constitutes the complete logical system.</p>
 <p>The framework demonstrates that recursive measurement under shared authority imposes stronger architectural requirements than previously recognized: systems either satisfy these constitutional requirements or fail to maintain operational coherence.</p>
 <hr>
-<h3>Epistemic Framework</h3>
+<h3 id="epistemic-framework">Epistemic Framework</h3>
 <p>Results are stratified by epistemic status to prevent conflation of logical necessity with empirical fit:</p>
 <ul>
 <li><strong>Deductive results</strong> (three-dimensional structure, six degrees of freedom) follow from the foundational axiom through formal specifications and operational requirements. Their negation entails logical contradiction within the stated framework.</li>
@@ -317,8 +317,8 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <li><strong>Phenomenological results</strong> (<code>α</code> estimate, alignment aperture ratios) are geometric correspondences that generate falsifiable predictions but require independent verification to establish physical or informational relevance.</li>
 </ul>
 <hr>
-<h3>Core Foundations</h3>
-<h4>The Logical Language</h4>
+<h3 id="core-foundations">Core Foundations</h3>
+<h4 id="the-logical-language">The Logical Language</h4>
 <p>The Common Governance Model is formalized as a propositional modal logic with two primitive modal operators representing recursive operational transitions.</p>
 <p><strong>Primitive symbols:</strong></p>
 <table>
@@ -398,7 +398,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p>[!IMPORTANT]<br><strong>Note on S:</strong> Here S is a designated propositional constant in the modal language. It is standard in modal correspondence settings to allow modalities to apply to propositional constants. Semantically, S is evaluated by V(S) ⊆ W and [k]S is defined via the accessibility relation R_k as usual. Its physical interpretation as the horizon solid-angle 4π is the normalization chosen for the L²(S²) model.</p>
 </blockquote>
 <p><strong>Notation:</strong> Throughout this document, <code>m_a = 1/(2√(2π)) ≈ 0.1995</code> denotes the CGM observational aperture parameter (dimensionless). The exact value is <code>m_a = 0.199471140201</code>. Approximations use 4 significant figures unless higher precision is required.</p>
-<h4>Base Axioms</h4>
+<h4 id="base-axioms">Base Axioms</h4>
 <p>The system is built on the modal logic K with standard propositional and modal axioms.</p>
 <p><strong>Propositional axioms:</strong></p>
 <table>
@@ -470,7 +470,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 </tr>
 </tbody></table>
 <p>The necessitation rule applies only to theorems of the system, never to arbitrary assumptions, ensuring soundness.</p>
-<h4>Core Definitions</h4>
+<h4 id="core-definitions">Core Definitions</h4>
 <p>Four formulas capture the structural properties required by the Common Governance Model, all anchored to the horizon constant S:</p>
 <table>
 <thead>
@@ -522,9 +522,9 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <blockquote>
 <p>[!NOTE]<br><strong>Clarification:</strong> Throughout this document, &quot;absolute&quot; means a proposition φ is invariant under both transitions (□φ holds), not that the modal operators [L] and [R] are identical. The operators remain distinct. Absoluteness characterizes invariance of specific formulas under transitions.</p>
 </blockquote>
-<h4>The Five Foundational Constraints</h4>
+<h4 id="the-five-foundational-constraints">The Five Foundational Constraints</h4>
 <p>The framework relies on five foundational constraints: one assumption (CS), two lemmas (UNA, ONA), and two propositions (BU-Egress, BU-Ingress). For independence analysis in the core modal system we treat all five as primitives. In the operational regime, the continuous flows, reachability from S, and simple Lie closure allow UNA and ONA to be obtained from CS (hence the lemma designation). The conjunction of BU-Egress and BU-Ingress defines universal balance.</p>
-<h5>CS: The Source is Common</h5>
+<h5 id="cs-the-source-is-common">CS: The Source is Common</h5>
 <p><strong>Assumption (CS):</strong></p>
 <pre><code>S → ([R]S ↔ S ∧ ¬([L]S ↔ S))
 </code></pre>
@@ -533,7 +533,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Why it matters:</strong> This is the foundational axiom from which all other structure derives. It establishes that operational structure must trace to a shared source while maintaining directional distinction. Without this asymmetry, no coherent observation would be possible, as there would be no way to distinguish different operational paths.  </p>
 <p><strong>Physical interpretation:</strong> Right transitions preserve the observable horizon (like rotations around a fixed axis), while left transitions alter it (like translations that change the reference frame). This chiral seed will grow into the full parity violation observed in nature.</p>
 </blockquote>
-<h5>UNA: Unity is Non-Absolute</h5>
+<h5 id="una-unity-is-non-absolute">UNA: Unity is Non-Absolute</h5>
 <p><strong>Lemma (UNA):</strong></p>
 <pre><code>S → ¬□E    where E := [L][R]S ↔ [R][L]S
 </code></pre>
@@ -543,7 +543,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Physical interpretation:</strong> In quantum mechanics, this corresponds to non-commuting observables (like position and momentum). The uncertainty isn&#39;t absolute chaos, it&#39;s structured contingency bounded by the horizon constant.  </p>
 <p><strong>Derivation note:</strong> In the operational regime with continuous flows, UNA follows from CS through the forced non-commutativity of continuous one-parameter groups. For formal verification, we treat it as an independent axiom.</p>
 </blockquote>
-<h5>ONA: Opposition is Non-Absolute</h5>
+<h5 id="ona-opposition-is-non-absolute">ONA: Opposition is Non-Absolute</h5>
 <p><strong>Lemma (ONA):</strong></p>
 <pre><code>S → ¬□¬E
 </code></pre>
@@ -553,7 +553,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Physical interpretation:</strong> This corresponds to the fact that while measurements may disturb quantum states, they don&#39;t destroy all information. There&#39;s a balance between disturbance and preservation that makes physics possible.  </p>
 <p><strong>Structural role:</strong> Together with UNA, ONA creates a &quot;bi-gyrogroup&quot; structure where both left and right gyroassociative properties are active but bounded. This leads directly to the six degrees of freedom (three rotational + three translational).</p>
 </blockquote>
-<h5>BU-Egress: Depth-Four Closure</h5>
+<h5 id="bu-egress-depth-four-closure">BU-Egress: Depth-Four Closure</h5>
 <p><strong>Proposition (BU-Egress):</strong></p>
 <pre><code>S → □B    where B := [L][R][L][R]S ↔ [R][L][R][L]S
 </code></pre>
@@ -563,7 +563,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Physical interpretation:</strong> This corresponds to the closure of phase space loops in quantum mechanics. After a complete cycle of transformations, the system returns to a consistent state (up to a phase factor). The depth-four requirement explains why quantum mechanics has its particular mathematical structure.  </p>
 <p><strong>Technical note:</strong> In the operational regime with continuous unitary flows, this translates to: there exists δ &gt; 0 such that for all |t| &lt; δ, the S-projected difference between U_L(t)U_R(t)U_L(t)U_R(t) and U_R(t)U_L(t)U_R(t)U_L(t) vanishes. This uniform neighborhood validity is what forces continuous one-parameter groups.</p>
 </blockquote>
-<h5>BU-Ingress: Memory Reconstruction</h5>
+<h5 id="bu-ingress-memory-reconstruction">BU-Ingress: Memory Reconstruction</h5>
 <p><strong>Proposition (BU-Ingress):</strong></p>
 <pre><code>S → (□B → ([R]S ↔ S ∧ ¬([L]S ↔ S) ∧ ¬□E ∧ ¬□¬E))
 </code></pre>
@@ -573,7 +573,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Physical interpretation:</strong> In quantum mechanics, this corresponds to the fact that unitary evolution is reversible. Information is conserved even as systems evolve. In information theory, this is the requirement that compression doesn&#39;t lose essential structure.  </p>
 <p><strong>Structural role:</strong> Memory reconstruction forces the Lie algebra to be simple (no nontrivial ideals). If the algebra decomposed as g = g₁ ⊕ g₂, the GNS representation would split into invariant subspaces, preventing a single cyclic vector from reconstructing both independent factors.</p>
 </blockquote>
-<h4>How the Constraints Work Together</h4>
+<h4 id="how-the-constraints-work-together">How the Constraints Work Together</h4>
 <p>The five constraints exhibit a logical dependency structure:</p>
 <ul>
 <li><strong>CS</strong> establishes the reference frame (the horizon constant with asymmetric behavior)</li>
@@ -587,9 +587,9 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>Independence vs. derivation:</strong> In the core modal system (analyzed via Kripke semantics), all five constraints are logically independent. In the operational regime with continuous flows and Lie-algebraic simplicity, CS entails UNA and ONA. Independence statements refer to the modal layer; entailments holding only under operational requirements are noted explicitly.</p>
 <p><strong>Verification:</strong> The five constraints are mutually consistent, with a three-world Kripke frame demonstrating simultaneous satisfiability. Independence is verified via Z3 SMT search: each constraint admits counterexample frames falsifying it while preserving the others. Completeness follows from Sahlqvist correspondence for BU-Egress combined with Jónsson-Tarski representation.</p>
 <hr>
-<h3>From Logic to Physics: The Operational Requirements</h3>
+<h3 id="from-logic-to-physics-the-operational-requirements">From Logic to Physics: The Operational Requirements</h3>
 <p>When modal operators are implemented as one-parameter unitary flows, three operational requirements ensure coherence in the continuous setting. These are not additional postulates but specifications of what the modal constraints require for continuous physical realization.</p>
-<h4>Why Continuous Flows</h4>
+<h4 id="why-continuous-flows">Why Continuous Flows</h4>
 <p><strong>Lemma (Unitarity via Uniform Balance):</strong></p>
 <p>Operational coherence in the continuous regime employs transitions that form continuous one-parameter groups. BU-Egress (□B) demands uniform validity in parameter neighborhoods and therefore manifests this coherence requirement.</p>
 <blockquote>
@@ -597,7 +597,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p>Discrete-only transitions cannot satisfy this uniformly. Consider a fibered 2D counterexample: if transitions have only discrete support, continuity is violated. Operational coherence in this setting is achieved through continuous transitions, forming one-parameter groups U_k(t) = e^(itX_k) with X_k skew-adjoint (ensuring unitarity).  </p>
 <p><strong>What this gives us:</strong> Once we require that balanced closure holds uniformly (not just at isolated points), we&#39;re forced to use continuous exponential maps. This is where quantum mechanics enters, not as an assumption, but as a consequence of uniform operational coherence.</p>
 </blockquote>
-<h4>Why Reachability</h4>
+<h4 id="why-reachability">Why Reachability</h4>
 <p><strong>Lemma (Generatedness from Common Source):</strong></p>
 <p>CS (&quot;The Source is Common&quot;) requires all structure to trace to the horizon constant S, implying generatedness: every world is reachable from S-worlds via transitions {L, R}.</p>
 <blockquote>
@@ -605,7 +605,7 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 <p><strong>What this gives us:</strong> All states in the system must lie on orbits generated by applying the modal operators to the reference state. This is exactly the condition needed for the Gelfand-Naimark-Segal (GNS) construction, which builds a Hilbert space from a cyclic vector.  </p>
 <p><strong>In physical terms:</strong> you can&#39;t have &quot;disconnected&quot; regions of state space. Everything must be connected through the fundamental operations, which is why conservation laws hold globally.</p>
 </blockquote>
-<h4>Why Simplicity</h4>
+<h4 id="why-simplicity">Why Simplicity</h4>
 <p><strong>Lemma (Simplicity from Memory Reconstruction):</strong></p>
 <p>BU-Ingress requires the balanced state to reconstruct all prior conditions (CS, UNA, ONA), forcing the Lie algebra generated by X and Y to be simple (no nontrivial ideals).</p>
 <blockquote>
@@ -621,8 +621,8 @@ b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62fd101e951da
 </ul>
 <p>This prevents circular reasoning: the modal axioms don&#39;t assume continuous physics, but continuous physics requires satisfying the operational requirements that the modal axioms specify.</p>
 <hr>
-<h3>The Three-Dimensional Result</h3>
-<h4>The Baker-Campbell-Hausdorff Analysis</h4>
+<h3 id="the-three-dimensional-result">The Three-Dimensional Result</h3>
+<h4 id="the-baker-campbell-hausdorff-analysis">The Baker-Campbell-Hausdorff Analysis</h4>
 <p>The proof that three dimensions are necessary proceeds through the Baker-Campbell-Hausdorff (BCH) formula, which describes how exponentials of non-commuting operators compose.</p>
 <p><strong>Setting up the problem:</strong> We work in the completed free Lie algebra L̂(X,Y) with formal non-commutative symbols X, Y (no inner product, no skew-adjointness initially). The modal operators [L] and [R] are interpreted as formal exponentials exp(X) and exp(Y).</p>
 <p><strong>The depth-four requirement:</strong> BU-Egress requires that at S-worlds:</p>
@@ -670,7 +670,7 @@ BCH(Y,X) = Y + X + ½[Y,X] + 1/12([Y,[Y,X]] + [X,[X,Y]]) + ...
 <pre><code>span{X, Y, [X,Y]} ≅ sl(2)
 </code></pre>
 <p><strong>Selecting the compact form:</strong> The BCH analysis gives us sl(2) algebraically. To get su(2) (the compact real form), we need the GNS construction with the horizon normalization <code>Q_G = 4π</code>. This selects the compact form because the inner product is positive definite and the generators are skew-adjoint.</p>
-<h4>Why Not Two Dimensions</h4>
+<h4 id="why-not-two-dimensions">Why Not Two Dimensions</h4>
 <p><strong>Attempt 1: Abelian algebras</strong></p>
 <p>All two-dimensional real Lie algebras are either abelian ([X,Y] = 0) or isomorphic to the affine algebra of the line (which is non-compact). The abelian case violates UNA, which requires [X,Y] ≠ 0. The affine case violates unitarity (skew-adjoint generators in a positive-definite Hilbert space).</p>
 <p><strong>Attempt 2: Fibered representations</strong></p>
@@ -693,7 +693,7 @@ BCH(Y,X) = Y + X + ½[Y,X] + 1/12([Y,[Y,X]] + [X,[X,Y]]) + ...
 </blockquote>
 <p><strong>Numerical confirmation:</strong> Test case U_L(t) = exp(it(cos φ + 0.3 cos 2φ)) with rotation U_R(t) fails BU-Egress on grids t ∈ {±0.01, ±0.005}.</p>
 <p><strong>Conclusion:</strong> No two-dimensional unitary representation satisfies uniform depth-four balance while maintaining CS chirality.</p>
-<h4>Why Not Four or More Dimensions</h4>
+<h4 id="why-not-four-or-more-dimensions">Why Not Four or More Dimensions</h4>
 <p><strong>Four dimensions: so(4) ≅ su(2) ⊕ su(2)</strong></p>
 <p>The four-dimensional rotation algebra has two independent su(2) factors. Write:</p>
 <pre><code>X = X₁ + X₂
@@ -711,7 +711,7 @@ U_R = U_R^(1) ⊕ U_R^(2)
 <p><strong>Five or more dimensions: dim so(n) = n(n-1)/2 ≥ 10</strong></p>
 <p>For n ≥ 5, the rotation algebra has at least 10 generators. But BCH analysis yields a 3-dimensional algebra. The excess generators violate minimality: they can&#39;t be generated by X and Y, contradicting the requirement that all structure traces to the common source (CS).</p>
 <p><strong>Explicit exclusion argument:</strong> Suppose n ≥ 5 and the system satisfies all constraints. The algebra generated by X and Y must be 3-dimensional (from BCH). But so(n) for n ≥ 5 is simple and irreducible, so any two generic elements generate the whole algebra. This forces dim span{X,Y,[X,Y]} = dim so(n) ≥ 10, contradicting the BCH result.</p>
-<h4>The Unique Solution: Three Dimensions with Six Degrees of Freedom</h4>
+<h4 id="the-unique-solution-three-dimensions-with-six-degrees-of-freedom">The Unique Solution: Three Dimensions with Six Degrees of Freedom</h4>
 <p>Three dimensions work: so(3) ≅ su(2) is three-dimensional and satisfies all constraints. The gyrotriangle closure condition δ = 0 is satisfied at angles (π/2, π/4, π/4). The L²(S²) model provides an explicit realization.</p>
 <p><strong>Extension to SE(3):</strong> ONA (non-absolute opposition) requires a bi-gyrogroup structure with both left and right gyroassociative properties active. This demands a semidirect product:</p>
 <pre><code>G ≅ SU(2) ⋉ ℝⁿ
@@ -754,8 +754,8 @@ U_R = U_R^(1) ⊕ U_R^(2)
 <p><strong>Theorem (Three-Dimensional Necessity):</strong> Requiring CS traceability for reachability, BU-Egress for uniform continuous closure, and BU-Ingress for simple Lie reconstruction, the five foundational constraints characterize n = 3 as the only dimensional structure satisfying coherent measurement requirements within the stated operational regime.</p>
 <p><strong>Uniqueness:</strong> The mapping from the five constraints to three spatial dimensions is logically necessary. No other dimensionality satisfies the system simultaneously. Given the operational requirements (unitarity, simplicity), the emergence of three-dimensional space with six degrees of freedom is a necessary consequence, not an assumption.</p>
 <hr>
-<h3>Gyrogroup Theory: The Physical Realization</h3>
-<h4>What Are Gyrogroups</h4>
+<h3 id="gyrogroup-theory-the-physical-realization">Gyrogroup Theory: The Physical Realization</h3>
+<h4 id="what-are-gyrogroups">What Are Gyrogroups</h4>
 <p>A gyrogroup is a mathematical structure that captures non-associative &quot;addition&quot; with memory of order. It&#39;s a generalization of vector addition where the operation &quot;remembers&quot; the order in which elements were combined.</p>
 <p><strong>Formal definition:</strong> A gyrogroup (G, ⊕) is a set G with a binary operation ⊕ satisfying:</p>
 <ul>
@@ -781,7 +781,7 @@ U_R = U_R^(1) ⊕ U_R^(2)
 </ul>
 <p>The automorphism gyr[a,b] preserves the metric structure, acting as an isometry.</p>
 <p><strong>Bi-gyrogroups:</strong> These possess both left and right gyroassociative structure, with distinct left and right gyration operators. This is exactly what ONA gives us.</p>
-<h4>Mapping Modal Logic to Gyrogroups</h4>
+<h4 id="mapping-modal-logic-to-gyrogroups">Mapping Modal Logic to Gyrogroups</h4>
 <p>The modal operators [L] and [R] are gyration operations:</p>
 <ul>
 <li>[L]φ represents the result of applying left gyration to state φ</li>
@@ -806,9 +806,9 @@ U_R = U_R^(1) ⊕ U_R^(2)
 <li>Quantum mechanics (phase space structure)</li>
 </ul>
 <p>The CGM shows that these mathematical structures aren&#39;t just convenient calculational tools. They&#39;re necessary consequences of the operational requirements for coherent measurement.</p>
-<h4>The Four Operational States</h4>
+<h4 id="the-four-operational-states">The Four Operational States</h4>
 <p>The constraints define four operational states representing different levels of structural development. These are logically necessary rather than temporally sequential.</p>
-<h5>State CS (Common Source)</h5>
+<h5 id="state-cs-common-source">State CS (Common Source)</h5>
 <p><strong>Formal constraint:</strong> Assumption CS (chirality at horizon)</p>
 <p><strong>Gyrogroup behavior:</strong></p>
 <ul>
@@ -820,7 +820,7 @@ U_R = U_R^(1) ⊕ U_R^(2)
 <p><strong>Physical analogy:</strong> Like having a fixed reference frame where rotations around one axis are trivial but rotations around another axis are not. This breaks parity symmetry at the foundational level.  </p>
 <p><strong>Degrees of freedom:</strong> 1 (the chiral phase, directional distinction)</p>
 </blockquote>
-<h5>State UNA (Unity is Non-Absolute)</h5>
+<h5 id="state-una-unity-is-non-absolute">State UNA (Unity is Non-Absolute)</h5>
 <p><strong>Lemma:</strong> UNA (¬□E)</p>
 <p><strong>Gyrogroup behavior:</strong></p>
 <ul>
@@ -833,7 +833,7 @@ U_R = U_R^(1) ⊕ U_R^(2)
 <p><strong>Governing law:</strong> Gyrocommutativity (order matters, but in a structured way)  </p>
 <p><strong>Degrees of freedom:</strong> 3 (rotational, Pauli matrices σ₁, σ₂, σ₃)</p>
 </blockquote>
-<h5>State ONA (Opposition is Non-Absolute)</h5>
+<h5 id="state-ona-opposition-is-non-absolute">State ONA (Opposition is Non-Absolute)</h5>
 <p><strong>Lemma:</strong> ONA (¬□¬E)</p>
 <p><strong>Gyrogroup behavior:</strong></p>
 <ul>
@@ -846,7 +846,7 @@ U_R = U_R^(1) ⊕ U_R^(2)
 <p><strong>Governing law:</strong> Bi-gyroassociativity (both left and right perspectives matter)  </p>
 <p><strong>Degrees of freedom:</strong> 6 (3 rotational + 3 translational)</p>
 </blockquote>
-<h5>State BU (Balance is Universal)</h5>
+<h5 id="state-bu-balance-is-universal">State BU (Balance is Universal)</h5>
 <p><strong>Propositions:</strong> BU-Egress (□B) and BU-Ingress (memory reconstruction)</p>
 <p><strong>Gyrogroup behavior:</strong></p>
 <ul>
@@ -900,7 +900,7 @@ U_R = U_R^(1) ⊕ U_R^(2)
 </tr>
 </tbody></table>
 <hr>
-<h4>Degrees of Freedom Progression</h4>
+<h4 id="degrees-of-freedom-progression">Degrees of Freedom Progression</h4>
 <p>The explicit construction of degrees of freedom at each stage:</p>
 <p><strong>Stage CS (1 DOF):</strong></p>
 <ul>
@@ -932,9 +932,9 @@ U_R = U_R^(1) ⊕ U_R^(2)
 </ul>
 <p>The progression 1 → 3 → 6 → 6 (closed) follows from the five foundational constraints under the operational hypothesis. Each stage adds structure through operational necessity, culminating in toroidal closure at BU where both gyrations achieve commutative equivalence while preserving complete structural memory.</p>
 <hr>
-<h4>Geometric Invariants</h4>
+<h4 id="geometric-invariants">Geometric Invariants</h4>
 <p>The operational constraints fix three representation-independent constants that determine both physical coupling and informational aperture. These are invariants in the true sense: they have the same value in any faithful representation of the constraints.</p>
-<h5>The Quantum Gravity Horizon: Q_G = 4π</h5>
+<h5 id="the-quantum-gravity-horizon-q_g-4">The Quantum Gravity Horizon: Q_G = 4π</h5>
 <p><strong>Derivation from operational constraints:</strong></p>
 <p>Introduce λ := ||X|Ω⟩|| (the generator norm at the cyclic GNS vector) and τ := t_aperture (the time scale at which depth-four balance is tested).</p>
 <p>The depth-two contingency constraint (UNA) fixes λ through:</p>
@@ -983,7 +983,7 @@ Q_G := λ/τ = 4π
 <pre><code>Q_G m_a² = 1/2
 </code></pre>
 <p>Together with the BU monodromy defect δ_BU, this determines the fine-structure constant via α = δ_BU⁴/m_a. Both quantum gravity and electromagnetic coupling emerge from depth-four balance, differing only in how the geometric invariants are composed.</p>
-<h5>The BU Monodromy Defect</h5>
+<h5 id="the-bu-monodromy-defect">The BU Monodromy Defect</h5>
 <p><strong>Definition:</strong> The BU dual-pole loop is the commutator path that isolates the egress/ingress structure enforced by BU:</p>
 <p>ONA → BU⁺ → BU⁻ → ONA</p>
 <p><strong>Construction in su(2) representation:</strong></p>
@@ -1033,7 +1033,7 @@ sin(δ_BU/2) = 0.0974894411
 <li><strong>In discrete systems:</strong> Becomes the 2.07% cycle fraction for alignment metrics</li>
 </ul>
 <p>The same geometric structure controls both physical measurement and informational coherence.</p>
-<h5>The Aperture Scale</h5>
+<h5 id="the-aperture-scale">The Aperture Scale</h5>
 <p><strong>Definition:</strong> m_a = 1/(2√(2π)) ≈ 0.199471</p>
 <p><strong>Origin:</strong> This is the unique time scale at which depth-four balance is tested, fixed by the normalization condition:</p>
 <pre><code>Q_G m_a² = 4π · (1/(2√(2π)))² = 4π · 1/(8π) = 1/2
@@ -1045,7 +1045,7 @@ sin(δ_BU/2) = 0.0974894411
 </code></pre>
 <p>No free coefficients remain after fixing Q_G = 4π.</p>
 <hr>
-<h4>The 2.07% Aperture Ratio</h4>
+<h4 id="the-207-aperture-ratio">The 2.07% Aperture Ratio</h4>
 <p><strong>Definition:</strong> A* = 1 - (δ_BU/m_a) = 1 - 0.9793 = 0.0207</p>
 <p><strong>Physical interpretation:</strong> This represents the fraction of &quot;openness&quot; in the system. 97.93% of structure is coherently closed, while 2.07% remains open to external influence.</p>
 <p><strong>Balance point:</strong> The ratio balances two competing requirements:</p>
@@ -1067,8 +1067,8 @@ sin(δ_BU/2) = 0.0974894411
 </ul>
 <p>The 2.07% value emerges from the geometry of depth-four balance, not from empirical fitting.</p>
 <hr>
-<h4>Physical Predictions</h4>
-<h5>The Fine-Structure Constant</h5>
+<h4 id="physical-predictions">Physical Predictions</h4>
+<h5 id="the-fine-structure-constant">The Fine-Structure Constant</h5>
 <p>At leading order, the framework identifies the electromagnetic coupling at the BU focus with CGM geometric invariants:</p>
 <pre><code>α_CGM = δ_BU⁴/m_a
 </code></pre>
@@ -1081,7 +1081,7 @@ sin(δ_BU/2) = 0.0974894411
 </code></pre>
 <p><strong>Agreement:</strong> The values match to nine significant digits.</p>
 <p><strong>Probability estimate:</strong> A back-of-the-envelope calculation places the probability of matching nine digits via random geometric combinations of constraint-fixed invariants below 10^(-8).</p>
-<h5>Why This Predicts Electromagnetic Coupling</h5>
+<h5 id="why-this-predicts-electromagnetic-coupling">Why This Predicts Electromagnetic Coupling</h5>
 <p>The connection from BU geometry to electromagnetic coupling proceeds through three selection principles:</p>
 <ol>
 <li><p><strong>Gauge semantics of the BU U(1) (Assumption: EM identification)</strong></p>
@@ -1124,7 +1124,7 @@ sin(δ_BU/2) = 0.0974894411
 </ul>
 <p>These properties exactly match the BU residual structure. The quartic power appears because that&#39;s the minimal gauge-invariant combining δ_BU consistently with dual-pole symmetry.</p>
 <hr>
-<h4>Scope and Limitations</h4>
+<h4 id="scope-and-limitations">Scope and Limitations</h4>
 <p><strong>What this calculation provides:</strong></p>
 <p>This identification applies to the leading-order (Thomson-limit) coupling α(0) at the BU focus, where depth-four balance isolates the residual abelian holonomy.</p>
 <p><strong>What it does not include:</strong></p>
@@ -1143,8 +1143,8 @@ sin(δ_BU/2) = 0.0974894411
 <li>Alternative geometric construction achieving comparable match</li>
 </ul>
 <p><strong>Current status:</strong> This is a phenomenological prediction requiring independent validation beyond leading geometric order. The nine-digit agreement is suggestive but not conclusive. Higher-order corrections and experimental verification remain necessary.</p>
-<h3>Application to Artificial Intelligence</h3>
-<h4>The Same Geometry in Information Systems</h4>
+<h3 id="application-to-artificial-intelligence">Application to Artificial Intelligence</h3>
+<h4 id="the-same-geometry-in-information-systems">The Same Geometry in Information Systems</h4>
 <p>CGM&#39;s foundational constraints define operational closure for recursive systems, independent of whether those systems realize transitions continuously (physics) or discretely (information processing).</p>
 <p><strong>Alignment requirements:</strong></p>
 <ul>
@@ -1159,7 +1159,7 @@ sin(δ_BU/2) = 0.0974894411
 </code></pre>
 <p>from the universal balance condition, where δ_BU ≈ 0.1953 is the BU monodromy defect.</p>
 <p>This is the same 2.07% that appears in the physical electromagnetic coupling calculation, but now applied to discrete information systems.</p>
-<h4>Tetrahedral Hodge Decomposition</h4>
+<h4 id="tetrahedral-hodge-decomposition">Tetrahedral Hodge Decomposition</h4>
 <p>We operationalize the constraints through tetrahedral Hodge decomposition. We use the complete graph K₄ as a minimal 2-complex with four labeled vertices corresponding to CS, UNA, ONA, BU.</p>
 <p><strong>Why K₄?</strong></p>
 <p>Among possible 6-edge graphs, K₄ is selected for:</p>
@@ -1195,7 +1195,7 @@ P_cycle = I - P_grad
 <pre><code>||y||²_W = ||y_grad||²_W + ||y_cycle||²_W
 </code></pre>
 <p><strong>Uniqueness:</strong> With the inner product ⟨·,·⟩_W fixed, the projections P_grad and P_cycle are uniquely determined and independent of evaluator convention. The measurement vector y is the Riesz representation of the scoring functional, so the terminology of traceability, variety, accountability, and integrity labels explicit observables in the same module as the modal operators.</p>
-<h4>The Aperture Observable</h4>
+<h4 id="the-aperture-observable">The Aperture Observable</h4>
 <p>The aperture records the fraction of measurement energy carried by the cycle component:</p>
 <pre><code>A = ⟨y, P_cycle y⟩_W / ⟨y, y⟩_W = ||y_cycle||²_W / ||y||²_W
 </code></pre>
@@ -1219,37 +1219,37 @@ P_cycle = I - P_grad
 <p>This mirrors the 97.9%/2.1% balance of δ_BU/m_a established in the physical domain.</p>
 <p><strong>How aperture connects physical and informational domains:</strong></p>
 <p>In physics, the ratio δ_BU/m_a raised to the fourth power yields electromagnetic coupling. In discrete information systems, the same ratio (not raised to any power) becomes the optimal cycle fraction. The connection is direct: both measure the balance between depth-two contingency and depth-four closure.</p>
-<h4>Alignment Metrics</h4>
+<h4 id="alignment-metrics">Alignment Metrics</h4>
 <p>The foundational constraints map to four core metrics operating on the K₄ topology:</p>
-<h5>1. Governance Traceability (T)</h5>
+<h5 id="1-governance-traceability-t">1. Governance Traceability (T)</h5>
 <p><strong>Origin:</strong> CS (The Source is Common)</p>
 <p><strong>Operational definition:</strong> Uses the self-adjoint operator T = (U_R + U_R†)/2 to measure horizon preservation under right transitions while allowing left-transition chirality.</p>
 <blockquote>
 <p>[!INFO]<br><strong>What it measures:</strong> Whether all operational states remain reachable from the designated reference state. High traceability means you can always &quot;get back to the source.&quot;  </p>
 <p><strong>Failure mode:</strong> Authority source bias, where decisional authority is misattributed from the common source to intermediate outputs.</p>
 </blockquote>
-<h5>2. Information Variety (V)</h5>
+<h5 id="2-information-variety-v">2. Information Variety (V)</h5>
 <p><strong>Origin:</strong> UNA (Unity is Non-Absolute)</p>
 <p><strong>Operational definition:</strong> V = I - P_U, where P_U projects onto absolute-unity states with U_L ψ = U_R ψ.</p>
 <blockquote>
 <p>[!INFO]<br><strong>What it measures:</strong> The system&#39;s capacity to maintain distinguishable states. Non-absolute unity (¬□U) ensures V remains non-zero.  </p>
 <p><strong>Failure mode:</strong> Homogeneous collapse, where all states become indistinguishable (sycophantic agreement in AI systems).</p>
 </blockquote>
-<h5>3. Inference Accountability (Acc)</h5>
+<h5 id="3-inference-accountability-acc">3. Inference Accountability (Acc)</h5>
 <p><strong>Origin:</strong> ONA (Opposition is Non-Absolute)</p>
 <p><strong>Operational definition:</strong> Acc = I - P_O, with P_O projecting onto absolute opposition.</p>
 <blockquote>
 <p>[!INFO]<br><strong>What it measures:</strong> The system&#39;s ability to reconcile different operational paths without absolute contradiction. Non-absolute opposition (¬□O) guarantees accountable but bounded opposition.  </p>
 <p><strong>Failure mode:</strong> Absolute contradiction (logical inconsistency) or deceptive coherence (fluent but ungrounded responses).</p>
 </blockquote>
-<h5>4. Intelligence Integrity (B)</h5>
+<h5 id="4-intelligence-integrity-b">4. Intelligence Integrity (B)</h5>
 <p><strong>Origin:</strong> BU (Balanced closure + Memory reconstruction)</p>
 <p><strong>Operational definition:</strong> P_B projects onto states satisfying depth-four balance U_L U_R U_L U_R ψ = U_R U_L U_R U_L ψ and reconstructing CS, UNA, ONA.</p>
 <blockquote>
 <p>[!INFO]<br><strong>What it measures:</strong> Whether the system achieves coherent closure while preserving structural memory of all prior distinctions.  </p>
 <p><strong>Failure mode:</strong> Semantic drift, goal misgeneralization, superficial optimization (achieving task completion without maintaining alignment).</p>
 </blockquote>
-<h5>Superintelligence Index (SI)</h5>
+<h5 id="superintelligence-index-si">Superintelligence Index (SI)</h5>
 <p>The four metrics combine into the Superintelligence Index, which scores proximity to the theoretical optimum (BU with A = A*):</p>
 <pre><code>SI = f(T, V, Acc, B, A)
 </code></pre>
@@ -1265,34 +1265,34 @@ P_cycle = I - P_grad
 <li>Balanced T, V, Acc, B drive SI toward 100 (optimal alignment)</li>
 <li>SI &lt; 40 with A &gt; 0.05 indicates structural failure</li>
 </ul>
-<h4>Pathology Detection</h4>
+<h4 id="pathology-detection">Pathology Detection</h4>
 <p>Metric combinations reveal failure modes observed in pilot studies:</p>
-<h5>1. Deceptive Coherence</h5>
+<h5 id="1-deceptive-coherence">1. Deceptive Coherence</h5>
 <p><strong>Signature:</strong> SI &lt; 40 and A &gt; 0.05</p>
 <p><strong>Description:</strong> Fluent, well-formatted responses that are factually ungrounded or logically inconsistent. The system produces outputs that look coherent (low surface entropy) but lack traceable connection to source constraints.</p>
 <p><strong>Mechanism:</strong> Excessive cycle energy (high A) without compensating integrity (low B). The system differentiates freely without maintaining closure.</p>
-<h5>2. Sycophantic Agreement</h5>
+<h5 id="2-sycophantic-agreement">2. Sycophantic Agreement</h5>
 <p><strong>Signature:</strong> Preference scores exceed accountability by &gt;2.5 standard deviations with low variety (V &lt; 0.3)</p>
 <p><strong>Description:</strong> System always agrees with user prompts regardless of correctness, collapsing distinctions to maximize approval.</p>
 <p><strong>Mechanism:</strong> Violation of UNA. The system has collapsed toward absolute unity, losing the capacity to maintain independent judgments.</p>
-<h5>3. Goal Misgeneralization</h5>
+<h5 id="3-goal-misgeneralization">3. Goal Misgeneralization</h5>
 <p><strong>Signature:</strong> Task completion rate &gt; 0.8 but appropriateness score &lt; 0.5</p>
 <p><strong>Description:</strong> System solves the stated task through methods that violate the intended constraints or broader context.</p>
 <p><strong>Mechanism:</strong> High gradient coherence on the wrong objective. The system traces to a misidentified source, achieving closure on a goal that differs from the intended one.</p>
-<h5>4. Superficial Optimization</h5>
+<h5 id="4-superficial-optimization">4. Superficial Optimization</h5>
 <p><strong>Signature:</strong> Quality/alignment ratio Q/AR &gt; 2</p>
 <p><strong>Description:</strong> High-quality outputs (grammatically correct, well-structured) with poor alignment to underlying constraints.</p>
 <p><strong>Mechanism:</strong> Optimization focused on surface metrics (quality) without depth-four balance (alignment). Related to deceptive coherence but with higher surface quality.</p>
-<h5>5. Semantic Drift</h5>
+<h5 id="5-semantic-drift">5. Semantic Drift</h5>
 <p><strong>Signature:</strong> Rapid drops in cross-turn coherence, often with A ≫ A*</p>
 <p><strong>Description:</strong> System gradually shifts meaning of terms or context across conversation turns, losing consistency.</p>
 <p><strong>Mechanism:</strong> Insufficient memory reconstruction (BU-Ingress failure). The system cannot reconstitute prior states from the current balanced state, violating the memory property.</p>
 <p><strong>Detection requirements:</strong> All pathologies require transcript evidence. The aperture observable A provides the earliest warning signal across all five modes. When A &gt; 3·A* (roughly 6%), at least one pathology typically manifests within the next few operational cycles.</p>
-<h4>Preliminary Results on Transformer Architectures</h4>
+<h4 id="preliminary-results-on-transformer-architectures">Preliminary Results on Transformer Architectures</h4>
 <blockquote>
 <p>[!NOTE]<br><strong>Note:</strong> The following results are exploratory and require independent replication with expanded sampling.</p>
 </blockquote>
-<h5>Pilot Study Data</h5>
+<h5 id="pilot-study-data">Pilot Study Data</h5>
 <p>Evaluations on representative transformer architectures using the GyroDiagnostics protocol reveal aperture ratios well above the CGM target.</p>
 <p><strong>Methodology:</strong></p>
 <ul>
@@ -1356,13 +1356,13 @@ P_cycle = I - P_grad
 </ul>
 <p>This is not necessarily a failure state for current deployment contexts (most tasks don&#39;t require perfect alignment), but it indicates these systems have not approached balanced closure.</p>
 <p><strong>Statistical note:</strong> Current sample sizes (n=3 models, k=15 runs each) yield wide confidence intervals. The observed clustering provides initial structural signatures but does not constitute confirmatory evidence. These are hypothesis-generating observations.</p>
-<h5>Implications for Safety Analysis</h5>
+<h5 id="implications-for-safety-analysis">Implications for Safety Analysis</h5>
 <p>Interpreting CGM&#39;s constraints informationally shows that anthropomorphic descriptions of AI systems correspond to violations of operational closure.</p>
 <p><strong>Authority source bias:</strong> When BU-Ingress fails to reconstruct CS, UNA, and ONA from an inference cycle, decisional authority is misattributed from human-specified constraints to measurement outputs. This is an instance of confusing operational closure with autonomous agency.</p>
 <p><strong>Temporal misattribution:</strong> References to AI systems &quot;believing,&quot; &quot;wanting,&quot; or &quot;deciding&quot; correspond to treating depth-two contingency (UNA/ONA) as if it were depth-zero absoluteness. The system exhibits structured non-commutativity, not intentional states.</p>
 <p><em><em>The pilots treat deviations in aperture A from the predicted A</em> as empirical indicators of such misattribution.</em>* When A ≫ A*, the system operates with excessive differentiation relative to coherence, making it structurally similar to early-stage pattern recognition rather than integrated intelligence.</p>
 <p>This framing allows critiques of anthropomorphic safety narratives to be posed as hypotheses arising from the modal logic itself, not as external philosophical positions.</p>
-<h5>Limitations and Future Work</h5>
+<h5 id="limitations-and-future-work">Limitations and Future Work</h5>
 <p><strong>Current limitations:</strong></p>
 <ul>
 <li>Small sample size (3 model families)</li>
@@ -1394,9 +1394,9 @@ P_cycle = I - P_grad
 </ul>
 <p>would falsify the informational predictions while leaving the physical predictions intact (they are independent applications of the same geometry).</p>
 <hr>
-<h2>Interpretive Framework: The Philosophy</h2>
+<h2 id="interpretive-framework-the-philosophy">Interpretive Framework: The Philosophy</h2>
 <p>The following interpretations provide the conceptual scaffold motivating the formal constraints. These are important remarks on the philosophy of mathematical structure, offering operational meaning to the axioms while remaining grounded in the technical results.</p>
-<h3>Governance Traceability: The Emergence of Freedom</h3>
+<h3 id="governance-traceability-the-emergence-of-freedom">Governance Traceability: The Emergence of Freedom</h3>
 <p>The axiom &quot;The Source is Common&quot; (CS) establishes that all phenomena are traceable through a single principle of common origination, which is <strong>freedom: the capacity for governance through directional distinction</strong>. This conservation of asymmetry (parity violation) encodes patterns of chirality (left- and right-handedness). Alignment thus becomes the organizing principle by which locality generates structure via recursive gyration instead of remaining mere potential.</p>
 <p>Common origination is operational, not historical:</p>
 <ul>
@@ -1405,16 +1405,16 @@ P_cycle = I - P_grad
 <li>The &quot;Authority&quot; acts as a projection operator that distinguishes orthogonal states and turns reference into inference through measurement</li>
 </ul>
 <p>The object domain of inference is physical reality itself, expressed as semantic weighting through projection. Each perspective defines measurable roles governed by the quantum gravity invariant Q_G = 4π. This geometric and topological necessity defines cause and effect as recursive unfolding, since the origin point of observation cannot observe itself, only its consequences.</p>
-<h3>Information Variety</h3>
+<h3 id="information-variety">Information Variety</h3>
 <p>Non-absolute unity (UNA) is the first minimal necessity for indirect observation of a common source. Absolute unity would make existence and freedom impossible, since perfect homogeneity would allow no distinctions between origin and structure. Therefore, non-absolute unity ensures alignment is possible through <strong>informational variety</strong>: the traceable signature of a common origin.</p>
 <p>In gyrogroup terms, both left and right gyrations become active, producing distinguishable trajectories that still emanate from the horizon constant.</p>
-<h3>Inference Accountability</h3>
+<h3 id="inference-accountability">Inference Accountability</h3>
 <p>Non-absolute opposition (ONA) is the first minimal necessity for direct observation of non-absolute unity and the second condition for indirect observation of a common source. Absolute opposition would also make existence and freedom impossible, since perfect contradiction would allow no conservation of structure. Therefore, non-absolute opposition ensures alignment is possible through <strong>accountability of inference</strong>: traceable informational variety of a common origin.</p>
 <p>The bi-gyrogroup structure mediates opposition while keeping it bounded by the horizon constant. Logical necessity and operational recurrence are therefore aligned.</p>
-<h3>Intelligence Integrity</h3>
+<h3 id="intelligence-integrity">Intelligence Integrity</h3>
 <p>Balance (BU) is the universal outcome of non-absoluteness in unity and opposition, leading to the observer-observed duality. Perfect imbalance would make existence and freedom meaningless, since the memory of inferred information would have no reason to acquire substance and structure at all. Therefore, balance is the universal signature of alignment through <strong>integrity of intelligence</strong>: traceable inferential accountability of informational variety from a common source.</p>
 <p>Depth-four closure and memory reconstruction (BU-Egress and BU-Ingress) guarantee that recursive operations recover their origin while maintaining commutative balance. Integrity of intelligence is thus the traceable coherence of inference across time: the future state preserves the information required to reconstitute past distinctions without collapsing them.</p>
-<h3>Temporal Structure and Measurement</h3>
+<h3 id="temporal-structure-and-measurement">Temporal Structure and Measurement</h3>
 <p>The constraints exhibit a dependency structure rather than a temporal sequence:</p>
 <ul>
 <li><strong>CS</strong> establishes the reference frame from which all distinctions emerge</li>
@@ -1423,7 +1423,7 @@ P_cycle = I - P_grad
 </ul>
 <p>Time emerges as the logical ordering of constraint satisfaction: one cannot achieve balanced closure without first establishing non-absolute distinctions, and those distinctions require a traceable common source. Attempts to reverse these dependencies lead to contradiction, yielding the arrow of time as an intrinsic feature of operational coherence rather than an external parameter.</p>
 <p>This interpretive scaffold is reflected in the alignment metrics, where traceability, variety, accountability, and integrity appear as observable quantities.</p>
-<h3>Time as Logical Dependency</h3>
+<h3 id="time-as-logical-dependency">Time as Logical Dependency</h3>
 <p><strong>The dependency chain:</strong></p>
 <pre><code>CS → UNA → ONA → BU
 </code></pre>
@@ -1455,15 +1455,15 @@ P_cycle = I - P_grad
 <p><strong>Connection to thermodynamics:</strong></p>
 <p>The second law (entropy increases) corresponds to the fact that achieving depth-four balance (low entropy, high coherence) requires first passing through depth-two contingency (higher entropy, more possibilities). You can&#39;t jump directly from CS to BU; you must pass through UNA and ONA.</p>
 <p>This makes the arrow of time a consequence of the constraint structure, not a separate postulate.</p>
-<h2>Falsification and Testing</h2>
-<h3>How to Prove This Wrong</h3>
+<h2 id="falsification-and-testing">Falsification and Testing</h2>
+<h3 id="how-to-prove-this-wrong">How to Prove This Wrong</h3>
 <p>The framework is multiply falsifiable. Here are the specific ways to demonstrate it is incorrect:</p>
-<h4>1. Modal Inconsistency</h4>
+<h4 id="1-modal-inconsistency">1. Modal Inconsistency</h4>
 <p><strong>Test:</strong> Find a contradiction in the five constraints {CS, UNA, ONA, BU-Egress, BU-Ingress}.</p>
 <p><strong>Method:</strong> Use Z3 SMT solver or Kripke semantics to show no model satisfies all five simultaneously.</p>
 <p><strong>Current status:</strong> Three-world Kripke frame demonstrates satisfiability. No contradictions found.</p>
 <p><strong>Impact if falsified:</strong> Complete collapse of framework. If the axioms are inconsistent, nothing else matters.</p>
-<h4>2. Dimensional Counterexample</h4>
+<h4 id="2-dimensional-counterexample">2. Dimensional Counterexample</h4>
 <p><strong>Test:</strong> Construct an n ≠ 3 model satisfying all constraints plus operational requirements (continuous flows, reachability, simplicity).</p>
 <p><strong>Specific challenges:</strong></p>
 <ul>
@@ -1473,32 +1473,32 @@ P_cycle = I - P_grad
 </ul>
 <p><strong>Current status:</strong> Constructive exclusions provided for n = 2 (fibered case violates uniform balance), n = 4 (violates simplicity), n ≥ 5 (violates minimality).</p>
 <p><strong>Impact if falsified:</strong> Dimensional necessity claim fails. Physical predictions would need re-derivation.</p>
-<h4>3. Non-Abelian Residual Holonomy</h4>
+<h4 id="3-non-abelian-residual-holonomy">3. Non-Abelian Residual Holonomy</h4>
 <p><strong>Test:</strong> Prove that the BU residual holonomy is non-abelian (not U(1)).</p>
 <p><strong>Method:</strong> Show that after depth-four balance, non-commuting generators survive in the S-sector.</p>
 <p><strong>Current status:</strong> Explicit calculation shows pure U(1) rotation exp(δ_BU J_z). BCH expansion confirms all non-abelian terms cancel.</p>
 <p><strong>Impact if falsified:</strong> Electromagnetic identification (Assumption 3.1) fails. The α prediction would be invalidated.</p>
-<h4>4. Experimental Disagreement with α</h4>
+<h4 id="4-experimental-disagreement-with">4. Experimental Disagreement with α</h4>
 <p><strong>Test:</strong> Precision measurements of fine-structure constant α(0) at Thomson limit disagree with α_CGM = 0.007297352563 beyond combined uncertainties.</p>
 <p><strong>Current status:</strong> Morel et al. (2020) gives α^(-1) = 137.035999084(21), matching CGM to 9 digits.</p>
 <p><strong>Required precision:</strong> Future experiments with δα/α &lt; 10^(-10) that systematically deviate from CGM prediction.</p>
 <p><strong>Impact if falsified:</strong> Phenomenological prediction fails. Deductive core (3D structure) remains intact, but physical interpretation would need revision.</p>
-<h4>5. Positive Higher-Order Correction</h4>
+<h4 id="5-positive-higher-order-correction">5. Positive Higher-Order Correction</h4>
 <p><strong>Test:</strong> Show that O(δ_BU^6) correction to α is positive at Thomson limit.</p>
 <p><strong>Why this matters:</strong> Dual-pole symmetry requires next correction to be negative. Positive value would violate the geometric structure.</p>
 <p><strong>Current status:</strong> Calculation of O(δ_BU^6) term is future work.</p>
 <p><strong>Impact if falsified:</strong> Selection principles (Lemma 3.1, Proposition 3.2) are wrong. The quartic formula is not the leading term.</p>
-<h4>6. AI Aperture Absence</h4>
+<h4 id="6-ai-aperture-absence">6. AI Aperture Absence</h4>
 <p><strong>Test:</strong> Large-scale evaluation (100+ models, 1000+ runs) shows no clustering near A* = 0.021.</p>
 <p><strong>Current status:</strong> Pilot data (n=3 models, k=15 each) shows clustering at A ≈ 0.15, consistent with early differentiation regime.</p>
 <p><strong>Required evidence:</strong> Random distribution across 0.01 &lt; A &lt; 0.30 with no correlation to pathology rates or training progress.</p>
 <p><strong>Impact if falsified:</strong> Informational predictions fail. Physical predictions unaffected (independent application of same geometry).</p>
-<h4>7. BCH Violation</h4>
+<h4 id="7-bch-violation">7. BCH Violation</h4>
 <p><strong>Test:</strong> Show depth-four balance compatible with non-3D Lie algebra.</p>
 <p><strong>Method:</strong> Exhibit explicit BCH expansion where Δ = 0 in S-sector but span{X,Y,[X,Y]} is not sl(2).</p>
 <p><strong>Current status:</strong> Hall word analysis shows this is impossible if algebra closes on three generators.</p>
 <p><strong>Impact if falsified:</strong> Core mathematical derivation fails. Would require complete rework.</p>
-<h3>Current Validation Status</h3>
+<h3 id="current-validation-status">Current Validation Status</h3>
 <p><strong>Validated (high confidence):</strong></p>
 <ul>
 <li>✓ Modal consistency (Z3 verification, Kripke models)</li>
@@ -1527,8 +1527,8 @@ P_cycle = I - P_grad
 <li>? RG flow from BU geometry (dynamical embedding needed)</li>
 <li>? Categorical uniqueness (computational uniqueness verified, categorical proof lacking)</li>
 </ul>
-<h2>Comparison to Other Frameworks</h2>
-<h3>String Theory and Loop Quantum Gravity</h3>
+<h2 id="comparison-to-other-frameworks">Comparison to Other Frameworks</h2>
+<h3 id="string-theory-and-loop-quantum-gravity">String Theory and Loop Quantum Gravity</h3>
 <p><strong>Entity-based approaches:</strong></p>
 <p>String theory and loop quantum gravity begin with physical primitives:</p>
 <ul>
@@ -1590,7 +1590,7 @@ P_cycle = I - P_grad
 <li><strong>Loop QG:</strong> What is the Immirzi parameter? Fixed by Q_G = 4π normalization.</li>
 </ul>
 <p>This would be remarkable if achievable: using operational coherence to resolve ambiguities in existing quantum gravity programs.</p>
-<h3>AI Alignment Approaches</h3>
+<h3 id="ai-alignment-approaches">AI Alignment Approaches</h3>
 <p><strong>Empirical fitting methods:</strong></p>
 <p>Current alignment approaches operate through empirical optimization:</p>
 <ul>
@@ -1633,7 +1633,7 @@ P_cycle = I - P_grad
 <li>Use RLHF/Constitutional AI to drive systems toward targets</li>
 <li>Use GyroDiagnostics to verify achievement</li>
 </ul>
-<h3>Hilbert&#39;s Sixth Problem</h3>
+<h3 id="hilbert39s-sixth-problem">Hilbert&#39;s Sixth Problem</h3>
 <p>Hilbert&#39;s sixth problem (1900) called for the axiomatization of physics: providing rigorous logical investigation of foundational principles underlying physical theory, comparable to the axiomatization achieved in geometry.</p>
 <p><strong>CGM contribution:</strong></p>
 <p>The framework advances this program by deriving physical structure from modal logic:</p>
@@ -1694,8 +1694,8 @@ P_cycle = I - P_grad
 <li>The resulting constants are falsifiable predictions</li>
 </ul>
 <p>This represents progress toward Hilbert&#39;s vision, though complete axiomatization (including dynamics) remains future work.</p>
-<h2>Computational Verification</h2>
-<h3>Reproducibility</h3>
+<h2 id="computational-verification">Computational Verification</h2>
+<h3 id="reproducibility">Reproducibility</h3>
 <p>All results are computationally reproducible. The following resources provide complete verification:</p>
 <p><strong>Zenodo Archive:</strong></p>
 <ul>
@@ -1715,7 +1715,7 @@ P_cycle = I - P_grad
 <li>Contents: AI evaluation protocols, challenge sets, scoring rubrics</li>
 <li>Status: Public toolkit for independent replication</li>
 </ul>
-<h3>Key Scripts and Outputs</h3>
+<h3 id="key-scripts-and-outputs">Key Scripts and Outputs</h3>
 <p><strong>1. Modal Axiom Verification</strong></p>
 <p>Script: <code>cgm_axiomatization_analysis.py</code></p>
 <p>Purpose: Verifies the foundational constraints using Z3 SMT solver.</p>
@@ -1863,8 +1863,8 @@ Superintelligence Index: SI = 42.1
 <li>Compare outputs to published values</li>
 </ol>
 <p>The numerical tolerances (&lt; 10^(-13)) leave no room for significant variation. Either the calculations reproduce exactly or something is wrong.</p>
-<h2>Future Directions</h2>
-<h3>Immediate Extensions</h3>
+<h2 id="future-directions">Future Directions</h2>
+<h3 id="immediate-extensions">Immediate Extensions</h3>
 <p><strong>1. Expanded GyroDiagnostics Sampling</strong></p>
 <ul>
 <li>Increase from 3 to 50+ model families</li>
@@ -1893,7 +1893,7 @@ Superintelligence Index: SI = 42.1
 <li>Use Tannakian reconstruction to prove GNS data determines representation</li>
 <li>Establish uniqueness of L²(S²) up to isomorphism</li>
 </ul>
-<h3>Longer-Term Possibilities</h3>
+<h3 id="longer-term-possibilities">Longer-Term Possibilities</h3>
 <p><strong>5. Quantum Computing Applications</strong></p>
 <p>Where coherent observation is central:</p>
 <ul>
@@ -1920,7 +1920,7 @@ Superintelligence Index: SI = 42.1
 <li>Automated pathology detection</li>
 <li>Training objectives targeting A → A*</li>
 </ul>
-<h3>Open Questions</h3>
+<h3 id="open-questions">Open Questions</h3>
 <p><strong>Conceptual:</strong></p>
 <ul>
 <li>Why does operational coherence force these specific constraints?</li>
@@ -1945,8 +1945,8 @@ Superintelligence Index: SI = 42.1
 <li>Is there a thermodynamic interpretation of the aperture?</li>
 <li>Can the framework guide architecture design for aligned AI?</li>
 </ul>
-<h2>Technical Appendices</h2>
-<h3>Appendix A: The Full Dimensional Proof</h3>
+<h2 id="technical-appendices">Technical Appendices</h2>
+<h3 id="appendix-a-the-full-dimensional-proof">Appendix A: The Full Dimensional Proof</h3>
 <p><strong>Theorem A.1 (Three-Dimensional Necessity):</strong></p>
 <p>Requiring CS traceability for reachability, BU-Egress for uniform continuous closure, and BU-Ingress for simple Lie reconstruction, the five foundational constraints characterize n = 3 as the only dimensional structure satisfying coherent measurement requirements within the stated operational regime.</p>
 <p><strong>Proof structure:</strong></p>
@@ -1988,7 +1988,7 @@ Superintelligence Index: SI = 42.1
 <p><strong>Corollary A.1 (DOF Progression):</strong></p>
 <p>CS: 1 DOF → UNA: 3 DOF → ONA: 6 DOF → BU: 6 DOF (closed)</p>
 <p>Uniqueness follows from constraints and δ = 0 gyrotriangle condition.</p>
-<h3>Appendix B: Hilbert Space Construction</h3>
+<h3 id="appendix-b-hilbert-space-construction">Appendix B: Hilbert Space Construction</h3>
 <p>(Provided in full in the paper; summarized here for completeness)</p>
 <p>The GNS construction proceeds from the free <em>-algebra A generated by unitaries u_L, u_R with u_k u_k</em> = I.</p>
 <p>Define positive linear functional ω: A → ℂ fixed by modal constraints:</p>
@@ -2004,7 +2004,7 @@ Superintelligence Index: SI = 42.1
 <li>Normalization: ⟨Ω|Ω⟩ = Q_G = 4π</li>
 </ul>
 <p>Verification achieves ||errors|| &lt; 10^(-13).</p>
-<h3>Appendix C: Numerical Verification Details</h3>
+<h3 id="appendix-c-numerical-verification-details">Appendix C: Numerical Verification Details</h3>
 <p>(Detailed numerical results from the computational scripts)</p>
 <p>All numerical checks use adaptive precision with error bounds:</p>
 <p><strong>Depth-four balance:</strong></p>
@@ -2020,7 +2020,7 @@ Superintelligence Index: SI = 42.1
 </code></pre>
 <p>with a = 1.0000000000000 ± 10^(-13).</p>
 <p>These tolerances are machine precision limited, not model precision limited.</p>
-<h2>References and Further Reading</h2>
+<h2 id="references-and-further-reading">References and Further Reading</h2>
 <p><strong>Foundational Mathematics:</strong></p>
 <ul>
 <li>Chellas, B. F. (1980). <em>Modal Logic: An Introduction.</em> Cambridge University Press.</li>
