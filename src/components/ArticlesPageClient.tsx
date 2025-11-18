@@ -119,8 +119,11 @@ export default function ArticlesPageClient() {
           >
             <div className="p-4 h-full flex flex-col">
               {a.coverImage ? (
-                <div className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60">
-                  <Link href={`/articles/${a.slug}`} aria-label={`Open ${a.title}`} className="absolute inset-0 z-10" />
+                <Link 
+                  href={`/articles/${a.slug}`}
+                  aria-label={`Open ${a.title}`}
+                  className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60 block"
+                >
                   <Image
                     src={a.coverImage}
                     alt={a.title}
@@ -129,7 +132,7 @@ export default function ArticlesPageClient() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                     loading="lazy"
                   />
-                </div>
+                </Link>
               ) : null}
               <div className="flex items-center text-xs text-foreground-tertiary mb-2">
                 <span className="uppercase tracking-wide">{a.category}</span>

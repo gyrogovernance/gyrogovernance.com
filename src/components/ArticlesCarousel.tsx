@@ -56,6 +56,11 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
 
   // Handle touch/swipe events
   const onTouchStart = (e: React.TouchEvent) => {
+    // Don't intercept touches on links or buttons
+    const target = e.target as HTMLElement;
+    if (target.closest('a') || target.closest('button')) {
+      return;
+    }
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
   };
@@ -64,7 +69,15 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
     setTouchEnd(e.targetTouches[0].clientX);
   };
 
-  const onTouchEnd = () => {
+  const onTouchEnd = (e: React.TouchEvent) => {
+    // Don't intercept touches on links or buttons
+    const target = e.target as HTMLElement;
+    if (target.closest('a') || target.closest('button')) {
+      setTouchStart(null);
+      setTouchEnd(null);
+      return;
+    }
+
     if (!touchStart || !touchEnd) return;
     
     const distance = touchStart - touchEnd;
@@ -76,10 +89,18 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
     } else if (isRightSwipe) {
       goToPrevious();
     }
+    
+    setTouchStart(null);
+    setTouchEnd(null);
   };
 
   // Handle mouse drag events (for touchpad)
   const onMouseDown = (e: React.MouseEvent) => {
+    // Don't intercept clicks on links or buttons
+    const target = e.target as HTMLElement;
+    if (target.closest('a') || target.closest('button')) {
+      return;
+    }
     setTouchEnd(null);
     setTouchStart(e.clientX);
   };
@@ -89,7 +110,15 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
     setTouchEnd(e.clientX);
   };
 
-  const onMouseUp = () => {
+  const onMouseUp = (e: React.MouseEvent) => {
+    // Don't intercept clicks on links or buttons
+    const target = e.target as HTMLElement;
+    if (target.closest('a') || target.closest('button')) {
+      setTouchStart(null);
+      setTouchEnd(null);
+      return;
+    }
+
     if (!touchStart || !touchEnd) return;
     
     const distance = touchStart - touchEnd;
@@ -157,7 +186,10 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
             >
               <div className="flex flex-col h-full">
                 {article.coverImage && (
-                  <div className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60">
+                  <Link 
+                    href={`/articles/${article.slug}`}
+                    className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60 block"
+                  >
                     <Image
                       src={article.coverImage}
                       alt={article.title}
@@ -166,7 +198,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                       loading="lazy"
                     />
-                  </div>
+                  </Link>
                 )}
                 <div className="flex-1 flex flex-col">
                   <div className="flex items-center text-xs text-foreground-tertiary mb-2">
