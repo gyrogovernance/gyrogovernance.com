@@ -4,7 +4,7 @@ excerpt: "Demonstrating that The Human Mark framework directly parallels Samkhya
 category: "research"
 date: "2025-11-19"
 coverImage: "/assets/thm_samkhya.jpg"
-featured: false
+featured: true
 tags: ["The Human Mark", "AI Alignment", "Samkhya Philosophy", "Epistemology", "AI Safety", "AI Governance", "Indian Philosophy", "Pramana Theory", "AI Safety Frameworks", "AI Alignment Theory", "Philosophy of Knowledge", "AI Risk Assessment", "Responsible AI Development", "AI Accountability", "AI Safety Research"]
 ---
 
