@@ -17,6 +17,32 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "thm_samkhya",
+    "title": "The Human Mark and Samkhya Epistemology: Ancient Precedent for AI Alignment",
+    "excerpt": "Demonstrating that The Human Mark framework directly parallels Samkhya philosophy's epistemological structure from classical India, revealing AI alignment challenges as instances of a fundamental epistemological problem addressed two millennia ago.",
+    "category": "research",
+    "date": "2025-11-19",
+    "coverImage": "/assets/thm_samkhya.jpg",
+    "tags": [
+      "The Human Mark",
+      "AI Alignment",
+      "Samkhya Philosophy",
+      "Epistemology",
+      "AI Safety",
+      "AI Governance",
+      "Indian Philosophy",
+      "Pramana Theory",
+      "AI Safety Frameworks",
+      "AI Alignment Theory",
+      "Philosophy of Knowledge",
+      "AI Risk Assessment",
+      "Responsible AI Development",
+      "AI Accountability",
+      "AI Safety Research"
+    ],
+    "featured": false
+  },
+  {
     "slug": "asi-misinformation-crisis",
     "title": "The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy",
     "excerpt": "A coalition of researchers and institutions has successfully propagated a fundamental misunderstanding of current AI systems as existential threats, creating a misinformation crisis that diverts resources from genuine risks and justifies authoritarian governance structures.",
