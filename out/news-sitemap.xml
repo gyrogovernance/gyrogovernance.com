@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://gyrogovernance.com/articles/thm_samkhya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-19T00:00:00.000Z</news:publication_date>
+      <news:title>The Human Mark and Samkhya Epistemology: Ancient Precedent for AI Alignment</news:title>
+      <news:keywords>The Human Mark, AI Alignment, Samkhya Philosophy, Epistemology, AI Safety, AI Governance, Indian Philosophy, Pramana Theory, AI Safety Frameworks, AI Alignment Theory, Philosophy of Knowledge, AI Risk Assessment, Responsible AI Development, AI Accountability, AI Safety Research</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://gyrogovernance.com/articles/asi-misinformation-crisis</loc>
     <news:news>
       <news:publication>

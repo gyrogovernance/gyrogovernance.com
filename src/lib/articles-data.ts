@@ -40,7 +40,7 @@ export const articlesData: ArticleMeta[] = [
       "AI Accountability",
       "AI Safety Research"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "slug": "asi-misinformation-crisis",
