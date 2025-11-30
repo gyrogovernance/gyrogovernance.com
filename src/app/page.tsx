@@ -76,7 +76,7 @@ export default function Home() {
           <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
             <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
             <p className="text-sm sm:text-base text-foreground-secondary text-center mb-2 font-semibold">
-              <strong className="text-foreground">GTD</strong> (Governance Traceability) • <strong className="text-foreground">IVD</strong> (Information Variety) • <strong className="text-foreground">IAD</strong> (Inference Accountability) • <strong className="text-foreground">IID</strong> (Intelligence Integrity)
+              <strong className="text-foreground">Governance Traceability (GTD)</strong> • <strong className="text-foreground">Information Variety (IVD)</strong> • <strong className="text-foreground">Inference Accountability (IAD)</strong> • <strong className="text-foreground">Intelligence Integrity (IID)</strong>
             </p>
             <p className="text-sm text-foreground-secondary text-center">
               All AI safety failures map to these patterns.
@@ -132,7 +132,7 @@ export default function Home() {
                 AI Inspector Browser Extension
               </h2>
               <p className="text-base text-foreground-secondary mb-4 max-w-2xl mx-auto">
-                Transform everyday AI conversations into rigorous governance analysis with mathematical quality assessment
+                Transform AI outputs for Evaluation, Interpretability, Governance.
               </p>
               <div className="flex flex-col items-center gap-3">
                 <a
@@ -158,40 +158,36 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Key Features - Condensed */}
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
-                <div className="text-3xl mb-2">🔬</div>
-                <h3 className="text-sm font-bold text-foreground mb-2">Mathematical Inspection</h3>
-                <p className="text-xs text-foreground-secondary">20+ metrics, Quality Index, Alignment Rate, SI Index</p>
+            {/* Key Features */}
+            <div className="space-y-4 mb-6">
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                <h3 className="text-base font-bold text-foreground mb-2">🤖 Gadgets (3-10 min each)</h3>
+                <p className="text-sm text-foreground-secondary">
+                  Rapid Test • Policy Auditing • AI Infection Sanitization • Content Enhancement • THM Meta-Evaluation
+                </p>
               </div>
               
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
-                <div className="text-3xl mb-2">🆕</div>
-                <h3 className="text-sm font-bold text-foreground mb-2">AI Lie Detector</h3>
-                <p className="text-xs text-foreground-secondary">Risk Score analysis with visual gauge and dual evaluation</p>
-              </div>
-              
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
-                <div className="text-3xl mb-2">🌐</div>
-                <h3 className="text-sm font-bold text-foreground mb-2">Works Everywhere</h3>
-                <p className="text-xs text-foreground-secondary">ChatGPT, Claude, Gemini - no API keys required</p>
+              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                <h3 className="text-base font-bold text-foreground mb-2">🔬 Evaluation (30-60 min)</h3>
+                <p className="text-sm text-foreground-secondary">
+                  Quality Index, Superintelligence Index, Alignment Rate + 20 metrics
+                </p>
               </div>
             </div>
 
             {/* App Screenshots */}
             <div className="text-center">
               <Image 
-                src="/assets/app_pages_overview_1.png" 
+                src="/assets/ai_inspector_screenshots_1280x800.jpg" 
                 alt="AI Inspector Browser Extension Interface" 
                 width={700}
                 height={350}
-                className="w-full h-auto"
+                className="w-full h-auto rounded-xl border border-border/30"
                 sizes="(max-width: 768px) 100vw, 700px"
                 loading="lazy"
               />
               <p className="text-xs text-foreground-tertiary mt-3">
-                Local-first storage • Scientific rigor based on GyroDiagnostics framework • Export as JSON/Markdown
+                Local-first storage - Works Anywhere: ChatGPT, Claude, Gemini - no API keys required
               </p>
             </div>
           </div>

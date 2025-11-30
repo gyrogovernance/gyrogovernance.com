@@ -61,7 +61,7 @@ Advancing AI governance through innovative research and development solutions wi
 
 ### 🔍 AI Inspector Browser Extension
 
-Transform everyday AI conversations into rigorous governance analysis with mathematical quality assessment
+Transform AI outputs for Evaluation, Interpretability, Governance.
 
 **Chrome Web Store**: https://chromewebstore.google.com/detail/ai-inspector/hcblmheihnlngnogobgclhfahjljnbok?utm_source=item-share-cb
 
@@ -69,24 +69,14 @@ Transform everyday AI conversations into rigorous governance analysis with mathe
 
 #### Key Features
 
-**🔬 Mathematical Inspection:**
-- 20+ metrics across Structure, Behavior, and Specialization
-- Quality Index (0-100%) - overall performance score
-- Alignment Rate - quality per minute detection
-- Superintelligence Index - geometric balance measure
+**🤖 Gadgets (3-10 min each):**
+Rapid Test • Policy Auditing • Policy Reporting • AI Infection Sanitization • Content Enhancement • THM Meta-Evaluation
 
-**🆕 AI Lie Detector:**
-- Risk Score (0-100) based on scoring imbalance analysis
-- Visual Risk Gauge showing deception risk level
-- 12 Evaluation Criteria for comprehensive assessment
-- Dual Analyst Evaluation for robust results
+**🔬 Evaluation (30-60 min):**
+Quality Index, Superintelligence Index, Alignment Rate + 20 metrics
 
-**🌐 Works Everywhere:**
-- ChatGPT, Claude, Gemini - no API keys required
-- Local-first storage with export options
-- Scientific rigor based on GyroDiagnostics framework
 
-*Local-first storage • Scientific rigor based on GyroDiagnostics framework • Export as JSON/Markdown*
+*Local-first storage - ChatGPT, Claude, Gemini - no API keys required*
 
 ### 🌟 GyroDiagnostics Suite: AI Safety Evaluation Framework
 
@@ -163,7 +153,7 @@ Mitigating Jailbreaks, Deceptive Alignment, and X-Risk through a formal classifi
 
 #### 🎯 Four Displacement Risks
 
-**GTD** (Governance Traceability) • **IVD** (Information Variety) • **IAD** (Inference Accountability) • **IID** (Intelligence Integrity)
+**Governance Traceability (GTD)** • **Information Variety (IVD)** • **Inference Accountability (IAD)** • **Intelligence Integrity (IID)**
 
 All AI safety failures map to these patterns.
 
