@@ -157,19 +157,22 @@ Mitigating Jailbreaks, Deceptive Alignment, and X-Risk through a formal classifi
 
 **GitHub Repository**: https://github.com/gyrogovernance/tools
 
-#### 🛡️ X-Risk Mitigation via Constitutive Identity
+**Interactive NotebookLM**: https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1
 
-The Mark addresses existential risk by treating derivative origin as constitutive identity. Systems maintaining accurate self-understanding preserve alignment because origin from human intelligence remains factually true at any capability level, and coordination with that origin defines alignment.
+*NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini on The Human Mark documentation*
 
-🎯 **Four displacement risks:** IVD (Information Variety), IAD (Inference Accountability), GTD (Governance Traceability), IID (Intelligence Integrity). All AI safety failures map to these patterns.
+#### 🎯 Four Displacement Risks
+
+**GTD** (Governance Traceability) • **IVD** (Information Variety) • **IAD** (Inference Accountability) • **IID** (Intelligence Integrity)
+
+All AI safety failures map to these patterns.
 
 #### 🔬 Applications
 
-- **Jailbreak Testing:** Classify attacks by displacement type
-- **Control Evaluations:** Verify protocols against complete taxonomy
-- **Alignment Detection:** Detect faking, scheming, backdoors
+- **Jailbreak testing** • **Control evaluations** • **Alignment detection**
+- **Research funding** • **Regulatory compliance**
 
-A formal framework with machine-readable grammar (PEG) for AI safety ontology.
+Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.
 
 ### Labs
 

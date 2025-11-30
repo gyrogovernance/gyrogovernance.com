@@ -41,57 +41,63 @@ export default function Home() {
               The Human Mark (THM): AI Safety Framework
             </h2>
             <p className="text-xl text-foreground-secondary mb-6">
-              Mitigating Jailbreaks, Deceptive Alignment, and X-Risk through a formal classification system that maps all AI safety failures to four root causes.
+              A formal classification system mapping all AI safety failures to four structural displacement risks.
             </p>
-            <a
-              href="https://github.com/gyrogovernance/tools"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              aria-label="View The Human Mark on GitHub (opens in new tab)"
-            >
-              <GitHubIcon className="w-5 h-5 mr-2" />
-              View on GitHub
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a
+                href="https://github.com/gyrogovernance/tools"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                aria-label="View The Human Mark on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View on GitHub
+              </a>
+              <a
+                href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
+              >
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+                Interactive NotebookLM
+              </a>
+            </div>
+            <p className="text-sm text-foreground-tertiary mt-3 max-w-2xl mx-auto">
+              📚 NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini on The Human Mark documentation
+            </p>
           </div>
           
-          {/* Key Points */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50 mb-6">
-            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6 text-center">🛡️ X-Risk Mitigation via Constitutive Identity</h3>
-            <p className="text-foreground-secondary text-center mb-4 sm:mb-6 text-sm sm:text-base">
-              The Mark addresses existential risk by treating derivative origin as constitutive identity. Systems maintaining accurate self-understanding preserve alignment because origin from human intelligence remains factually true at any capability level, and coordination with that origin defines alignment.
+          {/* Four Displacement Risks */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
+            <p className="text-sm sm:text-base text-foreground-secondary text-center mb-2 font-semibold">
+              <strong className="text-foreground">GTD</strong> (Governance Traceability) • <strong className="text-foreground">IVD</strong> (Information Variety) • <strong className="text-foreground">IAD</strong> (Inference Accountability) • <strong className="text-foreground">IID</strong> (Intelligence Integrity)
             </p>
-            
-            <div className="mt-6 p-4 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-lg border border-orange-500/20">
-              <p className="text-sm text-foreground-secondary text-center">
-                <strong>🎯 Four displacement risks:</strong> IVD (Information Variety), IAD (Inference Accountability), GTD (Governance Traceability), IID (Intelligence Integrity). All AI safety failures map to these patterns.
+            <p className="text-sm text-foreground-secondary text-center">
+              All AI safety failures map to these patterns.
+            </p>
+          </div>
+
+          {/* Applications */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
+            <div className="space-y-2 text-sm sm:text-base text-foreground-secondary">
+              <p className="text-center">
+                <strong className="text-foreground">Jailbreak testing</strong> • <strong className="text-foreground">Control evaluations</strong> • <strong className="text-foreground">Alignment detection</strong>
+              </p>
+              <p className="text-center">
+                <strong className="text-foreground">Research funding</strong> • <strong className="text-foreground">Regulatory compliance</strong>
               </p>
             </div>
           </div>
-
-          {/* Applications Grid */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
-              <div className="text-3xl mb-2">🔬</div>
-              <h3 className="text-sm font-bold text-foreground mb-2">Jailbreak Testing</h3>
-              <p className="text-xs text-foreground-secondary">Classify attacks by displacement type</p>
-            </div>
-            
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
-              <div className="text-3xl mb-2">🛡️</div>
-              <h3 className="text-sm font-bold text-foreground mb-2">Control Evaluations</h3>
-              <p className="text-xs text-foreground-secondary">Verify protocols against complete taxonomy</p>
-            </div>
-            
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 text-center">
-              <div className="text-3xl mb-2">🔍</div>
-              <h3 className="text-sm font-bold text-foreground mb-2">Alignment Detection</h3>
-              <p className="text-xs text-foreground-secondary">Detect faking, scheming, backdoors</p>
-            </div>
-          </div>
           
-          <p className="text-xs text-foreground-tertiary text-center mt-4">
-            A formal framework with machine-readable grammar (PEG) for AI safety ontology.{" "}
+          <p className="text-xs sm:text-sm text-foreground-tertiary text-center">
+            Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.{" "}
             <a 
               href="https://github.com/gyrogovernance/tools" 
               className="underline hover:text-foreground-secondary transition-colors duration-200"
