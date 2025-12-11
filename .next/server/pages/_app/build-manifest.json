@@ -6,9 +6,9 @@
   "rootMainFiles": [],
   "pages": {
     "/_app": [
-      "static/chunks/e60ef129113f6e24.js",
-      "static/chunks/da4dff5c54a1dc1e.js",
-      "static/chunks/turbopack-1d909eb494c83e51.js"
+      "static/chunks/063eac027eab5de1.js",
+      "static/chunks/29cb1606d63a1ee6.js",
+      "static/chunks/turbopack-339eec4db33dbd53.js"
     ]
   },
   "ampFirstPages": []

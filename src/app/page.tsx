@@ -33,7 +33,7 @@ export default function Home() {
       </div>
 
       {/* The Human Mark Hero Card - Moved to First Position */}
-      <div className="mb-16 animate-fade-in-up">
+      <div className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-orange-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">✋</div>
@@ -110,18 +110,54 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Gyroscopic Global Governance Simulator Hero */}
+      <div className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-500/20">
+          <div className="text-center mb-6">
+            <div className="text-6xl mb-4">🌐</div>
+            <h2 className="text-3xl font-bold text-foreground mb-3">
+              Gyroscopic Global Governance Simulator (GGG)
+            </h2>
+            <p className="text-lg text-foreground-secondary mb-5 max-w-2xl mx-auto">
+              A Post-AGI macro-simulator that models how human–AI systems align across 
+              Economy, Employment, Education, and Ecology, showing robust convergence to a 
+              stable equilibrium under seven coordination strategies.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href="/articles/ggg-simulator-results"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              aria-label="Read the GGG simulator article"
+            >
+              Read interactive results
+            </Link>
+            <a
+              href="https://github.com/gyrogovernance/tools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-full border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              aria-label="View GGG simulator code on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View simulator code
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* AI Inspector Browser Extension Hero Section */}
-      <div className="mb-16 animate-fade-in-up">
+      <div className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl border border-purple-500/20 overflow-hidden">
           {/* Compact promo image at top */}
           <div className="w-full flex justify-center bg-gradient-to-b from-purple-900/20 to-transparent">
             <Image 
               src="/assets/ai_inspector_promo_transp.png" 
               alt="AI Inspector Browser Extension" 
-              width={600}
-              height={200}
-              className="w-full max-w-2xl h-auto object-contain"
-              sizes="(max-width: 768px) 100vw, 672px"
+              width={400}
+              height={120}
+              className="w-full max-w-lg h-auto object-contain"
+              sizes="(max-width: 768px) 100vw, 512px"
               priority
             />
           </div>
@@ -195,7 +231,7 @@ export default function Home() {
       </div>
 
       {/* GyroDiagnostics Hero Card */}
-      <div className="mb-16 animate-fade-in-up">
+      <div className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-green-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌟</div>
@@ -294,7 +330,7 @@ export default function Home() {
       </div>
 
       {/* Gyroscope Hero Card */}
-      <div className="mb-16 animate-fade-in-up">
+      <div className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-apple-blue/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">⚙️</div>

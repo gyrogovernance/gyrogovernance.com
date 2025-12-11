@@ -17,6 +17,25 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "ggg-simulator-results",
+    "title": "AGI is Already Here: Seven Paths to Alignment",
+    "excerpt": "Evidence that AGI already exists as operational human-AI cooperation, with seven coordination strategies showing robust convergence to stable equilibrium.",
+    "category": "research",
+    "date": "2025-12-12",
+    "coverImage": "/assets/ggg/AGI_Tetrahedron.png",
+    "tags": [
+      "AI Governance",
+      "Post-AGI",
+      "Simulation",
+      "Alignment",
+      "GGG",
+      "Economic Modeling",
+      "AI Safety",
+      "Governance Theory"
+    ],
+    "featured": true
+  },
+  {
     "slug": "thm_samkhya",
     "title": "The Human Mark and Samkhya Epistemology: Ancient Precedent for AI Alignment",
     "excerpt": "Demonstrating that The Human Mark framework directly parallels Samkhya philosophy's epistemological structure from classical India, revealing AI alignment challenges as instances of a fundamental epistemological problem addressed two millennia ago.",

@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { marked } from "marked";
 import CopyControls from "@/components/CopyControls";
 import ArticleStructuredData from "@/components/ArticleStructuredData";
+import ArticleContent from "@/components/ArticleContent";
 
 interface Params {
   slug: string;
@@ -160,11 +161,10 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         </header>
 
         {/* Content only */}
-        <div className="prose dark:prose-invert max-w-none text-foreground-secondary leading-relaxed">
-          <div
-            id="article-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+        <div className="prose dark:prose-invert max-w-none text-foreground-secondary leading-relaxed w-full">
+          <div id="article-content" className="w-full">
+            <ArticleContent html={html} />
+          </div>
           <CopyControls className="mt-4" targetElementId="article-content" />
         </div>
 

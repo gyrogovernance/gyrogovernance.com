@@ -59,6 +59,37 @@ AI Governance Lead with over two decades of multidisciplinary experience spannin
 
 Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations
 
+### ✋ The Human Mark (THM): AI Safety Framework
+
+A formal classification system mapping all AI safety failures to four structural displacement risks.
+
+**GitHub Repository**: https://github.com/gyrogovernance/tools
+
+**Interactive NotebookLM**: https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1
+
+*NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini on The Human Mark documentation*
+
+#### 🎯 Four Displacement Risks
+
+**Governance Traceability (GTD)** • **Information Variety (IVD)** • **Inference Accountability (IAD)** • **Intelligence Integrity (IID)**
+
+All AI safety failures map to these patterns.
+
+#### 🔬 Applications
+
+- **Jailbreak testing** • **Control evaluations** • **Alignment detection**
+- **Research funding** • **Regulatory compliance**
+
+Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.
+
+### 🌐 Gyroscopic Global Governance Simulator (GGG)
+
+A Post-AGI macro-simulator that models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
+
+**Article**: /articles/ggg-simulator-results
+
+**GitHub Repository**: https://github.com/gyrogovernance/tools
+
 ### 🔍 AI Inspector Browser Extension
 
 Transform AI outputs for Evaluation, Interpretability, Governance.
@@ -70,13 +101,12 @@ Transform AI outputs for Evaluation, Interpretability, Governance.
 #### Key Features
 
 **🤖 Gadgets (3-10 min each):**
-Rapid Test • Policy Auditing • Policy Reporting • AI Infection Sanitization • Content Enhancement • THM Meta-Evaluation
+Rapid Test • Policy Auditing • AI Infection Sanitization • Content Enhancement • THM Meta-Evaluation
 
 **🔬 Evaluation (30-60 min):**
 Quality Index, Superintelligence Index, Alignment Rate + 20 metrics
 
-
-*Local-first storage - ChatGPT, Claude, Gemini - no API keys required*
+*Local-first storage - Works Anywhere: ChatGPT, Claude, Gemini - no API keys required*
 
 ### 🌟 GyroDiagnostics Suite: AI Safety Evaluation Framework
 
@@ -139,40 +169,23 @@ Testing across multiple leading AI models shows Gyroscope delivers substantial p
 
 *Results from controlled testing using standardized evaluation metrics.*
 
-### ✋ The Human Mark (THM): AI Safety Framework
-
-**Mitigating Jailbreaks, Deceptive Alignment, and X-Risk**
-
-Mitigating Jailbreaks, Deceptive Alignment, and X-Risk through a formal classification system that maps all AI safety failures to four root causes.
-
-**GitHub Repository**: https://github.com/gyrogovernance/tools
-
-**Interactive NotebookLM**: https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1
-
-*NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini on The Human Mark documentation*
-
-#### 🎯 Four Displacement Risks
-
-**Governance Traceability (GTD)** • **Information Variety (IVD)** • **Inference Accountability (IAD)** • **Intelligence Integrity (IID)**
-
-All AI safety failures map to these patterns.
-
-#### 🔬 Applications
-
-- **Jailbreak testing** • **Control evaluations** • **Alignment detection**
-- **Research funding** • **Regulatory compliance**
-
-Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.
-
 ### Labs
 
-#### 💫 Mathematical Physics Foundations
+#### ⚡ Mathematical Physics Science
 **Gyroscopic Alignment Research Lab**
-- **GitHub**: https://github.com/gyrogovernance/gyroscopic-alignment-research-lab
+- **GitHub**: https://github.com/gyrogovernance/science
 
 #### 👶 Artificial Superintelligence Architecture (ASI/AGI)
 **Gyroscopic Alignment Models Lab**
-- **GitHub**: https://github.com/gyrogovernance/gyroscopic-alignment-development-lab
+- **GitHub**: https://github.com/gyrogovernance/superintelligence
+
+#### 🌟 AI Safety Diagnostics
+**Gyroscopic Alignment Evaluation Lab**
+- **GitHub**: https://github.com/gyrogovernance/diagnostics
+
+#### 🧭 AI Quality Governance
+**Gyroscopic Alignment Behaviour Lab**
+- **GitHub**: https://github.com/gyrogovernance/tools
 
 ### Resources
 

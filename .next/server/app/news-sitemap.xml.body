@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://gyrogovernance.com/articles/ggg-simulator-results</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-12T00:00:00.000Z</news:publication_date>
+      <news:title>AGI is Already Here: Seven Paths to Alignment</news:title>
+      <news:keywords>AI Governance, Post-AGI, Simulation, Alignment, GGG, Economic Modeling, AI Safety, Governance Theory</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://gyrogovernance.com/articles/thm_samkhya</loc>
     <news:news>
       <news:publication>
