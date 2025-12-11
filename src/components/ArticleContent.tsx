@@ -7,7 +7,8 @@ const AlignmentGauge = dynamic(() => import('./GGG/AlignmentGauge'), { ssr: fals
 const ConvergenceChart = dynamic(() => import('./GGG/ConvergenceChart'), { ssr: false });
 const CompactScenarioExplorer = dynamic(() => import('./GGG/CompactScenarioExplorer'), { ssr: false });
 const ReferencesSection = dynamic(() => import('./GGG/ReferencesSection'), { ssr: false });
-const GitHubLink = dynamic(() => import('./GGG/GitHubLink'), { ssr: false });
+const ResourceLinks = dynamic(() => import('./GGG/ResourceLinks'), { ssr: false });
+const VideoOverview = dynamic(() => import('./GGG/VideoOverview'), { ssr: false });
 
 interface ArticleContentProps {
   html: string;
@@ -60,7 +61,9 @@ export default function ArticleContent({ html }: ArticleContentProps) {
             part.content === 'ConvergenceChart' ? ConvergenceChart :
             part.content === 'CompactScenarioExplorer' ? CompactScenarioExplorer :
             part.content === 'ReferencesSection' ? ReferencesSection :
-            part.content === 'GitHubLink' ? GitHubLink :
+            part.content === 'GitHubLink' ? ResourceLinks :
+            part.content === 'ResourceLinks' ? ResourceLinks :
+            part.content === 'VideoOverview' ? VideoOverview :
             null;
           
           if (!Component) return null;

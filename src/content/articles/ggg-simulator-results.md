@@ -12,6 +12,10 @@ Current AI governance discourse usually treats AGI as a future threshold that mi
 
 ---
 
+<div data-react-component="VideoOverview"></div>
+
+---
+
 ## Where We Stand
 
 <div data-react-component="AlignmentGauge"></div>
@@ -114,4 +118,4 @@ The full paper and open-source code are available in the Gyro Governance reposit
 
 ---
 
-<div data-react-component="GitHubLink"></div>
+<div data-react-component="ResourceLinks"></div>
