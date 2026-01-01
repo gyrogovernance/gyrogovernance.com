@@ -82,6 +82,24 @@ All AI safety failures map to these patterns.
 
 Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.
 
+### ⚡ Alignment Infrastructure Routing (AIR)
+**Collective Superintelligence Architecture**
+
+**GitHub**: https://github.com/gyrogovernance/superintelligence
+
+**What it is**
+A coordination engine that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
+
+**What it does**
+AIR connects three critical groups to build Collective Superintelligence.
+
+*   **For Labs**: Scale human supervision, red-teaming, and evaluation without administrative chaos.
+*   **For Funders**: See exactly what risks your portfolio covers using the Human Mark taxonomy.
+*   **For People**: Turn skills into paid, verifiable contribution units called Daily Prizes and Sprint Stipends.
+
+**Why it matters**
+We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them. It coordinates activity across Economy, Employment, Education, and Ecology.
+
 ### 🌐 Gyroscopic Global Governance Simulator (GGG)
 
 A Post-AGI macro-simulator that models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
@@ -175,7 +193,7 @@ Testing across multiple leading AI models shows Gyroscope delivers substantial p
 **Gyroscopic Alignment Research Lab**
 - **GitHub**: https://github.com/gyrogovernance/science
 
-#### 👶 Artificial Superintelligence Architecture (ASI/AGI)
+#### ❤️ Artificial Superintelligence Architecture (ASI/AGI)
 **Gyroscopic Alignment Models Lab**
 - **GitHub**: https://github.com/gyrogovernance/superintelligence
 

@@ -110,6 +110,68 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Alignment Infrastructure Routing (AIR) Hero */}
+      <div className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-yellow-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🍃</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              Alignment Infrastructure Routing (AIR)
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary mb-6">
+              Collective Superintelligence Architecture
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+              <a
+                href="https://github.com/gyrogovernance/superintelligence"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                aria-label="View Alignment Infrastructure Routing on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          {/* What it is */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">What it is</h3>
+            <p className="text-sm sm:text-base text-foreground-secondary">
+              A coordination engine that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
+            </p>
+          </div>
+
+          {/* What it does */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">What it does</h3>
+            <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+              AIR connects three critical groups to build Collective Superintelligence.
+            </p>
+            <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-disc list-inside">
+              <li>
+                <strong className="text-foreground">For Labs:</strong> Scale without administrative chaos.
+              </li>
+              <li>
+                <strong className="text-foreground">For Funders:</strong> See exactly what risks your portfolio covers.
+              </li>
+              <li>
+                <strong className="text-foreground">For Everyone:</strong> Turn skills into paid, verifiable contribution units.
+              </li>
+            </ul>
+          </div>
+
+          {/* Why it matters */}
+          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">Why it matters</h3>
+            <p className="text-sm sm:text-base text-foreground-secondary">
+              We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them. It coordinates activity across Economy, Employment, Education, and Ecology.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Gyroscopic Global Governance Simulator Hero */}
       <div className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-500/20">
@@ -461,7 +523,7 @@ export default function Home() {
           <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-4">
-                <div className="text-8xl">👶</div>
+                <div className="text-8xl">❤️</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>

@@ -151,7 +151,7 @@ export default function GitHub() {
       buttonGradient: 'from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600'
     },
     {
-      emoji: '👶',
+      emoji: '❤️',
       name: 'Gyroscopic Alignment Models Lab',
       title: 'Artificial Superintelligence Architecture (ASI/AGI)',
       description: 'AGI safety research and superintelligence alignment architectures addressing fundamental challenges in artificial general intelligence development. Explores AI control problem solutions, AI value alignment frameworks, and mechanisms for safe superintelligence by design. Addresses coherence degradation, AI autonomy risks, and behavioral alignment in advanced AI systems. Develops AI governance tools and safety frameworks that prioritize AI transparency, human values, and responsible AI development for transformative AI.',

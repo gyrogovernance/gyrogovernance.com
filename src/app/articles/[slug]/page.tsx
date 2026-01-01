@@ -212,7 +212,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
               <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex h-full">
                   <div className="flex items-center justify-center mr-4">
-                    <div className="text-5xl">👶</div>
+                    <div className="text-5xl">❤️</div>
                   </div>
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
