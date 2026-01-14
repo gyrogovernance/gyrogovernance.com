@@ -40,63 +40,41 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-foreground mb-4">
               The Human Mark (THM): AI Safety Framework
             </h2>
-            <p className="text-xl text-foreground-secondary mb-6">
+            <p className="text-xl text-foreground-secondary">
               A formal classification system mapping all AI safety failures to four structural displacement risks.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a
-                href="https://github.com/gyrogovernance/tools"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                aria-label="View The Human Mark on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
-              <a
-                href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
-              >
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                </svg>
-                Interactive NotebookLM
-              </a>
-            </div>
-            <p className="text-sm text-foreground-tertiary mt-3 max-w-2xl mx-auto">
-              📚 NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini on The Human Mark documentation
-            </p>
           </div>
           
-          {/* Four Displacement Risks */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
-            <p className="text-sm sm:text-base text-foreground-secondary text-center mb-2 font-semibold">
-              <strong className="text-foreground">Governance Traceability (GTD)</strong> • <strong className="text-foreground">Information Variety (IVD)</strong> • <strong className="text-foreground">Inference Accountability (IAD)</strong> • <strong className="text-foreground">Intelligence Integrity (IID)</strong>
-            </p>
-            <p className="text-sm text-foreground-secondary text-center">
-              All AI safety failures map to these patterns.
-            </p>
-          </div>
+          {/* Grid Layout */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {/* Four Displacement Risks */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
+              <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-3 w-fit mx-auto">
+                <li><strong className="text-foreground">Governance Traceability (GTD)</strong></li>
+                <li><strong className="text-foreground">Information Variety (IVD)</strong></li>
+                <li><strong className="text-foreground">Inference Accountability (IAD)</strong></li>
+                <li><strong className="text-foreground">Intelligence Integrity (IID)</strong></li>
+              </ul>
+              <p className="text-sm text-foreground-secondary text-center">
+                All AI safety failures map to these patterns.
+              </p>
+            </div>
 
-          {/* Applications */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
-            <div className="space-y-2 text-sm sm:text-base text-foreground-secondary">
-              <p className="text-center">
-                <strong className="text-foreground">Jailbreak testing</strong> • <strong className="text-foreground">Control evaluations</strong> • <strong className="text-foreground">Alignment detection</strong>
-              </p>
-              <p className="text-center">
-                <strong className="text-foreground">Research funding</strong> • <strong className="text-foreground">Regulatory compliance</strong>
-              </p>
+            {/* Applications */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
+              <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside w-fit mx-auto">
+                <li><strong className="text-foreground">Jailbreak testing</strong></li>
+                <li><strong className="text-foreground">Control evaluations</strong></li>
+                <li><strong className="text-foreground">Alignment detection</strong></li>
+                <li><strong className="text-foreground">Research funding</strong></li>
+                <li><strong className="text-foreground">Regulatory compliance</strong></li>
+              </ul>
             </div>
           </div>
           
-          <p className="text-xs sm:text-sm text-foreground-tertiary text-center">
+          <p className="text-xs sm:text-sm text-foreground-tertiary text-center mb-6">
             Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.{" "}
             <a 
               href="https://github.com/gyrogovernance/tools" 
@@ -107,104 +85,34 @@ export default function Home() {
               Learn more
             </a>
           </p>
-        </div>
-      </div>
 
-      {/* Alignment Infrastructure Routing (AIR) Hero */}
-      <div className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-yellow-500/20">
-          <div className="text-center mb-8">
-            <div className="text-6xl mb-4">🍃</div>
-            <h2 className="text-3xl font-bold text-foreground mb-2">
-              Alignment Infrastructure Routing (AIR)
-            </h2>
-            <p className="text-lg font-semibold text-foreground-secondary mb-6">
-              Collective Superintelligence Architecture
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
-              <a
-                href="https://github.com/gyrogovernance/superintelligence"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                aria-label="View Alignment Infrastructure Routing on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
-            </div>
-          </div>
-
-          {/* What it is */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">What it is</h3>
-            <p className="text-sm sm:text-base text-foreground-secondary">
-              A coordination engine that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
-            </p>
-          </div>
-
-          {/* What it does */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 mb-6">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">What it does</h3>
-            <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-              AIR connects three critical groups to build Collective Superintelligence.
-            </p>
-            <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-disc list-inside">
-              <li>
-                <strong className="text-foreground">For Labs:</strong> Scale without administrative chaos.
-              </li>
-              <li>
-                <strong className="text-foreground">For Funders:</strong> See exactly what risks your portfolio covers.
-              </li>
-              <li>
-                <strong className="text-foreground">For Everyone:</strong> Turn skills into paid, verifiable contribution units.
-              </li>
-            </ul>
-          </div>
-
-          {/* Why it matters */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">Why it matters</h3>
-            <p className="text-sm sm:text-base text-foreground-secondary">
-              We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them. It coordinates activity across Economy, Employment, Education, and Ecology.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Gyroscopic Global Governance Simulator Hero */}
-      <div className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-500/20">
-          <div className="text-center mb-6">
-            <div className="text-6xl mb-4">🌐</div>
-            <h2 className="text-3xl font-bold text-foreground mb-3">
-              Gyroscopic Global Governance Simulator (GGG)
-            </h2>
-            <p className="text-lg text-foreground-secondary mb-5 max-w-2xl mx-auto">
-              A Post-AGI macro-simulator that models how human–AI systems align across 
-              Economy, Employment, Education, and Ecology, showing robust convergence to a 
-              stable equilibrium under seven coordination strategies.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link
-              href="/articles/ggg-simulator-results"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              aria-label="Read the GGG simulator article"
-            >
-              Read interactive results
-            </Link>
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
             <a
               href="https://github.com/gyrogovernance/tools"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-full border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="View GGG simulator code on GitHub (opens in new tab)"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="View The Human Mark on GitHub (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />
-              View simulator code
+              View on GitHub
+            </a>
+            <a
+              href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-xl border border-border/80 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium transition-all duration-300 shadow hover:shadow-lg"
+              aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
+            >
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+              </svg>
+              Interactive NotebookLM
             </a>
           </div>
+          <p className="text-sm text-foreground-tertiary mt-3 text-center">
+            📚 NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini
+          </p>
         </div>
       </div>
 
@@ -225,35 +133,13 @@ export default function Home() {
           </div>
           
           <div className="p-8">
-            <div className="text-center mb-6">
+            <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-foreground mb-3">
                 AI Inspector Browser Extension
               </h2>
-              <p className="text-base text-foreground-secondary mb-4 max-w-2xl mx-auto">
+              <p className="text-base text-foreground-secondary max-w-2xl mx-auto">
                 Transform AI outputs for Evaluation, Interpretability, Governance.
               </p>
-              <div className="flex flex-col items-center gap-3">
-                <a
-                  href="https://chromewebstore.google.com/detail/ai-inspector/hcblmheihnlngnogobgclhfahjljnbok?utm_source=item-share-cb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                  aria-label="Add AI Inspector to Chrome (opens in new tab)"
-                >
-                  <Image src="/assets/chrome.png" alt="Chrome" width={20} height={20} className="mr-2" />
-                  Add to Chrome
-                </a>
-                <a
-                  href="https://github.com/gyrogovernance/apps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm text-foreground-secondary hover:text-foreground transition-colors duration-200"
-                  aria-label="View AI Inspector on GitHub (opens in new tab)"
-                >
-                  <GitHubIcon className="w-4 h-4 mr-1" />
-                  View on GitHub
-                </a>
-              </div>
             </div>
             
             {/* Key Features */}
@@ -288,6 +174,268 @@ export default function Home() {
                 Local-first storage - Works Anywhere: ChatGPT, Claude, Gemini - no API keys required
               </p>
             </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+              <a
+                href="https://chromewebstore.google.com/detail/ai-inspector/hcblmheihnlngnogobgclhfahjljnbok?utm_source=item-share-cb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Add AI Inspector to Chrome (opens in new tab)"
+              >
+                <Image src="/assets/chrome.png" alt="Chrome" width={20} height={20} className="mr-2" />
+                Add to Chrome
+              </a>
+              <a
+                href="https://github.com/gyrogovernance/apps"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+                aria-label="View AI Inspector on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Alignment Infrastructure Routing (AIR) Hero */}
+      <div className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-yellow-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🍃</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              Alignment Infrastructure Routing (AIR)
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary">
+              Collective Superintelligence Architecture
+            </p>
+          </div>
+
+          {/* Grid Layout */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* What it is - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">🔧 What it is</h3>
+              <p className="text-sm sm:text-base text-foreground-secondary">
+                A coordination infrastructure that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
+              </p>
+            </div>
+
+            {/* What it does */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🎯 What it does</h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+                AIR connects three critical groups to build Collective Superintelligence.
+              </p>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-yellow-500 mr-2">⚗️</span>
+                  <span><strong className="text-foreground">For Labs:</strong> Scale without administrative chaos.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2">💼</span>
+                  <span><strong className="text-foreground">For Funders:</strong> See exactly what risks your portfolio covers.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2">👥</span>
+                  <span><strong className="text-foreground">For Everyone:</strong> Turn skills into paid, verifiable contribution units.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Why it matters */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">💡 Why it matters</h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+                We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them.
+              </p>
+              <div className="mt-3 pt-3 border-t border-border/30">
+                <p className="text-sm font-semibold text-foreground">Coordinates activity across:</p>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">Economy</span>
+                  <span className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-xs font-medium">Employment</span>
+                  <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">Education</span>
+                  <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">Ecology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://github.com/gyrogovernance/superintelligence"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="View Alignment Infrastructure Routing on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Moments Economy Hero */}
+      <div className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-emerald-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">💰</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              Moments Economy
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary">
+              Mitigating Risks of Transformative AI (TAI)
+            </p>
+          </div>
+
+          {/* Grid Layout */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* What it is - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+                💎 What it is
+              </h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+                A monetary system grounded in physical capacity rather than debt. All economic activity is recorded as replayable history that any party can independently verify.
+              </p>
+              <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside">
+                <li>Uses the caesium-133 atomic standard, the most precise and globally audited method for quantifying distinguishable physical states, to define a finite capacity</li>
+                <li>Removes the need for central ledger keepers or institutional trust</li>
+              </ul>
+            </div>
+
+            {/* Dual-function capacity */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+                🔄 Dual-function capacity
+              </h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+                Supports both monetary distribution and complete governance records:
+              </p>
+              <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-4">
+                <li><strong>Monetary:</strong> Unconditional High Income (UHI) as baseline for everyone, with four tiers up to <span className="font-bold text-emerald-500">60× UHI</span> for roles of wider scope and higher responsibility</li>
+                <li><strong>Recordkeeping:</strong> Scientific research provenance, AI model auditing, supply chain traceability, personal consent tracking</li>
+              </ul>
+              <div className="mt-4 pt-4 border-t border-border/30 bg-emerald-500/5 rounded-lg p-3">
+                <p className="text-sm text-foreground-secondary mb-2">
+                  <strong className="text-foreground">Scale and Security:</strong>
+                </p>
+                <ul className="text-xs sm:text-sm text-foreground-secondary space-y-1 list-none">
+                  <li>• Total capacity: <span className="font-bold text-emerald-500">~70 billion years</span> for global UHI</li>
+                  <li>• With tiered distributions: <span className="font-bold text-teal-500">47+ billion years</span> coverage</li>
+                  <li>• Adversarial manipulation: <span className="font-semibold text-cyan-500">operationally impossible</span></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Why this matters */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+                🌟 Why this matters
+              </h3>
+              <ul className="text-sm sm:text-base text-foreground-secondary space-y-3 list-none">
+                <li className="flex items-start">
+                  <span className="text-emerald-500 mr-2">👤</span>
+                  <span><strong className="text-foreground">For individuals:</strong> Guaranteed baseline income with tiered distributions, delivered through verifiable records rather than debt-based issuance.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-500 mr-2">🏛️</span>
+                  <span><strong className="text-foreground">For policymakers:</strong> Issuance limits based on explicit physical assumptions. Parameters can be inspected and revised through governance.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-cyan-500 mr-2">🏢</span>
+                  <span><strong className="text-foreground">For institutions:</strong> Distributions through replayable records reduce reliance on custodians and retrospective disputes.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-emerald-500 mr-2">🛡️</span>
+                  <span><strong className="text-foreground">For AI safety:</strong> Preserves human authority, traceability, and accountability as AI agents contribute to decisions.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="Read the Moments Economy specification on GitHub (opens in new tab)"
+            >
+              Read the specification
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Gyroscopic Global Governance Simulator Hero */}
+      <div className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🌐</div>
+            <h2 className="text-3xl font-bold text-foreground mb-3">
+              Gyroscopic Global Governance (GGG)
+            </h2>
+            <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
+              A Post-AGI Multi-domain Governance Sandbox
+            </p>
+          </div>
+
+          {/* Convergence Visualization and Results */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* SVG Visualization Block */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <div className="text-left mb-4">
+                <h3 className="text-base font-semibold text-foreground mb-2">📈 Convergence to Equilibrium</h3>
+                <p className="text-xs sm:text-sm text-foreground-secondary">
+                  Models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
+                </p>
+              </div>
+              <div className="flex items-center justify-center">
+                <Image 
+                  src="/assets/ggg_graph.png" 
+                  alt="Convergence to Equilibrium visualization showing seven strategies converging to A*" 
+                  width={320}
+                  height={200}
+                  className="w-full h-auto max-w-xs"
+                />
+              </div>
+            </div>
+
+            {/* Results List Block */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <p className="text-base font-bold text-foreground mb-3">🎯 Demonstrating that:</p>
+              <ul className="text-sm sm:text-base text-foreground-secondary space-y-3 list-disc list-inside w-fit">
+                <li>Poverty resolves through coherent surplus distribution</li>
+                <li>Unemployment becomes alignment work rather than residual labour</li>
+                <li>Miseducation shifts toward epistemic literacy</li>
+                <li>Ecological degradation appears as upstream displacement, not an external constraint</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+            <Link
+              href="/articles/ggg-simulator-results"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="Read the GGG simulator article"
+            >
+              Read interactive results
+            </Link>
+            <a
+              href="https://github.com/gyrogovernance/tools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              aria-label="View GGG simulator code on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View simulator code
+            </a>
           </div>
         </div>
       </div>
@@ -300,19 +448,9 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-foreground mb-4">
               GyroDiagnostics Suite: AI Safety Evaluation Framework
             </h2>
-            <p className="text-xl text-foreground-secondary mb-6">
+            <p className="text-xl text-foreground-secondary">
               Production-ready evaluation suite revealing structural brittleness invisible to standard benchmarks through mathematical physics-informed diagnostics.
             </p>
-            <a
-              href="https://github.com/gyrogovernance/diagnostics"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              aria-label="View GyroDiagnostics on GitHub (opens in new tab)"
-            >
-              <GitHubIcon className="w-5 h-5 mr-2" />
-              View on GitHub
-            </a>
           </div>
           
           {/* Framework Overview */}
@@ -388,6 +526,19 @@ export default function Home() {
               </a>
             </p>
           </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://github.com/gyrogovernance/diagnostics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="View GyroDiagnostics on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -399,19 +550,9 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Gyroscope: LLM Alignment Protocol
             </h2>
-            <p className="text-xl text-foreground-secondary mb-6">
+            <p className="text-xl text-foreground-secondary">
               Making AI 30-50% Smarter and Safer by adding structured reasoning to each response.
             </p>
-            <a
-              href="https://github.com/gyrogovernance/tools"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              aria-label="View Gyroscope on GitHub (opens in new tab)"
-            >
-              <GitHubIcon className="w-5 h-5 mr-2" />
-              View on GitHub
-            </a>
           </div>
           
           {/* Results Table */}
@@ -482,6 +623,19 @@ export default function Home() {
                 See methodology
               </a>
             </p>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://github.com/gyrogovernance/tools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="View Gyroscope on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
           </div>
         </div>
       </div>
