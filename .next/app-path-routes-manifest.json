@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/articles/[slug]/page": "/articles/[slug]",
+  "/articles/page": "/articles",
+  "/articles/rss.xml/route": "/articles/rss.xml",
+  "/cookie-policy/page": "/cookie-policy",
+  "/favicon.ico/route": "/favicon.ico",
+  "/github/page": "/github",
+  "/glossary/page": "/glossary",
+  "/news-sitemap.xml/route": "/news-sitemap.xml",
+  "/page": "/",
+  "/privacy-policy/page": "/privacy-policy",
+  "/sitemap.xml/route": "/sitemap.xml"
+}

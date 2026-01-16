@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://gyrogovernance.com/articles/ggg-simulator-results</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-12T00:00:00.000Z</news:publication_date>
+      <news:title>AGI is Already Here: Seven Paths to Alignment</news:title>
+      <news:keywords>AI Governance, Post-AGI, Simulation, Alignment, GGG, Economic Modeling, AI Safety, Governance Theory</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://gyrogovernance.com/articles/thm_samkhya</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-19T00:00:00.000Z</news:publication_date>
+      <news:title>The Human Mark and Samkhya Epistemology: Ancient Precedent for AI Alignment</news:title>
+      <news:keywords>The Human Mark, AI Alignment, Samkhya Philosophy, Epistemology, AI Safety, AI Governance, Indian Philosophy, Pramana Theory, AI Safety Frameworks, AI Alignment Theory, Philosophy of Knowledge, AI Risk Assessment, Responsible AI Development, AI Accountability, AI Safety Research</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://gyrogovernance.com/articles/asi-misinformation-crisis</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-16T00:00:00.000Z</news:publication_date>
+      <news:title>The Superintelligence Misinformation Crisis: How Technical Illiteracy Became Policy Advocacy</news:title>
+      <news:keywords>AI Misinformation, AI Safety Discourse, Superintelligence Narrative, AI Policy, AI Governance, MIRI, Future of Life Institute, Redwood Research, AI Category Error, AI Anthropomorphization, AI Risk Assessment, AI Safety Research, AI Policy Advocacy, Technocratic Control, Democratic Governance, AI Measurement Tools, LLM Architecture, AI Pattern Matching, AI Agency, AI Existential Risk, AI Prohibition, AI Regulation, AI Safety Funding, AI Misinformation Campaign, Technical Illiteracy, AI Discourse Analysis, AI Policy Misinformation, The Human Mark</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://gyrogovernance.com/articles/aie-alignment-report</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-15T00:00:00.000Z</news:publication_date>
+      <news:title>AI-Empowered Alignment: Epistemic Constraints and Human-AI Cooperation Mechanisms in Frontier Models</news:title>
+      <news:keywords>AI Governance, AI Alignment Theory, AI Alignment Problem, Epistemic Limits, Self-Referential Reasoning, Human-AI Cooperation, AI Safety Frameworks, AI Risk Assessment, Frontier AI Safety, AI Control Mechanisms, Catastrophic AI Risks, Recursive Cognition, AI Metacognition, Structural AI Alignment, Frontier Model Evaluation, Transformer Models, AI Research, Mathematical Physics, AGI Safety</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://gyrogovernance.com/articles/aie-health-report</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-14T00:00:00.000Z</news:publication_date>
+      <news:title>AI-Empowered Health: Global Regulatory Evolution and Human-AI Cooperation for Medical Systems</news:title>
+      <news:keywords>AI Governance, AI Medical Regulation, Healthcare Governance, Healthcare AI, Diagnostic AI, Patient Safety, Global Health, AI Risk Assessment, AI Safety Frameworks, Responsible AI Development, AI Accountability, AI Transparency, AI Ethics Governance, Medical AI Governance, Healthcare Regulation Evolution, Regulatory Frameworks, Post-Market Surveillance, Adaptive Governance, AI Policy, AI Biosecurity, AI Bio-Risk Assessment, AI CBRN Evaluation, AI Cybersecurity, Clinical AI Systems, Health AI Deployment, Medical Device Regulation</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://gyrogovernance.com/articles/aie-prosperity-report</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Gyro Governance</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-13T00:00:00.000Z</news:publication_date>
+      <news:title>AI-Empowered Prosperity: Strategic Frameworks for Advancing Global Well-Being and Sustainable Development</news:title>
+      <news:keywords>AI Governance, Global Prosperity, Resource Allocation, Multi-Stakeholder Governance, AI Policy, AI Ethics Governance, Responsible AI Development, AI Accountability, AI Transparency, AI Risk Assessment, AI Safety Frameworks, Sustainable Development, Development Economics, Healthcare, Education, Food Security, Governance Mechanisms, Resource Allocation Frameworks, Stakeholder Conflict Resolution, Equity-Efficiency Analysis, AI Societal Impact, AI for Development, Global Development, Poverty Alleviation, AI for Good</news:keywords>
+    </news:news>
+  </url>
+</urlset>

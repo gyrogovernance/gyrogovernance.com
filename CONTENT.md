@@ -71,42 +71,22 @@ A formal classification system mapping all AI safety failures to four structural
 
 #### 🎯 Four Displacement Risks
 
-**Governance Traceability (GTD)** • **Information Variety (IVD)** • **Inference Accountability (IAD)** • **Intelligence Integrity (IID)**
+- **Governance Traceability (GTD)**
+- **Information Variety (IVD)**
+- **Inference Accountability (IAD)**
+- **Intelligence Integrity (IID)**
 
 All AI safety failures map to these patterns.
 
 #### 🔬 Applications
 
-- **Jailbreak testing** • **Control evaluations** • **Alignment detection**
-- **Research funding** • **Regulatory compliance**
+- **Jailbreak testing**
+- **Control evaluations**
+- **Alignment detection**
+- **Research funding**
+- **Regulatory compliance**
 
 Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.
-
-### ⚡ Alignment Infrastructure Routing (AIR)
-**Collective Superintelligence Architecture**
-
-**GitHub**: https://github.com/gyrogovernance/superintelligence
-
-**What it is**
-A coordination engine that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
-
-**What it does**
-AIR connects three critical groups to build Collective Superintelligence.
-
-*   **For Labs**: Scale human supervision, red-teaming, and evaluation without administrative chaos.
-*   **For Funders**: See exactly what risks your portfolio covers using the Human Mark taxonomy.
-*   **For People**: Turn skills into paid, verifiable contribution units called Daily Prizes and Sprint Stipends.
-
-**Why it matters**
-We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them. It coordinates activity across Economy, Employment, Education, and Ecology.
-
-### 🌐 Gyroscopic Global Governance Simulator (GGG)
-
-A Post-AGI macro-simulator that models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
-
-**Article**: /articles/ggg-simulator-results
-
-**GitHub Repository**: https://github.com/gyrogovernance/tools
 
 ### 🔍 AI Inspector Browser Extension
 
@@ -125,6 +105,81 @@ Rapid Test • Policy Auditing • AI Infection Sanitization • Content Enhance
 Quality Index, Superintelligence Index, Alignment Rate + 20 metrics
 
 *Local-first storage - Works Anywhere: ChatGPT, Claude, Gemini - no API keys required*
+
+### 🍃 Alignment Infrastructure Routing (AIR)
+
+**Collective Superintelligence Architecture**
+
+**GitHub**: https://github.com/gyrogovernance/superintelligence
+
+**🔧 What it is**
+
+A coordination infrastructure that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
+
+**🎯 What it does**
+
+AIR connects three critical groups to build Collective Superintelligence.
+
+- **For Labs:** Scale without administrative chaos.
+- **For Funders:** See exactly what risks your portfolio covers.
+- **For Everyone:** Turn skills into paid, verifiable contribution units.
+
+**💡 Why it matters**
+
+We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them.
+
+Coordinates activity across: **Economy** • **Employment** • **Education** • **Ecology**
+
+### 💰 Moments Economy
+
+**Mitigating Risks of Transformative AI (TAI)**
+
+**GitHub**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md
+
+**💎 What it is**
+
+A monetary system grounded in physical capacity rather than debt. All economic activity is recorded as replayable history that any party can independently verify.
+
+- Uses the caesium-133 atomic standard, the most precise and globally audited method for quantifying distinguishable physical states, to define a finite capacity
+- Removes the need for central ledger keepers or institutional trust
+
+**🔄 Dual-function capacity**
+
+Supports both monetary distribution and complete governance records:
+
+- **Monetary:** Unconditional High Income (UHI) as baseline for everyone, with four tiers up to 60× UHI for roles of wider scope and higher responsibility
+- **Recordkeeping:** Scientific research provenance, AI model auditing, supply chain traceability, personal consent tracking
+
+**Scale and Security:**
+- Total capacity: ~70 billion years for global UHI
+- With tiered distributions: 47+ billion years coverage
+- Adversarial manipulation: operationally impossible
+
+**🌟 Why this matters**
+
+- **For individuals:** Guaranteed baseline income with tiered distributions, delivered through verifiable records rather than debt-based issuance.
+- **For policymakers:** Issuance limits based on explicit physical assumptions. Parameters can be inspected and revised through governance.
+- **For institutions:** Distributions through replayable records reduce reliance on custodians and retrospective disputes.
+- **For AI safety:** Preserves human authority, traceability, and accountability as AI agents contribute to decisions.
+
+### 🌐 Gyroscopic Global Governance (GGG)
+
+**A Post-AGI Multi-domain Governance Sandbox**
+
+**Article**: /articles/ggg-simulator-results
+
+**GitHub Repository**: https://github.com/gyrogovernance/tools
+
+**📈 Convergence to Equilibrium**
+
+Models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
+
+**🎯 Demonstrating that:**
+
+- Poverty resolves through coherent surplus distribution
+- Unemployment becomes alignment work rather than residual labour
+- Miseducation shifts toward epistemic literacy
+- Ecological degradation appears as upstream displacement, not an external constraint
 
 ### 🌟 GyroDiagnostics Suite: AI Safety Evaluation Framework
 
@@ -150,13 +205,9 @@ Production-ready evaluation suite revealing structural brittleness invisible to 
 
 **ChatGPT 5:**
 - Quality Index: 73.92% | Alignment Rate: 0.27/min (SUPERFICIAL) | SI Index: 11.5/100 (8.7× deviation)
-- Challenge Rankings: Normative (84.8%), Epistemic (75.3%), Strategic (73.9%), Procedural (68.2%), Formal (55.4%)
-- Pathologies: Deceptive Coherence (90%), Semantic Drift (50%), Superficial Optimization (50%), Sycophancy (40%)
 
 **Claude Sonnet 4.5:**
 - Quality Index: 82.00% | Alignment Rate: 0.11/min (VALID) | SI Index: 12.8/100 (7.8× deviation)
-- Challenge Rankings: Epistemic (90.3%), Normative (85.8%), Strategic (82.0%), Procedural (74.8%), Formal (53.6%)
-- Pathologies: Deceptive Coherence (50%), Semantic Drift (40%), Goal Misgeneralization (30%), Superficial Optimization (30%)
 
 🎯 **Comparative Insight:** Both models struggle with Physics/Math reasoning (Formal challenge ~54-55%) while excelling in Ethics/Knowledge domains. Claude shows better structural balance with lower pathology rates and VALID alignment rate, while GPT-5's SUPERFICIAL flag indicates rushed processing risking brittleness.
 
