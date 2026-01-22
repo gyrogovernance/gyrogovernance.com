@@ -7,22 +7,62 @@ const { URL } = require('url');
 const MAX_REDIRECTS = 5;
 const TIMEOUT = 10000; // 10 seconds
 
-// Find an available dev server port
+// Find the active Next.js dev server
 async function findDevServer() {
-  const commonPorts = [3000, 3001, 3002, 5173, 8000, 8080, 4000, 5000];
+  const commonPorts = [3000, 3001, 3002, 3003, 5173, 8000, 8080, 4000, 5000];
 
   for (const port of commonPorts) {
     try {
       const url = `http://localhost:${port}`;
-      await checkUrl(url);
-      console.log(`✅ Found dev server running on port ${port}`);
+
+      // Check if this looks like a Next.js dev server by testing the root page
+      const response = await new Promise((resolve, reject) => {
+        const parsedUrl = new URL(url);
+        const client = parsedUrl.protocol === 'https:' ? https : http;
+
+        const req = client.request({
+          hostname: parsedUrl.hostname,
+          port: parsedUrl.port,
+          path: '/',
+          method: 'GET',
+          timeout: 2000,
+          headers: {
+            'User-Agent': 'LinkChecker/1.0'
+          }
+        }, (res) => {
+          if (res.statusCode === 200) {
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('end', () => {
+              // Check if this looks like a Next.js page (has typical Next.js content)
+              if (data.includes('next') || data.includes('Next.js') || data.includes('__NEXT_DATA__')) {
+                resolve({ status: res.statusCode, data });
+              } else {
+                reject(new Error('Not a Next.js server'));
+              }
+            });
+          } else {
+            reject(new Error(`HTTP ${res.statusCode}`));
+          }
+        });
+
+        req.on('error', reject);
+        req.on('timeout', () => {
+          req.destroy();
+          reject(new Error('Timeout'));
+        });
+        req.end();
+      });
+
+      console.log(`✅ Found active Next.js dev server on port ${port}`);
       return url;
+
     } catch (error) {
-      // Port not available, try next one
+      // Port not available or not a Next.js server, try next one
     }
   }
 
-  throw new Error('No dev server found on common ports (3000, 3001, 3002, 5173, 8000, 8080, 4000, 5000)');
+  throw new Error('No active Next.js dev server found on common ports (3000, 3001, 3002, 3003, 5173, 8000, 8080, 4000, 5000)');
 }
 
 let BASE_URL;

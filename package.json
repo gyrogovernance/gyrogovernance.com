@@ -15,7 +15,7 @@
     "start": "next start",
     "lint": "eslint",
     "kill-nodes": "taskkill /f /im node.exe /t 2>nul || echo No Node.js processes to kill",
-    "check-links": "echo 'Make sure dev server is running with: npm run dev' && node scripts/link-checker.js",
+    "check-links": "node scripts/link-checker.js",
     "test:links": "echo 'Make sure dev server is running with: npm run dev' && playwright test link-checker.spec.ts",
     "test:e2e": "echo 'Make sure dev server is running with: npm run dev' && playwright test"
   },
