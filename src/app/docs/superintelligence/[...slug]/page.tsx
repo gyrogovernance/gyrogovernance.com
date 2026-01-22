@@ -9,7 +9,7 @@ interface PageProps {
   params: Promise<{ slug: string[] }>;
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const params: { slug: string[] }[] = [];
 
   console.log('Starting generateStaticParams for superintelligence');
