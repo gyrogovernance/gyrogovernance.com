@@ -12,39 +12,50 @@ interface PageProps {
 export async function generateStaticParams() {
   const params: { slug: string[] }[] = [];
 
+  console.log('Starting generateStaticParams for science');
+
   try {
-    const docsDir = path.join(process.cwd(), 'src', 'content', 'docs', 'science');
+    const cwd = process.cwd();
+    console.log('Current working directory:', cwd);
+
+    const docsDir = path.join(cwd, 'src', 'content', 'docs', 'Science');
+    console.log('Looking for docs in:', docsDir);
 
     // Check if directory exists
     if (!fs.existsSync(docsDir)) {
-      console.warn('Science docs directory not found');
+      console.error('Science docs directory not found at:', docsDir);
       return params;
     }
+
+    console.log('Science docs directory found, reading files...');
 
     // Get all files recursively
     function getAllFiles(dirPath: string, relativePath: string[] = []): void {
       try {
         const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+        console.log(`Found ${entries.length} entries in ${dirPath}`);
 
         for (const entry of entries) {
           if (entry.isFile() && entry.name.endsWith('.md')) {
             const slug = entry.name.replace('.md', '');
             params.push({ slug: [...relativePath, slug] });
+            console.log('Added param:', { slug: [...relativePath, slug] });
           } else if (entry.isDirectory()) {
             const subDirPath = path.join(dirPath, entry.name);
             getAllFiles(subDirPath, [...relativePath, entry.name]);
           }
         }
       } catch (error) {
-        console.warn(`Error reading directory ${dirPath}:`, error);
+        console.error(`Error reading directory ${dirPath}:`, error);
       }
     }
 
     getAllFiles(docsDir);
-    console.log(`Generated ${params.length} static params for science`);
+    console.log(`Successfully generated ${params.length} static params for science`);
 
   } catch (error) {
     console.error('Failed to generate static params for science:', error);
+    // Return empty array on error to prevent build failure
   }
 
   return params;
@@ -55,7 +66,7 @@ export default async function DocPage({ params }: PageProps) {
   const slugPath = slug.join('/');
 
   // Read the markdown file
-  const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'science', `${slugPath}.md`);
+  const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'Science', `${slugPath}.md`);
 
   let content: string;
   let data: { title?: string; description?: string };
@@ -123,7 +134,7 @@ export async function generateMetadata({ params }: PageProps) {
   const slugPath = slug.join('/');
 
   try {
-    const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'science', `${slugPath}.md`);
+    const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'Science', `${slugPath}.md`);
     const fileContents = fs.readFileSync(filePath, 'utf-8');
     const { data } = matter(fileContents);
 
