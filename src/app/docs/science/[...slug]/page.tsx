@@ -18,7 +18,7 @@ export function generateStaticParams() {
     const cwd = process.cwd();
     console.log('Current working directory:', cwd);
 
-    const docsDir = path.join(cwd, 'src', 'content', 'docs', 'Science');
+    const docsDir = path.join(cwd, 'src', 'content', 'docs', 'science');
     console.log('Looking for docs in:', docsDir);
 
     // Check if directory exists
@@ -66,7 +66,7 @@ export default async function DocPage({ params }: PageProps) {
   const slugPath = slug.join('/');
 
   // Read the markdown file
-  const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'Science', `${slugPath}.md`);
+  const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'science', `${slugPath}.md`);
 
   let content: string;
   let data: { title?: string; description?: string };
@@ -134,7 +134,7 @@ export async function generateMetadata({ params }: PageProps) {
   const slugPath = slug.join('/');
 
   try {
-    const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'Science', `${slugPath}.md`);
+    const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'science', `${slugPath}.md`);
     const fileContents = fs.readFileSync(filePath, 'utf-8');
     const { data } = matter(fileContents);
 

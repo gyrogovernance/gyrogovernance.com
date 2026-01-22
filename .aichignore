@@ -12,3 +12,10 @@ playwright-report/
 test-results/
 *.log
 package-lock.json
+
+# Large data files
+*.csv
+*.json
+*.md
+*.txt
+*.html

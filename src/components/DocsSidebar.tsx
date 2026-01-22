@@ -48,7 +48,7 @@ async function getDocsForRepo(repoId: string): Promise<DocsItem[]> {
         }
       } else if (entry.isDirectory()) {
         const subDirPath = path.join(docsDir, entry.name);
-        const subDocs = await scanDocsDirectory(subDirPath);
+        const subDocs = await scanDocsDirectory(subDirPath, [entry.name]);
 
         if (subDocs.length > 0) {
           docs.push({
@@ -72,7 +72,7 @@ async function getDocsForRepo(repoId: string): Promise<DocsItem[]> {
   });
 }
 
-async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
+async function scanDocsDirectory(dirPath: string, relativePath: string[] = []): Promise<DocsItem[]> {
   const docs: DocsItem[] = [];
 
   try {
@@ -81,6 +81,7 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.md')) {
         const slug = entry.name.replace('.md', '');
+        const fullSlug = [...relativePath, slug].join('/');
         const filePath = path.join(dirPath, entry.name);
 
         try {
@@ -88,12 +89,24 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
           const { data } = matter(content);
 
           docs.push({
-            slug,
+            slug: fullSlug,
             title: data.title || slug.replace(/[_-]/g, ' '),
             description: data.description || ''
           });
         } catch (error) {
           console.warn(`Could not read ${filePath}:`, error);
+        }
+      } else if (entry.isDirectory()) {
+        const subDirPath = path.join(dirPath, entry.name);
+        const subDocs = await scanDocsDirectory(subDirPath, [...relativePath, entry.name]);
+
+        if (subDocs.length > 0) {
+          docs.push({
+            slug: [...relativePath, entry.name].join('/'),
+            title: entry.name.replace(/[_-]/g, ' '),
+            isFolder: true,
+            children: subDocs
+          });
         }
       }
     }
@@ -101,7 +114,14 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
     console.warn(`Could not scan directory ${dirPath}:`, error);
   }
 
-  return docs.sort((a, b) => a.title.localeCompare(b.title));
+  return docs.sort((a, b) => {
+    // Folders first, then alphabetically
+    const aIsFolder = a.isFolder || (a.children && a.children.length > 0);
+    const bIsFolder = b.isFolder || (b.children && b.children.length > 0);
+    if (aIsFolder && !bIsFolder) return -1;
+    if (!aIsFolder && bIsFolder) return 1;
+    return a.title.localeCompare(b.title);
+  });
 }
 
 export default async function DocsSidebar({ currentRepo }: DocsSidebarProps) {
