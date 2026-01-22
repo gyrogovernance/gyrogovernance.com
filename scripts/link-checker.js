@@ -4,9 +4,28 @@ const http = require('http');
 const https = require('https');
 const { URL } = require('url');
 
-const BASE_URL = 'http://localhost:3000';
 const MAX_REDIRECTS = 5;
 const TIMEOUT = 10000; // 10 seconds
+
+// Find an available dev server port
+async function findDevServer() {
+  const commonPorts = [3000, 3001, 3002, 5173, 8000, 8080, 4000, 5000];
+
+  for (const port of commonPorts) {
+    try {
+      const url = `http://localhost:${port}`;
+      await checkUrl(url);
+      console.log(`✅ Found dev server running on port ${port}`);
+      return url;
+    } catch (error) {
+      // Port not available, try next one
+    }
+  }
+
+  throw new Error('No dev server found on common ports (3000, 3001, 3002, 5173, 8000, 8080, 4000, 5000)');
+}
+
+let BASE_URL;
 
 function checkUrl(url, redirectCount = 0) {
   return new Promise((resolve, reject) => {
@@ -57,9 +76,9 @@ async function crawlAndCheckLinks() {
   console.log('🔗 Starting comprehensive site link checker...\n');
 
   try {
-    // First check if dev server is running
-    await checkUrl(BASE_URL);
-    console.log('✅ Dev server is running\n');
+    // Find and set the dev server URL
+    BASE_URL = await findDevServer();
+    console.log(`🔍 Using dev server: ${BASE_URL}\n`);
 
     const visited = new Set();
     const toVisit = [BASE_URL]; // Start with homepage
@@ -154,6 +173,7 @@ async function crawlAndCheckLinks() {
   } catch (error) {
     console.error(`🚨 Error: ${error.message}`);
     console.log('\n💡 Make sure your dev server is running: npm run dev');
+    console.log('   The script will automatically scan common ports (3000, 3001, 3002, 5173, 8000, 8080, 4000, 5000)');
     process.exit(1);
   }
 }
