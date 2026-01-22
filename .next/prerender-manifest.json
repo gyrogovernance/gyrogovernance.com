@@ -1,36 +1,11 @@
 {
   "version": 4,
   "routes": {
-    "/_not-found": {
-      "initialStatus": 404,
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/news-sitemap.xml": {
+    "/sitemap.xml": {
       "initialHeaders": {
-        "cache-control": "s-maxage=3600, stale-while-revalidate=86400",
+        "cache-control": "s-maxage=86400, stale-while-revalidate=604800",
         "content-type": "application/xml; charset=utf-8",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/news-sitemap.xml/layout,_N_T_/news-sitemap.xml/route,_N_T_/news-sitemap.xml/"
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml/"
       },
       "experimentalBypassFor": [
         {
@@ -44,32 +19,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/news-sitemap.xml",
+      "srcRoute": "/sitemap.xml",
       "dataRoute": null,
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/glossary": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/glossary",
-      "dataRoute": "/glossary.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -108,7 +59,12 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles": {
+    "/news-sitemap.xml": {
+      "initialHeaders": {
+        "cache-control": "s-maxage=3600, stale-while-revalidate=86400",
+        "content-type": "application/xml; charset=utf-8",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/news-sitemap.xml/layout,_N_T_/news-sitemap.xml/route,_N_T_/news-sitemap.xml/"
+      },
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -121,8 +77,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles",
-      "dataRoute": "/articles.rsc",
+      "srcRoute": "/news-sitemap.xml",
+      "dataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -156,6 +112,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/articles": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/articles",
+      "dataRoute": "/articles.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/privacy-policy": {
       "experimentalBypassFor": [
         {
@@ -180,7 +160,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/science": {
+    "/github": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -193,8 +173,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/science",
-      "dataRoute": "/docs/science.rsc",
+      "srcRoute": "/github",
+      "dataRoute": "/github.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -204,7 +184,8 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/cookie-policy": {
+    "/_not-found": {
+      "initialStatus": 404,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -217,37 +198,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/cookie-policy",
-      "dataRoute": "/cookie-policy.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sitemap.xml": {
-      "initialHeaders": {
-        "cache-control": "s-maxage=86400, stale-while-revalidate=604800",
-        "content-type": "application/xml; charset=utf-8",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml/"
-      },
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/sitemap.xml",
-      "dataRoute": null,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -281,6 +233,54 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/docs/tools": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/docs/tools",
+      "dataRoute": "/docs/tools.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/docs": {
       "experimentalBypassFor": [
         {
@@ -296,30 +296,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/docs",
       "dataRoute": "/docs.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/github": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/github",
-      "dataRoute": "/github.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -689,7 +665,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/AIR_Moments_Economy_Specs": {
+    "/articles/aie-alignment-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -702,8 +678,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/AIR_Moments_Economy_Specs.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/aie-alignment-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -713,7 +689,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/AIR_Specs": {
+    "/articles/aie-health-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -726,8 +702,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/AIR_Specs.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/aie-health-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -737,7 +713,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/GGG_ASI_AR_Holography_Paper": {
+    "/articles/aie-prosperity-report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -750,8 +726,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Holography_Paper.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/aie-prosperity-report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -761,7 +737,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/GGG_ASI_AR_Implications_Report": {
+    "/articles/asi-misinformation-crisis": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -774,8 +750,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Implications_Report.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/asi-misinformation-crisis.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -785,7 +761,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/GGG_ASI_AR_SDK_Holographic_Web_Specs": {
+    "/articles/chatgpt5-vs-claude45-diagnostics": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -798,8 +774,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_SDK_Holographic_Web_Specs.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/chatgpt5-vs-claude45-diagnostics.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -809,7 +785,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/GGG_ASI_AR_SDK_Network_Specs": {
+    "/articles/common-governance-model": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -822,8 +798,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_SDK_Network_Specs.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/common-governance-model.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -833,7 +809,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/GGG_ASI_AR_Specs": {
+    "/articles/ggg-simulator-results": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -846,8 +822,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Specs.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/ggg-simulator-results.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -857,7 +833,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/GGG_ASI_AR_Substrate_Specs": {
+    "/articles/gyroscope-ai-protocol": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -870,8 +846,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Substrate_Specs.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/gyroscope-ai-protocol.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -881,7 +857,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/Reports/Alignment_Measurement_Report": {
+    "/articles/gyroscopic-superintelligence": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -894,8 +870,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/Reports/Alignment_Measurement_Report.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/gyroscopic-superintelligence.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -905,7 +881,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/Reports/Holography_Tests_Report": {
+    "/articles/thm_samkhya": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -918,8 +894,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/Reports/Holography_Tests_Report.rsc",
+      "srcRoute": "/articles/[slug]",
+      "dataRoute": "/articles/thm_samkhya.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -929,7 +905,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/Reports/Moments_Tests_Report": {
+    "/docs/science": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -942,8 +918,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/Reports/Moments_Tests_Report.rsc",
+      "srcRoute": "/docs/science",
+      "dataRoute": "/docs/science.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -953,7 +929,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/Reports/Other_Tests_Report": {
+    "/glossary": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -966,56 +942,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/Reports/Other_Tests_Report.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/docs/superintelligence/Reports/Physics_Tests_Report": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/superintelligence/[...slug]",
-      "dataRoute": "/docs/superintelligence/Reports/Physics_Tests_Report.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/glossary",
+      "dataRoute": "/glossary.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1601,7 +1529,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/aie-alignment-report": {
+    "/docs/superintelligence/AIR_Moments_Economy_Specs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1614,8 +1542,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/aie-alignment-report.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/AIR_Moments_Economy_Specs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1625,7 +1553,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/aie-health-report": {
+    "/docs/superintelligence/AIR_Specs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1638,8 +1566,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/aie-health-report.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/AIR_Specs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1649,7 +1577,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/aie-prosperity-report": {
+    "/docs/superintelligence/GGG_ASI_AR_Holography_Paper": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1662,8 +1590,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/aie-prosperity-report.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Holography_Paper.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1673,7 +1601,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/asi-misinformation-crisis": {
+    "/docs/superintelligence/GGG_ASI_AR_Implications_Report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1686,8 +1614,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/asi-misinformation-crisis.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Implications_Report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1697,7 +1625,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/chatgpt5-vs-claude45-diagnostics": {
+    "/docs/superintelligence/GGG_ASI_AR_SDK_Holographic_Web_Specs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1710,8 +1638,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/chatgpt5-vs-claude45-diagnostics.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_SDK_Holographic_Web_Specs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1721,7 +1649,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/common-governance-model": {
+    "/docs/superintelligence/GGG_ASI_AR_SDK_Network_Specs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1734,8 +1662,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/common-governance-model.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_SDK_Network_Specs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1745,7 +1673,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/ggg-simulator-results": {
+    "/docs/superintelligence/GGG_ASI_AR_Specs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1758,8 +1686,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/ggg-simulator-results.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Specs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1769,7 +1697,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/gyroscope-ai-protocol": {
+    "/docs/superintelligence/GGG_ASI_AR_Substrate_Specs": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1782,8 +1710,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/gyroscope-ai-protocol.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/GGG_ASI_AR_Substrate_Specs.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1793,7 +1721,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/gyroscopic-superintelligence": {
+    "/docs/superintelligence/Reports/Alignment_Measurement_Report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1806,8 +1734,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/gyroscopic-superintelligence.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/Reports/Alignment_Measurement_Report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1817,7 +1745,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/thm_samkhya": {
+    "/docs/superintelligence/Reports/Holography_Tests_Report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1830,8 +1758,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articles/[slug]",
-      "dataRoute": "/articles/thm_samkhya.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/Reports/Holography_Tests_Report.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1841,7 +1769,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/tools": {
+    "/docs/superintelligence/Reports/Moments_Tests_Report": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1854,8 +1782,80 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/docs/tools",
-      "dataRoute": "/docs/tools.rsc",
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/Reports/Moments_Tests_Report.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/docs/superintelligence/Reports/Other_Tests_Report": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/Reports/Other_Tests_Report.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/docs/superintelligence/Reports/Physics_Tests_Report": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/docs/superintelligence/[...slug]",
+      "dataRoute": "/docs/superintelligence/Reports/Physics_Tests_Report.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/cookie-policy": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/cookie-policy",
+      "dataRoute": "/cookie-policy.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1892,7 +1892,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/docs/superintelligence/[...slug]": {
+    "/articles/[slug]": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1904,10 +1904,10 @@
           "value": "multipart/form-data;.*"
         }
       ],
-      "routeRegex": "^/docs/superintelligence/(.+?)(?:/)?$",
-      "dataRoute": "/docs/superintelligence/[...slug].rsc",
+      "routeRegex": "^/articles/([^/]+?)(?:/)?$",
+      "dataRoute": "/articles/[slug].rsc",
       "fallback": null,
-      "dataRouteRegex": "^/docs/superintelligence/(.+?)\\.rsc$",
+      "dataRouteRegex": "^/articles/([^/]+?)\\.rsc$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1942,7 +1942,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articles/[slug]": {
+    "/docs/superintelligence/[...slug]": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1954,10 +1954,10 @@
           "value": "multipart/form-data;.*"
         }
       ],
-      "routeRegex": "^/articles/([^/]+?)(?:/)?$",
-      "dataRoute": "/articles/[slug].rsc",
+      "routeRegex": "^/docs/superintelligence/(.+?)(?:/)?$",
+      "dataRoute": "/docs/superintelligence/[...slug].rsc",
       "fallback": null,
-      "dataRouteRegex": "^/articles/([^/]+?)\\.rsc$",
+      "dataRouteRegex": "^/docs/superintelligence/(.+?)\\.rsc$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1970,8 +1970,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "dd2d5d20756852a3762b2de47279f72a",
-    "previewModeSigningKey": "5249693e87e2ec9b912496f167eae6e2a7f268b9b4a25edd993607f3c958aa58",
-    "previewModeEncryptionKey": "9a0cc5c3162ecb1a4792a193ef897d2fddf373fc1faa396d4e6f7d8963f8edc7"
+    "previewModeId": "b98e148c1b2c59c2715961fc0ade0ac5",
+    "previewModeSigningKey": "865afcb9f13aeb1f1500cd1888ef16c370313871fb8889e6b7d495a0d84bea5f",
+    "previewModeEncryptionKey": "efbd9a3123f790b34f352aef67c74cf80e9c0a5d92d8dcc0af63eed6eb4c7b36"
   }
 }

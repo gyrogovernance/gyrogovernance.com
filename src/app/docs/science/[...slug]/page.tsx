@@ -1,4 +1,4 @@
-import { promises as fs } from 'fs';
+import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
@@ -10,33 +10,41 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const { promises: fs } = await import('fs');
-  const path = await import('path');
-
   const params: { slug: string[] }[] = [];
 
   try {
     const docsDir = path.join(process.cwd(), 'src', 'content', 'docs', 'science');
 
-    // Get all files recursively
-    async function getAllFiles(dirPath: string, relativePath: string[] = []): Promise<void> {
-      const entries = await fs.readdir(dirPath, { withFileTypes: true });
+    // Check if directory exists
+    if (!fs.existsSync(docsDir)) {
+      console.warn('Science docs directory not found');
+      return params;
+    }
 
-      for (const entry of entries) {
-        if (entry.isFile() && entry.name.endsWith('.md')) {
-          const slug = entry.name.replace('.md', '');
-          params.push({ slug: [...relativePath, slug] });
-        } else if (entry.isDirectory()) {
-          const subDirPath = path.join(dirPath, entry.name);
-          await getAllFiles(subDirPath, [...relativePath, entry.name]);
+    // Get all files recursively
+    function getAllFiles(dirPath: string, relativePath: string[] = []): void {
+      try {
+        const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+
+        for (const entry of entries) {
+          if (entry.isFile() && entry.name.endsWith('.md')) {
+            const slug = entry.name.replace('.md', '');
+            params.push({ slug: [...relativePath, slug] });
+          } else if (entry.isDirectory()) {
+            const subDirPath = path.join(dirPath, entry.name);
+            getAllFiles(subDirPath, [...relativePath, entry.name]);
+          }
         }
+      } catch (error) {
+        console.warn(`Error reading directory ${dirPath}:`, error);
       }
     }
 
-    await getAllFiles(docsDir);
+    getAllFiles(docsDir);
+    console.log(`Generated ${params.length} static params for science`);
 
   } catch (error) {
-    console.warn('Could not generate static params for science:', error);
+    console.error('Failed to generate static params for science:', error);
   }
 
   return params;
@@ -53,7 +61,7 @@ export default async function DocPage({ params }: PageProps) {
   let data: { title?: string; description?: string };
 
   try {
-    const fileContents = await fs.readFile(filePath, 'utf-8');
+    const fileContents = fs.readFileSync(filePath, 'utf-8');
     const parsed = matter(fileContents);
     content = parsed.content;
     data = parsed.data;
@@ -116,7 +124,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   try {
     const filePath = path.join(process.cwd(), 'src', 'content', 'docs', 'science', `${slugPath}.md`);
-    const fileContents = await fs.readFile(filePath, 'utf-8');
+    const fileContents = fs.readFileSync(filePath, 'utf-8');
     const { data } = matter(fileContents);
 
     return {
