@@ -120,14 +120,6 @@
       "static/chunks/619-f072ac750404f9da.js",
       "static/chunks/app/docs/page-abb63d42a587ece0.js"
     ],
-    "/docs/science/page": [
-      "static/chunks/webpack-9dac5361534be538.js",
-      "static/chunks/4bd1b696-409494caf8c83275.js",
-      "static/chunks/255-5a922b10681a8573.js",
-      "static/chunks/main-app-2522fad3f86412df.js",
-      "static/chunks/619-f072ac750404f9da.js",
-      "static/chunks/app/docs/science/page-abb63d42a587ece0.js"
-    ],
     "/docs/superintelligence/page": [
       "static/chunks/webpack-9dac5361534be538.js",
       "static/chunks/4bd1b696-409494caf8c83275.js",
@@ -135,6 +127,14 @@
       "static/chunks/main-app-2522fad3f86412df.js",
       "static/chunks/619-f072ac750404f9da.js",
       "static/chunks/app/docs/superintelligence/page-abb63d42a587ece0.js"
+    ],
+    "/docs/science/page": [
+      "static/chunks/webpack-9dac5361534be538.js",
+      "static/chunks/4bd1b696-409494caf8c83275.js",
+      "static/chunks/255-5a922b10681a8573.js",
+      "static/chunks/main-app-2522fad3f86412df.js",
+      "static/chunks/619-f072ac750404f9da.js",
+      "static/chunks/app/docs/science/page-abb63d42a587ece0.js"
     ],
     "/docs/tools/page": [
       "static/chunks/webpack-9dac5361534be538.js",
@@ -152,14 +152,6 @@
       "static/chunks/619-f072ac750404f9da.js",
       "static/chunks/app/docs/science/[...slug]/page-ed7651a899c00e84.js"
     ],
-    "/docs/tools/[...slug]/page": [
-      "static/chunks/webpack-9dac5361534be538.js",
-      "static/chunks/4bd1b696-409494caf8c83275.js",
-      "static/chunks/255-5a922b10681a8573.js",
-      "static/chunks/main-app-2522fad3f86412df.js",
-      "static/chunks/619-f072ac750404f9da.js",
-      "static/chunks/app/docs/tools/[...slug]/page-ed7651a899c00e84.js"
-    ],
     "/docs/superintelligence/[...slug]/page": [
       "static/chunks/webpack-9dac5361534be538.js",
       "static/chunks/4bd1b696-409494caf8c83275.js",
@@ -167,6 +159,14 @@
       "static/chunks/main-app-2522fad3f86412df.js",
       "static/chunks/619-f072ac750404f9da.js",
       "static/chunks/app/docs/superintelligence/[...slug]/page-ed7651a899c00e84.js"
+    ],
+    "/docs/tools/[...slug]/page": [
+      "static/chunks/webpack-9dac5361534be538.js",
+      "static/chunks/4bd1b696-409494caf8c83275.js",
+      "static/chunks/255-5a922b10681a8573.js",
+      "static/chunks/main-app-2522fad3f86412df.js",
+      "static/chunks/619-f072ac750404f9da.js",
+      "static/chunks/app/docs/tools/[...slug]/page-ed7651a899c00e84.js"
     ]
   }
 }

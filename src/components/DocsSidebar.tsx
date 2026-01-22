@@ -81,7 +81,6 @@ async function scanDocsDirectory(dirPath: string, relativePath: string[] = []): 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.md')) {
         const slug = entry.name.replace('.md', '');
-        const fullSlug = [...relativePath, slug].join('/');
         const filePath = path.join(dirPath, entry.name);
 
         try {
@@ -89,7 +88,7 @@ async function scanDocsDirectory(dirPath: string, relativePath: string[] = []): 
           const { data } = matter(content);
 
           docs.push({
-            slug: fullSlug,
+            slug: slug,  // Just the filename, not the full path
             title: data.title || slug.replace(/[_-]/g, ' '),
             description: data.description || ''
           });
@@ -102,7 +101,7 @@ async function scanDocsDirectory(dirPath: string, relativePath: string[] = []): 
 
         if (subDocs.length > 0) {
           docs.push({
-            slug: [...relativePath, entry.name].join('/'),
+            slug: entry.name,  // Just the folder name, not the full path
             title: entry.name.replace(/[_-]/g, ' '),
             isFolder: true,
             children: subDocs

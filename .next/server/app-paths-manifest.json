@@ -12,10 +12,10 @@
   "/glossary/page": "app/glossary/page.js",
   "/github/page": "app/github/page.js",
   "/docs/page": "app/docs/page.js",
-  "/docs/science/page": "app/docs/science/page.js",
   "/docs/superintelligence/page": "app/docs/superintelligence/page.js",
+  "/docs/science/page": "app/docs/science/page.js",
   "/docs/tools/page": "app/docs/tools/page.js",
   "/docs/science/[...slug]/page": "app/docs/science/[...slug]/page.js",
-  "/docs/tools/[...slug]/page": "app/docs/tools/[...slug]/page.js",
-  "/docs/superintelligence/[...slug]/page": "app/docs/superintelligence/[...slug]/page.js"
+  "/docs/superintelligence/[...slug]/page": "app/docs/superintelligence/[...slug]/page.js",
+  "/docs/tools/[...slug]/page": "app/docs/tools/[...slug]/page.js"
 }
