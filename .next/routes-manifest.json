@@ -39,6 +39,30 @@
         "nxtPslug": "nxtPslug"
       },
       "namedRegex": "^/articles/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/docs/science/[...slug]",
+      "regex": "^/docs/science/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/docs/science/(?<nxtPslug>.+?)(?:/)?$"
+    },
+    {
+      "page": "/docs/superintelligence/[...slug]",
+      "regex": "^/docs/superintelligence/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/docs/superintelligence/(?<nxtPslug>.+?)(?:/)?$"
+    },
+    {
+      "page": "/docs/tools/[...slug]",
+      "regex": "^/docs/tools/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/docs/tools/(?<nxtPslug>.+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -79,10 +103,28 @@
       "namedRegex": "^/cookie\\-policy(?:/)?$"
     },
     {
-      "page": "/favicon.ico",
-      "regex": "^/favicon\\.ico(?:/)?$",
+      "page": "/docs",
+      "regex": "^/docs(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/favicon\\.ico(?:/)?$"
+      "namedRegex": "^/docs(?:/)?$"
+    },
+    {
+      "page": "/docs/science",
+      "regex": "^/docs/science(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/science(?:/)?$"
+    },
+    {
+      "page": "/docs/superintelligence",
+      "regex": "^/docs/superintelligence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/superintelligence(?:/)?$"
+    },
+    {
+      "page": "/docs/tools",
+      "regex": "^/docs/tools(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/docs/tools(?:/)?$"
     },
     {
       "page": "/github",

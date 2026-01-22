@@ -67,7 +67,7 @@ export default function MobileMenu() {
           <nav className="flex flex-col py-4" role="navigation" aria-label="Mobile navigation">
             <Link
               href="/"
-              className="text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
               aria-label="Home page"
               onClick={closeMenu}
             >
@@ -78,7 +78,7 @@ export default function MobileMenu() {
             </Link>
             <Link
               href="/about"
-              className="text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
               aria-label="About Gyro Governance"
               onClick={closeMenu}
             >
@@ -89,7 +89,7 @@ export default function MobileMenu() {
             </Link>
             <Link
               href="/articles"
-              className="text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
               aria-label="Articles"
               onClick={closeMenu}
             >
@@ -98,7 +98,18 @@ export default function MobileMenu() {
                 <span>Articles</span>
               </div>
             </Link>
-            
+            <Link
+              href="/docs"
+              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              aria-label="Documentation"
+              onClick={closeMenu}
+            >
+              <div className="flex items-center">
+                <span className="mr-3 text-xl">📖</span>
+                <span>Docs</span>
+              </div>
+            </Link>
+
             {/* Divider */}
             <div className="my-2 mx-6 border-t border-border/50"></div>
             

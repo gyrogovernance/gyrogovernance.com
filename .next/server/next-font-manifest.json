@@ -25,6 +25,41 @@
       "static/media/797e433ab948586e.p.dbea232f.woff2",
       "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
     ],
+    "[project]/src/app/docs/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
+    "[project]/src/app/docs/science/[...slug]/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
+    "[project]/src/app/docs/science/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
+    "[project]/src/app/docs/superintelligence/[...slug]/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
+    "[project]/src/app/docs/superintelligence/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
+    "[project]/src/app/docs/tools/[...slug]/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
+    "[project]/src/app/docs/tools/page": [
+      "static/media/caa3a2e1cccd8315.p.853070df.woff2",
+      "static/media/797e433ab948586e.p.dbea232f.woff2",
+      "static/media/07454f8ad8aaac57.p.fc65572f.woff2"
+    ],
     "[project]/src/app/github/page": [
       "static/media/caa3a2e1cccd8315.p.853070df.woff2",
       "static/media/797e433ab948586e.p.dbea232f.woff2",

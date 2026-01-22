@@ -9,7 +9,10 @@
     "build": "next build --turbopack",
     "export": "npm run prebuild && next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check-links": "echo 'Make sure dev server is running with: npm run dev' && node scripts/link-checker.js",
+    "test:links": "echo 'Make sure dev server is running with: npm run dev' && playwright test link-checker.spec.ts",
+    "test:e2e": "echo 'Make sure dev server is running with: npm run dev' && playwright test"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -22,6 +25,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.57.0",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20",

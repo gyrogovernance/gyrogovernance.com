@@ -331,9 +331,9 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Key Links Summary:**
 - Main GitHub Org: https://github.com/gyrogovernance
-- Gyroscope Protocol: https://github.com/gyrogovernance/gyroscope
-- Research Lab: https://github.com/gyrogovernance/gyroscopic-alignment-research-lab
-- Development Lab: https://github.com/gyrogovernance/gyroscopic-alignment-development-lab
+- Gyroscope Protocol: https://github.com/gyrogovernance/tools
+- Research Lab: https://github.com/gyrogovernance/science
+- Development Lab: https://github.com/gyrogovernance/superintelligence
 - Newsletter: https://www.linkedin.com/newsletters/the-walk-7115036597602967553/
 - Founder's Website: https://korompilias.github.io/
 - Contact: basilkorompilias@gmail.com

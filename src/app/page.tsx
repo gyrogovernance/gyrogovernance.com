@@ -8,8 +8,11 @@ import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
+import { getDocStats } from "@/lib/docs-stats";
 
 export default function Home() {
+  const docStats = getDocStats();
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 critical-content">
       {/* Hero Section */}
@@ -767,6 +770,57 @@ export default function Home() {
                   Resources
                 </h2>
                 
+                {/* Documentation Showcase */}
+                <div className="mb-12">
+                  <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
+                    Documentation
+                  </h3>
+
+                  <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <div className="text-center">
+                      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-apple-blue/15 via-apple-purple/15 to-apple-pink/15 border border-border/60 flex items-center justify-center mx-auto mb-4">
+                        <span className="text-4xl">📚</span>
+                      </div>
+
+                      <h4 className="text-2xl font-semibold text-foreground mb-2">
+                        {docStats.total} Research Documents
+                      </h4>
+
+                      <p className="text-foreground-secondary mb-8">
+                        Comprehensive mathematical physics derivations, technical specifications, and AI safety protocols across science, superintelligence, and tooling.
+                      </p>
+
+                      {/* Key categories - larger, more prominent */}
+                      <div className="grid grid-cols-2 gap-3 mb-8">
+                        <div className="bg-gradient-to-br from-orange-500/10 to-orange-600/10 rounded-lg p-4 border border-orange-500/20">
+                          <div className="text-xl font-bold text-orange-500 mb-1">{docStats.byType.papersBriefs}</div>
+                          <div className="text-xs text-orange-700 font-medium uppercase tracking-wide">Theoretical Papers</div>
+                        </div>
+                        <div className="bg-gradient-to-br from-indigo-500/10 to-indigo-600/10 rounded-lg p-4 border border-indigo-500/20">
+                          <div className="text-xl font-bold text-indigo-500 mb-1">{docStats.byType.specsProtocols}</div>
+                          <div className="text-xs text-indigo-700 font-medium uppercase tracking-wide">Technical Specs</div>
+                        </div>
+                        <div className="bg-gradient-to-br from-cyan-500/10 to-cyan-600/10 rounded-lg p-4 border border-cyan-500/20">
+                          <div className="text-xl font-bold text-cyan-500 mb-1">{docStats.byType.analyses}</div>
+                          <div className="text-xs text-cyan-700 font-medium uppercase tracking-wide">Scientific Analyses</div>
+                        </div>
+                        <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/10 rounded-lg p-4 border border-emerald-500/20">
+                          <div className="text-xl font-bold text-emerald-500 mb-1">{docStats.byType.reportsResults}</div>
+                          <div className="text-xs text-emerald-700 font-medium uppercase tracking-wide">Test Reports</div>
+                        </div>
+                      </div>
+
+                      <Link
+                        href="/docs"
+                        className="inline-block px-8 py-4 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                        aria-label="Explore the documentation library"
+                      >
+                        Explore Documentation
+                      </Link>
+                    </div>
+                  </article>
+                </div>
+
                 {/* Newsletter Subsection */}
                 <div className="mb-12">
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
@@ -1025,10 +1079,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Documentations Subsection */}
+                {/* Experiments Subsection */}
                 <div className="mb-12">
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
-                    Documentations
+                    Experiments
                   </h3>
                   <div className="grid md:grid-cols-1 gap-6">
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">

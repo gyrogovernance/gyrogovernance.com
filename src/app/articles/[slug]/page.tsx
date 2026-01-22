@@ -161,12 +161,12 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         </header>
 
         {/* Content only */}
-        <div className="prose dark:prose-invert max-w-none text-foreground-secondary leading-relaxed w-full">
+        <article className="prose max-w-none">
           <div id="article-content" className="w-full">
             <ArticleContent html={html} />
           </div>
           <CopyControls className="mt-4" targetElementId="article-content" />
-        </div>
+        </article>
 
         {/* Divider before Promo */}
         <div className="mt-10 mb-8">

@@ -164,27 +164,27 @@ export default function ArticleToc({ headings, offsetTop = 96 }: ArticleTocProps
       aria-label="Table of contents"
       role="doc-toc"
     >
-      <p className="text-xs font-semibold text-foreground-tertiary mb-2">On this page</p>
-      <ul className="space-y-1 text-sm">
+      <h2 className="toc-title">On this page</h2>
+      <ul className="toc-list">
         {tree.map(node => (
-          <li key={node.id}>
+          <li key={node.id} className="toc-item">
             <a
               href={`#${node.id}`}
               onClick={handleJump(node.id)}
               aria-current={activeId === node.id ? "true" : undefined}
-              className="block py-1 text-foreground-secondary hover:text-apple-blue aria-[current=true]:text-apple-blue aria-[current=true]:font-semibold"
+              className={`toc-link ${activeId === node.id ? 'active' : ''}`}
             >
               {node.text}
             </a>
             {node.children.length > 0 ? (
-              <ul className="mt-1 ml-3 pl-3 border-l border-border/60 space-y-1">
+              <ul className="toc-sublist">
                 {node.children.map(ch => (
-                  <li key={ch.id}>
+                  <li key={ch.id} className="toc-item">
                     <a
                       href={`#${ch.id}`}
                       onClick={handleJump(ch.id)}
                       aria-current={activeId === ch.id ? "true" : undefined}
-                      className="block py-0.5 text-foreground-tertiary hover:text-apple-blue aria-[current=true]:text-apple-blue"
+                      className={`toc-link ${activeId === ch.id ? 'active' : ''}`}
                     >
                       {ch.text}
                     </a>
@@ -219,7 +219,7 @@ export default function ArticleToc({ headings, offsetTop = 96 }: ArticleTocProps
             className="absolute bottom-0 left-0 right-0 bg-surface-elevated/90 backdrop-blur-md border-t border-border/80 rounded-t-xl p-4 max-h-[70vh] overflow-auto focus:outline-none"
           >
             <div className="flex items-center justify-between mb-2">
-              <p className="text-sm font-semibold text-foreground">On this page</p>
+              <h2 className="toc-title">On this page</h2>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
@@ -229,25 +229,25 @@ export default function ArticleToc({ headings, offsetTop = 96 }: ArticleTocProps
                 Close
               </button>
             </div>
-            <ul className="space-y-2 text-sm">
+            <ul className="toc-list">
               {tree.map((node, i) => (
-                <li key={node.id}>
+                <li key={node.id} className="toc-item">
                   <a
                     ref={i === 0 ? firstLinkRef : undefined}
                     href={`#${node.id}`}
                     onClick={handleJump(node.id)}
-                    className="block py-1 text-foreground-secondary hover:text-apple-blue"
+                    className={`toc-link ${activeId === node.id ? 'active' : ''}`}
                   >
                     {node.text}
                   </a>
                   {node.children.length > 0 ? (
-                    <ul className="mt-1 ml-3 pl-3 border-l border-border/60 space-y-1">
+                    <ul className="toc-sublist">
                       {node.children.map(ch => (
-                        <li key={ch.id}>
+                        <li key={ch.id} className="toc-item">
                           <a
                             href={`#${ch.id}`}
                             onClick={handleJump(ch.id)}
-                            className="block py-0.5 text-foreground-tertiary hover:text-apple-blue"
+                            className={`toc-link ${activeId === ch.id ? 'active' : ''}`}
                           >
                             {ch.text}
                           </a>

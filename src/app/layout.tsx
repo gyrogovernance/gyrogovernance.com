@@ -159,8 +159,6 @@ export default function RootLayout({
             .dark .blob-2 { background-color: #9B8AFF; }
             .dark .blob-3 { background-color: #7DE5FF; }
             .nav-link { min-height: 44px; min-width: 44px; }
-            .p-8 { padding: 1.5rem; }
-            @media (max-width: 768px) { .p-8 { padding: 1rem; } }
             @font-face { font-family: 'Nunito'; font-display: swap; }
           `
         }} />
@@ -288,6 +286,13 @@ export default function RootLayout({
                   >
                     Articles
                   </Link>
+                  <Link
+                    href="/docs"
+                    className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none"
+                    aria-label="Documentation"
+                  >
+                    Docs
+                  </Link>
                 </nav>
                 
                 <ThemeToggle />
@@ -323,31 +328,35 @@ export default function RootLayout({
               {/* Main Menu Navigation */}
               <nav className="mt-6" role="navigation" aria-label="Footer navigation">
                 <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm">
-                  <Link href="/" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Home
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                  <Link href="/about" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/about" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     About Gyro Governance
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                  <Link href="/articles" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/articles" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Articles
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                  <Link href="/github" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/docs" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                    Docs
+                  </Link>
+                  <span className="text-foreground-tertiary flex items-center px-1">•</span>
+                  <Link href="/github" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     GitHub
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                  <Link href="/glossary" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/glossary" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Glossary
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                  <Link href="/privacy-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/privacy-policy" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Privacy Policy
                   </Link>
                   <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                  <Link href="/cookie-policy" className="nav-link text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
+                  <Link href="/cookie-policy" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">
                     Cookie Policy
                   </Link>
                 </div>
