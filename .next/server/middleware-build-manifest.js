@@ -5,7 +5,12 @@ globalThis.__BUILD_MANIFEST = {
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [],
-  "rootMainFiles": [],
+  "rootMainFiles": [
+    "static/chunks/webpack.js",
+    "static/css/vendors.css",
+    "static/chunks/vendors.js",
+    "static/chunks/main-app.js"
+  ],
   "rootMainFilesTree": {},
   "pages": {
     "/_app": []
