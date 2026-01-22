@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
     reactRemoveProperties: process.env.NODE_ENV === 'production' ? { properties: ['^data-testid$'] } : false,
   },
-  // GitHub Pages deployment - try without base path first
+  // GitHub Pages deployment - custom domain doesn't need basePath
   // basePath: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com' : '',
   // assetPrefix: process.env.NODE_ENV === 'production' ? '/gyrogovernance.com/' : '',
 };

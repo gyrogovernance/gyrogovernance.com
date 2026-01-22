@@ -86,8 +86,8 @@ export default async function DocPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Table of Contents - renders via portal to right sidebar */}
-      <DocsToc htmlContent={htmlContent} />
+      {/* Table of Contents - disabled for static export compatibility */}
+      {/* <DocsToc htmlContent={htmlContent} /> */}
 
       {/* Main Content */}
       <div>
