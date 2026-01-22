@@ -4,6 +4,17 @@
 .next/
 out/
 
+# Additional exclusions for AI tools
+.git/
+.github/
+.vscode/
+.cursor/
+public/assets/
+public/data/
+playwright-report/
+test-results/
+package-lock.json
+
 ############################
 # Dependencies
 ############################
