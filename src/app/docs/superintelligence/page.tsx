@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { promises as fs } from 'fs';
+import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
@@ -16,7 +16,7 @@ async function getDocs(repo: string): Promise<DocsItem[]> {
   const docs: DocsItem[] = [];
 
   try {
-    const entries = await fs.readdir(docsDir, { withFileTypes: true });
+    const entries = fs.readdirSync(docsDir, { withFileTypes: true });
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.md')) {
@@ -24,7 +24,7 @@ async function getDocs(repo: string): Promise<DocsItem[]> {
         const filePath = path.join(docsDir, entry.name);
 
         try {
-          const content = await fs.readFile(filePath, 'utf-8');
+          const content = fs.readFileSync(filePath, 'utf-8');
           const { data } = matter(content);
 
           docs.push({
@@ -65,7 +65,7 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
   const docs: DocsItem[] = [];
 
   try {
-    const entries = await fs.readdir(dirPath, { withFileTypes: true });
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.md')) {
@@ -73,7 +73,7 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
         const filePath = path.join(dirPath, entry.name);
 
         try {
-          const content = await fs.readFile(filePath, 'utf-8');
+          const content = fs.readFileSync(filePath, 'utf-8');
           const { data } = matter(content);
 
           docs.push({

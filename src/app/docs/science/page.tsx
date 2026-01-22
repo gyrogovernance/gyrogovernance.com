@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { promises as fs } from 'fs';
+import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
@@ -15,16 +15,21 @@ async function getDocs(repo: string): Promise<DocsItem[]> {
   const docsDir = path.join(process.cwd(), 'src', 'content', 'docs', repo);
   const docs: DocsItem[] = [];
 
+  // In development, Next.js might change the working directory
+  // Let's try to find the correct path
+  const altDocsDir = path.join(__dirname, '..', '..', '..', 'content', 'docs', repo);
+  const finalDocsDir = fs.existsSync(docsDir) ? docsDir : altDocsDir;
+
   try {
-    const entries = await fs.readdir(docsDir, { withFileTypes: true });
+    const entries = fs.readdirSync(finalDocsDir, { withFileTypes: true });
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.md')) {
         const slug = entry.name.replace('.md', '');
-        const filePath = path.join(docsDir, entry.name);
+        const filePath = path.join(finalDocsDir, entry.name);
 
         try {
-          const content = await fs.readFile(filePath, 'utf-8');
+          const content = fs.readFileSync(filePath, 'utf-8');
           const { data } = matter(content);
 
           docs.push({
@@ -36,7 +41,7 @@ async function getDocs(repo: string): Promise<DocsItem[]> {
           console.warn(`Could not read ${filePath}:`, error);
         }
       } else if (entry.isDirectory()) {
-        const subDirPath = path.join(docsDir, entry.name);
+        const subDirPath = path.join(finalDocsDir, entry.name);
         const subDocs = await scanDocsDirectory(subDirPath);
 
         if (subDocs.length > 0) {
@@ -65,7 +70,7 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
   const docs: DocsItem[] = [];
 
   try {
-    const entries = await fs.readdir(dirPath, { withFileTypes: true });
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
 
     for (const entry of entries) {
       if (entry.isFile() && entry.name.endsWith('.md')) {
@@ -73,7 +78,7 @@ async function scanDocsDirectory(dirPath: string): Promise<DocsItem[]> {
         const filePath = path.join(dirPath, entry.name);
 
         try {
-          const content = await fs.readFile(filePath, 'utf-8');
+          const content = fs.readFileSync(filePath, 'utf-8');
           const { data } = matter(content);
 
           docs.push({
