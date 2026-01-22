@@ -16,24 +16,6 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['@heroicons/react'],
     esmExternals: true,
   },
-  // Memory management for Windows
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.optimization.splitChunks = {
-        ...config.optimization.splitChunks,
-        cacheGroups: {
-          ...(config.optimization.splitChunks.cacheGroups || {}),
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
-            priority: 10,
-          },
-        },
-      };
-    }
-    return config;
-  },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
     reactRemoveProperties: process.env.NODE_ENV === 'production' ? { properties: ['^data-testid$'] } : false,

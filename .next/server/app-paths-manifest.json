@@ -1,5 +1,21 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/articles/rss.xml/route": "app/articles/rss.xml/route.js",
+  "/news-sitemap.xml/route": "app/news-sitemap.xml/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/about/page": "app/about/page.js",
   "/page": "app/page.js",
+  "/articles/page": "app/articles/page.js",
+  "/cookie-policy/page": "app/cookie-policy/page.js",
+  "/articles/[slug]/page": "app/articles/[slug]/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/glossary/page": "app/glossary/page.js",
+  "/github/page": "app/github/page.js",
   "/docs/page": "app/docs/page.js",
-  "/docs/tools/page": "app/docs/tools/page.js"
+  "/docs/science/page": "app/docs/science/page.js",
+  "/docs/superintelligence/page": "app/docs/superintelligence/page.js",
+  "/docs/tools/page": "app/docs/tools/page.js",
+  "/docs/science/[...slug]/page": "app/docs/science/[...slug]/page.js",
+  "/docs/tools/[...slug]/page": "app/docs/tools/[...slug]/page.js",
+  "/docs/superintelligence/[...slug]/page": "app/docs/superintelligence/[...slug]/page.js"
 }

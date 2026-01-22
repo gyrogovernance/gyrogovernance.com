@@ -3,6 +3,7 @@
 /**
  * Clean build script for Windows compatibility
  * Handles file locking issues with .next directory
+ * Also cleans up unwanted .txt files from static export
  */
 
 import fs from 'fs';
@@ -13,6 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 const nextDir = path.join(projectRoot, '.next');
+const outDir = path.join(projectRoot, 'out');
 
 async function removeDirectory(dirPath) {
   if (!fs.existsSync(dirPath)) {
@@ -71,9 +73,56 @@ async function removeDirectory(dirPath) {
   }
 }
 
+function removeUnwantedTxtFiles(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    return;
+  }
+
+  try {
+    const items = fs.readdirSync(dirPath, { withFileTypes: true });
+
+    for (const item of items) {
+      const itemPath = path.join(dirPath, item.name);
+
+      if (item.isDirectory()) {
+        // Recursively clean subdirectories
+        removeUnwantedTxtFiles(itemPath);
+      } else if (item.isFile() && item.name.endsWith('.txt')) {
+        // Only keep legitimate .txt files like llms.txt, robots.txt, etc.
+        const allowedTxtFiles = ['llms.txt', 'robots.txt', 'web2agent.txt'];
+        if (!allowedTxtFiles.includes(item.name)) {
+          try {
+            fs.unlinkSync(itemPath);
+            console.log(`🗑️  Removed ${itemPath}`);
+          } catch (error) {
+            console.warn(`⚠️  Could not remove ${itemPath}: ${error.message}`);
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.warn(`⚠️  Could not clean directory ${dirPath}: ${error.message}`);
+  }
+}
+
 async function cleanBuild() {
+  const isPostBuild = process.argv.includes('--post-build');
+
+  if (isPostBuild) {
+    // Post-build cleanup: only clean .txt files from out directory
+    console.log('🧹 Post-build cleanup: removing unwanted .txt files...');
+    if (fs.existsSync(outDir)) {
+      removeUnwantedTxtFiles(outDir);
+      console.log('✅ Cleaned unwanted .txt files from build output');
+    } else {
+      console.log('⚠️  No out directory found');
+    }
+    return;
+  }
+
+  // Pre-build cleanup
   console.log('🧹 Cleaning build artifacts...');
-  
+
   if (fs.existsSync(nextDir)) {
     const removed = await removeDirectory(nextDir);
     if (removed) {
@@ -84,10 +133,16 @@ async function cleanBuild() {
   } else {
     console.log('✓ No .next directory to clean');
   }
+
+  // Clean up unwanted .txt files from previous builds
+  if (fs.existsSync(outDir)) {
+    console.log('🧹 Cleaning unwanted .txt files from previous build...');
+    removeUnwantedTxtFiles(outDir);
+    console.log('✅ Cleaned unwanted .txt files');
+  }
 }
 
 cleanBuild().catch(error => {
   console.error('❌ Clean failed:', error.message);
   process.exit(1);
 });
-

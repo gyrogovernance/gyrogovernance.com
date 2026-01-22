@@ -9,6 +9,7 @@
     "clean-processes": "node scripts/clean-processes.mjs",
     "prebuild": "node scripts/clean-build.mjs && node scripts/generate-articles-data.mjs",
     "build": "next build",
+    "postbuild": "node scripts/clean-build.mjs --post-build",
     "build:turbo": "next build --turbopack",
     "export": "npm run prebuild && next build",
     "start": "next start",
