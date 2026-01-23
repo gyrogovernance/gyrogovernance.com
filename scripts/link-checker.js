@@ -9,7 +9,8 @@ const TIMEOUT = 10000; // 10 seconds
 
 // Find the active Next.js dev server
 async function findDevServer() {
-  const commonPorts = [3000, 3001, 3002, 3003, 5173, 8000, 8080, 4000, 5000];
+  // Scan from highest to lowest to prefer most recently started servers
+  const commonPorts = [5000, 8080, 8000, 5173, 4000, 3009, 3008, 3007, 3006, 3005, 3004, 3003, 3002, 3001, 3000];
 
   for (const port of commonPorts) {
     try {
