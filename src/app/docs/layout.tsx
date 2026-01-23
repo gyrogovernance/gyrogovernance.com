@@ -15,7 +15,7 @@ export default function DocsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 xl:grid-cols-[256px_minmax(0,1fr)_280px] gap-8 xl:gap-8">
           {/* Left Sidebar - Navigation */}
