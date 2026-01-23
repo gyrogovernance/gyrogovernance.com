@@ -168,7 +168,6 @@ export default async function DocsSidebar({ currentRepo }: DocsSidebarProps) {
   return (
     <DocsSidebarClient
       repositories={repositories}
-      currentRepo={currentRepo}
     />
   );
 }

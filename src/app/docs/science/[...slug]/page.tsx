@@ -6,7 +6,7 @@ import Link from 'next/link';
 import DocsToc from '@/components/DocsToc';
 
 interface PageProps {
-  params: Promise<{ slug: string[] }>;
+  params: { slug: string[] };
 }
 
 export function generateStaticParams() {
@@ -62,7 +62,7 @@ export function generateStaticParams() {
 }
 
 export default async function DocPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const slugPath = slug.join('/');
 
   // Read the markdown file
@@ -130,7 +130,7 @@ export default async function DocPage({ params }: PageProps) {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const slugPath = slug.join('/');
 
   try {
