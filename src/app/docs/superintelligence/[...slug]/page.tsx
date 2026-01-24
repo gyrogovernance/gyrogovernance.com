@@ -63,6 +63,9 @@ export function generateStaticParams() {
 
 export default async function DocPage({ params }: PageProps) {
   const { slug } = params;
+  if (!slug || !Array.isArray(slug) || slug.length === 0) {
+    notFound();
+  }
   const slugPath = slug.join('/');
 
   // Read the markdown file
@@ -100,7 +103,7 @@ export default async function DocPage({ params }: PageProps) {
           <Link href="/docs/superintelligence" className="text-apple-blue hover:text-apple-purple transition-colors">
             Superintelligence
           </Link>
-          {slug.length > 1 && (
+          {slug && slug.length > 1 && (
             <>
               <span className="mx-2 text-foreground-secondary">/</span>
               <span className="text-foreground-secondary">{slug.slice(0, -1).join(' / ')}</span>
@@ -131,6 +134,12 @@ export default async function DocPage({ params }: PageProps) {
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = params;
+  if (!slug || !Array.isArray(slug) || slug.length === 0) {
+    return {
+      title: 'Superintelligence Documentation',
+      description: 'Superintelligence documentation',
+    };
+  }
   const slugPath = slug.join('/');
 
   try {
