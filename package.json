@@ -23,10 +23,11 @@
     "@heroicons/react": "^2.2.0",
     "gray-matter": "^4.0.3",
     "marked": "^16.3.0",
-    "next": "15.5.7",
+    "next": "^16.1.4",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "recharts": "^3.5.1"
+    "recharts": "^3.5.1",
+    "styled-jsx": "^5.1.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

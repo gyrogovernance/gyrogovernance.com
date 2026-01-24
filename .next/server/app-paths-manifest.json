@@ -1,8 +1,0 @@
-{
-  "/docs/page": "app/docs/page.js",
-  "/docs/science/[...slug]/page": "app/docs/science/[...slug]/page.js",
-  "/docs/science/page": "app/docs/science/page.js",
-  "/docs/superintelligence/page": "app/docs/superintelligence/page.js",
-  "/docs/tools/page": "app/docs/tools/page.js",
-  "/page": "app/page.js"
-}
