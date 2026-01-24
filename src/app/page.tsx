@@ -24,7 +24,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-6 text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-          Advancing Global AI Governance through Frontier Risk Management, Alignment Infrastructure, and Epistemic Solutions.
+          Advancing Global AI Governance through Frontier Risk Management, Alignment Infrastructure, and Mathematical Physics.
         </p>
       </div>
 
