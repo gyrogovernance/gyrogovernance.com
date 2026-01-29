@@ -6,7 +6,7 @@ import Link from 'next/link';
 import DocsToc from '@/components/DocsToc';
 
 interface PageProps {
-  params: { slug: string[] };
+  params: Promise<{ slug: string[] }>;
 }
 
 export function generateStaticParams() {
@@ -62,7 +62,7 @@ export function generateStaticParams() {
 }
 
 export default async function DocPage({ params }: PageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   if (!slug || !Array.isArray(slug) || slug.length === 0) {
     notFound();
   }
@@ -133,7 +133,7 @@ export default async function DocPage({ params }: PageProps) {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   if (!slug || !Array.isArray(slug) || slug.length === 0) {
     return {
       title: 'Superintelligence Documentation',

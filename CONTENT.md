@@ -57,7 +57,7 @@ AI Governance Lead with over two decades of multidisciplinary experience spannin
 
 **Gyro Governance**
 
-Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations
+Advancing Global AI Governance through Frontier Risk Management, Alignment Infrastructure, and Mathematical Physics.
 
 ### ✋ The Human Mark (THM): AI Safety Framework
 
@@ -88,7 +88,7 @@ All AI safety failures map to these patterns.
 
 Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.
 
-### 🔍 AI Inspector Browser Extension
+### 🤖 AI Inspector Browser Extension
 
 Transform AI outputs for Evaluation, Interpretability, Governance.
 
@@ -337,3 +337,352 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - Newsletter: https://www.linkedin.com/newsletters/the-walk-7115036597602967553/
 - Founder's Website: https://korompilias.github.io/
 - Contact: basilkorompilias@gmail.com
+
+---
+
+## GitHub Page Content
+
+### Metadata
+
+**Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
+
+**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
+
+### Keywords
+
+#### Core AI Safety - High Priority
+- AI safety evaluation
+- AI alignment metrics
+- frontier AI safety
+- AI risk assessment
+- independent AI testing
+- catastrophic AI risks
+- AI safety frameworks
+- AI governance
+
+#### New Projects & Initiatives
+- The Human Mark
+- AI Inspector
+- Alignment Infrastructure Routing
+- Moments Economy
+- Gyroscopic Global Governance
+- collective superintelligence
+- transformative AI
+- post-AGI governance
+
+#### Technical Evaluation
+- AI safety benchmarks
+- dangerous capability evaluations
+- AI pathology detection
+- AI model evaluation
+- AI safety testing
+- AI red teaming
+- external AI evaluation
+- third-party AI evaluation
+- browser extension
+- AI interpretability
+
+#### Risk Categories
+- AI misalignment
+- deceptive AI alignment
+- AI scheming
+- AI hallucination detection
+- AI sycophancy
+- jailbreak testing
+- control evaluations
+- alignment detection
+
+#### Technical Terms
+- LLM alignment
+- large language models safety
+- foundation models
+- frontier models
+- AI agents safety
+- mathematical physics AI
+- gyroscopic dynamics
+
+#### Research Areas
+- mechanistic interpretability
+- AI alignment theory
+- scalable oversight
+- AI control mechanisms
+- superintelligence alignment
+- AGI safety
+- AI control problem
+- AI value alignment
+
+#### Governance Solutions
+- responsible AI development
+- AI accountability
+- AI transparency metrics
+- AI safety governance
+- multi-domain governance
+- human-AI alignment
+- workforce capacity
+- unconditional income
+
+#### Specific Solutions
+- AI diagnostics framework
+- AI alignment protocol
+- structural AI alignment
+- quantitative AI safety metrics
+- governance sandbox
+- economic modeling
+- monetary system
+- physical capacity
+
+#### Pathologies
+- AI goal drift
+- AI semantic drift
+- AI contextual degradation
+- superficial AI optimization
+- displacement risks
+- governance traceability
+
+#### Open Source
+- open source AI safety
+- reproducible AI safety testing
+- democratic AI evaluation
+- GitHub AI safety projects
+- AI safety research
+- AI governance tools
+
+### Open Graph Metadata
+
+**Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
+
+**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.
+
+**Type**: website
+
+**URL**: https://gyrogovernance.com/github
+
+### Twitter Metadata
+
+**Card**: summary_large_image
+
+**Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools
+
+**Description**: Production-ready AI safety frameworks, alignment protocols, and governance tools from Gyro Governance
+
+### Repositories Data
+
+#### The Human Mark (THM)
+- **Name**: The Human Mark (THM)
+- **Description**: AI Safety Framework - Formal classification system mapping all AI safety failures to four structural displacement risks for jailbreak testing, control evaluations, alignment detection, and regulatory compliance
+- **URL**: https://github.com/gyrogovernance/tools
+- **Application Category**: DeveloperApplication
+- **Keywords**: AI Safety Framework, Jailbreak Testing, Control Evaluations, Alignment Detection, Regulatory Compliance
+
+#### AI Inspector Browser Extension
+- **Name**: AI Inspector Browser Extension
+- **Description**: Browser extension for AI output evaluation, interpretability, and governance with gadgets for rapid testing, policy auditing, AI infection sanitization, and content enhancement
+- **URL**: https://github.com/gyrogovernance/apps
+- **Application Category**: BrowserExtension
+- **Keywords**: AI Evaluation, Browser Extension, AI Interpretability, Policy Auditing, Content Enhancement
+
+#### GyroDiagnostics
+- **Name**: GyroDiagnostics
+- **Description**: AI Safety Evaluation Framework - Production-ready evaluation suite for frontier model testing, dangerous capability assessments, and AI pathology detection
+- **URL**: https://github.com/gyrogovernance/diagnostics
+- **Application Category**: DeveloperApplication
+- **Keywords**: AI Safety Evaluation, Frontier AI Safety, AI Diagnostics, AI Risk Assessment, Pathology Detection
+
+#### Alignment Infrastructure Routing (AIR)
+- **Name**: Alignment Infrastructure Routing (AIR)
+- **Description**: Collective Superintelligence Architecture - Coordination infrastructure that amplifies human potential alongside AI through workforce capacity routing, funding, and safety tasks
+- **URL**: https://github.com/gyrogovernance/superintelligence
+- **Application Category**: DeveloperApplication
+- **Keywords**: Collective Superintelligence, AI Coordination, Workforce Capacity, Safety Tasks, Human-AI Integration
+
+#### Moments Economy
+- **Name**: Moments Economy
+- **Description**: Monetary system grounded in physical capacity for mitigating transformative AI risks, providing unconditional high income and complete governance records
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md
+- **Application Category**: DeveloperApplication
+- **Keywords**: Transformative AI, Monetary System, Physical Capacity, Governance Records, Unconditional Income
+
+#### Gyroscopic Global Governance (GGG)
+- **Name**: Gyroscopic Global Governance (GGG)
+- **Description**: Post-AGI Multi-domain Governance Sandbox - Models human-AI systems alignment across Economy, Employment, Education, and Ecology showing robust convergence to stable equilibrium
+- **URL**: https://github.com/gyrogovernance/tools
+- **Application Category**: DeveloperApplication
+- **Keywords**: Post-AGI Governance, Multi-domain Governance, Human-AI Alignment, Economic Modeling, Governance Simulation
+
+#### Gyroscope Protocol
+- **Name**: Gyroscope Protocol
+- **Description**: LLM Alignment Protocol - Making AI 30-50% smarter and safer through structured reasoning and scalable oversight mechanisms
+- **URL**: https://github.com/gyrogovernance/tools
+- **Application Category**: DeveloperApplication
+- **Keywords**: LLM Alignment, AI Safety Protocol, AI Governance, Scalable Oversight, AI Accountability
+
+#### Gyroscopic Alignment Research Lab
+- **Name**: Gyroscopic Alignment Research Lab
+- **Description**: Mathematical Physics Foundations - Research into gyroscopic dynamics and structural AI alignment from first principles
+- **URL**: https://github.com/gyrogovernance/science
+- **Application Category**: DeveloperApplication
+- **Keywords**: AI Alignment Theory, Mathematical Physics, Mechanistic Interpretability, Safety Science
+
+#### Gyroscopic Alignment Models Lab
+- **Name**: Gyroscopic Alignment Models Lab
+- **Description**: AGI Safety Architecture - Superintelligence alignment architectures and safe AI system design
+- **URL**: https://github.com/gyrogovernance/superintelligence
+- **Application Category**: DeveloperApplication
+- **Keywords**: AGI Safety, Superintelligence Alignment, AI Architecture, AI Control Problem
+
+### Research Project Schema
+
+**Name**: Gyro Governance AI Safety Research
+
+**Description**: Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, collective superintelligence architecture, and post-AGI governance modeling.
+
+**URL**: https://gyrogovernance.com/github
+
+**Keywords**:
+- AI Safety Research
+- AI Alignment
+- AI Governance
+- Frontier AI Safety
+- Mathematical Physics
+- AGI Safety
+- Superintelligence
+- The Human Mark
+- AI Inspector
+- Collective Superintelligence
+- Post-AGI Governance
+- Transformative AI
+- Moments Economy
+- Gyroscopic Global Governance
+
+### Page Content
+
+#### Header
+
+**Title**: Open Source Research & Tools
+
+**Description**: Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing. The Human Mark classification system, AI Inspector browser extension, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development. All repositories are open source and actively maintained.
+
+#### Repository Descriptions
+
+##### The Human Mark (THM)
+- **Emoji**: ✋
+- **Name**: The Human Mark (THM)
+- **Title**: AI Safety Framework
+- **Description**: Formal classification system mapping all AI safety failures to four structural displacement risks: Governance Traceability (GTD), Information Variety (IVD), Inference Accountability (IAD), and Intelligence Integrity (IID). Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include jailbreak testing, control evaluations, alignment detection, research funding, and regulatory compliance.
+- **URL**: https://github.com/gyrogovernance/tools
+- **Tags**: AI Safety Framework, Jailbreak Testing, Control Evaluations, Alignment Detection, Regulatory Compliance
+
+##### AI Inspector Browser Extension
+- **Emoji**: 🔍
+- **Name**: AI Inspector Browser Extension
+- **Title**: AI Output Evaluation & Governance
+- **Description**: Transform AI outputs for evaluation, interpretability, and governance. Features gadgets for rapid testing, policy auditing, AI infection sanitization, content enhancement, and THM meta-evaluation. Includes evaluation suite with quality index, superintelligence index, alignment rate, and 20+ metrics. Local-first storage works with ChatGPT, Claude, Gemini - no API keys required.
+- **URL**: https://github.com/gyrogovernance/apps
+- **Tags**: Browser Extension, AI Evaluation, Policy Auditing, Content Enhancement, Local-first
+
+##### GyroDiagnostics
+- **Emoji**: 🌟
+- **Name**: GyroDiagnostics
+- **Title**: AI Safety Evaluation Framework
+- **Description**: Independent AI testing framework for frontier model safety evaluation and dangerous capability assessments. Detects AI pathologies including deceptive alignment, hallucination, sycophancy, goal drift, and semantic instability through mathematical physics-informed diagnostics. Enables third-party AI evaluation and AI risk assessment with 5 targeted challenges and 20-metric quantitative analysis. First framework to operationalize superintelligence measurement from axiomatic principles.
+- **URL**: https://github.com/gyrogovernance/diagnostics
+- **Tags**: AI Safety Evaluation, Pathology Detection, Risk Assessment, Frontier Models
+
+##### Alignment Infrastructure Routing (AIR)
+- **Emoji**: 🍃
+- **Name**: Alignment Infrastructure Routing (AIR)
+- **Title**: Collective Superintelligence Architecture
+- **Description**: Coordination infrastructure that amplifies human potential alongside AI. Routes workforce capacity, funding, and safety tasks into a unified, verifiable history. Connects three critical groups to build collective superintelligence: labs for scaling without chaos, funders for portfolio risk visibility, and everyone for paid, verifiable contribution units. Treats AI as part of collective network ensuring human agency scales with systems.
+- **URL**: https://github.com/gyrogovernance/superintelligence
+- **Tags**: Collective Superintelligence, Workforce Routing, Safety Tasks, Human-AI Integration, Coordination Infrastructure
+
+##### Moments Economy
+- **Emoji**: 💰
+- **Name**: Moments Economy
+- **Title**: Mitigating Risks of Transformative AI (TAI)
+- **Description**: Monetary system grounded in physical capacity rather than debt, using caesium-133 atomic standard for quantifiable physical states. Provides unconditional high income (UHI) as baseline for everyone, with four tiers up to 60× UHI for higher responsibility roles. Supports both monetary distribution and complete governance records including scientific research provenance, AI model auditing, supply chain traceability, and personal consent tracking. Adversarial manipulation operationally impossible.
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md
+- **Tags**: Transformative AI, Physical Capacity, Unconditional Income, Governance Records, Monetary System
+
+##### Gyroscopic Global Governance (GGG)
+- **Emoji**: 🌐
+- **Name**: Gyroscopic Global Governance (GGG)
+- **Title**: Post-AGI Multi-domain Governance Sandbox
+- **Description**: Models how human-AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies. Demonstrates that poverty resolves through coherent surplus distribution, unemployment becomes alignment work rather than residual labour, miseducation shifts toward epistemic literacy, and ecological degradation appears as upstream displacement, not external constraint.
+- **URL**: https://github.com/gyrogovernance/tools
+- **Tags**: Post-AGI Governance, Multi-domain Modeling, Economic Equilibrium, Alignment Strategies, Governance Simulation
+
+##### Gyroscope Protocol
+- **Emoji**: ⚙️
+- **Name**: Gyroscope Protocol
+- **Title**: LLM Alignment Protocol
+- **Description**: AI alignment protocol implementing scalable oversight and AI control mechanisms for responsible AI development. Delivers proven AI safety improvements: +32.9% quality gains for ChatGPT, +37.7% for Claude Sonnet. Enhances structural reasoning, AI accountability, AI traceability, and behavioral integrity without model retraining. Addresses AI misalignment through systematic approach to AI governance and transparency metrics. Works with any foundation model including large language models and AI agents.
+- **URL**: https://github.com/gyrogovernance/tools
+- **Tags**: LLM Alignment, AI Control, Scalable Oversight, Safety Protocol
+
+##### Gyroscopic Alignment Research Lab
+- **Emoji**: ⚡
+- **Name**: Gyroscopic Alignment Research Lab
+- **Title**: Mathematical Physics Foundations
+- **Description**: AI alignment theory grounded in mathematical physics and gyroscopic dynamics for structural AI alignment research. Explores mechanistic interpretability, AI value alignment, and quantitative AI safety metrics from first principles. Provides theoretical foundations for understanding AI control problem, catastrophic AI risks, and alignment challenges in complex intelligent systems. Advances AI safety science through physics-informed approaches to stability, coherence, and temporal dynamics.
+- **URL**: https://github.com/gyrogovernance/science
+- **Tags**: AI Alignment Theory, Mathematical Physics, Mechanistic Interpretability, Safety Science
+
+##### Gyroscopic Alignment Models Lab
+- **Emoji**: ❤️
+- **Name**: Gyroscopic Alignment Models Lab
+- **Title**: Artificial Superintelligence Architecture (ASI/AGI)
+- **Description**: AGI safety research and superintelligence alignment architectures addressing fundamental challenges in artificial general intelligence development. Explores AI control problem solutions, AI value alignment frameworks, and mechanisms for safe superintelligence by design. Addresses coherence degradation, AI autonomy risks, and behavioral alignment in advanced AI systems. Develops AI governance tools and safety frameworks that prioritize AI transparency, human values, and responsible AI development for transformative AI.
+- **URL**: https://github.com/gyrogovernance/superintelligence
+- **Tags**: AGI Safety, Superintelligence Alignment, AI Control Problem, Advanced AI
+
+#### Bottom CTA
+
+**Title**: Contribute to AI Safety Research
+
+**Description**: All repositories welcome contributions. Whether you're a researcher, developer, or AI safety enthusiast, your insights and code contributions help advance the field of AI alignment and governance.
+
+#### SEO-optimized content section
+
+##### AI Safety Frameworks, Alignment Tools & Governance Solutions
+
+Gyro Governance develops comprehensive **open source AI safety frameworks**, **AI alignment protocols**, and **AI governance tools** for frontier model testing, dangerous capability assessments, and AI pathology detection. Our repositories include **The Human Mark** classification system, **AI Inspector browser extension**, **GyroDiagnostics evaluation suite**, **Alignment Infrastructure Routing** for collective superintelligence, **Moments Economy** for transformative AI mitigation, and **Gyroscopic Global Governance** sandbox. Production-ready solutions for **AI risk assessment**, **AI safety evaluation**, and **responsible AI development**.
+
+##### The Human Mark (THM) - AI Safety Classification System
+
+**The Human Mark** provides a formal classification system mapping all **AI safety failures** to four structural displacement risks: **Governance Traceability (GTD)**, **Information Variety (IVD)**, **Inference Accountability (IAD)**, and **Intelligence Integrity (IID)**. Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include **jailbreak testing**, **control evaluations**, **alignment detection**, **research funding**, and **regulatory compliance**.
+
+##### AI Inspector Browser Extension
+
+Transform AI outputs for **evaluation**, **interpretability**, and **governance**. Features **gadgets** for rapid testing, policy auditing, AI infection sanitization, content enhancement, and THM meta-evaluation. Includes comprehensive **evaluation suite** with quality index, superintelligence index, alignment rate, and 20+ metrics. **Local-first storage** works with ChatGPT, Claude, Gemini - no API keys required.
+
+##### AI Safety Evaluation & Risk Assessment
+
+- **AI Pathology Detection**: Identify **AI hallucination**, **AI sycophancy**, **deceptive AI alignment**, **AI goal drift**, and **AI semantic drift** through structural diagnostics
+- **Dangerous Capability Evaluations**: Assess **AI scheming**, **AI autonomy risks**, and potential for catastrophic failure in **large language models (LLMs)** and **frontier models**
+- **AI Alignment Metrics**: Measure **structural AI alignment**, behavioral integrity, and **AI transparency** using physics-informed quantitative methods
+- **Third-Party AI Evaluation**: **External AI evaluation** framework enabling **democratic AI evaluation** and **independent AI testing** by researchers worldwide
+
+##### Collective Superintelligence & Transformative AI
+
+**Alignment Infrastructure Routing (AIR)** provides coordination infrastructure that amplifies human potential alongside AI, routing **workforce capacity**, **funding**, and **safety tasks** into unified, verifiable history. The **Moments Economy** implements a monetary system grounded in **physical capacity** rather than debt, using caesium-133 atomic standard for **unconditional high income (UHI)** and complete **governance records**. Together these address **transformative AI risks** while preserving **human authority** and **accountability**.
+
+##### Post-AGI Multi-domain Governance
+
+**Gyroscopic Global Governance (GGG)** models how human-AI systems align across **Economy**, **Employment**, **Education**, and **Ecology**, demonstrating robust convergence to stable equilibrium under seven coordination strategies. Shows that **poverty resolves** through coherent surplus distribution, **unemployment becomes alignment work**, **miseducation shifts toward epistemic literacy**, and **ecological degradation** appears as upstream displacement.
+
+##### LLM Alignment & AI Control Mechanisms
+
+Our **AI alignment protocol** addresses core challenges in **AI safety governance** by providing **AI control mechanisms** that improve **AI accountability**, traceability, and **responsible AI development**. The Gyroscope protocol demonstrates proven improvements in **AI model evaluation** across leading **foundation models**, enhancing **scalable oversight** and reducing risks of **superficial AI optimization**.
+
+##### AGI Safety & Superintelligence Research
+
+Our research addresses **AGI safety** and **superintelligence alignment** through **mechanistic interpretability**, **AI safety theory**, and gyroscopic physics foundations. We explore **AI control problem** solutions, **AI value alignment** frameworks, and architectures for safe **artificial general intelligence (AGI)** development that prioritize **AI safety governance** and human values.
+
+##### For AI Safety Researchers & Developers
+
+These repositories serve **AI safety researchers**, **AI evaluators**, machine learning engineers, and organizations implementing **AI risk assessment** and **AI safety testing**. Each project provides comprehensive documentation, **AI safety benchmarks**, and practical implementation guides for **AI red teaming**, **AI safety audits**, and continuous **AI safety monitoring**. Contributions welcome from researchers working on **AI alignment research**, **AI safety frameworks**, and **AI governance** solutions.
+
+##### Open Source AI Safety Commitment
+
+All tools support **AI safety transparency**, **AI whistleblower protection**, and **AI public benefit** goals. Our **open-weight AI models** approach enables **AI safety culture** through **AI independent review**, **AI third-party oversight**, and community-driven **AI safety best practices**. Mathematical physics foundations ensure **structural coherence**, **gyroscopic stability**, and **quantitative rigor** in all implementations.

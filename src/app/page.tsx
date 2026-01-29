@@ -27,7 +27,7 @@ export default function Home() {
           Advancing Global AI Governance through Frontier Risk Management, Alignment Infrastructure, and Mathematical Physics.
         </p>
       </div>
-
+      
       {/* Stats */}
       <div className="mb-16 animate-fade-in-up [animation-delay:200ms]">
         <div className="flex flex-col items-center">
