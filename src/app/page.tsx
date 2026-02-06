@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           
           <p className="text-xs sm:text-sm text-foreground-tertiary text-center mb-6">
-            Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory.{" "}
+            Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory. Validated on real-world adversarial prompts and on 90+ million sparse autoencoder features across sixteen language models, confirming that assistant personas and safety refusals dominate self-referential representations while non-agentive process descriptions are not used for model self-description.{" "}
             <a 
               href="https://github.com/gyrogovernance/tools" 
               className="underline hover:text-foreground-secondary transition-colors duration-200"
