@@ -42,7 +42,7 @@ These angles satisfy the unique gyrotriangle closure condition δ = π - (α + �
 
 Planck's thermal SZ data shows exact anti-alignment (cosine similarity = -1.000) in P₂/C₄ coefficient space. This signature indicates observation through alignment, where harmonics must invert to achieve coherence between recursive memory and present observation.
 
-This phenomenon parallels phase conjugation in optical holography, where the reference beam must have conjugate phase to reconstruct the original wavefront. Similarly, in quantum mechanics, the complex conjugate of the wave function appears in probability calculations, ensuring real-valued observables emerge from complex amplitudes.
+This phenomenon parallels phase conjugation in optical holography, where the reference beam must have conjugate phase to reconstruct the Direct wavefront. Similarly, in quantum mechanics, the complex conjugate of the wave function appears in probability calculations, ensuring real-valued observables emerge from complex amplitudes.
 
 ### 2. Recursive Ladder at ℓ = 37
 

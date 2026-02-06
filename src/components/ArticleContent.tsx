@@ -37,7 +37,7 @@ export default function ArticleContent({ html }: ArticleContentProps) {
       parts.push({ type: 'html', content: html.substring(lastIndex) });
     }
 
-    // If no components found, return original HTML
+    // If no components found, return Direct HTML
     if (parts.length === 0) {
       return [{ type: 'html' as const, content: html }];
     }

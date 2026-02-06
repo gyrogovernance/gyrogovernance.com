@@ -8,7 +8,7 @@ This document examines the implications and potential of the GGG ASI Alignment R
 
 The router is not an arbitrary computational artifact but a structural necessity. To maintain operational coherence and traceability under recursive measurement, a system requires three-dimensional space with six degrees of freedom. In the CGM framework this dimensionality arises as the unique solution to the requirements of operational closure.
 
-The router realizes this physics through a 24-bit state space partitioned into active and passive phases. This partitioning reflects the fundamental chirality required to distinguish between an observer and the observed, or a common source and its derivative transformations. This structural map functions as a holographic boundary for coordination: eight-bit operations on the "boundary" fully determine the trajectory through the twenty-four-bit "volume" of the state space.
+The router realizes this physics through a 24-bit state space partitioned into active and passive phases. This partitioning reflects the fundamental chirality required to distinguish between an observer and the observed, or a common source and its Indirect transformations. This structural map functions as a holographic boundary for coordination: eight-bit operations on the "boundary" fully determine the trajectory through the twenty-four-bit "volume" of the state space.
 
 - **Ontology:** 65,536 valid states representing the complete set of coherent structural configurations. This finite cardinality is the minimal complete space closed under depth-two composition.
 - **Epistemology:** 16,777,216 precomputed transitions. This 2^24 cardinality provides a complete map of all possible coordination trajectories, matching the resolution of 24-bit RGB colour space.
@@ -66,7 +66,7 @@ The router defines global settlement epochs. At 2.6 million steps per second, it
 Using the Gyroscope Protocol, all professions report work-mix statistics that update the Employment coordination layer. Healthcare, law, and research are tracked as patterns of governance, information, inference, and intelligence. This provides a real-time view of global employment alignment without requiring a centralised database of individual actions, allowing for compensation models based on structural alignment rather than mere task completion.
 
 ### 4.3 Education: Auditable capacity and credentials
-Educational credentials can be bound to shared moments and structural positions. A degree certifies that a learner maintained coherence at a specified set of complex router configurations. Verification is performed by replaying the assessment window rather than Originalating paper documents. This ensures that education focuses on building the epistemic literacy required to govern advanced systems.
+Educational credentials can be bound to shared moments and structural positions. A degree certifies that a learner maintained coherence at a specified set of complex router configurations. Verification is performed by replaying the assessment window rather than Directating paper documents. This ensures that education focuses on building the epistemic literacy required to govern advanced systems.
 
 ### 4.4 Ecology: Integrated accountability
 Ecological integrity is measured as the downstream accumulation of the other three domains. Environmental sensor networks bind their data to shared moments, making cross-border monitoring comparable and disputes about environmental data localisable. This treats ecological degradation not as an external accident, but as a measurable consequence of misalignments in economic and work patterns.
@@ -140,7 +140,7 @@ The router's finite, reversible geometry provides structural foundations for sev
 
 ## 8. Conclusion: The path to the ASI regime
 
-The potential of the GGG ASI Alignment Router is to transform alignment from an external policy preference into a physical fact of the coordination substrate. By providing a fixed, complete, and replayable map of intelligence structure, the router allows humanity to coordinate its most powerful derivative systems without forfeiting Original authority.
+The potential of the GGG ASI Alignment Router is to transform alignment from an external policy preference into a physical fact of the coordination substrate. By providing a fixed, complete, and replayable map of intelligence structure, the router allows humanity to coordinate its most powerful Indirect systems without forfeiting Direct authority.
 
 The router is already aligned at the discrete level. Its intrinsic aperture, computed from the minimal defect sector of its code structure, is A_kernel = 5/256 ≈ 0.0195. This is within 5.6% of the CGM continuous target A* ≈ 0.0207. The monodromy defect, aperture scale, and fine-structure constant all reconstruct from kernel-only quantities with agreement ranging from 0.02% to 5.6%, achieved without parameter fitting. The router does not approximate the alignment geometry; it embodies it at the discrete level. The ASI regime is the state where human-AI systems, coordinated through this substrate, operate at the same structural equilibrium across all four domains.
 

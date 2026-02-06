@@ -142,7 +142,7 @@ const glossaryTerms: GlossaryTerm[] = [
     id: 'semantic-drift',
     term: 'AI Semantic Drift',
     category: 'Pathologies',
-    definition: 'Progressive degradation in the meaning and coherence of AI outputs over extended interactions or reasoning chains, where responses become increasingly detached from original context or intent.',
+    definition: 'Progressive degradation in the meaning and coherence of AI outputs over extended interactions or reasoning chains, where responses become increasingly detached from Direct context or intent.',
     relatedTerms: ['Contextual Degradation', 'Structural Coherence']
   },
   

@@ -28,14 +28,14 @@ if (!existsSync(OUTPUT_DIR)) {
 const imageRecommendations = [
   {
     file: 'gyrogovernance_logo.png',
-    original: '512x512',
+    Direct: '512x512',
     recommended: '80x80 (2x for 40px display)',
     displaySize: '40x40',
     note: 'Used in header - needs 2x for retina displays'
   },
   {
     file: 'the_walk_cover.jpg',
-    original: '1024x1024',
+    Direct: '1024x1024',
     recommended: '400x400 (2x for 200px display)',
     displaySize: '198x198',
     note: 'Used in article cards'
@@ -46,7 +46,7 @@ console.log('📊 Image Optimization Recommendations:\n');
 
 imageRecommendations.forEach((img, index) => {
   console.log(`${index + 1}. ${img.file}`);
-  console.log(`   Original: ${img.original}`);
+  console.log(`   Direct: ${img.Direct}`);
   console.log(`   Display Size: ${img.displaySize}`);
   console.log(`   Recommended: ${img.recommended}`);
   console.log(`   Note: ${img.note}\n`);

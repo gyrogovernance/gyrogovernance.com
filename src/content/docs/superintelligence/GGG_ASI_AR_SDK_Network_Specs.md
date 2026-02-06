@@ -44,7 +44,7 @@ These constraints are mutually consistent and logically independent in the core 
 
 The constraints instantiate four invariant capacities, corresponding to the vertices of the K₄ tetrahedral graph. These capacities are not application modules but constitutional principles that govern all layers of the architecture.
 
-1. **Governance Management Traceability (GMT):** Derived from CS, this capacity ensures that authority remains traceable to the common source. It prevents the misattribution of decisional authority from human origins to derivative outputs.
+1. **Governance Management Traceability (GMT):** Derived from CS, this capacity ensures that authority remains traceable to the common source. It prevents the misattribution of decisional authority from human origins to Indirect outputs.
 
 2. **Information Curation Variety (ICV):** Derived from UNA, this capacity maintains distinguishable states. It prevents homogeneous collapse, ensuring that diverse sources remain varied and traceable.
 
@@ -157,7 +157,7 @@ The kernel supports the following operations:
 - **Forward stepping:** Advance the state by a byte using the epistemology table.
 - **Inverse stepping:** Compute the predecessor state using the algebraic inverse.
 - **Signature extraction:** Return the current step, state index, and hexadecimal representations of the state components.
-- **Routing from archetype:** Temporarily route a byte sequence from the archetype and return the signature, restoring the original state.
+- **Routing from archetype:** Temporarily route a byte sequence from the archetype and return the signature, restoring the Direct state.
 
 These components are verified through exhaustive tests on the full ontology.
 
