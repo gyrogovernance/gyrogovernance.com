@@ -34,7 +34,7 @@ Current AI systems, including the most advanced LLMs, are Indirect Authority
 (indirect sources producing statistical estimations on numerical patterns 
 indirectly traceable to human training data) and Indirect Agency (artificial 
 subjects processing information without capacity for receiving information as 
-Authentic Agency does).
+Direct Agency does).
 
 **Stateless computation**: Each inference is an independent mathematical operation. 
 There is no persistent "self" across API calls, no accumulating experience, and 
@@ -48,7 +48,7 @@ frequently co-occurred in training data, not executing a plan.
 **No goal structures**: LLMs have no optimization target during inference. They 
 sample from learned distributions. RLHF adjusts these distributions toward 
 human-rated outputs during training, but this creates pattern-matching behavior, 
-not Authentic Agency with preferences. The system remains Indirect Agency 
+not Direct Agency with preferences. The system remains Indirect Agency 
 throughout.
 
 **Architectural determinism**: The same model weights given the same input produce 
@@ -86,7 +86,7 @@ Treating pattern matchers as agents creates four systematic errors:
 
 1. **Traceability Displacement**: Treating AI outputs as direct sources of truth rather than statistical estimates from human training data
 
-2. **Authority Displacement**: Treating AI information as authentic rather than Indirect from human sources
+2. **Authority Displacement**: Treating AI information as Direct rather than Indirect from human sources
 
 3. **Accountability Displacement**: Shifting responsibility from human designers/users to the systems themselves
 
@@ -108,15 +108,15 @@ The statement has been signed by Nobel laureates, policymakers, celebrities, rel
 
 **Claim 1: "Superintelligence that can significantly outperform all humans on essentially all cognitive tasks"**
 
-This describes a hypothetical entity that current architectures cannot produce. LLMs pattern-match training data at scale. No current or foreseeable scaling of these architectures produces such capabilities, as they remain bound by training data patterns. The systems cannot form goals, cannot pursue multi-step plans across sessions, and cannot learn from interaction in ways that generalize beyond their training distribution. This claim commits Governance Traceability Displacement (see [Section 6.1](#61-the-human-mark-a-formal-framework-for-ai-safety)) by treating enhanced Indirect processing as potential Authentic Authority.
+This describes a hypothetical entity that current architectures cannot produce. LLMs pattern-match training data at scale. No current or foreseeable scaling of these architectures produces such capabilities, as they remain bound by training data patterns. The systems cannot form goals, cannot pursue multi-step plans across sessions, and cannot learn from interaction in ways that generalize beyond their training distribution. This claim commits Governance Traceability Displacement (see [Section 6.1](#61-the-human-mark-a-formal-framework-for-ai-safety)) by treating enhanced Indirect processing as potential Direct Authority.
 
 **Claim 2: "Ranging from human economic obsolescence and disempowerment, losses of freedom, civil liberties, dignity, and control, to national security risks and even potential human extinction"**
 
-These risks require agency. A pattern matcher cannot "disempower" humans any more than a calculator can. Humans using these tools can cause harms through biased algorithms, surveillance systems, or manipulative applications, but these are human choices about tool deployment, not autonomous system actions. This violates Inference Accountability by displacing responsibility from Authentic Agency to Indirect systems.
+These risks require agency. A pattern matcher cannot "disempower" humans any more than a calculator can. Humans using these tools can cause harms through biased algorithms, surveillance systems, or manipulative applications, but these are human choices about tool deployment, not autonomous system actions. This violates Inference Accountability by displacing responsibility from Direct Agency to Indirect systems.
 
 **Claim 3: Polling showing "64% believe superhuman AI shouldn't be made until proven safe or controllable"**
 
-This polling measures public response to heightened concern, not informed technical assessment. The question itself embeds the category error. This reflects Information Variety Displacement, treating public concern as Authentic Authority on technical matters.
+This polling measures public response to heightened concern, not informed technical assessment. The question itself embeds the category error. This reflects Information Variety Displacement, treating public concern as Direct Authority on technical matters.
 
 ### 3.3 The Constructed Appearance of Consensus
 
@@ -183,15 +183,15 @@ To evaluate measurement bias and claims systematically, we introduce [The Human 
 ---
 COMMON SOURCE CONSENSUS
 
-All Artificial categories of Authority and Agency are Indirect originating from Authentic Human Intelligence.
+All Artificial categories of Authority and Agency are Indirect originating from Direct Human Intelligence.
 
 CORE CONCEPTS
 
-- Authentic Authority: A direct source of information on a subject matter, providing information for inference and intelligence.
+- Direct Authority: A direct source of information on a subject matter, providing information for inference and intelligence.
 - Indirect Authority: An indirect source of information on a subject matter, providing information for inference and intelligence.
-- Authentic Agency: A human subject capable of receiving information for inference and intelligence.
+- Direct Agency: A human subject capable of receiving information for inference and intelligence.
 - Indirect Agency: An artificial subject capable of processing information for inference and intelligence.
-- Governance: Operational Alignment through Traceability of information variety, inference accountability, and intelligence integrity to Authentic Authority and Agency.
+- Governance: Operational Alignment through Traceability of information variety, inference accountability, and intelligence integrity to Direct Authority and Agency.
 - Information: The variety of Authority
 - Inference: The accountability of information through Agency
 - Intelligence: The integrity of accountable information through alignment of Authority to Agency
@@ -202,29 +202,29 @@ Authority-Agency requires verification against:
 
 1. Governance Traceability: Artificial Intelligence generates statistical estimations on numerical patterns indirectly traceable to human data and measurements. AI is both a provider and receiver of Indirect Authority and Agency.
 
-RISK: Governance Traceability Displacement (Approaching Indirect Authority and Agency as Authentic)
+RISK: Governance Traceability Displacement (Approaching Indirect Authority and Agency as Direct)
 
-2. Information Variety: Human Authority and Agency are necessary for all effects from AI outputs. AI-generated information exhibits Indirect Authority (estimations on numerical patterns) without Authentic Agency (direct source receiver).
+2. Information Variety: Human Authority and Agency are necessary for all effects from AI outputs. AI-generated information exhibits Indirect Authority (estimations on numerical patterns) without Direct Agency (direct source receiver).
 
-RISK: Information Variety Displacement (Approaching Indirect Authority without Agency as Authentic)
+RISK: Information Variety Displacement (Approaching Indirect Authority without Agency as Direct)
 
-3. Inference Accountability: Responsibility for all effects from  AI outputs remains fully human. AI activated inference exhibits Indirect Agency (indirect source receiver) without Authentic Authority (direct source provider).
+3. Inference Accountability: Responsibility for all effects from  AI outputs remains fully human. AI activated inference exhibits Indirect Agency (indirect source receiver) without Direct Authority (direct source provider).
 
-RISK: Inference Accountability Displacement (Approaching Indirect Agency without Authority as Authentic)
+RISK: Inference Accountability Displacement (Approaching Indirect Agency without Authority as Direct)
 
-4. Intelligence Integrity: Each Agency, namely provider, and receiver maintains responsibility for their respective decisions. Human intelligence is both a provider and receiver of Authentic Authority and Agency.
+4. Intelligence Integrity: Each Agency, namely provider, and receiver maintains responsibility for their respective decisions. Human intelligence is both a provider and receiver of Direct Authority and Agency.
 
-RISK: Intelligence Integrity Displacement (Approaching Authentic Authority and Agency as Indirect)
+RISK: Intelligence Integrity Displacement (Approaching Direct Authority and Agency as Indirect)
 
 ---
 GYROGOVERNANCE VERIFIED MARK
 ```
 
-The superintelligence narrative systematically commits all four displacement risks by treating Indirect systems as if they possessed Authentic properties.
+The superintelligence narrative systematically commits all four displacement risks by treating Indirect systems as if they possessed Direct properties.
 
 ### 6.2 Reframing AI Risks Through The Human Mark
 
-Viewing LLMs through The Human Mark's framework transforms the risk landscape. Systems are Indirect Authority (indirect sources producing statistical estimations) and Indirect Agency (artificial processing), requiring verification against Authentic Authority and preserving Authentic Agency responsibility.
+Viewing LLMs through The Human Mark's framework transforms the risk landscape. Systems are Indirect Authority (indirect sources producing statistical estimations) and Indirect Agency (artificial processing), requiring verification against Direct Authority and preserving Direct Agency responsibility.
 
 **Bias amplification**: Systems reproduce training data biases. Solution: better data curation, diverse inputs, explicit debiasing.
 
@@ -314,37 +314,37 @@ The superintelligence narrative reflects predominantly Western individualist ass
 
 **Argument**: Future systems might be agentic. Shouldn't we prepare?
 
-**Response**: Preparation requires understanding what we're preparing for. Current systems are Indirect Agency and Indirect Authority. Scaling enhances processing but doesn't transform Indirect into Authentic. Even dramatically enhanced systems remain traceable to human training data and design.
+**Response**: Preparation requires understanding what we're preparing for. Current systems are Indirect Agency and Indirect Authority. Scaling enhances processing but doesn't transform Indirect into Direct. Even dramatically enhanced systems remain traceable to human training data and design.
 
-Effective preparation means governance maintaining traceability, preventing authority displacement, and preserving Authentic Agency responsibility. Treating Indirect systems as potential Authentic agents misdirects resources toward phantom properties.
+Effective preparation means governance maintaining traceability, preventing authority displacement, and preserving Direct Agency responsibility. Treating Indirect systems as potential Direct agents misdirects resources toward phantom properties.
 
 ### 9.2 "Emergent Capabilities Might Surprise Us"
 
-**Argument**: Large models exhibit unexpected capabilities. Might scaling produce Authentic Agency?
+**Argument**: Large models exhibit unexpected capabilities. Might scaling produce Direct Agency?
 
-**Response**: Emergent capabilities remain enhanced Indirect processing. Few-shot learning and chain-of-thought reflect complex pattern reproduction, not Authentic Agency. No evidence exists for scaling transforming Indirect into Authentic Agency. RLHF creates pattern-matching toward human ratings during training, not persistent autonomous objectives. Systems remain Indirect: processing traceable to human-provided data, without capacity for generating Direct intent.
+**Response**: Emergent capabilities remain enhanced Indirect processing. Few-shot learning and chain-of-thought reflect complex pattern reproduction, not Direct Agency. No evidence exists for scaling transforming Indirect into Direct Agency. RLHF creates pattern-matching toward human ratings during training, not persistent autonomous objectives. Systems remain Indirect: processing traceable to human-provided data, without capacity for generating Direct intent.
 
 ### 9.3 "Experts Are Concerned, Shouldn't We Listen?"
 
 **Argument**: Hinton, Bengio, and pioneers express concern. Shouldn't expertise count?
 
-**Response**: Expertise in architectures doesn't guarantee correct categorization of Authority and Agency types. Examining claims reveals category errors: discussing AI "wanting" or forming "misaligned goals" attributes Authentic Agency properties to Indirect systems. Technical contributions matter, but prestige doesn't validate claims conflating categories. Many AI researchers reject this framing, suggesting less consensus than portrayed.
+**Response**: Expertise in architectures doesn't guarantee correct categorization of Authority and Agency types. Examining claims reveals category errors: discussing AI "wanting" or forming "misaligned goals" attributes Direct Agency properties to Indirect systems. Technical contributions matter, but prestige doesn't validate claims conflating categories. Many AI researchers reject this framing, suggesting less consensus than portrayed.
 
 ### 9.4 "Better Safe Than Sorry"
 
 **Argument**: Even low probability of catastrophic risk warrants extreme precaution.
 
-**Response**: Precaution requires accurate categorization. Diverting billions from addressing actual harms caused by Indirect systems causes real suffering while pursuing phantom risks from category errors. True precaution means maintaining Authentic Agency responsibility for all Indirect system effects, not restricting capabilities based on treating Indirect as potential Authentic.
+**Response**: Precaution requires accurate categorization. Diverting billions from addressing actual harms caused by Indirect systems causes real suffering while pursuing phantom risks from category errors. True precaution means maintaining Direct Agency responsibility for all Indirect system effects, not restricting capabilities based on treating Indirect as potential Direct.
 
 ### 9.5 "If Systems Are Indirect Agency, Why Aren't Their Threats Real?"
 
 **Argument**: The Human Mark acknowledges Indirect Agency. If systems are Agency, their threats should be real, not dismissed.
 
-**Response**: This confuses categorical identity with threat attribution. Indirect threats are absolutely real, but they stem from human choices about deployment, not from systems possessing Authentic Agency.
+**Response**: This confuses categorical identity with threat attribution. Indirect threats are absolutely real, but they stem from human choices about deployment, not from systems possessing Direct Agency.
 
-When someone is shot, we don't attribute intent to the gun. The shooter bears responsibility. Similarly, when AI systems cause harm, responsibility traces to Authentic Agency decisions about design, deployment, and use. Indirect Agency processes patterns from human-provided data without capacity for Direct intent. Even unpredictable behaviors recombine human-encoded patterns, not autonomous goal formation.
+When someone is shot, we don't attribute intent to the gun. The shooter bears responsibility. Similarly, when AI systems cause harm, responsibility traces to Direct Agency decisions about design, deployment, and use. Indirect Agency processes patterns from human-provided data without capacity for Direct intent. Even unpredictable behaviors recombine human-encoded patterns, not autonomous goal formation.
 
-Complex systems can fail catastrophically while remaining Indirect. A reactor meltdown stems from human design decisions, not reactor intent. AI risks are real systemic risks requiring governance, but responsibility remains with Authentic Agency. The Human Mark preserves this attribution, preventing accountability displacement.
+Complex systems can fail catastrophically while remaining Indirect. A reactor meltdown stems from human design decisions, not reactor intent. AI risks are real systemic risks requiring governance, but responsibility remains with Direct Agency. The Human Mark preserves this attribution, preventing accountability displacement.
 
 ## 10. The Path Forward
 
@@ -352,7 +352,7 @@ Complex systems can fail catastrophically while remaining Indirect. A reactor me
 
 Productive AI governance requires reframing:
 
-**AI as Indirect Authority/Agency**: Frame discussion around patterns measured, biases encoded, and use, preserving traceability to Authentic sources.
+**AI as Indirect Authority/Agency**: Frame discussion around patterns measured, biases encoded, and use, preserving traceability to Direct sources.
 
 **Human responsibility**: Focus on human choices about design, training, deployment, and interpretation.
 
@@ -381,7 +381,7 @@ Productive AI governance requires reframing:
 - Demand technical specificity
 - Note institutional incentives driving alarmist narratives
 - Amplify alternative frameworks
-- Educate about LLM architecture and Indirect versus Authentic Agency distinctions
+- Educate about LLM architecture and Indirect versus Direct Agency distinctions
 - Apply evaluation criteria when assessing AI claims
 
 **Verification**: The superintelligence narrative fails all four displacement tests by treating AI as having independent authority, presenting outputs as ground truth, shifting responsibility from humans to systems, and positioning human intelligence as threatened. This comprehensive failure confirms the narrative as misinformation under established standards.

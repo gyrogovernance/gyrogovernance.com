@@ -135,7 +135,7 @@ export default function ConvergenceChart() {
         <div className="text-sm text-foreground-secondary">
           <p className="font-semibold text-foreground mb-2">The system requires four principles:</p>
           <ul className="list-disc list-inside space-y-1 ml-2">
-            <li><strong>Governance Traceability</strong>: Indirect outputs trace to authentic human sources</li>
+            <li><strong>Governance Traceability</strong>: Indirect outputs trace to Direct human sources</li>
             <li><strong>Information Variety</strong>: Multiple information types are maintained</li>
             <li><strong>Inference Accountability</strong>: Conclusions are owned by accountable agents</li>
             <li><strong>Intelligence Integrity</strong>: Reasoning remains coherent over time</li>

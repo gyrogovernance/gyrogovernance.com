@@ -214,7 +214,7 @@ The defining feature of the Moments Economy is deterministic verification.
 3. **Execute:** Route the sequence through a conforming Router instance starting from the archetype.
 4. **Compare:** Check if the resulting Router state matches the published Seal.
 
-**Outcome.** A match confirms that the data is authentic and the circulation totals are correct. A mismatch indicates that the Header or at least one Grant has been altered.
+**Outcome.** A match confirms that the data is Direct and the circulation totals are correct. A mismatch indicates that the Header or at least one Grant has been altered.
 
 **Requirement.** Public programmes MUST publish byte logs, event logs, Shells, and Archives at defined intervals to enable this verification.
 
