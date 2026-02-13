@@ -9,7 +9,6 @@ out/
 .github/
 .vscode/
 .cursor/
-public/assets/
 public/data/
 playwright-report/
 test-results/
