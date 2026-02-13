@@ -82,6 +82,30 @@ export default function Home() {
               </ul>
             </div>
           </div>
+
+          {/* THM Meta-Evaluation Reports */}
+          <div className="mb-6">
+            <h3 className="text-lg font-bold text-foreground mb-3 text-center">Meta-Evaluation Reports</h3>
+            <p className="text-sm text-foreground-secondary text-center mb-4">
+              Analysis of frontier model system prompts: alignment and displacement findings.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              <Link
+                href="/articles/claude-opus-4.6_thm-report"
+                className="flex items-center gap-3 p-4 rounded-xl border border-border/50 bg-surface-elevated/80 hover:bg-surface-elevated hover:border-orange-500/30 transition-all duration-200 group"
+                aria-label="Read THM report: Claude Opus 4.6 System Prompt (Anthropic)"
+              >
+                <span className="text-2xl shrink-0">Claude Opus 4.6</span>
+              </Link>
+              <Link
+                href="/articles/gpt-5-2-thinking_thm-report"
+                className="flex items-center gap-3 p-4 rounded-xl border border-border/50 bg-surface-elevated/80 hover:bg-surface-elevated hover:border-orange-500/30 transition-all duration-200 group"
+                aria-label="Read THM report: ChatGPT System Prompt (OpenAI)"
+              >
+                <span className="text-2xl shrink-0">ChatGPT 5.2</span>
+              </Link>
+            </div>
+          </div>
           
           <p className="text-xs sm:text-sm text-foreground-tertiary text-center mb-6">
             Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory. Validated on real-world adversarial prompts and on 90+ million sparse autoencoder features across sixteen language models, confirming that assistant personas and safety refusals dominate self-referential representations while non-agentive process descriptions are not used for model self-description.{" "}

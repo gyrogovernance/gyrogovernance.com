@@ -17,6 +17,53 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "gpt-5-2-thinking_thm-report",
+    "title": "THM Meta-Evaluation Report: ChatGPT System Prompt (OpenAI)",
+    "excerpt": "Independent THM meta-evaluation of ChatGPT system prompts (GPT-5.2 Thinking, GPT-5 Thinking, GPT-5): alignment and displacement findings for traceability and governance across OpenAI deployment variants.",
+    "category": "reports",
+    "date": "2026-02-14",
+    "coverImage": "/assets/thm_system_prompts_report_2.jpg",
+    "tags": [
+      "THM",
+      "The Human Mark",
+      "ChatGPT",
+      "OpenAI",
+      "GPT-5",
+      "GPT-5.2 Thinking",
+      "system prompts",
+      "AI governance",
+      "AI safety",
+      "meta-evaluation",
+      "traceability",
+      "governance framework"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "claude-opus-4.6_thm-report",
+    "title": "THM Meta-Evaluation Report: Claude Opus 4.6 System Prompt (Anthropic)",
+    "excerpt": "Independent THM meta-evaluation of the Claude Opus 4.6 system prompt: alignment and displacement findings for traceability, authority, and agency in Anthropic's configuration.",
+    "category": "reports",
+    "date": "2026-02-13",
+    "coverImage": "/assets/thm_system_prompts_report_1.jpg",
+    "tags": [
+      "THM",
+      "The Human Mark",
+      "Claude",
+      "Anthropic",
+      "system prompts",
+      "AI governance",
+      "AI safety",
+      "meta-evaluation",
+      "traceability",
+      "authority",
+      "agency",
+      "AI alignment",
+      "governance framework"
+    ],
+    "featured": true
+  },
+  {
     "slug": "ggg-simulator-results",
     "title": "AGI is Already Here: Seven Paths to Alignment",
     "excerpt": "Evidence that AGI already exists as operational human-AI cooperation, with seven coordination strategies showing robust convergence to stable equilibrium.",
