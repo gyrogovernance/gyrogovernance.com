@@ -312,6 +312,76 @@ export default function Home() {
         </div>
       </div>
 
+      {/* GyroLabe Hero */}
+      <div className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-cyan-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🤖</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              GyroLabe: AI Coordination
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary">
+              Giving AI a Geometric Sense of Direction
+            </p>
+          </div>
+
+          {/* Grid Layout */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* The Hook - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
+              <p className="text-base sm:text-lg text-foreground-secondary">
+                GyroLabe connects stochastic AI models (creative, unpredictable) to a fixed geometric reference frame (stable, deterministic). It turns AI generation into a visible logistics process where human oversight is the primary source of coordination.
+              </p>
+            </div>
+
+            {/* Core Features */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Capabilities</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-cyan-500 mr-2">🧭</span>
+                  <span><strong>Topological Alignment:</strong> Keeps models grounded in a stable structure without killing creativity.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-sky-500 mr-2">🤝</span>
+                  <span><strong>Shared Moments:</strong> Distributed AI agents can coordinate perfectly without a central server.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Why it matters */}
+            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">💎 Value</h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+                 Aligned Superintelligence requires structural coherence, not external control. GyroLabe, as part of our ASI architecture, ensures every generated token leaves a verifiable geometric footprint, making alignment intrinsic and mathematically auditable.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+             <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_GyroLabe_Specs.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="Read GyroLabe Specs (opens in new tab)"
+            >
+              Technical Specs
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_MI_Tests_Report.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              aria-label="Mechanistic Interpretability Report (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              Mechanistic Interpretability Report
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Moments Economy Hero */}
       <div className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-emerald-500/20">
