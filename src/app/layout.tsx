@@ -234,7 +234,7 @@ export default function RootLayout({
           <div className="blob blob-3"></div>
           
           {/* SVG Overlay - Centered and full width on desktop */}
-          <SVGOverlay className="absolute inset-0 h-full pointer-events-none left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0" />
+          <SVGOverlay className="svg-overlay absolute inset-0 h-full pointer-events-none left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0" />
         </div>
                   <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
           <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">

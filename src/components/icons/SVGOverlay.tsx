@@ -7,13 +7,13 @@ interface SVGOverlayProps {
 export default function SVGOverlay({ className = "absolute inset-0 h-full pointer-events-none" }: SVGOverlayProps) {
   return (
     <svg 
-      className={`${className} !opacity-60 dark:!opacity-20`}
+    className={className}
       xmlns="http://www.w3.org/2000/svg" 
       version="1.1" 
       xmlnsXlink="http://www.w3.org/1999/xlink" 
-      width="1440" 
-      height="560" 
-      preserveAspectRatio="none" 
+      width="100%" 
+      height="100%" 
+      preserveAspectRatio="xMidYMid slice" 
       viewBox="0 0 1440 560"
     >
       <defs>

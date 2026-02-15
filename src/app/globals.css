@@ -215,51 +215,86 @@
       6. BLOB BACKGROUND
       ========================================================================== */
    
-   .blob-container {
-     position: fixed;
-     inset: 0;
-     overflow: hidden;
-     z-index: 0;
-     pointer-events: none;
-   }
-   
-   .blob {
-     position: absolute;
-     border-radius: 50%;
-     filter: blur(120px);
-     opacity: 0.9;
-   }
-   
-   .blob-1 {
-     width: 600px;
-     height: 600px;
-     background-color: #ffa9c1;
-     top: -200px;
-     right: -200px;
-   }
-   
-   .blob-2 {
-     width: 700px;
-     height: 700px;
-     background-color: #a596f9;
-     bottom: -300px;
-     left: -300px;
-   }
-   
-   .blob-3 {
-     width: 400px;
-     height: 400px;
-     background-color: #61DBFB;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-   }
-   
-   .dark .blob-1 { background-color: #FF8FA3; }
-   .dark .blob-2 { background-color: #9B8AFF; }
-   .dark .blob-3 { background-color: #7DE5FF; }
-   
-   /* ==========================================================================
+      .blob-container {
+        position: fixed;
+        inset: 0;
+        overflow: hidden;
+        z-index: 0;
+        pointer-events: none;
+      }
+      
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(120px);
+      }
+      
+      
+      /* Mobile sizes (default) */
+      .blob-1 {
+        width: 280px;
+        height: 280px;
+        background-color: #ffa9d0;
+        top: -120px;
+        right: -120px;
+      }
+      
+      .blob-2 {
+        width: 320px;
+        height: 320px;
+        background-color: #a596f9;
+        bottom: -160px;
+        left: -160px;
+      }
+      
+      .blob-3 {
+        width: 240px;
+        height: 240px;
+        background-color: #61cafb;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      /* Desktop sizes */
+      @media (min-width: 640px) {
+        .blob-1 {
+          width: 600px;
+          height: 600px;
+          top: -200px;
+          right: -200px;
+        }
+      
+        .blob-2 {
+          width: 700px;
+          height: 700px;
+          bottom: -300px;
+          left: -300px;
+        }
+      
+        .blob-3 {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      
+      .dark .blob-1 { background-color: #ff56e8a5; }
+      .dark .blob-2 { background-color: #5940eaaa; }
+      .dark .blob-3 { background-color: #48c5ffe5; }
+      
+    /* ==========================================================================
+      17. SVG OVERLAY
+      ========================================================================== */
+
+      .svg-overlay {
+        opacity: 0.6;
+      }
+      
+      .dark .svg-overlay {
+        opacity: 0.2;
+      }
+      
+      /* ==========================================================================
       7. SURFACE & COMPONENT SYSTEM
       ========================================================================== */
    
