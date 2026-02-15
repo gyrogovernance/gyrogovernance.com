@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import Script from 'next/script';
+import SVGOverlay from "@/components/icons/SVGOverlay";
 import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeToggle from '@/components/ThemeToggle';
 import StructuredData from '@/components/StructuredData';
@@ -239,6 +240,9 @@ export default function RootLayout({
           <div className="blob blob-1"></div>
           <div className="blob blob-2"></div>
           <div className="blob blob-3"></div>
+          
+          {/* SVG Overlay */}
+          <SVGOverlay className="absolute inset-0 w-full h-full opacity-12" />
         </div>
                   <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
           <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">

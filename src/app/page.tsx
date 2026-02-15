@@ -1029,39 +1029,39 @@ export default function Home() {
                     Newsletter
                   </h3>
                   <div className="grid md:grid-cols-1 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0">
-                          <Image 
-                            src="/assets/the_walk_cover.jpg" 
-                            alt="The Walk Newsletter Cover" 
-                            width={200}
-                            height={200}
-                            className="h-50 w-auto object-cover rounded-lg shadow-md border border-border/50"
-                            sizes="200px"
-                            loading="lazy"
-                          />
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-foreground mb-3">
-                            The Walk
-                          </h4>
-                          <p className="text-foreground-secondary mb-4">
-                            A Journey of Self-Discovery, Augmented Intelligence (AI) & Good Governance. One step at a time. Weekly insights on AI adoption, alignment, and ethical governance.
-                          </p>
-                          <a
-                            href="https://www.linkedin.com/newsletters/the-walk-7115036597602967553/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                            aria-label="Read The Walk newsletter on LinkedIn (opens in new tab)"
-                          >
-                            <LinkedInIcon className="w-4 h-4 mr-2" />
-                            LinkedIn Newsletter
-                          </a>
-                        </div>
-                      </div>
-                    </article>
+<article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+        <div className="flex-shrink-0">
+          <Image 
+            src="/assets/the_walk_cover.jpg" 
+            alt="The Walk Newsletter Cover" 
+            width={200}
+            height={200}
+            className="w-32 sm:w-40 md:w-48 h-auto object-cover rounded-lg shadow-md border border-border/50"
+            sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex-1 text-center sm:text-left">
+          <h4 className="text-xl font-semibold text-foreground mb-3">
+            The Walk
+          </h4>
+          <p className="text-foreground-secondary mb-4">
+            A Journey of Self-Discovery, Augmented Intelligence (AI) & Good Governance. One step at a time. Weekly insights on AI adoption, alignment, and ethical governance.
+          </p>
+          <a
+            href="https://www.linkedin.com/newsletters/the-walk-7115036597602967553/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
+            aria-label="Read The Walk newsletter on LinkedIn (opens in new tab)"
+          >
+            <LinkedInIcon className="w-4 h-4 mr-2" />
+            LinkedIn Newsletter
+          </a>
+        </div>
+      </div>
+    </article>
                   </div>
                 </div>
 
@@ -1280,17 +1280,17 @@ export default function Home() {
                     </article>
 
                     <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-                      <div className="flex items-start space-x-4">
+                      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
                         <div className="flex-shrink-0">
                           <Image 
                             src="/assets/AI_Canon_Cover.jpg" 
                             alt="AI Canon Cover" 
                             width={160}
-                            height={240}
-                            className="w-40 h-60 object-cover rounded-lg shadow-md border border-border/50"
+                            height={200}
+                            className="w-28 sm:w-32 md:w-40 h-auto object-cover rounded-lg shadow-md border border-border/50"
                           />
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 text-center sm:text-left">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             AI Canon
                           </h4>
