@@ -1,11 +1,17 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import GitHubIcon from "@/components/icons/GitHubIcon";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,43 +33,28 @@ export default function MobileMenu() {
     };
   }, [isOpen]);
 
-  return (
+  const menuContent = (
     <>
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden p-2 text-foreground-secondary hover:text-apple-blue transition-colors duration-200 relative z-50"
-        aria-label="Toggle mobile menu"
-        onClick={toggleMenu}
-      >
-        {isOpen ? (
-          // Close icon
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        ) : (
-          // Menu icon
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        )}
-      </button>
-
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay with blur */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
+          className="fixed inset-0 bg-black/40 z-[100] md:hidden"
           onClick={closeMenu}
           aria-hidden="true"
+          style={{
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(8px)'
+          }}
         />
       )}
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed top-20 right-4 left-4 z-40 md:hidden transition-all duration-300 ease-in-out transform ${
+        className={`fixed top-20 right-4 left-4 z-[101] md:hidden transition-all duration-300 ease-in-out transform ${
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'
         }`}
       >
-        <div className="bg-surface-elevated/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-border/80 overflow-hidden">
+        <div className="bg-bg-elevated rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] border border-border/80 overflow-hidden">
           <nav className="flex flex-col py-4" role="navigation" aria-label="Mobile navigation">
             <Link
               href="/"
@@ -127,6 +118,30 @@ export default function MobileMenu() {
           </nav>
         </div>
       </div>
+    </>
+  );
+
+  return (
+    <>
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden text-foreground-secondary hover:text-apple-blue transition-colors duration-200 relative z-[102]"
+        aria-label="Toggle mobile menu"
+        onClick={toggleMenu}
+      >
+        {isOpen ? (
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        ) : (
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        )}
+      </button>
+
+      {/* Portal renders overlay and menu at body level */}
+      {mounted && createPortal(menuContent, document.body)}
     </>
   );
 }

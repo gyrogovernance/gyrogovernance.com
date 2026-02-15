@@ -237,12 +237,12 @@ export default function RootLayout({
           <SVGOverlay className="svg-overlay absolute inset-0 h-full pointer-events-none left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0" />
         </div>
                   <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
-          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div className="max-w-6xl mx-auto pl-4 pr-4 sm:px-8 lg:px-4">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <Link
                   href="/"
-                  className="flex items-center focus:outline-none rounded p-1 hover:opacity-80 transition-opacity duration-300"
+                  className="flex items-center focus:outline-none rounded hover:opacity-80 transition-opacity duration-300"
                   aria-label="Gyro Governance - Home"
                 >
                   <Image 
@@ -258,7 +258,7 @@ export default function RootLayout({
                   />
                 </Link>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-5">
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-1" role="navigation" aria-label="Main navigation">
                   <Link
@@ -298,7 +298,7 @@ export default function RootLayout({
                   href="https://github.com/gyrogovernance"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hidden sm:inline-flex items-center bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
+                  className="hidden sm:inline-flex items-center ml-auto mr-0 bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
                   aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
                 >
                   <GitHubIcon className="w-4 h-4 mr-2" />

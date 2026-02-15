@@ -51,13 +51,13 @@ export default function ThemeToggle() {
     <button
       onClick={cycleTheme}
       className="relative inline-flex h-8 w-8 items-center justify-center rounded-full
-                 bg-gradient-to-br from-blue-400 to-blue-500
-                 hover:from-blue-500 hover:to-blue-600
-                 dark:from-gray-600 dark:to-gray-700
-                 dark:hover:from-gray-500 dark:hover:to-gray-600
-                 transition-all duration-300 focus:outline-none focus:ring-2
-                 focus:ring-blue-300 dark:focus:ring-gray-400
-                 hover:scale-110 active:scale-95"
+           bg-gradient-to-br from-blue-400 to-blue-500
+           hover:from-blue-500 hover:to-blue-600
+           dark:bg-black/40 dark:from-transparent dark:to-transparent
+           dark:hover:bg-black/60
+           transition-all duration-300 focus:outline-none focus:ring-2
+           focus:ring-blue-300 dark:focus:ring-gray-400
+           hover:scale-110 active:scale-95"
       aria-label={`Switch to ${getThemeLabel()} mode`}
       title={`Current: ${getThemeLabel()} mode (click to cycle through light → dark → system)`}
     >
