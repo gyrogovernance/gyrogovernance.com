@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       
       {/* Stats */}
-      <div className="mb-16 animate-fade-in-up [animation-delay:200ms]">
+      <div className="mb-6 animate-fade-in-up [animation-delay:200ms]">
         <div className="flex flex-col items-center">
           <div className="flex flex-wrap justify-center gap-6 md:gap-10 py-8 px-10 rounded-3xl bg-surface-elevated/30 backdrop-blur-md border border-border/40 shadow-sm">
             
@@ -44,7 +44,7 @@ export default function Home() {
       {/* ── Quick Nav & Updates ── */}
       <div className="mb-16 animate-fade-in-up [animation-delay:300ms]">
         {/* Projects */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-3 mb-10">
           {[
             {
               emoji: "✋",
@@ -83,12 +83,6 @@ export default function Home() {
               desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment",
               href: "#diagnostics",
             },
-            {
-              emoji: "⚙️",
-              title: "Gyroscope Protocol",
-              desc: "Structured reasoning for safer LLM outputs and AI Agentic systems",
-              href: "#gyroscope",
-            },
           ].map((p) => (
             <a
               key={p.title}
@@ -100,7 +94,7 @@ export default function Home() {
                 <span className="block text-sm font-semibold text-foreground group-hover:text-apple-blue transition-colors">
                   {p.title}
                 </span>
-                <span className="block text-xs text-foreground-tertiary leading-snug mt-0.5">
+                <span className="block text-sm text-foreground-tertiary leading-snug mt-0.5">
                   {p.desc}
                 </span>
               </span>
