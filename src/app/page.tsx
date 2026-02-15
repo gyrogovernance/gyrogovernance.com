@@ -31,7 +31,7 @@ export default function Home() {
       {/* Stats */}
       <div className="mb-6 animate-fade-in-up [animation-delay:200ms]">
         <div className="flex flex-col items-center">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10 py-8 px-10 rounded-3xl bg-surface-elevated/30 backdrop-blur-md border border-border/40 shadow-sm">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 py-4 px-4 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-3xl bg-surface-elevated/30 backdrop-blur-md border border-border/40 shadow-sm">
             
             <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500" delay={0} />
             <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500" delay={200} />
@@ -187,7 +187,7 @@ export default function Home() {
       </div>
       {/* The Human Mark Hero Card - Moved to First Position */}
       <div id="thm" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-orange-500/20">
+        <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-orange-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">✋</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -309,7 +309,7 @@ export default function Home() {
             />
           </div>
           
-          <div className="p-8">
+          <div className="p-4 sm:p-6 md:p-8">
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-foreground mb-3">
                 AI Inspector Browser Extension
@@ -380,7 +380,7 @@ export default function Home() {
 
       {/* Alignment Infrastructure Routing (AIR) Hero */}
       <div id="air" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-yellow-500/20">
+        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-yellow-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🍃</div>
             <h2 className="text-3xl font-bold text-foreground mb-2">
@@ -458,7 +458,7 @@ export default function Home() {
 
         {/* GyroLabe Hero */}
         <div id="gyrolabe" className="mb-12 animate-fade-in-up">
-            <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-cyan-500/20">
+            <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-cyan-500/20">
               <div className="text-center mb-8">
                 <div className="text-6xl mb-4">🤖</div>
                 <h2 className="text-3xl font-bold text-foreground mb-2">
@@ -536,7 +536,7 @@ export default function Home() {
 
       {/* Moments Economy Hero */}
       <div id="moments" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-emerald-500/20">
+        <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-emerald-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">💰</div>
             <h2 className="text-3xl font-bold text-foreground mb-2">
@@ -629,7 +629,7 @@ export default function Home() {
 
       {/* Gyroscopic Global Governance Simulator Hero */}
       <div id="ggg" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-500/20">
+        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-blue-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌐</div>
             <h2 className="text-3xl font-bold text-foreground mb-3">
@@ -697,7 +697,7 @@ export default function Home() {
 
       {/* GyroDiagnostics Hero Card */}
       <div id="diagnostics" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-green-500/20">
+        <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-green-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌟</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -799,7 +799,7 @@ export default function Home() {
 
       {/* Gyroscope Hero Card */}
       <div id="gyroscope" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-apple-blue/20">
+        <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-apple-blue/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">⚙️</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -901,10 +901,10 @@ export default function Home() {
                   Labs
                 </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-4">
-                <div className="text-8xl">⚡</div>
+                <div className="text-5xl sm:text-6xl md:text-7xl">⚡</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -929,10 +929,10 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-4">
-                <div className="text-8xl">❤️</div>
+                <div className="text-5xl sm:text-6xl md:text-7xl">❤️</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -957,10 +957,10 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-4">
-                <div className="text-8xl">🌟</div>
+                <div className="text-5xl sm:text-6xl md:text-7xl">🌟</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -985,10 +985,10 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-4">
-                <div className="text-8xl">🧭</div>
+                <div className="text-5xl sm:text-6xl md:text-7xl">🧭</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -1029,7 +1029,7 @@ export default function Home() {
                     Newsletter
                   </h3>
                   <div className="grid md:grid-cols-1 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
                           <Image 
@@ -1191,9 +1191,9 @@ export default function Home() {
                     Guides
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-8xl">🍟</div>
+                        <div className="text-5xl sm:text-6xl md:text-7xl">🍟</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Smart Bites
@@ -1215,9 +1215,9 @@ export default function Home() {
                       </div>
                     </article>
 
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-8xl">🛡️</div>
+                        <div className="text-5xl sm:text-6xl md:text-7xl">🛡️</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Crisis Resolutions
@@ -1247,7 +1247,7 @@ export default function Home() {
                     Publications
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
                           <Image 
@@ -1279,7 +1279,7 @@ export default function Home() {
                       </div>
                     </article>
 
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
                           <Image 
@@ -1318,34 +1318,10 @@ export default function Home() {
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
                     Experiments
                   </h3>
-                  <div className="grid md:grid-cols-1 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                  <div>
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
-                        <div className="text-6xl">🧠</div>
-                        <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-foreground mb-3">
-                            Safe Superintelligence by Design
-                          </h4>
-                          <p className="text-foreground-secondary mb-4">
-                            Structural alignment architecture addressing coherence degradation in LLMs.
-                          </p>
-                          <a
-                            href="https://www.notion.so/Human-Aligned-Superintelligence-by-Design-1d89ff44f436808baba8ed2394b87771?pvs=21"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                            aria-label="View Notion Documentation (opens in new tab)"
-                          >
-                            <NotionIcon className="w-4 h-4 mr-2" />
-                            Notion Documentation
-                          </a>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-                      <div className="flex items-start space-x-4">
-                        <div className="text-6xl">⚛️</div>
+                        <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
                         <div className="flex-1">
                           <h4 className="text-xl font-semibold text-foreground mb-3">
                             Quantum AI Research
@@ -1379,7 +1355,7 @@ export default function Home() {
                   </h3>
                   <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Crisis Resolutions Podcast */}
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="text-4xl">🎧</div>
                         <div className="flex-1">
@@ -1406,7 +1382,7 @@ export default function Home() {
                     </article>
 
                     {/* Crisis Resolutions Training */}
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                       <div className="flex items-start space-x-4">
                         <div className="text-4xl">🎓</div>
                         <div className="flex-1">
