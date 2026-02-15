@@ -4,10 +4,10 @@ interface SVGOverlayProps {
   className?: string;
 }
 
-export default function SVGOverlay({ className = "absolute inset-0 pointer-events-none" }: SVGOverlayProps) {
+export default function SVGOverlay({ className = "absolute inset-0 h-full pointer-events-none" }: SVGOverlayProps) {
   return (
     <svg 
-      className={className}
+      className={`${className} !opacity-60 dark:!opacity-20`}
       xmlns="http://www.w3.org/2000/svg" 
       version="1.1" 
       xmlnsXlink="http://www.w3.org/1999/xlink" 
@@ -18,7 +18,7 @@ export default function SVGOverlay({ className = "absolute inset-0 pointer-event
     >
       <defs>
         <mask id="SvgjsMask1018">
-          <rect width="1440" height="560" fill="#ffffff"></rect>
+          <rect width="1440" height="560" fill="#72FF6B"></rect>
         </mask>
       </defs>
       <g mask="url(&quot;#SvgjsMask1018&quot;)" fill="none" stroke="#4CFFCC" strokeWidth="2">

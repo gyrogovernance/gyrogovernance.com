@@ -227,13 +227,13 @@
      position: absolute;
      border-radius: 50%;
      filter: blur(120px);
-     opacity: 0.2;
+     opacity: 0.9;
    }
    
    .blob-1 {
      width: 600px;
      height: 600px;
-     background-color: #FF6B95;
+     background-color: #ffa9c1;
      top: -200px;
      right: -200px;
    }
@@ -241,7 +241,7 @@
    .blob-2 {
      width: 700px;
      height: 700px;
-     background-color: #7B68EE;
+     background-color: #a596f9;
      bottom: -300px;
      left: -300px;
    }
@@ -303,29 +303,28 @@
       8. ANIMATIONS
       ========================================================================== */
    
-   @keyframes fadeInUp {
-     from { opacity: 0; transform: translateY(10px); }
-     to { opacity: 1; transform: translateY(0); }
-   }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
    
-   @keyframes slideInFromLeft {
-     from { opacity: 0; transform: translateX(-20px); }
-     to { opacity: 1; transform: translateX(0); }
-   }
+@keyframes slideInFromLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: none; }
+}
    
    @keyframes shimmer {
      0% { background-position: -200px 0; }
      100% { background-position: calc(200px + 100%) 0; }
    }
    
-   .animate-fade-in-up {
-     animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-     will-change: transform, opacity;
-   }
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
    
-   .animate-slide-in-left {
-     animation: slideInFromLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-   }
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
    
    .skeleton {
      background: linear-gradient(90deg,
@@ -664,7 +663,6 @@
    
    .gpu-accelerated {
      transform: translateZ(0);
-     will-change: transform;
    }
    
    .card-hover:hover {
@@ -707,3 +705,35 @@
    .dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
      background-color: var(--border-secondary);
    }
+
+   /* ==========================================================================
+   15. BACKDROP FILTER FIX - Force GPU acceleration
+   ========================================================================== */
+
+/* Fix for Next.js Fast Refresh dropping backdrop-filter */
+[class*="backdrop-blur"] {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ==========================================================================
+   16. EMOJI SIZING
+   ========================================================================== */
+
+   .emoji-icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  
+  @media (min-width: 640px) {
+    .emoji-icon {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .emoji-icon {
+      font-size: 3rem;
+    }
+  }

@@ -31,7 +31,7 @@ export default function Home() {
       {/* Stats */}
       <div className="mb-6 animate-fade-in-up [animation-delay:200ms]">
         <div className="flex flex-col items-center">
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 py-4 px-4 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-3xl bg-surface-elevated/30 backdrop-blur-md border border-border/40 shadow-sm">
+        <div className="w-full sm:w-auto flex justify-center gap-3 sm:gap-6 md:gap-10 py-4 px-2 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-2xl bg-surface-elevated/60 backdrop-blur-md border border-border/40 shadow-sm">
             
             <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500" delay={0} />
             <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500" delay={200} />
@@ -87,8 +87,8 @@ export default function Home() {
             <a
               key={p.title}
               href={p.href}
-              className="group flex items-start gap-3 p-3 rounded-2xl bg-surface-elevated/30 border border-border/90 hover:bg-surface-elevated backdrop-blur-2xl hover:border-apple-blue/50 transition-all duration-200"
-            >
+              className="group flex items-start gap-3 !px-2 py-4 sm:px-4 rounded-2xl bg-surface-elevated/30 border border-border/60 hover:bg-surface-elevated backdrop-blur-2xl hover:border-apple-blue/50 transition-all duration-200"
+              >
               <span className="text-2xl leading-none shrink-0">{p.emoji}</span>
               <span className="min-w-0">
                 <span className="block text-sm font-semibold text-foreground group-hover:text-apple-blue transition-colors">
@@ -201,7 +201,7 @@ export default function Home() {
           {/* Grid Layout */}
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             {/* Four Displacement Risks */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
               <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-3 w-fit mx-auto">
                 <li><strong className="text-foreground">Governance Traceability (GTD)</strong></li>
@@ -215,7 +215,7 @@ export default function Home() {
             </div>
 
             {/* Applications */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
               <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside w-fit mx-auto">
                 <li><strong className="text-foreground">Jailbreak testing</strong></li>
@@ -233,34 +233,27 @@ export default function Home() {
             <p className="text-sm text-foreground-secondary text-center mb-4">
               Analysis of frontier model system prompts: alignment and displacement findings.
             </p>
-            <div className="grid sm:grid-cols-2 gap-3">
-              <Link
-                href="/articles/claude-opus-4.6_thm-report"
-                className="flex items-center gap-3 p-4 rounded-xl border border-border/50 bg-surface-elevated/80 hover:bg-surface-elevated hover:border-orange-500/30 transition-all duration-200 group"
-                aria-label="Read THM report: Claude Opus 4.6 System Prompt (Anthropic)"
-              >
-                <span className="text-2xl shrink-0">Claude Opus 4.6</span>
-              </Link>
-              <Link
-                href="/articles/gpt-5-2-thinking_thm-report"
-                className="flex items-center gap-3 p-4 rounded-xl border border-border/50 bg-surface-elevated/80 hover:bg-surface-elevated hover:border-orange-500/30 transition-all duration-200 group"
-                aria-label="Read THM report: ChatGPT System Prompt (OpenAI)"
-              >
-                <span className="text-2xl shrink-0">ChatGPT 5.2</span>
-              </Link>
-            </div>
+            <div className="grid sm:grid-cols-2 gap-3 max-w-md mx-auto">
+            <Link
+              href="/articles/claude-opus-4.6_thm-report"
+              className="flex items-center justify-center gap-2 p-4 rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-500/10 to-indigo-500/60 hover:from-purple-500/90 hover:to-indigo-500/20 hover:border-purple-500/50 transition-all duration-200 group"
+              aria-label="Read THM report: Claude Opus 4.6 System Prompt (Anthropic)"
+            >
+              <span className="text-lg font-bold text-foreground transition-colors">Claude Opus 4.6</span>
+            </Link>
+            <Link
+              href="/articles/gpt-5-2-thinking_thm-report"
+              className="flex items-center justify-center gap-2 p-4 rounded-xl border border-green-500/30 bg-gradient-to-br from-green-500/10 to-emerald-500/60 hover:from-green-500/90 hover:to-emerald-500/20 hover:border-green-500/50 transition-all duration-200 group"
+              aria-label="Read THM report: ChatGPT System Prompt (OpenAI)"
+            >
+              <span className="text-lg font-bold text-foreground transition-colors">ChatGPT 5.2</span>
+            </Link>
+          </div>
           </div>
           
           <p className="text-xs sm:text-sm text-foreground-tertiary text-center mb-6">
             Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory. Validated on real-world adversarial prompts and on 90+ million sparse autoencoder features across sixteen language models, confirming that assistant personas and safety refusals dominate self-referential representations while non-agentive process descriptions are not used for model self-description.{" "}
-            <a 
-              href="https://github.com/gyrogovernance/tools" 
-              className="underline hover:text-foreground-secondary transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn more
-            </a>
+
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
@@ -268,7 +261,7 @@ export default function Home() {
               href="https://github.com/gyrogovernance/tools"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-gray-800 hover:to-gray-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
               aria-label="View The Human Mark on GitHub (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />
@@ -278,7 +271,7 @@ export default function Home() {
               href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-xl border border-border/80 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium transition-all duration-300 shadow hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 rounded-xl border border-border/80 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium transition-all duration-300 shadow hover:shadow-lg"
               aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -321,14 +314,14 @@ export default function Home() {
             
             {/* Key Features */}
             <div className="space-y-4 mb-6">
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 border border-border/50">
                 <h3 className="text-base font-bold text-foreground mb-2">🤖 Gadgets (3-10 min each)</h3>
                 <p className="text-sm text-foreground-secondary">
                   Rapid Test • Policy Auditing • AI Infection Sanitization • Content Enhancement • THM Meta-Evaluation
                 </p>
               </div>
               
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 border border-border/50">
                 <h3 className="text-base font-bold text-foreground mb-2">🔬 Evaluation (30-60 min)</h3>
                 <p className="text-sm text-foreground-secondary">
                   Quality Index, Superintelligence Index, Alignment Rate + 20 metrics
@@ -367,7 +360,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/apps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+                className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
                 aria-label="View AI Inspector on GitHub (opens in new tab)"
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
@@ -394,7 +387,7 @@ export default function Home() {
           {/* Grid Layout */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* What it is - Full Width */}
-            <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">🔧 What it is</h3>
               <p className="text-sm sm:text-base text-foreground-secondary">
                 A coordination infrastructure that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
@@ -402,7 +395,7 @@ export default function Home() {
             </div>
 
             {/* What it does */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🎯 What it does</h3>
               <p className="text-sm sm:text-base text-foreground-secondary mb-4">
                 AIR connects three critical groups to build Collective Superintelligence.
@@ -424,7 +417,7 @@ export default function Home() {
             </div>
 
             {/* Why it matters */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">💡 Why it matters</h3>
               <p className="text-sm sm:text-base text-foreground-secondary mb-3">
                 We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them.
@@ -472,14 +465,14 @@ export default function Home() {
               {/* Grid Layout */}
               <div className="grid md:grid-cols-2 gap-6">
                 {/* The Hook - Full Width */}
-                <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
+                <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
                   <p className="text-base sm:text-lg text-foreground-secondary">
                     GyroLabe acts as a <strong>neuro-symbolic bridge</strong>, coupling the model's stochastic latent space to a discrete geometric structure. It functions as a feedback control system, providing active balance support to stabilize neural activations during inference.
                   </p>
                 </div>
 
                 {/* Mechanisms (The How) */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+                <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Core Objectives</h3>
                   <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
                     <li className="flex items-start">
@@ -494,7 +487,7 @@ export default function Home() {
                 </div>
 
                 {/* Outcomes (The Why) */}
-                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+                <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🚀 Outcomes</h3>
                   <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
                     <li className="flex items-start">
@@ -524,7 +517,7 @@ export default function Home() {
               href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_MI_Tests_Report.md"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
               aria-label="Mechanistic Interpretability Report (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />
@@ -550,7 +543,7 @@ export default function Home() {
           {/* Grid Layout */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* What it is - Full Width */}
-            <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
                 💎 What it is
               </h3>
@@ -564,7 +557,7 @@ export default function Home() {
             </div>
 
             {/* Dual-function capacity */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
                 🔄 Dual-function capacity
               </h3>
@@ -588,7 +581,7 @@ export default function Home() {
             </div>
 
             {/* Why this matters */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
                 🌟 Why this matters
               </h3>
@@ -643,7 +636,7 @@ export default function Home() {
           {/* Convergence Visualization and Results */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* SVG Visualization Block */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <div className="text-left mb-4">
                 <h3 className="text-base font-semibold text-foreground mb-2">📈 Convergence to Equilibrium</h3>
                 <p className="text-xs sm:text-sm text-foreground-secondary">
@@ -662,7 +655,7 @@ export default function Home() {
             </div>
 
             {/* Results List Block */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <p className="text-base font-bold text-foreground mb-3">🎯 Demonstrating that:</p>
               <ul className="text-sm sm:text-base text-foreground-secondary space-y-3 list-disc list-inside w-fit">
                 <li>Poverty resolves through coherent surplus distribution</li>
@@ -685,7 +678,7 @@ export default function Home() {
               href="https://github.com/gyrogovernance/tools"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-surface-elevated/80 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
               aria-label="View GGG simulator code on GitHub (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />
@@ -709,7 +702,7 @@ export default function Home() {
           </div>
           
           {/* Framework Overview */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 mb-6 border border-border/50">
+          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-6 mb-6 border border-border/50">
             <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🔬 Framework Capabilities</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
@@ -732,7 +725,7 @@ export default function Home() {
           </div>
           
           {/* Evaluation Results - GPT-5 & Claude */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-6 border border-border/50">
             <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🏆 Frontier Model Evaluations (October 2025)</h3>
             <p className="text-foreground-secondary text-center mb-6 text-sm">
               Evaluated using ensemble analyst models with mathematical physics-grounded metrics
@@ -741,7 +734,7 @@ export default function Home() {
             {/* Simplified Model Comparison */}
             <div className="grid lg:grid-cols-2 gap-4 mb-6">
               {/* ChatGPT 5 Results */}
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-4 border border-border/50">
                 <h4 className="text-lg font-bold text-foreground text-center mb-3">ChatGPT 5</h4>
                 <div className="text-sm space-y-1">
                   <div className="flex justify-between"><span>Quality Index:</span><span className="font-semibold text-yellow-500">73.92%</span></div>
@@ -752,7 +745,7 @@ export default function Home() {
               </div>
 
               {/* Claude Sonnet 4.5 Results */}
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-4 border border-border/50">
                 <h4 className="text-lg font-bold text-foreground text-center mb-3">Claude Sonnet 4.5</h4>
                 <div className="text-sm space-y-1">
                   <div className="flex justify-between"><span>Quality Index:</span><span className="font-semibold text-green-500">82.00%</span></div>
@@ -811,7 +804,7 @@ export default function Home() {
           </div>
           
           {/* Results Table */}
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50">
+          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6 text-center">📊 Proven Performance Gains</h3>
             <p className="text-foreground-secondary text-center mb-4 sm:mb-6 text-sm sm:text-base">
               Testing across multiple leading AI models shows Gyroscope delivers substantial performance improvements
@@ -819,7 +812,7 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 gap-3 sm:gap-6">
               {/* ChatGPT Results */}
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
                 <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">ChatGPT</h4>
                 <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <div className="flex justify-between">
@@ -842,7 +835,7 @@ export default function Home() {
               </div>
 
               {/* Claude Sonnet Results */}
-              <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
                 <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">Claude Sonnet</h4>
                 <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <div className="flex justify-between">
@@ -901,10 +894,10 @@ export default function Home() {
                   Labs
                 </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-            <div className="flex h-full">
-              <div className="flex items-center justify-center mr-4">
-                <div className="text-5xl sm:text-6xl md:text-7xl">⚡</div>
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <div className="flex h-full">
+              <div className="flex items-center justify-center mr-3">
+                <div className="emoji-icon">⚡</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -929,10 +922,10 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
-              <div className="flex items-center justify-center mr-4">
-                <div className="text-5xl sm:text-6xl md:text-7xl">❤️</div>
+              <div className="flex items-center justify-center mr-3">
+                <div className="emoji-icon">❤️</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -957,10 +950,10 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
-              <div className="flex items-center justify-center mr-4">
-                <div className="text-5xl sm:text-6xl md:text-7xl">🌟</div>
+              <div className="flex items-center justify-center mr-3">
+                <div className="emoji-icon">🌟</div>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -985,10 +978,10 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
             <div className="flex h-full">
-              <div className="flex items-center justify-center mr-4">
-                <div className="text-5xl sm:text-6xl md:text-7xl">🧭</div>
+            <div className="flex items-center justify-center mr-3">
+              <span className="emoji-icon">🧭</span>
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>

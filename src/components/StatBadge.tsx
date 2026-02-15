@@ -64,7 +64,7 @@ export default function StatBadge({
       >
         {count}+
       </div>
-      <span className="text-[10px] font-bold uppercase tracking-wider text-foreground-secondary mt-1 group-hover:text-foreground transition-colors duration-300">
+      <span className="text-[9px] font-bold uppercase tracking-wider text-foreground-secondary mt-1 group-hover:text-foreground transition-colors duration-300">
         {label}
       </span>
     </div>

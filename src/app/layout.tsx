@@ -151,14 +151,6 @@ export default function RootLayout({
               --link-hover: #99ccff;
             }
             body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: var(--bg-base); color: var(--text-primary); transition: background-color 0.3s ease, color 0.3s ease; }
-            .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0; pointer-events: none; }
-            .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; will-change: transform; }
-            .blob-1 { width: 600px; height: 600px; background-color: #FF6B95; top: -200px; right: -200px; }
-            .blob-2 { width: 700px; height: 700px; background-color: #7B68EE; bottom: -300px; left: -300px; }
-            .blob-3 { width: 400px; height: 400px; background-color: #61DBFB; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-            .dark .blob-1 { background-color: #FF8FA3; }
-            .dark .blob-2 { background-color: #9B8AFF; }
-            .dark .blob-3 { background-color: #7DE5FF; }
             .nav-link { min-height: 44px; min-width: 44px; }
             @font-face { font-family: 'Nunito'; font-display: swap; }
           `
@@ -241,8 +233,8 @@ export default function RootLayout({
           <div className="blob blob-2"></div>
           <div className="blob blob-3"></div>
           
-          {/* SVG Overlay */}
-          <SVGOverlay className="absolute inset-0 w-full h-full opacity-12" />
+          {/* SVG Overlay - Centered and full width on desktop */}
+          <SVGOverlay className="absolute inset-0 h-full pointer-events-none left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0" />
         </div>
                   <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
           <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
