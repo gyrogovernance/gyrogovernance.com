@@ -118,7 +118,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" suppressHydrationWarning={true} className="scroll-smooth scroll-pt-24">
       <head>
         {/* Cache control hints for static assets */}
         <meta httpEquiv="Cache-Control" content="public, max-age=31536000, immutable" />

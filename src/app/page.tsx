@@ -41,8 +41,158 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ── Quick Nav & Updates ── */}
+      <div className="mb-16 animate-fade-in-up [animation-delay:300ms]">
+        {/* Projects */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10">
+          {[
+            {
+              emoji: "✋",
+              title: "The Human Mark",
+              desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation",
+              href: "#thm",
+            },
+            
+            {
+              emoji: "🍃",
+              title: "Alignment Infrastructure Routing",
+              desc: "Collective Superintelligence Stack for Human-AI Coordination",
+              href: "#air",
+            },
+            {
+              emoji: "🤖",
+              title: "GyroLabe",
+              desc: "AI Mechanistic Calibration Instrument for Alignment and Stability",
+              href: "#gyrolabe",
+            },
+            {
+              emoji: "💰",
+              title: "Moments Economy",
+              desc: "Capacity based monetary system for Post-AGI Transformative AI Risks Mitigation",
+              href: "#moments",
+            },
+            {
+              emoji: "🌐",
+              title: "Global Governance Simulator",
+              desc: "Post-AGI/ASI governance sandbox Simulation and Results",
+              href: "#ggg",
+            },
+            {
+              emoji: "🌟",
+              title: "GyroDiagnostics",
+              desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment",
+              href: "#diagnostics",
+            },
+            {
+              emoji: "⚙️",
+              title: "Gyroscope Protocol",
+              desc: "Structured reasoning for safer LLM outputs and AI Agentic systems",
+              href: "#gyroscope",
+            },
+          ].map((p) => (
+            <a
+              key={p.title}
+              href={p.href}
+              className="group flex items-start gap-3 p-3 rounded-2xl bg-surface-elevated/50 border border-border/50 hover:bg-surface-elevated hover:border-apple-blue/30 transition-all duration-200"
+            >
+              <span className="text-2xl leading-none shrink-0">{p.emoji}</span>
+              <span className="min-w-0">
+                <span className="block text-sm font-semibold text-foreground group-hover:text-apple-blue transition-colors">
+                  {p.title}
+                </span>
+                <span className="block text-xs text-foreground-tertiary leading-snug mt-0.5">
+                  {p.desc}
+                </span>
+              </span>
+            </a>
+          ))}
+        </div>
+
+        {/* Quick section links */}
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {[
+            { emoji: "⚡", label: "Labs", href: "#labs-heading" },
+            { emoji: "📚", label: "Resources", href: "#resources-heading" },
+            { emoji: "📰", label: "Articles", href: "#articles" },
+          ].map((c) => (
+            <a
+              key={c.label}
+              href={c.href}
+              className="flex items-center gap-2 px-4 py-2 rounded-full border border-border/40 text-sm font-medium text-foreground-secondary hover:text-foreground hover:border-border/70 hover:bg-surface-elevated/40 transition-all duration-200"
+            >
+              <span>{c.emoji}</span>
+              <span>{c.label}</span>
+            </a>
+          ))}
+        </div>
+
+        {/* Updates */}
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-border/60" />
+            <span className="text-[11px] font-bold text-foreground-tertiary uppercase tracking-widest">
+              What&apos;s New
+            </span>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-border/60" />
+          </div>
+
+          <div className="space-y-1.5">
+            {[
+              {
+                dot: "bg-green-500",
+                title: "CGM Dataset",
+                desc: "Foundational theory from the Science Lab docs",
+                date: "15 Feb 2026",
+                href: "#cgm",
+              },
+              {
+                dot: "bg-cyan-500",
+                title: "GyroLabe",
+                desc: "AI Mechanistic Calibration Instrument",
+                date: "14 Feb 2026",
+                href: "#gyrolabe",
+              },
+              {
+                dot: "bg-orange-500",
+                title: "THM prompt audits",
+                desc: "Claude Opus 4.6 and ChatGPT 5.2 reports",
+                date: "13 Feb 2026",
+                href: "/articles",
+              },
+            ].map((u, i) => {
+              const rowClass =
+                "flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-surface-elevated/40 transition-colors duration-150 group";
+
+              const content = (
+                <>
+                  <span className={`w-1.5 h-1.5 rounded-full ${u.dot} shrink-0`} />
+                  <span className="text-sm text-foreground-secondary leading-snug">
+                    <strong className="text-foreground group-hover:text-apple-blue transition-colors">
+                      {u.title}
+                    </strong>
+                    <span className="text-foreground-tertiary">{" "}{u.desc}</span>
+                  </span>
+                  <span className="text-[11px] text-foreground-tertiary ml-auto shrink-0 tabular-nums">
+                    {u.date}
+                  </span>
+                </>
+              );
+
+              return u.href.startsWith("/") ? (
+                <Link key={i} href={u.href} className={rowClass}>
+                  {content}
+                </Link>
+              ) : (
+                <a key={i} href={u.href} className={rowClass}>
+                  {content}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
       {/* The Human Mark Hero Card - Moved to First Position */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="thm" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-orange-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">✋</div>
@@ -150,7 +300,7 @@ export default function Home() {
       </div>
 
       {/* AI Inspector Browser Extension Hero Section */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="inspector" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl border border-purple-500/20 overflow-hidden">
           {/* Compact promo image at top */}
           <div className="w-full flex justify-center bg-gradient-to-b from-purple-900/20 to-transparent">
@@ -235,7 +385,7 @@ export default function Home() {
       </div>
 
       {/* Alignment Infrastructure Routing (AIR) Hero */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="air" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-yellow-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🍃</div>
@@ -312,51 +462,59 @@ export default function Home() {
         </div>
       </div>
 
-      {/* GyroLabe Hero */}
-      <div className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-cyan-500/20">
-          <div className="text-center mb-8">
-            <div className="text-6xl mb-4">🤖</div>
-            <h2 className="text-3xl font-bold text-foreground mb-2">
-              GyroLabe: AI Coordination
-            </h2>
-            <p className="text-lg font-semibold text-foreground-secondary">
-              Giving AI a Geometric Sense of Direction
-            </p>
-          </div>
+        {/* GyroLabe Hero */}
+        <div id="gyrolabe" className="mb-12 animate-fade-in-up">
+            <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-cyan-500/20">
+              <div className="text-center mb-8">
+                <div className="text-6xl mb-4">🤖</div>
+                <h2 className="text-3xl font-bold text-foreground mb-2">
+                  GyroLabe: Mechanistic Calibration Instrument
+                </h2>
+                <p className="text-lg font-semibold text-foreground-secondary">
+                  Neural Activation Coordination and Guidance
+                </p>
+              </div>
 
-          {/* Grid Layout */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* The Hook - Full Width */}
-            <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
-              <p className="text-base sm:text-lg text-foreground-secondary">
-                GyroLabe connects stochastic AI models (creative, unpredictable) to a fixed geometric reference frame (stable, deterministic). It turns AI generation into a visible logistics process where human oversight is the primary source of coordination.
-              </p>
-            </div>
+              {/* Grid Layout */}
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* The Hook - Full Width */}
+                <div className="md:col-span-2 bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
+                  <p className="text-base sm:text-lg text-foreground-secondary">
+                    GyroLabe acts as a <strong>neuro-symbolic bridge</strong>, coupling the model's stochastic latent space to a discrete geometric structure. It functions as a feedback control system, providing active balance support to stabilize neural activations during inference.
+                  </p>
+                </div>
 
-            {/* Core Features */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Capabilities</h3>
-              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                <li className="flex items-start">
-                  <span className="text-cyan-500 mr-2">🧭</span>
-                  <span><strong>Topological Alignment:</strong> Keeps models grounded in a stable structure without killing creativity.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-sky-500 mr-2">🤝</span>
-                  <span><strong>Shared Moments:</strong> Distributed AI agents can coordinate perfectly without a central server.</span>
-                </li>
-              </ul>
-            </div>
+                {/* Mechanisms (The How) */}
+                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Core Objectives</h3>
+                  <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                    <li className="flex items-start">
+                      <span className="text-cyan-500 mr-2">⚖️</span>
+                      <span><strong>Logit Dynamic Stability:</strong> Anchors the generation trajectory to a deterministic state machine to prevent collapse or drift.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-cyan-500 mr-2">⚓</span>
+                      <span><strong>Mechanistic Balance Steering:</strong> Injects calculated weight into specific neural pathways via projection masks.</span>
+                    </li>
+                  </ul>
+                </div>
 
-            {/* Why it matters */}
-            <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">💎 Value</h3>
-              <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-                 Aligned Superintelligence requires structural coherence, not external control. GyroLabe, as part of our ASI architecture, ensures every generated token leaves a verifiable geometric footprint, making alignment intrinsic and mathematically auditable.
-              </p>
-            </div>
-          </div>
+                {/* Outcomes (The Why) */}
+                <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🚀 Outcomes</h3>
+                  <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                    <li className="flex items-start">
+                      <span className="text-sky-500 mr-2">🧭</span>
+                      <span><strong>Topological Alignment:</strong> Model dynamics resonate with the kernel's structure without sacrificing generative capacity.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-sky-500 mr-2">🤝</span>
+                      <span><strong>Shared Moments:</strong> Creates a shared, verifiable ledger of the generation trajectory for distributed coordination.</span>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
              <a
@@ -383,7 +541,7 @@ export default function Home() {
       </div>
 
       {/* Moments Economy Hero */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="moments" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-emerald-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">💰</div>
@@ -476,7 +634,7 @@ export default function Home() {
       </div>
 
       {/* Gyroscopic Global Governance Simulator Hero */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="ggg" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌐</div>
@@ -544,7 +702,7 @@ export default function Home() {
       </div>
 
       {/* GyroDiagnostics Hero Card */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="diagnostics" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-green-500/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌟</div>
@@ -646,7 +804,7 @@ export default function Home() {
       </div>
 
       {/* Gyroscope Hero Card */}
-      <div className="mb-12 animate-fade-in-up">
+      <div id="gyroscope" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-apple-blue/20">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">⚙️</div>
@@ -912,7 +1070,127 @@ export default function Home() {
                     </article>
                   </div>
                 </div>
-                
+
+                {/* Datasets Subsection */}
+                <div id="cgm" className="mb-12">
+                  <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
+                    Datasets
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {/* CGM Dataset - Full Width */}
+                    <article className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                      <div className="flex items-start space-x-4">
+                        <div className="text-4xl">⚗️</div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-foreground mb-1">
+                            CGM Dataset
+                          </h4>
+                          <span className="inline-block px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 text-xs font-medium mb-3">
+                            New
+                          </span>
+                          <p className="text-foreground-secondary mb-4">
+                            The Common Governance Model is the theoretical foundation for all research on this website. This dataset transforms our Science Lab documentation into structured instruction data. It includes the formal proofs, geometric analyses, and axioms that ground our work in AI safety and governance.
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            <a
+                              href="https://github.com/gyrogovernance/science/tree/main/docs/datasets"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                              aria-label="View CGM Dataset on GitHub (opens in new tab)"
+                            >
+                              <GitHubIcon className="w-4 h-4 mr-2" />
+                              View on GitHub
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                    {/* Clean Dataset */}
+                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+                        style={{ backgroundImage: 'url(/assets/clean-dataset.jpg)' }}
+                      ></div>
+                      <div className="relative z-10 flex items-start space-x-4">
+                        <div className="text-4xl">🌟</div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-foreground mb-3">
+                            Clean
+                          </h4>
+                          <p className="text-foreground-secondary mb-4">
+                            2,463 questions about Personal and Professional matters of Crisis and gives answers on how they may be Resolved.
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            <a
+                              href="https://huggingface.co/datasets/crisisresolutions/cr-qa-gwm"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Clean dataset on HuggingFace (opens in new tab)"
+                            >
+                              HuggingFace
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                            <a
+                              href="https://www.kaggle.com/datasets/korompilias/good-ways-model-pure-ontology-qa"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Clean dataset on Kaggle (opens in new tab)"
+                            >
+                              Kaggle
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                    {/* Pure Dataset */}
+                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+                        style={{ backgroundImage: 'url(/assets/pure-dataset.jpg)' }}
+                      ></div>
+                      <div className="relative z-10 flex items-start space-x-4">
+                        <div className="text-4xl">🪷</div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-foreground mb-3">
+                            Pure
+                          </h4>
+                          <p className="text-foreground-secondary mb-4">
+                            216 Critical Questions and Answers for Crisis Management and Machine Learning Model Fine-Tuning.
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            <a
+                              href="https://huggingface.co/datasets/crisisresolutions/gwm-qa-pure"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Pure dataset on HuggingFace (opens in new tab)"
+                            >
+                              HuggingFace
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                            <a
+                              href="https://www.kaggle.com/datasets/korompilias/crisisresolutionscontentclean-goodwaysmodelpure"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                              aria-label="View Pure dataset on Kaggle (opens in new tab)"
+                            >
+                              Kaggle
+                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
                 {/* Guides Subsection */}
                 <div className="mb-12">
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
@@ -963,94 +1241,6 @@ export default function Home() {
                             Visit Site
                             <ExternalLinkIcon className="ml-2 w-4 h-4" />
                           </a>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-
-                {/* Datasets Subsection */}
-                <div className="mb-12">
-                  <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
-                    Datasets
-                  </h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                      <div 
-                        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-                        style={{ backgroundImage: 'url(/assets/clean-dataset.jpg)' }}
-                      ></div>
-                      <div className="relative z-10 flex items-start space-x-4">
-                        <div className="text-4xl">🌟</div>
-                        <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-foreground mb-3">
-                            Clean
-                          </h4>
-                          <p className="text-foreground-secondary mb-4">
-                            2,463 questions about Personal and Professional matters of Crisis and gives answers on how they may be Resolved.
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            <a
-                              href="https://huggingface.co/datasets/crisisresolutions/cr-qa-gwm"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-                              aria-label="View Clean dataset on HuggingFace (opens in new tab)"
-                            >
-                              HuggingFace
-                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
-                            </a>
-                            <a
-                              href="https://www.kaggle.com/datasets/korompilias/good-ways-model-pure-ontology-qa"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-                              aria-label="View Clean dataset on Kaggle (opens in new tab)"
-                            >
-                              Kaggle
-                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                      <div 
-                        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-                        style={{ backgroundImage: 'url(/assets/pure-dataset.jpg)' }}
-                      ></div>
-                      <div className="relative z-10 flex items-start space-x-4">
-                        <div className="text-4xl">🪷</div>
-                        <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-foreground mb-3">
-                            Pure
-                          </h4>
-                          <p className="text-foreground-secondary mb-4">
-                            216 Critical Questions and Answers for Crisis Management and Machine Learning Model Fine-Tuning.
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            <a
-                              href="https://huggingface.co/datasets/crisisresolutions/gwm-qa-pure"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-                              aria-label="View Pure dataset on HuggingFace (opens in new tab)"
-                            >
-                              HuggingFace
-                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
-                            </a>
-                            <a
-                              href="https://www.kaggle.com/datasets/korompilias/crisisresolutionscontentclean-goodwaysmodelpure"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-                              aria-label="View Pure dataset on Kaggle (opens in new tab)"
-                            >
-                              Kaggle
-                              <ExternalLinkIcon className="ml-2 w-3 h-3" />
-                            </a>
-                          </div>
                         </div>
                       </div>
                     </article>
