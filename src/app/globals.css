@@ -1,1422 +1,709 @@
 /* ==========================================================================
-   DESIGN SYSTEM 
+   DESIGN SYSTEM
    ========================================================================== */
 
-@import "tailwindcss";
-
-/* ==========================================================================
-   1. CSS VARIABLES - Light Mode (Default)
-   ========================================================================== */
-
-:root {
-  /* Typography */
-  --font-family-base: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-family-mono: var(--font-geist-mono), 'SF Mono', Consolas, monospace;
-
-  --font-weight-normal: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extrabold: 800;
-
-  /* Font Sizes */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-
-  /* Apple Watch OS Palette */
-  --apple-blue: #007aff;
-  --apple-green: #34c759;
-  --apple-orange: #ff9500;
-  --apple-pink: #ff2d70;
-  --apple-purple: #af52de;
-  --apple-yellow: #ffcc00;
-  --apple-red: #ff3b30;
-
-  /* Text Colors - WCAG AAA */
-  --text-primary: rgba(0, 0, 0, 0.98);
-  --text-secondary: rgba(0, 0, 0, 0.85);
-  --text-tertiary: rgba(0, 0, 0, 0.65);
-
-  /* Link Colors - High Contrast */
-  --link-color: #0056b3;
-  --link-hover: #003d82;
-
-  /* Background Colors */
-  --bg-base: #ffffff;
-  --bg-surface: #fafafa;
-  --bg-elevated: #ffffff;
-  --bg-overlay: rgba(255, 255, 255, 0.9);
-
-  /* Border System */
-  --border-primary: rgba(0, 0, 0, 0.1);
-  --border-secondary: rgba(0, 0, 0, 0.05);
-  --border-hairline: rgba(0, 0, 0, 0.04);
-  --border-inner: rgba(255, 255, 255, 0.8);
-  --border-outer: rgba(0, 0, 0, 0.1);
-
-  /* Blur System */
-  --blur-xs: 4px;
-  --blur-sm: 8px;
-  --blur-md: 12px;
-  --blur-lg: 24px;
-  --blur-xl: 40px;
-
-  /* Surface Opacity */
-  --surface-opacity-light: 0.7;
-  --surface-opacity-medium: 0.85;
-  --surface-opacity-heavy: 0.95;
-
-  /* Shadow System */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.18);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.25);
-  --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.25);
-  --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.25);
-
-  /* Z-index Scale */
-  --z-dropdown: 1000;
-  --z-sticky: 1020;
-  --z-fixed: 1030;
-  --z-modal-backdrop: 1040;
-  --z-modal: 1050;
-  --z-popover: 1060;
-  --z-tooltip: 1070;
-}
-
-/* ==========================================================================
-   2. CSS VARIABLES - Dark Mode
-   ========================================================================== */
-
-.dark {
-  --text-primary: rgba(255, 255, 255, 0.98);
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-tertiary: rgba(255, 255, 255, 0.65);
-
-  --link-color: #66b3ff;
-  --link-hover: #99ccff;
-
-  --bg-base: #0a0a0a;
-  --bg-surface: #141414;
-  --bg-elevated: #1f1f1f;
-  --bg-overlay: rgba(20, 20, 20, 0.9);
-
-  --border-primary: rgba(255, 255, 255, 0.15);
-  --border-secondary: rgba(255, 255, 255, 0.08);
-  --border-hairline: rgba(0, 0, 0, 0.5);
-  --border-inner: rgba(255, 255, 255, 0.1);
-  --border-outer: rgba(255, 255, 255, 0.05);
-
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.55);
-  --shadow-xl: 0 20px 30px rgba(0, 0, 0, 0.65);
-  --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.35);
-  --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.35);
-}
-
-/* ==========================================================================
-   3. TAILWIND THEME BRIDGE
-   ========================================================================== */
-
-@theme inline {
-  /* Colors → Tailwind utilities */
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-tertiary: var(--text-tertiary);
-
-  --color-bg-base: var(--bg-base);
-  --color-bg-surface: var(--bg-surface);
-  --color-bg-elevated: var(--bg-elevated);
-  --color-bg-overlay: var(--bg-overlay);
-
-  --color-apple-blue: var(--apple-blue);
-  --color-apple-green: var(--apple-green);
-  --color-apple-orange: var(--apple-orange);
-  --color-apple-pink: var(--apple-pink);
-  --color-apple-purple: var(--apple-purple);
-  --color-apple-yellow: var(--apple-yellow);
-  --color-apple-red: var(--apple-red);
-
-  --color-border-primary: var(--border-primary);
-  --color-border-secondary: var(--border-secondary);
-  --color-border-hairline: var(--border-hairline);
-  --color-border-inner: var(--border-inner);
-  --color-border-outer: var(--border-outer);
-
-  --color-link: var(--link-color);
-  --color-link-hover: var(--link-hover);
-
-  /* Legacy aliases */
-  --color-background: var(--bg-base);
-  --color-surface: var(--bg-surface);
-  --color-surface-elevated: var(--bg-elevated);
-  --color-foreground: var(--text-primary);
-  --color-foreground-secondary: var(--text-secondary);
-  --color-foreground-tertiary: var(--text-tertiary);
-  --color-border: var(--border-primary);
-
-  /* Font families */
-  --font-sans: var(--font-family-base);
-  --font-mono: var(--font-family-mono);
-}
-
-/* ==========================================================================
-   4. BASE STYLES
-   ========================================================================== */
-
-body {
-  font-family: var(--font-family-base);
-  font-weight: var(--font-weight-normal);
-  background: var(--bg-base);
-  color: var(--text-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-bold);
-}
-
-/* ==========================================================================
-   5. TRANSITIONS - Scoped
-   ========================================================================== */
-
-button,
-a,
-input,
-textarea,
-select,
-.card,
-.surface-card,
-.nav-link,
-.toc-link {
-  transition:
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* ==========================================================================
-   6. BLOB BACKGROUND
-   ========================================================================== */
-
-.blob-container {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  z-index: -1;
-  pointer-events: none;
-  contain: layout style paint;
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.2;
-}
-
-.blob-1 {
-  width: 600px;
-  height: 600px;
-  background-color: #FF6B95;
-  top: -200px;
-  right: -200px;
-}
-
-.blob-2 {
-  width: 700px;
-  height: 700px;
-  background-color: #7B68EE;
-  bottom: -300px;
-  left: -300px;
-}
-
-.blob-3 {
-  width: 400px;
-  height: 400px;
-  background-color: #61DBFB;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.dark .blob-1 { background-color: #FF8FA3; }
-.dark .blob-2 { background-color: #9B8AFF; }
-.dark .blob-3 { background-color: #7DE5FF; }
-
-/* ==========================================================================
-   7. SURFACE & COMPONENT SYSTEM
-   ========================================================================== */
-
-.surface-card {
-  background: rgba(255, 255, 255, var(--surface-opacity-heavy));
-  backdrop-filter: blur(var(--blur-sm));
-  -webkit-backdrop-filter: blur(var(--blur-sm));
-  border: 1px solid var(--border-inner);
-  box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
-  border-radius: 8px;
-}
-
-.dark .surface-card {
-  background: rgba(30, 30, 30, var(--surface-opacity-heavy));
-}
-
-.top-navigation {
-  position: sticky;
-  top: 0;
-  background: var(--bg-overlay);
-  backdrop-filter: blur(var(--blur-lg)) saturate(180%);
-  -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(180%);
-  border-bottom: 1px solid var(--border-primary);
-  box-shadow: var(--shadow-sm);
-  z-index: var(--z-sticky);
-}
-
-.card {
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-inner);
-  box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
-  border-radius: 8px;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 0 1px var(--border-outer), 0 0 0 2px var(--border-inner), var(--shadow-lg);
-}
-
-/* ==========================================================================
-   8. ANIMATIONS
-   ========================================================================== */
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideInFromLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes shimmer {
-  0% { background-position: -200px 0; }
-  100% { background-position: calc(200px + 100%) 0; }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  will-change: transform, opacity;
-}
-
-.animate-slide-in-left {
-  animation: slideInFromLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-.skeleton {
-  background: linear-gradient(90deg,
-    var(--border-secondary) 0px,
-    var(--bg-elevated) 40px,
-    var(--border-secondary) 80px
-  );
-  background-size: 200px 100%;
-  animation: shimmer 1.5s infinite ease-in-out;
-}
-
-/* ==========================================================================
-   9. FOCUS STATES & ACCESSIBILITY
-   ========================================================================== */
-
-*:focus-visible {
-  outline: 2px solid var(--apple-blue);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
-
-/* Touch targets - Navigation only */
-.nav-link,
-.mobile-nav-link,
-.btn,
-.button {
-  min-height: 44px;
-  min-width: 44px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-}
-
-footer a {
-  min-height: auto;
-  min-width: auto;
-  padding: 4px 0;
-}
-
-button[aria-label^="Go to page"] {
-  min-height: unset;
-  min-width: unset;
-}
-
-/* ==========================================================================
-   10. TABLES
-   ========================================================================== */
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-primary);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-}
-
-th, td {
-  padding: 12px 16px;
-  text-align: left;
-  border-bottom: 1px solid var(--border-secondary);
-  color: var(--text-primary);
-}
-
-th {
-  background: var(--bg-surface);
-  font-weight: var(--font-weight-semibold);
-  border-bottom: 2px solid var(--border-primary);
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-tr:hover td {
-  background: var(--bg-surface);
-}
-
-/* ==========================================================================
-   11. PROSE STYLES - Article Content
-   ========================================================================== */
-
-.prose {
-  max-width: 68ch;
-  font-size: var(--text-base);
-  color: var(--text-primary);
-}
-
-.prose.max-w-none {
-  max-width: none;
-}
-
-/* Headings */
-.prose h1 { font-size: var(--text-4xl); line-height: 1.2; margin: 1.5em 0 0.5em; }
-.prose h2 { font-size: var(--text-3xl); line-height: 1.25; margin: 1.25em 0 0.5em; }
-.prose h3 { font-size: var(--text-2xl); line-height: 1.3; margin: 1em 0 0.4em; }
-.prose h4 { font-size: var(--text-xl); line-height: 1.4; margin: 0.75em 0 0.3em; }
-
-.prose div[class*="bg-surface-elevated"] h3,
-.prose > div > div[class*="bg-surface-elevated"] h3 {
-  margin-top: 0;
-}
-
-/* Paragraphs */
-.prose p {
-  margin: 0.75em 0;
-}
-
-/* ==========================================================================
-   11a. PROSE LISTS - Tight Spacing (CRITICAL FIX)
-   Force tight spacing, override any Tailwind utilities
-   ========================================================================== */
-
-.prose ul:not(.toc-list):not(.toc-sublist),
-.prose ol:not(.toc-list):not(.toc-sublist) {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding-left: 1.5em;
-  list-style-position: outside;
-}
-
-.prose ul:not(.toc-list):not(.toc-sublist) {
-  list-style-type: disc;
-}
-
-.prose ol:not(.toc-list):not(.toc-sublist) {
-  list-style-type: decimal;
-}
-
-/* Individual list items - VERY tight */
-.prose li:not(.toc-item) {
-  margin-top: 0.125em !important;
-  margin-bottom: 0.125em !important;
-  padding-left: 0.25em;
-  line-height: 1.5;
-}
-
-/* Nested lists */
-.prose ul:not(.toc-list) ul,
-.prose ol:not(.toc-list) ol,
-.prose ul:not(.toc-list) ol,
-.prose ol:not(.toc-list) ul {
-  margin-top: 0.125em !important;
-  margin-bottom: 0.125em !important;
-}
-
-/* Override space-y-* on containers inside prose */
-.prose [class*="space-y"] > * + * {
-  margin-top: revert;
-}
-
-/* Section spacing inside prose - for policy pages */
-.prose .prose-section {
-  margin-bottom: 2rem;
-}
-
-.prose .prose-section > ul,
-.prose .prose-section > ol {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-}
-
-/* ==========================================================================
-   11b. PROSE CODE & MISC
-   ========================================================================== */
-
-.prose code {
-  background: var(--bg-surface);
-  padding: 0.15em 0.35em;
-  border-radius: 4px;
-  font-family: var(--font-family-mono);
-  font-size: 0.9em;
-}
-
-.prose pre {
-  background: var(--bg-surface);
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.prose pre code {
-  background: none;
-  padding: 0;
-}
-
-.prose blockquote {
-  border-left: 4px solid var(--border-primary);
-  padding-left: 1rem;
-  color: var(--text-secondary);
-  margin: 1em 0;
-  font-style: italic;
-}
-
-.prose table {
-  margin: 1em 0;
-}
-
-/* Links - Light mode */
-.prose a:not(.toc-link) {
-  color: #2563eb;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.prose a:not(.toc-link):hover {
-  color: #1d4ed8;
-}
-
-/* Prose Dark Mode */
-.prose-invert,
-.dark .prose {
-  color: var(--text-secondary);
-}
-
-.prose-invert h1, .prose-invert h2, .prose-invert h3, .prose-invert h4,
-.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
-  color: var(--text-primary);
-}
-
-.prose-invert a:not(.toc-link),
-.dark .prose a:not(.toc-link) {
-  color: #93c5fd;
-}
-
-.prose-invert a:not(.toc-link):hover,
-.dark .prose a:not(.toc-link):hover {
-  color: #bfdbfe;
-}
-
-/* ==========================================================================
-   12. TABLE OF CONTENTS - Isolated System
-   ========================================================================== */
-
-.toc {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.toc-title {
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Complete reset for ToC lists */
-.toc-list,
-.toc-list ul,
-.toc-sublist {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.toc-item {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.3;
-}
-
-.toc-sublist {
-  margin-left: 1rem !important;
-  padding-left: 0.75rem !important;
-  border-left: 1px solid var(--border-secondary);
-}
-
-.toc-link {
-  display: block;
-  padding: 0.2rem 0;
-  padding-left: 0.75rem;
-  margin-left: -2px;
-  color: var(--text-secondary);
-  text-decoration: none !important;
-  border-left: 2px solid transparent;
-  font-size: 13px;
-}
-
-.toc-link:hover {
-  color: var(--text-primary);
-  border-left-color: var(--apple-blue);
-}
-
-.toc-link.active {
-  color: var(--apple-blue);
-  border-left-color: var(--apple-blue);
-  font-weight: var(--font-weight-semibold);
-}
-
-.dark .toc-link {
-  color: var(--text-secondary);
-}
-
-.dark .toc-link:hover,
-.dark .toc-link.active {
-  color: var(--text-primary);
-}
-
-/* Docs-specific ToC adjustments */
-.docs-toc .toc-list {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.docs-toc .toc-item {
-  margin: 0 !important;
-}
-
-/* ==========================================================================
-   13. UTILITY CLASSES
-   ========================================================================== */
-
-.hero-padding {
-  padding: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .hero-padding {
-    padding: 1rem;
-  }
-}
-
-.link-high-contrast {
-  color: var(--link-color);
-  text-decoration: underline;
-}
-
-.link-high-contrast:hover {
-  color: var(--link-hover);
-}
-
-.gpu-accelerated {
-  transform: translateZ(0);
-  will-change: transform;
-}
-
-.card-hover:hover {
-  box-shadow: var(--shadow-lg);
-}
-
-.dark .author-button {
-  color: #93c5fd !important;
-}
-
-/* ==========================================================================
-   SCROLLBAR STYLES
-   ========================================================================== */
-
-.scrollbar-thin {
-  scrollbar-width: thin;
-}
-
-.scrollbar-thin::-webkit-scrollbar {
-  width: 6px;
-}
-
-.scrollbar-thin::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--border-primary);
-  border-radius: 3px;
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background-color: var(--border-secondary);
-}
-
-.dark .scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--border-primary);
-}
-
-.dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background-color: var(--border-secondary);
-}/* ==========================================================================
-   DESIGN SYSTEM - Final Clean Version
-   ========================================================================== */
-
-@import "tailwindcss";
-
-/* ==========================================================================
-   1. CSS VARIABLES - Light Mode (Default)
-   ========================================================================== */
-
-:root {
-  /* Typography */
-  --font-family-base: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-family-mono: var(--font-geist-mono), 'SF Mono', Consolas, monospace;
-
-  --font-weight-normal: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extrabold: 800;
-
-  /* Font Sizes */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-
-  /* Apple Watch OS Palette */
-  --apple-blue: #007aff;
-  --apple-green: #34c759;
-  --apple-orange: #ff9500;
-  --apple-pink: #ff2d70;
-  --apple-purple: #af52de;
-  --apple-yellow: #ffcc00;
-  --apple-red: #ff3b30;
-
-  /* Text Colors - WCAG AAA */
-  --text-primary: rgba(0, 0, 0, 0.98);
-  --text-secondary: rgba(0, 0, 0, 0.85);
-  --text-tertiary: rgba(0, 0, 0, 0.65);
-
-  /* Link Colors - High Contrast */
-  --link-color: #0056b3;
-  --link-hover: #003d82;
-
-  /* Background Colors */
-  --bg-base: #ffffff;
-  --bg-surface: #fafafa;
-  --bg-elevated: #ffffff;
-  --bg-overlay: rgba(255, 255, 255, 0.9);
-
-  /* Border System */
-  --border-primary: rgba(0, 0, 0, 0.1);
-  --border-secondary: rgba(0, 0, 0, 0.05);
-  --border-hairline: rgba(0, 0, 0, 0.04);
-  --border-inner: rgba(255, 255, 255, 0.8);
-  --border-outer: rgba(0, 0, 0, 0.1);
-
-  /* Blur System */
-  --blur-xs: 4px;
-  --blur-sm: 8px;
-  --blur-md: 12px;
-  --blur-lg: 24px;
-  --blur-xl: 40px;
-
-  /* Surface Opacity */
-  --surface-opacity-light: 0.7;
-  --surface-opacity-medium: 0.85;
-  --surface-opacity-heavy: 0.95;
-
-  /* Shadow System */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.18);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.25);
-  --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.25);
-  --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.25);
-
-  /* Z-index Scale */
-  --z-dropdown: 1000;
-  --z-sticky: 1020;
-  --z-fixed: 1030;
-  --z-modal-backdrop: 1040;
-  --z-modal: 1050;
-  --z-popover: 1060;
-  --z-tooltip: 1070;
-}
-
-/* ==========================================================================
-   2. CSS VARIABLES - Dark Mode
-   ========================================================================== */
-
-.dark {
-  --text-primary: rgba(255, 255, 255, 0.98);
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-tertiary: rgba(255, 255, 255, 0.65);
-
-  --link-color: #66b3ff;
-  --link-hover: #99ccff;
-
-  --bg-base: #0a0a0a;
-  --bg-surface: #141414;
-  --bg-elevated: #1f1f1f;
-  --bg-overlay: rgba(20, 20, 20, 0.9);
-
-  --border-primary: rgba(255, 255, 255, 0.15);
-  --border-secondary: rgba(255, 255, 255, 0.08);
-  --border-hairline: rgba(0, 0, 0, 0.5);
-  --border-inner: rgba(255, 255, 255, 0.1);
-  --border-outer: rgba(255, 255, 255, 0.05);
-
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.55);
-  --shadow-xl: 0 20px 30px rgba(0, 0, 0, 0.65);
-  --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.35);
-  --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.35);
-}
-
-/* ==========================================================================
-   3. TAILWIND THEME BRIDGE
-   ========================================================================== */
-
-@theme inline {
-  /* Colors → Tailwind utilities */
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-tertiary: var(--text-tertiary);
-
-  --color-bg-base: var(--bg-base);
-  --color-bg-surface: var(--bg-surface);
-  --color-bg-elevated: var(--bg-elevated);
-  --color-bg-overlay: var(--bg-overlay);
-
-  --color-apple-blue: var(--apple-blue);
-  --color-apple-green: var(--apple-green);
-  --color-apple-orange: var(--apple-orange);
-  --color-apple-pink: var(--apple-pink);
-  --color-apple-purple: var(--apple-purple);
-  --color-apple-yellow: var(--apple-yellow);
-  --color-apple-red: var(--apple-red);
-
-  --color-border-primary: var(--border-primary);
-  --color-border-secondary: var(--border-secondary);
-  --color-border-hairline: var(--border-hairline);
-  --color-border-inner: var(--border-inner);
-  --color-border-outer: var(--border-outer);
-
-  --color-link: var(--link-color);
-  --color-link-hover: var(--link-hover);
-
-  /* Legacy aliases */
-  --color-background: var(--bg-base);
-  --color-surface: var(--bg-surface);
-  --color-surface-elevated: var(--bg-elevated);
-  --color-foreground: var(--text-primary);
-  --color-foreground-secondary: var(--text-secondary);
-  --color-foreground-tertiary: var(--text-tertiary);
-  --color-border: var(--border-primary);
-
-  /* Font families */
-  --font-sans: var(--font-family-base);
-  --font-mono: var(--font-family-mono);
-}
-
-/* ==========================================================================
-   4. BASE STYLES
-   ========================================================================== */
-
-body {
-  font-family: var(--font-family-base);
-  font-weight: var(--font-weight-normal);
-  background: var(--bg-base);
-  color: var(--text-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-bold);
-}
-
-/* ==========================================================================
-   5. TRANSITIONS - Scoped
-   ========================================================================== */
-
-button,
-a,
-input,
-textarea,
-select,
-.card,
-.surface-card,
-.nav-link,
-.toc-link {
-  transition:
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* ==========================================================================
-   6. BLOB BACKGROUND
-   ========================================================================== */
-
-.blob-container {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  z-index: -1;
-  pointer-events: none;
-  contain: layout style paint;
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.2;
-}
-
-.blob-1 {
-  width: 600px;
-  height: 600px;
-  background-color: #FF6B95;
-  top: -200px;
-  right: -200px;
-}
-
-.blob-2 {
-  width: 700px;
-  height: 700px;
-  background-color: #7B68EE;
-  bottom: -300px;
-  left: -300px;
-}
-
-.blob-3 {
-  width: 400px;
-  height: 400px;
-  background-color: #61DBFB;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.dark .blob-1 { background-color: #FF8FA3; }
-.dark .blob-2 { background-color: #9B8AFF; }
-.dark .blob-3 { background-color: #7DE5FF; }
-
-/* ==========================================================================
-   7. SURFACE & COMPONENT SYSTEM
-   ========================================================================== */
-
-.surface-card {
-  background: rgba(255, 255, 255, var(--surface-opacity-heavy));
-  backdrop-filter: blur(var(--blur-sm));
-  -webkit-backdrop-filter: blur(var(--blur-sm));
-  border: 1px solid var(--border-inner);
-  box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
-  border-radius: 8px;
-}
-
-.dark .surface-card {
-  background: rgba(30, 30, 30, var(--surface-opacity-heavy));
-}
-
-.top-navigation {
-  position: sticky;
-  top: 0;
-  background: var(--bg-overlay);
-  backdrop-filter: blur(var(--blur-lg)) saturate(180%);
-  -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(180%);
-  border-bottom: 1px solid var(--border-primary);
-  box-shadow: var(--shadow-sm);
-  z-index: var(--z-sticky);
-}
-
-.card {
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-inner);
-  box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
-  border-radius: 8px;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 0 1px var(--border-outer), 0 0 0 2px var(--border-inner), var(--shadow-lg);
-}
-
-/* ==========================================================================
-   8. ANIMATIONS
-   ========================================================================== */
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideInFromLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes shimmer {
-  0% { background-position: -200px 0; }
-  100% { background-position: calc(200px + 100%) 0; }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  will-change: transform, opacity;
-}
-
-.animate-slide-in-left {
-  animation: slideInFromLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-.skeleton {
-  background: linear-gradient(90deg,
-    var(--border-secondary) 0px,
-    var(--bg-elevated) 40px,
-    var(--border-secondary) 80px
-  );
-  background-size: 200px 100%;
-  animation: shimmer 1.5s infinite ease-in-out;
-}
-
-/* ==========================================================================
-   9. FOCUS STATES & ACCESSIBILITY
-   ========================================================================== */
-
-*:focus-visible {
-  outline: 2px solid var(--apple-blue);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
-
-/* Touch targets - Navigation only */
-.nav-link,
-.mobile-nav-link,
-.btn,
-.button {
-  min-height: 44px;
-  min-width: 44px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-}
-
-footer a {
-  min-height: auto;
-  min-width: auto;
-  padding: 4px 0;
-}
-
-button[aria-label^="Go to page"] {
-  min-height: unset;
-  min-width: unset;
-}
-/* ==========================================================================
-   10. TABLES
-   ========================================================================== */
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-primary);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-}
-
-th, td {
-  padding: 12px 16px;
-  text-align: left;
-  border-bottom: 1px solid var(--border-secondary);
-  color: var(--text-primary);
-}
-
-th {
-  background: var(--bg-surface);
-  font-weight: var(--font-weight-semibold);
-  border-bottom: 2px solid var(--border-primary);
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-tr:hover td {
-  background: var(--bg-surface);
-}
-
-/* ==========================================================================
-   11. PROSE STYLES - Article Content
-   ========================================================================== */
-
-.prose {
-  max-width: 68ch;
-  font-size: var(--text-base);
-  color: var(--text-primary);
-}
-
-.prose.max-w-none {
-  max-width: none;
-}
-
-/* Headings */
-.prose h1 { font-size: var(--text-4xl); line-height: 1.2; margin: 1.5em 0 0.5em; }
-.prose h2 { font-size: var(--text-3xl); line-height: 1.25; margin: 1.25em 0 0.5em; }
-.prose h3 { font-size: var(--text-2xl); line-height: 1.3; margin: 1em 0 0.4em; }
-.prose h4 { font-size: var(--text-xl); line-height: 1.4; margin: 0.75em 0 0.3em; }
-
-.prose div[class*="bg-surface-elevated"] h3,
-.prose > div > div[class*="bg-surface-elevated"] h3 {
-  margin-top: 0;
-}
-
-/* Paragraphs */
-.prose p {
-  margin: 0.75em 0;
-}
-
-/* ==========================================================================
-   11a. PROSE LISTS - Tight Spacing (CRITICAL FIX)
-   Force tight spacing, override any Tailwind utilities
-   ========================================================================== */
-
-.prose ul:not(.toc-list):not(.toc-sublist),
-.prose ol:not(.toc-list):not(.toc-sublist) {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding-left: 1.5em;
-  list-style-position: outside;
-}
-
-.prose ul:not(.toc-list):not(.toc-sublist) {
-  list-style-type: disc;
-}
-
-.prose ol:not(.toc-list):not(.toc-sublist) {
-  list-style-type: decimal;
-}
-
-/* Individual list items - VERY tight */
-.prose li:not(.toc-item) {
-  margin-top: 0.125em !important;
-  margin-bottom: 0.125em !important;
-  padding-left: 0.25em;
-  line-height: 1.5;
-}
-
-/* Nested lists */
-.prose ul:not(.toc-list) ul,
-.prose ol:not(.toc-list) ol,
-.prose ul:not(.toc-list) ol,
-.prose ol:not(.toc-list) ul {
-  margin-top: 0.125em !important;
-  margin-bottom: 0.125em !important;
-}
-
-/* Override space-y-* on containers inside prose */
-.prose [class*="space-y"] > * + * {
-  margin-top: revert;
-}
-
-/* Section spacing inside prose - for policy pages */
-.prose .prose-section {
-  margin-bottom: 2rem;
-}
-
-.prose .prose-section > ul,
-.prose .prose-section > ol {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-}
-
-/* ==========================================================================
-   11b. PROSE CODE & MISC
-   ========================================================================== */
-
-.prose code {
-  background: var(--bg-surface);
-  padding: 0.15em 0.35em;
-  border-radius: 4px;
-  font-family: var(--font-family-mono);
-  font-size: 0.9em;
-}
-
-.prose pre {
-  background: var(--bg-surface);
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.prose pre code {
-  background: none;
-  padding: 0;
-}
-
-.prose blockquote {
-  border-left: 4px solid var(--border-primary);
-  padding-left: 1rem;
-  color: var(--text-secondary);
-  margin: 1em 0;
-  font-style: italic;
-}
-
-.prose table {
-  margin: 1em 0;
-}
-
-/* Links - Light mode */
-.prose a:not(.toc-link) {
-  color: #2563eb;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.prose a:not(.toc-link):hover {
-  color: #1d4ed8;
-}
-
-/* Prose Dark Mode */
-.prose-invert,
-.dark .prose {
-  color: var(--text-secondary);
-}
-
-.prose-invert h1, .prose-invert h2, .prose-invert h3, .prose-invert h4,
-.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
-  color: var(--text-primary);
-}
-
-.prose-invert a:not(.toc-link),
-.dark .prose a:not(.toc-link) {
-  color: #93c5fd;
-}
-
-.prose-invert a:not(.toc-link):hover,
-.dark .prose a:not(.toc-link):hover {
-  color: #bfdbfe;
-}
-
-/* ==========================================================================
-   12. TABLE OF CONTENTS - Isolated System
-   ========================================================================== */
-
-.toc {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.toc-title {
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Complete reset for ToC lists */
-.toc-list,
-.toc-list ul,
-.toc-sublist {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.toc-item {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.3;
-}
-
-.toc-sublist {
-  margin-left: 1rem !important;
-  padding-left: 0.75rem !important;
-  border-left: 1px solid var(--border-secondary);
-}
-
-.toc-link {
-  display: block;
-  padding: 0.2rem 0;
-  padding-left: 0.75rem;
-  margin-left: -2px;
-  color: var(--text-secondary);
-  text-decoration: none !important;
-  border-left: 2px solid transparent;
-  font-size: 13px;
-}
-
-.toc-link:hover {
-  color: var(--text-primary);
-  border-left-color: var(--apple-blue);
-}
-
-.toc-link.active {
-  color: var(--apple-blue);
-  border-left-color: var(--apple-blue);
-  font-weight: var(--font-weight-semibold);
-}
-
-.dark .toc-link {
-  color: var(--text-secondary);
-}
-
-.dark .toc-link:hover,
-.dark .toc-link.active {
-  color: var(--text-primary);
-}
-
-/* Docs-specific ToC adjustments */
-.docs-toc .toc-list {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.docs-toc .toc-item {
-  margin: 0 !important;
-}
-
-/* ==========================================================================
-   13. UTILITY CLASSES
-   ========================================================================== */
-
-.hero-padding {
-  padding: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .hero-padding {
-    padding: 1rem;
-  }
-}
-
-.link-high-contrast {
-  color: var(--link-color);
-  text-decoration: underline;
-}
-
-.link-high-contrast:hover {
-  color: var(--link-hover);
-}
-
-.gpu-accelerated {
-  transform: translateZ(0);
-  will-change: transform;
-}
-
-.card-hover:hover {
-  box-shadow: var(--shadow-lg);
-}
-
-.dark .author-button {
-  color: #93c5fd !important;
-}
-
-/* ==========================================================================
-   SCROLLBAR STYLES
-   ========================================================================== */
-
-.scrollbar-thin {
-  scrollbar-width: thin;
-}
-
-.scrollbar-thin::-webkit-scrollbar {
-  width: 6px;
-}
-
-.scrollbar-thin::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--border-primary);
-  border-radius: 3px;
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background-color: var(--border-secondary);
-}
-
-.dark .scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--border-primary);
-}
-
-.dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background-color: var(--border-secondary);
-}
+   @import "tailwindcss";
+
+   /* ==========================================================================
+      1. CSS VARIABLES - Light Mode (Default)
+      ========================================================================== */
+   
+   :root {
+     /* Typography */
+     --font-family-base: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+     --font-family-mono: var(--font-geist-mono), 'SF Mono', Consolas, monospace;
+   
+     --font-weight-normal: 500;
+     --font-weight-semibold: 600;
+     --font-weight-bold: 700;
+     --font-weight-extrabold: 800;
+   
+     /* Font Sizes */
+     --text-xs: 0.75rem;
+     --text-sm: 0.875rem;
+     --text-base: 1rem;
+     --text-lg: 1.125rem;
+     --text-xl: 1.25rem;
+     --text-2xl: 1.5rem;
+     --text-3xl: 1.875rem;
+     --text-4xl: 2.25rem;
+   
+     /* Apple Watch OS Palette */
+     --apple-blue: #007aff;
+     --apple-green: #34c759;
+     --apple-orange: #ff9500;
+     --apple-pink: #ff2d70;
+     --apple-purple: #af52de;
+     --apple-yellow: #ffcc00;
+     --apple-red: #ff3b30;
+   
+     /* Text Colors - WCAG AAA */
+     --text-primary: rgba(0, 0, 0, 0.98);
+     --text-secondary: rgba(0, 0, 0, 0.85);
+     --text-tertiary: rgba(0, 0, 0, 0.65);
+   
+     /* Link Colors - High Contrast */
+     --link-color: #0056b3;
+     --link-hover: #003d82;
+   
+     /* Background Colors */
+     --bg-base: #ffffff;
+     --bg-surface: #fafafa;
+     --bg-elevated: #ffffff;
+     --bg-overlay: rgba(255, 255, 255, 0.9);
+   
+     /* Border System */
+     --border-primary: rgba(0, 0, 0, 0.1);
+     --border-secondary: rgba(0, 0, 0, 0.05);
+     --border-hairline: rgba(0, 0, 0, 0.04);
+     --border-inner: rgba(255, 255, 255, 0.8);
+     --border-outer: rgba(0, 0, 0, 0.1);
+   
+     /* Blur System */
+     --blur-xs: 4px;
+     --blur-sm: 8px;
+     --blur-md: 12px;
+     --blur-lg: 24px;
+     --blur-xl: 40px;
+   
+     /* Surface Opacity */
+     --surface-opacity-light: 0.7;
+     --surface-opacity-medium: 0.85;
+     --surface-opacity-heavy: 0.95;
+   
+     /* Shadow System */
+     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.12);
+     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.18);
+     --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.25);
+     --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.25);
+     --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.25);
+   
+     /* Z-index Scale */
+     --z-dropdown: 1000;
+     --z-sticky: 1020;
+     --z-fixed: 1030;
+     --z-modal-backdrop: 1040;
+     --z-modal: 1050;
+     --z-popover: 1060;
+     --z-tooltip: 1070;
+   }
+   
+   /* ==========================================================================
+      2. CSS VARIABLES - Dark Mode
+      ========================================================================== */
+   
+   .dark {
+     --text-primary: rgba(255, 255, 255, 0.98);
+     --text-secondary: rgba(255, 255, 255, 0.85);
+     --text-tertiary: rgba(255, 255, 255, 0.65);
+   
+     --link-color: #66b3ff;
+     --link-hover: #99ccff;
+   
+     --bg-base: #0a0a0a;
+     --bg-surface: #141414;
+     --bg-elevated: #1f1f1f;
+     --bg-overlay: rgba(20, 20, 20, 0.9);
+   
+     --border-primary: rgba(255, 255, 255, 0.15);
+     --border-secondary: rgba(255, 255, 255, 0.08);
+     --border-hairline: rgba(0, 0, 0, 0.5);
+     --border-inner: rgba(255, 255, 255, 0.1);
+     --border-outer: rgba(255, 255, 255, 0.05);
+   
+     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+     --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.45);
+     --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.55);
+     --shadow-xl: 0 20px 30px rgba(0, 0, 0, 0.65);
+     --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.35);
+     --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.35);
+   }
+   
+   /* ==========================================================================
+      3. TAILWIND THEME BRIDGE
+      ========================================================================== */
+   
+   @theme inline {
+     /* Colors → Tailwind utilities */
+     --color-text-primary: var(--text-primary);
+     --color-text-secondary: var(--text-secondary);
+     --color-text-tertiary: var(--text-tertiary);
+   
+     --color-bg-base: var(--bg-base);
+     --color-bg-surface: var(--bg-surface);
+     --color-bg-elevated: var(--bg-elevated);
+     --color-bg-overlay: var(--bg-overlay);
+   
+     --color-apple-blue: var(--apple-blue);
+     --color-apple-green: var(--apple-green);
+     --color-apple-orange: var(--apple-orange);
+     --color-apple-pink: var(--apple-pink);
+     --color-apple-purple: var(--apple-purple);
+     --color-apple-yellow: var(--apple-yellow);
+     --color-apple-red: var(--apple-red);
+   
+     --color-border-primary: var(--border-primary);
+     --color-border-secondary: var(--border-secondary);
+     --color-border-hairline: var(--border-hairline);
+     --color-border-inner: var(--border-inner);
+     --color-border-outer: var(--border-outer);
+   
+     --color-link: var(--link-color);
+     --color-link-hover: var(--link-hover);
+   
+     /* Legacy aliases */
+     --color-background: var(--bg-base);
+     --color-surface: var(--bg-surface);
+     --color-surface-elevated: var(--bg-elevated);
+     --color-foreground: var(--text-primary);
+     --color-foreground-secondary: var(--text-secondary);
+     --color-foreground-tertiary: var(--text-tertiary);
+     --color-border: var(--border-primary);
+   
+     /* Font families */
+     --font-sans: var(--font-family-base);
+     --font-mono: var(--font-family-mono);
+   }
+   
+   /* ==========================================================================
+      4. BASE STYLES
+      ========================================================================== */
+   
+   body {
+     font-family: var(--font-family-base);
+     font-weight: var(--font-weight-normal);
+     background: var(--bg-base);
+     color: var(--text-primary);
+     min-height: 100vh;
+     overflow-x: hidden;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+     font-weight: var(--font-weight-bold);
+   }
+   
+   /* ==========================================================================
+      5. TRANSITIONS - Scoped
+      ========================================================================== */
+   
+   button,
+   a,
+   input,
+   textarea,
+   select,
+   .card,
+   .surface-card,
+   .nav-link,
+   .toc-link {
+     transition:
+       background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+       border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+       color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+       box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   
+   @media (prefers-reduced-motion: reduce) {
+     *, *::before, *::after {
+       animation-duration: 0.01ms !important;
+       animation-iteration-count: 1 !important;
+       transition-duration: 0.01ms !important;
+     }
+   }
+   
+   /* ==========================================================================
+      6. BLOB BACKGROUND
+      ========================================================================== */
+   
+   .blob-container {
+     position: fixed;
+     inset: 0;
+     overflow: hidden;
+     z-index: 0;
+     pointer-events: none;
+   }
+   
+   .blob {
+     position: absolute;
+     border-radius: 50%;
+     filter: blur(120px);
+     opacity: 0.2;
+   }
+   
+   .blob-1 {
+     width: 600px;
+     height: 600px;
+     background-color: #FF6B95;
+     top: -200px;
+     right: -200px;
+   }
+   
+   .blob-2 {
+     width: 700px;
+     height: 700px;
+     background-color: #7B68EE;
+     bottom: -300px;
+     left: -300px;
+   }
+   
+   .blob-3 {
+     width: 400px;
+     height: 400px;
+     background-color: #61DBFB;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+   
+   .dark .blob-1 { background-color: #FF8FA3; }
+   .dark .blob-2 { background-color: #9B8AFF; }
+   .dark .blob-3 { background-color: #7DE5FF; }
+   
+   /* ==========================================================================
+      7. SURFACE & COMPONENT SYSTEM
+      ========================================================================== */
+   
+   .surface-card {
+     background: rgba(255, 255, 255, var(--surface-opacity-heavy));
+     backdrop-filter: blur(var(--blur-sm));
+     -webkit-backdrop-filter: blur(var(--blur-sm));
+     border: 1px solid var(--border-inner);
+     box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
+     border-radius: 8px;
+   }
+   
+   .dark .surface-card {
+     background: rgba(30, 30, 30, var(--surface-opacity-heavy));
+   }
+   
+   .top-navigation {
+     position: sticky;
+     top: 0;
+     background: var(--bg-overlay);
+     backdrop-filter: blur(var(--blur-lg)) saturate(180%);
+     -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(180%);
+     border-bottom: 1px solid var(--border-primary);
+     box-shadow: var(--shadow-sm);
+     z-index: var(--z-sticky);
+   }
+   
+   .card {
+     background: var(--bg-elevated);
+     border: 1px solid var(--border-inner);
+     box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
+     border-radius: 8px;
+   }
+   
+   .card:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 0 0 1px var(--border-outer), 0 0 0 2px var(--border-inner), var(--shadow-lg);
+   }
+   
+   /* ==========================================================================
+      8. ANIMATIONS
+      ========================================================================== */
+   
+   @keyframes fadeInUp {
+     from { opacity: 0; transform: translateY(10px); }
+     to { opacity: 1; transform: translateY(0); }
+   }
+   
+   @keyframes slideInFromLeft {
+     from { opacity: 0; transform: translateX(-20px); }
+     to { opacity: 1; transform: translateX(0); }
+   }
+   
+   @keyframes shimmer {
+     0% { background-position: -200px 0; }
+     100% { background-position: calc(200px + 100%) 0; }
+   }
+   
+   .animate-fade-in-up {
+     animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+     will-change: transform, opacity;
+   }
+   
+   .animate-slide-in-left {
+     animation: slideInFromLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+   }
+   
+   .skeleton {
+     background: linear-gradient(90deg,
+       var(--border-secondary) 0px,
+       var(--bg-elevated) 40px,
+       var(--border-secondary) 80px
+     );
+     background-size: 200px 100%;
+     animation: shimmer 1.5s infinite ease-in-out;
+   }
+   
+   /* ==========================================================================
+      9. FOCUS STATES & ACCESSIBILITY
+      ========================================================================== */
+   
+   *:focus-visible {
+     outline: 2px solid var(--apple-blue);
+     outline-offset: 2px;
+     border-radius: 4px;
+   }
+   
+   /* Touch targets - Navigation only */
+   .nav-link,
+   .mobile-nav-link,
+   .btn,
+   .button {
+     min-height: 44px;
+     min-width: 44px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     padding: 12px 16px;
+   }
+   
+   footer a {
+     min-height: auto;
+     min-width: auto;
+     padding: 4px 0;
+   }
+   
+   button[aria-label^="Go to page"] {
+     min-height: unset;
+     min-width: unset;
+   }
+   
+   /* ==========================================================================
+      10. TABLES
+      ========================================================================== */
+   
+   table {
+     width: 100%;
+     border-collapse: separate;
+     border-spacing: 0;
+     background: var(--bg-elevated);
+     border: 1px solid var(--border-primary);
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: var(--shadow-sm);
+   }
+   
+   th, td {
+     padding: 12px 16px;
+     text-align: left;
+     border-bottom: 1px solid var(--border-secondary);
+     color: var(--text-primary);
+   }
+   
+   th {
+     background: var(--bg-surface);
+     font-weight: var(--font-weight-semibold);
+     border-bottom: 2px solid var(--border-primary);
+   }
+   
+   tr:last-child td {
+     border-bottom: none;
+   }
+   
+   tr:hover td {
+     background: var(--bg-surface);
+   }
+   
+   /* ==========================================================================
+      11. PROSE STYLES - Article Content
+      ========================================================================== */
+   
+   .prose {
+     max-width: 68ch;
+     font-size: var(--text-base);
+     color: var(--text-primary);
+   }
+   
+   .prose.max-w-none {
+     max-width: none;
+   }
+   
+   /* Headings */
+   .prose h1 { font-size: var(--text-4xl); line-height: 1.2; margin: 1.5em 0 0.5em; }
+   .prose h2 { font-size: var(--text-3xl); line-height: 1.25; margin: 1.25em 0 0.5em; }
+   .prose h3 { font-size: var(--text-2xl); line-height: 1.3; margin: 1em 0 0.4em; }
+   .prose h4 { font-size: var(--text-xl); line-height: 1.4; margin: 0.75em 0 0.3em; }
+   
+   .prose div[class*="bg-surface-elevated"] h3,
+   .prose > div > div[class*="bg-surface-elevated"] h3 {
+     margin-top: 0;
+   }
+   
+   /* Paragraphs */
+   .prose p {
+     margin: 0.75em 0;
+   }
+   
+   /* ==========================================================================
+      11a. PROSE LISTS - Tight Spacing
+      ========================================================================== */
+   
+   .prose ul:not(.toc-list):not(.toc-sublist),
+   .prose ol:not(.toc-list):not(.toc-sublist) {
+     margin-top: 0.5em !important;
+     margin-bottom: 0.5em !important;
+     padding-left: 1.5em;
+     list-style-position: outside;
+   }
+   
+   .prose ul:not(.toc-list):not(.toc-sublist) {
+     list-style-type: disc;
+   }
+   
+   .prose ol:not(.toc-list):not(.toc-sublist) {
+     list-style-type: decimal;
+   }
+   
+   .prose li:not(.toc-item) {
+     margin-top: 0.125em !important;
+     margin-bottom: 0.125em !important;
+     padding-left: 0.25em;
+     line-height: 1.5;
+   }
+   
+   /* Nested lists */
+   .prose ul:not(.toc-list) ul,
+   .prose ol:not(.toc-list) ol,
+   .prose ul:not(.toc-list) ol,
+   .prose ol:not(.toc-list) ul {
+     margin-top: 0.125em !important;
+     margin-bottom: 0.125em !important;
+   }
+   
+   /* Override space-y-* on containers inside prose */
+   .prose [class*="space-y"] > * + * {
+     margin-top: revert;
+   }
+   
+   /* Section spacing inside prose - for policy pages */
+   .prose .prose-section {
+     margin-bottom: 2rem;
+   }
+   
+   .prose .prose-section > ul,
+   .prose .prose-section > ol {
+     margin-top: 0.5em !important;
+     margin-bottom: 0.5em !important;
+   }
+   
+   /* ==========================================================================
+      11b. PROSE CODE & MISC
+      ========================================================================== */
+   
+   .prose code {
+     background: var(--bg-surface);
+     padding: 0.15em 0.35em;
+     border-radius: 4px;
+     font-family: var(--font-family-mono);
+     font-size: 0.9em;
+   }
+   
+   .prose pre {
+     background: var(--bg-surface);
+     padding: 1rem;
+     border-radius: 8px;
+     overflow-x: auto;
+     white-space: pre-wrap;
+     word-wrap: break-word;
+   }
+   
+   .prose pre code {
+     background: none;
+     padding: 0;
+   }
+   
+   .prose blockquote {
+     border-left: 4px solid var(--border-primary);
+     padding-left: 1rem;
+     color: var(--text-secondary);
+     margin: 1em 0;
+     font-style: italic;
+   }
+   
+   .prose table {
+     margin: 1em 0;
+   }
+   
+   /* Links - Light mode */
+   .prose a:not(.toc-link) {
+     color: #2563eb;
+     text-decoration: underline;
+     text-underline-offset: 2px;
+   }
+   
+   .prose a:not(.toc-link):hover {
+     color: #1d4ed8;
+   }
+   
+   /* Prose Dark Mode */
+   .prose-invert,
+   .dark .prose {
+     color: var(--text-secondary);
+   }
+   
+   .prose-invert h1, .prose-invert h2, .prose-invert h3, .prose-invert h4,
+   .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
+     color: var(--text-primary);
+   }
+   
+   .prose-invert a:not(.toc-link),
+   .dark .prose a:not(.toc-link) {
+     color: #93c5fd;
+   }
+   
+   .prose-invert a:not(.toc-link):hover,
+   .dark .prose a:not(.toc-link):hover {
+     color: #bfdbfe;
+   }
+   
+   /* ==========================================================================
+      12. TABLE OF CONTENTS - Isolated System
+      ========================================================================== */
+   
+   .toc {
+     font-size: 14px;
+     line-height: 1.4;
+   }
+   
+   .toc-title {
+     font-size: var(--text-sm);
+     font-weight: var(--font-weight-semibold);
+     color: var(--text-primary);
+     margin-bottom: 0.75rem;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+   }
+   
+   /* Complete reset for ToC lists */
+   .toc-list,
+   .toc-list ul,
+   .toc-sublist {
+     list-style: none !important;
+     margin: 0 !important;
+     padding: 0 !important;
+   }
+   
+   .toc-item {
+     margin: 0 !important;
+     padding: 0 !important;
+     line-height: 1.3;
+   }
+   
+   .toc-sublist {
+     margin-left: 1rem !important;
+     padding-left: 0.75rem !important;
+     border-left: 1px solid var(--border-secondary);
+   }
+   
+   .toc-link {
+     display: block;
+     padding: 0.2rem 0;
+     padding-left: 0.75rem;
+     margin-left: -2px;
+     color: var(--text-secondary);
+     text-decoration: none !important;
+     border-left: 2px solid transparent;
+     font-size: 13px;
+   }
+   
+   .toc-link:hover {
+     color: var(--text-primary);
+     border-left-color: var(--apple-blue);
+   }
+   
+   .toc-link.active {
+     color: var(--apple-blue);
+     border-left-color: var(--apple-blue);
+     font-weight: var(--font-weight-semibold);
+   }
+   
+   .dark .toc-link {
+     color: var(--text-secondary);
+   }
+   
+   .dark .toc-link:hover,
+   .dark .toc-link.active {
+     color: var(--text-primary);
+   }
+   
+   /* Docs-specific ToC adjustments */
+   .docs-toc .toc-list {
+     margin: 0 !important;
+     padding: 0 !important;
+   }
+   
+   .docs-toc .toc-item {
+     margin: 0 !important;
+   }
+   
+   /* ==========================================================================
+      13. UTILITY CLASSES
+      ========================================================================== */
+   
+   .hero-padding {
+     padding: 1.5rem;
+   }
+   
+   @media (max-width: 768px) {
+     .hero-padding {
+       padding: 1rem;
+     }
+   }
+   
+   .link-high-contrast {
+     color: var(--link-color);
+     text-decoration: underline;
+   }
+   
+   .link-high-contrast:hover {
+     color: var(--link-hover);
+   }
+   
+   .gpu-accelerated {
+     transform: translateZ(0);
+     will-change: transform;
+   }
+   
+   .card-hover:hover {
+     box-shadow: var(--shadow-lg);
+   }
+   
+   .dark .author-button {
+     color: #93c5fd !important;
+   }
+   
+   /* ==========================================================================
+      14. SCROLLBAR STYLES
+      ========================================================================== */
+   
+   .scrollbar-thin {
+     scrollbar-width: thin;
+   }
+   
+   .scrollbar-thin::-webkit-scrollbar {
+     width: 6px;
+   }
+   
+   .scrollbar-thin::-webkit-scrollbar-track {
+     background: transparent;
+   }
+   
+   .scrollbar-thin::-webkit-scrollbar-thumb {
+     background-color: var(--border-primary);
+     border-radius: 3px;
+   }
+   
+   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+     background-color: var(--border-secondary);
+   }
+   
+   .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+     background-color: var(--border-primary);
+   }
+   
+   .dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+     background-color: var(--border-secondary);
+   }

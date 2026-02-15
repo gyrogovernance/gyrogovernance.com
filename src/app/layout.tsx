@@ -151,7 +151,7 @@ export default function RootLayout({
               --link-hover: #99ccff;
             }
             body { font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: var(--bg-base); color: var(--text-primary); transition: background-color 0.3s ease, color 0.3s ease; }
-            .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1; pointer-events: none; }
+            .blob-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0; pointer-events: none; }
             .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; will-change: transform; }
             .blob-1 { width: 600px; height: 600px; background-color: #FF6B95; top: -200px; right: -200px; }
             .blob-2 { width: 700px; height: 700px; background-color: #7B68EE; bottom: -300px; left: -300px; }
@@ -320,7 +320,7 @@ export default function RootLayout({
           </div>
         </header>
 
-                  <main role="main" className="animate-fade-in-up">
+                  <main role="main">
                     {children}
                   </main>
 

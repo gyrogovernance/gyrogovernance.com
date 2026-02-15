@@ -87,7 +87,7 @@ export default function Home() {
             <a
               key={p.title}
               href={p.href}
-              className="group flex items-start gap-3 p-3 rounded-2xl bg-surface-elevated/50 border border-border/50 hover:bg-surface-elevated hover:border-apple-blue/30 transition-all duration-200"
+              className="group flex items-start gap-3 p-3 rounded-2xl bg-surface-elevated/30 border border-border/90 hover:bg-surface-elevated backdrop-blur-2xl hover:border-apple-blue/50 transition-all duration-200"
             >
               <span className="text-2xl leading-none shrink-0">{p.emoji}</span>
               <span className="min-w-0">
