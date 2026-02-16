@@ -4,6 +4,9 @@
 
    @import "tailwindcss";
 
+   /* Tailwind 4: Enable class-based dark mode */
+  @custom-variant dark (&:where(.dark, .dark *));
+
    /* ==========================================================================
       1. CSS VARIABLES - Light Mode (Default)
       ========================================================================== */
@@ -250,7 +253,7 @@
       .blob-3 {
         width: 240px;
         height: 240px;
-        background-color: #61cafb;
+        background-color: #86d9ffc1;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -280,23 +283,36 @@
       
       .dark .blob-1 { background-color: #ff56e8a5; }
       .dark .blob-2 { background-color: #5940eaaa; }
-      .dark .blob-3 { background-color: #48c5ffe5; }
+      .dark .blob-3 { background-color: #48c5ff7d; }
       
-    /* ==========================================================================
-      17. SVG OVERLAY
-      ========================================================================== */
+/* ==========================================================================
+   17. SVG OVERLAY
+   ========================================================================== */
 
-      .svg-overlay {
-        opacity: 0.6;
-      }
-      
-      .dark .svg-overlay {
-        opacity: 0.2;
-      }
-      
-      /* ==========================================================================
-      7. SURFACE & COMPONENT SYSTEM
-      ========================================================================== */
+   .svg-overlay {
+     opacity: 0.6;
+   }
+   
+   .dark .svg-overlay {
+     opacity: 0.2;
+   }
+   
+   /* ==========================================================================
+   18. DARK MODE PILL TEXT FIX
+   ========================================================================== */
+
+   /* Dark mode pill text fix */
+   .dark [class*="text-amber-800"] { color: #fcd34d; }
+   .dark [class*="text-emerald-800"] { color: #6ee7b7; }
+   .dark [class*="text-blue-800"] { color: #93c5fd; }
+   .dark [class*="text-purple-800"] { color: #c4b5fd; }
+   .dark [class*="text-red-800"] { color: #fca5a5; }
+   .dark [class*="text-green-800"] { color: #86efac; }
+   .dark [class*="text-gray-800"] { color: #d1d5db; }
+   
+   /* ==========================================================================
+   7. SURFACE & COMPONENT SYSTEM
+   ========================================================================== */
    
    .surface-card {
      background: rgba(255, 255, 255, var(--surface-opacity-heavy));
@@ -772,3 +788,105 @@
       font-size: 3rem;
     }
   }
+
+  /* ==========================================================================
+   19. SEARCH PAGE COMPONENTS
+   ========================================================================== */
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  border: 2px solid var(--border-primary);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--apple-blue);
+}
+
+.search-select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  border: 2px solid var(--border-primary);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.search-select:focus {
+  outline: none;
+  border-color: var(--apple-blue);
+}
+
+.search-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-primary);
+  background: var(--bg-elevated);
+}
+
+.search-tag {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-secondary);
+}
+
+.search-highlight {
+  background: rgba(255, 204, 0, 0.4);
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.dark .search-highlight {
+  background: rgba(255, 204, 0, 0.3);
+}
+
+/* Pills */
+.search-pill {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.search-pill-prediction { background: #fef3c7; color: #92400e; }
+.search-pill-invariant { background: #d1fae5; color: #065f46; }
+.search-pill-method { background: #dbeafe; color: #1e40af; }
+.search-pill-cosmology { background: #ede9fe; color: #5b21b6; }
+.search-pill-axiom { background: #ffedd5; color: #9a3412; }
+.search-pill-equation { background: #f3e8ff; color: #6b21a8; }
+.search-pill-claim { background: #fee2e2; color: #991b1b; }
+.search-pill-concept { background: #dcfce7; color: #166534; }
+.search-pill-result { background: #e0f2fe; color: #0369a1; }
+.search-pill-core { background: #dcfce7; color: #166534; }
+.search-pill-supporting { background: #dbeafe; color: #1e40af; }
+.search-pill-detail { background: #f1f5f9; color: #475569; }
+
+.dark .search-pill-prediction { background: rgba(251,191,36,0.2); color: #fcd34d; }
+.dark .search-pill-invariant { background: rgba(16,185,129,0.2); color: #6ee7b7; }
+.dark .search-pill-method { background: rgba(59,130,246,0.2); color: #93c5fd; }
+.dark .search-pill-cosmology { background: rgba(139,92,246,0.2); color: #c4b5fd; }
+.dark .search-pill-axiom { background: rgba(249,115,22,0.2); color: #fdba74; }
+.dark .search-pill-equation { background: rgba(168,85,247,0.2); color: #d8b4fe; }
+.dark .search-pill-claim { background: rgba(239,68,68,0.2); color: #fca5a5; }
+.dark .search-pill-concept { background: rgba(34,197,94,0.2); color: #86efac; }
+.dark .search-pill-result { background: rgba(14,165,233,0.2); color: #7dd3fc; }
+.dark .search-pill-core { background: rgba(34,197,94,0.2); color: #86efac; }
+.dark .search-pill-supporting { background: rgba(59,130,246,0.2); color: #93c5fd; }
+.dark .search-pill-detail { background: rgba(100,116,139,0.2); color: #cbd5e1; }

@@ -312,7 +312,7 @@ export default function RootLayout({
           </div>
         </header>
 
-                  <main role="main">
+                  <main role="main" className="relative z-10">
                     {children}
                   </main>
 
@@ -321,7 +321,7 @@ export default function RootLayout({
             <div className="text-center">
               <p className="text-foreground-secondary font-medium">GYRO GOVERNANCE | 2025 | CC BY-SA 4.0</p>
               
-              {/* Main Menu Navigation */}
+                {/* Main Menu Navigation */}
               <nav className="mt-6" role="navigation" aria-label="Footer navigation">
                 <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm">
                   <Link href="/" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">

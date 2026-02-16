@@ -169,6 +169,75 @@ Synchronized with React version for optimal compatibility.
 
 **Comprehensive site-wide link checker** for ensuring website integrity:
 
+---
+
+## CGM Knowledge Base Search
+
+**Client-side search system** for the CGM dataset:
+
+- **Source**: JSONL dataset at `src/content/dataset/cgm_dataset_main.jsonl`
+- **Index**: Pre-built JSON at `public/search-index/index.json`
+- **Component**: `src/components/CGMSearch.jsx`
+- **Route**: `/search`
+
+### Dataset Schema
+
+Each record contains:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique identifier (e.g., `cgm_001`) |
+| `source` | string | Origin markdown file path |
+| `section` | string | Document section/heading |
+| `category` | string | Domain tag (`axiom`, `prediction`, `cosmology`, etc.) |
+| `type` | string | Content type (`concept`, `equation`, `claim`, etc.) |
+| `question` | string | Natural language question |
+| `answer` | string | Faithful answer from source |
+| `context` | string | Verbatim excerpt from source |
+| `tags` | array | Searchable keywords |
+| `importance` | string | `core`, `supporting`, or `detail` |
+
+### Build Process
+
+**Run manually when dataset changes:**
+
+```bash
+node scripts/build-search-index.js
+```
+
+This generates `public/search-index/index.json` containing:
+- All records from the JSONL
+- Facets for filtering (categories, types, tags, importance levels)
+
+**Note**: The index is committed to the repository. No build-time generation required.
+
+### Search Features
+
+- **Text search**: Scored by match location (tags > question > answer > context)
+- **Filters**: Category, type, importance, individual tags
+- **Highlighting**: Matched terms highlighted in results
+- **Expandable context**: Show source context and document location
+
+### Architecture
+
+```
+cgm_dataset_main.jsonl
+        ↓
+  build-search-index.js (run manually)
+        ↓
+  public/search-index/index.json (committed)
+        ↓
+  CGMSearch.jsx loads at runtime
+        ↓
+  Client-side filtering and scoring
+```
+
+### Adding New Entries
+
+1. Add records to `src/content/dataset/cgm_dataset_main.jsonl`
+2. Run `node scripts/build-search-index.js`
+3. Commit both files
+
 - **Technology**: Node.js HTTP client with intelligent crawling
 - **Coverage**: All internal links across the entire website
 - **Features**:

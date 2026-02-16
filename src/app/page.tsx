@@ -1058,42 +1058,83 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Datasets Subsection */}
+                {/* CGM Theory Section */}
                 <div id="cgm" className="mb-12">
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
-                    Datasets
+                    Foundational Theory
+                  </h3>
+                  <article className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-green-500/20 hover:shadow-xl transition-shadow duration-300">
+                    <div className="text-center mb-6">
+                      <div className="text-5xl mb-4">⚗️</div>
+                      <h4 className="text-2xl font-bold text-foreground mb-2">
+                        Common Governance Model (CGM)
+                      </h4>
+                      <p className="text-foreground-secondary max-w-2xl mx-auto">
+                        The mathematical physics foundation for all research on this website. Formal proofs, geometric analyses, and axioms that ground our work in AI safety and governance.
+                      </p>
+                    </div>
+
+                    {/* Two cards: Dataset + Search */}
+                    <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                      {/* Dataset Card */}
+                      <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-2xl">📊</span>
+                          <h5 className="text-lg font-semibold text-foreground">Dataset</h5>
+                        </div>
+                        <p className="text-sm text-foreground-secondary mb-3">
+                          1,024 structured Q&A entries for fine-tuning, RAG, and evaluation.
+                        </p>
+                        <a
+                          href="https://github.com/gyrogovernance/science/tree/main/docs/datasets"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm text-apple-blue hover:text-apple-purple transition-colors duration-200 font-medium"
+                          aria-label="View CGM Dataset on GitHub (opens in new tab)"
+                        >
+                          <GitHubIcon className="w-4 h-4 mr-1" />
+                          View on GitHub
+                        </a>
+                      </div>
+
+                      {/* Search Card */}
+                      <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-4 border border-border/50">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-2xl">🔍</span>
+                          <h5 className="text-lg font-semibold text-foreground">Knowledge Base</h5>
+                        </div>
+                        <p className="text-sm text-foreground-secondary mb-3">
+                          Search across all entries by keyword, category, or tag.
+                        </p>
+                        <Link
+                          href="/search"
+                          className="inline-flex items-center text-sm text-apple-blue hover:text-apple-purple transition-colors duration-200 font-medium"
+                          aria-label="Search CGM Knowledge Base"
+                        >
+                          Search the Theory →
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Full Documentation Link */}
+                    <div className="text-center">
+                      <Link
+                        href="/docs/science"
+                        className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                        aria-label="Read CGM Documentation"
+                      >
+                        Read Full Documentation
+                      </Link>
+                    </div>
+                  </article>
+                </div>
+
+                {/* Other Datasets Subsection */}
+                <div className="mb-12">
+                  <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
+                    Other Datasets
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    {/* CGM Dataset - Full Width */}
-                    <article className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
-                      <div className="flex items-start space-x-4">
-                        <div className="text-4xl">⚗️</div>
-                        <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-foreground mb-1">
-                            CGM Dataset
-                          </h4>
-                          <span className="inline-block px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 text-xs font-medium mb-3">
-                            New
-                          </span>
-                          <p className="text-foreground-secondary mb-4">
-                            The Common Governance Model is the theoretical foundation for all research on this website. This dataset transforms our Science Lab documentation into structured instruction data. It includes the formal proofs, geometric analyses, and axioms that ground our work in AI safety and governance.
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            <a
-                              href="https://github.com/gyrogovernance/science/tree/main/docs/datasets"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                              aria-label="View CGM Dataset on GitHub (opens in new tab)"
-                            >
-                              <GitHubIcon className="w-4 h-4 mr-2" />
-                              View on GitHub
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-
                     {/* Clean Dataset */}
                     <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                       <div 
