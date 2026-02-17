@@ -477,7 +477,7 @@ export default function Home() {
                   <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
                     <li className="flex items-start">
                       <span className="text-cyan-500 mr-2">⚖️</span>
-                      <span><strong>Logit Dynamic Stability:</strong> Anchors the generation trajectory to a deterministic state machine to prevent collapse or drift.</span>
+                      <span><strong>Activation Dynamic Stability:</strong> Anchors the generation trajectory to a deterministic state machine to prevent collapse or drift.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-cyan-500 mr-2">⚓</span>
