@@ -667,7 +667,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **Emoji**: 🤖
 - **Name**: GyroLabe
 - **Title**: Mechanistic Calibration Instrument
-- **Description**: Neural activation coordination and guidance system acting as neuro-symbolic bridge. Couples the model's stochastic latent space to discrete geometric structure through feedback control. Provides activation dynamic stability anchoring generation trajectories to deterministic state machines. Enables mechanistic balance steering via projection masks and creates shared, verifiable ledger of generation trajectories for distributed coordination.
+- **Description**: Active Inference coordination and guidance system acting as neuro-symbolic bridge. Couples the model's stochastic latent space to discrete geometric structure through feedback control. Functioning analogously to a biological cerebellum, it does not dictate what a model should say. Instead, it provides a continuous geometric reference frame so the trajectory of inference remains physically coordinated. Internal Guidance: Projects a dynamic geometric mask directly into the model's neural activations, gently biasing the internal state toward kernel-consistent configurations. Trajectory Selection: Evaluates candidate tokens by their geometric consequences, mathematically favoring actions that produce naturally continuous transitions in the kernel.
 - **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_GyroLabe_Specs.md
 - **Tags**: Mechanistic Calibration, Neural Coordination, Neuro-symbolic Bridge, Activation Stability, Topological Alignment
 
