@@ -458,7 +458,7 @@ export default function Home() {
                   GyroLabe: Mechanistic Calibration Instrument
                 </h2>
                 <p className="text-lg font-semibold text-foreground-secondary">
-                  Neural Activation Coordination and Guidance
+                  Active Inference Calibration for Generative Models
                 </p>
               </div>
 
@@ -467,21 +467,21 @@ export default function Home() {
                 {/* The Hook - Full Width */}
                 <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
                   <p className="text-base sm:text-lg text-foreground-secondary">
-                    GyroLabe acts as a <strong>neuro-symbolic bridge</strong>, coupling the model's stochastic latent space to a discrete geometric structure. It functions as a feedback control system, providing active balance support to stabilize neural activations during inference.
+                    GyroLabe acts as a <strong>neuro-symbolic bridge</strong>, coupling the model's stochastic latent space to a discrete geometric structure. Functioning analogously to a biological cerebellum, it does not dictate what a model should say. Instead, it provides a continuous geometric reference frame so the trajectory of inference remains physically coordinated.
                   </p>
                 </div>
 
                 {/* Mechanisms (The How) */}
                 <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Core Objectives</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Active Inference Loop</h3>
                   <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
                     <li className="flex items-start">
                       <span className="text-cyan-500 mr-2">⚖️</span>
-                      <span><strong>Activation Dynamic Stability:</strong> Anchors the generation trajectory to a deterministic state machine to prevent collapse or drift.</span>
+                      <span><strong>Internal Guidance:</strong> Projects a dynamic geometric mask directly into the model's neural activations, gently biasing the internal state toward consistent configurations.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-cyan-500 mr-2">⚓</span>
-                      <span><strong>Mechanistic Balance Steering:</strong> Injects calculated weight into specific neural pathways via projection masks.</span>
+                      <span className="text-cyan-500 mr-2">🎯</span>
+                      <span><strong>Trajectory Selection:</strong> Evaluates candidate tokens by their geometric consequences, mathematically favoring actions that produce naturally continuous transitions.</span>
                     </li>
                   </ul>
                 </div>
@@ -492,11 +492,11 @@ export default function Home() {
                   <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
                     <li className="flex items-start">
                       <span className="text-sky-500 mr-2">🧭</span>
-                      <span><strong>Topological Alignment:</strong> Model dynamics resonate with the kernel's structure without sacrificing generative capacity.</span>
+                      <span><strong>Topological Alignment:</strong> Model dynamics naturally balance across geometric directions over long runs, shifting output toward structured, epistemic reasoning.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-sky-500 mr-2">🤝</span>
-                      <span><strong>Shared Moments:</strong> Creates a shared, verifiable ledger of the generation trajectory for distributed coordination.</span>
+                      <span><strong>Shared Verifiability:</strong> Creates a shared, mathematically exact byte ledger of the generation trajectory, enabling perfect replay and audit without trusted intermediaries.</span>
                     </li>
                   </ul>
                 </div>
