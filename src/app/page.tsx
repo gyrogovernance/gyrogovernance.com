@@ -636,10 +636,20 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
             <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md"
+              href="https://github.com/gyrogovernance/superintelligence?tab=readme-ov-file#-gyrolabe-calibration-for-auditable-inference"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="View GyroLabe on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
               aria-label="Read GyroLabe Brief (opens in new tab)"
             >
               GyroLabe Brief
