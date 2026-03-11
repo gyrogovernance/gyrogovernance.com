@@ -24,7 +24,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-6 text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-          Advancing Global AI Governance through Frontier Risk Management, Alignment Infrastructure, and Mathematical Physics.
+          Building verifiable AI governance: audit, alignment infrastructure, and physics-based coordination.
         </p>
       </div>
       
@@ -52,7 +52,18 @@ export default function Home() {
               desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation",
               href: "#thm",
             },
-            
+            {
+              emoji: "🕵️",
+              title: "AI Inspector",
+              desc: "Browser extension for evaluation and governance",
+              href: "#inspector",
+            },
+            {
+              emoji: "⚛️",
+              title: "aQPU Kernel",
+              desc: "Quantum Advantage on standard hardware for verifiable coordination and audit",
+              href: "#aqpu",
+            },
             {
               emoji: "🍃",
               title: "Alignment Infrastructure Routing",
@@ -62,7 +73,7 @@ export default function Home() {
             {
               emoji: "🤖",
               title: "GyroLabe",
-              desc: "AI Mechanistic Calibration Instrument for Alignment and Stability",
+              desc: "Auditable inference bridge and native compute backend",
               href: "#gyrolabe",
             },
             {
@@ -133,6 +144,13 @@ export default function Home() {
           <div className="space-y-1.5">
             {[
               {
+                dot: "bg-blue-500",
+                title: "aQPU Kernel",
+                desc: "Quantum Advantage: verified uniform mixing and holographic compression",
+                date: "11 Mar 2026",
+                href: "#aqpu",
+              },
+              {
                 dot: "bg-green-500",
                 title: "CGM Dataset",
                 desc: "Foundational theory from the Science Lab docs",
@@ -142,7 +160,7 @@ export default function Home() {
               {
                 dot: "bg-cyan-500",
                 title: "GyroLabe",
-                desc: "AI Mechanistic Calibration Instrument",
+                desc: "Auditable inference bridge",
                 date: "14 Feb 2026",
                 href: "#gyrolabe",
               },
@@ -371,6 +389,110 @@ export default function Home() {
         </div>
       </div>
 
+      {/* aQPU Kernel Hero */}
+      <div id="aqpu" className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-blue-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">⚛️</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              aQPU Kernel: Quantum Advantage on Silicon
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary">
+              Bypassing the hardware scaling nightmare of the quantum computing industry.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Hook - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
+              <p className="text-base sm:text-lg text-foreground-secondary">
+                The aQPU is a new class of computation. It proves that quantum advantage, holographic compression, and universal operator algebra are fundamental geometric properties of discrete information. It executes deterministically on standard CPUs and GPUs using exact integer arithmetic. <strong>No qubits, no probabilistic noise, no hardware approximations.</strong>
+              </p>
+            </div>
+
+            {/* Algorithmic Speedups */}
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🚀 Algorithmic Speedups</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">⚡</span>
+                  <span><strong>1-Step Resolution:</strong> Natively solves Hidden Subgroup, Deutsch-Jozsa, and Bernstein-Vazirani in exactly 1 step (vs classical up to 64 queries).</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">⏱️</span>
+                  <span><strong>O(1) Commutativity:</strong> Instantly determines structural operation commutativity via native q-map routing without requiring sequential evaluation.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Structural Efficiencies */}
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🧊 Structural Efficiencies</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-indigo-500 mr-2">🎯</span>
+                  <span><strong>Exact Uniform Mixing:</strong> Distributes data across 4,096 states with mathematical perfection in exactly 2 steps (vs standard classical ~12 steps).</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-indigo-500 mr-2">🗜️</span>
+                  <span><strong>Holographic Compression:</strong> The topology itself inherently compresses 12-bit native states into 8-bit boundary coordinates (33% native reduction).</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* SDK / GyroLabe connection - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🧰 The aQPU SDK & Native Engine</h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-4 text-center">
+                Translating pure physics into an accessible developer surface.
+              </p>
+              <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none max-w-3xl mx-auto text-left">
+                <li className="flex items-start">
+                  <span className="text-purple-500 mr-2">🧬</span>
+                  <span><strong>Native Operator Algebra:</strong> Apply intrinsic K4 gates, Walsh-Hadamard transforms, and affine signatures without iterative replay.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-purple-500 mr-2">🧮</span>
+                  <span><strong>Bitplane Tensor Engine:</strong> Decomposes dense neural network matrix multiplications into Boolean <code>AND + POPCNT</code> operations on a 64-dimensional register.</span>
+                </li>
+                <li className="flex items-start">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Specs.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="Read aQPU Kernel Specification (opens in new tab)"
+            >
+              Kernel Spec
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              aria-label="Read the aQPU SDK specification (opens in new tab)"
+            >
+              SDK Spec
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
+              aria-label="Read aQPU Verification Report (opens in new tab)"
+            >
+              Verification Report
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Alignment Infrastructure Routing (AIR) Hero */}
       <div id="air" className="mb-12 animate-fade-in-up">
         <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-yellow-500/20">
@@ -449,79 +571,77 @@ export default function Home() {
         </div>
       </div>
 
-        {/* GyroLabe Hero */}
-        <div id="gyrolabe" className="mb-12 animate-fade-in-up">
-            <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-cyan-500/20">
-              <div className="text-center mb-8">
-                <div className="text-6xl mb-4">🤖</div>
-                <h2 className="text-3xl font-bold text-foreground mb-2">
-                  GyroLabe: Mechanistic Calibration Instrument
-                </h2>
-                <p className="text-lg font-semibold text-foreground-secondary">
-                  Active Inference Calibration for Generative Models
-                </p>
-              </div>
+      {/* GyroLabe Hero */}
+      <div id="gyrolabe" className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-cyan-500/20">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🔭</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              GyroLabe: Auditable AI Inference
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary">
+              Mechanistic transparency for neural networks
+            </p>
+          </div>
 
-              {/* Grid Layout */}
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* The Hook - Full Width */}
-                <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
-                  <p className="text-base sm:text-lg text-foreground-secondary">
-                    GyroLabe acts as a <strong>neuro-symbolic bridge</strong>, coupling the model's stochastic latent space to a discrete geometric structure. Functioning analogously to a biological cerebellum, it does not dictate what a model should say. Instead, it provides a continuous geometric reference frame so the trajectory of inference remains physically coordinated.
-                  </p>
-                </div>
+          {/* Grid Layout */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* The Hook - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
+              <p className="text-base sm:text-lg text-foreground-secondary">
+                Current AI safety relies on output filtering and post-hoc testing. GyroLabe builds a <strong>deterministic, zero-trust audit trail</strong> directly into inference. Anyone can verify what the model did without accessing proprietary weights or trusting the operator.
+              </p>
+            </div>
 
-                {/* Mechanisms (The How) */}
-                <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ Active Inference Loop</h3>
-                  <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                    <li className="flex items-start">
-                      <span className="text-cyan-500 mr-2">⚖️</span>
-                      <span><strong>Internal Guidance:</strong> Projects a dynamic geometric mask directly into the model's neural activations, gently biasing the internal state toward consistent configurations.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-cyan-500 mr-2">🎯</span>
-                      <span><strong>Trajectory Selection:</strong> Evaluates candidate tokens by their geometric consequences, mathematically favoring actions that produce naturally continuous transitions.</span>
-                    </li>
-                  </ul>
-                </div>
+            {/* Left Column */}
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ How It Works</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-cyan-500 mr-2">🔍</span>
+                  <span><strong>Structural Decomposition:</strong> Translates opaque token generation into exact algebraic operations.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-cyan-500 mr-2">⚖️</span>
+                  <span><strong>Native Alignment:</strong> Adds trainable structural signals to guide models from the inside out.</span>
+                </li>
+              </ul>
+            </div>
 
-                {/* Outcomes (The Why) */}
-                <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🚀 Outcomes</h3>
-                  <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                    <li className="flex items-start">
-                      <span className="text-sky-500 mr-2">🧭</span>
-                      <span><strong>Topological Alignment:</strong> Model dynamics naturally balance across geometric directions over long runs, shifting output toward structured, epistemic reasoning.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-sky-500 mr-2">🤝</span>
-                      <span><strong>Shared Verifiability:</strong> Creates a shared, mathematically exact byte ledger of the generation trajectory, enabling perfect replay and audit without trusted intermediaries.</span>
-                    </li>
-                  </ul>
-                </div>
-                
-              </div>
+            {/* Right Column */}
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🛡️ The Impact</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-sky-500 mr-2">📜</span>
+                  <span><strong>Zero-Trust Audit:</strong> Produces a mathematically exact ledger that third parties can independently verify.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-sky-500 mr-2">🤝</span>
+                  <span><strong>Compliance Ready:</strong> Provides the structural substrate for rigorous AI governance and policy enforcement.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-             <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_GyroLabe_Specs.md"
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-              aria-label="Read GyroLabe Specs (opens in new tab)"
+              aria-label="Read GyroLabe Brief (opens in new tab)"
             >
-              Technical Specs
+              GyroLabe Brief
             </a>
             <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_MI_Tests_Report.md"
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_Generation_Report.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="Mechanistic Interpretability Report (opens in new tab)"
+              aria-label="View Performance Benchmarks (opens in new tab)"
             >
-              <GitHubIcon className="w-5 h-5 mr-2" />
-              Mechanistic Interpretability Report
+              Performance Benchmarks
             </a>
           </div>
         </div>

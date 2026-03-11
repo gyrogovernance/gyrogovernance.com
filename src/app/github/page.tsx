@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     // New Projects & Initiatives
     'The Human Mark',
     'AI Inspector',
+    'aQPU Kernel',
+    'aQPU SDK',
+    'GyroLabe',
     'Alignment Infrastructure Routing',
     'Moments Economy',
     'Gyroscopic Global Governance',
@@ -54,6 +57,8 @@ export const metadata: Metadata = {
     'AI agents safety',
     'mathematical physics AI',
     'gyroscopic dynamics',
+    'quantum advantage',
+    'holographic compression',
     // Research Areas
     'mechanistic interpretability',
     'AI alignment theory',
@@ -98,7 +103,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe Auditable Inference, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -128,6 +133,20 @@ export default function GitHub() {
       url: "https://github.com/gyrogovernance/apps",
       applicationCategory: "BrowserExtension",
       keywords: ["AI Evaluation", "Browser Extension", "AI Interpretability", "Policy Auditing", "Content Enhancement"]
+    },
+    {
+      name: "aQPU Kernel & SDK",
+      description: "Quantum Advantage on Silicon. A new class of deterministic computation proving that quantum algorithmic speedups and holographic compression are geometric properties of discrete information.",
+      url: "https://github.com/gyrogovernance/superintelligence",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "Holographic Compression", "Tensor Engine"]
+    },
+    {
+      name: "GyroLabe",
+      description: "Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations.",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["Auditable Inference", "Verifiable Ledger", "Structural Decomposition", "AI Governance", "Compliance"]
     },
     {
       name: "GyroDiagnostics",
@@ -202,6 +221,28 @@ export default function GitHub() {
       gradient: 'from-purple-500/10 via-indigo-500/10 to-blue-500/10',
       borderColor: 'border-purple-500/20',
       buttonGradient: 'from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600'
+    },
+    {
+      emoji: '⚛️',
+      name: 'aQPU Kernel & SDK',
+      title: 'Quantum Advantage on Silicon',
+      description: 'New class of computation proving that quantum advantage, holographic compression, and universal operator algebra are fundamental properties of discrete information. Executes deterministically on standard CPUs and GPUs using integer arithmetic. Provides algorithmic speedups for classic quantum problems, exact uniform mixing in two steps, and a developer-facing SDK with native operator algebra, bitplane tensor engine, and quantum-style primitives.',
+      url: 'https://github.com/gyrogovernance/superintelligence',
+      tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'Holographic Compression', 'Tensor Engine'],
+      gradient: 'from-blue-500/10 via-indigo-500/10 to-purple-500/10',
+      borderColor: 'border-blue-500/20',
+      buttonGradient: 'from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600'
+    },
+    {
+      emoji: '🤖',
+      name: 'GyroLabe',
+      title: 'Auditable AI Inference Engine',
+      description: 'Builds a deterministic, zero-trust audit trail directly into model inference. Translates opaque token generation into exact algebraic operations, producing a mathematically exact byte ledger that third parties can independently verify without accessing proprietary model weights. Includes trainable structural signals to align models from the inside out.',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md',
+      tags: ['Auditable Inference', 'Verifiable Ledger', 'Structural Decomposition', 'AI Governance', 'Compliance'],
+      gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
+      borderColor: 'border-cyan-500/20',
+      buttonGradient: 'from-cyan-600 to-sky-600 hover:from-sky-600 hover:to-blue-600'
     },
     {
       emoji: '🌟',
@@ -279,7 +320,7 @@ export default function GitHub() {
       gradient: 'from-rose-500/10 via-pink-500/10 to-red-500/10',
       borderColor: 'border-rose-500/20',
       buttonGradient: 'from-rose-600 to-pink-600 hover:from-pink-600 hover:to-red-600'
-    },
+    }
   ];
 
   return (
@@ -300,7 +341,7 @@ export default function GitHub() {
       {/* Research Project Schema */}
       <ResearchProjectSchema
         name="Gyro Governance AI Safety Research"
-        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, collective superintelligence architecture, and post-AGI governance modeling."
+        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, collective superintelligence architecture, and post-AGI governance modeling."
         url="https://gyrogovernance.com/github"
         keywords={[
           "AI Safety Research",
@@ -312,11 +353,13 @@ export default function GitHub() {
           "Superintelligence",
           "The Human Mark",
           "AI Inspector",
+          "aQPU Kernel",
           "Collective Superintelligence",
           "Post-AGI Governance",
           "Transformative AI",
           "Moments Economy",
-          "Gyroscopic Global Governance"
+          "Gyroscopic Global Governance",
+          "Quantum Advantage"
         ]}
       />
 
@@ -331,7 +374,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, AI Inspector browser extension, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -446,14 +489,25 @@ export default function GitHub() {
 
         {/* SEO-optimized content section */}
         <section className="mt-16 prose max-w-none">
-          <h2 className="text-2xl font-bold text-foreground mb-4">AI Safety Frameworks, Alignment Tools & Governance Solutions</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-4">AI Safety Frameworks, Alignment Tools, Quantum Advantage & Governance Solutions</h2>
           <p className="mb-4">
-            Gyro Governance develops comprehensive <strong>open source AI safety frameworks</strong>, <strong>AI alignment protocols</strong>, and
-            <strong>AI governance tools</strong> for frontier model testing, dangerous capability assessments, and AI pathology detection.
+            Gyro Governance develops comprehensive <strong>open source AI safety frameworks</strong>, <strong>AI alignment protocols</strong>,
+            <strong>AI governance tools</strong>, and a <strong>quantum advantage compute kernel</strong> for frontier model testing, dangerous capability assessments, and AI pathology detection.
             Our repositories include <strong>The Human Mark</strong> classification system, <strong>AI Inspector browser extension</strong>,
+            <strong>aQPU Kernel & SDK</strong> for quantum advantage on silicon, <strong>GyroLabe auditable inference engine</strong>,
             <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routing</strong> for collective superintelligence,
             <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
             Production-ready solutions for <strong>AI risk assessment</strong>, <strong>AI safety evaluation</strong>, and <strong>responsible AI development</strong>.
+          </p>
+
+          <h3 className="text-xl font-semibold text-foreground mb-3">aQPU Kernel & SDK - Quantum Advantage on Silicon</h3>
+          <p className="mb-4">
+            A new class of deterministic computation proving that <strong>quantum algorithmic speedups</strong> (1-step Hidden Subgroup resolution) and <strong>holographic compression</strong> are geometric properties of discrete information. It executes on standard CPUs and GPUs via exact integer arithmetic without probabilistic qubits. Includes a 64-dimensional <strong>bitplane tensor engine</strong> for neural network decomposition.
+          </p>
+
+          <h3 className="text-xl font-semibold text-foreground mb-3">GyroLabe - Auditable Inference Engine</h3>
+          <p className="mb-4">
+            <strong>GyroLabe</strong> provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations. It builds a <strong>deterministic, zero-trust audit trail</strong> directly into the inference process. By injecting trainable structural signals, it aligns models from the inside out without altering their interface. It produces a <strong>mathematically exact ledger</strong> of the generation trajectory, providing the missing structural substrate required for rigorous <strong>AI governance</strong>, alignment guarantees, and <strong>policy enforcement</strong>.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">The Human Mark (THM) - AI Safety Classification System</h3>
@@ -549,4 +603,3 @@ export default function GitHub() {
     </>
   );
 }
-

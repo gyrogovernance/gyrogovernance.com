@@ -1,8 +1,8 @@
-# GGG ASI AR Substrate: Specifications
+# Gyroscopic ASI aQPU Kernel: Physical Substrate Specification
 
 **Document ID:** GYROSI-SUBSTRATE-SPEC-001  
-**Revision:** 3.2  
-**Status:** Architectural Specification  
+**Revision:** 4.0  
+**Status:** Experimental Hardware Specification  
 **License:** CC BY-SA 4.0  
 **Author:** Basil Korompilias
 
@@ -12,16 +12,16 @@
 
 ### 1.1 Context and Position in Architecture
 
-This document defines the specifications of the **GGG ASI AR Substrate**, a governed physical memory layer that enables **persistent, path-dependent, and auditable context state** for superintelligence systems. The substrate is **not** a model, agent, or computation engine. It is a **molecular infrastructure** that provides foundational **memory dynamics** for alignment-aware architectures like GyroSI, where symbolic operations are physically grounded.
+This document defines the specifications of the Gyroscopic ASI aQPU Physical Substrate, an experimental physical memory layer that provides persistent, path-dependent, and auditable storage for aQPU kernel states and genealogical records. The substrate is not a model, agent, or computation engine. It is a molecular infrastructure that provides physical persistence for the canonical digital objects defined in the Gyroscopic ASI aQPU Kernel Specification.
 
-The substrate is implemented as a **photochromic molecular gel** enclosed in optically addressable tanks and controlled by the **GGG ASI AR Engine**. It stores information in the form of physical phase states which evolve under defined optical operations with structural constraints, long-term retention, and closure behaviors that are **derived directly from the Common Governance Model (CGM)**.
+The substrate is implemented as a photochromic molecular gel enclosed in optically addressable tanks and controlled by an aQPU substrate controller. It stores information in the form of physical phase states which evolve under defined optical operations. These operations are evaluated for fidelity against the public digital aQPU reference implementation.
 
-This memory substrate fulfills the role of **context preservation, coherence tracking, and alignment verification** in a physics-constrained superintelligence system. It is especially suited for systems that:
+The Gyroscopic ASI aQPU Kernel, the AIR coordination framework, and the Moments Economy operate without this substrate. This substrate is an optional experimental hardware realization layer. Its purpose is to provide a physical medium for storing or sensing kernel states, depth-4 frame records, and byte-ledger segments with properties not available in conventional digital storage: path-dependent encoding, multi-decade retention, and volumetric density.
 
 - Must retain rich, recursive, multi-scale context over time;
 - Require historical traceability across decisions and knowledge formations;
 - Are structured around non-abstract, physically enforced ethical limits;
-- Need **auditable, append-only ledger with transformation-sensitive memory layers**.
+- Need auditable, append-only storage with transformation-sensitive memory layers that complement the canonical digital byte ledger.
 
 This specification operates within the scientific and architectural commitments established in three prior frameworks:
 
@@ -30,25 +30,26 @@ This specification operates within the scientific and architectural commitments 
 2. **The Human Mark (THM):** an alignment framework classifying all AI failures as category errors between **Direct** and **Indirect** sources of authority and agency. The substrate complies with THM by maintaining strict **Indirect classification**: it transforms information but does not originate, decide, or authorize.
 
 3. **Gyroscopic Global Governance (GGG):** a simulation and formal theory of post-AGI governance. It shows that long-term coherence, especially in economy, education, employment and ecology, depends on maintaining **aperture equilibrium (A* ≈ 0.0207)**, derived from CGM. The substrate provides a physical medium that naturally exhibits this balance through its internal geometry.
+4. **Gyroscopic ASI aQPU Kernel Specification:** the normative digital reference defining the 24-bit state model, the spinorial transition law, the 4,096-state reachable space, the self-dual [12,6,2] mask code, and the depth-4 frame structure. The substrate is evaluated for fidelity against this specification.
 
 These frameworks are fully specified in the GyroGovernance repositories ([tools](https://github.com/gyrogovernance/tools), [science](https://github.com/gyrogovernance/science)), but this document is functionally self-contained and focused on physical implementation.
 
 ### 1.2 Purpose and Scope
 
-The **GGG ASI AR Substrate** provides a generative physical memory system that exhibits:
+The Gyroscopic ASI aQPU Physical Substrate provides a generative physical memory system that exhibits:
 
 - **Path dependence:** The order of write operations affects the resulting physical state. Unlike classical memory that stores content only, this substrate stores **transformation history**.
-- **Depth-four closure:** Specific operation sequences converge on a closure trajectory, enabling physical verification of epistemic coherence.
+- **Depth-four closure:** The kernel's depth-4 alternation identity (applying any two bytes in the pattern x,y,x,y returns to the starting state) can be physically verified through optical measurements, providing hardware-level coherence checking.
 - **Spinorial symmetry:** A 720° traversal across the substrate's stage topology returns to identity, embedding physical structure for rotation, identity, and divergence.
 - **Multi-decade retention:** Molecular formulation supports persistent memory without power, suitable for long-term context preservation.
 - **Verifiability:** States are measurable and comparable via optical interference, angular divergence, and trace logs.
 
-The substrate is intentionally **not** a language model, processor, or "thinking" agent. It has no optimization behavior, goal pursuit, or reasoning mechanism. It exists to enforce physical traceability and coherence constraints on memory and history, forming a regulated epistemic backbone for higher-level agents and systems.
+The substrate is intentionally not a language model, processor, or reasoning agent. It provides physical persistence and path-dependent encoding for the canonical digital aQPU kernel objects. Higher-level coordination, routing, and governance are handled by the digital kernel and application layers.
 
 This specification defines:
 
 - The physical architecture and optical operations of the substrate  
-- Its interaction with the **GGG ASI AR Engine** (controller, memory manager, verifier)  
+- Its interaction with the aQPU substrate controller (command translation, state management, conformance verification)  
 - The expected measurements and invariants derived from CGM  
 - The types of memory states, their representation and observability  
 - A full **test protocol** validating compliance with depth-two path dependence, depth-four closure, monodromy balance, and physical stability
@@ -64,6 +65,7 @@ These substrate specifications draw formal constraints from the:
 - **Common Governance Model (CGM):** defining tetrahedral epistemic operations and closure constants (aperture scale mₐ, monodromy defect δ_BU, canonical aperture A*)
 - **The Human Mark (THM):** defining ontological source-type distinctions for AI governance risk classification
 - **Gyroscopic Global Governance (GGG):** defining the operational significance of aperture, alignment, and post-AGI equilibrium
+- **Gyroscopic ASI aQPU Kernel Specification:** defining the 24-bit state model, spinorial transition law, mask expansion, depth-4 frame structure, and all kernel invariants that the substrate must reproduce
 
 Formal citations to these works are provided in the References section (Section 23).
 
@@ -96,23 +98,41 @@ This specification depends on the following external definitions:
 - The derivation of invariant values from operational coherence requirements
 - The prohibition on absolute opposition (θ = π), which follows from the ONA constraint
 
-**GGG ASI AR Engine:** The reference digital implementation that provides the control interface, state management, and conformance verification for substrate operations.
+**Gyroscopic ASI aQPU Kernel Specification:** The normative digital reference implementation defining the state model, transition law, mask code, and all kernel invariants. See `docs/Gyroscopic_ASI_Specs.md`.
+
+**aQPU Substrate Controller:** The hardware control interface that translates between canonical byte operations and physical optical parameters. The controller implements the public aQPU transition law and manages state readout, quantization, and conformance verification.
 
 ---
 
 ## 5. Normative Invariants
 
-The substrate is calibrated and evaluated against the following invariants derived from CGM:
+The substrate is calibrated and evaluated against the following constants. The first group defines the kernel's structural parameters. The second group defines CGM calibration targets.
+
+**Kernel structural constants:**
+
+| Constant | Symbol | Value | Source |
+|----------|--------|-------|--------|
+| Archetype constant | GENE_MIC_S | 0xAA | Spec section 2.2.1 |
+| Rest state | GENE_MAC_REST | 0xAAA555 | Spec section 2.2.2 |
+| Reachable state space | \|Omega\| | 4,096 | Spec section 3.3, BFS-verified |
+| Complement horizon | \|H_complement\| | 64 | A = B XOR 0xFFF |
+| Equality horizon | \|H_equality\| | 64 | A = B |
+| Boundary states | \|H_complement union H_equality\| | 128 | Disjoint union |
+| Holographic identity | \|H\|^2 | 4,096 = 64^2 | Spec Appendix G.2 |
+| Distinct masks | \|C64\| | 64 | Self-dual [12,6,2] code |
+| Shadow projection | distinct next states | 128 | From any fixed state |
+| Intrinsic gates | horizon-preserving bytes | 4 | {0xAA, 0x54, 0xD5, 0x2B} |
+
+**CGM calibration targets:**
 
 | Invariant | Symbol | Value | Role |
 |-----------|--------|-------|------|
 | Horizon constant | Q_G | 4π steradians | Global normalization |
-| Aperture scale | m_a | 1/(2√(2π)) ≈ 0.199471 | Operational scale parameter |
-| BU monodromy defect | δ_BU | ≈ 0.19534 rad | Loop closure residual |
-| Closure ratio | δ_BU/m_a | ≈ 0.9793 | Structural closure fraction |
-| Canonical aperture | A* | 1 − 0.9793 = 0.0207 | Dynamic aperture fraction |
-
-All values are reported to 5 significant figures for consistency. These quantities serve as calibration targets. The substrate approximates behaviors that the GGG ASI AR reference implementation defines exactly.
+| Aperture scale | m_a | 1/(2√(2π)) | Operational scale parameter |
+| BU monodromy defect | δ_BU | 0.19534 rad | Loop closure residual |
+| Closure ratio | δ_BU/m_a | 0.9793 | Structural closure fraction |
+| Canonical aperture | A* | 0.0207 | Dynamic aperture fraction |
+| Byte-scale quantization | A_kernel | 5/256 = 0.01953 | Discrete aperture approximation |
 
 ---
 
@@ -195,7 +215,7 @@ For states representable as 48-element tensors (Section 8), the angular divergen
 θ = arccos(⟨S1, S2⟩ / 48)
 ```
 
-where ⟨S1, S2⟩ is the inner product of flattened tensor representations. Because each tensor element is strictly ±1, ⟨S, S⟩ = 48 for any valid state, making 48 the correct normalization factor.
+where ⟨S1, S2⟩ is the inner product of flattened tensor representations. For the 24-bit kernel state represented as a 24-element spin vector (each element ±1), the inner product normalizes to 24. For the 48-bit depth-4 frame projection, the normalization is 48. Implementations MUST document which representation is used for angular divergence measurements.
 
 Key angular values:
 
@@ -211,57 +231,48 @@ The prohibition on θ = π follows from the ONA constraint in CGM. The substrate
 
 ## 8. State Representation
 
-### 8.1 Tensor Structure
+### 8.1 Canonical State Model
 
-The full state representation is a tensor of shape [4, 2, 3, 2] comprising 48 elements:
+The canonical kernel state is a 24-bit integer packed as two 12-bit components:
 
-| Dimension | Size | Meaning |
-|-----------|------|---------|
-| Stage | 4 | Recursive stages: CS, UNA, ONA, BU |
-| Frame | 2 | Dual observation (primary and complement) |
-| Row | 3 | Spatial axes (X, Y, Z) |
-| Column | 2 | Axis endpoints (−1, +1) |
+```
+state24 = (A12 << 12) | B12
+```
 
-Each element holds a value of +1 or −1, representing a binary phase state in the molecular population.
+A12 is the active phase. B12 is the passive phase. Each 12-bit component maps to a 2 x 3 x 2 binary grid (2 frames, 3 rows, 2 cols = 12 elements). The full state has shape [2 components, 2 frames, 3 rows, 2 cols] = 24 elements, each ±1.
+
+The tensor representation of the rest state:
+
+```
+A12: [[[-1,+1], [-1,+1], [-1,+1]], [[+1,-1], [+1,-1], [+1,-1]]]
+B12: [[[+1,-1], [+1,-1], [+1,-1]], [[-1,+1], [-1,+1], [-1,+1]]]
+```
+
+Bit packing: +1 maps to bit value 0, −1 maps to bit value 1. At rest: A12 = 0xAAA, B12 = 0x555.
+
+The substrate implementation MUST declare whether it physically encodes the 24-bit state, the 48-bit depth-4 mask projection, or both. Conformance is evaluated against the declared encoding.
 
 ### 8.2 Canonical Reference State
 
-The archetypal reference state encodes the full recursive structure:
+The rest state is GENE_MAC_REST = 0xAAA555. Its tensor form is given in Section 8.1. The A12 and B12 components are exact bitwise complements (A XOR B = 0xFFF). This encodes the fundamental chirality of the system.
 
-```
-Stage 0 (CS):
-  Frame 0: [[-1,+1], [-1,+1], [-1,+1]]
-  Frame 1: [[+1,-1], [+1,-1], [+1,-1]]
+The substrate MUST be capable of encoding this state and reading it back with fidelity sufficient to distinguish it from all other states in the 4,096-state reachable space.
 
-Stage 1 (UNA):
-  Frame 0: [[+1,-1], [+1,-1], [+1,-1]]
-  Frame 1: [[-1,+1], [-1,+1], [-1,+1]]
+### 8.3 Representations
 
-Stage 2 (ONA):
-  Frame 0: [[-1,+1], [-1,+1], [-1,+1]]
-  Frame 1: [[+1,-1], [+1,-1], [+1,-1]]
+The state admits three representations:
 
-Stage 3 (BU):
-  Frame 0: [[+1,-1], [+1,-1], [+1,-1]]
-  Frame 1: [[-1,+1], [-1,+1], [-1,+1]]
-```
+- **Tensor form:** 24 signed integers (±1) arranged as [2, 2, 3, 2], used for geometric calculations.
+- **Packed 24-bit integer:** state24 = (A12 << 12) | B12, used for digital storage and kernel operations.
+- **Optional 48-bit frame projection:** 4 x 12-bit masks packed from a depth-4 byte frame, used for frame-level certification.
 
-The alternating pattern across stages encodes 720° spinorial closure. Stages 0 and 2 share the same pattern; Stages 1 and 3 share the inverse pattern. Full closure requires traversing all four stages.
-
-### 8.3 Dual Representation
-
-The state admits two equivalent representations:
-
-- **Tensor form:** 48 signed integers (±1), used for geometric calculations and divergence measurement
-- **Packed form:** 48-bit integer (6 bytes), where each bit encodes the sign of one tensor element (+1 maps to 0, −1 maps to 1), used for efficient storage and indexing
-
-The substrate MUST support bidirectional conversion between representations with zero information loss.
+The substrate MUST support bidirectional conversion between the physically encoded representation and the packed 24-bit integer with zero information loss.
 
 ### 8.4 Physical Mapping
 
-The 48 tensor elements map to physical observables via calibration. A calibration procedure MUST establish the correspondence between:
+The physical mapping establishes correspondence between canonical bit positions and physical observables. A calibration procedure MUST establish the correspondence between:
 
-- Tensor element indices [stage, frame, row, col]
+- Bit positions in the 24-bit state (or 48-bit frame projection if used)
 - Physical addressing parameters (beam angle, wavelength, polarization, spatial position)
 - Measured phase or absorption values
 - Quantization thresholds for converting analog measurements to ±1 values
@@ -694,7 +705,7 @@ The ledger enables complete replay, audit, and verification. It provides inferen
 4. Re-read the bR pattern; compute drift = dist(M_bR_after, M_bR_before)
 5. Repeat symmetrically: write diarylethene pattern, cycle bR, measure drift
 
-**Pass criterion:** Drift remains below 10% of the Direct signal amplitude (as measured by the implementation's primary readout metric: diffraction efficiency or dist) for both directions.
+**Pass criterion:** Drift remains below 10% of the direct signal amplitude (as measured by the implementation's primary readout metric: diffraction efficiency or dist) for both directions.
 
 ### 15.8 Thick-Path Optical Loss Test
 

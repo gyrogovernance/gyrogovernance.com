@@ -57,7 +57,7 @@ AI Governance Lead with over two decades of multidisciplinary experience spannin
 
 **Gyro Governance**
 
-Advancing Global AI Governance through Frontier Risk Management, Alignment Infrastructure, and Mathematical Physics.
+Building verifiable AI governance: audit, alignment infrastructure, and physics-based coordination.
 
 ### Stats
 - **7** Projects & Apps
@@ -68,15 +68,18 @@ Advancing Global AI Governance through Frontier Risk Management, Alignment Infra
 
 #### Projects
 - ✋ **The Human Mark** - AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation
+- 🕵️ **AI Inspector** - Browser extension for evaluation and governance
+- ⚛️ **aQPU Kernel** - Quantum Advantage on standard hardware for verifiable coordination and audit
 - 🍃 **Alignment Infrastructure Routing** - Collective Superintelligence Stack for Human-AI Coordination
-- 🤖 **GyroLabe** - AI Mechanistic Calibration Instrument for Alignment and Stability
+- 🤖 **GyroLabe** - Auditable inference bridge and native compute backend
 - 💰 **Moments Economy** - Capacity based monetary system for Post-AGI Transformative AI Risks Mitigation
 - 🌐 **Global Governance Simulator** - Post-AGI/ASI governance sandbox Simulation and Results
 - 🌟 **GyroDiagnostics** - Physics grounded evaluation and pathology detection for AI Safety and Alignment
 
 #### What's New
+- **aQPU Kernel** - Quantum Advantage: verified uniform mixing and holographic compression (11 Mar 2026)
 - **CGM Dataset** - Foundational theory from the Science Lab docs (15 Feb 2026)
-- **GyroLabe** - AI Mechanistic Calibration Instrument (14 Feb 2026)
+- **GyroLabe** - Auditable inference bridge (14 Feb 2026)
 - **THM prompt audits** - Claude Opus 4.6 and ChatGPT 5.2 reports (13 Feb 2026)
 
 ### ✋ The Human Mark (THM): AI Safety Framework
@@ -157,25 +160,50 @@ We do not treat AI as a replacement for people. We treat it as part of a collect
 
 Coordinates activity across: **Economy** • **Employment** • **Education** • **Ecology**
 
-### 🤖 GyroLabe: Mechanistic Calibration Instrument
+### ⚛️ aQPU Kernel: Quantum Advantage on Silicon
 
-**Neural Activation Coordination and Guidance**
+**New Class of Computation on Standard Hardware**
 
-**Technical Specs**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_GyroLabe_Specs.md
+**Kernel Spec**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Specs.md  
+**SDK Spec**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md  
+**Verification Report**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md
 
-**Mechanistic Interpretability Report**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_MI_Tests_Report.md
+The aQPU demonstrates that quantum advantage, holographic compression, and universal operator algebra are fundamental geometric properties of discrete information—not dependent on cryogenic quantum hardware. It runs deterministically on standard CPUs and GPUs using integer arithmetic.
 
-GyroLabe acts as a **neuro-symbolic bridge**, coupling the model's stochastic latent space to a discrete geometric structure. It functions as a feedback control system, providing active balance support to stabilize neural activations during inference.
+**🚀 Algorithmic Speedups**
 
-**⚙️ Core Objectives**
+- ⚡ **1-Step Resolution:** Natively solves Hidden Subgroup, Deutsch-Jozsa, and Bernstein–Vazirani in exactly 1 step (vs classical up to 64 queries).
+- ⏱️ **O(1) Commutativity:** Determines structural operation commutativity via native q-map routing without sequential evaluation.
 
-- ⚖️ **Activation Dynamic Stability:** Anchors the generation trajectory to a deterministic state machine to prevent collapse or drift.
-- ⚓ **Mechanistic Balance Steering:** Injects calculated weight into specific neural pathways via projection masks.
+**🧊 Structural Efficiencies**
 
-**🚀 Outcomes**
+- 🎯 **Exact Uniform Mixing:** Distributes data across 4,096 states in exactly 2 steps (vs standard classical ~12 steps).
+- 🗜️ **Holographic Compression:** Compresses 12-bit native states into 8-bit boundary coordinates (about one third native reduction).
 
-- 🧭 **Topological Alignment:** Model dynamics resonate with the kernel's structure without sacrificing generative capacity.
-- 🤝 **Shared Moments:** Creates a shared, verifiable ledger of the generation trajectory for distributed coordination.
+**🧰 aQPU SDK & Native Engine**
+
+- 🧬 **Native Operator Algebra:** Intrinsic K4 gates, Walsh–Hadamard transforms, and affine signatures without iterative replay.
+- 🧮 **Bitplane Tensor Engine:** Decomposes dense neural network matrix multiplications into Boolean AND + POPCNT operations on a 64‑dimensional register.
+- 🔬 **Verified Non‑Clifford Resource:** Access to the mathematically certified delta_BU monodromy defect, providing the necessary conditions for universal quantum computation.
+
+### 🤖 GyroLabe: Auditable AI Inference
+
+**Mechanistic Transparency for Neural Networks**
+
+**GyroLabe Brief**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md  
+**Performance Benchmarks**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_Generation_Report.md
+
+GyroLabe acts as an **auditable inference bridge** for neural networks. Instead of relying on post‑hoc filters, it builds a deterministic, zero‑trust audit trail directly into the inference process, so any party with the same bytes can independently replay and verify what the model did.
+
+**⚙️ How It Works**
+
+- 🔍 **Structural Decomposition:** Translates opaque token generation into exact algebraic operations.
+- ⚖️ **Native Alignment Signals:** Adds trainable structural signals that guide models from the inside out, without changing their outer interface.
+
+**🛡️ Impact**
+
+- 📜 **Zero‑Trust Audit:** Produces a mathematically exact ledger of the inference trajectory for third‑party verification.
+- 🤝 **Compliance Ready:** Provides the structural substrate for rigorous AI governance, alignment guarantees, and policy enforcement.
 
 ### 💰 Moments Economy
 
@@ -409,7 +437,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, GyroDiagnostics evaluation suite, GyroLabe calibration instrument, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
+**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
 
 ### Keywords
 
@@ -426,6 +454,8 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 #### New Projects & Initiatives
 - The Human Mark
 - AI Inspector
+- aQPU Kernel
+- aQPU SDK
 - GyroLabe
 - Alignment Infrastructure Routing
 - Moments Economy
@@ -467,9 +497,8 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - AI agents safety
 - mathematical physics AI
 - gyroscopic dynamics
-- neuro-symbolic bridge
-- projection masks
-- topological alignment
+- quantum advantage
+- holographic compression
 
 #### Research Areas
 - mechanistic interpretability
@@ -554,12 +583,19 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **Application Category**: BrowserExtension
 - **Keywords**: AI Evaluation, Browser Extension, AI Interpretability, Policy Auditing, Content Enhancement
 
+#### aQPU Kernel & SDK
+- **Name**: aQPU Kernel & SDK
+- **Description**: Quantum Advantage on Silicon - Deterministic compute kernel and developer toolkit providing quantum-style algorithmic speedups and holographic compression on standard hardware
+- **URL**: https://github.com/gyrogovernance/superintelligence
+- **Application Category**: DeveloperApplication
+- **Keywords**: Quantum Advantage, aQPU Kernel, aQPU SDK, Holographic Compression, Tensor Engine
+
 #### GyroLabe
 - **Name**: GyroLabe
-- **Description**: Mechanistic Calibration Instrument - Neural activation coordination and guidance system acting as neuro-symbolic bridge for AI alignment and stability through feedback control
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_GyroLabe_Specs.md
+- **Description**: Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations and producing a byte-level ledger for independent replay and verification
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md
 - **Application Category**: DeveloperApplication
-- **Keywords**: Mechanistic Calibration, Neural Coordination, Neuro-symbolic Bridge, Activation Stability, Topological Alignment
+- **Keywords**: Auditable Inference, Verifiable Ledger, Structural Decomposition, Alignment Signals, Compliance
 
 #### GyroDiagnostics
 - **Name**: GyroDiagnostics
@@ -614,7 +650,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Name**: Gyro Governance AI Safety Research
 
-**Description**: Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, GyroLabe calibration instrument, collective superintelligence architecture, and post-AGI governance modeling.
+**Description**: Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, collective superintelligence architecture, and post-AGI governance modeling.
 
 **URL**: https://gyrogovernance.com/github
 
@@ -628,14 +664,13 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - Superintelligence
 - The Human Mark
 - AI Inspector
-- GyroLabe
+- aQPU Kernel
 - Collective Superintelligence
 - Post-AGI Governance
 - Transformative AI
 - Moments Economy
 - Gyroscopic Global Governance
-- Mechanistic Calibration
-- Neural Coordination
+- Quantum Advantage
 
 ### Page Content
 
@@ -663,13 +698,9 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **URL**: https://github.com/gyrogovernance/apps
 - **Tags**: Browser Extension, AI Evaluation, Policy Auditing, Content Enhancement, Local-first
 
-##### GyroLabe
-- **Emoji**: 🤖
-- **Name**: GyroLabe
-- **Title**: Mechanistic Calibration Instrument
-- **Description**: Active Inference coordination and guidance system acting as neuro-symbolic bridge. Couples the model's stochastic latent space to discrete geometric structure through feedback control. Functioning analogously to a biological cerebellum, it does not dictate what a model should say. Instead, it provides a continuous geometric reference frame so the trajectory of inference remains physically coordinated. Internal Guidance: Projects a dynamic geometric mask directly into the model's neural activations, gently biasing the internal state toward kernel-consistent configurations. Trajectory Selection: Evaluates candidate tokens by their geometric consequences, mathematically favoring actions that produce naturally continuous transitions in the kernel.
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_GyroLabe_Specs.md
-- **Tags**: Mechanistic Calibration, Neural Coordination, Neuro-symbolic Bridge, Activation Stability, Topological Alignment
+##### GyroLabe - Auditable Inference Engine
+
+**GyroLabe** provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations. It builds a **deterministic, zero-trust audit trail** directly into the inference process. By injecting trainable structural signals, it aligns models from the inside out without altering their interface. It produces a **mathematically exact ledger** of the generation trajectory, providing the missing structural substrate required for rigorous **AI governance**, alignment guarantees, and **policy enforcement** without requiring access to proprietary model weights.
 
 ##### GyroDiagnostics
 - **Emoji**: 🌟
