@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. Includes The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -103,7 +103,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe Auditable Inference, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe Auditable Inference, GyroGraph runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -136,17 +136,24 @@ export default function GitHub() {
     },
     {
       name: "aQPU Kernel & SDK",
-      description: "Quantum Advantage on Silicon. A new class of deterministic computation proving that quantum algorithmic speedups and holographic compression are geometric properties of discrete information.",
+      description: "Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. aQPU proves quantum algorithmic speedups, O(1) commutativity checks, and holographic compression are geometric properties of discrete information.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
       keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "Holographic Compression", "Tensor Engine"]
     },
     {
       name: "GyroLabe",
-      description: "Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md",
+      description: "Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations and a byte-level replayable ledger.",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Auditable Inference", "Verifiable Ledger", "Structural Decomposition", "AI Governance", "Compliance"]
+    },
+    {
+      name: "GyroGraph",
+      description: "Quantum multicellular AI runtime that coordinates distributed computation and runtime signals for deterministic stability. Builds cell-based execution structure that stays auditable under variable inference demand.",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["Quantum Multicellular AI", "Cellular Runtime", "Deterministic Replay", "AI Stability", "Auditable Inference"]
     },
     {
       name: "GyroDiagnostics",
@@ -168,6 +175,13 @@ export default function GitHub() {
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Transformative AI", "Monetary System", "Physical Capacity", "Governance Records", "Unconditional Income"]
+    },
+    {
+      name: "Computational Climate Control",
+      description: "Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive control mechanisms to preserve deterministic behavior while monitoring throughput and latent variance.",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["AI Runtime Stability", "Efficiency", "Computational Climate", "Adaptive Control", "Traceability"]
     },
     {
       name: "Gyroscopic Global Governance (GGG)",
@@ -226,7 +240,7 @@ export default function GitHub() {
       emoji: '⚛️',
       name: 'aQPU Kernel & SDK',
       title: 'Quantum Advantage on Silicon',
-      description: 'New class of computation proving that quantum advantage, holographic compression, and universal operator algebra are fundamental properties of discrete information. Executes deterministically on standard CPUs and GPUs using integer arithmetic. Provides algorithmic speedups for classic quantum problems, exact uniform mixing in two steps, and a developer-facing SDK with native operator algebra, bitplane tensor engine, and quantum-style primitives.',
+      description: 'Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. aQPU provides algorithmic speedups (including 1-step resolution for selected quantum-classic tasks), O(1) commutativity checks, exact uniform mixing in two steps, and a developer-facing SDK with native operator algebra and a bitplane tensor engine.',
       url: 'https://github.com/gyrogovernance/superintelligence',
       tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'Holographic Compression', 'Tensor Engine'],
       gradient: 'from-blue-500/10 via-indigo-500/10 to-purple-500/10',
@@ -237,12 +251,23 @@ export default function GitHub() {
       emoji: '🤖',
       name: 'GyroLabe',
       title: 'Auditable AI Inference Engine',
-      description: 'Builds a deterministic, zero-trust audit trail directly into model inference. Translates opaque token generation into exact algebraic operations, producing a mathematically exact byte ledger that third parties can independently verify without accessing proprietary model weights. Includes trainable structural signals to align models from the inside out.',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md',
+      description: 'Builds a deterministic, zero-trust audit trail directly into model inference. Translates token generation into exact algebraic operations, producing a byte-level ledger that third parties can independently verify without accessing proprietary model weights. Includes trainable structural signals to align models from the inside out.',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md',
       tags: ['Auditable Inference', 'Verifiable Ledger', 'Structural Decomposition', 'AI Governance', 'Compliance'],
       gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
       borderColor: 'border-cyan-500/20',
       buttonGradient: 'from-cyan-600 to-sky-600 hover:from-sky-600 hover:to-blue-600'
+    },
+    {
+      emoji: '🤖',
+      name: 'GyroGraph',
+      title: 'Quantum Multicellular AI Runtime',
+      description: 'Coordinates cell-based computation for deterministic AI behavior under changing loads. Keeps inference execution stable, auditable, and reproducible through structured runtime control and distributed signals.',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md',
+      tags: ['Quantum Multicellular AI', 'Cellular Runtime', 'AI Stability', 'Deterministic Replay', 'Auditable Inference'],
+      gradient: 'from-violet-500/10 via-blue-500/10 to-cyan-500/10',
+      borderColor: 'border-violet-500/20',
+      buttonGradient: 'from-violet-600 to-blue-600 hover:from-blue-600 hover:to-cyan-600'
     },
     {
       emoji: '🌟',
@@ -254,6 +279,17 @@ export default function GitHub() {
       gradient: 'from-green-500/10 via-emerald-500/10 to-teal-500/10',
       borderColor: 'border-green-500/20',
       buttonGradient: 'from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600'
+    },
+    {
+      emoji: '☂️',
+      name: 'Computational Climate Control',
+      title: 'AI Execution Stability Layer',
+      description: 'Applies adaptive control to reduce hidden inefficiencies and improve execution stability across variable workloads. Preserves determinism and traceability while monitoring system dynamics.',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md',
+      tags: ['Computational Climate', 'Execution Stability', 'Efficiency', 'Adaptive Control', 'Traceability'],
+      gradient: 'from-sky-500/10 via-cyan-500/10 to-blue-500/10',
+      borderColor: 'border-sky-500/20',
+      buttonGradient: 'from-sky-600 to-cyan-600 hover:from-cyan-600 hover:to-blue-600'
     },
     {
       emoji: '🍃',
@@ -341,7 +377,7 @@ export default function GitHub() {
       {/* Research Project Schema */}
       <ResearchProjectSchema
         name="Gyro Governance AI Safety Research"
-        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, collective superintelligence architecture, and post-AGI governance modeling."
+        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, collective superintelligence architecture, and post-AGI governance modeling."
         url="https://gyrogovernance.com/github"
         keywords={[
           "AI Safety Research",
@@ -374,7 +410,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -407,7 +443,7 @@ export default function GitHub() {
           {repositories.map((repo, index) => (
             <article 
               key={index}
-              className={`bg-gradient-to-br ${repo.gradient} backdrop-blur-sm rounded-2xl shadow-2xl p-8 border ${repo.borderColor} hover:shadow-3xl transition-all duration-300 animate-fade-in-up`}
+              className={`bg-gradient-to-br ${repo.gradient} backdrop-blur-sm rounded-[2rem] shadow-2xl p-8 border ${repo.borderColor} transition-all duration-300 animate-fade-in-up`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col md:flex-row items-start gap-6">
@@ -458,7 +494,7 @@ export default function GitHub() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center animate-fade-in-up bg-surface-elevated/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-border/50">
+        <div className="mt-16 text-center animate-fade-in-up bg-surface-elevated/80 backdrop-blur-sm rounded-[2rem] p-8 shadow-lg border border-border/50">
           <h2 className="text-2xl font-bold text-foreground mb-4">
             Contribute to AI Safety Research
           </h2>
@@ -502,12 +538,25 @@ export default function GitHub() {
 
           <h3 className="text-xl font-semibold text-foreground mb-3">aQPU Kernel & SDK - Quantum Advantage on Silicon</h3>
           <p className="mb-4">
-            A new class of deterministic computation proving that <strong>quantum algorithmic speedups</strong> (1-step Hidden Subgroup resolution) and <strong>holographic compression</strong> are geometric properties of discrete information. It executes on standard CPUs and GPUs via exact integer arithmetic without probabilistic qubits. Includes a 64-dimensional <strong>bitplane tensor engine</strong> for neural network decomposition.
+            A new class of deterministic computation proves that <strong>quantum algorithmic speedups</strong> (1-step resolution for key tasks), <strong>O(1) commutativity checks</strong>, and <strong>holographic compression</strong> are geometric properties of discrete information. It executes on standard CPUs and GPUs via exact integer arithmetic without probabilistic qubits. The 64-dimensional <strong>bitplane tensor engine</strong> maps neural operations into fast, exact integer paths.
+          </p>
+          <p className="mb-4">
+            <strong>Algorithmic Speedups:</strong> 1-step Hidden Subgroup and related problems, plus exact uniform mixing in 2 steps over 4,096 states.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">GyroLabe - Auditable Inference Engine</h3>
           <p className="mb-4">
             <strong>GyroLabe</strong> provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations. It builds a <strong>deterministic, zero-trust audit trail</strong> directly into the inference process. By injecting trainable structural signals, it aligns models from the inside out without altering their interface. It produces a <strong>mathematically exact ledger</strong> of the generation trajectory, providing the missing structural substrate required for rigorous <strong>AI governance</strong>, alignment guarantees, and <strong>policy enforcement</strong>.
+          </p>
+
+          <h3 className="text-xl font-semibold text-foreground mb-3">GyroGraph - Quantum Multicellular AI Runtime</h3>
+          <p className="mb-4">
+            <strong>GyroGraph</strong> coordinates runtime behavior across distributed cells to keep AI execution stable as workload changes. It is built for deterministic replay and auditability, giving safer inference behavior through structured multicellular control and observable state transitions.
+          </p>
+
+          <h3 className="text-xl font-semibold text-foreground mb-3">Computational Climate Control</h3>
+          <p className="mb-4">
+            <strong>Computational Climate Control</strong> helps prevent hidden efficiency collapse and stability drift in high-throughput inference pipelines. It brings adaptive control signals to production environments to maintain deterministic behavior and cleaner model execution under dynamic conditions.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">The Human Mark (THM) - AI Safety Classification System</h3>

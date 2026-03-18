@@ -115,7 +115,7 @@ export default function ArticlesPageClient() {
         {items.map((a) => (
           <article
             key={a.slug}
-            className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg border border-border/80 hover:shadow-xl transition-shadow duration-300 h-full overflow-hidden group"
+            className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] !shadow-2xl border border-border/80  h-full overflow-hidden group"
           >
             <div className="p-4 h-full flex flex-col">
               {a.coverImage ? (

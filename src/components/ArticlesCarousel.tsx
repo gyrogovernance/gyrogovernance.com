@@ -182,7 +182,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
           {currentArticles.map((article) => (
             <article
               key={article.slug}
-              className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 animate-fade-in"
+              className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 animate-fade-in"
             >
               <div className="flex flex-col h-full">
                 {article.coverImage && (
@@ -235,7 +235,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
 
       {/* Pagination Dots */}
       {showControls && (
-        <div className="flex justify-center items-center mt-8 gap-2 p-2 bg-surface-elevated/40 backdrop-blur-sm rounded-full border border-border/30 w-fit mx-auto shadow-sm">
+        <div className="flex justify-center items-center mt-8 gap-2 p-2 bg-surface-elevated/40 backdrop-blur-sm rounded-full border border-border/30 w-fit mx-auto shadow-2xl">
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
               key={index}

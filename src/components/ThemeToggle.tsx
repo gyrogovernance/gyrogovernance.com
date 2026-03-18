@@ -3,16 +3,18 @@
 import { useTheme } from './ThemeProvider';
 
 export default function ThemeToggle() {
-  const { theme, actualTheme, setTheme } = useTheme();
+  const { theme, actualTheme, toggleTheme } = useTheme();
 
-  const cycleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else if (theme === 'dark') {
-      setTheme('system');
-    } else {
-      setTheme('light');
+  const getNextThemeLabel = () => {
+    if (theme === 'system') {
+      return actualTheme === 'light' ? 'dark' : 'light';
     }
+
+    return actualTheme === 'light' ? 'dark' : 'light';
+  };
+
+  const getThemeModeLabel = () => {
+    return theme === 'system' ? 'System' : theme === 'light' ? 'Light' : 'Dark';
   };
 
   const getThemeIcon = () => {
@@ -37,19 +39,9 @@ export default function ThemeToggle() {
     }
   };
 
-  const getThemeLabel = () => {
-    if (theme === 'system') {
-      return 'System';
-    } else if (theme === 'light') {
-      return 'Light';
-    } else {
-      return 'Dark';
-    }
-  };
-
   return (
     <button
-      onClick={cycleTheme}
+      onClick={toggleTheme}
       className="relative inline-flex h-8 w-8 items-center justify-center rounded-full
            bg-gradient-to-br from-blue-400 to-blue-500
            hover:from-blue-500 hover:to-blue-600
@@ -58,8 +50,8 @@ export default function ThemeToggle() {
            transition-all duration-300 focus:outline-none focus:ring-2
            focus:ring-blue-300 dark:focus:ring-gray-400
            hover:scale-110 active:scale-95"
-      aria-label={`Switch to ${getThemeLabel()} mode`}
-      title={`Current: ${getThemeLabel()} mode (click to cycle through light → dark → system)`}
+      aria-label={`Switch to ${getNextThemeLabel()} mode`}
+      title={`Current: ${getThemeModeLabel()} mode (system-aware toggle; click to switch ${getNextThemeLabel()})`}
     >
       {getThemeIcon()}
     </button>

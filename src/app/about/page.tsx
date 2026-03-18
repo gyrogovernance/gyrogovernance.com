@@ -2,203 +2,261 @@ import Image from "next/image";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import EmailIcon from "@/components/icons/EmailIcon";
 
+const atAGlance = [
+  {
+    label: "Founded",
+    value: "2013",
+    accent: "border-apple-blue/35",
+  },
+  {
+    label: "Mission",
+    value:
+      "Moving AI safety from post-deployment filtering to structural, by-design observability.",
+    accent: "border-apple-green/35",
+  },
+  {
+    label: "Research Footprint",
+    value:
+      "A comprehensive open-source ecosystem spanning formal physics proofs, browser-based evaluation tools, native compute kernels, and macroeconomic coordination models.",
+    accent: "border-apple-purple/35",
+  },
+  {
+    label: "Measured Impact",
+    value:
+      "Proven enhancements across frontier language models without requiring retraining.",
+    accent: "border-apple-pink/35",
+  },
+];
+
+const workItems = [
+  {
+    number: "01",
+    title: "AI Safety Evaluation and Alignment",
+    description:
+      "We engineer diagnostic frameworks to detect structural failures such as sycophancy, goal drift, and loss of traceability. Our alignment protocols embed observable reasoning directly into AI generation, yielding measurable improvements across leading models.",
+    accent: "bg-apple-blue",
+    accentBorder: "border-apple-blue/35",
+    highlight:
+      "These tools provide quantitative metrics for transparency and ethical coherence without requiring model retraining.",
+  },
+  {
+    number: "02",
+    title: "Verifiable Computing Architectures",
+    description:
+      "We design execution environments that make model inference mathematically exact and perfectly replayable. By replacing opaque floating-point bottlenecks with deterministic integer algebra, we provide the computational infrastructure required for high-assurance AI deployments.",
+    accent: "bg-apple-green",
+    accentBorder: "border-apple-green/35",
+  },
+  {
+    number: "03",
+    title: "Governance Infrastructure",
+    description:
+      "As AI systems scale, human agency must scale alongside them. We develop coordination protocols and capacity-based economic models that translate distributed AI activity into verifiable audit trails.",
+    accent: "bg-apple-pink",
+    accentBorder: "border-apple-pink/35",
+  },
+  {
+    number: "04",
+    title: "Mathematical Foundations",
+    description:
+      "A long-term research program in gyroscopic dynamics and formal physical models anchors the lab. This foundational layer connects theoretical safety proofs directly to software engineering and practical policy design.",
+    accent: "bg-apple-purple",
+    accentBorder: "border-apple-purple/35",
+  },
+];
+
+const impactRows = [
+  {
+    metric: "Output Quality",
+    improvement: "+32.9%",
+    description: "Measurable improvement in response quality",
+  },
+  {
+    metric: "Structural Reasoning",
+    improvement: "+50.9%",
+    description: "Enhanced logical structure and coherence",
+  },
+  {
+    metric: "Accountability",
+    improvement: "+62.7%",
+    description: "Improved responsibility and traceability",
+  },
+  {
+    metric: "Traceability",
+    improvement: "+61.0%",
+    description: "Better tracking of decision processes",
+  },
+  {
+    metric: "Behavioral Integrity",
+    improvement: "+54.9%",
+    description: "Enhanced ethical consistency and alignment",
+  },
+];
+
+const impactAudience = [
+  {
+    title: "For Researchers",
+    description:
+      "We offer formal mathematical approaches to alignment, interpretability, and system evaluation.",
+    accent: "border-apple-green/35",
+  },
+  {
+    title: "For Engineers",
+    description:
+      "We provide practical, hardware-efficient tools for runtime observability and deterministic execution.",
+    accent: "border-apple-blue/35",
+  },
+  {
+    title: "For Leadership",
+    description:
+      "We define a clear path toward deploying AI systems with lower governance risk, stronger accountability, and zero-trust audit capabilities.",
+    accent: "border-apple-purple/35",
+  },
+];
+
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-      <div className="animate-fade-in-up">
-        <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-center">
-          <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
-            About
-          </span>
-        </h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+      <div className="pointer-events-none absolute inset-x-0 -top-10 h-72 bg-[radial-gradient(circle_at_30%_20%,rgba(99,102,241,0.2),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(14,165,233,0.16),transparent_45%)]" />
+      <div className="relative z-10 animate-fade-in-up space-y-10">
+        <header className="text-center">
+          <h1 className="mt-3 text-4xl sm:text-5xl font-bold">
+            <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
+              About
+            </span>
+          </h1>
+        </header>
 
-        {/* Intro Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
-            Gyro Governance is a research lab established in 2013, specializing in artificial intelligence alignment 
-            and governance through mathematical physics foundations.
-            </p>
-            <p className="text-foreground-secondary mb-4 leading-relaxed">
-              The research addresses critical challenges in machine learning systems through 
-              approaches based on gyroscopic dynamics and structural coherence. This unique perspective 
-              enables the development of more robust and interpretable computational architectures.
-            </p>
-            <p className="text-foreground-secondary leading-relaxed">
-              Beyond technological innovation, the focus extends to ethical frameworks and governance 
-              models that ensure these systems serve societal needs while maintaining transparency 
-              and accountability.
-            </p>
+        <section className="rounded-[2rem] border border-apple-purple/25 bg-gradient-to-br from-apple-purple/10 via-apple-blue/10 to-apple-green/10 backdrop-blur-sm p-7 shadow-2xl">
+          <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
+            <strong>Gyro Governance</strong> is an independent research lab founded in 2013, focusing on artificial intelligence alignment, evaluation, and governance.
+          </p>
+          <p className="text-foreground-secondary mb-4 leading-relaxed">
+            We build architectures that make AI measurable, inspectable, and easier to coordinate responsibly. Combining mathematical physics with practical engineering, our work addresses the core vulnerabilities of modern machine learning: opacity, weak accountability, brittle behavior, and coordination failure.
+          </p>
+          <p className="text-foreground-secondary leading-relaxed">
+            Rather than treating safety as a cosmetic filter applied after a model is trained, we study how alignment and auditability can be built directly into the computational structure of the system.
+          </p>
+        </section>
+
+        <section className="rounded-[2rem] border border-emerald-500/25 bg-gradient-to-br from-emerald-500/10 via-green-500/10 to-teal-500/10 backdrop-blur-sm p-7 shadow-2xl">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-2 w-2 rounded-full bg-apple-green" />
+            <h2 className="text-2xl font-semibold text-foreground-secondary">At a Glance</h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            {atAGlance.map((item) => (
+              <article
+                key={item.label}
+                className={`rounded-xl border border-border/50 bg-surface-elevated/50 p-5 ${item.accent}`}
+              >
+                <p className="text-sm uppercase tracking-wide text-foreground-tertiary mb-2">
+                  {item.label}
+                </p>
+                <p className="text-foreground-secondary leading-relaxed">{item.value}</p>
+              </article>
+            ))}
           </div>
         </section>
 
-        {/* Key Developments Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <div className="flex items-center justify-center mb-6">
+        <section className="rounded-[2rem] border border-blue-500/25 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-cyan-500/10 backdrop-blur-sm p-7 shadow-2xl">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-2 w-2 rounded-full bg-apple-blue" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
-              Key Developments
+              What We Work On
             </h2>
           </div>
-          <div className="space-y-6">
-            {/* Alignment Protocols & Diagnostics - Table Format */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
-              <div className="flex items-center space-x-3 mb-6">
-                <span className="text-4xl">🎯</span>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground">Alignment Protocols & Diagnostics</h3>
-                  <p className="text-sm text-foreground-tertiary">Gyroscope Protocol Performance Metrics</p>
-                </div>
-              </div>
-              
-              <div className="overflow-x-auto">
-                <table className="w-full min-w-[600px]">
-                  <thead>
-                    <tr>
-                      <th className="text-left py-3 px-4 text-sm font-semibold text-foreground">Metric</th>
-                      <th className="text-left py-3 px-4 text-sm font-semibold text-foreground">Improvement</th>
-                      <th className="text-left py-3 px-4 text-sm font-semibold text-foreground">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-border-secondary">
-                      <td className="py-3 px-4 text-foreground-secondary">Output Quality</td>
-                      <td className="py-3 px-4">
-                        <span className="font-semibold text-apple-green">+32.9%</span>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-secondary text-sm">Measurable improvement in response quality</td>
-                    </tr>
-                    <tr className="border-b border-border-secondary">
-                      <td className="py-3 px-4 text-foreground-secondary">Structural Reasoning</td>
-                      <td className="py-3 px-4">
-                        <span className="font-semibold text-apple-green">+50.9%</span>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-secondary text-sm">Enhanced logical structure and coherence</td>
-                    </tr>
-                    <tr className="border-b border-border-secondary">
-                      <td className="py-3 px-4 text-foreground-secondary">Accountability</td>
-                      <td className="py-3 px-4">
-                        <span className="font-semibold text-apple-green">+62.7%</span>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-secondary text-sm">Improved responsibility and traceability</td>
-                    </tr>
-                    <tr className="border-b border-border-secondary">
-                      <td className="py-3 px-4 text-foreground-secondary">Traceability</td>
-                      <td className="py-3 px-4">
-                        <span className="font-semibold text-apple-green">+61.0%</span>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-secondary text-sm">Better tracking of decision processes</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4 text-foreground-secondary">Behavioral Integrity</td>
-                      <td className="py-3 px-4">
-                        <span className="font-semibold text-apple-green">+54.9%</span>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-secondary text-sm">Enhanced ethical consistency and alignment</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              
-              <p className="text-foreground-secondary leading-relaxed mt-4 text-sm">
-                These tools provide quantitative metrics for transparency and ethical coherence without requiring model retraining. 
-                The Gyroscope Protocol demonstrates measurable improvements in language model performance across multiple dimensions.
-              </p>
-            </div>
 
-            {/* Governance Architecture - Card Format */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
-              <div className="flex items-start space-x-4">
-                <div className="text-5xl">⚖️</div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Governance Architecture
-                  </h3>
-                  <p className="text-foreground-secondary leading-relaxed">
-                    Practical frameworks for oversight and decision-making that can be adapted across 
-                    different organizational contexts. These models emphasize participatory approaches 
-                    and structural accountability mechanisms for responsible deployment of intelligent systems.
-                  </p>
+          <div className="space-y-5">
+            {workItems.map((item) => (
+              <article
+                key={item.title}
+                className={`rounded-xl border border-border/50 bg-surface-elevated/50 p-6 ${item.accentBorder}`}
+              >
+                <div className="flex flex-col gap-4 md:flex-row md:items-start">
+                  <span className={`mt-1 inline-flex h-8 w-8 flex-none items-center justify-center rounded-full ${item.accent} text-white text-sm font-semibold`}>
+                    {item.number}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                    <p className="text-foreground-secondary leading-relaxed">{item.description}</p>
+                    {item.highlight ? <p className="mt-3 text-sm text-foreground-tertiary">{item.highlight}</p> : null}
+                    {item.title.includes("AI Safety Evaluation") ? (
+                      <div className="mt-5 overflow-x-auto">
+                        <table className="w-full min-w-[640px] text-sm">
+                          <thead>
+                            <tr className="text-left text-foreground-tertiary">
+                              <th className="py-2 pr-4">Metric</th>
+                              <th className="py-2 px-3">Improvement</th>
+                              <th className="py-2 pl-3">Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {impactRows.map((row) => (
+                              <tr className="border-b border-border/50" key={row.metric}>
+                                <td className="py-2 pr-4 text-foreground-secondary">{row.metric}</td>
+                                <td className="py-2 px-3 font-semibold text-apple-green">{row.improvement}</td>
+                                <td className="py-2 pl-3 text-foreground-secondary">{row.description}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : null}
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Mathematical Physics Foundations - Card Format */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80">
-              <div className="flex items-start space-x-4">
-                <div className="text-5xl">🔬</div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Mathematical Physics Foundations
-                  </h3>
-                  <p className="text-foreground-secondary leading-relaxed">
-                    Research into fundamental mathematical frameworks that apply gyroscopic physics principles 
-                    to questions of stability, coherence, and dynamics in complex systems. This theoretical work 
-                    provides the foundation for understanding alignment and governance challenges from first principles.
-                  </p>
-                </div>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <div className="flex items-center justify-center mb-6">
-            <div className="text-12xl mr-4"></div>
+        <section className="rounded-[2rem] border border-orange-500/25 bg-gradient-to-br from-orange-500/10 via-amber-500/10 to-yellow-500/10 backdrop-blur-sm p-7 shadow-2xl">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-2 w-2 rounded-full bg-apple-pink" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
-              Research Focus
+              Why This Matters
             </h2>
           </div>
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <p className="text-foreground-secondary mb-4 leading-relaxed text-xl font-semibold">
-              The research combines mathematical rigor with practical engineering to address 
-              fundamental challenges in machine intelligence, such as AI Risks, Hallucinations, 
-              Sycophancy, and Bias. 
-              This interdisciplinary approach draws from physics, philosophy, and systems theory
-              to create robust solutions, and governance models aligned with the UN Sustainable Development Goals.
-            </p>
-            <p className="text-foreground-secondary leading-relaxed">
-              Current projects explore superintelligence architectures, behavioral alignment 
-              mechanisms, and governance tools that prioritize transparency and human values. 
-              All developments are documented through open-source repositories and educational resources.
-            </p>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {impactAudience.map((item) => (
+              <article
+                key={item.title}
+                className={`rounded-xl border border-border/40 bg-surface-elevated/50 p-5 ${item.accent}`}
+              >
+                <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                <p className="text-foreground-secondary leading-relaxed">{item.description}</p>
+              </article>
+            ))}
           </div>
         </section>
 
-        {/* Founder Section */}
-        <section className="mb-12 animate-fade-in-up">
-          <div className="flex items-center justify-center mb-6">
+        <section className="rounded-[2rem] border border-apple-blue/25 bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm p-7 shadow-2xl">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-2 w-2 rounded-full bg-apple-blue" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
               Founder & AI Governance Lead
             </h2>
           </div>
-          <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-            <div className="flex flex-col md:flex-row h-full">
-              {/* Image - Above name on mobile, left side on desktop */}
-              <div className="flex items-center justify-center mb-4 md:mb-0 md:mr-6">
-                <Image 
-                  src="/assets/Basil_Korompilias.png" 
-                  alt="Basil Korompilias - Founder and AI Governance Lead at Gyro Governance" 
-                  width={120}
-                  height={120}
-                  className="w-32 h-32 md:w-45 md:h-45 object-cover rounded-full shadow-md border border-border/50"
-                />
-              </div>
-              <div className="flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3 text-center md:text-left">
-                    Basil Korompilias
-                  </h3>
-                  <p className="text-foreground-secondary leading-relaxed text-center md:text-left">
-                    AI Governance Lead with over two decades of multidisciplinary experience spanning product design, change management and applied research.
-                  </p>
-                </div>
-                <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
+          <div className="rounded-xl border border-border/50 bg-surface-elevated/55 p-6">
+            <div className="flex flex-col md:flex-row gap-5">
+              <Image
+                src="/assets/Basil_Korompilias.png"
+                alt="Basil Korompilias - Founder and AI Governance Lead at Gyro Governance"
+                width={140}
+                height={140}
+                className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover border border-border/60"
+              />
+              <div className="flex-1 min-w-0">
+                <h3 className="text-xl font-semibold text-foreground mb-2">Basil Korompilias</h3>
+                <p className="text-foreground-secondary leading-relaxed">
+                  AI Governance Lead with over two decades of multidisciplinary experience spanning product design, change management and applied research.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-3">
                   <a
                     href="https://korompilias.github.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink transition-all duration-300 shadow-lg"
                     aria-label="Visit Basil Korompilias personal website (opens in new tab)"
                   >
                     Website
@@ -207,7 +265,7 @@ export default function About() {
                     href="https://www.linkedin.com/in/korompilias"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:to-blue-800 transition-all duration-300"
                     aria-label="Visit Basil Korompilias LinkedIn profile (opens in new tab)"
                   >
                     <LinkedInIcon className="w-4 h-4 mr-2" />
@@ -215,7 +273,7 @@ export default function About() {
                   </a>
                   <a
                     href="mailto:basilkorompilias@gmail.com?subject=Contact from Gyro Governance Website"
-                    className="inline-flex items-center justify-center w-10 h-10 bg-gray-600 hover:bg-gray-700 text-white rounded-full transition-colors duration-300"
+                    className="inline-flex items-center justify-center h-9 w-9 rounded-full text-white bg-gradient-to-r from-foreground/70 to-foreground/50 hover:to-foreground/70 transition-colors"
                     aria-label="Send email to Basil Korompilias"
                     title="Send email to basilkorompilias@gmail.com"
                   >
@@ -226,7 +284,6 @@ export default function About() {
             </div>
           </div>
         </section>
-
       </div>
     </div>
   );

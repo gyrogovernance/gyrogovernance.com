@@ -33,7 +33,7 @@ export default function ConvergenceChart() {
   const tickColor = isDark ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.6)';
 
   return (
-    <div className="w-full my-8 bg-surface-elevated/60 backdrop-blur-sm rounded-xl border border-border/80">
+    <div className="w-full my-8 bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] border border-border/80">
       <div className="p-6">
       <h3 className="text-xl font-semibold text-foreground mb-4">
         Convergence to Equilibrium

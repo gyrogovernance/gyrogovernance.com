@@ -182,7 +182,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           <div>
             <h2 className="text-2xl font-bold text-foreground mb-4">Labs</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex h-full">
                   <div className="flex items-center justify-center mr-4">
                     <div className="text-5xl">⚡</div>
@@ -209,7 +209,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                 </div>
               </article>
 
-              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex h-full">
                   <div className="flex items-center justify-center mr-4">
                     <div className="text-5xl">❤️</div>
@@ -236,7 +236,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                 </div>
               </article>
 
-              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex h-full">
                   <div className="flex items-center justify-center mr-4">
                     <div className="text-5xl">🌟</div>
@@ -263,7 +263,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                 </div>
               </article>
 
-              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+              <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex h-full">
                   <div className="flex items-center justify-center mr-4">
                     <div className="text-5xl">🧭</div>
@@ -295,7 +295,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           {/* Resources - Newsletter */}
           <div>
             <h2 className="text-2xl font-bold text-foreground mb-4">Resources</h2>
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <Image

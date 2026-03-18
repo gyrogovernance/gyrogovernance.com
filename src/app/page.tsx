@@ -31,7 +31,7 @@ export default function Home() {
       {/* Stats */}
       <div className="mb-6 animate-fade-in-up [animation-delay:200ms]">
         <div className="flex flex-col items-center">
-        <div className="w-full sm:w-auto flex justify-center gap-3 sm:gap-6 md:gap-10 py-4 px-2 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-2xl bg-surface-elevated/60 backdrop-blur-md border border-border/40 shadow-sm">
+        <div className="w-full sm:w-auto flex justify-center gap-3 sm:gap-6 md:gap-10 py-4 px-2 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-[2rem] bg-surface-elevated/60 backdrop-blur-md border border-border/40 !shadow-2xl">
             
             <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500" delay={0} />
             <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500" delay={200} />
@@ -65,16 +65,16 @@ export default function Home() {
               href: "#aqpu",
             },
             {
-              emoji: "🍃",
-              title: "Alignment Infrastructure Routing",
-              desc: "Collective Superintelligence Stack for Human-AI Coordination",
-              href: "#air",
-            },
-            {
               emoji: "🤖",
               title: "GyroLabe",
               desc: "Auditable inference bridge and native compute backend",
               href: "#gyrolabe",
+            },
+            {
+              emoji: "🍃",
+              title: "Alignment Infrastructure Routing",
+              desc: "Collective Superintelligence Stack for Human-AI Coordination",
+              href: "#air",
             },
             {
               emoji: "💰",
@@ -98,7 +98,7 @@ export default function Home() {
             <a
               key={p.title}
               href={p.href}
-              className="group flex items-start gap-3 !px-2 py-4 sm:px-4 rounded-2xl bg-surface-elevated/30 border border-border/60 hover:bg-surface-elevated backdrop-blur-2xl hover:border-apple-blue/50 transition-all duration-200"
+              className="group flex items-start gap-3 !px-2 py-4 sm:px-4 rounded-xl bg-surface-elevated/30 border border-border/60 hover:bg-surface-elevated backdrop-blur-2xl hover:border-apple-blue/50 transition-all duration-200 shadow-2xl"
               >
               <span className="text-2xl leading-none shrink-0">{p.emoji}</span>
               <span className="min-w-0">
@@ -143,6 +143,13 @@ export default function Home() {
 
           <div className="space-y-1.5">
             {[
+              {
+                dot: "bg-cyan-500",
+                title: "AI Compute Optimizations",
+                desc: "Replaced floating-point math and eliminated expensive overhead.",
+                date: "17 Mar 2026",
+                href: "#aqpu",
+              },
               {
                 dot: "bg-blue-500",
                 title: "aQPU Kernel",
@@ -205,7 +212,7 @@ export default function Home() {
       </div>
       {/* The Human Mark Hero Card - Moved to First Position */}
       <div id="thm" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-orange-500/20">
+        <div className="bg-gradient-to-br from-orange-500/10 via-red-500/10 to-amber-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-orange-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">✋</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -219,7 +226,7 @@ export default function Home() {
           {/* Grid Layout */}
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             {/* Four Displacement Risks */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
               <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-3 w-fit mx-auto">
                 <li><strong className="text-foreground">Governance Traceability (GTD)</strong></li>
@@ -233,7 +240,7 @@ export default function Home() {
             </div>
 
             {/* Applications */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
               <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
               <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside w-fit mx-auto">
                 <li><strong className="text-foreground">Jailbreak testing</strong></li>
@@ -306,7 +313,7 @@ export default function Home() {
 
       {/* AI Inspector Browser Extension Hero Section */}
       <div id="inspector" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl border border-purple-500/20 overflow-hidden">
+        <div className="bg-gradient-to-br from-purple-500/10 via-indigo-500/10 to-blue-500/10 backdrop-blur-sm rounded-[2rem] shadow-2xl border border-purple-500/20 overflow-hidden">
           {/* Compact promo image at top */}
           <div className="w-full flex justify-center bg-gradient-to-b from-purple-900/20 to-transparent">
             <Image 
@@ -391,14 +398,14 @@ export default function Home() {
 
       {/* aQPU Kernel Hero */}
       <div id="aqpu" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-blue-500/20">
+        <div className="bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-blue-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">⚛️</div>
             <h2 className="text-3xl font-bold text-foreground mb-2">
-              aQPU Kernel: Quantum Advantage on Silicon
+              aQPU (algebraic Quantum Processing Unit) Kernel
             </h2>
             <p className="text-lg font-semibold text-foreground-secondary">
-              Bypassing the hardware scaling nightmare of the quantum computing industry.
+              Quantum Advantage on Silicon, bypassing the hardware scaling limits.
             </p>
           </div>
 
@@ -440,24 +447,69 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* SDK / GyroLabe connection - Full Width */}
+            {/* SDK and Native Engine - Full Width */}
             <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🧰 The aQPU SDK & Native Engine</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🧰 Developer SDK and Native Engine</h3>
               <p className="text-sm sm:text-base text-foreground-secondary mb-4 text-center">
-                Translating pure physics into an accessible developer surface.
+                This gives builders a verified path from specification to deployment.
               </p>
-              <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none max-w-3xl mx-auto text-left">
-                <li className="flex items-start">
-                  <span className="text-purple-500 mr-2">🧬</span>
-                  <span><strong>Native Operator Algebra:</strong> Apply intrinsic K4 gates, Walsh-Hadamard transforms, and affine signatures without iterative replay.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-purple-500 mr-2">🧮</span>
-                  <span><strong>Bitplane Tensor Engine:</strong> Decomposes dense neural network matrix multiplications into Boolean <code>AND + POPCNT</code> operations on a 64-dimensional register.</span>
-                </li>
-                <li className="flex items-start">
-                </li>
-              </ul>
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
+                <a
+                  href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg text-sm"
+                  aria-label="Read the aQPU SDK specification"
+                >
+                  SDK Spec
+                </a>
+                <a
+                  href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg text-sm"
+                  aria-label="Read aQPU Verification Report"
+                >
+                  Verification Report
+                </a>
+              </div>
+            </div>
+
+            {/* Computational Climate Control Box - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🌡️ Computational Climate Control</h3>
+              <p className="text-sm sm:text-base text-foreground-secondary mb-4 text-center">
+                AI execution stability and hidden inefficiencies reduction.
+              </p>
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
+                <a
+                  href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg text-sm"
+                  aria-label="Read Computational Climate Control brief"
+                >
+                  Climate Brief
+                </a>
+                <a
+                  href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Theory.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg text-sm"
+                  aria-label="Read Computational Climate Control theory"
+                >
+                  Climate Theory
+                </a>
+                <a
+                  href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg text-sm"
+                  aria-label="Read Computational Climate Control tests report"
+                >
+                  Tests Report
+                </a>
+              </div>
             </div>
           </div>
 
@@ -473,31 +525,99 @@ export default function Home() {
               View on GitHub
             </a>
             <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Specs.md"
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="Read aQPU Kernel Specification (opens in new tab)"
+              aria-label="Read aQPU Strategic Significance (opens in new tab)"
             >
-              Kernel Spec
+              Strategic Significance
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* GyroLabe & GyroGraph Hero */}
+      <div id="gyrolabe" className="mb-12 animate-fade-in-up">
+        <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-cyan-500/20 shadow-2xl">
+          <div className="text-center mb-8">
+            <div className="text-6xl mb-4">🤖</div>
+            <h2 className="text-3xl font-bold text-foreground mb-2">
+              GyroLabe & GyroGraph
+            </h2>
+            <p className="text-lg font-semibold text-foreground-secondary">
+              Auditable Multicellular Quantum AI Runtime for safer deployment.
+            </p>
+          </div>
+
+          {/* Grid Layout */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* The Hook - Full Width */}
+            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
+              <p className="text-base sm:text-lg text-foreground-secondary">
+                Current AI safety often depends on checks after the fact. GyroLabe and GyroGraph build a deterministic audit trail for both inference and runtime behavior.
+              </p>
+            </div>
+
+            {/* GyroLabe */}
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">GyroLabe: Inference Bridge</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-cyan-500 mr-2">🔍</span>
+                  <span><strong>Deterministic audit:</strong> Every inference path can be independently replayed from a standard public log.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-cyan-500 mr-2">⚖️</span>
+                  <span><strong>Safer operation:</strong> Helps separate model behavior from accidental drift under repeated use.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* GyroGraph */}
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">GyroGraph: Quantum Multicellular AI</h3>
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                <li className="flex items-start">
+                  <span className="text-sky-500 mr-2">📜</span>
+                  <span><strong>Cell-based runtime:</strong> Coordinates distributed computation signals to stay stable under changing load.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-sky-500 mr-2">🤝</span>
+                  <span><strong>Human-ready safety:</strong> Keeps observable evidence close to every operational decision.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+            <a
+              href="https://github.com/gyrogovernance/superintelligence?tab=readme-ov-file#-gyrolabe-calibration-for-auditable-inference"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="View GyroLabe on GitHub (opens in new tab)"
+            >
+              <GitHubIcon className="w-5 h-5 mr-2" />
+              View on GitHub
             </a>
             <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md"
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="Read the aQPU SDK specification (opens in new tab)"
+              aria-label="Read GyroLabe Specification (opens in new tab)"
             >
-              SDK Spec
+              GyroLabe Spec
             </a>
             <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md"
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="Read aQPU Verification Report (opens in new tab)"
+              aria-label="Read GyroGraph Specification (opens in new tab)"
             >
-              Verification Report
+              GyroGraph Spec
             </a>
           </div>
         </div>
@@ -505,7 +625,7 @@ export default function Home() {
 
       {/* Alignment Infrastructure Routing (AIR) Hero */}
       <div id="air" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-yellow-500/20">
+        <div className="bg-gradient-to-br from-yellow-500/10 via-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-yellow-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🍃</div>
             <h2 className="text-3xl font-bold text-foreground mb-2">
@@ -520,39 +640,39 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* What it is - Full Width */}
             <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">🔧 What it is</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">What it is</h3>
               <p className="text-sm sm:text-base text-foreground-secondary">
-                A coordination infrastructure that amplifies human potential alongside AI. It routes workforce capacity, funding, and safety tasks into a unified, verifiable history.
+                A coordination infrastructure that amplifies human potential alongside AI. It routes work, funding, and safety checks into a shared verifiable history.
               </p>
             </div>
 
             {/* What it does */}
             <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🎯 What it does</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">What it does</h3>
               <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-                AIR connects three critical groups to build Collective Superintelligence.
+                AIR connects three critical groups to make collaborative governance executable.
               </p>
               <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">⚗️</span>
-                  <span><strong className="text-foreground">For Labs:</strong> Scale without administrative chaos.</span>
+                  <span><strong className="text-foreground">For Labs:</strong> Keep delivery visible across teams and partners.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-500 mr-2">💼</span>
-                  <span><strong className="text-foreground">For Funders:</strong> See exactly what risks your portfolio covers.</span>
+                  <span><strong className="text-foreground">For Funders:</strong> Track exactly what safety outcomes are produced.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-500 mr-2">👥</span>
-                  <span><strong className="text-foreground">For Everyone:</strong> Turn skills into paid, verifiable contribution units.</span>
+                  <span><strong className="text-foreground">For Everyone:</strong> Turn verified contribution into aligned value.</span>
                 </li>
               </ul>
             </div>
 
             {/* Why it matters */}
             <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">💡 Why it matters</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">Why it matters</h3>
               <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-                We do not treat AI as a replacement for people. We treat it as part of a collective network. This router ensures that as systems scale, human agency scales with them.
+                AI should expand human agency, not replace it. AIR keeps decision quality high even as systems scale.
               </p>
               <div className="mt-3 pt-3 border-t border-border/30">
                 <p className="text-sm font-semibold text-foreground">Coordinates activity across:</p>
@@ -581,95 +701,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* GyroLabe Hero */}
-      <div id="gyrolabe" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-cyan-500/10 via-sky-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-cyan-500/20">
-          <div className="text-center mb-8">
-            <div className="text-6xl mb-4">🔭</div>
-            <h2 className="text-3xl font-bold text-foreground mb-2">
-              GyroLabe: Auditable AI Inference
-            </h2>
-            <p className="text-lg font-semibold text-foreground-secondary">
-              Mechanistic transparency for neural networks
-            </p>
-          </div>
-
-          {/* Grid Layout */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* The Hook - Full Width */}
-            <div className="md:col-span-2 bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50 text-center">
-              <p className="text-base sm:text-lg text-foreground-secondary">
-                Current AI safety relies on output filtering and post-hoc testing. GyroLabe builds a <strong>deterministic, zero-trust audit trail</strong> directly into inference. Anyone can verify what the model did without accessing proprietary weights or trusting the operator.
-              </p>
-            </div>
-
-            {/* Left Column */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">⚙️ How It Works</h3>
-              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                <li className="flex items-start">
-                  <span className="text-cyan-500 mr-2">🔍</span>
-                  <span><strong>Structural Decomposition:</strong> Translates opaque token generation into exact algebraic operations.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-cyan-500 mr-2">⚖️</span>
-                  <span><strong>Native Alignment:</strong> Adds trainable structural signals to guide models from the inside out.</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Right Column */}
-            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-border/50">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🛡️ The Impact</h3>
-              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                <li className="flex items-start">
-                  <span className="text-sky-500 mr-2">📜</span>
-                  <span><strong>Zero-Trust Audit:</strong> Produces a mathematically exact ledger that third parties can independently verify.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-sky-500 mr-2">🤝</span>
-                  <span><strong>Compliance Ready:</strong> Provides the structural substrate for rigorous AI governance and policy enforcement.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-            <a
-              href="https://github.com/gyrogovernance/superintelligence?tab=readme-ov-file#-gyrolabe-calibration-for-auditable-inference"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-              aria-label="View GyroLabe on GitHub (opens in new tab)"
-            >
-              <GitHubIcon className="w-5 h-5 mr-2" />
-              View on GitHub
-            </a>
-            <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="Read GyroLabe Brief (opens in new tab)"
-            >
-              GyroLabe Brief
-            </a>
-            <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_Generation_Report.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-surface-elevated/60 hover:bg-surface-elevated text-foreground font-medium rounded-xl border border-border/80 transition-all duration-300 shadow hover:shadow-lg"
-              aria-label="View Performance Benchmarks (opens in new tab)"
-            >
-              Performance Benchmarks
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Moments Economy Hero */}
       <div id="moments" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-emerald-500/20">
+        <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-cyan-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-emerald-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">💰</div>
             <h2 className="text-3xl font-bold text-foreground mb-2">
@@ -762,7 +796,7 @@ export default function Home() {
 
       {/* Gyroscopic Global Governance Simulator Hero */}
       <div id="ggg" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-blue-500/20">
+        <div className="bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-emerald-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-blue-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌐</div>
             <h2 className="text-3xl font-bold text-foreground mb-3">
@@ -830,7 +864,7 @@ export default function Home() {
 
       {/* GyroDiagnostics Hero Card */}
       <div id="diagnostics" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-green-500/20">
+        <div className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-green-500/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🌟</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -865,7 +899,7 @@ export default function Home() {
           </div>
           
           {/* Evaluation Results - GPT-5 & Claude */}
-          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-6 border border-border/50">
             <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🏆 Frontier Model Evaluations (October 2025)</h3>
             <p className="text-foreground-secondary text-center mb-6 text-sm">
               Evaluated using ensemble analyst models with mathematical physics-grounded metrics
@@ -932,7 +966,7 @@ export default function Home() {
 
       {/* Gyroscope Hero Card */}
       <div id="gyroscope" className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-apple-blue/20">
+        <div className="bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm rounded-[2rem] p-4 sm:p-6 md:p-8 border border-apple-blue/20 shadow-2xl">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">⚙️</div>
             <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -944,7 +978,7 @@ export default function Home() {
           </div>
           
           {/* Results Table */}
-          <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50">
+            <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl p-3 sm:p-6 border border-border/50">
             <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6 text-center">📊 Proven Performance Gains</h3>
             <p className="text-foreground-secondary text-center mb-4 sm:mb-6 text-sm sm:text-base">
               Testing across multiple leading AI models shows Gyroscope delivers substantial performance improvements
@@ -952,7 +986,7 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 gap-3 sm:gap-6">
               {/* ChatGPT Results */}
-              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 transition-shadow duration-300">
                 <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">ChatGPT</h4>
                 <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <div className="flex justify-between">
@@ -975,7 +1009,7 @@ export default function Home() {
               </div>
 
               {/* Claude Sonnet Results */}
-              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-border/50 transition-shadow duration-300">
                 <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">Claude Sonnet</h4>
                 <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <div className="flex justify-between">
@@ -1034,7 +1068,7 @@ export default function Home() {
                   Labs
                 </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl gap-3 !px-2 py-4 sm:px-4 border border-border/80 ">
           <div className="flex h-full">
               <div className="flex items-center justify-center mr-3">
                 <div className="emoji-icon">⚡</div>
@@ -1062,7 +1096,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl gap-3 !px-2 py-4 sm:px-4 border border-border/80 ">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-3">
                 <div className="emoji-icon">❤️</div>
@@ -1090,7 +1124,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl gap-3 !px-2 py-4 sm:px-4 border border-border/80 ">
             <div className="flex h-full">
               <div className="flex items-center justify-center mr-3">
                 <div className="emoji-icon">🌟</div>
@@ -1118,7 +1152,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg gap-3 !px-2 py-4 sm:px-4 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+          <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl gap-3 !px-2 py-4 sm:px-4 border border-border/80 ">
             <div className="flex h-full">
             <div className="flex items-center justify-center mr-3">
               <span className="emoji-icon">🧭</span>
@@ -1162,7 +1196,7 @@ export default function Home() {
                     Newsletter
                   </h3>
                   <div className="grid md:grid-cols-1 gap-6">
-<article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+<article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
         <div className="flex-shrink-0">
           <Image 
@@ -1203,7 +1237,7 @@ export default function Home() {
                   <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">
                     Foundational Theory
                   </h3>
-                  <article className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-green-500/20 hover:shadow-xl transition-shadow duration-300">
+                  <article className="bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 backdrop-blur-sm rounded-[2rem] shadow-2xl p-6 border border-green-500/20 ">
                     <div className="text-center mb-6">
                       <div className="text-5xl mb-4">⚗️</div>
                       <h4 className="text-2xl font-bold text-foreground mb-2">
@@ -1276,7 +1310,7 @@ export default function Home() {
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6">
                     {/* Clean Dataset */}
-                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-6 border border-border/80  overflow-hidden">
                       <div 
                         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
                         style={{ backgroundImage: 'url(/assets/clean-dataset.jpg)' }}
@@ -1317,7 +1351,7 @@ export default function Home() {
                     </article>
 
                     {/* Pure Dataset */}
-                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <article className="relative bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-6 border border-border/80  overflow-hidden">
                       <div 
                         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
                         style={{ backgroundImage: 'url(/assets/pure-dataset.jpg)' }}
@@ -1365,7 +1399,7 @@ export default function Home() {
                     Guides
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex items-start space-x-4">
                         <div className="text-5xl sm:text-6xl md:text-7xl">🍟</div>
                         <div className="flex-1">
@@ -1389,7 +1423,7 @@ export default function Home() {
                       </div>
                     </article>
 
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex items-start space-x-4">
                         <div className="text-5xl sm:text-6xl md:text-7xl">🛡️</div>
                         <div className="flex-1">
@@ -1421,7 +1455,7 @@ export default function Home() {
                     Publications
                   </h3>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
                           <Image 
@@ -1453,7 +1487,7 @@ export default function Home() {
                       </div>
                     </article>
 
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
                         <div className="flex-shrink-0">
                           <Image 
@@ -1493,7 +1527,7 @@ export default function Home() {
                     Experiments
                   </h3>
                   <div>
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex items-start space-x-4">
                         <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
                         <div className="flex-1">
@@ -1529,7 +1563,7 @@ export default function Home() {
                   </h3>
                   <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Crisis Resolutions Podcast */}
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex items-start space-x-4">
                         <div className="text-4xl">🎧</div>
                         <div className="flex-1">
@@ -1556,7 +1590,7 @@ export default function Home() {
                     </article>
 
                     {/* Crisis Resolutions Training */}
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-4 sm:p-6 border border-border/80 ">
                       <div className="flex items-start space-x-4">
                         <div className="text-4xl">🎓</div>
                         <div className="flex-1">
@@ -1583,7 +1617,7 @@ export default function Home() {
                     </article>
 
                     {/* Humane Science Masterclass */}
-                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 md:col-span-1 lg:col-span-2">
+                    <article className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-2xl p-6 border border-border/80  md:col-span-1 lg:col-span-2">
                       <div className="flex items-start space-x-4">
                         <div className="text-4xl">🎨</div>
                         <div className="flex-1">
@@ -1635,3 +1669,4 @@ export default function Home() {
     </div>
   );
 }
+

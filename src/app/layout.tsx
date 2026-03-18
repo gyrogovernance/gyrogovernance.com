@@ -10,6 +10,7 @@ import StructuredData from '@/components/StructuredData';
 import CookieBanner from '@/components/CookieBanner';
 import GitHubIcon from '@/components/icons/GitHubIcon';
 import MobileMenu from '@/components/MobileMenu';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -236,8 +237,8 @@ export default function RootLayout({
           {/* SVG Overlay - Centered and full width on desktop */}
           <SVGOverlay className="svg-overlay absolute inset-0 h-full pointer-events-none left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0" />
         </div>
-                  <header className="sticky top-1.5 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] mx-1.5 rounded-2xl" role="banner">
-            <div className="max-w-6xl mx-auto pl-4 pr-4 sm:px-8 lg:px-4">
+                  <header className="sticky top-3 z-50 bg-surface/40 backdrop-blur-md border border-border-inner shadow-[0_0_0_1px_var(--border-outer)] max-w-4xl mx-auto rounded-[2rem]" role="banner">
+            <div className="max-w-6xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <Link
@@ -372,6 +373,7 @@ export default function RootLayout({
           </div>
         </footer>
         <CookieBanner />
+        <ScrollToTopButton />
         </ThemeProvider>
       </body>
     </html>

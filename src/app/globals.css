@@ -91,6 +91,61 @@
      --z-popover: 1060;
      --z-tooltip: 1070;
    }
+
+  .backdrop-blur-xs {
+    -webkit-backdrop-filter: blur(var(--blur-xs));
+    backdrop-filter: blur(var(--blur-xs));
+  }
+
+  .backdrop-blur-sm {
+    -webkit-backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-sm));
+  }
+
+  .backdrop-blur-md {
+    -webkit-backdrop-filter: blur(var(--blur-md));
+    backdrop-filter: blur(var(--blur-md));
+  }
+
+  .backdrop-blur-lg {
+    -webkit-backdrop-filter: blur(var(--blur-lg));
+    backdrop-filter: blur(var(--blur-lg));
+  }
+
+  .backdrop-blur-xl {
+    -webkit-backdrop-filter: blur(var(--blur-xl));
+    backdrop-filter: blur(var(--blur-xl));
+  }
+
+  .backdrop-blur-2xl {
+    -webkit-backdrop-filter: blur(64px);
+    backdrop-filter: blur(64px);
+  }
+
+  .backdrop-blur-3xl {
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+  }
+
+  .backdrop-blur-none {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  @supports not (backdrop-filter: blur(1px)) {
+    .backdrop-blur-xs,
+    .backdrop-blur-sm,
+    .backdrop-blur-md,
+    .backdrop-blur-lg,
+    .backdrop-blur-xl,
+    .backdrop-blur-2xl,
+    .backdrop-blur-3xl,
+    .backdrop-blur-none {
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      background: var(--bg-overlay);
+    }
+  }
    
    /* ==========================================================================
       2. CSS VARIABLES - Dark Mode
@@ -122,6 +177,27 @@
      --shadow-primary: 0 4px 14px rgba(59, 130, 246, 0.35);
      --shadow-success: 0 4px 14px rgba(34, 197, 94, 0.35);
    }
+
+  .ps-sidebar-root,
+  .ps-sidebar-root .ps-sidebar-container,
+  .docs-sidebar-root.ps-sidebar-root,
+  .docs-sidebar-root.ps-sidebar-root .ps-sidebar-container {
+    background: var(--bg-elevated) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .ps-sidebar-root .ps-menu-root,
+  .ps-sidebar-root .ps-submenu-content,
+  .docs-sidebar-root.ps-sidebar-root .ps-menu-root,
+  .docs-sidebar-root.ps-sidebar-root .ps-submenu-content {
+    background: transparent !important;
+  }
+  .ps-sidebar-root .ps-menu-button,
+  .ps-sidebar-root .ps-submenu-content .ps-submenu-content,
+  .docs-sidebar-root.ps-sidebar-root .ps-menu-button,
+  .docs-sidebar-root.ps-sidebar-root .ps-submenu-content .ps-submenu-content {
+    background: transparent !important;
+  }
    
    /* ==========================================================================
       3. TAILWIND THEME BRIDGE
@@ -314,18 +390,64 @@
    7. SURFACE & COMPONENT SYSTEM
    ========================================================================== */
    
-   .surface-card {
-     background: rgba(255, 255, 255, var(--surface-opacity-heavy));
-     backdrop-filter: blur(var(--blur-sm));
-     -webkit-backdrop-filter: blur(var(--blur-sm));
-     border: 1px solid var(--border-inner);
-     box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
-     border-radius: 8px;
-   }
-   
-   .dark .surface-card {
-     background: rgba(30, 30, 30, var(--surface-opacity-heavy));
-   }
+  .surface-card,
+  .gg-card,
+  section[class*="bg-surface-elevated/"][class*="rounded-xl"],
+  section[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  section[class*="bg-surface-elevated/"][class*="rounded-lg"],
+  div[class*="bg-surface-elevated/"][class*="rounded-xl"],
+  div[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  div[class*="bg-surface-elevated/"][class*="rounded-lg"],
+  article[class*="bg-surface-elevated/"][class*="rounded-xl"],
+  article[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  article[class*="bg-surface-elevated/"][class*="rounded-lg"],
+  aside[class*="bg-surface-elevated/"][class*="rounded-xl"],
+  aside[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  aside[class*="bg-surface-elevated/"][class*="rounded-lg"] {
+    border-radius: 1rem;
+    border: 1px solid var(--border-primary);
+    backdrop-filter: blur(var(--blur-md));
+    -webkit-backdrop-filter: blur(var(--blur-md));
+    box-shadow: none !important;
+    transition:
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  section[class*="bg-surface-elevated/"][class*="rounded-xl"]:hover,
+  section[class*="bg-surface-elevated/"][class*="rounded-lg"]:hover,
+  section[class*="bg-surface-elevated/"][class*="rounded-2xl"]:hover,
+  div[class*="bg-surface-elevated/"][class*="rounded-xl"]:hover,
+  div[class*="bg-surface-elevated/"][class*="rounded-lg"]:hover,
+  div[class*="bg-surface-elevated/"][class*="rounded-2xl"]:hover,
+  article[class*="bg-surface-elevated/"][class*="rounded-xl"]:hover,
+  article[class*="bg-surface-elevated/"][class*="rounded-lg"]:hover,
+  article[class*="bg-surface-elevated/"][class*="rounded-2xl"]:hover,
+  aside[class*="bg-surface-elevated/"][class*="rounded-xl"]:hover,
+  aside[class*="bg-surface-elevated/"][class*="rounded-lg"]:hover,
+  aside[class*="bg-surface-elevated/"][class*="rounded-2xl"]:hover,
+  .surface-card:hover,
+  .gg-card:hover {
+    box-shadow: none !important;
+    transform: none;
+  }
+
+  section[class*="bg-surface-elevated/"][class*="rounded-[2rem]"],
+  section[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  div[class*="bg-surface-elevated/"][class*="rounded-[2rem]"],
+  div[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  article[class*="bg-surface-elevated/"][class*="rounded-[2rem]"],
+  article[class*="bg-surface-elevated/"][class*="rounded-2xl"],
+  aside[class*="bg-surface-elevated/"][class*="rounded-[2rem]"],
+  aside[class*="bg-surface-elevated/"][class*="rounded-2xl"] {
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-xl);
+    transition:
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
    
    .top-navigation {
      position: sticky;
@@ -338,17 +460,22 @@
      z-index: var(--z-sticky);
    }
    
-   .card {
-     background: var(--bg-elevated);
-     border: 1px solid var(--border-inner);
-     box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-md);
-     border-radius: 8px;
-   }
-   
-   .card:hover {
-     transform: translateY(-2px);
-     box-shadow: 0 0 0 1px var(--border-outer), 0 0 0 2px var(--border-inner), var(--shadow-lg);
-   }
+  .card {
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-lg);
+    border-radius: 1rem;
+    backdrop-filter: blur(var(--blur-md));
+    -webkit-backdrop-filter: blur(var(--blur-md));
+    transition:
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px var(--border-outer), 0 0 0 2px var(--border-inner), var(--shadow-lg);
+  }
    
    /* ==========================================================================
       8. ANIMATIONS
@@ -730,6 +857,7 @@
    
    .scrollbar-thin {
      scrollbar-width: thin;
+    scrollbar-color: var(--border-primary) transparent;
    }
    
    .scrollbar-thin::-webkit-scrollbar {
@@ -737,7 +865,7 @@
    }
    
    .scrollbar-thin::-webkit-scrollbar-track {
-     background: transparent;
+    background: transparent;
    }
    
    .scrollbar-thin::-webkit-scrollbar-thumb {
@@ -752,6 +880,19 @@
    .dark .scrollbar-thin::-webkit-scrollbar-thumb {
      background-color: var(--border-primary);
    }
+
+ .scrollbar-thumb-border::-webkit-scrollbar-thumb,
+ .dark .scrollbar-thumb-border::-webkit-scrollbar-thumb {
+    background-color: var(--border-primary);
+  }
+
+ .scrollbar-thumb-border {
+    scrollbar-color: var(--border-primary) transparent;
+  }
+
+ .scrollbar-track-transparent::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
    
    .dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
      background-color: var(--border-secondary);

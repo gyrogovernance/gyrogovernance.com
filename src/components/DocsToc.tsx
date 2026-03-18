@@ -77,8 +77,11 @@ export default function DocsToc({ htmlContent }: DocsTocProps) {
   if (tocItems.length === 0) return null;
 
   const tocContent = (
-    <nav className="sticky top-8">
-      <div className="bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg border border-border/80 p-4">
+    <nav className="sticky top-0">
+      <div
+        style={{ boxShadow: "none" }}
+        className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] border border-border/80 !shadow-none p-3"
+      >
         <h3 className="toc-title text-sm font-semibold text-foreground mb-3">
           On this page
         </h3>

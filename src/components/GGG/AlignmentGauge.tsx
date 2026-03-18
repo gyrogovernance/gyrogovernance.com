@@ -19,7 +19,7 @@ export default function AlignmentGauge() {
   ];
 
   return (
-    <div className="w-full my-8 bg-surface-elevated/60 backdrop-blur-sm rounded-xl border border-border/80">
+    <div className="w-full my-8 bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] border border-border/80">
       <div className="p-6">
       <h3 className="text-xl font-semibold mb-3 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-400 dark:to-purple-500 bg-clip-text text-transparent">
         Current Alignment: SI {currentSI}

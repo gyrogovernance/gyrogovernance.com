@@ -2,6 +2,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import DocsOverviewList from '@/components/DocsOverviewList';
 
 interface DocsItem {
   slug: string;
@@ -97,77 +98,16 @@ export default async function ToolsPage() {
   const docs = await getDocs('tools');
 
   return (
-    <div>
-      <div className="mb-8">
+    <div className="space-y-4 sm:space-y-6">
+      <div className="mb-4 sm:mb-6">
         <Link href="/docs" className="text-apple-blue hover:text-apple-purple transition-colors">
-          ← Back to Documentation
+          Back to Documentation
         </Link>
       </div>
 
-      <h1 className="text-4xl font-bold mb-8 text-foreground">Tools Documentation</h1>
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">Tools Documentation</h1>
 
-      <div className="space-y-4">
-        {docs.map((doc) => {
-          if (doc.isFolder && doc.children) {
-            return (
-              <div key={doc.slug} className="space-y-2">
-                {/* Folder header */}
-                <div className="text-sm text-apple-blue font-medium uppercase tracking-wide px-2 py-1 bg-apple-blue/5 rounded">
-                  {doc.title}
-                </div>
-
-                {/* Folder contents */}
-                <div className="ml-4 space-y-2">
-                  {doc.children.map((child) => (
-                    <Link
-                      key={child.slug}
-                      href={`/docs/tools/${doc.slug}/${child.slug}`}
-                      className="block p-4 bg-surface-elevated/60 backdrop-blur-sm rounded-lg shadow-md border border-border/80 hover:shadow-lg transition-all duration-200 hover:border-apple-blue/50"
-                    >
-                      <div className="flex items-start gap-3">
-                        <div className="text-foreground-secondary text-sm flex-shrink-0">
-                          📄
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-medium text-foreground">
-                            {child.title}
-                          </h3>
-                          {child.description && (
-                            <p className="text-sm text-foreground-secondary mt-1">{child.description}</p>
-                          )}
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            );
-          }
-
-          // Regular file
-          return (
-            <Link
-              key={doc.slug}
-              href={`/docs/tools/${doc.slug}`}
-              className="block p-6 bg-surface-elevated/60 backdrop-blur-sm rounded-xl shadow-lg border border-border/80 hover:shadow-xl transition-all duration-200 hover:border-apple-blue/50"
-            >
-              <div className="flex items-start gap-3">
-                <div className="text-foreground-secondary text-sm flex-shrink-0">
-                  📄
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-medium text-foreground">
-                    {doc.title}
-                  </h3>
-                  {doc.description && (
-                    <p className="text-sm text-foreground-secondary mt-1">{doc.description}</p>
-                  )}
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
+      <DocsOverviewList basePath="tools" docs={docs} />
     </div>
   );
 }

@@ -97,7 +97,7 @@ export default function CompactScenarioExplorer() {
   };
 
   return (
-    <div className="w-full my-8 bg-surface-elevated/60 backdrop-blur-sm rounded-xl border border-border/80">
+    <div className="w-full my-8 bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] border border-border/80">
       <div className="p-6">
       <div className="mb-4">
         <h3 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-500">

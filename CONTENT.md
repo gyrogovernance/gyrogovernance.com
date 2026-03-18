@@ -190,7 +190,7 @@ The aQPU demonstrates that quantum advantage, holographic compression, and unive
 
 **Mechanistic Transparency for Neural Networks**
 
-**GyroLabe Brief**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md  
+**GyroLabe Brief**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md  
 **Performance Benchmarks**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/GyroLabe_Generation_Report.md
 
 GyroLabe acts as an **auditable inference bridge** for neural networks. Instead of relying on post‑hoc filters, it builds a deterministic, zero‑trust audit trail directly into the inference process, so any party with the same bytes can independently replay and verify what the model did.
@@ -437,7 +437,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
+**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
 
 ### Keywords
 
@@ -553,7 +553,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, GyroLabe Calibration Instrument, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.
+**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, aQPU Kernel & SDK, GyroLabe Auditable Inference, GyroGraph multicellular runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.
 
 **Type**: website
 
@@ -585,17 +585,31 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 #### aQPU Kernel & SDK
 - **Name**: aQPU Kernel & SDK
-- **Description**: Quantum Advantage on Silicon - Deterministic compute kernel and developer toolkit providing quantum-style algorithmic speedups and holographic compression on standard hardware
+- **Description**: Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. Includes 1-step resolution for selected quantum-classic problems, O(1) commutativity checks, exact uniform mixing in 2 steps, and a developer toolkit with native operator algebra plus bitplane tensor decomposition.
 - **URL**: https://github.com/gyrogovernance/superintelligence
 - **Application Category**: DeveloperApplication
 - **Keywords**: Quantum Advantage, aQPU Kernel, aQPU SDK, Holographic Compression, Tensor Engine
 
 #### GyroLabe
 - **Name**: GyroLabe
-- **Description**: Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations and producing a byte-level ledger for independent replay and verification
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Brief.md
+- **Description**: Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations and producing a byte-level ledger for independent replay and verification.
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md
 - **Application Category**: DeveloperApplication
 - **Keywords**: Auditable Inference, Verifiable Ledger, Structural Decomposition, Alignment Signals, Compliance
+
+#### GyroGraph
+- **Name**: GyroGraph
+- **Description**: Quantum multicellular AI runtime that coordinates distributed computation and runtime signals into stable, deterministic behavior with strong auditability under changing load.
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md
+- **Application Category**: DeveloperApplication
+- **Keywords**: Quantum Multicellular AI, Cellular Runtime, Deterministic Replay, AI Stability, Auditable Inference
+
+#### Computational Climate Control
+- **Name**: Computational Climate Control
+- **Description**: Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve deterministic behavior and traceability in production environments.
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md
+- **Application Category**: DeveloperApplication
+- **Keywords**: AI Runtime Stability, Execution Stability, Adaptive Control, Efficiency, Traceability
 
 #### GyroDiagnostics
 - **Name**: GyroDiagnostics
@@ -702,6 +716,14 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **GyroLabe** provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations. It builds a **deterministic, zero-trust audit trail** directly into the inference process. By injecting trainable structural signals, it aligns models from the inside out without altering their interface. It produces a **mathematically exact ledger** of the generation trajectory, providing the missing structural substrate required for rigorous **AI governance**, alignment guarantees, and **policy enforcement** without requiring access to proprietary model weights.
 
+##### GyroGraph - Quantum Multicellular AI Runtime
+
+**GyroGraph** coordinates a multicellular AI runtime structure for stable, auditable inference. It keeps computational behavior deterministic across distributed signal cells, enabling reliable replay and safer behavior under changing workload dynamics.
+
+##### Computational Climate Control
+
+**Computational Climate Control** focuses on AI execution stability and hidden inefficiency reduction. It introduces adaptive control mechanisms that help maintain deterministic execution and traceability in dynamic AI environments.
+
 ##### GyroDiagnostics
 - **Emoji**: 🌟
 - **Name**: GyroDiagnostics
@@ -778,9 +800,17 @@ Gyro Governance develops comprehensive **open source AI safety frameworks**, **A
 
 Transform AI outputs for **evaluation**, **interpretability**, and **governance**. Features **gadgets** for rapid testing, policy auditing, AI infection sanitization, content enhancement, and THM meta-evaluation. Includes comprehensive **evaluation suite** with quality index, superintelligence index, alignment rate, and 20+ metrics. **Local-first storage** works with ChatGPT, Claude, Gemini - no API keys required.
 
-##### GyroLabe - Mechanistic Calibration Instrument
+##### GyroLabe - Auditable Inference Engine
 
-**GyroLabe** provides **neural activation coordination** and **guidance** through a **neuro-symbolic bridge** architecture. Couples the model's **stochastic latent space** to **discrete geometric structures** via **feedback control systems**. Ensures **activation dynamic stability** by anchoring **generation trajectories** to **deterministic state machines**. Enables **mechanistic balance steering** through **projection masks** injecting calculated weights into specific **neural pathways**. Creates **topological alignment** where model dynamics resonate with kernel structure without sacrificing **generative capacity**.
+**GyroLabe** provides mechanistic transparency by translating token generation into exact algebraic operations. It builds a **deterministic, zero-trust audit trail** directly into inference and produces a **mathematically exact ledger** of the generation trajectory for independent replay and policy-level governance.
+
+##### GyroGraph - Quantum Multicellular AI Runtime
+
+**GyroGraph** coordinates a multicellular AI runtime for distributed inferential behavior. It preserves deterministic execution, stabilizes dynamic workloads, and supports stronger reproducibility and auditability across runtime cells.
+
+##### Computational Climate Control
+
+**Computational Climate Control** improves AI execution stability under stress by adding adaptive runtime control signals. It reduces hidden inefficiencies while maintaining determinism and transparent execution traces.
 
 ##### AI Safety Evaluation & Risk Assessment
 

@@ -54,7 +54,7 @@ export default function MobileMenu() {
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'
         }`}
       >
-        <div className="bg-bg-elevated rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] border border-border/80 overflow-hidden">
+        <div className="bg-bg-elevated rounded-[2rem] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] border border-border/80 overflow-hidden">
           <nav className="flex flex-col py-4" role="navigation" aria-label="Mobile navigation">
             <Link
               href="/"

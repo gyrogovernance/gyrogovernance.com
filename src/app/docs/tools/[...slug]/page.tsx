@@ -93,9 +93,9 @@ export default async function DocPage({ params }: PageProps) {
       <DocsToc htmlContent={htmlContent} />
 
       {/* Main Content */}
-      <div>
+      <div className="space-y-4 sm:space-y-6">
         {/* Breadcrumb */}
-        <div className="mb-8">
+        <div className="mb-4 sm:mb-6">
           <Link href="/docs" className="text-apple-blue hover:text-apple-purple transition-colors">
             ← Documentation
           </Link>
@@ -115,12 +115,14 @@ export default async function DocPage({ params }: PageProps) {
 
         {/* Title */}
         {!content.trim().startsWith('# ') && data.title && (
-          <h1 className="text-4xl font-bold mb-8 text-foreground">{data.title}</h1>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-foreground">
+            {data.title}
+          </h1>
         )}
 
         {/* Description */}
         {data.description && (
-          <p className="text-xl text-foreground-secondary mb-8">{data.description}</p>
+          <p className="text-base sm:text-lg text-foreground-secondary mb-4 sm:mb-6">{data.description}</p>
         )}
 
         {/* Content */}

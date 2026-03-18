@@ -160,7 +160,8 @@ export default function ArticleToc({ headings, offsetTop = 96 }: ArticleTocProps
   // Desktop aside (sticky, right column)
   const desktop = (
     <nav
-      className="hidden lg:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-auto bg-surface-elevated/60 border border-border/80 rounded-lg p-3 shadow-xl"
+      style={{ boxShadow: "none" }}
+      className="hidden lg:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-auto bg-surface-elevated/60 border border-border/80 rounded-[2rem] p-3 !shadow-none"
       aria-label="Table of contents"
       role="doc-toc"
     >
@@ -216,7 +217,8 @@ export default function ArticleToc({ headings, offsetTop = 96 }: ArticleTocProps
           <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
           <div
             ref={dialogRef}
-            className="absolute bottom-0 left-0 right-0 bg-surface-elevated/90 backdrop-blur-md border-t border-border/80 rounded-t-xl p-4 max-h-[70vh] overflow-auto focus:outline-none"
+            style={{ boxShadow: "none" }}
+          className="absolute bottom-0 left-0 right-0 bg-surface-elevated/90 backdrop-blur-md border-t border-border/80 rounded-[2rem] rounded-b-none p-4 max-h-[70vh] overflow-auto focus:outline-none !shadow-none"
           >
             <div className="flex items-center justify-between mb-2">
               <h2 className="toc-title">On this page</h2>

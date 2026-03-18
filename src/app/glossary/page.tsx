@@ -363,7 +363,7 @@ export default function Glossary() {
         </p>
 
         {/* Quick Navigation */}
-        <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50 mb-12">
+        <div className="bg-surface-elevated/80 backdrop-blur-sm rounded-[2rem] p-6 shadow-lg border border-border/50 mb-12">
           <h2 className="text-lg font-semibold text-foreground mb-4">Browse by Category</h2>
           <div className="flex flex-wrap gap-2">
             {categories.map(category => (
@@ -438,7 +438,7 @@ export default function Glossary() {
         })}
 
         {/* Additional Resources */}
-        <div className="mt-16 bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 rounded-2xl p-8 border border-apple-blue/20">
+        <div className="mt-16 bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 rounded-[2rem] p-8 border border-apple-blue/20">
           <h2 className="text-2xl font-bold text-foreground mb-4 text-center">
             Explore AI Safety Research & Tools
           </h2>
