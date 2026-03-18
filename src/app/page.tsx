@@ -1132,7 +1132,7 @@ export default function Home() {
         {/* Other Datasets */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Other Datasets</h3>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid gap-6">
             {[
               {
                 emoji: "🌟", title: "Clean", bgImage: "/assets/clean-dataset.jpg",
