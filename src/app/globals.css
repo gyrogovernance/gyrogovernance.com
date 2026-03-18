@@ -132,20 +132,6 @@
     backdrop-filter: none;
   }
 
-  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-    .backdrop-blur-xs,
-    .backdrop-blur-sm,
-    .backdrop-blur-md,
-    .backdrop-blur-lg,
-    .backdrop-blur-xl,
-    .backdrop-blur-2xl,
-    .backdrop-blur-3xl,
-    .backdrop-blur-none {
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      background: var(--bg-overlay);
-    }
-  }
    
    /* ==========================================================================
       2. CSS VARIABLES - Dark Mode
