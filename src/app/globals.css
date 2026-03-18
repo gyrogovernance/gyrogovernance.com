@@ -93,38 +93,66 @@
    }
 
   .backdrop-blur-xs {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(4px) !important;
+    backdrop-filter: blur(4px) !important;
   }
 
   .backdrop-blur-sm {
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
   }
 
   .backdrop-blur-md {
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(12px) !important;
+    backdrop-filter: blur(12px) !important;
   }
 
   .backdrop-blur-lg {
-    -webkit-backdrop-filter: blur(24px);
-    backdrop-filter: blur(24px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(24px) !important;
+    backdrop-filter: blur(24px) !important;
   }
 
   .backdrop-blur-xl {
-    -webkit-backdrop-filter: blur(40px);
-    backdrop-filter: blur(40px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(40px) !important;
+    backdrop-filter: blur(40px) !important;
   }
 
   .backdrop-blur-2xl {
-    -webkit-backdrop-filter: blur(64px);
-    backdrop-filter: blur(64px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(64px) !important;
+    backdrop-filter: blur(64px) !important;
   }
 
   .backdrop-blur-3xl {
-    -webkit-backdrop-filter: blur(80px);
-    backdrop-filter: blur(80px);
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
+    -webkit-backdrop-filter: blur(80px) !important;
+    backdrop-filter: blur(80px) !important;
   }
 
   .backdrop-blur-none {
@@ -392,8 +420,12 @@
   aside[class*="bg-surface-elevated/"][class*="rounded-lg"] {
     border-radius: 1rem;
     border: 1px solid var(--border-primary);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
     box-shadow: none !important;
     transition:
       background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -439,8 +471,12 @@
      position: sticky;
      top: 0;
      background: var(--bg-overlay);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
      border-bottom: 1px solid var(--border-primary);
      box-shadow: var(--shadow-sm);
      z-index: var(--z-sticky);
@@ -450,8 +486,12 @@
     border: 1px solid var(--border-primary);
     box-shadow: 0 0 0 1px var(--border-outer), var(--shadow-lg);
     border-radius: 1rem;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    isolation: isolate;
+    position: relative;
+    transform: translateZ(0);
+    will-change: backdrop-filter;
     transition:
       background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
       border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
