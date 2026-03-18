@@ -132,7 +132,7 @@
     backdrop-filter: none;
   }
 
-  @supports not (backdrop-filter: blur(1px)) {
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .backdrop-blur-xs,
     .backdrop-blur-sm,
     .backdrop-blur-md,
