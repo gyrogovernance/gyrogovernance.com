@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import EmailIcon from "@/components/icons/EmailIcon";
+import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 
 const atAGlance = [
   {
@@ -127,19 +128,22 @@ export default function About() {
           </h1>
         </header>
 
-        <section className="rounded-[2rem] border border-apple-purple/25 bg-gradient-to-br from-apple-purple/10 via-apple-blue/10 to-apple-green/10 backdrop-blur-sm p-7 shadow-2xl">
-          <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
-            <strong>Gyro Governance</strong> is an independent research lab founded in 2013, focusing on artificial intelligence alignment, evaluation, and governance.
-          </p>
-          <p className="text-foreground-secondary mb-4 leading-relaxed">
-            We build architectures that make AI measurable, inspectable, and easier to coordinate responsibly. Combining mathematical physics with practical engineering, our work addresses the core vulnerabilities of modern machine learning: opacity, weak accountability, brittle behavior, and coordination failure.
-          </p>
-          <p className="text-foreground-secondary leading-relaxed">
-            Rather than treating safety as a cosmetic filter applied after a model is trained, we study how alignment and auditability can be built directly into the computational structure of the system.
-          </p>
-        </section>
+        <LiquidGlassCard className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl">
+          <div className="p-7">
+            <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
+              <strong>Gyro Governance</strong> is an independent research lab founded in 2013, focusing on artificial intelligence alignment, evaluation, and governance.
+            </p>
+            <p className="text-foreground-secondary mb-4 leading-relaxed">
+              We build architectures that make AI measurable, inspectable, and easier to coordinate responsibly. Combining mathematical physics with practical engineering, our work addresses the core vulnerabilities of modern machine learning: opacity, weak accountability, brittle behavior, and coordination failure.
+            </p>
+            <p className="text-foreground-secondary leading-relaxed">
+              Rather than treating safety as a cosmetic filter applied after a model is trained, we study how alignment and auditability can be built directly into the computational structure of the system.
+            </p>
+          </div>
+        </LiquidGlassCard>
 
-        <section className="rounded-[2rem] border border-emerald-500/25 bg-gradient-to-br from-emerald-500/10 via-green-500/10 to-teal-500/10 backdrop-blur-sm p-7 shadow-2xl">
+        <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
+          <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-2 w-2 rounded-full bg-apple-green" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">At a Glance</h2>
@@ -148,7 +152,7 @@ export default function About() {
             {atAGlance.map((item) => (
               <article
                 key={item.label}
-                className={`rounded-xl border border-border/50 bg-surface-elevated/50 p-5 ${item.accent}`}
+                className={`glass-card-inner rounded-xl p-5 border ${item.accent}`}
               >
                 <p className="text-sm uppercase tracking-wide text-foreground-tertiary mb-2">
                   {item.label}
@@ -157,9 +161,11 @@ export default function About() {
               </article>
             ))}
           </div>
-        </section>
+          </div>
+        </LiquidGlassCard>
 
-        <section className="rounded-[2rem] border border-blue-500/25 bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-cyan-500/10 backdrop-blur-sm p-7 shadow-2xl">
+        <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
+          <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-2 w-2 rounded-full bg-apple-blue" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
@@ -171,7 +177,7 @@ export default function About() {
             {workItems.map((item) => (
               <article
                 key={item.title}
-                className={`rounded-xl border border-border/50 bg-surface-elevated/50 p-6 ${item.accentBorder}`}
+                className={`glass-card-inner rounded-xl p-6 ${item.accentBorder}`}
               >
                 <div className="flex flex-col gap-4 md:flex-row md:items-start">
                   <span className={`mt-1 inline-flex h-8 w-8 flex-none items-center justify-center rounded-full ${item.accent} text-white text-sm font-semibold`}>
@@ -208,9 +214,11 @@ export default function About() {
               </article>
             ))}
           </div>
-        </section>
+          </div>
+        </LiquidGlassCard>
 
-        <section className="rounded-[2rem] border border-orange-500/25 bg-gradient-to-br from-orange-500/10 via-amber-500/10 to-yellow-500/10 backdrop-blur-sm p-7 shadow-2xl">
+        <LiquidGlassCard className="glass-card glass-card-amber rounded-[2rem] shadow-2xl">
+          <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-2 w-2 rounded-full bg-apple-pink" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
@@ -221,23 +229,26 @@ export default function About() {
             {impactAudience.map((item) => (
               <article
                 key={item.title}
-                className={`rounded-xl border border-border/40 bg-surface-elevated/50 p-5 ${item.accent}`}
+                className={`glass-card-inner rounded-xl p-5 ${item.accent}`}
               >
                 <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-foreground-secondary leading-relaxed">{item.description}</p>
               </article>
             ))}
           </div>
-        </section>
+          </div>
+        </LiquidGlassCard>
 
-        <section className="rounded-[2rem] border border-apple-blue/25 bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 backdrop-blur-sm p-7 shadow-2xl">
+        <LiquidGlassCard className="glass-card glass-card-purple rounded-[2rem] shadow-2xl">
+          <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-2 w-2 rounded-full bg-apple-blue" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
               Founder & AI Governance Lead
             </h2>
           </div>
-          <div className="rounded-xl border border-border/50 bg-surface-elevated/55 p-6">
+          <div className="glass-card-inner rounded-xl border border-border/50">
+            <div className="p-6">
             <div className="flex flex-col md:flex-row gap-5">
               <Image
                 src="/assets/Basil_Korompilias.png"
@@ -282,8 +293,10 @@ export default function About() {
                 </div>
               </div>
             </div>
+            </div>
           </div>
-        </section>
+          </div>
+        </LiquidGlassCard>
       </div>
     </div>
   );

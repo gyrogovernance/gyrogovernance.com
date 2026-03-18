@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 
 interface TocItem {
   id: string;
@@ -77,35 +78,37 @@ export default function DocsToc({ htmlContent }: DocsTocProps) {
   if (tocItems.length === 0) return null;
 
   const tocContent = (
-    <nav className="sticky top-0">
-      <div
-        style={{ boxShadow: "none" }}
-        className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] border border-border/80 !shadow-none p-3"
-      >
-        <h3 className="toc-title text-sm font-semibold text-foreground mb-3">
-          On this page
-        </h3>
-        <div className="max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
-          <ul className="space-y-1">
-            {tocItems.map((item, index) => (
-              <li key={`${item.id}-${index}`} style={{ paddingLeft: `${(item.level - 1) * 0.75}rem` }}>
-                <a
-                  href={`#${item.id}`}
-                  onClick={(e) => handleClick(e, item.id)}
-                  className={`toc-link block text-sm py-1 px-2 rounded transition-colors hover:bg-surface-elevated ${
-                    activeId === item.id
-                      ? 'text-apple-blue bg-apple-blue/10 border-l-2 border-apple-blue'
-                      : 'text-foreground-secondary hover:text-foreground'
-                  }`}
-                >
-                  {item.text}
-                </a>
+    <LiquidGlassCard
+      className="sticky top-0 glass-card glass-card-translucent rounded-[2rem] p-3"
+      intensity="subtle"
+      blur={22}
+      saturation={145}
+      luminosity={108}
+      shadowIntensity={0.12}
+    >
+      <h3 className="toc-title text-sm font-semibold text-foreground mb-3">
+        On this page
+      </h3>
+      <div className="max-h-96 overflow-y-auto pr-0 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
+        <ul className="space-y-1">
+          {tocItems.map((item, index) => (
+            <li key={`${item.id}-${index}`} style={{ paddingLeft: `${(item.level - 1) * 0.75}rem` }}>
+              <a
+                href={`#${item.id}`}
+                onClick={(e) => handleClick(e, item.id)}
+                className={`toc-link block text-sm py-1 px-2 rounded transition-colors hover:bg-foreground/10 ${
+                  activeId === item.id
+                    ? 'text-apple-blue bg-apple-blue/10 border-l-2 border-apple-blue'
+                    : 'text-foreground-secondary hover:text-foreground'
+                }`}
+              >
+                {item.text}
+              </a>
               </li>
-            ))}
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
-    </nav>
+    </LiquidGlassCard>
   );
 
   // Use portal to render ToC in the right sidebar

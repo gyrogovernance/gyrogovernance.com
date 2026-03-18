@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import GitHubIcon from "@/components/icons/GitHubIcon";
+import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +39,9 @@ export default function MobileMenu() {
       {/* Mobile Menu Overlay with blur */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/40 z-[100] md:hidden"
+          className="fixed inset-0 z-[100] md:hidden safari-backdrop-layer"
           onClick={closeMenu}
           aria-hidden="true"
-          style={{
-            backdropFilter: 'blur(8px)',
-            WebkitBackdropFilter: 'blur(8px)'
-          }}
         />
       )}
 
@@ -54,7 +51,14 @@ export default function MobileMenu() {
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'
         }`}
       >
-        <div className="bg-bg-elevated rounded-[2rem] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] border border-border/80 overflow-hidden">
+        <LiquidGlassCard
+          className="glass-card glass-card-translucent rounded-[2rem] p-1"
+          intensity="subtle"
+          blur={22}
+          saturation={145}
+          luminosity={108}
+          shadowIntensity={0.14}
+        >
           <nav className="flex flex-col py-4" role="navigation" aria-label="Mobile navigation">
             <Link
               href="/"
@@ -116,7 +120,7 @@ export default function MobileMenu() {
               GitHub
             </a>
           </nav>
-        </div>
+        </LiquidGlassCard>
       </div>
     </>
   );

@@ -6,6 +6,7 @@ import Image from "next/image";
 import ChevronLeftIcon from "@/components/icons/ChevronLeftIcon";
 import ChevronRightIcon from "@/components/icons/ChevronRightIcon";
 import type { ArticleMeta } from "@/lib/articles";
+import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 
 interface ArticlesCarouselProps {
   articles: ArticleMeta[];
@@ -180,55 +181,62 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
           }}
         >
           {currentArticles.map((article) => (
-            <article
+            <LiquidGlassCard
               key={article.slug}
-              className="bg-surface-elevated/60 backdrop-blur-sm rounded-[2rem] shadow-lg p-6 border border-border/80 hover:shadow-xl transition-shadow duration-300 animate-fade-in"
+              className="glass-card glass-card-translucent rounded-[2rem] shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+              intensity="subtle"
+              blur={24}
+              saturation={145}
+              luminosity={108}
+              shadowIntensity={0.12}
             >
-              <div className="flex flex-col h-full">
-                {article.coverImage && (
-                  <Link 
-                    href={`/articles/${article.slug}`}
-                    className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60 block"
-                  >
-                    <Image
-                      src={article.coverImage}
-                      alt={article.title}
-                      fill
-                      className="object-cover hover:scale-[1.02] transition-transform duration-200"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-                      loading="lazy"
-                    />
-                  </Link>
-                )}
-                <div className="flex-1 flex flex-col">
-                  <div className="flex items-center text-xs text-foreground-tertiary mb-2">
-                    <span className="uppercase tracking-wide">{article.category}</span>
-                    <span className="mx-2">•</span>
-                    <time dateTime={article.date}>
-                      {new Date(article.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: '2-digit',
-                        day: '2-digit'
-                      })}
-                    </time>
+              <article className="p-6">
+                <div className="flex flex-col h-full">
+                  {article.coverImage && (
+                    <Link 
+                      href={`/articles/${article.slug}`}
+                      className="mb-4 relative w-full h-40 overflow-hidden rounded-lg border border-border/60 block"
+                    >
+                      <Image
+                        src={article.coverImage}
+                        alt={article.title}
+                        fill
+                        className="object-cover hover:scale-[1.02] transition-transform duration-200"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                        loading="lazy"
+                      />
+                    </Link>
+                  )}
+                  <div className="flex-1 flex flex-col">
+                    <div className="flex items-center text-xs text-foreground-tertiary mb-2">
+                      <span className="uppercase tracking-wide">{article.category}</span>
+                      <span className="mx-2">•</span>
+                      <time dateTime={article.date}>
+                        {new Date(article.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: '2-digit',
+                          day: '2-digit'
+                        })}
+                      </time>
+                    </div>
+                    <h4 className="text-lg font-semibold text-foreground mb-3 hover:text-apple-blue transition-colors duration-200">
+                      <Link href={`/articles/${article.slug}`}>{article.title}</Link>
+                    </h4>
+                    <p className="text-sm text-foreground-secondary mb-4 line-clamp-3 flex-1">
+                      {article.excerpt}
+                    </p>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-apple-blue/30 bg-apple-blue/10 text-apple-blue hover:text-white hover:bg-apple-blue transition-colors duration-200 font-semibold text-sm"
+                      aria-label={`Read full article: ${article.title}`}
+                    >
+                      <span className="text-base">👓</span>
+                      <span>Read full article</span>
+                    </Link>
                   </div>
-                  <h4 className="text-lg font-semibold text-foreground mb-3 hover:text-apple-blue transition-colors duration-200">
-                    <Link href={`/articles/${article.slug}`}>{article.title}</Link>
-                  </h4>
-                  <p className="text-sm text-foreground-secondary mb-4 line-clamp-3 flex-1">
-                    {article.excerpt}
-                  </p>
-                  <Link
-                    href={`/articles/${article.slug}`}
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-apple-blue/30 bg-apple-blue/10 text-apple-blue hover:text-white hover:bg-apple-blue transition-colors duration-200 font-semibold text-sm"
-                    aria-label={`Read full article: ${article.title}`}
-                  >
-                    <span className="text-base">👓</span>
-                    <span>Read full article</span>
-                  </Link>
                 </div>
-              </div>
-            </article>
+              </article>
+            </LiquidGlassCard>
           ))}
         </div>
       </div>

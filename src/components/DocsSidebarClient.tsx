@@ -36,6 +36,7 @@ const sidebarMenuItemStyles = {
     borderRadius: "0.65rem",
     height: "auto !important",
     minHeight: "2.55rem",
+    width: "100%",
     alignItems: "flex-start",
     justifyContent: "flex-start",
     padding: "0.54rem 0.65rem",
@@ -45,13 +46,17 @@ const sidebarMenuItemStyles = {
     backgroundColor: active ? "rgba(56, 189, 248, 0.13)" : "transparent",
     color: active ? "var(--apple-blue)" : "var(--text-primary)",
     fontWeight: active ? 600 : 400,
+    whiteSpace: "normal",
+    wordBreak: "normal" as CSSProperties["wordBreak"],
+    overflowWrap: "break-word" as CSSProperties["overflowWrap"],
     transition: "background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease"
   }),
   label: ({ active }: { active: boolean }) => ({
     display: "block",
     width: "100%",
     whiteSpace: "normal",
-    wordBreak: "break-all" as CSSProperties["wordBreak"],
+    wordBreak: "normal" as CSSProperties["wordBreak"],
+    overflowWrap: "break-word" as CSSProperties["overflowWrap"],
     color: active ? "var(--apple-blue)" : "var(--text-primary)",
     lineHeight: 1.35
   }),
@@ -90,7 +95,7 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
       return (
         <SubMenu
           key={folderKey}
-          label={<span className="font-medium text-apple-blue">{item.title}</span>}
+        label={<span className="font-medium text-apple-blue break-words">{item.title}</span>}
           active={isFolderSelected}
           defaultOpen={isFolderOpen}
         >
@@ -109,7 +114,7 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
       >
         <div>
           <div className="font-medium">{item.title}</div>
-          {!!item.description && <div className="text-xs mt-0.5" style={{ color: "var(--text-tertiary)" }}>{item.description}</div>}
+          {!!item.description && <div className="text-xs mt-0.5 break-words" style={{ color: "var(--text-tertiary)" }}>{item.description}</div>}
         </div>
       </MenuItem>
     );
@@ -129,7 +134,7 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
         label={
           <div className="leading-tight">
             <div className="font-medium text-apple-blue">{repo.name}</div>
-            <div className="text-xs mt-0.5" style={{ color: "var(--text-tertiary)" }}>{repo.description}</div>
+            <div className="text-xs mt-0.5 break-words" style={{ color: "var(--text-tertiary)" }}>{repo.description}</div>
           </div>
         }
       >
@@ -170,26 +175,28 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
   }, [isInDocsSection]);
 
   return (
-    <nav className="hidden xl:block w-full shrink-0 h-full">
+      <nav className="hidden xl:block w-full shrink-0 h-full pl-1 pr-0">
       <div
         ref={scrollRef}
-        style={{ backgroundColor: "var(--bg-elevated)" }}
-        className="h-full overflow-y-auto overflow-x-hidden rounded-[2rem] scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent"
+        style={{ backgroundColor: "transparent" }}
+          className="h-full overflow-y-auto overflow-x-hidden py-2 pl-1 pr-0 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent"
       >
         <Sidebar
           className="docs-sidebar-root"
           width="100%"
           style={{
-            backgroundColor: "var(--bg-elevated)",
-            color: "var(--text-primary)"
+            backgroundColor: "transparent",
+            color: "var(--text-primary)",
+            backgroundImage: "none"
           }}
           rootStyles={{
-            border: "1px solid var(--border-primary)",
-            borderRadius: "2rem",
+            border: "none",
+            borderRadius: "0rem",
             height: "100%",
-            backgroundColor: "var(--bg-elevated)",
+            backgroundColor: "transparent",
+            backgroundImage: "none",
             paddingBottom: "0rem",
-            overflow: "hidden"
+            overflow: "visible"
           }}
         >
           <Menu

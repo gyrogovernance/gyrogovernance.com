@@ -52,7 +52,7 @@ export default function DocsOverviewList({
               key={doc.slug}
               className="overflow-hidden rounded-3xl !shadow-none border border-border/65 bg-surface-elevated/35"
             >
-              <div className="px-3 py-2.5 sm:px-4 sm:py-3 border-b border-border/60 bg-surface-elevated/55">
+              <div className="px-3 py-2.5 sm:px-4 sm:py-3 border-b border-border/60">
                 <h2 className="text-sm sm:text-[0.95rem] font-semibold tracking-wide text-apple-blue">
                   {doc.title}
                 </h2>

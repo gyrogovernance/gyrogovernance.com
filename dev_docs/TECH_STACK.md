@@ -320,6 +320,26 @@ cgm_dataset_main.jsonl
 - Optimized package imports
 - Custom icon components
 
+### Liquid Glass Effect System (Custom, based on reactGlass)
+
+The project uses a custom glass system inspired by `reactGlass` from:
+https://github.com/remiangelo/reactGlass
+
+**Implemented in-repo modules:**
+- `src/components/GlassContainer.tsx`
+- `src/components/LiquidGlassNav.tsx`
+- `src/components/LiquidGlassCard.tsx`
+- `src/components/GlassCard.tsx`
+- `src/components/GlassFilters.tsx`
+- `src/hooks/useGlassEffect.ts`
+- `src/hooks/useLiquidGlass.ts`
+
+**Primary uses:**
+- Glass navigation in the sticky top header
+- Page and card glassmorphism across homepage, about, and docs
+- Advanced effects with performance fallbacks (`useAdvancedEffects`)
+- Safari-safe glass handling and custom tint overrides
+
 ### Recharts 3.5.1
 
 **Charting library** for:
