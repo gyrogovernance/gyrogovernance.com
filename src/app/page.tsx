@@ -419,9 +419,6 @@ export default function Home() {
                   <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
                     SDK Spec
                   </a>
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
-                    Verification Report
-                  </a>
                 </div>
               </div>
 
@@ -1230,22 +1227,6 @@ export default function Home() {
               </div>
             </LiquidGlassCard>
 
-            <LiquidGlassCard className="glass-card rounded-[2rem] shadow-2xl">
-              <div className="relative z-10 p-4 sm:p-6">
-                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <Image src="/assets/AI_Canon_Cover.jpg" alt="AI Canon Cover" width={160} height={200} className="w-28 sm:w-32 md:w-40 h-auto object-cover rounded-lg shadow-md border border-border/50" />
-                  </div>
-                  <div className="flex-1 text-center sm:text-left">
-                    <h4 className="text-xl font-semibold text-foreground mb-3">AI Canon</h4>
-                    <p className="text-foreground-secondary mb-4">Sensory Ethics for Biological and Artificial Entities</p>
-                    <a href="https://doi.org/10.17613/txwg-v619" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium" aria-label="View AI Canon publication (opens in new tab)">
-                      View Publication <ExternalLinkIcon className="ml-2 w-4 h-4" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </LiquidGlassCard>
           </div>
         </div>
 
