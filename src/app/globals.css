@@ -60,7 +60,7 @@
 
 :root {
   /* Typography */
-  --font-family-base: var(--font-nunito), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-base: var(--font-nunito), -classic-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-family-mono: var(--font-geist-mono), 'SF Mono', Consolas, monospace;
 
   --font-weight-normal: 500;
@@ -78,14 +78,14 @@
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
 
-  /* Apple Watch OS Palette */
-  --apple-blue: #007aff;
-  --apple-green: #34c759;
-  --apple-orange: #ff9500;
-  --apple-pink: #ff2d70;
-  --apple-purple: #af52de;
-  --apple-yellow: #ffcc00;
-  --apple-red: #ff3b30;
+  /* Classic OS Palette */
+  --classic-blue: #007aff;
+  --classic-green: #34c759;
+  --classic-orange: #ff9500;
+  --classic-pink: #ff2d70;
+  --classic-purple: #af52de;
+  --classic-yellow: #ffcc00;
+  --classic-red: #ff3b30;
 
   /* Text Colors — WCAG AAA */
   --text-primary: rgba(0, 0, 0, 0.98);
@@ -206,13 +206,13 @@
   --color-bg-elevated: var(--bg-elevated);
   --color-bg-overlay: var(--bg-overlay);
 
-  --color-apple-blue: var(--apple-blue);
-  --color-apple-green: var(--apple-green);
-  --color-apple-orange: var(--apple-orange);
-  --color-apple-pink: var(--apple-pink);
-  --color-apple-purple: var(--apple-purple);
-  --color-apple-yellow: var(--apple-yellow);
-  --color-apple-red: var(--apple-red);
+  --color-classic-blue: var(--classic-blue);
+  --color-classic-green: var(--classic-green);
+  --color-classic-orange: var(--classic-orange);
+  --color-classic-pink: var(--classic-pink);
+  --color-classic-purple: var(--classic-purple);
+  --color-classic-yellow: var(--classic-yellow);
+  --color-classic-red: var(--classic-red);
 
   --color-border-primary: var(--border-primary);
   --color-border-secondary: var(--border-secondary);
@@ -377,9 +377,9 @@ button, a, input, textarea, select,
 }
 
 .docs-sidebar-shell {
-  --glass-card-bg: rgba(6, 6, 10, 0.2);
-  --glass-card-border: rgba(255, 255, 255, 0.12);
-  --glass-card-fallback: rgba(6, 6, 10, 0.62);
+  --glass-card-bg: rgba(255, 255, 255, 0.22);
+  --glass-card-border: rgba(0, 0, 0, 0.12);
+  --glass-card-fallback: rgba(255, 255, 255, 0.62);
 }
 
 .dark .docs-sidebar-shell {
@@ -581,7 +581,7 @@ button, a, input, textarea, select,
    ========================================================================== */
 
 *:focus-visible {
-  outline: 2px solid var(--apple-blue);
+  outline: 2px solid var(--classic-blue);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -797,12 +797,12 @@ tr:hover td { background: var(--bg-surface); }
 
 .toc-link:hover {
   color: var(--text-primary);
-  border-left-color: var(--apple-blue);
+  border-left-color: var(--classic-blue);
 }
 
 .toc-link.active {
-  color: var(--apple-blue);
-  border-left-color: var(--apple-blue);
+  color: var(--classic-blue);
+  border-left-color: var(--classic-blue);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -824,36 +824,57 @@ tr:hover td { background: var(--bg-surface); }
 
 .dark .author-button { color: #93c5fd !important; }
 
-.secondary-glass-btn {
-  color: #1d1d1f;
-  border: 1px solid rgba(60, 60, 67, 0.28);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.20));
+.secondary-button,
+.secondary-btn {
+  color: #1d4ed8;
+  border: 1px solid #93c5fd;
+  background: rgba(255, 255, 255, 0.493);
   background-clip: padding-box;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52);
+  box-shadow: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.secondary-glass-btn:hover {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.42));
-  border-color: rgba(60, 60, 67, 0.4);
+.secondary-button:hover,
+.secondary-btn:hover {
+  color: #1e40af;
+  border-color: #60a5fa;
+  background: rgba(255, 255, 255, 0.94);
 }
 
-.secondary-glass-btn:focus-visible {
-  color: #0d0d10;
+.secondary-button:active,
+.secondary-btn:active {
+  color: #1e3a8a;
+  border-color: #3b82f6;
+  background: rgba(191, 219, 254, 0.85);
+}
+
+.secondary-button:focus-visible,
+.secondary-btn:focus-visible {
+  color: #111827;
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.45);
   outline-offset: 2px;
 }
 
-.dark .secondary-glass-btn {
-  color: #f2f2f7;
-  border-color: rgba(255, 255, 255, 0.28);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+.dark .secondary-button,
+.dark .secondary-btn {
+  color: #dbe9ff;
+  border-color: rgba(148, 196, 255, 0.527);
+  background: rgba(20, 40, 77, 0.56);
 }
 
-.dark .secondary-glass-btn:hover {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.12));
-  border-color: rgba(255, 255, 255, 0.45);
+.dark .secondary-button:hover,
+.dark .secondary-btn:hover {
+  color: #f7fbff;
+  border-color: rgba(173, 215, 255, 0.373);
+  background: rgba(15, 30, 57, 0.68);
+}
+
+.dark .secondary-button:active,
+.dark .secondary-btn:active {
+  color: #ffffff;
+  border-color: rgba(198, 226, 255, 0.9);
+  background: rgba(34, 64, 120, 0.82);
 }
 
 /* ==========================================================================
@@ -961,7 +982,7 @@ tr:hover td { background: var(--bg-surface); }
 }
 
 .search-input::placeholder { color: var(--text-tertiary); }
-.search-input:focus { outline: none; border-color: var(--apple-blue); }
+.search-input:focus { outline: none; border-color: var(--classic-blue); }
 
 .search-select {
   width: 100%;
@@ -974,7 +995,7 @@ tr:hover td { background: var(--bg-surface); }
   color: var(--text-primary);
 }
 
-.search-select:focus { outline: none; border-color: var(--apple-blue); }
+.search-select:focus { outline: none; border-color: var(--classic-blue); }
 
 .search-card {
   padding: 1.5rem;

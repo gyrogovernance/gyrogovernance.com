@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'classic-blue': '#007aff',
+        'classic-purple': '#af52de',
+        'classic-pink': '#ff2d70',
+      },
       fontFamily: {
         'nunito': ['var(--font-nunito)', 'sans-serif'],
       },

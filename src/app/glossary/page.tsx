@@ -353,7 +353,7 @@ export default function Glossary() {
         <div className="animate-fade-in-up">
         {/* Header */}
         <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-center">
-          <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-classic-purple via-classic-blue to-classic-green bg-clip-text text-transparent">
             AI Safety & Alignment Glossary
           </span>
         </h1>
@@ -370,7 +370,7 @@ export default function Glossary() {
               <a
                 key={category}
                 href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}
-                className="px-4 py-2 bg-apple-blue/10 hover:bg-apple-blue/20 text-apple-blue rounded-full text-sm font-medium transition-colors duration-200"
+                className="px-4 py-2 bg-classic-blue/10 hover:bg-classic-blue/20 text-classic-blue rounded-full text-sm font-medium transition-colors duration-200"
               >
                 {category}
               </a>
@@ -383,7 +383,7 @@ export default function Glossary() {
           const categoryTerms = glossaryTerms.filter(t => t.category === category);
           return (
             <section key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-6 pb-2 border-b-2 border-apple-blue/30">
+              <h2 className="text-2xl font-bold text-foreground mb-6 pb-2 border-b-2 border-classic-blue/30">
                 {category}
               </h2>
               <div className="space-y-6">
@@ -410,7 +410,7 @@ export default function Glossary() {
                               <a
                                 key={relatedTerm}
                                 href={`#${relatedId}`}
-                                className="text-sm px-3 py-1 bg-apple-purple/10 text-apple-purple hover:bg-apple-purple/20 rounded-full transition-colors duration-200"
+                                className="text-sm px-3 py-1 bg-classic-purple/10 text-classic-purple hover:bg-classic-purple/20 rounded-full transition-colors duration-200"
                               >
                                 {relatedTerm}
                               </a>
@@ -424,7 +424,7 @@ export default function Glossary() {
                       <div>
                         <Link
                           href={term.relatedArticle.url}
-                          className="inline-flex items-center text-sm text-apple-blue hover:text-apple-purple font-medium transition-colors duration-200"
+                          className="inline-flex items-center text-sm text-classic-blue hover:text-classic-purple font-medium transition-colors duration-200"
                         >
                           📖 Read: {term.relatedArticle.title} →
                         </Link>
@@ -438,7 +438,7 @@ export default function Glossary() {
         })}
 
         {/* Additional Resources */}
-        <div className="mt-16 bg-gradient-to-br from-apple-blue/10 via-apple-purple/10 to-apple-pink/10 rounded-[2rem] p-8 border border-apple-blue/20">
+        <div className="mt-16 bg-gradient-to-br from-classic-blue/10 via-classic-purple/10 to-classic-pink/10 rounded-[2rem] p-8 border border-classic-blue/20">
           <h2 className="text-2xl font-bold text-foreground mb-4 text-center">
             Explore AI Safety Research & Tools
           </h2>
@@ -448,7 +448,7 @@ export default function Glossary() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/articles"
-              className="inline-flex items-center px-6 py-3 bg-apple-blue hover:bg-apple-purple text-white font-medium rounded-full transition-colors duration-300"
+              className="inline-flex items-center px-6 py-3 bg-classic-blue hover:bg-classic-purple text-white font-medium rounded-full transition-colors duration-300"
             >
               Read Articles
             </Link>

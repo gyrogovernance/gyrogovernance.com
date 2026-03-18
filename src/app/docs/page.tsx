@@ -64,14 +64,14 @@ export default function DocsPage() {
           <Link
             key={repo.id}
             href={`/docs/${repo.id}`}
-            className="group block rounded-xl border border-border/70 bg-surface-elevated/35 p-3 sm:p-4 transition-all duration-200 hover:border-apple-blue/45 hover:bg-surface-elevated/50"
+            className="group block rounded-xl border border-border/70 bg-surface-elevated/35 p-3 sm:p-4 transition-all duration-200 hover:border-classic-blue/45 hover:bg-surface-elevated/50"
           >
             <div className="flex items-start gap-4">
-              <span className="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-md bg-surface-elevated/60 border border-border/60 text-apple-blue">
+              <span className="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-md bg-surface-elevated/60 border border-border/60 text-classic-blue">
                 {repoIcons[repo.icon]}
               </span>
               <div className="flex-1">
-                <h2 className="text-[1rem] sm:text-lg font-semibold text-apple-blue mb-1.5 sm:mb-2 group-hover:text-apple-blue/85 transition-colors">
+                <h2 className="text-[1rem] sm:text-lg font-semibold text-classic-blue mb-1.5 sm:mb-2 group-hover:text-classic-blue/85 transition-colors">
                   {repo.name}
                 </h2>
                 <p className="text-xs sm:text-sm text-foreground-secondary leading-relaxed">

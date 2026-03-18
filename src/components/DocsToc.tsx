@@ -98,7 +98,7 @@ export default function DocsToc({ htmlContent }: DocsTocProps) {
                 onClick={(e) => handleClick(e, item.id)}
                 className={`toc-link block text-sm py-1 px-2 rounded transition-colors hover:bg-foreground/10 ${
                   activeId === item.id
-                    ? 'text-apple-blue bg-apple-blue/10 border-l-2 border-apple-blue'
+                    ? 'text-classic-blue bg-classic-blue/10 border-l-2 border-classic-blue'
                     : 'text-foreground-secondary hover:text-foreground'
                 }`}
               >

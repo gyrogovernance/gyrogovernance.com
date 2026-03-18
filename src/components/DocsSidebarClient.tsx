@@ -44,7 +44,7 @@ const sidebarMenuItemStyles = {
     overflow: "hidden",
     border: "1px solid transparent",
     backgroundColor: active ? "rgba(56, 189, 248, 0.13)" : "transparent",
-    color: active ? "var(--apple-blue)" : "var(--text-primary)",
+    color: active ? "var(--classic-blue)" : "var(--text-primary)",
     fontWeight: active ? 600 : 400,
     whiteSpace: "normal",
     wordBreak: "normal" as CSSProperties["wordBreak"],
@@ -57,7 +57,7 @@ const sidebarMenuItemStyles = {
     whiteSpace: "normal",
     wordBreak: "normal" as CSSProperties["wordBreak"],
     overflowWrap: "break-word" as CSSProperties["overflowWrap"],
-    color: active ? "var(--apple-blue)" : "var(--text-primary)",
+    color: active ? "var(--classic-blue)" : "var(--text-primary)",
     lineHeight: 1.35
   }),
   icon: {
@@ -95,7 +95,7 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
       return (
         <SubMenu
           key={folderKey}
-        label={<span className="font-medium text-apple-blue break-words">{item.title}</span>}
+        label={<span className="font-medium text-classic-blue break-words">{item.title}</span>}
           active={isFolderSelected}
           defaultOpen={isFolderOpen}
         >
@@ -133,7 +133,7 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
         defaultOpen={isRepoOpen}
         label={
           <div className="leading-tight">
-            <div className="font-medium text-apple-blue">{repo.name}</div>
+            <div className="font-medium text-classic-blue">{repo.name}</div>
             <div className="text-xs mt-0.5 break-words" style={{ color: "var(--text-tertiary)" }}>{repo.description}</div>
           </div>
         }
@@ -141,7 +141,7 @@ export default function DocsSidebarClient({ repositories }: DocsSidebarClientPro
         <MenuItem
           component={<Link href={repoPath} />}
           active={isRepoSelected}
-          className="font-medium text-apple-blue"
+          className="font-medium text-classic-blue"
         >
           Overview
         </MenuItem>

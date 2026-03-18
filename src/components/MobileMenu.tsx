@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from 'react';
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import GitHubIcon from "@/components/icons/GitHubIcon";
@@ -9,6 +9,8 @@ import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const scrollYRef = useRef(0);
+  const scrollXRef = useRef(0);
 
   useEffect(() => {
     setMounted(true);
@@ -24,13 +26,29 @@ export default function MobileMenu() {
 
   // Prevent body scroll when menu is open
   useEffect(() => {
+    const currentScrollY = window.scrollY;
+    const currentScrollX = window.scrollX;
+    const preventScroll = (event: Event) => event.preventDefault();
+
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      scrollYRef.current = currentScrollY;
+      scrollXRef.current = currentScrollX;
+      document.documentElement.style.overflowX = "hidden";
+      document.body.style.overflowX = "hidden";
+      document.addEventListener("wheel", preventScroll, { passive: false });
+      document.addEventListener("touchmove", preventScroll, { passive: false });
+      document.addEventListener("keydown", preventScroll);
     } else {
-      document.body.style.overflow = 'unset';
+      window.scrollTo(scrollXRef.current, scrollYRef.current);
     }
+
     return () => {
-      document.body.style.overflow = 'unset';
+      document.removeEventListener("wheel", preventScroll);
+      document.removeEventListener("touchmove", preventScroll);
+      document.removeEventListener("keydown", preventScroll);
+      document.documentElement.style.overflowX = "";
+      document.body.style.overflowX = "";
+      window.scrollTo(scrollXRef.current, scrollYRef.current);
     };
   }, [isOpen]);
 
@@ -39,7 +57,7 @@ export default function MobileMenu() {
       {/* Mobile Menu Overlay with blur */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-[100] md:hidden safari-backdrop-layer"
+          className="fixed inset-0 z-[1100] md:hidden safari-backdrop-layer"
           onClick={closeMenu}
           aria-hidden="true"
         />
@@ -47,12 +65,12 @@ export default function MobileMenu() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed top-20 right-4 left-4 z-[101] md:hidden transition-all duration-300 ease-in-out transform ${
+        className={`fixed top-20 inset-x-0 px-4 z-[1101] md:hidden transition-all duration-300 ease-in-out transform ${
           isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'
         }`}
       >
         <LiquidGlassCard
-          className="glass-card glass-card-translucent rounded-[2rem] p-1"
+          className="glass-card glass-card-translucent rounded-[2rem] p-1 w-full"
           intensity="subtle"
           blur={22}
           saturation={145}
@@ -62,7 +80,7 @@ export default function MobileMenu() {
           <nav className="flex flex-col py-4" role="navigation" aria-label="Mobile navigation">
             <Link
               href="/"
-              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
               aria-label="Home page"
               onClick={closeMenu}
             >
@@ -73,7 +91,7 @@ export default function MobileMenu() {
             </Link>
             <Link
               href="/about"
-              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
               aria-label="About Gyro Governance"
               onClick={closeMenu}
             >
@@ -84,7 +102,7 @@ export default function MobileMenu() {
             </Link>
             <Link
               href="/articles"
-              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
               aria-label="Articles"
               onClick={closeMenu}
             >
@@ -95,7 +113,7 @@ export default function MobileMenu() {
             </Link>
             <Link
               href="/docs"
-              className="mobile-nav-link text-foreground hover:text-apple-blue hover:bg-apple-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-apple-blue/10 active:scale-[0.98]"
+              className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
               aria-label="Documentation"
               onClick={closeMenu}
             >
@@ -112,7 +130,7 @@ export default function MobileMenu() {
               href="https://github.com/gyrogovernance"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center mx-6 my-2 px-6 py-3 text-base font-bold bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50 active:scale-[0.98]"
+              className="inline-flex items-center justify-center mx-6 my-2 px-6 py-3 text-base font-bold bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-classic-blue/50 active:scale-[0.98]"
               aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
               onClick={closeMenu}
             >
@@ -129,7 +147,7 @@ export default function MobileMenu() {
     <>
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden text-foreground-secondary hover:text-apple-blue transition-colors duration-200 relative z-[102]"
+        className="md:hidden text-foreground-secondary hover:text-classic-blue transition-colors duration-200 relative z-[1020]"
         aria-label="Toggle mobile menu"
         onClick={toggleMenu}
       >

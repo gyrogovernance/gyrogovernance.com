@@ -331,9 +331,9 @@ export default function GitHub() {
       description: 'AI alignment protocol implementing scalable oversight and AI control mechanisms for responsible AI development. Delivers proven AI safety improvements: +32.9% quality gains for ChatGPT, +37.7% for Claude Sonnet. Enhances structural reasoning, AI accountability, AI traceability, and behavioral integrity without model retraining. Addresses AI misalignment through systematic approach to AI governance and transparency metrics. Works with any foundation model including large language models and AI agents.',
       url: 'https://github.com/gyrogovernance/tools',
       tags: ['LLM Alignment', 'AI Control', 'Scalable Oversight', 'Safety Protocol'],
-      gradient: 'from-apple-blue/10 via-apple-purple/10 to-apple-pink/10',
-      borderColor: 'border-apple-blue/20',
-      buttonGradient: 'from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink'
+      gradient: 'from-classic-blue/10 via-classic-purple/10 to-classic-pink/10',
+      borderColor: 'border-classic-blue/20',
+      buttonGradient: 'from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink'
     },
     {
       emoji: '⚡',
@@ -404,7 +404,7 @@ export default function GitHub() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-classic-purple via-classic-blue to-classic-green bg-clip-text text-transparent">
               Open Source Research & Tools
             </span>
           </h1>
@@ -427,7 +427,7 @@ export default function GitHub() {
             </a>
             <Link
               href="/"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               aria-label="Return to Gyro Governance homepage"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -507,7 +507,7 @@ export default function GitHub() {
               href="https://github.com/gyrogovernance"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
               aria-label="Explore all repositories on GitHub (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />

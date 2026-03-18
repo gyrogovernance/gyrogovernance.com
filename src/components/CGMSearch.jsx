@@ -76,7 +76,7 @@ export default function CGMSearch() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[80vh]">
         <div className="text-center">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink bg-clip-text text-transparent">
               CGM Knowledge Base
             </span>
           </h2>
@@ -94,7 +94,7 @@ export default function CGMSearch() {
         {/* Hero Section */}
         <div className="text-center">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink bg-clip-text text-transparent">
               CGM Knowledge Base
             </span>
           </h2>
@@ -265,7 +265,7 @@ function ResultCard({ item, query }) {
       )}
 
       <button 
-        className="text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium text-sm"
+        className="text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium text-sm"
         onClick={() => setExpanded(!expanded)}
       >
         {expanded ? 'Hide Context' : 'Show Context'}

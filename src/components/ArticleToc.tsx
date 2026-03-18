@@ -205,7 +205,7 @@ export default function ArticleToc({ headings, offsetTop = 96 }: ArticleTocProps
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="lg:hidden fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apple-blue text-white shadow-xl"
+        className="lg:hidden fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-classic-blue text-white shadow-xl"
         aria-label="Open table of contents"
         aria-haspopup="dialog"
         aria-expanded={open ? "true" : "false"}

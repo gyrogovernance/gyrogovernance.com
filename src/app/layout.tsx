@@ -234,7 +234,7 @@ export default function RootLayout({
           {/* ── Sticky header ── */}
           <header className="glass-nav-shell max-w-4xl mx-3 md:mx-auto" role="banner">
             <LiquidGlassNav className="p-0">
-              <div className="max-w-6xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="w-full px-3 sm:px-4">
                 <div className="flex justify-between items-center h-16">
                   <div className="flex items-center">
                     <Link
@@ -258,16 +258,16 @@ export default function RootLayout({
                   <div className="flex items-center space-x-5">
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-1" role="navigation" aria-label="Main navigation">
-                      <Link href="/" className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Home page">
+                      <Link href="/" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Home page">
                         Home
                       </Link>
-                      <Link href="/about" className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="About Gyro Governance">
+                      <Link href="/about" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="About Gyro Governance">
                         About
                       </Link>
-                      <Link href="/articles" className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Articles">
+                      <Link href="/articles" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Articles">
                         Articles
                       </Link>
-                      <Link href="/docs" className="nav-link text-foreground-secondary hover:text-apple-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Documentation">
+                      <Link href="/docs" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Documentation">
                         Docs
                       </Link>
                     </nav>
@@ -279,7 +279,7 @@ export default function RootLayout({
                       href="https://github.com/gyrogovernance"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hidden sm:inline-flex items-center ml-auto mr-0 bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-apple-blue/50"
+                      className="hidden sm:inline-flex items-center ml-auto mr-2 md:mr-0 bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-classic-blue/50"
                       aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
                     >
                       <GitHubIcon className="w-4 h-4 mr-2" />
@@ -307,21 +307,21 @@ export default function RootLayout({
 
                   <nav className="mt-6" role="navigation" aria-label="Footer navigation">
                     <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm">
-                      <Link href="/" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">Home</Link>
+                      <Link href="/" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Home</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/about" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">About Gyro Governance</Link>
+                      <Link href="/about" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">About Gyro Governance</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/articles" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">Articles</Link>
+                      <Link href="/articles" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Articles</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/docs" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">Docs</Link>
+                      <Link href="/docs" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Docs</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/github" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">GitHub</Link>
+                      <Link href="/github" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">GitHub</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/glossary" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">Glossary</Link>
+                      <Link href="/glossary" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Glossary</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/privacy-policy" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">Privacy Policy</Link>
+                      <Link href="/privacy-policy" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Privacy Policy</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
-                      <Link href="/cookie-policy" className="text-foreground-secondary hover:text-apple-blue transition-colors duration-200 font-medium">Cookie Policy</Link>
+                      <Link href="/cookie-policy" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Cookie Policy</Link>
                     </div>
                   </nav>
 

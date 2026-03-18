@@ -20,7 +20,7 @@ export default function DocsLayout({
       <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-4 sm:py-6 xl:py-8">
         <div className="grid grid-cols-1 xl:grid-cols-[220px_minmax(0,1fr)_240px] gap-4 xl:gap-4">
           {/* Left Sidebar - Navigation */}
-          <div className="xl:sticky xl:top-[5.5rem] xl:h-[calc(100vh-6rem)] xl:overflow-visible">
+          <div className="hidden xl:block xl:sticky xl:top-[5.5rem] xl:h-[calc(100vh-6rem)] xl:overflow-visible">
             <LiquidGlassCard
               className="glass-card glass-card-translucent docs-sidebar-shell rounded-[2rem] h-full"
               intensity="subtle"

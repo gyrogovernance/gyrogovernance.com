@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import DocsSidebarClient from './DocsSidebarClient';
+import DocsSidebarClientWrapper from './DocsSidebarClientWrapper';
 
 interface DocsItem {
   slug: string;
@@ -166,7 +166,7 @@ export default async function DocsSidebar({ currentRepo }: DocsSidebarProps) {
   }
 
   return (
-    <DocsSidebarClient
+    <DocsSidebarClientWrapper
       repositories={repositories}
     />
   );

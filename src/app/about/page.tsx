@@ -7,25 +7,25 @@ const atAGlance = [
   {
     label: "Founded",
     value: "2013",
-    accent: "border-apple-blue/35",
+    accent: "border-classic-blue/35",
   },
   {
     label: "Mission",
     value:
       "Moving AI safety from post-deployment filtering to structural, by-design observability.",
-    accent: "border-apple-green/35",
+    accent: "border-classic-green/35",
   },
   {
     label: "Research Footprint",
     value:
       "A comprehensive open-source ecosystem spanning formal physics proofs, browser-based evaluation tools, native compute kernels, and macroeconomic coordination models.",
-    accent: "border-apple-purple/35",
+    accent: "border-classic-purple/35",
   },
   {
     label: "Measured Impact",
     value:
       "Proven enhancements across frontier language models without requiring retraining.",
-    accent: "border-apple-pink/35",
+    accent: "border-classic-pink/35",
   },
 ];
 
@@ -35,8 +35,8 @@ const workItems = [
     title: "AI Safety Evaluation and Alignment",
     description:
       "We engineer diagnostic frameworks to detect structural failures such as sycophancy, goal drift, and loss of traceability. Our alignment protocols embed observable reasoning directly into AI generation, yielding measurable improvements across leading models.",
-    accent: "bg-apple-blue",
-    accentBorder: "border-apple-blue/35",
+    accent: "bg-classic-blue",
+    accentBorder: "border-classic-blue/35",
     highlight:
       "These tools provide quantitative metrics for transparency and ethical coherence without requiring model retraining.",
   },
@@ -45,24 +45,24 @@ const workItems = [
     title: "Verifiable Computing Architectures",
     description:
       "We design execution environments that make model inference mathematically exact and perfectly replayable. By replacing opaque floating-point bottlenecks with deterministic integer algebra, we provide the computational infrastructure required for high-assurance AI deployments.",
-    accent: "bg-apple-green",
-    accentBorder: "border-apple-green/35",
+    accent: "bg-classic-green",
+    accentBorder: "border-classic-green/35",
   },
   {
     number: "03",
     title: "Governance Infrastructure",
     description:
       "As AI systems scale, human agency must scale alongside them. We develop coordination protocols and capacity-based economic models that translate distributed AI activity into verifiable audit trails.",
-    accent: "bg-apple-pink",
-    accentBorder: "border-apple-pink/35",
+    accent: "bg-classic-pink",
+    accentBorder: "border-classic-pink/35",
   },
   {
     number: "04",
     title: "Mathematical Foundations",
     description:
       "A long-term research program in gyroscopic dynamics and formal physical models anchors the lab. This foundational layer connects theoretical safety proofs directly to software engineering and practical policy design.",
-    accent: "bg-apple-purple",
-    accentBorder: "border-apple-purple/35",
+    accent: "bg-classic-purple",
+    accentBorder: "border-classic-purple/35",
   },
 ];
 
@@ -99,19 +99,19 @@ const impactAudience = [
     title: "For Researchers",
     description:
       "We offer formal mathematical approaches to alignment, interpretability, and system evaluation.",
-    accent: "border-apple-green/35",
+    accent: "border-classic-green/35",
   },
   {
     title: "For Engineers",
     description:
       "We provide practical, hardware-efficient tools for runtime observability and deterministic execution.",
-    accent: "border-apple-blue/35",
+    accent: "border-classic-blue/35",
   },
   {
     title: "For Leadership",
     description:
       "We define a clear path toward deploying AI systems with lower governance risk, stronger accountability, and zero-trust audit capabilities.",
-    accent: "border-apple-purple/35",
+    accent: "border-classic-purple/35",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function About() {
       <div className="relative z-10 animate-fade-in-up space-y-10">
         <header className="text-center">
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold">
-            <span className="bg-gradient-to-r from-apple-purple via-apple-blue to-apple-green bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-classic-purple via-classic-blue to-classic-green bg-clip-text text-transparent">
               About
             </span>
           </h1>
@@ -145,7 +145,7 @@ export default function About() {
         <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
           <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-2 w-2 rounded-full bg-apple-green" />
+            <span className="h-2 w-2 rounded-full bg-classic-green" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">At a Glance</h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
@@ -167,7 +167,7 @@ export default function About() {
         <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
           <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-2 w-2 rounded-full bg-apple-blue" />
+            <span className="h-2 w-2 rounded-full bg-classic-blue" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
               What We Work On
             </h2>
@@ -201,7 +201,7 @@ export default function About() {
                             {impactRows.map((row) => (
                               <tr className="border-b border-border/50" key={row.metric}>
                                 <td className="py-2 pr-4 text-foreground-secondary">{row.metric}</td>
-                                <td className="py-2 px-3 font-semibold text-apple-green">{row.improvement}</td>
+                                <td className="py-2 px-3 font-semibold text-classic-green">{row.improvement}</td>
                                 <td className="py-2 pl-3 text-foreground-secondary">{row.description}</td>
                               </tr>
                             ))}
@@ -220,7 +220,7 @@ export default function About() {
         <LiquidGlassCard className="glass-card glass-card-amber rounded-[2rem] shadow-2xl">
           <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-2 w-2 rounded-full bg-apple-pink" />
+            <span className="h-2 w-2 rounded-full bg-classic-pink" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
               Why This Matters
             </h2>
@@ -242,7 +242,7 @@ export default function About() {
         <LiquidGlassCard className="glass-card glass-card-purple rounded-[2rem] shadow-2xl">
           <div className="p-7">
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-2 w-2 rounded-full bg-apple-blue" />
+            <span className="h-2 w-2 rounded-full bg-classic-blue" />
             <h2 className="text-2xl font-semibold text-foreground-secondary">
               Founder & AI Governance Lead
             </h2>
@@ -267,7 +267,7 @@ export default function About() {
                     href="https://korompilias.github.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink transition-all duration-300 shadow-lg"
+                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink transition-all duration-300 shadow-lg"
                     aria-label="Visit Basil Korompilias personal website (opens in new tab)"
                   >
                     Website

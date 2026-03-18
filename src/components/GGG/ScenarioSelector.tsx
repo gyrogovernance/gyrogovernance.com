@@ -109,7 +109,7 @@ export default function ScenarioSelector({ selectedId, onScenarioChange }: Scena
             onClick={() => handleChange(scenario.id)}
             className={`px-4 py-2 text-sm font-medium whitespace-nowrap border-b-2 transition-colors ${
               selectedId === scenario.id
-                ? 'border-apple-blue text-apple-blue'
+                ? 'border-classic-blue text-classic-blue'
                 : 'border-transparent text-foreground-secondary hover:text-foreground hover:border-border/60'
             }`}
             title={`${scenario.name} (κ=${scenario.kappa})`}

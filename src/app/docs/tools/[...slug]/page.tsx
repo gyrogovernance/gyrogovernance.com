@@ -96,11 +96,11 @@ export default async function DocPage({ params }: PageProps) {
       <div className="space-y-4 sm:space-y-6">
         {/* Breadcrumb */}
         <div className="mb-4 sm:mb-6">
-          <Link href="/docs" className="text-apple-blue hover:text-apple-purple transition-colors">
+          <Link href="/docs" className="text-classic-blue hover:text-classic-purple transition-colors">
             ← Documentation
           </Link>
           <span className="mx-2 text-foreground-secondary">/</span>
-          <Link href="/docs/tools" className="text-apple-blue hover:text-apple-purple transition-colors">
+          <Link href="/docs/tools" className="text-classic-blue hover:text-classic-purple transition-colors">
             Tools
           </Link>
           {slug && slug.length > 1 && (
@@ -126,7 +126,7 @@ export default async function DocPage({ params }: PageProps) {
         )}
 
         {/* Content */}
-        <article className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-code:text-foreground prose-a:text-apple-blue hover:prose-a:text-apple-purple">
+        <article className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-code:text-foreground prose-a:text-classic-blue hover:prose-a:text-classic-purple">
           <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         </article>
       </div>

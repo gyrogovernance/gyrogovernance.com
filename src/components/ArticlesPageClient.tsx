@@ -81,7 +81,7 @@ export default function ArticlesPageClient() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
       <div className="text-center mb-10 animate-fade-in-up">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          <span className="bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink bg-clip-text text-transparent">
             Articles
           </span>
         </h1>
@@ -143,14 +143,14 @@ export default function ArticlesPageClient() {
                   day: '2-digit'
                 })}</time>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-apple-blue transition-colors duration-200">
+              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-classic-blue transition-colors duration-200">
                 <Link href={`/articles/${a.slug}`}>{a.title}</Link>
               </h3>
               <p className="text-sm text-foreground-secondary mb-3 line-clamp-3">{a.excerpt}</p>
               <div className="mt-auto">
                 <Link
                   href={`/articles/${a.slug}`}
-                  className="flex w-full items-center justify-center gap-2 px-4 py-2 rounded-full border border-apple-blue/30 bg-apple-blue/10 text-apple-blue hover:text-white hover:bg-apple-blue transition-colors duration-200 font-semibold"
+                  className="flex w-full items-center justify-center gap-2 px-4 py-2 rounded-full border border-classic-blue/30 bg-classic-blue/10 text-classic-blue hover:text-white hover:bg-classic-blue transition-colors duration-200 font-semibold"
                   aria-label={`Read more: ${a.title}`}
                 >
                   <span className="text-base">👓</span>

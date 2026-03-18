@@ -65,9 +65,9 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   const article = getArticleBySlug(slug);
   if (!article) {
     return (
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-x-hidden">
         <p className="text-foreground-secondary">Article not found.</p>
-        <Link href="/articles" className="text-apple-blue font-semibold">
+        <Link href="/articles" className="text-classic-blue font-semibold">
           Back to Articles
         </Link>
       </div>
@@ -126,9 +126,9 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         tags={article.tags}
         category={article.category}
       />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 overflow-x-hidden">
         <div className="mb-6">
-          <Link href="/articles" className="text-apple-blue hover:text-apple-purple">
+          <Link href="/articles" className="text-classic-blue hover:text-classic-purple">
             ← Back to Articles
           </Link>
         </div>
@@ -170,7 +170,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
 
         {/* Divider before Promo */}
         <div className="mt-10 mb-8">
-          <div className="h-px bg-gradient-to-r from-transparent via-apple-blue/50 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-classic-blue/50 to-transparent" />
           <p className="mt-3 text-sm text-foreground-tertiary text-center">
             Explore more work from our labs and ongoing publications.
           </p>

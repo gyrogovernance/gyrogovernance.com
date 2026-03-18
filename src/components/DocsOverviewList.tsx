@@ -53,7 +53,7 @@ export default function DocsOverviewList({
               className="overflow-hidden rounded-3xl !shadow-none border border-border/65 bg-surface-elevated/35"
             >
               <div className="px-3 py-2.5 sm:px-4 sm:py-3 border-b border-border/60">
-                <h2 className="text-sm sm:text-[0.95rem] font-semibold tracking-wide text-apple-blue">
+                <h2 className="text-sm sm:text-[0.95rem] font-semibold tracking-wide text-classic-blue">
                   {doc.title}
                 </h2>
               </div>
@@ -76,9 +76,9 @@ export default function DocsOverviewList({
           <Link
             key={doc.slug}
             href={`/docs/${basePath}/${doc.slug}`}
-            className="block rounded-3xl !shadow-none border border-border/65 bg-surface-elevated/35 px-3 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-5 transition-colors hover:border-apple-blue/50 hover:bg-surface-elevated/50"
+            className="block rounded-3xl !shadow-none border border-border/65 bg-surface-elevated/35 px-3 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-5 transition-colors hover:border-classic-blue/50 hover:bg-surface-elevated/50"
           >
-            <span className="text-sm sm:text-base font-semibold leading-tight text-apple-blue">
+            <span className="text-sm sm:text-base font-semibold leading-tight text-classic-blue">
               {doc.title}
             </span>
             {!!doc.description && (

@@ -31,7 +31,7 @@ export default function ScrollToTopButton() {
         showButton
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 translate-y-2 pointer-events-none"
-      } hover:bg-apple-blue hover:text-white hover:border-apple-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue`}
+      } hover:bg-classic-blue hover:text-white hover:border-classic-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-classic-blue`}
     >
       <span className="sr-only">Scroll to top</span>
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">

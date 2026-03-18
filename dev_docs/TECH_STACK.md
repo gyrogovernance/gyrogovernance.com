@@ -77,7 +77,7 @@ Synchronized with React version for optimal compatibility.
 
 **Custom Theme:**
 - Custom font families (Nunito, Geist Sans, Geist Mono)
-- Extended color palette (apple-blue, apple-purple, apple-pink)
+- Extended color palette (classic-blue, classic-purple, classic-pink)
 - Custom font weights
 - Responsive design utilities
 

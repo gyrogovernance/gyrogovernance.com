@@ -85,29 +85,29 @@ export default function CookieBanner() {
               You can also explicitly{' '}
               <button
                 onClick={acceptCookies}
-                className="text-apple-blue hover:text-apple-purple underline font-medium"
+                className="text-classic-blue hover:text-classic-purple underline font-medium"
               >
                 accept
               </button>{' '}
               or{' '}
               <button
                 onClick={rejectCookies}
-                className="text-apple-blue hover:text-apple-purple underline font-medium"
+                className="text-classic-blue hover:text-classic-purple underline font-medium"
               >
                 reject
               </button>{' '}
               cookies. Read our{' '}
-              <Link href="/privacy-policy" className="text-apple-blue hover:text-apple-purple underline">
+              <Link href="/privacy-policy" className="text-classic-blue hover:text-classic-purple underline">
                 Privacy Policy
               </Link>{' '}
               and{' '}
-              <Link href="/cookie-policy" className="text-apple-blue hover:text-apple-purple underline">
+              <Link href="/cookie-policy" className="text-classic-blue hover:text-classic-purple underline">
                 Cookie Policy
               </Link>
               .
             </p>
             {hasInteracted && (
-              <p className="text-xs text-apple-blue mt-2 font-medium">
+              <p className="text-xs text-classic-blue mt-2 font-medium">
                 ✨ Thanks for exploring! Cookies will be accepted in a moment...
               </p>
             )}
@@ -121,7 +121,7 @@ export default function CookieBanner() {
             </button>
             <button
               onClick={acceptCookies}
-              className="px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Accept
             </button>

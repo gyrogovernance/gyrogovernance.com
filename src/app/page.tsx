@@ -22,7 +22,7 @@ export default function Home() {
           ================================================================ */}
       <div className="text-center mb-8 animate-fade-in-up">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink bg-clip-text text-transparent">
             Gyro Governance
           </span>
         </h1>
@@ -74,7 +74,7 @@ export default function Home() {
                 <div className="flex items-start gap-3 px-3 py-4 sm:px-4">
                   <span className="text-2xl leading-none shrink-0">{p.emoji}</span>
                   <span className="min-w-0">
-                    <span className="block text-sm font-semibold text-foreground group-hover:text-apple-blue transition-colors">
+                    <span className="block text-sm font-semibold text-foreground group-hover:text-classic-blue transition-colors">
                       {p.title}
                     </span>
                     <span className="block text-sm text-foreground-tertiary leading-snug mt-0.5">
@@ -90,14 +90,32 @@ export default function Home() {
         {/* Quick section links */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           {[
-            { emoji: "⚡", label: "Labs", href: "#labs-heading" },
-            { emoji: "📚", label: "Resources", href: "#resources-heading" },
-            { emoji: "📰", label: "Articles", href: "#articles" },
+            {
+              emoji: "⚡",
+              label: "Labs",
+              href: "#labs-heading",
+              className:
+                "border-blue-500/30 dark:border-blue-400/45 bg-blue-500/12 dark:bg-blue-500/15 text-blue-700 dark:text-blue-200/95 hover:bg-blue-500/25 dark:hover:bg-blue-500/30 hover:border-blue-500/55 dark:hover:border-blue-400/70 hover:text-blue-900 dark:hover:text-blue-100",
+            },
+            {
+              emoji: "📚",
+              label: "Resources",
+              href: "#resources-heading",
+              className:
+                "border-emerald-500/35 dark:border-emerald-300/45 bg-emerald-400/12 dark:bg-emerald-400/15 text-emerald-700 dark:text-emerald-100 hover:bg-emerald-400/25 dark:hover:bg-emerald-400/28 hover:border-emerald-500/60 dark:hover:border-emerald-300/70 hover:text-emerald-900 dark:hover:text-white",
+            },
+            {
+              emoji: "📰",
+              label: "Articles",
+              href: "#articles",
+              className:
+                "border-fuchsia-500/35 dark:border-fuchsia-300/45 bg-fuchsia-500/12 dark:bg-fuchsia-500/15 text-fuchsia-700 dark:text-fuchsia-100/95 hover:bg-fuchsia-500/25 dark:hover:bg-fuchsia-500/30 hover:border-fuchsia-500/60 dark:hover:border-fuchsia-300/70 hover:text-fuchsia-900 dark:hover:text-fuchsia-50",
+            },
           ].map((c) => (
             <a
               key={c.label}
               href={c.href}
-              className="flex items-center gap-2 px-4 py-2 rounded-full border border-border/40 text-sm font-medium text-foreground-secondary hover:text-foreground hover:border-border/70 hover:bg-surface-elevated/40 transition-all duration-200"
+              className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border bg-white/12 dark:bg-white/5 text-[12px] sm:text-sm font-medium leading-tight transition-colors duration-200 backdrop-blur-md ${c.className}`}
             >
               <span>{c.emoji}</span>
               <span>{c.label}</span>
@@ -106,7 +124,7 @@ export default function Home() {
         </div>
 
         {/* Updates */}
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto mb-10">
           <div className="flex items-center gap-3 mb-4">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-border/60" />
             <span className="text-[11px] font-bold text-foreground-tertiary uppercase tracking-widest">
@@ -130,7 +148,7 @@ export default function Home() {
                 <>
                   <span className={`w-1.5 h-1.5 rounded-full ${u.dot} shrink-0`} />
                   <span className="text-sm text-foreground-secondary leading-snug">
-                    <strong className="text-foreground group-hover:text-apple-blue transition-colors">
+                    <strong className="text-foreground group-hover:text-classic-blue transition-colors">
                       {u.title}
                     </strong>
                     <span className="text-foreground-tertiary">{" "}{u.desc}</span>
@@ -235,7 +253,7 @@ export default function Home() {
                 href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                 aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -326,7 +344,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/apps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                 aria-label="View AI Inspector on GitHub (opens in new tab)"
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
@@ -398,10 +416,10 @@ export default function Home() {
                   This gives builders a verified path from specification to deployment.
                 </p>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn">
+                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
                     SDK Spec
                   </a>
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn">
+                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Tests_Report.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
                     Verification Report
                   </a>
                 </div>
@@ -414,13 +432,13 @@ export default function Home() {
                   AI execution stability and hidden inefficiencies reduction.
                 </p>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn">
+                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
                     Climate Brief
                   </a>
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Theory.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn">
+                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Theory.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
                     Climate Theory
                   </a>
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn">
+                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
                     Tests Report
                   </a>
                 </div>
@@ -442,7 +460,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                 aria-label="Read aQPU Strategic Significance (opens in new tab)"
               >
                 Strategic Significance
@@ -520,7 +538,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                 aria-label="Read GyroLabe Specification (opens in new tab)"
               >
                 GyroLabe Spec
@@ -529,7 +547,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                 aria-label="Read GyroGraph Specification (opens in new tab)"
               >
                 GyroGraph Spec
@@ -762,7 +780,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/tools"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-glass-btn"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                 aria-label="View GGG simulator code on GitHub (opens in new tab)"
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
@@ -902,24 +920,24 @@ export default function Home() {
                 <div className="glass-card-inner rounded-lg p-2 sm:p-4">
                   <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">ChatGPT</h4>
                   <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Overall Quality:</span><span className="font-semibold text-apple-green">67.0% → 89.1% (+32.9%)</span></div>
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Structural Reasoning:</span><span className="font-semibold text-apple-green">+50.9%</span></div>
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Accountability:</span><span className="font-semibold text-apple-green">+62.7%</span></div>
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Traceability:</span><span className="font-semibold text-apple-green">+61.0%</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Overall Quality:</span><span className="font-semibold text-classic-green">67.0% → 89.1% (+32.9%)</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Structural Reasoning:</span><span className="font-semibold text-classic-green">+50.9%</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Accountability:</span><span className="font-semibold text-classic-green">+62.7%</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Traceability:</span><span className="font-semibold text-classic-green">+61.0%</span></div>
                   </div>
                 </div>
 
                 <div className="glass-card-inner rounded-lg p-2 sm:p-4">
                   <h4 className="text-base sm:text-lg font-bold text-foreground mb-2 sm:mb-3 text-center">Claude Sonnet</h4>
                   <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Overall Quality:</span><span className="font-semibold text-apple-blue">63.5% → 87.4% (+37.7%)</span></div>
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Structural Reasoning:</span><span className="font-semibold text-apple-blue">+67.1%</span></div>
-                    <div className="flex justify-between"><span className="text-foreground-secondary">Traceability:</span><span className="font-semibold text-apple-blue">+92.6%</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Overall Quality:</span><span className="font-semibold text-classic-blue">63.5% → 87.4% (+37.7%)</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Structural Reasoning:</span><span className="font-semibold text-classic-blue">+67.1%</span></div>
+                    <div className="flex justify-between"><span className="text-foreground-secondary">Traceability:</span><span className="font-semibold text-classic-blue">+92.6%</span></div>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-gradient-to-r from-apple-blue/10 to-apple-purple/10 rounded-lg border border-apple-blue/20">
+              <div className="mt-6 p-4 bg-gradient-to-r from-classic-blue/10 to-classic-purple/10 rounded-lg border border-classic-blue/20">
                 <p className="text-sm text-foreground-secondary text-center">
                   <strong>☝🏻 The protocol works with any AI model</strong>, enhancing capabilities in debugging, ethics, code generation, and value-sensitive reasoning through its systematic approach to thinking.
                 </p>
@@ -943,7 +961,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/tools"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-apple-blue to-apple-purple hover:from-apple-purple hover:to-apple-pink text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="View Gyroscope on GitHub (opens in new tab)"
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
@@ -1075,7 +1093,7 @@ export default function Home() {
                     href="https://github.com/gyrogovernance/science/tree/main/docs/datasets"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm text-apple-blue hover:text-apple-purple transition-colors duration-200 font-medium"
+                    className="inline-flex items-center text-sm text-classic-blue hover:text-classic-purple transition-colors duration-200 font-medium"
                     aria-label="View CGM Dataset on GitHub (opens in new tab)"
                   >
                     <GitHubIcon className="w-4 h-4 mr-1" />
@@ -1093,7 +1111,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/search"
-                    className="inline-flex items-center text-sm text-apple-blue hover:text-apple-purple transition-colors duration-200 font-medium"
+                    className="inline-flex items-center text-sm text-classic-blue hover:text-classic-purple transition-colors duration-200 font-medium"
                     aria-label="Search CGM Knowledge Base"
                   >
                     Search the Theory →
@@ -1178,7 +1196,7 @@ export default function Home() {
                         href={g.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium"
+                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
                         aria-label={`Visit ${g.title} (opens in new tab)`}
                       >
                         Visit Site <ExternalLinkIcon className="ml-2 w-4 h-4" />
@@ -1204,7 +1222,7 @@ export default function Home() {
                   <div className="flex-1">
                     <h4 className="text-xl font-semibold text-foreground mb-3">AI Quality Governance</h4>
                     <p className="text-foreground-secondary mb-4">Human Data Evaluation and Responsible AI Behavior Alignment</p>
-                    <a href="http://doi.org/10.17613/43wc1-mvn58" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium" aria-label="View AI Quality Governance publication (opens in new tab)">
+                    <a href="http://doi.org/10.17613/43wc1-mvn58" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium" aria-label="View AI Quality Governance publication (opens in new tab)">
                       View Publication <ExternalLinkIcon className="ml-2 w-4 h-4" />
                     </a>
                   </div>
@@ -1221,7 +1239,7 @@ export default function Home() {
                   <div className="flex-1 text-center sm:text-left">
                     <h4 className="text-xl font-semibold text-foreground mb-3">AI Canon</h4>
                     <p className="text-foreground-secondary mb-4">Sensory Ethics for Biological and Artificial Entities</p>
-                    <a href="https://doi.org/10.17613/txwg-v619" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-apple-blue hover:text-apple-purple transition-colors duration-300 font-medium" aria-label="View AI Canon publication (opens in new tab)">
+                    <a href="https://doi.org/10.17613/txwg-v619" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium" aria-label="View AI Canon publication (opens in new tab)">
                       View Publication <ExternalLinkIcon className="ml-2 w-4 h-4" />
                     </a>
                   </div>
@@ -1327,7 +1345,7 @@ export default function Home() {
           <div className="mt-8 flex justify-center">
             <Link
               href="/articles"
-              className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-gradient-to-r from-apple-blue via-apple-purple to-apple-pink hover:from-apple-purple hover:via-apple-pink hover:to-apple-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               aria-label="View all articles"
             >
               View All Articles
