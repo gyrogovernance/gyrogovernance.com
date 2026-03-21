@@ -38,9 +38,9 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <LiquidGlassCard className="glass-card glass-card-stats rounded-[2rem] shadow-2xl">
             <div className="flex justify-center gap-3 sm:gap-6 md:gap-10 py-4 px-2 sm:py-6 sm:px-8 md:py-8 md:px-10">
-              <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500" delay={0} />
-              <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500" delay={200} />
-              <StatBadge value={60} label="Experiments & Reports" color="from-emerald-500 to-teal-500" delay={400} />
+              <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500 dark:from-purple-300 dark:to-indigo-300" delay={0} />
+              <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500 dark:from-blue-300 dark:to-cyan-300" delay={200} />
+              <StatBadge value={60} label="Experiments & Reports" color="from-emerald-500 to-teal-500 dark:from-emerald-300 dark:to-teal-300" delay={400} />
               </div>
             </LiquidGlassCard>
           </div>
