@@ -148,8 +148,8 @@
    ========================================================================== */
 
 .dark {
-  --classic-blue: #90ffc2;
-  --classic-purple: #23ff8e;
+  --classic-blue: #66b3ff;
+  --classic-purple: #be8dff;
 
   --text-primary: rgba(255, 255, 255, 0.98);
   --text-secondary: rgba(255, 255, 255, 0.85);
