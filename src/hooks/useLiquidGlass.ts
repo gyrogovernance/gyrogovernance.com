@@ -189,13 +189,15 @@ export const useLiquidGlass = (props: GlassStyleProps): LiquidGlassEffect => {
     // Complex shadow with caustic hints
     const shadows = [
       // Outer shadow
-      `0 ${thickness}px ${thickness * 2}px rgba(0, 0, 0, ${shadowIntensity * 0.3})`,
+      `0 ${thickness * 1.1}px ${thickness * 2.4}px rgba(0, 0, 0, ${shadowIntensity * 0.35})`,
+      `0 0 ${thickness * 2.2}px rgba(0, 0, 0, ${shadowIntensity * 0.12})`,
       // Inner shadow for depth
       `inset 0 1px 0 rgba(255, 255, 255, ${fresnelReflectance * 0.5})`,
       `inset 0 -1px 0 rgba(0, 0, 0, ${shadowIntensity * 0.2})`,
       // Edge highlights
       `inset 1px 0 0 rgba(255, 255, 255, ${borderOpacity})`,
       `inset -1px 0 0 rgba(255, 255, 255, ${borderOpacity * 0.5})`,
+      `0 0 0 0.3px rgba(0, 0, 0, 0.3)`,
     ];
     
     // CSS custom properties for dynamic control

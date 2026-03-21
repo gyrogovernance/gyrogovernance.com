@@ -54,7 +54,7 @@ export function LiquidGlassCard({
       className={className}
       {...props}
       style={{
-        boxShadow: "var(--glass-card-shadow-lg)",
+        boxShadow: "var(--glass-card-shadow-lg), 0 0 0 0.3px rgba(0, 0, 0, 0.3)",
         ...props.style,
       }}
       disableBackground={true}

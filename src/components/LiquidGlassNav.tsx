@@ -12,21 +12,22 @@ export function LiquidGlassNav({
 }) {
   return (
     <GlassContainer
-      className={`rounded-[2rem] ${className}`}
+      className={`glass-nav rounded-[2rem] ${className}`}
       intensity="subtle"
       blur={22}
       saturation={130}
       luminosity={105}
       cornerRadius={32}
-      borderWidth={0.5}
-      borderOpacity={0.06}
+      borderWidth={0}
+      borderOpacity={0}
       shadowIntensity={0.06}
       mouseTracking={false}
       useAdvancedEffects={false}
       style={{
-        background: "rgba(255, 255, 255, 0.05)",
-        border: "1px solid var(--glass-nav-border)",
-        boxShadow: "0 1px 2px rgba(255, 255, 255, 0.05)",
+        background: "var(--glass-nav-bg)",
+        border: "1.5px solid var(--glass-nav-border)",
+        boxShadow:
+          "var(--glass-nav-shadow), 0 0 0 0.3px rgba(0, 0, 0, 0.3)",
       }}
     >
       {children}

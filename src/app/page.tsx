@@ -36,7 +36,7 @@ export default function Home() {
           ================================================================ */}
       <div className="mb-6 animate-fade-in-up [animation-delay:200ms]">
         <div className="flex flex-col items-center">
-          <LiquidGlassCard className="glass-card rounded-[2rem] shadow-2xl">
+          <LiquidGlassCard className="glass-card glass-card-stats rounded-[2rem] shadow-2xl">
             <div className="flex justify-center gap-3 sm:gap-6 md:gap-10 py-4 px-2 sm:py-6 sm:px-8 md:py-8 md:px-10">
               <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500" delay={0} />
               <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500" delay={200} />
@@ -62,16 +62,17 @@ export default function Home() {
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
           ].map((p) => (
-            <Link key={p.title} href={p.href} className="block rounded-xl h-full">
+            <Link key={p.title} href={p.href} className="block rounded-[1rem] h-full">
               <LiquidGlassCard
-                className="group glass-card glass-card-translucent rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 h-full"
+                className="group glass-card glass-card-translucent rounded-[1rem] shadow-lg hover:shadow-xl transition-all duration-200 h-full hover:!bg-white/60 dark:hover:!bg-black/60"
                 intensity="subtle"
                 blur={24}
                 saturation={145}
                 luminosity={108}
+                cornerRadius={16}
                 shadowIntensity={0.12}
               >
-                <div className="flex items-start gap-3 px-3 py-4 sm:px-4">
+                <div className="flex items-start gap-3 px-3 py-5 sm:px-4 sm:py-6">
                   <span className="text-2xl leading-none shrink-0">{p.emoji}</span>
                   <span className="min-w-0">
                     <span className="block text-sm font-semibold text-foreground group-hover:text-classic-blue transition-colors">
@@ -142,7 +143,7 @@ export default function Home() {
               { dot: "bg-orange-500", title: "THM prompt audits", desc: "Claude Opus 4.6 and ChatGPT 5.2 reports", date: "13 Feb 2026", href: "/articles" },
             ].map((u, i) => {
               const rowClass =
-                "flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-surface-elevated/40 transition-colors duration-150 group";
+                "flex items-center gap-3 px-4 py-2 rounded-lg hover:!bg-surface-elevated/70 dark:hover:!bg-black/60 transition-colors duration-150 group";
 
               const content = (
                 <>
@@ -1147,7 +1148,15 @@ export default function Home() {
                 kaggle: "https://www.kaggle.com/datasets/korompilias/crisisresolutionscontentclean-goodwaysmodelpure",
               },
             ].map((ds) => (
-              <LiquidGlassCard key={ds.title} className="glass-card rounded-[2rem] overflow-hidden shadow-2xl">
+            <LiquidGlassCard
+              key={ds.title}
+              className="glass-card rounded-[2rem] overflow-hidden shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
                 <div
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 z-[1]"
                   style={{ backgroundImage: `url(${ds.bgImage})` }}
@@ -1182,7 +1191,15 @@ export default function Home() {
               { emoji: "🍟", title: "Smart Bites", desc: "Practical Prompt Engineering", href: "https://smartbites.github.io/" },
               { emoji: "🛡️", title: "Crisis Resolutions", desc: "AI Safety & Risk Management", href: "https://crisisresolutions.github.io/" },
             ].map((g) => (
-              <LiquidGlassCard key={g.title} className="glass-card rounded-[2rem] shadow-2xl">
+              <LiquidGlassCard
+                key={g.title}
+                className="glass-card rounded-[2rem] shadow-2xl"
+                style={{
+                  boxShadow: "var(--glass-card-shadow-lg)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  borderStyle: "solid",
+                }}
+              >
                 <div className="relative z-10 p-4 sm:p-6">
                   <div className="flex items-start space-x-4">
                     <div className="text-5xl sm:text-6xl md:text-7xl">{g.emoji}</div>
@@ -1209,8 +1226,15 @@ export default function Home() {
         {/* Publications */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Publications</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <LiquidGlassCard className="glass-card rounded-[2rem] shadow-2xl">
+          <div className="grid grid-cols-1 gap-6">
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
               <div className="relative z-10 p-4 sm:p-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -1233,7 +1257,14 @@ export default function Home() {
         {/* Experiments */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Experiments</h3>
-          <LiquidGlassCard className="glass-card rounded-[2rem] shadow-2xl">
+          <LiquidGlassCard
+            className="glass-card rounded-[2rem] shadow-2xl"
+            style={{
+              boxShadow: "var(--glass-card-shadow-lg)",
+              border: "1px solid rgba(255, 255, 255, 0.12)",
+              borderStyle: "solid",
+            }}
+          >
             <div className="relative z-10 p-4 sm:p-6">
               <div className="flex items-start space-x-4">
                 <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
@@ -1267,7 +1298,15 @@ export default function Home() {
               { emoji: "🎧", title: "Crisis Resolutions Podcast", desc: "25 episodes exploring crisis resolution methodologies that inform AI safety tools and behavioral alignment.", platform: "Spotify", href: "https://open.spotify.com/show/3iJZE6wfQ4K35xBNyHhSi2?si=b000840ad8834caa", Icon: SpotifyIcon, btnClass: "bg-green-700 hover:bg-green-800" },
               { emoji: "🎓", title: "Crisis Resolutions Training", desc: "Professional and Personal conflict resolution methodologies that inform AI alignment and safety frameworks.", platform: "YouTube", href: "https://www.youtube.com/watch?v=xqYOGclAxA4&list=PLbiBCRZazXRlEuGP5cajZwcUEHlypmzpI", Icon: YouTubeIcon, btnClass: "bg-red-600 hover:bg-red-700" },
             ].map((m) => (
-              <LiquidGlassCard key={m.title} className="glass-card rounded-[2rem] shadow-2xl">
+              <LiquidGlassCard
+                key={m.title}
+                className="glass-card rounded-[2rem] shadow-2xl"
+                style={{
+                  boxShadow: "var(--glass-card-shadow-lg)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  borderStyle: "solid",
+                }}
+              >
                 <div className="relative z-10 p-4 sm:p-6">
                   <div className="flex items-start space-x-4">
                     <div className="text-4xl">{m.emoji}</div>
@@ -1291,7 +1330,14 @@ export default function Home() {
             ))}
 
             {/* Masterclass — full width */}
-            <LiquidGlassCard className="glass-card rounded-[2rem] md:col-span-1 lg:col-span-2 shadow-2xl">
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] md:col-span-1 lg:col-span-2 shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
               <div className="relative z-10 p-4 sm:p-6">
                 <div className="flex items-start space-x-4">
                   <div className="text-4xl">🎨</div>

@@ -130,9 +130,6 @@ export default function RootLayout({
               --text-primary: rgba(0, 0, 0, 0.98);
               --text-secondary: rgba(0, 0, 0, 0.85);
               --text-tertiary: rgba(0, 0, 0, 0.65);
-              --bg-base: #ffffff;
-              --bg-surface: #fafafa;
-              --bg-elevated: #ffffff;
               --border-primary: rgba(0, 0, 0, 0.1);
               --border-secondary: rgba(0, 0, 0, 0.05);
               --link-color: #0056b3;
@@ -142,9 +139,6 @@ export default function RootLayout({
               --text-primary: rgba(255, 255, 255, 0.98);
               --text-secondary: rgba(255, 255, 255, 0.85);
               --text-tertiary: rgba(255, 255, 255, 0.65);
-              --bg-base: #0a0a0a;
-              --bg-surface: #141414;
-              --bg-elevated: #1f1f1f;
               --border-primary: rgba(255, 255, 255, 0.15);
               --border-secondary: rgba(255, 255, 255, 0.08);
               --link-color: #66b3ff;
@@ -279,7 +273,7 @@ export default function RootLayout({
                       href="https://github.com/gyrogovernance"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hidden sm:inline-flex items-center ml-auto mr-2 md:mr-0 bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-classic-blue/50"
+                      className="github-cta-button hidden sm:inline-flex items-center ml-auto mr-2 md:mr-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50"
                       aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
                     >
                       <GitHubIcon className="w-4 h-4 mr-2" />

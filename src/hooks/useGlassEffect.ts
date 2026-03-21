@@ -140,8 +140,9 @@ export const useGlassEffect = ({
     // Physics-based shadows with caustic effects
     const shadows = [
       // Main shadow with distance-based falloff
-      `0 ${8 + displacementScale * 0.5}px ${16 + displacementScale}px rgba(0, 0, 0, ${shadowIntensityValue * 0.3})`,
-      `0 ${2 + displacementScale * 0.2}px ${4 + displacementScale * 0.5}px rgba(0, 0, 0, ${shadowIntensityValue * 0.2})`,
+      `0 ${6 + displacementScale * 0.45}px ${16 + displacementScale * 0.8}px rgba(0, 0, 0, ${Math.min(0.55, shadowIntensityValue * 0.7)})`,
+      `0 ${2 + displacementScale * 0.2}px ${6 + displacementScale * 0.6}px rgba(0, 0, 0, ${Math.min(0.35, shadowIntensityValue * 0.45)})`,
+      `0 0 16px rgba(0, 0, 0, 0.05)`,
       
       // Fresnel-modulated edge highlights
       `inset 0 1px 0 rgba(255, 255, 255, ${(borderOpacityValue + fresnelReflectance) * 0.8})`,
@@ -151,6 +152,7 @@ export const useGlassEffect = ({
       
       // Caustic light spots
       `0 0 ${20 + displacementScale}px rgba(255, 255, 255, ${fresnelReflectance * 0.1})`,
+      `0 0 0 0.3px rgba(0, 0, 0, 0.3)`,
     ];
 
     // Enhanced backdrop filter with chromatic aberration simulation
