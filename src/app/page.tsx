@@ -6,6 +6,8 @@ import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import NotionIcon from "@/components/icons/NotionIcon";
 import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
+import GoogleIcon from "@/components/icons/GoogleIcon";
+import InstagramIcon from "@/components/icons/InstagramIcon";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
 import { getDocStats } from "@/lib/docs-stats";
@@ -56,7 +58,7 @@ export default function Home() {
             { emoji: "✋", title: "The Human Mark", desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation", href: "#thm" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "aQPU Kernel", desc: "Quantum Advantage on standard hardware for verifiable coordination and audit", href: "#aqpu" },
-            { emoji: "🤖", title: "GyroLabe", desc: "Auditable inference bridge and native compute backend", href: "#gyrolabe" },
+            { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Auditable inference bridge and native compute backend", href: "#gyroscopic" },
             { emoji: "🍃", title: "Alignment Infrastructure Routing", desc: "Collective Superintelligence Stack for Human-AI Coordination", href: "#air" },
             { emoji: "💰", title: "Moments Economy", desc: "Capacity based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
@@ -134,12 +136,14 @@ export default function Home() {
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-border/60" />
           </div>
 
-          <div className="space-y-1.5">
+          <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
+              { dot: "bg-cyan-500", title: "Gyroscopic ASI Interoperability", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyrolabe" },
               { dot: "bg-cyan-500", title: "AI Compute Optimizations", desc: "Replaced floating-point math and eliminated expensive overhead.", date: "17 Mar 2026", href: "#aqpu" },
               { dot: "bg-blue-500", title: "aQPU Kernel", desc: "Quantum Advantage: verified uniform mixing and holographic compression", date: "11 Mar 2026", href: "#aqpu" },
               { dot: "bg-green-500", title: "CGM Dataset", desc: "Foundational theory from the Science Lab docs", date: "15 Feb 2026", href: "#cgm" },
-              { dot: "bg-cyan-500", title: "GyroLabe", desc: "Auditable inference bridge", date: "14 Feb 2026", href: "#gyrolabe" },
+              { dot: "bg-cyan-500", title: "GyroLabe", desc: "Auditable inference bridge", date: "14 Feb 2026", href: "#gyroscopic" },
               { dot: "bg-orange-500", title: "THM prompt audits", desc: "Claude Opus 4.6 and ChatGPT 5.2 reports", date: "13 Feb 2026", href: "/articles" },
             ].map((u, i) => {
               const rowClass =
@@ -267,6 +271,65 @@ export default function Home() {
               📚 NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini
             </p>
             </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — GyroGem
+          ================================================================ */}
+      <div id="gyrogem" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-purple rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <Image
+                src="/assets/GyroGem.png"
+                alt="GyroGem AI Safety Agent"
+                width={110}
+                height={110}
+                className="mx-auto mb-4 h-auto w-24 sm:w-28"
+                sizes="(max-width: 640px) 96px, 112px"
+                loading="lazy"
+              />
+              <h2 className="text-3xl font-bold text-foreground mb-3">
+                GyroGem: AI Safety Agent
+              </h2>
+              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
+                Explaining AI and Mitigating Risks of technological illiteracy
+              </p>
+            </div>
+
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 text-center mb-6">
+              <p className="text-sm sm:text-base text-foreground-secondary">
+                GyroGem is a tailored AI safety assistant built on The Human Mark (THM), a framework that maps common AI failure patterns and guides safer choices. It also supports technological literacy, the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and how they affect people and society.
+              </p>
+            </div>
+
+            <p className="text-sm text-foreground-tertiary text-center mb-3">
+              Chat on:
+            </p>
+            <div className="mt-2 flex flex-col sm:flex-row justify-center gap-3">
+              <a
+                href="https://aistudio.instagram.com/ai/969993888957313/?utm_source=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-purple-600 hover:to-pink-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Chat with GyroGem on Instagram (opens in new tab)"
+              >
+                <InstagramIcon className="w-5 h-5 mr-2" />
+                Instagram
+              </a>
+              <a
+                href="https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+                aria-label="Chat with GyroGem on Google Gemini (opens in new tab)"
+              >
+                <GoogleIcon className="w-5 h-5 mr-2" />
+                Google
+              </a>
+            </div>
+          </div>
         </LiquidGlassCard>
       </div>
 
@@ -472,13 +535,13 @@ export default function Home() {
       {/* ================================================================
           HERO CARD — GyroLabe & GyroGraph
           ================================================================ */}
-      <div id="gyrolabe" className="mb-12 animate-fade-in-up">
+      <div id="gyroscopic" className="mb-12 animate-fade-in-up">
         <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] shadow-2xl">
           <div className="relative z-10 p-4 sm:p-6 md:p-8">
             <div className="text-center mb-8">
               <div className="text-6xl mb-4">🤖</div>
               <h2 className="text-3xl font-bold text-foreground mb-2">
-                GyroLabe & GyroGraph
+                Gyroscopic ASI Runtime: GyroLabe & GyroGraph
               </h2>
               <p className="text-lg font-semibold text-foreground-secondary">
                 Auditable Multicellular Quantum AI Runtime for safer deployment.
