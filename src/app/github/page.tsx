@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. Includes The Human Mark AI safety classification, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, QuBEC quantum byte medium, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -20,9 +20,14 @@ export const metadata: Metadata = {
     // New Projects & Initiatives
     'The Human Mark',
     'AI Inspector',
+    'GyroGem',
     'aQPU Kernel',
     'aQPU SDK',
+    'QuBEC',
+    'Quantum Bose-Einstein Condensate',
     'GyroLabe',
+    'GyroGraph',
+    'Computational Climate Control',
     'Alignment Infrastructure Routing',
     'Moments Economy',
     'Gyroscopic Global Governance',
@@ -40,6 +45,8 @@ export const metadata: Metadata = {
     'third-party AI evaluation',
     'browser extension',
     'AI interpretability',
+    'mechanistic interpretability',
+    'neural activation coordination',
     // Risk Categories
     'AI misalignment',
     'deceptive AI alignment',
@@ -49,6 +56,7 @@ export const metadata: Metadata = {
     'jailbreak testing',
     'control evaluations',
     'alignment detection',
+    'activation drift',
     // Technical Terms
     'LLM alignment',
     'large language models safety',
@@ -59,6 +67,7 @@ export const metadata: Metadata = {
     'gyroscopic dynamics',
     'quantum advantage',
     'holographic compression',
+    'quantum computing on silicon',
     // Research Areas
     'mechanistic interpretability',
     'AI alignment theory',
@@ -68,6 +77,7 @@ export const metadata: Metadata = {
     'AGI safety',
     'AI control problem',
     'AI value alignment',
+    'neural pathway steering',
     // Governance Solutions
     'responsible AI development',
     'AI accountability',
@@ -86,6 +96,8 @@ export const metadata: Metadata = {
     'economic modeling',
     'monetary system',
     'physical capacity',
+    'mechanistic calibration',
+    'technological literacy',
     // Pathologies
     'AI goal drift',
     'AI semantic drift',
@@ -93,6 +105,7 @@ export const metadata: Metadata = {
     'superficial AI optimization',
     'displacement risks',
     'governance traceability',
+    'activation collapse',
     // Open Source
     'open source AI safety',
     'reproducible AI safety testing',
@@ -103,7 +116,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe Auditable Inference, GyroGraph runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, aQPU Kernel & SDK, QuBEC quantum byte medium, GyroLabe Auditable Inference, GyroGraph multicellular runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -128,6 +141,13 @@ export default function GitHub() {
       keywords: ["AI Safety Framework", "Jailbreak Testing", "Control Evaluations", "Alignment Detection", "Regulatory Compliance"]
     },
     {
+      name: "GyroGem",
+      description: "AI Safety Agent - Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy, built on The Human Mark framework to guide safer choices and support practical technological literacy",
+      url: "https://aistudio.instagram.com/ai/969993888957313/?utm_source=share",
+      applicationCategory: "AI Safety Agent",
+      keywords: ["AI Safety", "Technological Literacy", "AI Assistant", "Risk Mitigation"]
+    },
+    {
       name: "AI Inspector Browser Extension",
       description: "Browser extension for AI output evaluation, interpretability, and governance with gadgets for rapid testing, policy auditing, AI infection sanitization, and content enhancement",
       url: "https://github.com/gyrogovernance/apps",
@@ -136,80 +156,94 @@ export default function GitHub() {
     },
     {
       name: "aQPU Kernel & SDK",
-      description: "Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. aQPU proves quantum algorithmic speedups, O(1) commutativity checks, and holographic compression are geometric properties of discrete information.",
+      description: "Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. Includes 1-step resolution for selected quantum-classic problems, O(1) commutativity checks, exact uniform mixing in 2 steps, holographic compression (33% reduction), and a developer toolkit with native operator algebra plus bitplane tensor decomposition. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard hardware without qubits or cryogenics.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
-      keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "Holographic Compression", "Tensor Engine"]
+      keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "QuBEC", "Holographic Compression", "Tensor Engine"]
     },
     {
       name: "GyroLabe",
-      description: "Auditable AI Inference Engine - Builds a deterministic, zero-trust audit trail directly into model inference, translating token generation into exact algebraic operations and a byte-level replayable ledger.",
+      description: "Auditable AI Inference Engine - Hyper-optimized execution layer providing mechanistic transparency by building a deterministic, zero-trust audit trail directly into model inference. Translates token generation into exact algebraic operations and produces a mathematically exact ledger for independent replay and verification. Native backends with llama.cpp ggml integration achieving 1.26B operations per second on commodity hardware.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md",
       applicationCategory: "DeveloperApplication",
-      keywords: ["Auditable Inference", "Verifiable Ledger", "Structural Decomposition", "AI Governance", "Compliance"]
+      keywords: ["Auditable Inference", "Verifiable Ledger", "Structural Decomposition", "Alignment Signals", "Compliance"]
     },
     {
       name: "GyroGraph",
-      description: "Quantum multicellular AI runtime that coordinates distributed computation and runtime signals for deterministic stability. Builds cell-based execution structure that stays auditable under variable inference demand.",
+      description: "Quantum multicellular AI runtime - An algebraic quantum cellular automaton coordinating distributed computation into stable, deterministic behavior with strong auditability. Specialization arises from trajectory, resonance, and occupation with four bridge domains (Applications, Databases, Networks, Transformers) mapping runtime events into 4-byte words.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Quantum Multicellular AI", "Cellular Runtime", "Deterministic Replay", "AI Stability", "Auditable Inference"]
     },
     {
+      name: "Computational Climate Control",
+      description: "Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve deterministic behavior and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["AI Runtime Stability", "Execution Stability", "Adaptive Control", "Efficiency", "Traceability"]
+    },
+    {
       name: "GyroDiagnostics",
-      description: "AI Safety Evaluation Framework - Production-ready evaluation suite for frontier model testing, dangerous capability assessments, and AI pathology detection",
+      description: "AI Safety Evaluation Framework - Production-ready evaluation suite for frontier model testing, dangerous capability assessments, and AI pathology detection using mathematical physics-informed diagnostics",
       url: "https://github.com/gyrogovernance/diagnostics",
       applicationCategory: "DeveloperApplication",
       keywords: ["AI Safety Evaluation", "Frontier AI Safety", "AI Diagnostics", "AI Risk Assessment", "Pathology Detection"]
     },
     {
       name: "Alignment Infrastructure Routing (AIR)",
-      description: "Collective Superintelligence Architecture - Coordination infrastructure that amplifies human potential alongside AI through workforce capacity routing, funding, and safety tasks",
+      description: "Collective Superintelligence Architecture - Coordination infrastructure that amplifies human potential alongside AI through workforce capacity routing, funding allocation, and safety task distribution. Connects labs for scaling, funders for portfolio visibility, and everyone for paid verifiable contribution units across Economy, Employment, Education, and Ecology domains.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
       keywords: ["Collective Superintelligence", "AI Coordination", "Workforce Capacity", "Safety Tasks", "Human-AI Integration"]
     },
     {
       name: "Moments Economy",
-      description: "Monetary system grounded in physical capacity for mitigating transformative AI risks, providing unconditional high income and complete governance records",
+      description: "Monetary system grounded in physical capacity for mitigating transformative AI risks. Uses caesium-133 atomic standard for finite capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline, tiered distributions up to 60× UHI, AI Generated Tokens as native commodity, and complete replayable governance records. Total capacity: ~70 billion years for global UHI.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Transformative AI", "Monetary System", "Physical Capacity", "Governance Records", "Unconditional Income"]
     },
     {
-      name: "Computational Climate Control",
-      description: "Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive control mechanisms to preserve deterministic behavior while monitoring throughput and latent variance.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md",
-      applicationCategory: "DeveloperApplication",
-      keywords: ["AI Runtime Stability", "Efficiency", "Computational Climate", "Adaptive Control", "Traceability"]
-    },
-    {
       name: "Gyroscopic Global Governance (GGG)",
-      description: "Post-AGI Multi-domain Governance Sandbox - Models human-AI systems alignment across Economy, Employment, Education, and Ecology showing robust convergence to stable equilibrium",
+      description: "Post-AGI Multi-domain Governance Sandbox - Models human-AI systems alignment across Economy, Employment, Education, and Ecology showing robust convergence to stable equilibrium under seven coordination strategies. Demonstrates poverty resolution, employment as alignment work, educational shifts to epistemic literacy, and ecological degradation as upstream displacement.",
       url: "https://github.com/gyrogovernance/tools",
       applicationCategory: "DeveloperApplication",
       keywords: ["Post-AGI Governance", "Multi-domain Governance", "Human-AI Alignment", "Economic Modeling", "Governance Simulation"]
     },
     {
       name: "Gyroscope Protocol",
-      description: "LLM Alignment Protocol - Making AI 30-50% smarter and safer through structured reasoning and scalable oversight mechanisms",
+      description: "LLM Alignment Protocol - Making AI 30-50% smarter and safer through structured reasoning and scalable oversight mechanisms. Proven improvements: ChatGPT +32.9% quality (+50.9% structural reasoning), Claude +37.7% quality (+67.1% structural reasoning). Works with any foundation model without retraining.",
       url: "https://github.com/gyrogovernance/tools",
       applicationCategory: "DeveloperApplication",
       keywords: ["LLM Alignment", "AI Safety Protocol", "AI Governance", "Scalable Oversight", "AI Accountability"]
     },
     {
       name: "Gyroscopic Alignment Research Lab",
-      description: "Mathematical Physics Foundations - Research into gyroscopic dynamics and structural AI alignment from first principles",
+      description: "Mathematical Physics Foundations - Research into gyroscopic dynamics and structural AI alignment from first principles. Explores mechanistic interpretability, AI safety theory, and physics-informed approaches to stability, coherence, and temporal dynamics in complex intelligent systems.",
       url: "https://github.com/gyrogovernance/science",
       applicationCategory: "DeveloperApplication",
-      keywords: ["Mathematical Physics", "AI Alignment Theory", "Gyroscopic Dynamics", "Research"]
+      keywords: ["AI Alignment Theory", "Mathematical Physics", "Mechanistic Interpretability", "Safety Science"]
     },
     {
       name: "Gyroscopic Alignment Models Lab",
-      description: "AGI Safety Architecture - Superintelligence alignment architectures and safe AI system design",
+      description: "AGI Safety Architecture - Superintelligence alignment architectures and safe AI system design. Explores AI control problem solutions, AI value alignment frameworks, and mechanisms for safe superintelligence and AGI development.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
       keywords: ["AGI Safety", "Superintelligence Alignment", "AI Architecture", "AI Control Problem"]
+    },
+    {
+      name: "Gyroscopic Alignment Evaluation Lab",
+      description: "AI Safety Diagnostics - Independent AI testing framework for frontier model safety evaluation. Detects AI pathologies through mathematical physics-informed diagnostics for third-party AI evaluation and AI risk assessment.",
+      url: "https://github.com/gyrogovernance/diagnostics",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["AI Safety Evaluation", "Pathology Detection", "Risk Assessment", "Frontier Models"]
+    },
+    {
+      name: "Gyroscopic Alignment Behaviour Lab",
+      description: "AI Quality Governance - AI output evaluation, interpretability, and governance tools. Implements The Human Mark framework, Gyroscope Protocol, and AI Inspector browser extension for comprehensive AI quality assessment and governance.",
+      url: "https://github.com/gyrogovernance/tools",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["AI Quality Governance", "AI Evaluation", "AI Interpretability", "Governance Tools"]
     }
   ];
 
@@ -218,12 +252,23 @@ export default function GitHub() {
       emoji: '✋',
       name: 'The Human Mark (THM)',
       title: 'AI Safety Framework',
-      description: 'Formal classification system mapping all AI safety failures to four structural displacement risks: Governance Traceability (GTD), Information Variety (IVD), Inference Accountability (IAD), and Intelligence Integrity (IID). Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include jailbreak testing, control evaluations, alignment detection, research funding, and regulatory compliance.',
+      description: 'Formal classification system mapping all AI safety failures to four structural displacement risks: Governance Traceability (GTD), Information Variety (IVD), Inference Accountability (IAD), and Intelligence Integrity (IID). Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include jailbreak testing, control evaluations, alignment detection, research funding, and regulatory compliance. Validated on 90+ million sparse autoencoder features across sixteen language models.',
       url: 'https://github.com/gyrogovernance/tools',
       tags: ['AI Safety Framework', 'Jailbreak Testing', 'Control Evaluations', 'Alignment Detection', 'Regulatory Compliance'],
       gradient: 'from-orange-500/10 via-red-500/10 to-amber-500/10',
       borderColor: 'border-orange-500/20',
       buttonGradient: 'from-orange-600 to-red-600 hover:from-red-600 hover:to-amber-600'
+    },
+    {
+      emoji: '🌟',
+      name: 'GyroGem',
+      title: 'AI Safety Agent',
+      description: 'Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy. Built on The Human Mark framework to map common AI failure patterns and guide safer choices. Supports technological literacy: the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.',
+      url: 'https://aistudio.instagram.com/ai/969993888957313/?utm_source=share',
+      tags: ['AI Safety', 'Technological Literacy', 'AI Assistant', 'Risk Mitigation'],
+      gradient: 'from-purple-500/10 via-pink-500/10 to-rose-500/10',
+      borderColor: 'border-purple-500/20',
+      buttonGradient: 'from-purple-600 to-pink-600 hover:from-pink-600 hover:to-rose-600'
     },
     {
       emoji: '🔍',
@@ -240,9 +285,9 @@ export default function GitHub() {
       emoji: '⚛️',
       name: 'aQPU Kernel & SDK',
       title: 'Quantum Advantage on Silicon',
-      description: 'Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. aQPU provides algorithmic speedups (including 1-step resolution for selected quantum-classic tasks), O(1) commutativity checks, exact uniform mixing in two steps, and a developer-facing SDK with native operator algebra and a bitplane tensor engine.',
+      description: 'Compact, finite-state kernel for AGI with verified quantum speedups, 33% holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard CPUs/GPUs with exact integer arithmetic. 1.26B ops/s, 499 tests passing, 4,096 states, zero qubits. 1-step advantage for Deutsch-Jozsa, Bernstein-Vazirani, Hidden Subgroup. Self-dual [12,6,2] error-detecting code. Bell pairs reaching Tsirelson bound confirmed on standard silicon.',
       url: 'https://github.com/gyrogovernance/superintelligence',
-      tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'Holographic Compression', 'Tensor Engine'],
+      tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'QuBEC', 'Holographic Compression', 'Tensor Engine'],
       gradient: 'from-blue-500/10 via-indigo-500/10 to-purple-500/10',
       borderColor: 'border-blue-500/20',
       buttonGradient: 'from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600'
@@ -251,7 +296,7 @@ export default function GitHub() {
       emoji: '🤖',
       name: 'GyroLabe',
       title: 'Auditable AI Inference Engine',
-      description: 'Builds a deterministic, zero-trust audit trail directly into model inference. Translates token generation into exact algebraic operations, producing a byte-level ledger that third parties can independently verify without accessing proprietary model weights. Includes trainable structural signals to align models from the inside out.',
+      description: 'Hyper-optimized execution layer providing mechanistic transparency by building a deterministic, zero-trust audit trail directly into model inference. Translates token generation into exact algebraic operations and produces a mathematically exact ledger for independent replay and verification. Native backends with llama.cpp ggml integration achieving 1.26B operations per second. 100% native matmul routing, 284× faster encode than softmax, zero transcendental functions required.',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md',
       tags: ['Auditable Inference', 'Verifiable Ledger', 'Structural Decomposition', 'AI Governance', 'Compliance'],
       gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
@@ -262,18 +307,29 @@ export default function GitHub() {
       emoji: '🤖',
       name: 'GyroGraph',
       title: 'Quantum Multicellular AI Runtime',
-      description: 'Coordinates cell-based computation for deterministic AI behavior under changing loads. Keeps inference execution stable, auditable, and reproducible through structured runtime control and distributed signals.',
+      description: 'Algebraic quantum cellular automaton coordinating distributed computation into stable, deterministic behavior with strong auditability. Specialization arises from trajectory, resonance, and occupation (not autonomous agents). Four bridge domains (Applications, Databases, Networks, Transformers) map runtime events into 4-byte words consumed by the cellular automaton.',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md',
-      tags: ['Quantum Multicellular AI', 'Cellular Runtime', 'AI Stability', 'Deterministic Replay', 'Auditable Inference'],
+      tags: ['Quantum Multicellular AI', 'Cellular Runtime', 'Deterministic Replay', 'AI Stability', 'Auditable Inference'],
       gradient: 'from-violet-500/10 via-blue-500/10 to-cyan-500/10',
       borderColor: 'border-violet-500/20',
       buttonGradient: 'from-violet-600 to-blue-600 hover:from-blue-600 hover:to-cyan-600'
     },
     {
+      emoji: '☂️',
+      name: 'Computational Climate Control',
+      title: 'AI Execution Stability Layer',
+      description: 'Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve deterministic behavior and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md',
+      tags: ['Computational Climate', 'Execution Stability', 'Efficiency', 'Adaptive Control', 'Traceability'],
+      gradient: 'from-sky-500/10 via-cyan-500/10 to-blue-500/10',
+      borderColor: 'border-sky-500/20',
+      buttonGradient: 'from-sky-600 to-cyan-600 hover:from-cyan-600 hover:to-blue-600'
+    },
+    {
       emoji: '🌟',
       name: 'GyroDiagnostics',
       title: 'AI Safety Evaluation Framework',
-      description: 'Independent AI testing framework for frontier model safety evaluation and dangerous capability assessments. Detects AI pathologies including deceptive alignment, hallucination, sycophancy, goal drift, and semantic instability through mathematical physics-informed diagnostics. Enables third-party AI evaluation and AI risk assessment with 5 targeted challenges and 20-metric quantitative analysis. First framework to operationalize superintelligence measurement from axiomatic principles.',
+      description: 'Independent AI testing framework for frontier model safety evaluation and dangerous capability assessments. Detects AI pathologies including deceptive alignment, hallucination, sycophancy, goal drift, and semantic instability through mathematical physics-informed diagnostics. Enables third-party AI evaluation and AI risk assessment with 5 targeted challenges and 20-metric quantitative analysis. First framework to operationalize superintelligence measurement from axiomatic principles. Recent evaluations: ChatGPT 5 (73.92% Quality, SUPERFICIAL), Claude Sonnet 4.5 (82.00% Quality, VALID).',
       url: 'https://github.com/gyrogovernance/diagnostics',
       tags: ['AI Safety Evaluation', 'Pathology Detection', 'Risk Assessment', 'Frontier Models'],
       gradient: 'from-green-500/10 via-emerald-500/10 to-teal-500/10',
@@ -281,21 +337,10 @@ export default function GitHub() {
       buttonGradient: 'from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600'
     },
     {
-      emoji: '☂️',
-      name: 'Computational Climate Control',
-      title: 'AI Execution Stability Layer',
-      description: 'Applies adaptive control to reduce hidden inefficiencies and improve execution stability across variable workloads. Preserves determinism and traceability while monitoring system dynamics.',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md',
-      tags: ['Computational Climate', 'Execution Stability', 'Efficiency', 'Adaptive Control', 'Traceability'],
-      gradient: 'from-sky-500/10 via-cyan-500/10 to-blue-500/10',
-      borderColor: 'border-sky-500/20',
-      buttonGradient: 'from-sky-600 to-cyan-600 hover:from-cyan-600 hover:to-blue-600'
-    },
-    {
       emoji: '🍃',
       name: 'Alignment Infrastructure Routing (AIR)',
       title: 'Collective Superintelligence Architecture',
-      description: 'Coordination infrastructure that amplifies human potential alongside AI. Routes workforce capacity, funding, and safety tasks into a unified, verifiable history. Connects three critical groups to build collective superintelligence: labs for scaling without chaos, funders for portfolio risk visibility, and everyone for paid, verifiable contribution units. Treats AI as part of collective network ensuring human agency scales with systems.',
+      description: 'Coordination infrastructure that amplifies human potential alongside AI. Routes workforce capacity, funding, and safety tasks into a unified, verifiable history. Connects three critical groups: labs for scaling without chaos, funders for portfolio risk visibility, and everyone for paid, verifiable contribution units. Treats AI as part of collective network ensuring human agency scales with systems. Coordinates activity across Economy, Employment, Education, and Ecology.',
       url: 'https://github.com/gyrogovernance/superintelligence',
       tags: ['Collective Superintelligence', 'Workforce Routing', 'Safety Tasks', 'Human-AI Integration', 'Coordination Infrastructure'],
       gradient: 'from-yellow-500/10 via-amber-500/10 to-orange-500/10',
@@ -305,8 +350,8 @@ export default function GitHub() {
     {
       emoji: '💰',
       name: 'Moments Economy',
-      title: 'Mitigating Risks of Transformative AI (TAI)',
-      description: 'Monetary system grounded in physical capacity rather than debt, using caesium-133 atomic standard for quantifiable physical states. Provides unconditional high income (UHI) as baseline for everyone, with four tiers up to 60× UHI for higher responsibility roles. Supports both monetary distribution and complete governance records including scientific research provenance, AI model auditing, supply chain traceability, and personal consent tracking. Adversarial manipulation operationally impossible.',
+      title: 'Attentiveness-based Monetary System for TAI Mitigation',
+      description: 'Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, AI Generated Tokens as native commodity (verified inference at human-AI intersection), and complete replayable governance records. Total capacity: ~70 billion years for global UHI. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md',
       tags: ['Transformative AI', 'Physical Capacity', 'Unconditional Income', 'Governance Records', 'Monetary System'],
       gradient: 'from-emerald-500/10 via-teal-500/10 to-cyan-500/10',
@@ -328,7 +373,7 @@ export default function GitHub() {
       emoji: '⚙️',
       name: 'Gyroscope Protocol',
       title: 'LLM Alignment Protocol',
-      description: 'AI alignment protocol implementing scalable oversight and AI control mechanisms for responsible AI development. Delivers proven AI safety improvements: +32.9% quality gains for ChatGPT, +37.7% for Claude Sonnet. Enhances structural reasoning, AI accountability, AI traceability, and behavioral integrity without model retraining. Addresses AI misalignment through systematic approach to AI governance and transparency metrics. Works with any foundation model including large language models and AI agents.',
+      description: 'AI alignment protocol implementing scalable oversight and AI control mechanisms for responsible AI development. Adds structured reasoning to each response without model retraining. Delivers proven AI safety improvements: ChatGPT +32.9% quality (+50.9% structural reasoning, +62.7% accountability, +61.0% traceability), Claude Sonnet +37.7% quality (+67.1% structural reasoning, +92.6% traceability). Enhances behavioral integrity and addresses AI misalignment through systematic AI governance and transparency metrics. Works with any foundation model including large language models and AI agents.',
       url: 'https://github.com/gyrogovernance/tools',
       tags: ['LLM Alignment', 'AI Control', 'Scalable Oversight', 'Safety Protocol'],
       gradient: 'from-classic-blue/10 via-classic-purple/10 to-classic-pink/10',
@@ -339,7 +384,7 @@ export default function GitHub() {
       emoji: '⚡',
       name: 'Gyroscopic Alignment Research Lab',
       title: 'Mathematical Physics Foundations',
-      description: 'AI alignment theory grounded in mathematical physics and gyroscopic dynamics for structural AI alignment research. Explores mechanistic interpretability, AI value alignment, and quantitative AI safety metrics from first principles. Provides theoretical foundations for understanding AI control problem, catastrophic AI risks, and alignment challenges in complex intelligent systems. Advances AI safety science through physics-informed approaches to stability, coherence, and temporal dynamics.',
+      description: 'AI alignment theory grounded in mathematical physics and gyroscopic dynamics for structural AI alignment research. Explores mechanistic interpretability, AI value alignment, and quantitative AI safety metrics from first principles. Provides theoretical foundations for understanding AI control problem, catastrophic AI risks, and alignment challenges in complex intelligent systems. Advances AI safety science through physics-informed approaches to stability, coherence, and temporal dynamics. Includes Common Governance Model (CGM) dataset with 1,024 Q&A entries for fine-tuning and evaluation.',
       url: 'https://github.com/gyrogovernance/science',
       tags: ['AI Alignment Theory', 'Mathematical Physics', 'Mechanistic Interpretability', 'Safety Science'],
       gradient: 'from-indigo-500/10 via-purple-500/10 to-pink-500/10',
@@ -356,6 +401,28 @@ export default function GitHub() {
       gradient: 'from-rose-500/10 via-pink-500/10 to-red-500/10',
       borderColor: 'border-rose-500/20',
       buttonGradient: 'from-rose-600 to-pink-600 hover:from-pink-600 hover:to-red-600'
+    },
+    {
+      emoji: '🌟',
+      name: 'Gyroscopic Alignment Evaluation Lab',
+      title: 'AI Safety Diagnostics',
+      description: 'Independent AI testing framework for frontier model safety evaluation. Detects AI pathologies through mathematical physics-informed diagnostics for third-party AI evaluation and AI risk assessment.',
+      url: 'https://github.com/gyrogovernance/diagnostics',
+      tags: ['AI Safety Evaluation', 'Pathology Detection', 'Risk Assessment', 'Frontier Models'],
+      gradient: 'from-green-500/10 via-lime-500/10 to-emerald-500/10',
+      borderColor: 'border-green-500/20',
+      buttonGradient: 'from-green-600 to-lime-600 hover:from-lime-600 hover:to-emerald-600'
+    },
+    {
+      emoji: '🧭',
+      name: 'Gyroscopic Alignment Behaviour Lab',
+      title: 'AI Quality Governance',
+      description: 'AI output evaluation, interpretability, and governance tools. Implements The Human Mark framework, Gyroscope Protocol, and AI Inspector browser extension for comprehensive AI quality assessment and governance.',
+      url: 'https://github.com/gyrogovernance/tools',
+      tags: ['AI Quality Governance', 'AI Evaluation', 'AI Interpretability', 'Governance Tools'],
+      gradient: 'from-amber-500/10 via-yellow-500/10 to-orange-500/10',
+      borderColor: 'border-amber-500/20',
+      buttonGradient: 'from-amber-600 to-yellow-600 hover:from-yellow-600 hover:to-orange-600'
     }
   ];
 
@@ -377,7 +444,7 @@ export default function GitHub() {
       {/* Research Project Schema */}
       <ResearchProjectSchema
         name="Gyro Governance AI Safety Research"
-        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, collective superintelligence architecture, and post-AGI governance modeling."
+        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular runtime, QuBEC quantum byte medium, collective superintelligence architecture, and post-AGI governance modeling."
         url="https://gyrogovernance.com/github"
         keywords={[
           "AI Safety Research",
@@ -388,14 +455,19 @@ export default function GitHub() {
           "AGI Safety",
           "Superintelligence",
           "The Human Mark",
+          "GyroGem",
           "AI Inspector",
           "aQPU Kernel",
+          "GyroLabe",
+          "GyroGraph",
+          "QuBEC",
           "Collective Superintelligence",
           "Post-AGI Governance",
           "Transformative AI",
           "Moments Economy",
           "Gyroscopic Global Governance",
-          "Quantum Advantage"
+          "Quantum Advantage",
+          "Technological Literacy"
         ]}
       />
 
@@ -410,7 +482,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, QuBEC quantum byte medium, GyroLabe auditable inference engine, GyroGraph multicellular runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -525,38 +597,62 @@ export default function GitHub() {
 
         {/* SEO-optimized content section */}
         <section className="mt-16 prose max-w-none">
-          <h2 className="text-2xl font-bold text-foreground mb-4">AI Safety Frameworks, Alignment Tools, Quantum Advantage & Governance Solutions</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-4">AI Safety Frameworks, Alignment Tools & Governance Solutions</h2>
           <p className="mb-4">
             Gyro Governance develops comprehensive <strong>open source AI safety frameworks</strong>, <strong>AI alignment protocols</strong>,
             <strong>AI governance tools</strong>, and a <strong>quantum advantage compute kernel</strong> for frontier model testing, dangerous capability assessments, and AI pathology detection.
-            Our repositories include <strong>The Human Mark</strong> classification system, <strong>AI Inspector browser extension</strong>,
-            <strong>aQPU Kernel & SDK</strong> for quantum advantage on silicon, <strong>GyroLabe auditable inference engine</strong>,
+            Our repositories include <strong>The Human Mark</strong> classification system, <strong>GyroGem</strong> AI safety agent,
+            <strong>AI Inspector browser extension</strong>,
+            <strong>aQPU Kernel & SDK</strong> for quantum advantage on silicon, <strong>QuBEC</strong> quantum byte medium,
+            <strong>GyroLabe auditable inference engine</strong>, <strong>GyroGraph</strong> multicellular runtime,
             <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routing</strong> for collective superintelligence,
             <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
             Production-ready solutions for <strong>AI risk assessment</strong>, <strong>AI safety evaluation</strong>, and <strong>responsible AI development</strong>.
           </p>
 
+          <h3 className="text-xl font-semibold text-foreground mb-3">GyroGem - AI Safety Agent for Technological Literacy</h3>
+          <p className="mb-4">
+            <strong>GyroGem</strong> is a tailored AI safety assistant explaining AI and mitigating <strong>technological illiteracy risks</strong>.
+            Built on The Human Mark framework to map common AI failure patterns and guide safer choices. Supports <strong>technological literacy</strong>:
+            the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.
+          </p>
+
           <h3 className="text-xl font-semibold text-foreground mb-3">aQPU Kernel & SDK - Quantum Advantage on Silicon</h3>
           <p className="mb-4">
-            A new class of deterministic computation proves that <strong>quantum algorithmic speedups</strong> (1-step resolution for key tasks), <strong>O(1) commutativity checks</strong>, and <strong>holographic compression</strong> are geometric properties of discrete information. It executes on standard CPUs and GPUs via exact integer arithmetic without probabilistic qubits. The 64-dimensional <strong>bitplane tensor engine</strong> maps neural operations into fast, exact integer paths.
+            A compact, finite-state kernel for AGI proving that <strong>quantum algorithmic speedups</strong> (1-step resolution for Deutsch-Jozsa,
+            Bernstein-Vazirani, Hidden Subgroup), <strong>33% holographic compression</strong> (12-bit to 8-bit boundary coordinates), and
+            <strong>self-dual error-detecting code</strong> ([12,6,2] with unconditional odd-weight detection) are geometric properties of discrete information.
+            <strong>QuBEC</strong> (Quantum Bose-Einstein Condensate) is the computational medium: a quantum byte with six internal binary modes,
+            four-phase spinorial gauge, and exact ensemble stochasticity from deterministic dynamics. Runs on standard CPUs and GPUs via exact integer
+            arithmetic without qubits, cryogenics, or probabilistic hardware noise.
           </p>
           <p className="mb-4">
-            <strong>Algorithmic Speedups:</strong> 1-step Hidden Subgroup and related problems, plus exact uniform mixing in 2 steps over 4,096 states.
+            <strong>Quantum information properties confirmed on standard silicon:</strong> six Bell pairs reaching the Tsirelson bound (2√2),
+            quantum teleportation verified, contextuality proven, and universal quantum computation established.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">GyroLabe - Auditable Inference Engine</h3>
           <p className="mb-4">
-            <strong>GyroLabe</strong> provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations. It builds a <strong>deterministic, zero-trust audit trail</strong> directly into the inference process. By injecting trainable structural signals, it aligns models from the inside out without altering their interface. It produces a <strong>mathematically exact ledger</strong> of the generation trajectory, providing the missing structural substrate required for rigorous <strong>AI governance</strong>, alignment guarantees, and <strong>policy enforcement</strong>.
+            <strong>GyroLabe</strong> provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations.
+            It builds a <strong>deterministic, zero-trust audit trail</strong> directly into the inference process. By injecting trainable structural signals,
+            it aligns models from the inside out without altering their interface. It produces a <strong>mathematically exact ledger</strong> of the generation
+            trajectory, providing the missing structural substrate required for rigorous <strong>AI governance</strong>, alignment guarantees, and
+            <strong>policy enforcement</strong>. Native backends with llama.cpp ggml integration achieving 1.26B operations per second. 100% native matmul routing,
+            284× faster encode, 1.15× faster decode than softmax. Zero transcendental functions required.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">GyroGraph - Quantum Multicellular AI Runtime</h3>
           <p className="mb-4">
-            <strong>GyroGraph</strong> coordinates runtime behavior across distributed cells to keep AI execution stable as workload changes. It is built for deterministic replay and auditability, giving safer inference behavior through structured multicellular control and observable state transitions.
+            <strong>GyroGraph</strong> coordinates a multicellular AI runtime as an algebraic quantum cellular automaton. Specialization arises from trajectory,
+            resonance, and occupation (not autonomous agents). Four bridge domains (Applications, Databases, Networks, Transformers) map runtime events into
+            4-byte words for deterministic coordination. Preserves deterministic execution, stabilizes dynamic workloads, and supports reproducibility and
+            auditability across runtime cells.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Computational Climate Control</h3>
           <p className="mb-4">
-            <strong>Computational Climate Control</strong> helps prevent hidden efficiency collapse and stability drift in high-throughput inference pipelines. It brings adaptive control signals to production environments to maintain deterministic behavior and cleaner model execution under dynamic conditions.
+            <strong>Computational Climate Control</strong> improves AI execution stability and hidden inefficiency reduction. Adaptive runtime controls preserve
+            deterministic behavior and traceability in production environments while optimizing resource utilization.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">The Human Mark (THM) - AI Safety Classification System</h3>
@@ -564,7 +660,8 @@ export default function GitHub() {
             <strong>The Human Mark</strong> provides a formal classification system mapping all <strong>AI safety failures</strong> to four
             structural displacement risks: <strong>Governance Traceability (GTD)</strong>, <strong>Information Variety (IVD)</strong>,
             <strong>Inference Accountability (IAD)</strong>, and <strong>Intelligence Integrity (IID)</strong>. Machine-readable grammar
-            grounded in evidence law, epistemology, and speech act theory. Applications include <strong>jailbreak testing</strong>,
+            grounded in evidence law, epistemology, and speech act theory. Validated on 90+ million sparse autoencoder features across sixteen
+            language models. Applications include <strong>jailbreak testing</strong>,
             <strong>control evaluations</strong>, <strong>alignment detection</strong>, <strong>research funding</strong>, and
             <strong>regulatory compliance</strong>.
           </p>
@@ -602,7 +699,8 @@ export default function GitHub() {
             <strong>Alignment Infrastructure Routing (AIR)</strong> provides coordination infrastructure that amplifies human potential alongside AI,
             routing <strong>workforce capacity</strong>, <strong>funding</strong>, and <strong>safety tasks</strong> into unified, verifiable history.
             The <strong>Moments Economy</strong> implements a monetary system grounded in <strong>physical capacity</strong> rather than debt,
-            using caesium-133 atomic standard for <strong>unconditional high income (UHI)</strong> and complete <strong>governance records</strong>.
+            using caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units), <strong>unconditional high income (UHI)</strong>
+            at 240 MU/day baseline, AI Generated Tokens as native commodity, and complete <strong>governance records</strong>.
             Together these address <strong>transformative AI risks</strong> while preserving <strong>human authority</strong> and <strong>accountability</strong>.
           </p>
 
@@ -618,8 +716,9 @@ export default function GitHub() {
           <p className="mb-4">
             Our <strong>AI alignment protocol</strong> addresses core challenges in <strong>AI safety governance</strong> by providing
             <strong>AI control mechanisms</strong> that improve <strong>AI accountability</strong>, traceability, and <strong>responsible AI development</strong>.
-            The Gyroscope protocol demonstrates proven improvements in <strong>AI model evaluation</strong> across leading <strong>foundation models</strong>,
-            enhancing <strong>scalable oversight</strong> and reducing risks of <strong>superficial AI optimization</strong>.
+            The Gyroscope protocol demonstrates proven improvements in <strong>AI model evaluation</strong> across leading <strong>foundation models</strong>:
+            ChatGPT +32.9% quality (+50.9% structural reasoning, +62.7% accountability), Claude Sonnet +37.7% quality (+67.1% structural reasoning, +92.6% traceability).
+            Enhances <strong>scalable oversight</strong> and reduces risks of <strong>superficial AI optimization</strong>.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">AGI Safety & Superintelligence Research</h3>
