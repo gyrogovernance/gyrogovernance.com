@@ -156,7 +156,7 @@ export default function Home() {
                     <strong className="text-foreground group-hover:text-classic-blue transition-colors">
                       {u.title}
                     </strong>
-                    <span className="text-foreground-tertiary">{" "}{u.desc}</span>
+                    <span className="text-foreground-tertiary"> {" "}{u.desc}</span>
                   </span>
                   <span className="text-[11px] text-foreground-tertiary ml-auto shrink-0 tabular-nums">
                     {u.date}
@@ -165,12 +165,17 @@ export default function Home() {
               );
 
               return u.href.startsWith("/") ? (
-                <Link key={i} href={u.href} className={rowClass}>{content}</Link>
+                <Link key={i} href={u.href} className={rowClass}>
+                  {content}
+                </Link>
               ) : (
-                <a key={i} href={u.href} className={rowClass}>{content}</a>
+                <a key={i} href={u.href} className={rowClass}>
+                  {content}
+                </a>
               );
             })}
-            </div>
+          </div>
+        </div>
       </div>
 
       {/* ================================================================
@@ -419,369 +424,553 @@ export default function Home() {
         </LiquidGlassCard>
       </div>
 
-      {/* ================================================================
-          HERO CARD — aQPU Kernel
-          ================================================================ */}
-      <div id="aqpu" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-4">⚛️</div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">
-                aQPU (algebraic Quantum Processing Unit) Kernel
-              </h2>
-              <p className="text-lg font-semibold text-foreground-secondary">
-                Quantum Advantage on Silicon, bypassing the hardware scaling limits.
-              </p>
-            </div>
+{/* ================================================================
+    HERO CARD — Quantum AGI Ecosystem: aQPU Kernel & QuBEC
+    ================================================================ */}
+<div id="aqpu" className="mb-12 animate-fade-in-up">
+  <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
+    <div className="relative z-10 p-4 sm:p-6 md:p-8">
+      <div className="text-center mb-8">
+        <div className="text-6xl mb-4">⚛️</div>
+        <h2 className="text-3xl font-bold text-foreground mb-2">
+          Quantum AGI Ecosystem: aQPU Kernel &amp; QuBEC
+        </h2>
+        <p className="text-lg font-semibold text-foreground-secondary">
+          Quantum Computing Advantage on Standard Silicon, No Qubits Required
+        </p>
+      </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Hook */}
-              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
-                <p className="text-base sm:text-lg text-foreground-secondary">
-                  The aQPU is a new class of computation. It proves that quantum advantage, holographic compression, and universal operator algebra are fundamental geometric properties of discrete information. It executes deterministically on standard CPUs and GPUs using exact integer arithmetic. <strong>No qubits, no probabilistic noise, no hardware approximations.</strong>
-                </p>
-              </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
+          <p className="text-base sm:text-lg text-foreground-secondary">
+            The aQPU (algebraic Quantum Processing Unit) is a new approach to quantum 
+            computing that runs on standard CPUs and GPUs using exact integer arithmetic. 
+            It solves quantum algorithms in fewer steps than classical computers, compresses 
+            state information through a holographic boundary relation, and detects errors 
+            unconditionally through a self-dual code structure. Every result is an exhaustively 
+            verified integer equality over a 4,096-state space. No quantum hardware, no 
+            cryogenics, no probabilistic noise.
+          </p>
 
-              {/* Algorithmic Speedups */}
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🚀 Algorithmic Speedups</h3>
-                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">⚡</span>
-                    <span><strong>1-Step Resolution:</strong> Natively solves Hidden Subgroup, Deutsch-Jozsa, and Bernstein-Vazirani in exactly 1 step (vs classical up to 64 queries).</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">⏱️</span>
-                    <span><strong>O(1) Commutativity:</strong> Instantly determines structural operation commutativity via native q-map routing without requiring sequential evaluation.</span>
-                  </li>
-                </ul>
-              </div>
+          <div className="flex flex-wrap justify-center gap-3 mt-5">
+            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+              1.26B ops/s
+            </span>
+            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+              499 tests passing
+            </span>
+            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+              4,096 states
+            </span>
+            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+              Zero qubits
+            </span>
+          </div>
+        </div>
 
-              {/* Structural Efficiencies */}
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">🧊 Structural Efficiencies</h3>
-                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="text-indigo-500 mr-2">🎯</span>
-                    <span><strong>Exact Uniform Mixing:</strong> Distributes data across 4,096 states with mathematical perfection in exactly 2 steps (vs standard classical ~12 steps).</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-indigo-500 mr-2">🗜️</span>
-                    <span><strong>Holographic Compression:</strong> The topology itself inherently compresses 12-bit native states into 8-bit boundary coordinates (33% native reduction).</span>
-                  </li>
-                </ul>
-              </div>
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            🚀 Quantum Algorithm Speedups
+          </h3>
+          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-blue-500 mr-2">⚡</span>
+              <span>
+                <strong>1-step quantum algorithms:</strong> Hidden Subgroup, 
+                Deutsch-Jozsa, and Bernstein-Vazirani solved in exactly 1 step 
+                versus up to 64 classical queries.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-500 mr-2">⏱️</span>
+              <span>
+                <strong>2-step exact uniformization:</strong> State distributes 
+                perfectly across all 4,096 reachable states in 2 steps. Classical 
+                random walk needs approximately 12. Entropy goes 0 to 7 to 12 bits 
+                exactly.
+              </span>
+            </li>
+          </ul>
+        </div>
 
-              {/* SDK */}
-              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🧰 Developer SDK and Native Engine</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary mb-4 text-center">
-                  This gives builders a verified path from specification to deployment.
-                </p>
-                <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
-                    SDK Spec
-                  </a>
-                </div>
-              </div>
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            🧊 Quantum Error Detection and Compression
+          </h3>
+          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-indigo-500 mr-2">🗜️</span>
+              <span>
+                <strong>33% holographic compression:</strong> The boundary identity 
+                |H|² = |Ω| compresses 12-bit states into 8-bit boundary coordinates 
+                with exactly uniform multiplicity.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-indigo-500 mr-2">🛡️</span>
+              <span>
+                <strong>Self-dual error detecting code:</strong> 64 masks form a 
+                self-dual [12,6,2] binary linear code. All odd-weight bit errors 
+                detected unconditionally. Every tamper miss algebraically explained.
+              </span>
+            </li>
+          </ul>
+        </div>
 
-              {/* Climate Control */}
-              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🌡️ Computational Climate Control</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary mb-4 text-center">
-                  AI execution stability and hidden inefficiencies reduction.
-                </p>
-                <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Control_Brief.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
-                    Climate Brief
-                  </a>
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/QuBEC_Climate_Theory.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
-                    Climate Theory
-                  </a>
-                  <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button">
-                    Tests Report
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">
+            🌡️ Quantum Verification and Climate Control
+          </h3>
+          <p className="text-sm sm:text-base text-foreground-secondary text-center">
+            Quantum information properties confirmed on standard silicon: six Bell pairs 
+            saturating CHSH at 2√2 (Tsirelson bound), teleportation verified for all 8 
+            correction combinations, Peres-Mermin contextuality proven, and universality 
+            established with 3,729+ distinct operators from random 3-byte words. QuBEC 
+            translates these properties into AI execution by eliminating six floating-point 
+            hazards at model decision surfaces: Transcendental Frost, Division Permafrost, 
+            Distance Freeze, Global Warming, Argmax Drought, and Branch Fog.
+          </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-              <a
-                href="https://github.com/gyrogovernance/superintelligence"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="View aQPU Kernel on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
-              <a
-                href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-                aria-label="Read aQPU Strategic Significance (opens in new tab)"
-              >
-                Strategic Significance
-              </a>
+          <div className="mt-4 flex flex-wrap justify-center gap-2">
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+            >
+              Climate Brief
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Dynamics.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+            >
+              Climate Dynamics
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Transform_Algebra.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+            >
+              Transform Algebra
+            </a>
+            <a
+              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+            >
+              Tests Report
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a
+          href="https://github.com/gyrogovernance/superintelligence"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          aria-label="View the Gyroscopic ASI Ecosystem on GitHub (opens in new tab)"
+        >
+          <GitHubIcon className="w-5 h-5 mr-2" />
+          View on GitHub
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the Strategic Significance brief (opens in new tab)"
+        >
+          Strategic Significance
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the SDK Spec (opens in new tab)"
+        >
+          SDK Spec
+        </a>
+      </div>
+    </div>
+  </LiquidGlassCard>
+</div>
+
+{/* ================================================================
+    HERO CARD — Gyroscopic ASI Runtime: GyroLabe, GyroGraph
+    ================================================================ */}
+<div id="gyroscopic" className="mb-12 animate-fade-in-up">
+  <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] shadow-2xl">
+    <div className="relative z-10 p-4 sm:p-6 md:p-8">
+      <div className="text-center mb-8">
+        <div className="text-6xl mb-4">🤖</div>
+        <h2 className="text-3xl font-bold text-foreground mb-2">
+          Gyroscopic ASI Runtime: GyroLabe, GyroGraph
+        </h2>
+        <p className="text-lg font-semibold text-foreground-secondary">
+          Replacing Softmax with Exact Algebra in Live Language Models
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
+          <p className="text-base sm:text-lg text-foreground-secondary">
+            GyroLabe and GyroGraph replace floating-point decision surfaces in neural 
+            networks with exact integer algebra from our Quantum AGI kernel (aQPU).
+          </p>
+        </div>
+
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            GyroLabe: LLM Inference Bridge
+          </h3>
+          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-cyan-500 mr-2">🎛️</span>
+              <span>
+                <strong>Attention workload governed by one algebraic variable:</strong> M2, 
+                an exact integer from cell histograms requiring zero neural network weights, 
+                controls patch segmentation strictly monotonically. This directly governs O(N²) attention compute and KV-cache memory pressure.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-cyan-500 mr-2">📈</span>
+              <span>
+                <strong>284× faster encode, 1.15× faster decode:</strong> 6-bit chirality 
+                distance replaced cosine similarity. Algebraic q-sector identification 
+                replaced softmax and argmax over a 512-way vocabulary.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            GyroGraph: Multicellular AI Runtime
+          </h3>
+          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-sky-500 mr-2">⚡</span>
+              <span>
+                <strong>Zero transcendental functions confirmed:</strong> On Bolmo-1B, 
+                torch.exp, torch.log, torch.sigmoid, and torch.sqrt were blocked at the 
+                Python level. The model completed encode and decode without triggering any 
+                blocked function, producing coherent English text with no repetition collapse.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-sky-500 mr-2">📜</span>
+              <span>
+                <strong>Quantum cellular automaton at scale:</strong> Cells evolve under the 
+                exact aQPU byte law, consuming real AI traffic at 180 million byte transitions 
+                per second with zero floating point.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center border border-cyan-500/20 bg-cyan-500/5">
+          <p className="text-sm sm:text-base text-foreground-secondary">
+            <strong className="text-foreground">Verified on Qwen3.5-4B Q8_0:</strong>{" "}
+            20,868 native matmul calls · 0 dense fallbacks · 0 parity mismatches · 
+            24,025,928 rows verified against reference.
+          </p>
+          <p className="text-sm sm:text-base text-foreground-secondary mt-2">
+            <strong className="text-foreground">On Bolmo-1B:</strong> 284× faster encode · 
+            1.15× faster decode than softmax · 84,000 tokens/s throughput · OpenCL GPU 
+            active with zero Python fallback.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a
+          href="https://github.com/gyrogovernance/superintelligence"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          aria-label="View the Gyroscopic ASI Runtime on GitHub (opens in new tab)"
+        >
+          <GitHubIcon className="w-5 h-5 mr-2" />
+          View on GitHub
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the GyroLabe specification (opens in new tab)"
+        >
+          GyroLabe Spec
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the GyroGraph specification (opens in new tab)"
+        >
+          GyroGraph Spec
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the Climate Control Report (opens in new tab)"
+        >
+          Climate Control Report
+        </a>
+      </div>
+    </div>
+  </LiquidGlassCard>
+</div>
+
+{/* ================================================================
+    HERO CARD — AIR
+    ================================================================ */}
+<div id="air" className="mb-12 animate-fade-in-up">
+  <LiquidGlassCard className="glass-card glass-card-amber rounded-[2rem] shadow-2xl">
+    <div className="relative z-10 p-4 sm:p-6 md:p-8">
+      <div className="text-center mb-8">
+        <div className="text-6xl mb-4">🍃</div>
+        <h2 className="text-3xl font-bold text-foreground mb-2">
+          Alignment Infrastructure Routing (AIR)
+        </h2>
+        <p className="text-lg font-semibold text-foreground-secondary">
+          AI Safety Work with Verifiable Provenance, No Institutional Affiliation Required
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+          <p className="text-sm sm:text-base text-foreground-secondary">
+            AIR routes human contribution into paid AI safety work with full replayable 
+            provenance. Every contribution is classified by source authority through The 
+            Human Mark (AI Risk Management Framework), mapped to governance capacity through the Gyroscope Protocol (AI Governance Framework), and 
+            recorded as a replayable genealogy through the aQPU (Quantum AGI Kernel). The result is a 
+            work receipt that any party can independently verify. While most AI safety funding 
+            requires institutional access or existing lab relationships, AIR removes that gate.
+          </p>
+        </div>
+
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            For AI Safety Labs
+          </h3>
+          <p className="text-sm sm:text-base text-foreground-secondary">
+            Every contribution leaves a replayable trace that distinguishes histories which 
+            collapse to the same final state. Three certification layers cover final state, 
+            depth-4 frame sequence, and parity commitment. When records diverge, localization 
+            pinpoints the exact frame, verified on 100,000 random words. ISO 42001 and EU AI 
+            Act compliance supported through replay-based audit.
+          </p>
+        </div>
+
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            For AI Safety Funders and Contributors
+          </h3>
+          <p className="text-sm sm:text-base text-foreground-secondary">
+            Funders track what safety outcomes their funding produces without relying on 
+            informal reports. Contributors turn verified safety work into stable value without 
+            institutional affiliation, credentials, or lab access. The Human Mark framework 
+            makes the distinction between Direct human judgment and Indirect AI-processed 
+            sources visible and classifiable at every step, so the basis for every decision 
+            remains legible and contestable.
+          </p>
+        </div>
+
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+          <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+            Four governance capacities map to progression thresholds and funding tiers: 
+            Intelligence Cooperation, Inference Interaction, Information Curation, and 
+            Governance Management. Programme units operate at Daily and Sprint cadences 
+            with genealogical depth tracking.
+          </p>
+
+          <div className="mt-3 pt-3 border-t border-border/30">
+            <p className="text-sm font-semibold text-foreground">
+              Coordinates activity across:
+            </p>
+            <div className="flex flex-wrap gap-2 mt-2">
+              <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+                Economy
+              </span>
+              <span className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-xs font-medium">
+                Employment
+              </span>
+              <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">
+                Education
+              </span>
+              <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+                Ecology
+              </span>
             </div>
           </div>
-        </LiquidGlassCard>
-      </div>
-      </div>
-
-      {/* ================================================================
-          HERO CARD — GyroLabe & GyroGraph
-          ================================================================ */}
-      <div id="gyroscopic" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-4">🤖</div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">
-                Gyroscopic ASI Runtime: GyroLabe & GyroGraph
-              </h2>
-              <p className="text-lg font-semibold text-foreground-secondary">
-                Auditable Multicellular Quantum AI Runtime for safer deployment.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
-                <p className="text-base sm:text-lg text-foreground-secondary">
-                  Current AI safety often depends on checks after the fact. GyroLabe and GyroGraph build a deterministic audit trail for both inference and runtime behavior.
-                </p>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">GyroLabe: Inference Bridge</h3>
-                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="text-cyan-500 mr-2">🔍</span>
-                    <span><strong>Deterministic audit:</strong> Every inference path can be independently replayed from a standard public log.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-500 mr-2">⚖️</span>
-                    <span><strong>Safer operation:</strong> Helps separate model behavior from accidental drift under repeated use.</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">GyroGraph: Quantum Multicellular AI</h3>
-                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="text-sky-500 mr-2">📜</span>
-                    <span><strong>Cell-based runtime:</strong> Coordinates distributed computation signals to stay stable under changing load.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-sky-500 mr-2">🤝</span>
-                    <span><strong>Human-ready safety:</strong> Keeps observable evidence close to every operational decision.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-              <a
-                href="https://github.com/gyrogovernance/superintelligence?tab=readme-ov-file#-gyrolabe-calibration-for-auditable-inference"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="View GyroLabe on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
-              <a
-                href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-                aria-label="Read GyroLabe Specification (opens in new tab)"
-              >
-                GyroLabe Spec
-              </a>
-              <a
-                href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-                aria-label="Read GyroGraph Specification (opens in new tab)"
-              >
-                GyroGraph Spec
-              </a>
-            </div>
-          </div>
-        </LiquidGlassCard>
+        </div>
       </div>
 
-      {/* ================================================================
-          HERO CARD — AIR
-          ================================================================ */}
-      <div id="air" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-amber rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-4">🍃</div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">
-                Alignment Infrastructure Routing (AIR)
-              </h2>
-              <p className="text-lg font-semibold text-foreground-secondary">
-                Collective Superintelligence Architecture
-              </p>
-            </div>
+      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a
+          href="https://github.com/gyrogovernance/superintelligence"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          aria-label="View AIR on GitHub (opens in new tab)"
+        >
+          <GitHubIcon className="w-5 h-5 mr-2" />
+          View on GitHub
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Brief.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the AIR Brief (opens in new tab)"
+        >
+          AIR Brief
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Logistics.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read AIR Logistics (opens in new tab)"
+        >
+          AIR Logistics
+        </a>
+      </div>
+    </div>
+  </LiquidGlassCard>
+</div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">What it is</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary">
-                  A coordination infrastructure that amplifies human potential alongside AI. It routes work, funding, and safety checks into a shared verifiable history.
-                </p>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">What it does</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-                  AIR connects three critical groups to make collaborative governance executable.
-                </p>
-                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="text-yellow-500 mr-2">⚗️</span>
-                    <span><strong className="text-foreground">For Labs:</strong> Keep delivery visible across teams and partners.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-amber-500 mr-2">💼</span>
-                    <span><strong className="text-foreground">For Funders:</strong> Track exactly what safety outcomes are produced.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">👥</span>
-                    <span><strong className="text-foreground">For Everyone:</strong> Turn verified contribution into aligned value.</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">Why it matters</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-                  AI should expand human agency, not replace it. AIR keeps decision quality high even as systems scale.
-                </p>
-                <div className="mt-3 pt-3 border-t border-border/30">
-                  <p className="text-sm font-semibold text-foreground">Coordinates activity across:</p>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">Economy</span>
-                    <span className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-xs font-medium">Employment</span>
-                    <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">Education</span>
-                  <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">Ecology</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 flex justify-center">
-              <a
-                href="https://github.com/gyrogovernance/superintelligence?tab=readme-ov-file#-alignment-infrastructure-routing-air"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="View Alignment Infrastructure Routing on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
-            </div>
-          </div>
-        </LiquidGlassCard>
+{/* ================================================================
+    HERO CARD — Moments Economy
+    ================================================================ */}
+<div id="moments" className="mb-12 animate-fade-in-up">
+  <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
+    <div className="relative z-10 p-4 sm:p-6 md:p-8">
+      <div className="text-center mb-8">
+        <div className="text-6xl mb-4">💰</div>
+        <h2 className="text-3xl font-bold text-foreground mb-2">
+          Moments Economy
+        </h2>
+        <p className="text-lg font-semibold text-foreground-secondary">
+          Mitigating Risks of Transformative AI (TAI)
+        </p>
       </div>
 
-      {/* ================================================================
-          HERO CARD — Moments Economy
-          ================================================================ */}
-      <div id="moments" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-4">💰</div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">
-                Moments Economy
-              </h2>
-              <p className="text-lg font-semibold text-foreground-secondary">
-                Mitigating Risks of Transformative AI (TAI)
-              </p>
-            </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+          <p className="text-sm sm:text-base text-foreground-secondary">
+            The Moments Economy grounds economic settlement in physical coordination 
+            capacity rather than debt. Total supply is derived once from the caesium-133 
+            hyperfine transition frequency and the aQPU Kernel's 4,096-state verification 
+            space, producing a fixed envelope of 7.94 × 10<sup>26</sup> Moment-Units. No 
+            debt issuance, no discretionary monetary policy, no opaque ledger updates. Every 
+            settlement is a replayable, verifiable history. The speed of light cancels 
+            exactly from the derivation, verified to relative error below 10<sup>-14</sup>.
+          </p>
+        </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">💎 What it is</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-                  A monetary system grounded in physical capacity rather than debt. All economic activity is recorded as replayable history that any party can independently verify.
-                </p>
-                <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside">
-                  <li>Uses the caesium-133 atomic standard, the most precise and globally audited method for quantifying distinguishable physical states, to define a finite capacity</li>
-                  <li>Removes the need for central ledger keepers or institutional trust</li>
-                </ul>
-              </div>
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            What it delivers
+          </h3>
+          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-emerald-500 mr-2">👤</span>
+              <span>
+                <strong>Unconditional High Income:</strong> 240 MU per day baseline for 
+                every person with no application or institutional approval required. Four 
+                tiers scale to 60× UHI for governance responsibility, all drawn from the 
+                same fixed envelope.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-teal-500 mr-2">🧠</span>
+              <span>
+                <strong>Quality Human Data, the first live market:</strong> Human 
+                contribution to AI training becomes verifiable and compensated. AI labs 
+                purchase provenance-certified, oversight-structured signal rather than raw 
+                surveillance data. Alignment grading through THM determines the governance 
+                value of each token.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-cyan-500 mr-2">📜</span>
+              <span>
+                <strong>Replayable recordkeeping across every domain:</strong> Research 
+                provenance, AI model auditing, supply chain traceability, and personal 
+                consent tracking, all independently verifiable by anyone running a conforming 
+                aQPU implementation.
+              </span>
+            </li>
+          </ul>
+        </div>
 
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">🔄 Dual-function capacity</h3>
-                <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-                  Supports both monetary distribution and complete governance records:
-                </p>
-                <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-4">
-                  <li><strong>Monetary:</strong> Unconditional High Income (UHI) as baseline for everyone, with four tiers up to <span className="font-bold text-emerald-500">60× UHI</span> for roles of wider scope and higher responsibility</li>
-                  <li><strong>Recordkeeping:</strong> Scientific research provenance, AI model auditing, supply chain traceability, personal consent tracking</li>
-                </ul>
-                <div className="mt-4 pt-4 border-t border-border/30 bg-emerald-500/5 rounded-lg p-3">
-                  <p className="text-sm text-foreground-secondary mb-2">
-                    <strong className="text-foreground">Scale and Security:</strong>
-                  </p>
-                  <ul className="text-xs sm:text-sm text-foreground-secondary space-y-1 list-none">
-                    <li>• Total capacity: <span className="font-bold text-emerald-500">~70 billion years</span> for global UHI</li>
-                    <li>• With tiered distributions: <span className="font-bold text-teal-500">47+ billion years</span> coverage</li>
-                    <li>• Adversarial manipulation: <span className="font-semibold text-cyan-500">operationally impossible</span></li>
-                  </ul>
-                </div>
-              </div>
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            TAI Risk Mitigation at Scale
+          </h3>
+          <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+            Global UHI supported for approximately 1.12 trillion years. Annual usage is 
+            8.93 × 10<sup>-11</sup>% of total capacity. An adversary would need to issue 
+            11.2 billion times the global annual UHI to consume 1% of the envelope. All 
+            realistic tier scenarios exceed 100 billion years of coverage.
+          </p>
 
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">🌟 Why this matters</h3>
-                <ul className="text-sm sm:text-base text-foreground-secondary space-y-3 list-none">
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">👤</span>
-                    <span><strong className="text-foreground">For individuals:</strong> Guaranteed baseline income with tiered distributions, delivered through verifiable records rather than debt-based issuance.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2">🏛️</span>
-                    <span><strong className="text-foreground">For policymakers:</strong> Issuance limits based on explicit physical assumptions. Parameters can be inspected and revised through governance.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-500 mr-2">🏢</span>
-                    <span><strong className="text-foreground">For institutions:</strong> Distributions through replayable records reduce reliance on custodians and retrospective disputes.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-500 mr-2">🛡️</span>
-                    <span><strong className="text-foreground">For AI safety:</strong> Preserves human authority, traceability, and accountability as AI agents contribute to decisions.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 flex justify-center">
-              <a
-                href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="Read the Moments Economy specification on GitHub (opens in new tab)"
-              >
-                Read the specification
-              </a>
-            </div>
-          </div>
-        </LiquidGlassCard>
+          <p className="text-sm sm:text-base text-foreground-secondary">
+            Capacity is materialized, not issued. A governed event inhabits part of the 
+            fixed envelope and leaves a replayable trace. AI Generated Tokens preserve 
+            human authority and traceability as AI agents participate in economic decisions. 
+            Issuance limits are grounded in explicit physical assumptions, inspectable and 
+            revisable through governance. For individuals, the baseline income floor becomes 
+            administratively feasible without inflation or debt accumulation.
+          </p>
+        </div>
       </div>
+
+      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Whitepaper.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          aria-label="Read the Moments Economy Whitepaper (opens in new tab)"
+        >
+          Read the Whitepaper
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Read the Moments Economy specification (opens in new tab)"
+        >
+          Specification
+        </a>
+        <a
+          href="https://github.com/gyrogovernance/superintelligence"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="View Moments Economy on GitHub (opens in new tab)"
+        >
+          <GitHubIcon className="w-5 h-5 mr-2" />
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </LiquidGlassCard>
+</div>
 
       {/* ================================================================
           HERO CARD — GGG Simulator
