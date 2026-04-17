@@ -448,16 +448,16 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mt-5">
-            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+            <span className="px-4 py-1.5 bg-blue-900/6 dark:bg-blue-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium">
               1.26B ops/s
             </span>
-            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+            <span className="px-4 py-1.5 bg-blue-900/6 dark:bg-blue-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium">
               499 tests passing
             </span>
-            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+            <span className="px-4 py-1.5 bg-blue-900/6 dark:bg-blue-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium">
               4,096 states
             </span>
-            <span className="px-4 py-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium">
+            <span className="px-4 py-1.5 bg-blue-900/6 dark:bg-blue-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium">
               Zero qubits
             </span>
           </div>
@@ -465,7 +465,7 @@ export default function Home() {
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            🚀 Computational Speedups
+            🚀 Speedups
           </h3>
           <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
@@ -487,7 +487,7 @@ export default function Home() {
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            🧊 Holographic & Quantum Advantages
+            🧊 Features
           </h3>
           <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
@@ -608,44 +608,53 @@ export default function Home() {
           Gyroscopic ASI Runtime: GyroLabe, GyroGraph
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
-          Replacing Softmax with Exact Algebra in Live Language Models
+          Intelligence-Agnostic Meta-Computing
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
           <p className="text-sm sm:text-base text-foreground-secondary text-left">
-            An Artificial Superintelligence (ASI) runtime needs a foundation that is
-            fast, exact, and structurally governable. GyroLabe and GyroGraph build
-            this foundation by replacing the slow, approximate, and opaque
-            floating-point operations at the heart of today's language models with
-            the exact algebraic kinematics of our aQPU kernel.
+            Gyroscopic ASI is an infrastructure for multi-domain network
+            coordination that establishes the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans
+            and machines. Intelligence lives in live occupation and resonance,
+            not frozen weights. GyroLabe and GyroGraph are its execution and multicellular layers, composing
+            the a quantum algorithmic kernel(aQPU) into a universal computational condenser.
           </p>
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            GyroLabe: Real-Time Governance
+          <h3 className="text-lg sm:text-xl font-bold text-foreground">
+            GyroLabe: 
           </h3>
+          <p className="text-lg sm:text-xl font-bold text-foreground-secondary mb-3 font-bold">
+            Hyper-Optimized Execution Layer
+          </p>
           <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-            GyroLabe provides the bridge to intercept and replace core LLM
-            operations with exact, governable algebra.
+            The substitutional bridge that upgrades neural models by swapping
+            their internal engine.
           </p>
           <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
-              <span className="mr-2">🎛️</span>
+              <span className="mr-2">⚙️</span>
               <span>
-                <strong>Govern LLM Compute in Real Time:</strong> A single algebraic
-                variable from the runtime, not a learned weight, now governs the
-                model's most expensive O(N²) attention workload.
+                <strong>Substitutional, not supervisory:</strong> Intercepts
+                decision surfaces.
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-2">📈</span>
+              <span className="mr-2">🔧</span>
               <span>
-                <strong>Replace Softmax & Cosine Similarity:</strong> Enjoy a 284×
-                faster encode metric and a 1.15× faster decode step, all while
-                eliminating expensive floating-point math.
+                <strong>Native backends:</strong> C/C++ execution
+                with llama.cpp ggml integration, achieving 1.26B exact
+                operations per second on commodity hardware.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-2">📊</span>
+              <span>
+                <strong>Structured operator analysis:</strong> Classifies any
+                learnable structure into native algebraic operators.
               </span>
             </li>
           </ul>
@@ -653,43 +662,41 @@ export default function Home() {
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            GyroGraph: Verifiable Execution
+            GyroGraph: 
+            <p className="text-lg sm:text-xl font-bold text-foreground-secondary mb-3 font-bold">
+            Multicellular Quantum AI
+          </p>
           </h3>
           <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-            GyroGraph is the multicellular runtime that provides structural
-            observability and verifiable proof of execution.
+            An Algebraic Quantum Cellular Automaton where cells evolve under the
+            Gyroscopic Byte Formalism.
           </p>
           <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
-              <span className="mr-2">⚡</span>
+              <span className="mr-2">🧬</span>
               <span>
-                <strong>Verifiable Execution:</strong> On a live 1B model,{' '}
-                <code>torch.exp, sqrt, log, and sigmoid</code> were blocked. The
-                model still produced coherent text, proving the replacement is
-                complete.
+                <strong>A coordination network: </strong> 
+                Specialization arises from trajectory, resonance, and occupation, not autonomous agents. 
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-2">📜</span>
+              <span className="mr-2">🔗</span>
               <span>
-                <strong>Multicellular Runtime:</strong> Operates as a quantum
-                cellular automaton, consuming AI traffic at 180M byte
-                transitions/sec with zero floating-point approximation.
+                <strong>Four bridge domains:</strong> Applications, Databases,
+                Networks, and Transformers, each mapping runtime events into
+                4-byte words consumed by the cellular automaton.
               </span>
             </li>
           </ul>
         </div>
 
-        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center border border-cyan-500/20 bg-cyan-500/5">
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-left border border-cyan-500/20 bg-cyan-500/5">
           <p className="text-sm sm:text-base text-foreground-secondary">
-            <strong className="text-foreground">Verified on Qwen3.5-4B Q8_0:</strong>{' '}
-            20,868 native matmul calls · 0 dense fallbacks · 0 parity mismatches ·
-            24M rows verified.
-          </p>
-          <p className="text-sm sm:text-base text-foreground-secondary mt-2">
-            <strong className="text-foreground">On Bolmo-1B:</strong> 284× faster
-            encode · 1.15× faster decode than softmax · 84,000 tokens/s
-            throughput · OpenCL GPU active.
+            <strong className="text-foreground">Verified:</strong> 100% native
+            matmul routing on quantized models with zero
+            parity mismatches. 284× faster encode, 1.15× faster
+            decode than softmax. Zero transcendental
+            functions required for coherent text generation.
           </p>
         </div>
       </div>
@@ -825,16 +832,16 @@ export default function Home() {
             governance at scale across society's core domains.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+            <span className="px-3 py-1 bg-red-600/10 dark:bg-red-900/40 text-red-600 dark:text-red-300 rounded-full text-xs font-medium">
               Economy
             </span>
-            <span className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-xs font-medium">
+              <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
               Employment
             </span>
-            <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">
+            <span className="px-3 py-1 bg-blue-600/10 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 rounded-full text-xs font-medium">
               Education
             </span>
-            <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+            <span className="px-3 py-1 bg-green-600/10 dark:bg-green-900/40 text-green-600 dark:text-green-300 rounded-full text-xs font-medium">
               Ecology
             </span>
           </div>
