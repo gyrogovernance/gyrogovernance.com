@@ -57,10 +57,10 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation", href: "#thm" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
-            { emoji: "⚛️", title: "aQPU Kernel", desc: "Quantum Advantage on standard hardware for verifiable coordination and audit", href: "#aqpu" },
-            { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Auditable inference bridge and native compute backend", href: "#gyroscopic" },
-            { emoji: "🍃", title: "Alignment Infrastructure Routing", desc: "Collective Superintelligence Stack for Human-AI Coordination", href: "#air" },
-            { emoji: "💰", title: "Moments Economy", desc: "Capacity based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
+            { emoji: "⚛️", title: "Quantum AGI Infrastructure: aQPU Kernel", desc: "Quantum Advantage on standard hardware for verifiable coordination and audit", href: "#aqpu" },
+            { emoji: "🤖", title: "Gyroscopic ASI Runtime: GyroLabe, GyroGraph", desc: "Auditable inference bridge and native compute backend", href: "#gyroscopic" },
+            { emoji: "🍃", title: "Alignment Infrastructure Routing", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
+            { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
           ].map((p) => (
@@ -424,8 +424,9 @@ export default function Home() {
         </LiquidGlassCard>
       </div>
 
+
 {/* ================================================================
-    HERO CARD — Quantum AGI Ecosystem: aQPU Kernel & QuBEC
+    HERO CARD — Quantum AGI Infrastructure: aQPU Kernel & QuBEC
     ================================================================ */}
 <div id="aqpu" className="mb-12 animate-fade-in-up">
   <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
@@ -433,23 +434,17 @@ export default function Home() {
       <div className="text-center mb-8">
         <div className="text-6xl mb-4">⚛️</div>
         <h2 className="text-3xl font-bold text-foreground mb-2">
-          Quantum AGI Ecosystem: aQPU Kernel &amp; QuBEC
+          Quantum AGI Infrastructure: aQPU Kernel
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
-          Quantum Computing Advantage on Standard Silicon, No Qubits Required
+          Quantum Computing Advantage on Standard Silicon
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
           <p className="text-base sm:text-lg text-foreground-secondary">
-            The aQPU (algebraic Quantum Processing Unit) is a new approach to quantum 
-            computing that runs on standard CPUs and GPUs using exact integer arithmetic. 
-            It solves quantum algorithms in fewer steps than classical computers, compresses 
-            state information through a holographic boundary relation, and detects errors 
-            unconditionally through a self-dual code structure. Every result is an exhaustively 
-            verified integer equality over a 4,096-state space. No quantum hardware, no 
-            cryogenics, no probabilistic noise.
+          The aQPU (algebraic Quantum Processing Unit) is a Compact and Finite-State Kernel for Artificial General Intelligence (AGI) with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is its Bose–Einstein byte medium, turning deterministic byte dynamics into exact ensemble stochasticity for stable AI execution on standard silicon.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mt-5">
@@ -470,24 +465,21 @@ export default function Home() {
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            🚀 Quantum Algorithm Speedups
+            🚀 Computational Speedups
           </h3>
           <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
               <span className="text-blue-500 mr-2">⚡</span>
               <span>
-                <strong>1-step quantum algorithms:</strong> Hidden Subgroup, 
-                Deutsch-Jozsa, and Bernstein-Vazirani solved in exactly 1 step 
+                <strong>1-step advantage:</strong> Hidden Subgroup,
+                Deutsch-Jozsa, and Bernstein-Vazirani solved in exactly 1 step
                 versus up to 64 classical queries.
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-blue-500 mr-2">⏱️</span>
               <span>
-                <strong>2-step exact uniformization:</strong> State distributes 
-                perfectly across all 4,096 reachable states in 2 steps. Classical 
-                random walk needs approximately 12. Entropy goes 0 to 7 to 12 bits 
-                exactly.
+                <strong>2-step exactness:</strong> Exact uniformization across all reachable states in 2 steps, while a classical random walk needs approximately 12.
               </span>
             </li>
           </ul>
@@ -495,22 +487,22 @@ export default function Home() {
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            🧊 Quantum Error Detection and Compression
+            🧊 Holographic & Quantum Advantages
           </h3>
           <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
               <span className="text-indigo-500 mr-2">🗜️</span>
               <span>
-                <strong>33% holographic compression:</strong> The boundary identity 
-                |H|² = |Ω| compresses 12-bit states into 8-bit boundary coordinates 
+                <strong>33% holographic compression:</strong> The boundary identity
+                |H|² = |Ω| compresses 12-bit states into 8-bit boundary coordinates
                 with exactly uniform multiplicity.
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-indigo-500 mr-2">🛡️</span>
               <span>
-                <strong>Self-dual error detecting code:</strong> 64 masks form a 
-                self-dual [12,6,2] binary linear code. All odd-weight bit errors 
+                <strong>Self-dual error detecting code:</strong> 64 masks form a
+                self-dual [12,6,2] binary linear code. All odd-weight bit errors
                 detected unconditionally. Every tamper miss algebraically explained.
               </span>
             </li>
@@ -519,16 +511,18 @@ export default function Home() {
 
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">
-            🌡️ Quantum Verification and Climate Control
+            🌡️ Computational Medium
           </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary text-center">
-            Quantum information properties confirmed on standard silicon: six Bell pairs 
-            saturating CHSH at 2√2 (Tsirelson bound), teleportation verified for all 8 
-            correction combinations, Peres-Mermin contextuality proven, and universality 
-            established with 3,729+ distinct operators from random 3-byte words. QuBEC 
-            translates these properties into AI execution by eliminating six floating-point 
-            hazards at model decision surfaces: Transcendental Frost, Division Permafrost, 
-            Distance Freeze, Global Warming, Argmax Drought, and Branch Fog.
+          <p className="text-sm sm:text-base text-foreground-secondary text-left mb-4">
+          <strong>QuBEC (Quantum Bose-Einstein Condensate)</strong> is a quantum byte medium: a condensed
+          computational state with six internal binary orientation modes (dipoles), a four-phase
+          spinorial gauge structure, and exact ensemble stochasticity induced by
+          deterministic byte dynamics. Together they replace costly continuous
+          approximation with exact integer algebra on standard CPUs and GPUs, without
+          qubits, cryogenics, or probabilistic hardware noise.
+          </p>
+          <p className="text-sm sm:text-base text-foreground-secondary text-left">
+            <strong>Quantum information properties are confirmed on standard silicon: six Bell pairs reaching the Tsirelson bound (2√2), quantum teleportation verified, contextuality proven, and universal quantum computation established.</strong>
           </p>
 
           <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -574,7 +568,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-          aria-label="View the Gyroscopic ASI Ecosystem on GitHub (opens in new tab)"
+          aria-label="View the Gyroscopic ASI Infrastructure on GitHub (opens in new tab)"
         >
           <GitHubIcon className="w-5 h-5 mr-2" />
           View on GitHub
@@ -619,32 +613,39 @@ export default function Home() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
-          <p className="text-base sm:text-lg text-foreground-secondary">
-            GyroLabe and GyroGraph replace floating-point decision surfaces in neural 
-            networks with exact integer algebra from our Quantum AGI kernel (aQPU).
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+          <p className="text-sm sm:text-base text-foreground-secondary text-left">
+            An Artificial Superintelligence (ASI) runtime needs a foundation that is
+            fast, exact, and structurally governable. GyroLabe and GyroGraph build
+            this foundation by replacing the slow, approximate, and opaque
+            floating-point operations at the heart of today's language models with
+            the exact algebraic kinematics of our aQPU kernel.
           </p>
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            GyroLabe: LLM Inference Bridge
+            GyroLabe: Real-Time Governance
           </h3>
-          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+          <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+            GyroLabe provides the bridge to intercept and replace core LLM
+            operations with exact, governable algebra.
+          </p>
+          <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
-              <span className="text-cyan-500 mr-2">🎛️</span>
+              <span className="mr-2">🎛️</span>
               <span>
-                <strong>Attention workload governed by one algebraic variable:</strong> M2, 
-                an exact integer from cell histograms requiring zero neural network weights, 
-                controls patch segmentation strictly monotonically. This directly governs O(N²) attention compute and KV-cache memory pressure.
+                <strong>Govern LLM Compute in Real Time:</strong> A single algebraic
+                variable from the runtime, not a learned weight, now governs the
+                model's most expensive O(N²) attention workload.
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-cyan-500 mr-2">📈</span>
+              <span className="mr-2">📈</span>
               <span>
-                <strong>284× faster encode, 1.15× faster decode:</strong> 6-bit chirality 
-                distance replaced cosine similarity. Algebraic q-sector identification 
-                replaced softmax and argmax over a 512-way vocabulary.
+                <strong>Replace Softmax & Cosine Similarity:</strong> Enjoy a 284×
+                faster encode metric and a 1.15× faster decode step, all while
+                eliminating expensive floating-point math.
               </span>
             </li>
           </ul>
@@ -652,24 +653,28 @@ export default function Home() {
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            GyroGraph: Multicellular AI Runtime
+            GyroGraph: Verifiable Execution
           </h3>
-          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+          <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+            GyroGraph is the multicellular runtime that provides structural
+            observability and verifiable proof of execution.
+          </p>
+          <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
-              <span className="text-sky-500 mr-2">⚡</span>
+              <span className="mr-2">⚡</span>
               <span>
-                <strong>Zero transcendental functions confirmed:</strong> On Bolmo-1B, 
-                torch.exp, torch.log, torch.sigmoid, and torch.sqrt were blocked at the 
-                Python level. The model completed encode and decode without triggering any 
-                blocked function, producing coherent English text with no repetition collapse.
+                <strong>Verifiable Execution:</strong> On a live 1B model,{' '}
+                <code>torch.exp, sqrt, log, and sigmoid</code> were blocked. The
+                model still produced coherent text, proving the replacement is
+                complete.
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-sky-500 mr-2">📜</span>
+              <span className="mr-2">📜</span>
               <span>
-                <strong>Quantum cellular automaton at scale:</strong> Cells evolve under the 
-                exact aQPU byte law, consuming real AI traffic at 180 million byte transitions 
-                per second with zero floating point.
+                <strong>Multicellular Runtime:</strong> Operates as a quantum
+                cellular automaton, consuming AI traffic at 180M byte
+                transitions/sec with zero floating-point approximation.
               </span>
             </li>
           </ul>
@@ -677,14 +682,14 @@ export default function Home() {
 
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center border border-cyan-500/20 bg-cyan-500/5">
           <p className="text-sm sm:text-base text-foreground-secondary">
-            <strong className="text-foreground">Verified on Qwen3.5-4B Q8_0:</strong>{" "}
-            20,868 native matmul calls · 0 dense fallbacks · 0 parity mismatches · 
-            24,025,928 rows verified against reference.
+            <strong className="text-foreground">Verified on Qwen3.5-4B Q8_0:</strong>{' '}
+            20,868 native matmul calls · 0 dense fallbacks · 0 parity mismatches ·
+            24M rows verified.
           </p>
           <p className="text-sm sm:text-base text-foreground-secondary mt-2">
-            <strong className="text-foreground">On Bolmo-1B:</strong> 284× faster encode · 
-            1.15× faster decode than softmax · 84,000 tokens/s throughput · OpenCL GPU 
-            active with zero Python fallback.
+            <strong className="text-foreground">On Bolmo-1B:</strong> 284× faster
+            encode · 1.15× faster decode than softmax · 84,000 tokens/s
+            throughput · OpenCL GPU active.
           </p>
         </div>
       </div>
@@ -744,75 +749,94 @@ export default function Home() {
           Alignment Infrastructure Routing (AIR)
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
-          AI Safety Work with Verifiable Provenance, No Institutional Affiliation Required
+          AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-          <p className="text-sm sm:text-base text-foreground-secondary">
-            AIR routes human contribution into paid AI safety work with full replayable 
-            provenance. Every contribution is classified by source authority through The 
-            Human Mark (AI Risk Management Framework), mapped to governance capacity through the Gyroscope Protocol (AI Governance Framework), and 
-            recorded as a replayable genealogy through the aQPU (Quantum AGI Kernel). The result is a 
-            work receipt that any party can independently verify. While most AI safety funding 
-            requires institutional access or existing lab relationships, AIR removes that gate.
+          <p className="text-sm sm:text-base text-foreground-secondary text-left">
+            AIR provides a direct path for anyone to contribute to AI safety, routing
+            human capacity into paid work with full replayable provenance. It uses The
+            Human Mark for risk management, the Gyroscope Protocol for governance,
+            and the aQPU kernel for verifiable proof of work. While most AI safety
+            funding requires institutional access or lab relationships, AIR removes
+            that gate.
           </p>
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            For AI Safety Labs
+            For AI Safety Contributors
           </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary">
-            Every contribution leaves a replayable trace that distinguishes histories which 
-            collapse to the same final state. Three certification layers cover final state, 
-            depth-4 frame sequence, and parity commitment. When records diverge, localization 
-            pinpoints the exact frame, verified on 100,000 random words. ISO 42001 and EU AI 
-            Act compliance supported through replay-based audit.
+          <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+            Turn verified safety work into stable value. Your contributions map to four governance capacities, which act as a career ladder to unlock higher funding tiers:
           </p>
+          <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="mr-2">🤝</span>
+              <span>Intelligence Cooperation</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-2">🧩</span>
+              <span>Inference Interaction</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-2">📚</span>
+              <span>Information Curation</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-2">🧭</span>
+              <span>Governance Management</span>
+            </li>
+          </ul>
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            For AI Safety Funders and Contributors
+            For Labs & Funders
           </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary">
-            Funders track what safety outcomes their funding produces without relying on 
-            informal reports. Contributors turn verified safety work into stable value without 
-            institutional affiliation, credentials, or lab access. The Human Mark framework 
-            makes the distinction between Direct human judgment and Indirect AI-processed 
-            sources visible and classifiable at every step, so the basis for every decision 
-            remains legible and contestable.
+          <p className="text-sm sm:text-base text-foreground-secondary mb-3">
+            Ensure accountability and verifiable outcomes across your programs and
+            investments.
           </p>
+          <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="mr-2">📜</span>
+              <span>
+                <strong>Verifiable Outcomes:</strong> Evaluate your funding portfolio with transparent risk management and clear diversification across safety work.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-2">🏛️</span>
+              <span>
+                <strong>Auditable Compliance:</strong> Replayable traceability, human oversight, and source classification demonstrable for ISO 42001 and AI Legislation contexts.
+              </span>
+            </li>
+          </ul>
         </div>
 
-        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+            A Coordination Stack for Society
+          </h3>
           <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            Four governance capacities map to progression thresholds and funding tiers: 
-            Intelligence Cooperation, Inference Interaction, Information Curation, and 
-            Governance Management. Programme units operate at Daily and Sprint cadences 
-            with genealogical depth tracking.
+            AIR is not just for AI safety; it provides a logistical backbone for
+            governance at scale across society's core domains.
           </p>
-
-          <div className="mt-3 pt-3 border-t border-border/30">
-            <p className="text-sm font-semibold text-foreground">
-              Coordinates activity across:
-            </p>
-            <div className="flex flex-wrap gap-2 mt-2">
-              <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
-                Economy
-              </span>
-              <span className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-xs font-medium">
-                Employment
-              </span>
-              <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">
-                Education
-              </span>
-              <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
-                Ecology
-              </span>
-            </div>
+          <div className="flex flex-wrap justify-center gap-2">
+            <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+              Economy
+            </span>
+            <span className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-xs font-medium">
+              Employment
+            </span>
+            <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-xs font-medium">
+              Education
+            </span>
+            <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+              Ecology
+            </span>
           </div>
         </div>
       </div>
@@ -869,48 +893,52 @@ export default function Home() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-          <p className="text-sm sm:text-base text-foreground-secondary">
-            The Moments Economy grounds economic settlement in physical coordination 
-            capacity rather than debt. Total supply is derived once from the caesium-133 
-            hyperfine transition frequency and the aQPU Kernel's 4,096-state verification 
-            space, producing a fixed envelope of 7.94 × 10<sup>26</sup> Moment-Units. No 
-            debt issuance, no discretionary monetary policy, no opaque ledger updates. Every 
-            settlement is a replayable, verifiable history. The speed of light cancels 
-            exactly from the derivation, verified to relative error below 10<sup>-14</sup>.
+          <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+            <strong>The Moments Economy is a civil governance framework where coordination
+            capacity is not artificially scarce but physically abundant and verifiable.</strong> 
+            </p>
+            <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+            Its total
+            settlement envelope is derived from first principles, anchored in the atomic standard of the SI second, and the verifiable state-space of its Quantum Kernel (aQPU), yielding a fixed
+            capacity of 7.94 × 10<sup>26</sup> Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value). 
+            </p>
+            <p className="text-sm sm:text-base text-foreground-secondary">
+            Its native commodity is the AI Generated Token: a verified inference event from the
+            intersection of human experience and AI processing. No debt issuance, no
+            discretionary monetary policy. Every settlement is a replayable,
+            verifiable history.
           </p>
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            What it delivers
+            From Attention Extraction to Attentiveness
           </h3>
           <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
               <span className="text-emerald-500 mr-2">👤</span>
               <span>
-                <strong>Unconditional High Income:</strong> 240 MU per day baseline for 
-                every person with no application or institutional approval required. Four 
-                tiers scale to 60× UHI for governance responsibility, all drawn from the 
-                same fixed envelope.
+                <strong>Unconditional High Income:</strong> A baseline of 240 MU
+                per day for every person, flowing from verified participation in
+                the genealogical record, not institutional approval.
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-teal-500 mr-2">🧠</span>
+              <span className="text-teal-500 mr-2">🌱</span>
               <span>
-                <strong>Quality Human Data, the first live market:</strong> Human 
-                contribution to AI training becomes verifiable and compensated. AI labs 
-                purchase provenance-certified, oversight-structured signal rather than raw 
-                surveillance data. Alignment grading through THM determines the governance 
-                value of each token.
+                <strong>Attentiveness over Attention:</strong> Instead of
+                extracting attention, the system rewards presence. High-quality,
+                alignment-graded tokens are generated when a person is attentive,
+                making real choices and observing directly.
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-cyan-500 mr-2">📜</span>
+              <span className="text-cyan-500 mr-2">🤝</span>
               <span>
-                <strong>Replayable recordkeeping across every domain:</strong> Research 
-                provenance, AI model auditing, supply chain traceability, and personal 
-                consent tracking, all independently verifiable by anyone running a conforming 
-                aQPU implementation.
+                <strong>Data Harvest as Social Service:</strong> Data streams prove
+                inhabited coordination capacity, not extractive surveillance.
+                Helping a person generate high-quality tokens contributes to a
+                shared field of collective intelligence.
               </span>
             </li>
           </ul>
@@ -920,21 +948,35 @@ export default function Home() {
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
             TAI Risk Mitigation at Scale
           </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            Global UHI supported for approximately 1.12 trillion years. Annual usage is 
-            8.93 × 10<sup>-11</sup>% of total capacity. An adversary would need to issue 
-            11.2 billion times the global annual UHI to consume 1% of the envelope. All 
-            realistic tier scenarios exceed 100 billion years of coverage.
-          </p>
-
-          <p className="text-sm sm:text-base text-foreground-secondary">
-            Capacity is materialized, not issued. A governed event inhabits part of the 
-            fixed envelope and leaves a replayable trace. AI Generated Tokens preserve 
-            human authority and traceability as AI agents participate in economic decisions. 
-            Issuance limits are grounded in explicit physical assumptions, inspectable and 
-            revisable through governance. For individuals, the baseline income floor becomes 
-            administratively feasible without inflation or debt accumulation.
-          </p>
+          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-emerald-500 mr-2">🛡️</span>
+              <span>
+                <strong>1.12 Trillion Year Capacity:</strong> Global UHI is
+                supported for a timescale that makes exhaustion operationally
+                irrelevant. An adversary would need to issue 11.2 billion times
+                the global annual UHI to consume just 1% of the total capacity.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-teal-500 mr-2">📈</span>
+              <span>
+                <strong>Quality Human Data Market:</strong> AI labs gain
+                access to provenance-certified, oversight-structured signal,
+                not raw data. This provides immediate utility and a practical
+                transition path.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-cyan-500 mr-2">📜</span>
+              <span>
+                <strong>Preserving Human Authority:</strong> AI Generated Tokens
+                preserve human authority and traceability through replayable
+                genealogies. Alignment is measured, and drift is structurally
+                detectable.
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
 
