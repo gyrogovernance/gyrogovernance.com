@@ -1500,7 +1500,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-[1fr,1.2fr] gap-5 md:gap-6 items-start">
                   <div className="w-full">
                     <Image
-                      src="/assets/638919d9-c2dd-4767-85b1-3e84160bf256-1024x1024.jpg"
+                      src="/assets/smartbites_foodtruck.webp"
                       alt="Smart Bites poster."
                       width={1024}
                       height={1024}
