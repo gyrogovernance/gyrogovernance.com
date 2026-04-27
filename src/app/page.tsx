@@ -138,6 +138,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
               { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
               { dot: "bg-cyan-500", title: "Gyroscopic ASI Interoperability", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyrolabe" },
               { dot: "bg-cyan-500", title: "AI Compute Optimizations", desc: "Replaced floating-point math and eliminated expensive overhead.", date: "17 Mar 2026", href: "#aqpu" },
@@ -178,107 +179,105 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ================================================================
-          HERO CARD — The Human Mark
-          ================================================================ */}
-      <div id="thm" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-orange rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-4">✋</div>
-              <h2 className="text-3xl font-bold text-foreground mb-4">
-                The Human Mark (THM): AI Safety Framework
-              </h2>
-              <p className="text-xl text-foreground-secondary">
-                A formal classification system mapping all AI safety failures to four structural displacement risks.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Four Displacement Risks</h3>
-                <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-3 w-fit mx-auto">
-                  <li><strong className="text-foreground">Governance Traceability (GTD)</strong></li>
-                  <li><strong className="text-foreground">Information Variety (IVD)</strong></li>
-                  <li><strong className="text-foreground">Inference Accountability (IAD)</strong></li>
-                  <li><strong className="text-foreground">Intelligence Integrity (IID)</strong></li>
-                </ul>
-                <p className="text-sm text-foreground-secondary text-center">
-                  All AI safety failures map to these patterns.
-                </p>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
-                <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside w-fit mx-auto">
-                  <li><strong className="text-foreground">Jailbreak testing</strong></li>
-                  <li><strong className="text-foreground">Control evaluations</strong></li>
-                  <li><strong className="text-foreground">Alignment detection</strong></li>
-                  <li><strong className="text-foreground">Research funding</strong></li>
-                  <li><strong className="text-foreground">Regulatory compliance</strong></li>
-                </ul>
-              </div>
-            </div>
-
-            {/* THM Meta-Evaluation Reports */}
-            <div className="mb-6">
-              <h3 className="text-lg font-bold text-foreground mb-3 text-center">Meta-Evaluation Reports</h3>
-              <p className="text-sm text-foreground-secondary text-center mb-4">
-                Analysis of frontier model system prompts: alignment and displacement findings.
-              </p>
-              <div className="grid sm:grid-cols-2 gap-3 max-w-md mx-auto">
-                <Link
-                  href="/articles/claude-opus-4.6_thm-report"
-                  className="flex items-center justify-center gap-2 p-4 rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-500/10 to-indigo-500/20 hover:from-purple-500/20 hover:to-indigo-500/30 hover:border-purple-500/50 transition-all duration-200 group"
-                  aria-label="Read THM report: Claude Opus 4.6 System Prompt (Anthropic)"
-                >
-                  <span className="text-lg font-bold text-foreground transition-colors">Claude Opus 4.6</span>
-                </Link>
-                <Link
-                  href="/articles/gpt-5-2-thinking_thm-report"
-                  className="flex items-center justify-center gap-2 p-4 rounded-xl border border-green-500/30 bg-gradient-to-br from-green-500/10 to-emerald-500/20 hover:from-green-500/20 hover:to-emerald-500/30 hover:border-green-500/50 transition-all duration-200 group"
-                  aria-label="Read THM report: ChatGPT System Prompt (OpenAI)"
-                >
-                  <span className="text-lg font-bold text-foreground transition-colors">ChatGPT 5.2</span>
-                </Link>
-              </div>
-            </div>
-
-            <p className="text-xs sm:text-sm text-foreground-tertiary text-center mb-6">
-              Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory. Validated on real-world adversarial prompts and on 90+ million sparse autoencoder features across sixteen language models, confirming that assistant personas and safety refusals dominate self-referential representations while non-agentive process descriptions are not used for model self-description.
-            </p>
-
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-              <a
-                href="https://github.com/gyrogovernance/tools"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-gray-800 hover:to-gray-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="View The Human Mark on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
-              <a
-                href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-                aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
-              >
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                </svg>
-                Interactive NotebookLM
-              </a>
-            </div>
-            <p className="text-sm text-foreground-tertiary mt-3 text-center">
-              📚 NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini
-            </p>
-            </div>
-        </LiquidGlassCard>
+{/* ================================================================
+    HERO CARD — The Human Mark
+    ================================================================ */}
+<div id="thm" className="mb-12 animate-fade-in-up">
+  <LiquidGlassCard className="glass-card glass-card-orange rounded-[2rem] shadow-2xl">
+    <div className="relative z-10 p-4 sm:p-6 md:p-8">
+      <div className="text-center mb-8">
+        <div className="text-6xl mb-4">✋</div>
+        <h2 className="text-3xl font-bold text-foreground mb-2">
+          The Human Mark (THM)
+        </h2>
+        <p className="text-lg sm:text-xl text-foreground-secondary/90 mb-4 tracking-wide">
+          Risk Taxonomy for AI Power Concentration
+        </p>
+        <div className="max-w-3xl mx-auto space-y-4 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
+          <p><strong>The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity as a matter of temporal and topological origination. It treats Authority and Agency as source-type distinctions in information flows, not as entity identifiers.</strong></p>
+          <p>
+          AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as four capacities and their corresponding displacements between Direct and Indirect forms of Authority and Agency.
+          </p>
+        </div>
       </div>
 
+      <div className="grid md:grid-cols-2 gap-6 mb-6">
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Risks</h3>
+          <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-3 w-fit mx-auto">
+            <li><strong className="text-foreground">Governance Traceability</strong></li>
+            <li><strong className="text-foreground">Information Variety</strong></li>
+            <li><strong className="text-foreground">Inference Accountability</strong></li>
+            <li><strong className="text-foreground">Intelligence Integrity</strong></li>
+          </ul>
+        </div>
+
+        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
+          <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside w-fit mx-auto">
+            <li><strong className="text-foreground">Jailbreak testing</strong></li>
+            <li><strong className="text-foreground">Control evaluations</strong></li>
+            <li><strong className="text-foreground">Alignment detection</strong></li>
+            <li><strong className="text-foreground">Research funding</strong></li>
+            <li><strong className="text-foreground">Regulatory compliance</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      {/* THM Meta-Evaluation Reports */}
+      <div className="mb-6">
+        <h3 className="text-lg font-bold text-foreground mb-3 text-center">Meta-Evaluation Reports</h3>
+        <p className="text-sm text-foreground-secondary text-center mb-4">
+          Analysis of frontier model system prompts: alignment and displacement findings.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-3 max-w-md mx-auto">
+          <Link
+            href="/articles/claude-opus-4.6_thm-report"
+            className="flex items-center justify-center gap-2 p-4 rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-500/10 to-indigo-500/20 hover:from-purple-500/20 hover:to-indigo-500/30 hover:border-purple-500/50 transition-all duration-200 group"
+            aria-label="Read THM report: Claude Opus 4.6 System Prompt (Anthropic)"
+          >
+            <span className="text-lg font-bold text-foreground transition-colors">Claude Opus 4.6</span>
+          </Link>
+          <Link
+            href="/articles/gpt-5-2-thinking_thm-report"
+            className="flex items-center justify-center gap-2 p-4 rounded-xl border border-green-500/30 bg-gradient-to-br from-green-500/10 to-emerald-500/20 hover:from-green-500/20 hover:to-emerald-500/30 hover:border-green-500/50 transition-all duration-200 group"
+            aria-label="Read THM report: ChatGPT System Prompt (OpenAI)"
+          >
+            <span className="text-lg font-bold text-foreground transition-colors">ChatGPT 5.2</span>
+          </Link>
+        </div>
+      </div>
+
+      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+        <a
+          href="https://github.com/gyrogovernance/tools"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-gray-800 hover:to-gray-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          aria-label="View The Human Mark on GitHub (opens in new tab)"
+        >
+          <GitHubIcon className="w-5 h-5 mr-2" />
+          View on GitHub
+        </a>
+        <a
+          href="https://notebooklm.google.com/notebook/34e2d367-101a-4457-83fc-9c1049d29e32?authuser=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+          aria-label="Explore The Human Mark on NotebookLM (opens in new tab)"
+        >
+          <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+          </svg>
+          Interactive NotebookLM
+        </a>
+      </div>
+      <p className="text-sm text-foreground-tertiary mt-3 text-center">
+        📚 NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini
+      </p>
+    </div>
+  </LiquidGlassCard>
+</div>
       {/* ================================================================
           HERO CARD — GyroGem
           ================================================================ */}
@@ -1488,54 +1487,56 @@ export default function Home() {
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Guides</h3>
           <div className="space-y-6">
-            <LiquidGlassCard
-              className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl"
-              style={{
-                boxShadow: "var(--glass-card-shadow-lg)",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
-                borderStyle: "solid",
-              }}
-            >
-              <div className="relative z-10 p-4 sm:p-6 md:p-8">
-                <div className="grid md:grid-cols-[1fr,1.2fr] gap-5 md:gap-6 items-start">
-                  <div className="w-full">
-                    <Image
-                      src="/assets/smartbites_foodtruck.webp"
-                      alt="Smart Bites poster."
-                      width={1024}
-                      height={1024}
-                      className="w-full rounded-xl shadow-lg border border-white/25"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-                      GenAI Prompt Engineering for AI-Empowered Governance & Change Management
-                    </h4>
-                    <p className="text-foreground-secondary mb-3">
-                      Smart Bites aims to Democratize Change Management, Making it Accessible to People from All Walks of Life.
-                    </p>
-                    <p className="text-foreground-secondary mb-3">
-                      I&apos;ve developed a Formal Process for AI-Augmented Governance, enabling Decentralized Decision-Making and Data-empowered Insights.
-                    </p>
-                    <p className="text-foreground-secondary mb-5">
-                      Open and serving Free Bite-sized AI Guides at smartbites.github.io.
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <a
-                        href="https://smartbites.github.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white text-sm font-medium rounded-full transition-all duration-300"
-                        aria-label="Open Smart Bites site (opens in new tab)"
-                      >
-                        Open Site
-                        <ExternalLinkIcon className="ml-2 w-4 h-4" />
-                      </a>
+            <div id="smart-bites">
+              <LiquidGlassCard
+                className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl"
+                style={{
+                  boxShadow: "var(--glass-card-shadow-lg)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  borderStyle: "solid",
+                }}
+              >
+                <div className="relative z-10 p-4 sm:p-6 md:p-8">
+                  <div className="grid md:grid-cols-[1fr,1.2fr] gap-5 md:gap-6 items-start">
+                    <div className="w-full">
+                      <Image
+                        src="/assets/smartbites_foodtruck.webp"
+                        alt="Smart Bites poster."
+                        width={1024}
+                        height={1024}
+                        className="w-full rounded-xl shadow-lg border border-white/25"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+                        GenAI Prompt Engineering for AI-Empowered Governance & Change Management
+                      </h4>
+                      <p className="text-foreground-secondary mb-3">
+                        Smart Bites aims to Democratize Change Management, Making it Accessible to People from All Walks of Life.
+                      </p>
+                      <p className="text-foreground-secondary mb-3">
+                        I&apos;ve developed a Formal Process for AI-Augmented Governance, enabling Decentralized Decision-Making and Data-empowered Insights.
+                      </p>
+                      <p className="text-foreground-secondary mb-5">
+                        Open and serving Free Bite-sized AI Guides at smartbites.github.io.
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <a
+                          href="https://smartbites.github.io/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white text-sm font-medium rounded-full transition-all duration-300"
+                          aria-label="Open Smart Bites site (opens in new tab)"
+                        >
+                          Open Site
+                          <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </LiquidGlassCard>
+              </LiquidGlassCard>
+            </div>
             <LiquidGlassCard
               className="glass-card rounded-[2rem] shadow-2xl"
               style={{
