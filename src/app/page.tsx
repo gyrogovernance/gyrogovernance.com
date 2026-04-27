@@ -1487,40 +1487,83 @@ export default function Home() {
         {/* Guides */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Guides</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { emoji: "🍟", title: "Smart Bites", desc: "Practical Prompt Engineering", href: "https://smartbites.github.io/" },
-              { emoji: "🛡️", title: "Crisis Resolutions", desc: "AI Safety & Risk Management", href: "https://crisisresolutions.github.io/" },
-            ].map((g) => (
-              <LiquidGlassCard
-                key={g.title}
-                className="glass-card rounded-[2rem] shadow-2xl"
-                style={{
-                  boxShadow: "var(--glass-card-shadow-lg)",
-                  border: "1px solid rgba(255, 255, 255, 0.12)",
-                  borderStyle: "solid",
-                }}
-              >
-                <div className="relative z-10 p-4 sm:p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="text-5xl sm:text-6xl md:text-7xl">{g.emoji}</div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-semibold text-foreground mb-3">{g.title}</h4>
-                      <p className="text-foreground-secondary mb-4">{g.desc}</p>
+          <div className="space-y-6">
+            <LiquidGlassCard
+              className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
+              <div className="relative z-10 p-4 sm:p-6 md:p-8">
+                <div className="grid md:grid-cols-[1fr,1.2fr] gap-5 md:gap-6 items-start">
+                  <div className="w-full">
+                    <Image
+                      src="/assets/638919d9-c2dd-4767-85b1-3e84160bf256-1024x1024.jpg"
+                      alt="Smart Bites poster."
+                      width={1024}
+                      height={1024}
+                      className="w-full rounded-xl shadow-lg border border-white/25"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+                      GenAI Prompt Engineering for AI-Empowered Governance & Change Management
+                    </h4>
+                    <p className="text-foreground-secondary mb-3">
+                      Smart Bites aims to Democratize Change Management, Making it Accessible to People from All Walks of Life.
+                    </p>
+                    <p className="text-foreground-secondary mb-3">
+                      I&apos;ve developed a Formal Process for AI-Augmented Governance, enabling Decentralized Decision-Making and Data-empowered Insights.
+                    </p>
+                    <p className="text-foreground-secondary mb-5">
+                      Open and serving Free Bite-sized AI Guides at smartbites.github.io.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
                       <a
-                        href={g.href}
+                        href="https://smartbites.github.io/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
-                        aria-label={`Visit ${g.title} (opens in new tab)`}
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white text-sm font-medium rounded-full transition-all duration-300"
+                        aria-label="Open Smart Bites site (opens in new tab)"
                       >
-                        Visit Site <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                        Open Site
+                        <ExternalLinkIcon className="ml-2 w-4 h-4" />
                       </a>
                     </div>
                   </div>
                 </div>
-              </LiquidGlassCard>
-            ))}
+              </div>
+            </LiquidGlassCard>
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
+              <div className="relative z-10 p-4 sm:p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="text-5xl sm:text-6xl md:text-7xl">🛡️</div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold text-foreground mb-3">Crisis Resolutions</h4>
+                    <p className="text-foreground-secondary mb-4">AI Safety & Risk Management</p>
+                    <a
+                      href="https://crisisresolutions.github.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
+                      aria-label="Visit Crisis Resolutions (opens in new tab)"
+                    >
+                      Visit Site
+                      <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </LiquidGlassCard>
           </div>
         </div>
 
