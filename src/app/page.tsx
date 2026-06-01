@@ -138,6 +138,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-green-500", title: "Ethical Travel", desc: "Collective Superintelligence travel guide", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
               { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
               { dot: "bg-cyan-500", title: "Gyroscopic ASI Interoperability", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyrolabe" },
@@ -331,6 +332,69 @@ export default function Home() {
               >
                 <GoogleIcon className="w-5 h-5 mr-2" />
                 Google
+              </a>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — Ethical Travel
+          ================================================================ */}
+      <div id="ethical-travel" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-green rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <Image
+                src="/assets/GG_Travel_Logo.png"
+                alt="Ethical Travel by Gyro Governance"
+                width={110}
+                height={110}
+                className="mx-auto mb-4 h-auto w-24 sm:w-28"
+                sizes="(max-width: 640px) 96px, 112px"
+                loading="lazy"
+              />
+              <h2 className="text-3xl font-bold text-foreground mb-1">
+                Ethical Travel
+              </h2>
+              <p className="text-xs font-extrabold uppercase tracking-wider text-foreground-tertiary mb-3">
+                Collective Superintelligence
+              </p>
+              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
+                AI helping Humans getting better together.
+              </p>
+            </div>
+
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6">
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary text-left max-w-lg mx-auto">
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🧠</span>
+                  <span><strong>AI safety research</strong> turned into practical travel guides</span>
+                </li>                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🧭</span>
+                  <span><strong>Four clear domains</strong> for where your money goes and how you treat people</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🤖</span>
+                  <span><strong>AI prompts</strong> that do the research while you keep the final say</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🤝</span>
+                  <span><strong>Trusted booking partners</strong> for flights, stays, and experiences</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex justify-center">
+              <a
+                href="https://travel.gyrogovernance.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Explore the Ethical Travel project (opens in new tab)"
+              >
+                Plan your trip Safely
+                <ExternalLinkIcon className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>
