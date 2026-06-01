@@ -138,7 +138,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
-              { dot: "bg-green-500", title: "Ethical Travel", desc: "Collective Superintelligence travel guide", date: "02 Jun 2026", href: "#ethical-travel" },
+              { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
               { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
               { dot: "bg-cyan-500", title: "Gyroscopic ASI Interoperability", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyrolabe" },
