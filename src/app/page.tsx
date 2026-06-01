@@ -589,38 +589,6 @@ export default function Home() {
           </p>
 
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-            >
-              Climate Brief
-            </a>
-            <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Dynamics.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-            >
-              Climate Dynamics
-            </a>
-            <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Transform_Algebra.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-            >
-              Transform Algebra
-            </a>
-            <a
-              href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-            >
-              Tests Report
-            </a>
           </div>
         </div>
       </div>
