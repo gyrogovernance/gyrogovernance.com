@@ -10,13 +10,10 @@ import GoogleIcon from "@/components/icons/GoogleIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
-import { getDocStats } from "@/lib/docs-stats";
 import StatBadge from "@/components/StatBadge";
 import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 
 export default function Home() {
-  const docStats = getDocStats();
-
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
       {/* ================================================================
@@ -58,7 +55,7 @@ export default function Home() {
             { emoji: "✋", title: "The Human Mark", desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation", href: "#thm" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "Quantum AGI Infrastructure: aQPU Kernel", desc: "Quantum Advantage on standard hardware for verifiable coordination and audit", href: "#aqpu" },
-            { emoji: "🤖", title: "Gyroscopic ASI Runtime: GyroLabe, GyroGraph", desc: "Auditable inference bridge and native compute backend", href: "#gyroscopic" },
+            { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
             { emoji: "🍃", title: "Alignment Infrastructure Routing", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
             { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
@@ -141,11 +138,11 @@ export default function Home() {
               { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
               { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
-              { dot: "bg-cyan-500", title: "Gyroscopic ASI Interoperability", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyrolabe" },
+              { dot: "bg-cyan-500", title: "Gyroscopic ASI Runtime", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyroscopic" },
               { dot: "bg-cyan-500", title: "AI Compute Optimizations", desc: "Replaced floating-point math and eliminated expensive overhead.", date: "17 Mar 2026", href: "#aqpu" },
               { dot: "bg-blue-500", title: "aQPU Kernel", desc: "Quantum Advantage: verified uniform mixing and holographic compression", date: "11 Mar 2026", href: "#aqpu" },
               { dot: "bg-green-500", title: "CGM Dataset", desc: "Foundational theory from the Science Lab docs", date: "15 Feb 2026", href: "#cgm" },
-              { dot: "bg-cyan-500", title: "GyroLabe", desc: "Auditable inference bridge", date: "14 Feb 2026", href: "#gyroscopic" },
+              { dot: "bg-cyan-500", title: "Gyroscopic Runtime", desc: "Native compute backend and multicellular coordination", date: "14 Feb 2026", href: "#gyroscopic" },
               { dot: "bg-orange-500", title: "THM prompt audits", desc: "Claude Opus 4.6 and ChatGPT 5.2 reports", date: "13 Feb 2026", href: "/articles" },
             ].map((u, i) => {
               const rowClass =
@@ -584,8 +581,11 @@ export default function Home() {
           approximation with exact integer algebra on standard CPUs and GPUs, without
           qubits, cryogenics, or probabilistic hardware noise.
           </p>
+          <p className="text-sm sm:text-base text-foreground-secondary text-left mb-4">
+            <strong>Formal quantum certification via the CHSH-Tsirelson diagnostic: six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.</strong>
+          </p>
           <p className="text-sm sm:text-base text-foreground-secondary text-left">
-            <strong>Quantum information properties are confirmed on standard silicon: six Bell pairs reaching the Tsirelson bound (2√2), quantum teleportation verified, contextuality proven, and universal quantum computation established.</strong>
+            <strong>Further quantum information properties are confirmed on standard silicon: quantum teleportation verified, contextuality proven, and universal quantum computation established.</strong>
           </p>
 
           <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -605,22 +605,22 @@ export default function Home() {
           View on GitHub
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Features_Report.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read the Strategic Significance brief (opens in new tab)"
+          aria-label="Read the Quantum Features report (opens in new tab)"
         >
-          Strategic Significance
+          Quantum Features
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Quantum_Computing.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Specs.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read the SDK Spec (opens in new tab)"
+          aria-label="Read the Kernel specification (opens in new tab)"
         >
-          SDK Spec
+          Kernel Spec
         </a>
       </div>
     </div>
@@ -628,7 +628,7 @@ export default function Home() {
 </div>
 
 {/* ================================================================
-    HERO CARD — Gyroscopic ASI Runtime: GyroLabe, GyroGraph
+    HERO CARD — Gyroscopic ASI Runtime
     ================================================================ */}
 <div id="gyroscopic" className="mb-12 animate-fade-in-up">
   <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] shadow-2xl">
@@ -636,7 +636,7 @@ export default function Home() {
       <div className="text-center mb-8">
         <div className="text-6xl mb-4">🤖</div>
         <h2 className="text-3xl font-bold text-foreground mb-2">
-          Gyroscopic ASI Runtime: GyroLabe, GyroGraph
+          Gyroscopic ASI Runtime
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
           Intelligence-Agnostic Meta-Computing
@@ -649,17 +649,17 @@ export default function Home() {
             Gyroscopic ASI is an infrastructure for multi-domain network
             coordination that establishes the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans
             and machines. Intelligence lives in live occupation and resonance,
-            not frozen weights. GyroLabe and GyroGraph are its execution and multicellular layers, composing
-            the a quantum algorithmic kernel(aQPU) into a universal computational condenser.
+            not frozen weights. The Runtime composes the aQPU kernel into a
+            universal computational condenser with native execution and multicellular coordination.
           </p>
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground">
-            GyroLabe: 
+            Execution Layer
           </h3>
           <p className="text-lg sm:text-xl font-bold text-foreground-secondary mb-3 font-bold">
-            Hyper-Optimized Execution Layer
+            Native Compute Backend
           </p>
           <p className="text-sm sm:text-base text-foreground-secondary mb-3">
             The substitutional bridge that upgrades neural models by swapping
@@ -692,15 +692,16 @@ export default function Home() {
         </div>
 
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            GyroGraph: 
-            <p className="text-lg sm:text-xl font-bold text-foreground-secondary mb-3 font-bold">
-            Multicellular Quantum AI
-          </p>
+          <h3 className="text-lg sm:text-xl font-bold text-foreground">
+            Multicellular Layer
           </h3>
+          <p className="text-lg sm:text-xl font-bold text-foreground-secondary mb-3 font-bold">
+            Quantum Cellular Automaton
+          </p>
           <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-            An Algebraic Quantum Cellular Automaton where cells evolve under the
-            Gyroscopic Byte Formalism.
+            Cells evolve under the Gyroscopic byte law, consuming runtime events
+            as 4-byte words and emitting structured spectral output for audit
+            and control.
           </p>
           <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
             <li className="flex items-start">
@@ -723,18 +724,17 @@ export default function Home() {
 
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-left border border-cyan-500/20 bg-cyan-500/5">
           <p className="text-sm sm:text-base text-foreground-secondary">
-            <strong className="text-foreground">Verified:</strong> 100% native
-            matmul routing on quantized models with zero
-            parity mismatches. 284× faster encode, 1.15× faster
-            decode than softmax. Zero transcendental
-            functions required for coherent text generation.
+            <strong className="text-foreground">Verified:</strong> Exact integer algebra replaced softmax and
+            cosine-style selection on decision surfaces of a live 1B-parameter
+            model. This achieved a 284× faster encode boundary, 1.15× faster decode,
+            and coherent text generation without transcendental functions at those surfaces.
           </p>
         </div>
       </div>
 
       <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
         <a
-          href="https://github.com/gyrogovernance/superintelligence"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -744,22 +744,13 @@ export default function Home() {
           View on GitHub
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read the GyroLabe specification (opens in new tab)"
+          aria-label="Read the Strategic Significance brief (opens in new tab)"
         >
-          GyroLabe Spec
-        </a>
-        <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read the GyroGraph specification (opens in new tab)"
-        >
-          GyroGraph Spec
+          Strategic Significance
         </a>
         <a
           href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md"
@@ -1634,37 +1625,82 @@ export default function Home() {
         {/* Experiments */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Experiments</h3>
-          <LiquidGlassCard
-            className="glass-card rounded-[2rem] shadow-2xl"
-            style={{
-              boxShadow: "var(--glass-card-shadow-lg)",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
-              borderStyle: "solid",
-            }}
-          >
-            <div className="relative z-10 p-4 sm:p-6">
-              <div className="flex items-start space-x-4">
-                <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
-                <div className="flex-1">
-                  <h4 className="text-xl font-semibold text-foreground mb-3">Quantum AI Research</h4>
-                  <p className="text-foreground-secondary mb-2 font-medium">Architecting Qubit-Tensor-Chain (QTC)</p>
-                  <p className="text-foreground-secondary mb-4">
-                    The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
-                  </p>
-                  <a
-                    href="https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                    aria-label="View Quantum AI Research on Notion (opens in new tab)"
-                  >
-                    <NotionIcon className="w-4 h-4 mr-2" />
-                    Notion Documentation
-                  </a>
+          <div className="space-y-6">
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
+              <div className="relative z-10 p-4 sm:p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl sm:text-5xl md:text-6xl">🔭</div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold text-foreground mb-3">Subatomic Physics and Gravity</h4>
+                    <p className="text-foreground-secondary mb-2 font-medium">Mathematical Physics verified through the aQPU</p>
+                    <p className="text-foreground-secondary mb-4">
+                      Executing exhaustive state space analyses to bridge classical information theory with quantum mechanics. Recent executable experiments derive gravitational invariants, the fine structure constant, and electroweak mass laws directly from discrete kernel algebra.
+                    </p>
+                    <div className="flex flex-wrap items-center gap-4">
+                      <a
+                        href="https://github.com/gyrogovernance/science"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                        aria-label="View Science Laboratory on GitHub (opens in new tab)"
+                      >
+                        <GitHubIcon className="w-4 h-4 mr-2" />
+                        Science Laboratory
+                      </a>
+                      <a
+                        href="https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
+                        aria-label="Read Gravity Analysis (opens in new tab)"
+                      >
+                        Gravity Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </LiquidGlassCard>
+            </LiquidGlassCard>
+
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
+              <div className="relative z-10 p-4 sm:p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold text-foreground mb-3">Quantum AI Research</h4>
+                    <p className="text-foreground-secondary mb-2 font-medium">Architecting Qubit-Tensor-Chain (QTC)</p>
+                    <p className="text-foreground-secondary mb-4">
+                      The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
+                    </p>
+                    <a
+                      href="https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                      aria-label="View Quantum AI Research on Notion (opens in new tab)"
+                    >
+                      <NotionIcon className="w-4 h-4 mr-2" />
+                      Notion Documentation
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </LiquidGlassCard>
+          </div>
         </div>
 
         {/* Media */}

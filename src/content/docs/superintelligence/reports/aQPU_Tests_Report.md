@@ -794,7 +794,7 @@ These properties are the discrete realisation of the quantum no-cloning theorem:
 
 ## Part 14: C Engine and Low-Level Tensor Math (via SDK)
 
-`test_aQPU_SDK_1.py` verifies the GyroLabe C engine and operator algebra exposed through the SDK (`sdk.RuntimeOps`, `sdk.TensorOps`, `sdk.OperatorOps`). These tests require the compiled C library; they are skipped when the library is unavailable.
+`test_aQPU_SDK_1.py` verifies the Runtime C engine and operator algebra exposed through the SDK (`sdk.RuntimeOps`, `sdk.TensorOps`, `sdk.OperatorOps`). These tests require the compiled C library; they are skipped when the library is unavailable.
 
 ### 14.1 C Engine Availability
 

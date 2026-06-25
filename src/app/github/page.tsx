@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, QuBEC quantum byte medium, GyroLabe auditable inference engine, GyroGraph multicellular AI runtime, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel for quantum advantage on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -25,8 +25,7 @@ export const metadata: Metadata = {
     'aQPU SDK',
     'QuBEC',
     'Quantum Bose-Einstein Condensate',
-    'GyroLabe',
-    'GyroGraph',
+    'Gyroscopic ASI Runtime',
     'Computational Climate Control',
     'Alignment Infrastructure Routing',
     'Moments Economy',
@@ -116,7 +115,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, aQPU Kernel & SDK, QuBEC quantum byte medium, GyroLabe Auditable Inference, GyroGraph multicellular runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, aQPU Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -162,18 +161,11 @@ export default function GitHub() {
       keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "QuBEC", "Holographic Compression", "Tensor Engine"]
     },
     {
-      name: "GyroLabe",
-      description: "Auditable AI Inference Engine - Hyper-optimized execution layer providing mechanistic transparency by building a deterministic, zero-trust audit trail directly into model inference. Translates token generation into exact algebraic operations and produces a mathematically exact ledger for independent replay and verification. Native backends with llama.cpp ggml integration achieving 1.26B operations per second on commodity hardware.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md",
+      name: "Gyroscopic ASI Runtime",
+      description: "Intelligence-agnostic meta-computing infrastructure composing the aQPU kernel into a universal computational condenser. Native compute backend substituting neural model engines via C/C++ and llama.cpp integration (1.26B operations per second). Multicellular quantum cellular automaton coordinating runtime events as 4-byte words across four bridge domains. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md",
       applicationCategory: "DeveloperApplication",
-      keywords: ["Auditable Inference", "Verifiable Ledger", "Structural Decomposition", "Alignment Signals", "Compliance"]
-    },
-    {
-      name: "GyroGraph",
-      description: "Quantum multicellular AI runtime - An algebraic quantum cellular automaton coordinating distributed computation into stable, deterministic behavior with strong auditability. Specialization arises from trajectory, resonance, and occupation with four bridge domains (Applications, Databases, Networks, Transformers) mapping runtime events into 4-byte words.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md",
-      applicationCategory: "DeveloperApplication",
-      keywords: ["Quantum Multicellular AI", "Cellular Runtime", "Deterministic Replay", "AI Stability", "Auditable Inference"]
+      keywords: ["Gyroscopic ASI Runtime", "Auditable Inference", "Multicellular Coordination", "Native Compute", "Deterministic Replay"]
     },
     {
       name: "Computational Climate Control",
@@ -285,7 +277,7 @@ export default function GitHub() {
       emoji: '⚛️',
       name: 'aQPU Kernel & SDK',
       title: 'Quantum Advantage on Silicon',
-      description: 'Compact, finite-state kernel for AGI with verified quantum speedups, 33% holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard CPUs/GPUs with exact integer arithmetic. 1.26B ops/s, 499 tests passing, 4,096 states, zero qubits. 1-step advantage for Deutsch-Jozsa, Bernstein-Vazirani, Hidden Subgroup. Self-dual [12,6,2] error-detecting code. Bell pairs reaching Tsirelson bound confirmed on standard silicon.',
+      description: 'Compact, finite-state kernel for AGI with verified quantum speedups, 33% holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard CPUs/GPUs with exact integer arithmetic. CHSH-Tsirelson certification: six Bell pairs saturate the Tsirelson bound at 2√2. 1.26B ops/s, 499 tests passing, 4,096 states, zero qubits. 1-step advantage for Deutsch-Jozsa, Bernstein-Vazirani, Hidden Subgroup. Self-dual [12,6,2] error-detecting code.',
       url: 'https://github.com/gyrogovernance/superintelligence',
       tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'QuBEC', 'Holographic Compression', 'Tensor Engine'],
       gradient: 'from-blue-500/10 via-indigo-500/10 to-purple-500/10',
@@ -294,25 +286,14 @@ export default function GitHub() {
     },
     {
       emoji: '🤖',
-      name: 'GyroLabe',
-      title: 'Auditable AI Inference Engine',
-      description: 'Hyper-optimized execution layer providing mechanistic transparency by building a deterministic, zero-trust audit trail directly into model inference. Translates token generation into exact algebraic operations and produces a mathematically exact ledger for independent replay and verification. Native backends with llama.cpp ggml integration achieving 1.26B operations per second. 100% native matmul routing, 284× faster encode than softmax, zero transcendental functions required.',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroLabe_Specs.md',
-      tags: ['Auditable Inference', 'Verifiable Ledger', 'Structural Decomposition', 'AI Governance', 'Compliance'],
+      name: 'Gyroscopic ASI Runtime',
+      title: 'Intelligence-Agnostic Meta-Computing',
+      description: 'Infrastructure for multi-domain network coordination composing the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Execution layer: substitutional bridge upgrading neural models via C/C++ and llama.cpp (1.26B ops/s). Multicellular layer: quantum cellular automaton consuming runtime events as 4-byte words across four bridge domains. Verified: exact integer algebra replaced softmax on decision surfaces of a live 1B-parameter model (284× faster encode boundary, 1.15× faster decode).',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md',
+      tags: ['Gyroscopic ASI Runtime', 'Native Compute Backend', 'Multicellular Coordination', 'Auditable Inference', 'Deterministic Replay'],
       gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
       borderColor: 'border-cyan-500/20',
       buttonGradient: 'from-cyan-600 to-sky-600 hover:from-sky-600 hover:to-blue-600'
-    },
-    {
-      emoji: '🤖',
-      name: 'GyroGraph',
-      title: 'Quantum Multicellular AI Runtime',
-      description: 'Algebraic quantum cellular automaton coordinating distributed computation into stable, deterministic behavior with strong auditability. Specialization arises from trajectory, resonance, and occupation (not autonomous agents). Four bridge domains (Applications, Databases, Networks, Transformers) map runtime events into 4-byte words consumed by the cellular automaton.',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/GyroGraph_Specs.md',
-      tags: ['Quantum Multicellular AI', 'Cellular Runtime', 'Deterministic Replay', 'AI Stability', 'Auditable Inference'],
-      gradient: 'from-violet-500/10 via-blue-500/10 to-cyan-500/10',
-      borderColor: 'border-violet-500/20',
-      buttonGradient: 'from-violet-600 to-blue-600 hover:from-blue-600 hover:to-cyan-600'
     },
     {
       emoji: '☂️',
@@ -444,7 +425,7 @@ export default function GitHub() {
       {/* Research Project Schema */}
       <ResearchProjectSchema
         name="Gyro Governance AI Safety Research"
-        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, aQPU Kernel & SDK for quantum advantage on silicon, GyroLabe auditable inference engine, GyroGraph multicellular runtime, QuBEC quantum byte medium, collective superintelligence architecture, and post-AGI governance modeling."
+        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, aQPU Kernel for quantum advantage on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, and post-AGI governance modeling."
         url="https://gyrogovernance.com/github"
         keywords={[
           "AI Safety Research",
@@ -458,8 +439,7 @@ export default function GitHub() {
           "GyroGem",
           "AI Inspector",
           "aQPU Kernel",
-          "GyroLabe",
-          "GyroGraph",
+          "Gyroscopic ASI Runtime",
           "QuBEC",
           "Collective Superintelligence",
           "Post-AGI Governance",
@@ -482,7 +462,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel & SDK for quantum advantage on silicon, QuBEC quantum byte medium, GyroLabe auditable inference engine, GyroGraph multicellular runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel for quantum advantage on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -603,8 +583,8 @@ export default function GitHub() {
             <strong>AI governance tools</strong>, and a <strong>quantum advantage compute kernel</strong> for frontier model testing, dangerous capability assessments, and AI pathology detection.
             Our repositories include <strong>The Human Mark</strong> classification system, <strong>GyroGem</strong> AI safety agent,
             <strong>AI Inspector browser extension</strong>,
-            <strong>aQPU Kernel & SDK</strong> for quantum advantage on silicon, <strong>QuBEC</strong> quantum byte medium,
-            <strong>GyroLabe auditable inference engine</strong>, <strong>GyroGraph</strong> multicellular runtime,
+            <strong>aQPU Kernel</strong> for quantum advantage on silicon, <strong>QuBEC</strong> quantum byte medium,
+            <strong>Gyroscopic ASI Runtime</strong> for auditable inference and multicellular coordination,
             <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routing</strong> for collective superintelligence,
             <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
             Production-ready solutions for <strong>AI risk assessment</strong>, <strong>AI safety evaluation</strong>, and <strong>responsible AI development</strong>.
@@ -627,26 +607,17 @@ export default function GitHub() {
             arithmetic without qubits, cryogenics, or probabilistic hardware noise.
           </p>
           <p className="mb-4">
-            <strong>Quantum information properties confirmed on standard silicon:</strong> six Bell pairs reaching the Tsirelson bound (2√2),
-            quantum teleportation verified, contextuality proven, and universal quantum computation established.
+            <strong>Formal quantum certification via the CHSH-Tsirelson diagnostic:</strong> six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.
+            Further quantum information properties are confirmed on standard silicon: quantum teleportation verified, contextuality proven, and universal quantum computation established.
           </p>
 
-          <h3 className="text-xl font-semibold text-foreground mb-3">GyroLabe - Auditable Inference Engine</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-3">Gyroscopic ASI Runtime</h3>
           <p className="mb-4">
-            <strong>GyroLabe</strong> provides mechanistic transparency for neural networks by translating opaque token generation into exact algebraic operations.
-            It builds a <strong>deterministic, zero-trust audit trail</strong> directly into the inference process. By injecting trainable structural signals,
-            it aligns models from the inside out without altering their interface. It produces a <strong>mathematically exact ledger</strong> of the generation
-            trajectory, providing the missing structural substrate required for rigorous <strong>AI governance</strong>, alignment guarantees, and
-            <strong>policy enforcement</strong>. Native backends with llama.cpp ggml integration achieving 1.26B operations per second. 100% native matmul routing,
-            284× faster encode, 1.15× faster decode than softmax. Zero transcendental functions required.
-          </p>
-
-          <h3 className="text-xl font-semibold text-foreground mb-3">GyroGraph - Quantum Multicellular AI Runtime</h3>
-          <p className="mb-4">
-            <strong>GyroGraph</strong> coordinates a multicellular AI runtime as an algebraic quantum cellular automaton. Specialization arises from trajectory,
-            resonance, and occupation (not autonomous agents). Four bridge domains (Applications, Databases, Networks, Transformers) map runtime events into
-            4-byte words for deterministic coordination. Preserves deterministic execution, stabilizes dynamic workloads, and supports reproducibility and
-            auditability across runtime cells.
+            <strong>Gyroscopic ASI Runtime</strong> is intelligence-agnostic meta-computing infrastructure for multi-domain network coordination.
+            It composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination.
+            The execution layer is a substitutional bridge upgrading neural models via C/C++ and llama.cpp ggml integration (1.26B operations per second).
+            The multicellular layer is a quantum cellular automaton where cells evolve under the Gyroscopic byte law, consuming runtime events as 4-byte words and emitting structured spectral output for audit and control.
+            Verified on a live 1B-parameter model: exact integer algebra replaced softmax and cosine-style selection on decision surfaces, achieving a 284× faster encode boundary, 1.15× faster decode, and coherent text generation without transcendental functions at those surfaces.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Computational Climate Control</h3>
