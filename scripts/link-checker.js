@@ -213,7 +213,7 @@ async function crawlAndCheckLinks() {
 
   } catch (error) {
     console.error(`🚨 Error: ${error.message}`);
-    console.log('\n💡 Make sure your dev server is running: npm run dev');
+    console.log('\n💡 Make sure your dev server is running: bun run dev');
     console.log('   The script will automatically scan common ports (3000, 3001, 3002, 5173, 8000, 8080, 4000, 5000)');
     process.exit(1);
   }

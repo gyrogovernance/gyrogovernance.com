@@ -53,7 +53,7 @@ imageRecommendations.forEach((img, index) => {
 });
 
 console.log('💡 For production, consider using an image optimization tool like:');
-console.log('   - Sharp (Node.js): npm install sharp');
+console.log('   - Sharp (Node.js): bun add sharp');
 console.log('   - ImageMagick: convert input.jpg -resize 400x400 output.jpg');
 console.log('   - Online tools: squoosh.app, tinypng.com\n');
 

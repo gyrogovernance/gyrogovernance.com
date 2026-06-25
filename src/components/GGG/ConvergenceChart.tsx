@@ -60,7 +60,9 @@ export default function ConvergenceChart() {
               border: '1px solid rgba(255,255,255,0.2)',
               borderRadius: '8px'
             }}
-            formatter={(value: number) => value.toFixed(4)}
+            formatter={(value) =>
+              typeof value === 'number' ? value.toFixed(4) : String(value ?? '')
+            }
           />
           <Legend verticalAlign="bottom" />
           <ReferenceLine 

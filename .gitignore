@@ -12,7 +12,10 @@ out/
 public/data/
 playwright-report/
 test-results/
+# Other package manager lockfiles (bun.lock is tracked)
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 ############################
 # Dependencies
@@ -85,7 +88,6 @@ Thumbs.db
 ############################
 old_blog/
 ignore.*
-bunfig.toml
 /src/content/blog/test.*
 /test/
 

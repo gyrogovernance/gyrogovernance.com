@@ -39,16 +39,20 @@ Your article content here in markdown...
 
 ### 2. Build Process
 
-When you run `npm run build` or `npm run export`, the following happens automatically:
+When you run `bun run build` or `bun run export`, article data generation runs automatically via lifecycle hooks:
 
 ```
-npm run prebuild  →  Generate articles-data.ts
+bun run build
+  └─ prebuild (auto)  →  Generate articles-data.ts
+  └─ next build --turbopack
         ↓
-next build        →  Build static site
+      Generate RSS feed, sitemap, static HTML
+
+bun run export
+  └─ preexport (auto) →  Generate articles-data.ts
+  └─ next build
         ↓
-                  →  Generate RSS feed
-                  →  Generate sitemap
-                  →  Export static HTML
+      Generate RSS feed, sitemap, static HTML
 ```
 
 ### 3. Generated Files
@@ -100,7 +104,7 @@ Write your article content in markdown below the frontmatter.
 ### Step 4: Build
 
 ```bash
-npm run build
+bun run build
 ```
 
 That's it! Your article will automatically:
@@ -114,13 +118,13 @@ That's it! Your article will automatically:
 
 ### During Development
 ```bash
-npm run dev
+bun run dev
 ```
 The dev server reads articles dynamically from markdown files. No need to run the generation script manually.
 
 ### Before Deployment
 ```bash
-npm run export
+bun run export
 ```
 This runs the prebuild script automatically and generates the static site.
 
@@ -180,12 +184,12 @@ Articles are automatically sorted by date (newest first).
 
 ### Articles not showing up?
 1. Check frontmatter has required fields: `title`, `category`, `date`
-2. Run `npm run prebuild` manually to see any warnings
+2. Run `bun run prebuild` manually to see any warnings
 3. Check console for parsing errors
 
 ### Sitemap not updating?
 1. Delete the `out/` directory
-2. Run `npm run build` again
+2. Run `bun run build` again
 3. Check `out/sitemap.xml` was generated
 
 ### RSS feed not updating?
@@ -199,10 +203,13 @@ The system works automatically with any CI/CD pipeline. Example GitHub Actions:
 
 ```yaml
 - name: Install dependencies
-  run: npm ci
+  run: bun install --frozen-lockfile
+
+- name: Install Playwright browsers
+  run: bunx playwright install --with-deps
 
 - name: Build site
-  run: npm run export
+  run: bun run export
   
 - name: Deploy
   # Your deployment step

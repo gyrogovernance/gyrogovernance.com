@@ -1,43 +1,32 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 
 test.describe('Link Checker - Docs Pages', () => {
   test('should check all links on docs homepage', async ({ page, baseURL }) => {
     await page.goto(`${baseURL}/docs`);
 
-    // Get all links on the page
     const links = page.locator('a[href]');
     const linkCount = await links.count();
 
     console.log(`Found ${linkCount} links on /docs`);
 
-    // Check each link
     for (let i = 0; i < linkCount; i++) {
       const link = links.nth(i);
       const href = await link.getAttribute('href');
 
       if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
-        continue; // Skip anchor links, email, phone
+        continue;
       }
 
       try {
-        // Try to navigate to the link
-        const [response] = await Promise.all([
+        await Promise.all([
           page.waitForLoadState('networkidle'),
-          link.click()
+          link.click(),
         ]);
-
-        // Check if page loaded successfully
-        const status = response?.status();
-        if (status && status >= 400) {
-          console.error(`❌ Broken link: ${href} (status: ${status})`);
-        } else {
-          console.log(`✅ Link OK: ${href}`);
-        }
-
-        // Go back to docs homepage
+        console.log(`✅ Link OK: ${href}`);
         await page.goto(`${baseURL}/docs`);
       } catch (error) {
-        console.error(`❌ Failed to navigate to: ${href} - ${error.message}`);
+        const message = error instanceof Error ? error.message : String(error);
+        console.error(`❌ Failed to navigate to: ${href} - ${message}`);
         await page.goto(`${baseURL}/docs`);
       }
     }
@@ -57,7 +46,6 @@ test.describe('Link Checker - Docs Pages', () => {
       try {
         await page.goto(currentUrl, { waitUntil: 'networkidle' });
 
-        // Get all doc links (links that go to /docs/)
         const docLinks = page.locator('a[href^="/docs/"]');
         const linkCount = await docLinks.count();
 
@@ -71,15 +59,13 @@ test.describe('Link Checker - Docs Pages', () => {
           }
         }
 
-        // Quick smoke test - check for console errors
-        const errors = [];
-        page.on('console', msg => {
+        const errors: string[] = [];
+        page.on('console', (msg) => {
           if (msg.type() === 'error') {
             errors.push(msg.text());
           }
         });
 
-        // Wait a bit for any dynamic content to load
         await page.waitForTimeout(1000);
 
         if (errors.length > 0) {
@@ -87,9 +73,9 @@ test.describe('Link Checker - Docs Pages', () => {
         } else {
           console.log(`✅ No console errors on ${currentUrl}`);
         }
-
       } catch (error) {
-        console.error(`❌ Failed to load: ${currentUrl} - ${error.message}`);
+        const message = error instanceof Error ? error.message : String(error);
+        console.error(`❌ Failed to load: ${currentUrl} - ${message}`);
       }
     }
 

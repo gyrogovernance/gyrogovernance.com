@@ -2,7 +2,21 @@
 
 ## Overview
 
-The Gyro Governance website is built using a modern, performant tech stack focused on static site generation, type safety, and excellent developer experience.
+The Gyro Governance website is built using a modern, performant tech stack focused on static site generation, type safety, and excellent developer experience. [Bun](https://bun.sh) is the package manager and script runner; Node.js 20+ remains the Next.js runtime.
+
+---
+
+## Getting Started
+
+```bash
+bun install              # install dependencies (uses bun.lock)
+bun run dev              # dev server with Turbopack
+bun run build            # production build with Turbopack
+bun run export           # stable production build (no Turbopack)
+bun run doctor           # check environment and lockfile
+bun run validate         # pre-deploy check (doctor + types + build)
+bunx playwright install  # first-time setup for e2e tests
+```
 
 ---
 
@@ -247,7 +261,7 @@ cgm_dataset_main.jsonl
   - HTTP status code validation (200-399 range)
   - Timeout handling and error reporting
   - CI/CD integration ready
-- **Usage**: `npm run check-links` (requires dev server running)
+- **Usage**: `bun run check-links` (requires dev server running)
 - **Output**: Real-time status reports with ✅/❌ indicators
 - **Performance**: Comprehensive crawling with smart limits
 
@@ -270,11 +284,13 @@ cgm_dataset_main.jsonl
 - Faster compilation times
 - Better incremental builds
 
-### Node.js 20+
+### Bun + Node.js 20+
 
 **Required versions:**
-- Node.js >= 20.0.0
-- npm >= 10.0.0
+- Bun >= 1.2.0 (package manager and script runner)
+- Node.js >= 20.0.0 (Next.js runtime)
+
+Install dependencies with `bun install`. The lockfile (`bun.lock`) is committed for reproducible installs on Vercel and CI.
 
 ### Build Scripts
 
@@ -284,7 +300,8 @@ cgm_dataset_main.jsonl
   "dev:fast": "next dev --turbopack",
   "prebuild": "node scripts/clean-build.mjs && node scripts/generate-articles-data.mjs",
   "build": "next build --turbopack",
-  "export": "npm run prebuild && next build --turbopack",
+  "preexport": "node scripts/clean-build.mjs && node scripts/generate-articles-data.mjs",
+  "export": "next build",
   "start": "next start",
   "lint": "eslint"
 }
@@ -610,6 +627,7 @@ gyrogovernance.com/
 
 ## Resources
 
+- [Bun Documentation](https://bun.sh/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Documentation](https://react.dev)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)

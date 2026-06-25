@@ -28,13 +28,12 @@ if (platform() === 'win32') {
     // Ignore errors - processes might not exist
   }
 
-  // Clear npm cache if needed
   try {
-    console.log('Clearing npm cache...');
-    execSync('npm cache clean --force', { stdio: 'inherit' });
-    console.log('✅ NPM cache cleared');
+    console.log('Clearing Bun cache...');
+    execSync('bun pm cache rm', { stdio: 'inherit' });
+    console.log('✅ Bun cache cleared');
   } catch (error) {
-    console.log('⚠️  Could not clear npm cache');
+    console.log('⚠️  Could not clear Bun cache');
   }
 
 } else {
@@ -43,4 +42,4 @@ if (platform() === 'win32') {
 }
 
 console.log('\n🎉 Process cleanup complete!');
-console.log('💡 Tip: Use "npm run kill-nodes" for quick cleanup');
+console.log('💡 Tip: Use "bun run kill-nodes" for quick cleanup');

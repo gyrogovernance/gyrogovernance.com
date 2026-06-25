@@ -32,5 +32,5 @@ export default defineConfig({
     },
   ],
 
-  /* Note: Start dev server manually with 'npm run dev' before running tests */
+  /* Note: Start dev server manually with 'bun run dev' before running tests */
 });
