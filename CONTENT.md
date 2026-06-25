@@ -411,6 +411,27 @@ Search across all entries by keyword, category, or tag.
 
 **Full Documentation**: /docs/science
 
+#### Experiments
+
+**🔭 Subatomic Physics and Gravity**
+*Mathematical Physics verified through the aQPU*
+
+Executable state space analyses bridging classical information theory with quantum mechanics, deriving gravitational invariants and electroweak laws from discrete kernel algebra.
+
+**Headline results:**
+- **Newton's constant G** from framework geometry with the electroweak Higgs scale as the only measured input. Matches CODATA to 0.074 ppm.
+- **Fine-structure constant α** from the same geometry. Matches the experimental value to 0.043 parts per billion.
+- **Electroweak masses** (Higgs, Z, W, top quark) and the weak mixing angle from the structure that fixes G. Accuracy from sub-ppm to parts per billion.
+
+- **Science Laboratory**: https://github.com/gyrogovernance/science
+- **Gravity Analysis**: https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md
+
+**⚛️ Quantum AI Research**
+*Architecting Qubit-Tensor-Chain (QTC)*
+
+The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
+- **Notion**: https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c
+
 #### Other Datasets
 
 **🌟 Clean**
@@ -442,21 +463,6 @@ Human Data Evaluation and Responsible AI Behavior Alignment
 **AI Canon**
 Sensory Ethics for Biological and Artificial Entities
 - **Publication**: https://doi.org/10.17613/txwg-v619
-
-#### Experiments
-
-**🔭 Subatomic Physics and Gravity**
-*Mathematical Physics verified through the aQPU*
-
-Executing exhaustive state space analyses to bridge classical information theory with quantum mechanics. Recent executable experiments derive gravitational invariants, the fine structure constant, and electroweak mass laws directly from discrete kernel algebra.
-- **Science Laboratory**: https://github.com/gyrogovernance/science
-- **Gravity Analysis**: https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md
-
-**⚛️ Quantum AI Research**
-*Architecting Qubit-Tensor-Chain (QTC)*
-
-The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
-- **Notion**: https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c
 
 #### Media
 

@@ -1453,6 +1453,110 @@ export default function Home() {
           </LiquidGlassCard>
         </div>
 
+        {/* Experiments */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Experiments</h3>
+          <div className="space-y-6">
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
+              <div className="relative z-10 p-4 sm:p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl sm:text-5xl md:text-6xl">🔭</div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold text-foreground mb-3">Subatomic Physics and Gravity</h4>
+                    <p className="text-foreground-secondary mb-2 font-medium">Mathematical Physics verified through the aQPU</p>
+                    <p className="text-foreground-secondary mb-4">
+                      Executable state space analyses bridging classical information theory with quantum mechanics, deriving gravitational invariants and electroweak laws from discrete kernel algebra.
+                    </p>
+                    <div className="glass-card-inner rounded-xl p-4 mb-4">
+                      <h5 className="text-sm font-semibold text-foreground mb-3">Headline results</h5>
+                      <ul className="space-y-2.5 text-sm text-foreground-secondary list-none">
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-500 shrink-0">●</span>
+                          <span>
+                            <strong className="text-foreground">Newton&apos;s constant G</strong> from framework geometry with the electroweak Higgs scale as the only measured input. Matches CODATA to 0.074 ppm.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-500 shrink-0">●</span>
+                          <span>
+                            <strong className="text-foreground">Fine-structure constant α</strong> from the same geometry. Matches the experimental value to 0.043 parts per billion.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-500 shrink-0">●</span>
+                          <span>
+                            <strong className="text-foreground">Electroweak masses</strong> (Higgs, Z, W, top quark) and the weak mixing angle from the structure that fixes G. Accuracy from sub-ppm to parts per billion.
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-4">
+                      <a
+                        href="https://github.com/gyrogovernance/science"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                        aria-label="View Science Laboratory on GitHub (opens in new tab)"
+                      >
+                        <GitHubIcon className="w-4 h-4 mr-2" />
+                        Science Laboratory
+                      </a>
+                      <a
+                        href="https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
+                        aria-label="Read Gravity Analysis (opens in new tab)"
+                      >
+                        Gravity Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </LiquidGlassCard>
+
+            <LiquidGlassCard
+              className="glass-card rounded-[2rem] shadow-2xl"
+              style={{
+                boxShadow: "var(--glass-card-shadow-lg)",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                borderStyle: "solid",
+              }}
+            >
+              <div className="relative z-10 p-4 sm:p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold text-foreground mb-3">Quantum AI Research</h4>
+                    <p className="text-foreground-secondary mb-2 font-medium">Architecting Qubit-Tensor-Chain (QTC)</p>
+                    <p className="text-foreground-secondary mb-4">
+                      The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
+                    </p>
+                    <a
+                      href="https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
+                      aria-label="View Quantum AI Research on Notion (opens in new tab)"
+                    >
+                      <NotionIcon className="w-4 h-4 mr-2" />
+                      Notion Documentation
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </LiquidGlassCard>
+          </div>
+        </div>
+
         {/* Other Datasets */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Other Datasets</h3>
@@ -1619,87 +1723,6 @@ export default function Home() {
               </div>
             </LiquidGlassCard>
 
-          </div>
-        </div>
-
-        {/* Experiments */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Experiments</h3>
-          <div className="space-y-6">
-            <LiquidGlassCard
-              className="glass-card rounded-[2rem] shadow-2xl"
-              style={{
-                boxShadow: "var(--glass-card-shadow-lg)",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
-                borderStyle: "solid",
-              }}
-            >
-              <div className="relative z-10 p-4 sm:p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="text-4xl sm:text-5xl md:text-6xl">🔭</div>
-                  <div className="flex-1">
-                    <h4 className="text-xl font-semibold text-foreground mb-3">Subatomic Physics and Gravity</h4>
-                    <p className="text-foreground-secondary mb-2 font-medium">Mathematical Physics verified through the aQPU</p>
-                    <p className="text-foreground-secondary mb-4">
-                      Executing exhaustive state space analyses to bridge classical information theory with quantum mechanics. Recent executable experiments derive gravitational invariants, the fine structure constant, and electroweak mass laws directly from discrete kernel algebra.
-                    </p>
-                    <div className="flex flex-wrap items-center gap-4">
-                      <a
-                        href="https://github.com/gyrogovernance/science"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                        aria-label="View Science Laboratory on GitHub (opens in new tab)"
-                      >
-                        <GitHubIcon className="w-4 h-4 mr-2" />
-                        Science Laboratory
-                      </a>
-                      <a
-                        href="https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
-                        aria-label="Read Gravity Analysis (opens in new tab)"
-                      >
-                        Gravity Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </LiquidGlassCard>
-
-            <LiquidGlassCard
-              className="glass-card rounded-[2rem] shadow-2xl"
-              style={{
-                boxShadow: "var(--glass-card-shadow-lg)",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
-                borderStyle: "solid",
-              }}
-            >
-              <div className="relative z-10 p-4 sm:p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="text-4xl sm:text-5xl md:text-6xl">⚛️</div>
-                  <div className="flex-1">
-                    <h4 className="text-xl font-semibold text-foreground mb-3">Quantum AI Research</h4>
-                    <p className="text-foreground-secondary mb-2 font-medium">Architecting Qubit-Tensor-Chain (QTC)</p>
-                    <p className="text-foreground-secondary mb-4">
-                      The QTC Protocol harnesses the unique properties of Quantum Computing as the foundation of a New Decentralized Governance Paradigm.
-                    </p>
-                    <a
-                      href="https://korompilias.notion.site/Quantum-AI-Research-By-Basil-6e0f7ae790c84c209c82b97180ce9a1c"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                      aria-label="View Quantum AI Research on Notion (opens in new tab)"
-                    >
-                      <NotionIcon className="w-4 h-4 mr-2" />
-                      Notion Documentation
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </LiquidGlassCard>
           </div>
         </div>
 
