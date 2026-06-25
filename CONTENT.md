@@ -165,7 +165,7 @@ Quality Index, Superintelligence Index, Alignment Rate + 20 metrics
 
 **Quantum Computing Advantage on Standard Silicon**
 
-The aQPU (algebraic Quantum Processing Unit) is a Compact and Finite-State Kernel for Artificial General Intelligence (AGI) with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is its Bose–Einstein byte medium, turning deterministic byte dynamics into exact ensemble stochasticity for stable AI execution on standard silicon.
+The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for Artificial General Intelligence (AGI) with verified quantum speedups, holographic compression, and intrinsic error detection.
 
 #### Performance Metrics
 - **1.26B ops/s** - Operations per second
@@ -189,9 +189,11 @@ The aQPU (algebraic Quantum Processing Unit) is a Compact and Finite-State Kerne
 
 **QuBEC (Quantum Bose-Einstein Condensate)** is a quantum byte medium: a condensed computational state with six internal binary orientation modes (dipoles), a four-phase spinorial gauge structure, and exact ensemble stochasticity induced by deterministic byte dynamics. Together they replace costly continuous approximation with exact integer algebra on standard CPUs and GPUs, without qubits, cryogenics, or probabilistic hardware noise.
 
-**Formal quantum certification via the CHSH-Tsirelson diagnostic: six Bell pairs from the kernel's self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.**
+#### 🏆 Achievements
 
-**Further quantum information properties are confirmed on standard silicon: quantum teleportation verified, contextuality proven, and universal quantum computation established.**
+- The aQPU algorithm bridges classical information theory with quantum mechanics, deriving gravitational invariants, the fine-structure constant, and subatomic physics from discrete kernel algebra.
+- **Formal quantum certification:** six Bell pairs from the kernel's self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.
+- 240+ mathematical and quantum features tested and confirmed across 60+ experiments, including quantum teleportation, contextuality, and universal quantum computation.
 
 **Resources:**
 - Quantum Features: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Features_Report.md
@@ -203,7 +205,9 @@ The aQPU (algebraic Quantum Processing Unit) is a Compact and Finite-State Kerne
 
 **Intelligence-Agnostic Meta-Computing**
 
-Gyroscopic ASI is an infrastructure for multi-domain network coordination that establishes the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans and machines. Intelligence lives in live occupation and resonance, not frozen weights. The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination.
+**Gyroscopic ASI** is an infrastructure for multi-domain network coordination that establishes the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans and machines.
+
+The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic, tamper-evident substrate for zero-trust AI governance.
 
 #### Execution Layer: Native Compute Backend
 
@@ -661,14 +665,14 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 #### aQPU Kernel & SDK
 - **Name**: aQPU Kernel & SDK
-- **Description**: Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. Includes 1-step resolution for selected quantum-classic problems, O(1) commutativity checks, exact uniform mixing in 2 steps, holographic compression (33% reduction), and a developer toolkit with native operator algebra plus bitplane tensor decomposition. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard hardware without qubits or cryogenics.
+- **Description**: The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium. Achievements include physics derivations from kernel algebra, CHSH-Tsirelson certification at 2√2, and 240+ features across 60+ experiments.
 - **URL**: https://github.com/gyrogovernance/superintelligence
 - **Application Category**: DeveloperApplication
 - **Keywords**: Quantum Advantage, aQPU Kernel, aQPU SDK, QuBEC, Holographic Compression, Tensor Engine
 
 #### Gyroscopic ASI Runtime
 - **Name**: Gyroscopic ASI Runtime
-- **Description**: Intelligence-agnostic meta-computing infrastructure composing the aQPU kernel into a universal computational condenser. Native compute backend with llama.cpp integration (1.26B ops/s). Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.
+- **Description**: Intelligence-agnostic meta-computing infrastructure for multi-domain network coordination. Composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. llama.cpp custom backend for quantum-feature compression and speedups with a tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.
 - **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md
 - **Application Category**: DeveloperApplication
 - **Keywords**: Gyroscopic ASI Runtime, Auditable Inference, Multicellular Coordination, Native Compute, Deterministic Replay
@@ -808,9 +812,14 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 ##### Quantum AGI Infrastructure: aQPU Kernel & SDK
 
-**aQPU** is a compact, finite-state kernel for AGI with verified quantum speedups, holographic compression (33%), and intrinsic error detection. Runs deterministically on standard CPUs/GPUs using integer arithmetic—no qubits or cryogenics required.
+**aQPU** is a compact, finite-state kernel for AGI with verified quantum speedups, holographic compression (33%), and intrinsic error detection. Runs deterministically on standard CPUs/GPUs using integer arithmetic with no qubits or cryogenics required.
 
 **QuBEC** is the computational medium: a quantum byte with six internal binary modes, four-phase spinorial gauge, and exact ensemble stochasticity from deterministic dynamics.
+
+**Achievements:**
+- Bridges classical information theory with quantum mechanics, deriving gravitational invariants, the fine-structure constant, and subatomic physics from discrete kernel algebra
+- Formal quantum certification: six Bell pairs saturate the Tsirelson bound at 2√2
+- 240+ mathematical and quantum features tested across 60+ experiments, including quantum teleportation, contextuality, and universal quantum computation
 
 **Key Metrics:**
 - 1.26B operations/second on commodity hardware
@@ -818,13 +827,14 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - 1-step advantage: Deutsch-Jozsa, Bernstein-Vazirani, Hidden Subgroup (vs 64 classical queries)
 - 2-step exact uniformization (vs ~12 classical random walk steps)
 - Self-dual [12,6,2] error-detecting code with unconditional odd-weight detection
-- CHSH-Tsirelson certification at 2√2, quantum teleportation verified, contextuality proven
 
 **Applications:** Verifiable coordination, secure auditing, universal quantum computation on silicon.
 
 ##### Gyroscopic ASI Runtime
 
-**Gyroscopic ASI Runtime** is intelligence-agnostic meta-computing infrastructure for multi-domain network coordination. It composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination.
+**Gyroscopic ASI** is infrastructure for multi-domain network coordination establishing the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans and machines.
+
+The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic, tamper-evident substrate for zero-trust AI governance.
 
 **Execution Layer (Native Compute Backend):** Substitutional bridge upgrading neural models via C/C++ and llama.cpp. Intercepts decision surfaces, achieves 1.26B exact operations per second, and classifies learnable structure into native algebraic operators.
 
@@ -942,19 +952,16 @@ Transform AI outputs for **evaluation**, **interpretability**, and **governance*
 
 ##### Quantum AGI Infrastructure: aQPU Kernel
 
-**aQPU** is a compact, finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. **QuBEC** is the quantum byte computational medium enabling quantum advantage on standard CPUs/GPUs with exact integer arithmetic. No qubits or cryogenics required.
+**aQPU** is a compact, finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. **QuBEC** is the quantum byte computational medium enabling exact integer algebra on standard CPUs/GPUs without qubits or cryogenics.
 
-**Key Features:**
-- 1-step advantage for Deutsch-Jozsa, Bernstein-Vazirani, Hidden Subgroup problems
-- 2-step exact uniformization across all states
-- 33% holographic compression (12-bit to 8-bit)
-- Self-dual error-detecting code with unconditional detection
+**Achievements:**
+- Physics derivations from discrete kernel algebra (gravitational invariants, fine-structure constant, subatomic physics)
 - CHSH-Tsirelson certification at 2√2
-- Universal quantum computation on silicon
+- 240+ features tested across 60+ experiments, including quantum teleportation, contextuality, and universal quantum computation
 
 ##### Gyroscopic ASI Runtime
 
-**Gyroscopic ASI Runtime** composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Verified exact integer algebra on decision surfaces of a live 1B-parameter model (284× faster encode boundary, 1.15× faster decode).
+**Gyroscopic ASI** establishes the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans and machines. The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic, tamper-evident substrate for zero-trust AI governance.
 
 ##### Computational Climate Control
 

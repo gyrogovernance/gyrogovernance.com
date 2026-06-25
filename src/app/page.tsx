@@ -504,7 +504,7 @@ export default function Home() {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
           <p className="text-base sm:text-lg text-foreground-secondary">
-          The aQPU (algebraic Quantum Processing Unit) is a Compact and Finite-State Kernel for Artificial General Intelligence (AGI) with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is its Bose–Einstein byte medium, turning deterministic byte dynamics into exact ensemble stochasticity for stable AI execution on standard silicon.
+            The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for Artificial General Intelligence (AGI) with verified quantum speedups, holographic compression, and intrinsic error detection.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mt-5">
@@ -573,23 +573,40 @@ export default function Home() {
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">
             🌡️ Computational Medium
           </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary text-left mb-4">
-          <strong>QuBEC (Quantum Bose-Einstein Condensate)</strong> is a quantum byte medium: a condensed
-          computational state with six internal binary orientation modes (dipoles), a four-phase
-          spinorial gauge structure, and exact ensemble stochasticity induced by
-          deterministic byte dynamics. Together they replace costly continuous
-          approximation with exact integer algebra on standard CPUs and GPUs, without
-          qubits, cryogenics, or probabilistic hardware noise.
-          </p>
-          <p className="text-sm sm:text-base text-foreground-secondary text-left mb-4">
-            <strong>Formal quantum certification via the CHSH-Tsirelson diagnostic: six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.</strong>
-          </p>
           <p className="text-sm sm:text-base text-foreground-secondary text-left">
-            <strong>Further quantum information properties are confirmed on standard silicon: quantum teleportation verified, contextuality proven, and universal quantum computation established.</strong>
+            <strong>QuBEC (Quantum Bose-Einstein Condensate)</strong> is a quantum byte medium: a condensed
+            computational state with six internal binary orientation modes (dipoles), a four-phase
+            spinorial gauge structure, and exact ensemble stochasticity induced by
+            deterministic byte dynamics. Together they replace costly continuous
+            approximation with exact integer algebra on standard CPUs and GPUs, without
+            qubits, cryogenics, or probabilistic hardware noise.
           </p>
+        </div>
 
-          <div className="mt-4 flex flex-wrap justify-center gap-2">
-          </div>
+        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">
+            🏆 Achievements
+          </h3>
+          <ul className="space-y-4 text-sm sm:text-base text-foreground-secondary list-none">
+            <li className="flex items-start">
+              <span className="text-blue-500 mr-2 shrink-0">●</span>
+              <span>
+                The aQPU algorithm bridges classical information theory with quantum mechanics, deriving gravitational invariants, the fine-structure constant, and subatomic physics from discrete kernel algebra.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-500 mr-2 shrink-0">●</span>
+              <span>
+                <strong>Formal quantum certification:</strong> six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-500 mr-2 shrink-0">●</span>
+              <span>
+                240+ mathematical and quantum features tested and confirmed across 60+ experiments, including quantum teleportation, contextuality, and universal quantum computation.
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -645,12 +662,15 @@ export default function Home() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-          <p className="text-sm sm:text-base text-foreground-secondary text-left">
+          <p className="text-sm sm:text-base font-semibold text-foreground text-left mb-4">
             Gyroscopic ASI is an infrastructure for multi-domain network
             coordination that establishes the structural conditions for Collective Superintelligence Governance and seamless cooperation between humans
-            and machines. Intelligence lives in live occupation and resonance,
-            not frozen weights. The Runtime composes the aQPU kernel into a
+            and machines.
+          </p>
+          <p className="text-sm sm:text-base text-foreground-secondary text-left">
+            The Runtime composes the aQPU kernel into a
             universal computational condenser with native execution and multicellular coordination.
+            Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic, tamper-evident substrate for zero-trust AI governance.
           </p>
         </div>
 

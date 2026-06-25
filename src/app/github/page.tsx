@@ -155,14 +155,14 @@ export default function GitHub() {
     },
     {
       name: "aQPU Kernel & SDK",
-      description: "Quantum Advantage on Silicon with deterministic execution on standard CPUs and GPUs using exact integer arithmetic. Includes 1-step resolution for selected quantum-classic problems, O(1) commutativity checks, exact uniform mixing in 2 steps, holographic compression (33% reduction), and a developer toolkit with native operator algebra plus bitplane tensor decomposition. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard hardware without qubits or cryogenics.",
+      description: "The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium. Achievements include physics derivations from kernel algebra, CHSH-Tsirelson certification at 2√2, and 240+ features across 60+ experiments.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
       keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "QuBEC", "Holographic Compression", "Tensor Engine"]
     },
     {
       name: "Gyroscopic ASI Runtime",
-      description: "Intelligence-agnostic meta-computing infrastructure composing the aQPU kernel into a universal computational condenser. Native compute backend substituting neural model engines via C/C++ and llama.cpp integration (1.26B operations per second). Multicellular quantum cellular automaton coordinating runtime events as 4-byte words across four bridge domains. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
+      description: "Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Gyroscopic ASI Runtime", "Auditable Inference", "Multicellular Coordination", "Native Compute", "Deterministic Replay"]
@@ -277,7 +277,7 @@ export default function GitHub() {
       emoji: '⚛️',
       name: 'aQPU Kernel & SDK',
       title: 'Quantum Advantage on Silicon',
-      description: 'Compact, finite-state kernel for AGI with verified quantum speedups, 33% holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium enabling quantum properties on standard CPUs/GPUs with exact integer arithmetic. CHSH-Tsirelson certification: six Bell pairs saturate the Tsirelson bound at 2√2. 1.26B ops/s, 499 tests passing, 4,096 states, zero qubits. 1-step advantage for Deutsch-Jozsa, Bernstein-Vazirani, Hidden Subgroup. Self-dual [12,6,2] error-detecting code.',
+      description: 'The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium. Achievements include physics derivations from kernel algebra, CHSH-Tsirelson certification at 2√2, and 240+ features across 60+ experiments. 1.26B ops/s, 499 tests passing, 4,096 states, zero qubits.',
       url: 'https://github.com/gyrogovernance/superintelligence',
       tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'QuBEC', 'Holographic Compression', 'Tensor Engine'],
       gradient: 'from-blue-500/10 via-indigo-500/10 to-purple-500/10',
@@ -288,7 +288,7 @@ export default function GitHub() {
       emoji: '🤖',
       name: 'Gyroscopic ASI Runtime',
       title: 'Intelligence-Agnostic Meta-Computing',
-      description: 'Infrastructure for multi-domain network coordination composing the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Execution layer: substitutional bridge upgrading neural models via C/C++ and llama.cpp (1.26B ops/s). Multicellular layer: quantum cellular automaton consuming runtime events as 4-byte words across four bridge domains. Verified: exact integer algebra replaced softmax on decision surfaces of a live 1B-parameter model (284× faster encode boundary, 1.15× faster decode).',
+      description: 'Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a tamper-evident zero-trust governance substrate. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md',
       tags: ['Gyroscopic ASI Runtime', 'Native Compute Backend', 'Multicellular Coordination', 'Auditable Inference', 'Deterministic Replay'],
       gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
@@ -597,27 +597,34 @@ export default function GitHub() {
             the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.
           </p>
 
-          <h3 className="text-xl font-semibold text-foreground mb-3">aQPU Kernel & SDK - Quantum Advantage on Silicon</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-3">aQPU Kernel - Quantum Advantage on Silicon</h3>
           <p className="mb-4">
-            A compact, finite-state kernel for AGI proving that <strong>quantum algorithmic speedups</strong> (1-step resolution for Deutsch-Jozsa,
-            Bernstein-Vazirani, Hidden Subgroup), <strong>33% holographic compression</strong> (12-bit to 8-bit boundary coordinates), and
-            <strong>self-dual error-detecting code</strong> ([12,6,2] with unconditional odd-weight detection) are geometric properties of discrete information.
+            The aQPU (algebraic Quantum Processing Unit) is a compact, finite-state kernel for AGI with verified quantum speedups,
+            holographic compression, and intrinsic error detection.
+          </p>
+          <p className="mb-4">
             <strong>QuBEC</strong> (Quantum Bose-Einstein Condensate) is the computational medium: a quantum byte with six internal binary modes,
             four-phase spinorial gauge, and exact ensemble stochasticity from deterministic dynamics. Runs on standard CPUs and GPUs via exact integer
             arithmetic without qubits, cryogenics, or probabilistic hardware noise.
           </p>
           <p className="mb-4">
-            <strong>Formal quantum certification via the CHSH-Tsirelson diagnostic:</strong> six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.
-            Further quantum information properties are confirmed on standard silicon: quantum teleportation verified, contextuality proven, and universal quantum computation established.
+            <strong>Achievements:</strong> the aQPU algorithm bridges classical information theory with quantum mechanics, deriving gravitational invariants,
+            the fine-structure constant, and subatomic physics from discrete kernel algebra. Formal quantum certification: six Bell pairs from the kernel&apos;s
+            self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound. 240+ mathematical and quantum features
+            tested across 60+ experiments, including quantum teleportation, contextuality, and universal quantum computation.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Gyroscopic ASI Runtime</h3>
           <p className="mb-4">
-            <strong>Gyroscopic ASI Runtime</strong> is intelligence-agnostic meta-computing infrastructure for multi-domain network coordination.
-            It composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination.
-            The execution layer is a substitutional bridge upgrading neural models via C/C++ and llama.cpp ggml integration (1.26B operations per second).
-            The multicellular layer is a quantum cellular automaton where cells evolve under the Gyroscopic byte law, consuming runtime events as 4-byte words and emitting structured spectral output for audit and control.
-            Verified on a live 1B-parameter model: exact integer algebra replaced softmax and cosine-style selection on decision surfaces, achieving a 284× faster encode boundary, 1.15× faster decode, and coherent text generation without transcendental functions at those surfaces.
+            <strong>Gyroscopic ASI</strong> is infrastructure for multi-domain network coordination that establishes the structural conditions for
+            Collective Superintelligence Governance and seamless cooperation between humans and machines.
+          </p>
+          <p className="mb-4">
+            The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination.
+            Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic,
+            tamper-evident substrate for zero-trust AI governance. The execution layer is a substitutional bridge upgrading neural models via C/C++ and llama.cpp.
+            The multicellular layer is a quantum cellular automaton consuming runtime events as 4-byte words across four bridge domains.
+            Verified on a live 1B-parameter model: exact integer algebra replaced softmax on decision surfaces (284× faster encode boundary, 1.15× faster decode).
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Computational Climate Control</h3>
