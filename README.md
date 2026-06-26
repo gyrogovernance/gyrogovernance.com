@@ -16,7 +16,7 @@
 
 ## About
 
-Gyro Governance is a research lab established in 2013, specializing in artificial intelligence alignment and governance through mathematical physics foundations. The lab addresses critical challenges in machine learning systems using gyroscopic dynamics and structural coherence. Focus areas include ethical frameworks, governance models, AI risks, hallucinations, sycophancy, bias, and alignment with UN Sustainable Development Goals.
+Gyro Governance is a research lab established in 2018, specializing in artificial intelligence alignment and governance through mathematical physics foundations. The lab addresses critical challenges in machine learning systems using gyroscopic dynamics and structural coherence. Focus areas include ethical frameworks, governance models, AI risks, hallucinations, sycophancy, bias, and alignment with UN Sustainable Development Goals.
 
 Founder and AI Governance Lead: Basil Korompilias, with over two decades of experience in product design, change management, and applied research.
 

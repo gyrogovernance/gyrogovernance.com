@@ -7,7 +7,7 @@ export default function StructuredData() {
     "url": "https://gyrogovernance.com",
     "logo": "https://gyrogovernance.com/og-image.png",
     "description": "Research lab specializing in AI safety evaluation, alignment metrics, and governance through mathematical physics foundations. Developing frontier AI safety frameworks and superintelligence alignment tools.",
-    "foundingDate": "2013",
+    "foundingDate": "2018",
     "founder": {
       "@type": "Person",
       "name": "Basil Korompilias",

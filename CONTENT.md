@@ -4,7 +4,7 @@
 
 ### About
 
-**Gyro Governance** is a research lab established in 2013, specializing in artificial intelligence alignment and governance through mathematical physics foundations.
+**Gyro Governance** is a research lab established in 2018, specializing in artificial intelligence alignment and governance through mathematical physics foundations.
 
 The research addresses critical challenges in machine learning systems through approaches based on gyroscopic dynamics and structural coherence. This unique perspective enables the development of more robust and interpretable computational architectures.
 

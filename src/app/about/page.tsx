@@ -6,7 +6,7 @@ import { LiquidGlassCard } from "@/components/LiquidGlassCard";
 const atAGlance = [
   {
     label: "Founded",
-    value: "2013",
+    value: "2018",
     accent: "border-classic-blue/35",
   },
   {
@@ -131,7 +131,7 @@ export default function About() {
         <LiquidGlassCard className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl">
           <div className="p-7">
             <p className="text-foreground-primary mb-4 leading-relaxed text-xl font-semibold">
-              <strong>Gyro Governance</strong> is an independent research lab founded in 2013, focusing on artificial intelligence alignment, evaluation, and governance.
+              <strong>Gyro Governance</strong> is an independent research lab founded in 2018, focusing on artificial intelligence alignment, evaluation, and governance.
             </p>
             <p className="text-foreground-secondary mb-4 leading-relaxed">
               We build architectures that make AI measurable, inspectable, and easier to coordinate responsibly. Combining mathematical physics with practical engineering, our work addresses the core vulnerabilities of modern machine learning: opacity, weak accountability, brittle behavior, and coordination failure.

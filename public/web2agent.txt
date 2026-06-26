@@ -4,7 +4,7 @@
     "description": "Advancing AI governance through innovative research and development solutions with cutting-edge mathematical physics foundations",
     "url": "https://gyrogovernance.com",
     "founder": "Basil Korompilias",
-    "established": 2013,
+    "established": 2018,
     "license": "CC BY-SA 4.0"
   },
   "organization": {

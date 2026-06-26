@@ -4,7 +4,7 @@
 ## Organization Overview
 - Name: Gyro Governance
 - Founder: Basil Korompilias
-- Established: 2013
+- Established: 2018
 - Focus: AI alignment, governance, and mathematical physics foundations
 - Mission: Advancing AI governance through innovative research and development solutions
 
