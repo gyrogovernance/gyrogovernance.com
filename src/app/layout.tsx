@@ -297,7 +297,7 @@ export default function RootLayout({
             <footer className="border-t border-border-primary mt-16 bg-bg-surface/80" role="contentinfo">
               <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                  <p className="text-foreground-secondary font-medium">GYRO GOVERNANCE | 2025 | CC BY-SA 4.0</p>
+                  <p className="text-foreground-secondary font-medium">GYRO GOVERNANCE | 2026 | CC BY-SA 4.0</p>
 
                   <nav className="mt-6" role="navigation" aria-label="Footer navigation">
                     <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm">
