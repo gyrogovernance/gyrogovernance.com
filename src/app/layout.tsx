@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from 'next/script';
 import SVGOverlay from "@/components/icons/SVGOverlay";
+import BackgroundWaves from "@/components/BackgroundWaves";
 import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeToggle from '@/components/ThemeToggle';
 import StructuredData from '@/components/StructuredData';
@@ -223,6 +224,7 @@ export default function RootLayout({
             <div className="blob blob-2" />
             <div className="blob blob-3" />
             <SVGOverlay className="svg-overlay absolute inset-0 h-full pointer-events-none left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0" />
+            <BackgroundWaves />
           </div>
 
           {/* ── Sticky header ── */}

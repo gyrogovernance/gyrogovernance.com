@@ -49,7 +49,7 @@ const sidebarMenuItemStyles = {
     whiteSpace: "normal",
     wordBreak: "normal" as CSSProperties["wordBreak"],
     overflowWrap: "break-word" as CSSProperties["overflowWrap"],
-    transition: "background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease"
+    transition: "background-color 0.15s ease, color 0.15s ease"
   }),
   label: ({ active }: { active: boolean }) => ({
     display: "block",

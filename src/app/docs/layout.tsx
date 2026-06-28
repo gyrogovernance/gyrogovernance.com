@@ -17,8 +17,8 @@ export default function DocsLayout({
 }) {
   return (
     <div className="min-h-screen">
-      <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-6 py-4 sm:py-6 xl:py-8">
-        <div className="grid grid-cols-1 xl:grid-cols-[220px_minmax(0,1fr)_240px] gap-4 xl:gap-4">
+      <div className="mx-auto max-w-[1800px] px-3 sm:px-5 lg:px-6 xl:px-10 2xl:px-16 py-4 sm:py-6 xl:py-8">
+        <div className="grid grid-cols-1 xl:grid-cols-[220px_minmax(0,1fr)_240px] gap-4 xl:gap-5 2xl:gap-6">
           {/* Left Sidebar - Navigation */}
           <div className="hidden xl:block xl:sticky xl:top-[5.5rem] xl:h-[calc(100vh-6rem)] xl:overflow-visible">
             <LiquidGlassCard
@@ -38,7 +38,7 @@ export default function DocsLayout({
           {/* Main Content Area */}
           <main className="min-w-0 xl:col-span-1">
             <LiquidGlassCard
-              className="glass-card glass-card-translucent rounded-[2rem] p-4 xl:p-6"
+              className="glass-card glass-card-translucent docs-content-card rounded-[2rem] p-4 xl:p-6"
               intensity="subtle"
               blur={24}
               saturation={145}

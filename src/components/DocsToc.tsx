@@ -67,9 +67,10 @@ export default function DocsToc({ htmlContent }: DocsTocProps) {
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
+    setActiveId(id);
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Account for sticky header
+      const offset = 80;
       const y = element.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
@@ -79,32 +80,28 @@ export default function DocsToc({ htmlContent }: DocsTocProps) {
 
   const tocContent = (
     <LiquidGlassCard
-      className="sticky top-0 glass-card glass-card-translucent rounded-[2rem] p-3"
+      className="sticky top-0 glass-card glass-card-translucent rounded-[2rem] p-4"
       intensity="subtle"
       blur={22}
       saturation={145}
       luminosity={108}
       shadowIntensity={0.12}
     >
-      <h3 className="toc-title text-sm font-semibold text-foreground mb-3">
+      <h3 className="toc-title">
         On this page
       </h3>
       <div className="max-h-96 overflow-y-auto pr-0 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
-        <ul className="space-y-1">
+        <ul className="space-y-0.5">
           {tocItems.map((item, index) => (
             <li key={`${item.id}-${index}`} style={{ paddingLeft: `${(item.level - 1) * 0.75}rem` }}>
               <a
                 href={`#${item.id}`}
                 onClick={(e) => handleClick(e, item.id)}
-                className={`toc-link block text-sm py-1 px-2 rounded transition-colors hover:bg-foreground/10 ${
-                  activeId === item.id
-                    ? 'text-classic-blue bg-classic-blue/10 border-l-2 border-classic-blue'
-                    : 'text-foreground-secondary hover:text-foreground'
-                }`}
+                className={`toc-link ${activeId === item.id ? 'active' : ''}`}
               >
                 {item.text}
               </a>
-              </li>
+            </li>
           ))}
         </ul>
       </div>
