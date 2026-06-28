@@ -44,7 +44,7 @@ const workItems = [
     number: "02",
     title: "Verifiable Computing Architectures",
     description:
-      "We design execution environments that make model inference mathematically exact and perfectly replayable. By replacing opaque floating-point bottlenecks with deterministic integer algebra, we provide the computational infrastructure required for high-assurance AI deployments.",
+      "We design execution environments that make model inference mathematically exact and perfectly replayable. By replacing opaque floating-point bottlenecks with exact integer algebra, we provide the computational infrastructure required for high-assurance AI deployments.",
     accent: "bg-classic-green",
     accentBorder: "border-classic-green/35",
   },
@@ -104,7 +104,7 @@ const impactAudience = [
   {
     title: "For Engineers",
     description:
-      "We provide practical, hardware-efficient tools for runtime observability and deterministic execution.",
+      "We provide practical, hardware-efficient tools for runtime observability and replayable execution.",
     accent: "border-classic-blue/35",
   },
   {

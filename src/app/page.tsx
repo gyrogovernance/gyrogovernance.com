@@ -26,7 +26,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-6 text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-          Building verifiable AI governance: audit, alignment infrastructure, and physics-based coordination.
+          Building verifiable AI governance: audit, alignment infrastructure, and dynamics-based coordination.
         </p>
       </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation", href: "#thm" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
-            { emoji: "⚛️", title: "Quantum AGI Infrastructure: aQPU Kernel", desc: "Quantum Advantage on standard hardware for verifiable coordination and audit", href: "#aqpu" },
+            { emoji: "⚛️", title: "Holonomic QVM: hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
             { emoji: "🍃", title: "Alignment Infrastructure Routing", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
             { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
@@ -139,8 +139,8 @@ export default function Home() {
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
               { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
               { dot: "bg-cyan-500", title: "Gyroscopic ASI Runtime", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyroscopic" },
-              { dot: "bg-cyan-500", title: "AI Compute Optimizations", desc: "Replaced floating-point math and eliminated expensive overhead.", date: "17 Mar 2026", href: "#aqpu" },
-              { dot: "bg-blue-500", title: "aQPU Kernel", desc: "Quantum Advantage: verified uniform mixing and holographic compression", date: "11 Mar 2026", href: "#aqpu" },
+              { dot: "bg-cyan-500", title: "AI Compute Optimizations", desc: "Replaced floating-point math and eliminated expensive overhead.", date: "17 Mar 2026", href: "#hqvm" },
+              { dot: "bg-blue-500", title: "hQVM Kernel", desc: "Verified uniform mixing and holographic compression", date: "11 Mar 2026", href: "#hqvm" },
               { dot: "bg-green-500", title: "CGM Dataset", desc: "Foundational theory from the Science Lab docs", date: "15 Feb 2026", href: "#cgm" },
               { dot: "bg-cyan-500", title: "Gyroscopic Runtime", desc: "Native compute backend and multicellular coordination", date: "14 Feb 2026", href: "#gyroscopic" },
               { dot: "bg-orange-500", title: "THM prompt audits", desc: "Claude Opus 4.6 and ChatGPT 5.2 reports", date: "13 Feb 2026", href: "/articles" },
@@ -486,25 +486,25 @@ export default function Home() {
 
 
 {/* ================================================================
-    HERO CARD — Quantum AGI Infrastructure: aQPU Kernel & QuBEC
+    HERO CARD — Holonomic QVM: hQVM Kernel & QuBEC
     ================================================================ */}
-<div id="aqpu" className="mb-12 animate-fade-in-up">
+<div id="hqvm" className="mb-12 animate-fade-in-up">
   <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
     <div className="relative z-10 p-4 sm:p-6 md:p-8">
       <div className="text-center mb-8">
         <div className="text-6xl mb-4">⚛️</div>
         <h2 className="text-3xl font-bold text-foreground mb-2">
-          Quantum AGI Infrastructure: aQPU Kernel
+          Holonomic QVM: hQVM Kernel
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
-          Quantum Computing Advantage on Standard Silicon
+          Holonomic Quantum Virtual Machine on Standard Silicon
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
           <p className="text-base sm:text-lg text-foreground-secondary">
-            The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for Artificial General Intelligence (AGI) with verified quantum speedups, holographic compression, and intrinsic error detection.
+            The <strong>hQVM</strong> (Holonomic Quantum Virtual Machine) is a compact finite-state kernel for coordination and audit at AGI scale. It delivers verified structural speedups, holographic compression, and intrinsic error detection through holonomic loop computation on standard silicon.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mt-5">
@@ -518,7 +518,7 @@ export default function Home() {
               4,096 states
             </span>
             <span className="px-4 py-1.5 bg-blue-900/6 dark:bg-blue-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium">
-              Zero qubits
+              128-state future cone
             </span>
           </div>
         </div>
@@ -576,10 +576,9 @@ export default function Home() {
           <p className="text-sm sm:text-base text-foreground-secondary text-left">
             <strong>QuBEC (Quantum Bose-Einstein Condensate)</strong> is a quantum byte medium: a condensed
             computational state with six internal binary orientation modes (dipoles), a four-phase
-            spinorial gauge structure, and exact ensemble stochasticity induced by
-            deterministic byte dynamics. Together they replace costly continuous
-            approximation with exact integer algebra on standard CPUs and GPUs, without
-            qubits, cryogenics, or probabilistic hardware noise.
+            spinorial gauge structure, and intrinsic ensemble stochasticity induced by
+            the byte rule. Together they replace costly continuous
+            approximation with exact integer algebra on standard CPUs and GPUs.
           </p>
         </div>
 
@@ -591,13 +590,13 @@ export default function Home() {
             <li className="flex items-start">
               <span className="text-blue-500 mr-2 shrink-0">●</span>
               <span>
-                The aQPU algorithm bridges classical information theory with quantum mechanics, deriving gravitational invariants, the fine-structure constant, and subatomic physics from discrete kernel algebra.
+                The hQVM algorithm bridges classical information theory with quantum mechanics, deriving gravitational invariants, the fine-structure constant, and subatomic physics from discrete kernel algebra.
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-blue-500 mr-2 shrink-0">●</span>
               <span>
-                <strong>Formal quantum certification:</strong> six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound and ruling out local hidden-variable models.
+                <strong>Formal quantum certification:</strong> six Bell pairs from the kernel&apos;s self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound on the canonical Hilbert lift.
               </span>
             </li>
             <li className="flex items-start">
@@ -622,7 +621,7 @@ export default function Home() {
           View on GitHub
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/aQPU_Features_Report.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_Features_Report.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
@@ -668,9 +667,9 @@ export default function Home() {
             and machines.
           </p>
           <p className="text-sm sm:text-base text-foreground-secondary text-left">
-            The Runtime composes the aQPU kernel into a
+            The Runtime composes the hQVM kernel into a
             universal computational condenser with native execution and multicellular coordination.
-            Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic, tamper-evident substrate for zero-trust AI governance.
+            Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a replayable, tamper-evident substrate for zero-trust AI governance.
           </p>
         </div>
 
@@ -716,10 +715,10 @@ export default function Home() {
             Multicellular Layer
           </h3>
           <p className="text-lg sm:text-xl font-bold text-foreground-secondary mb-3 font-bold">
-            Quantum Cellular Automaton
+            Holonomic Cellular Automaton
           </p>
           <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-            Cells evolve under the Gyroscopic byte law, consuming runtime events
+            Cells evolve under the Gyroscopic byte rule, consuming runtime events
             as 4-byte words and emitting structured spectral output for audit
             and control.
           </p>
@@ -808,7 +807,7 @@ export default function Home() {
             AIR provides a direct path for anyone to contribute to AI safety, routing
             human capacity into paid work with full replayable provenance. It uses The
             Human Mark for risk management, the Gyroscope Protocol for governance,
-            and the aQPU kernel for verifiable proof of work. While most AI safety
+            and the hQVM kernel for verifiable proof of work. While most AI safety
             funding requires institutional access or lab relationships, AIR removes
             that gate.
           </p>
@@ -948,7 +947,7 @@ export default function Home() {
             </p>
             <p className="text-sm sm:text-base text-foreground-secondary mb-4">
             Its total
-            settlement envelope is derived from first principles, anchored in the atomic standard of the SI second, and the verifiable state-space of its Quantum Kernel (aQPU), yielding a fixed
+            settlement envelope is derived from first principles, anchored in the atomic standard of the SI second, and the verifiable state-space of the hQVM kernel, yielding a fixed
             capacity of 7.94 × 10<sup>26</sup> Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value). 
             </p>
             <p className="text-sm sm:text-base text-foreground-secondary">
@@ -1490,7 +1489,7 @@ export default function Home() {
                   <div className="text-4xl sm:text-5xl md:text-6xl">🔭</div>
                   <div className="flex-1">
                     <h4 className="text-xl font-semibold text-foreground mb-3">Subatomic Physics and Gravity</h4>
-                    <p className="text-foreground-secondary mb-2 font-medium">Mathematical Physics verified through the aQPU</p>
+                    <p className="text-foreground-secondary mb-2 font-medium">Mathematical Physics verified through the hQVM kernel</p>
                     <p className="text-foreground-secondary mb-4">
                       Executable state space analyses bridging classical information theory with quantum mechanics, deriving gravitational invariants and electroweak laws from discrete kernel algebra.
                     </p>

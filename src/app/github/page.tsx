@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel for quantum advantage on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -21,8 +21,9 @@ export const metadata: Metadata = {
     'The Human Mark',
     'AI Inspector',
     'GyroGem',
-    'aQPU Kernel',
-    'aQPU SDK',
+    'hQVM Kernel',
+    'hQVM SDK',
+    'Holonomic Quantum Virtual Machine',
     'QuBEC',
     'Quantum Bose-Einstein Condensate',
     'Gyroscopic ASI Runtime',
@@ -115,7 +116,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, aQPU Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -154,22 +155,22 @@ export default function GitHub() {
       keywords: ["AI Evaluation", "Browser Extension", "AI Interpretability", "Policy Auditing", "Content Enhancement"]
     },
     {
-      name: "aQPU Kernel & SDK",
-      description: "The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium. Achievements include physics derivations from kernel algebra, CHSH-Tsirelson certification at 2√2, and 240+ features across 60+ experiments.",
+      name: "hQVM Kernel & SDK",
+      description: "The hQVM is a compact finite-state kernel with verified holonomic structure: holographic compression, intrinsic error detection, and exact integer execution on standard silicon. QuBEC is the byte medium: six dipole modes, four-phase spinorial gauge, and intrinsic ensemble stochasticity from the byte rule. Documented in 240+ verified features across 60+ experiments.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
-      keywords: ["Quantum Advantage", "aQPU Kernel", "aQPU SDK", "QuBEC", "Holographic Compression", "Tensor Engine"]
+      keywords: ["Holonomic Quantum Virtual Machine", "hQVM Kernel", "hQVM SDK", "QuBEC", "Holographic Compression", "Tensor Engine"]
     },
     {
       name: "Gyroscopic ASI Runtime",
-      description: "Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
+      description: "Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a replayable, tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md",
       applicationCategory: "DeveloperApplication",
-      keywords: ["Gyroscopic ASI Runtime", "Auditable Inference", "Multicellular Coordination", "Native Compute", "Deterministic Replay"]
+      keywords: ["Gyroscopic ASI Runtime", "Auditable Inference", "Multicellular Coordination", "Native Compute", "Exact Replay"]
     },
     {
       name: "Computational Climate Control",
-      description: "Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve deterministic behavior and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.",
+      description: "Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve replayable execution and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["AI Runtime Stability", "Execution Stability", "Adaptive Control", "Efficiency", "Traceability"]
@@ -275,11 +276,11 @@ export default function GitHub() {
     },
     {
       emoji: '⚛️',
-      name: 'aQPU Kernel & SDK',
-      title: 'Quantum Advantage on Silicon',
-      description: 'The aQPU (algebraic Quantum Processing Unit) is a compact and finite-state kernel for AGI with verified quantum speedups, holographic compression, and intrinsic error detection. QuBEC is the Bose-Einstein byte computational medium. Achievements include physics derivations from kernel algebra, CHSH-Tsirelson certification at 2√2, and 240+ features across 60+ experiments. 1.26B ops/s, 499 tests passing, 4,096 states, zero qubits.',
+      name: 'hQVM Kernel & SDK',
+      title: 'Holonomic QVM on Standard Silicon',
+      description: 'The hQVM is a compact finite-state kernel with verified holonomic structure: holographic compression, intrinsic error detection, and exact integer execution on standard silicon. QuBEC is the byte medium: six dipole modes, four-phase spinorial gauge, and intrinsic ensemble stochasticity from the byte rule. Documented in 240+ verified features across 60+ experiments. 1.26B ops/s, 499 tests passing, 4,096 states.',
       url: 'https://github.com/gyrogovernance/superintelligence',
-      tags: ['Quantum Advantage', 'aQPU Kernel', 'aQPU SDK', 'QuBEC', 'Holographic Compression', 'Tensor Engine'],
+      tags: ['Holonomic Quantum Virtual Machine', 'hQVM Kernel', 'hQVM SDK', 'QuBEC', 'Holographic Compression', 'Tensor Engine'],
       gradient: 'from-blue-500/10 via-indigo-500/10 to-purple-500/10',
       borderColor: 'border-blue-500/20',
       buttonGradient: 'from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600'
@@ -288,9 +289,9 @@ export default function GitHub() {
       emoji: '🤖',
       name: 'Gyroscopic ASI Runtime',
       title: 'Intelligence-Agnostic Meta-Computing',
-      description: 'Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a tamper-evident zero-trust governance substrate. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.',
+      description: 'Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a replayable, tamper-evident zero-trust governance substrate. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md',
-      tags: ['Gyroscopic ASI Runtime', 'Native Compute Backend', 'Multicellular Coordination', 'Auditable Inference', 'Deterministic Replay'],
+      tags: ['Gyroscopic ASI Runtime', 'Native Compute Backend', 'Multicellular Coordination', 'Auditable Inference', 'Exact Replay'],
       gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
       borderColor: 'border-cyan-500/20',
       buttonGradient: 'from-cyan-600 to-sky-600 hover:from-sky-600 hover:to-blue-600'
@@ -299,7 +300,7 @@ export default function GitHub() {
       emoji: '☂️',
       name: 'Computational Climate Control',
       title: 'AI Execution Stability Layer',
-      description: 'Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve deterministic behavior and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.',
+      description: 'Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve replayable execution and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md',
       tags: ['Computational Climate', 'Execution Stability', 'Efficiency', 'Adaptive Control', 'Traceability'],
       gradient: 'from-sky-500/10 via-cyan-500/10 to-blue-500/10',
@@ -425,7 +426,7 @@ export default function GitHub() {
       {/* Research Project Schema */}
       <ResearchProjectSchema
         name="Gyro Governance AI Safety Research"
-        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, aQPU Kernel for quantum advantage on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, and post-AGI governance modeling."
+        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, and post-AGI governance modeling."
         url="https://gyrogovernance.com/github"
         keywords={[
           "AI Safety Research",
@@ -438,7 +439,7 @@ export default function GitHub() {
           "The Human Mark",
           "GyroGem",
           "AI Inspector",
-          "aQPU Kernel",
+          "hQVM Kernel",
           "Gyroscopic ASI Runtime",
           "QuBEC",
           "Collective Superintelligence",
@@ -462,7 +463,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, aQPU Kernel for quantum advantage on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -583,7 +584,7 @@ export default function GitHub() {
             <strong>AI governance tools</strong>, and a <strong>quantum advantage compute kernel</strong> for frontier model testing, dangerous capability assessments, and AI pathology detection.
             Our repositories include <strong>The Human Mark</strong> classification system, <strong>GyroGem</strong> AI safety agent,
             <strong>AI Inspector browser extension</strong>,
-            <strong>aQPU Kernel</strong> for quantum advantage on silicon, <strong>QuBEC</strong> quantum byte medium,
+            <strong>hQVM Kernel</strong> for holonomic quantum structure on silicon, <strong>QuBEC</strong> quantum byte medium,
             <strong>Gyroscopic ASI Runtime</strong> for auditable inference and multicellular coordination,
             <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routing</strong> for collective superintelligence,
             <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
@@ -597,22 +598,20 @@ export default function GitHub() {
             the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.
           </p>
 
-          <h3 className="text-xl font-semibold text-foreground mb-3">aQPU Kernel - Quantum Advantage on Silicon</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-3">hQVM Kernel - Holonomic QVM on Standard Silicon</h3>
           <p className="mb-4">
-            The aQPU (algebraic Quantum Processing Unit) is a compact, finite-state kernel for AGI with verified quantum speedups,
-            holographic compression, and intrinsic error detection.
+            The <strong>hQVM</strong> (Holonomic Quantum Virtual Machine) is a compact finite-state kernel for coordination and audit at AGI scale. It delivers verified structural speedups, holographic compression, and intrinsic error detection through holonomic loop computation on standard silicon.
           </p>
-          <p className="mb-4">
-            <strong>QuBEC</strong> (Quantum Bose-Einstein Condensate) is the computational medium: a quantum byte with six internal binary modes,
-            four-phase spinorial gauge, and exact ensemble stochasticity from deterministic dynamics. Runs on standard CPUs and GPUs via exact integer
-            arithmetic without qubits, cryogenics, or probabilistic hardware noise.
-          </p>
-          <p className="mb-4">
-            <strong>Achievements:</strong> the aQPU algorithm bridges classical information theory with quantum mechanics, deriving gravitational invariants,
-            the fine-structure constant, and subatomic physics from discrete kernel algebra. Formal quantum certification: six Bell pairs from the kernel&apos;s
-            self-dual [12,6,2] mask code produce CHSH values of 2√2 to machine precision, saturating the Tsirelson bound. 240+ mathematical and quantum features
-            tested across 60+ experiments, including quantum teleportation, contextuality, and universal quantum computation.
-          </p>
+          <ul className="mb-4">
+            <li><strong>QuBEC byte medium:</strong> six dipole modes, four-phase spinorial gauge, intrinsic ensemble stochasticity from the byte rule</li>
+            <li><strong>Verified metrics:</strong> 1.26B ops/s, 499 tests, 128-state future cone, 2-step uniformization over 4,096 states</li>
+            <li>
+              <strong>Full inventory:</strong>{' '}
+              <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_Features_Report.md" target="_blank" rel="noopener noreferrer">
+                hQVM Features Report
+              </a>
+            </li>
+          </ul>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Gyroscopic ASI Runtime</h3>
           <p className="mb-4">
@@ -620,17 +619,15 @@ export default function GitHub() {
             Collective Superintelligence Governance and seamless cooperation between humans and machines.
           </p>
           <p className="mb-4">
-            The Runtime composes the aQPU kernel into a universal computational condenser with native execution and multicellular coordination.
-            Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a deterministic,
-            tamper-evident substrate for zero-trust AI governance. The execution layer is a substitutional bridge upgrading neural models via C/C++ and llama.cpp.
-            The multicellular layer is a quantum cellular automaton consuming runtime events as 4-byte words across four bridge domains.
-            Verified on a live 1B-parameter model: exact integer algebra replaced softmax on decision surfaces (284× faster encode boundary, 1.15× faster decode).
+            The Runtime composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination.
+            Its llama.cpp custom backend aims to leverage its quantum features for compression and speedups, while establishing a replayable,
+            tamper-evident substrate for zero-trust AI governance. Verified on a live 1B-parameter model: exact integer algebra replaced softmax on decision surfaces (284× faster encode boundary, 1.15× faster decode).
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Computational Climate Control</h3>
           <p className="mb-4">
             <strong>Computational Climate Control</strong> improves AI execution stability and hidden inefficiency reduction. Adaptive runtime controls preserve
-            deterministic behavior and traceability in production environments while optimizing resource utilization.
+            replayable execution and traceability in production environments while optimizing resource utilization.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">The Human Mark (THM) - AI Safety Classification System</h3>
