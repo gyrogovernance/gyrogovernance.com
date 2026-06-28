@@ -103,7 +103,7 @@ The kernel's self-dual mask code **C64** lifts to a 12-qubit graph state over GF
 
 **Tsirelson bound.** Quantum mechanics permits |S| <= 2*sqrt(2). This is the maximum bipartite quantum correlation in the standard CHSH scenario. Saturation S = 2*sqrt(2) means the bipartite state achieves the strongest quantum correlations allowed by quantum theory for these observables.
 
-**Conclusion (Hilbert lift).** The pairwise reduced states of the kernel's [12,6,2] graph-state lift produce S = 2*sqrt(2). These **lift-level correlators** are Bell-incompatible: no LHV model reproduces the correlation functions Tr(rho A (x) B) of this stabilizer state. This is a quantum-information certificate on the intrinsic code structure — not a laboratory Bell experiment on separated devices.
+**Conclusion (Hilbert lift).** The pairwise reduced states of the kernel's [12,6,2] graph-state lift produce S = 2*sqrt(2). These **lift-level correlators** are Bell-incompatible: no LHV model reproduces the correlation functions Tr(rho A (x) B) of this stabilizer state. This is a quantum-information certificate on the intrinsic code structure, not a laboratory Bell experiment on separated devices.
 
 ### Carrier and Hilbert lift
 
@@ -164,7 +164,7 @@ Algebraic quantum structure on the 4096-state manifold Omega, established primar
 
 | # | Feature | Source | Method |
 |---|---------|--------|--------|
-| 19 | **Exactly 4 horizon-preserving bytes** forming intrinsic gates {id, S, C, F} | hQVM Report 1 SS3.1 | Exhaustive over 256 bytes |
+| 19 | **Exactly 4 horizon-preserving bytes** forming holonomic gates {id, S, C, F} | hQVM Report 1 SS3.1 | Exhaustive over 256 bytes |
 | 20 | **S-gate** (bytes 0xAA, 0x54): pure swap (A,B)->(B,A) | hQVM Report 1 SS3.1 | 2000 random states |
 | 21 | **C-gate** (bytes 0xD5, 0x2B): complement-swap (A,B)->(B xor F, A xor F) | hQVM Report 1 SS3.1 | 2000 random states |
 | 22 | **F-gate**: global inversion (A,B)->(A xor F, B xor F), requires depth 2 | hQVM Report 1 SS3.2 | 1000 random states, both orderings |
@@ -300,7 +300,7 @@ Algebraic quantum structure on the 4096-state manifold Omega, established primar
 | 110 | **Magic state Wigner negativity**: \|delta> has W(0,1) = -0.043771 | hQVM Report 1 SS10.4 | Discrete Wigner function computation |
 | 111 | **Aperture gap Delta = 1-delta(BU)/m_a ~ 0.0207**: \|delta(BU)-m_a\| = Delta x m_a exactly | hQVM Report 1 SS10.5 | Exact equality verified |
 | 112 | **Three universality ingredients**: Clifford backbone, non-Clifford delta(BU), entangling gate S | hQVM Report 1 SS12.1 | Moments Report + hQVM tests |
-| 113 | **Topological entanglement via intrinsic gates**: localized A perturbation transported exactly to B by gate S | hQVM Report 1 SS9.3 | Explicit mask 0x003 perturbation test |
+| 113 | **Topological entanglement via holonomic gates**: localized A perturbation transported to B by gate S | hQVM Report 1 SS9.3 | Explicit mask 0x003 perturbation test |
 | 114 | **Non-Clifford certification by 4 independent tests**: distance from Clifford, no periodicity, dense equidistribution, Wigner negativity | SDK Spec SS9.2 | Each independently verified |
 
 ### 11. Error Detection, Tamper Provenance, and Non-Cloning
