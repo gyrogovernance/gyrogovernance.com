@@ -292,34 +292,6 @@ export const articlesData: ArticleMeta[] = [
     "featured": false
   },
   {
-    "slug": "gyroscopic-superintelligence",
-    "title": "Gyroscopic Superintelligence: A Physics-Based Architecture",
-    "excerpt": "GyroSI is a complete architectural specification of intelligence as a physical system. Instead of approximating reasoning through statistical training, it encodes intelligence as recursive alignment grounded in gyroscopic physics.",
-    "category": "research",
-    "date": "2025-09-28",
-    "coverImage": "/assets/GyroSI_Cover.png",
-    "tags": [
-      "AGI Safety",
-      "Superintelligence Alignment",
-      "AI Governance",
-      "Mathematical Physics",
-      "AI Architecture",
-      "AI Safety Research",
-      "AI Alignment Theory",
-      "AI Control Problem",
-      "Artificial General Intelligence",
-      "Superintelligence",
-      "AI Risk Assessment",
-      "AI Safety Frameworks",
-      "Responsible AI Development",
-      "AI Accountability",
-      "Mechanistic Interpretability",
-      "Scalable Oversight",
-      "AI Value Alignment"
-    ],
-    "featured": false
-  },
-  {
     "slug": "gyroscope-ai-protocol",
     "title": "Gyroscope: Governance Protocol for Recursive AI Alignment",
     "excerpt": "A physics-grounded specification for embedding transparent, non-associative reasoning traces in AI dialogue, ensuring alignment emerges as a structural property rather than an imposed constraint.",

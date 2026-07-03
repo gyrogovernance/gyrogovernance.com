@@ -99,7 +99,11 @@ Building verifiable AI governance: audit, alignment infrastructure, and dynamics
 
 ### ✋ The Human Mark (THM): AI Safety Framework
 
-A formal classification system mapping all AI safety failures to four structural displacement risks.
+**Risk Taxonomy for AI Power Concentration**
+
+**The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.**
+
+AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
 
 **GitHub Repository**: https://github.com/gyrogovernance/tools
 
@@ -255,7 +259,7 @@ Turn verified safety work into stable value. Your contributions map to four gove
 Ensure accountability and verifiable outcomes across your programs and investments.
 
 - 📜 **Verifiable Outcomes**: Evaluate your funding portfolio with transparent risk management and clear diversification across safety work
-- 🏛️ **Auditable Compliance**: Replayable traceability, human oversight, and source classification demonstrable for ISO 42001 and AI Legislation contexts
+- 🏛️ **Auditable Compliance**: Replayable traceability, human oversight, and class classification demonstrable for ISO 42001 and AI Legislation contexts
 
 #### A Coordination Stack for Society
 
@@ -937,6 +941,10 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 Gyro Governance develops comprehensive **open source AI safety frameworks**, **AI alignment protocols**, and **AI governance tools** for frontier model testing, dangerous capability assessments, and AI pathology detection. Our repositories include **The Human Mark** classification system, **GyroGem** AI safety agent, **AI Inspector browser extension**, **Gyroscopic ASI Runtime**, **GyroDiagnostics evaluation suite**, **Alignment Infrastructure Routing** for collective superintelligence, **Moments Economy** for transformative AI mitigation, and **Gyroscopic Global Governance** sandbox. Production-ready solutions for **AI risk assessment**, **AI safety evaluation**, and **responsible AI development**.
 
 ##### The Human Mark (THM) - AI Safety Classification System
+
+**The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.**
+
+AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
 
 **The Human Mark** provides a formal classification system mapping all **AI safety failures** to four structural displacement risks: **Governance Traceability (GTD)**, **Information Variety (IVD)**, **Inference Accountability (IAD)**, and **Intelligence Integrity (IID)**. Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include **jailbreak testing**, **control evaluations**, **alignment detection**, **research funding**, and **regulatory compliance**.
 

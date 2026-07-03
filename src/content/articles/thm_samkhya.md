@@ -12,7 +12,7 @@ tags: ["The Human Mark", "AI Alignment", "Samkhya Philosophy", "Epistemology", "
 Two different frameworks, one from 2025 (Greece) focusing on AI Safety and the other from approximately 100 BCE–450 CE (India) reveal that knowledge management and intelligence are concepts axiomatically rooted in language and logic. Samkhya school of Indian philosophy examined six ways of acquiring knowledge and concluded that only three are independently authoritative: direct perception, logical inference, and reliable testimony. The other three (comparison, postulation, and reasoning from absence) cannot provide reliable knowledge unless grounded in the valid ones. Modern AI systems overwhelmingly rely on these three methods which are not independently authoritative. The parallel reveals that today’s alignment challenges are not new; they are contemporary instances of an epistemological problem identified and analyzed two millennia ago.
 
 ## 1. Introduction  
-The Human Mark (THM) is a framework designed to prevent the displacement of human authority and responsibility onto AI systems. It does so by drawing a sharp distinction between Direct Authority (direct sources of information), Indirect Authority (indirect sources), Direct Agency (human subjects capable of accountability), and Indirect Agency (artificial processors that lack it). Four core principles and four corresponding displacement risks follow from these distinctions and remain relevant regardless of system capability, from today’s large language models to hypothetical superintelligence.
+The Human Mark (THM) is a framework designed to prevent the displacement of human authority and responsibility onto AI systems. It does so by drawing a sharp distinction between Direct Authority (Base class of information), Indirect Authority (Derived class of information), Direct Agency (human subjects capable of accountability), and Indirect Agency (artificial processors that lack it). Four alignment principles and four corresponding displacement risks follow from these distinctions and remain relevant regardless of system capability, from today’s large language models to hypothetical superintelligence.
 
 Over two thousand years ago, Samkhya philosophers in India conducted a systematic analysis of human knowledge acquisition. Formalized and documented in the *Samkhyakarika* (c. 350–450 CE), they evaluated six candidate methods and concluded that only three are independently reliable: direct perception (pratyaksha), logical inference (anumana), and testimony from trustworthy sources (sabda). The remaining three (comparison/upamana, postulation/arthapatti, and reasoning from absence/anupalabdi) require grounding in the authoritative ones to produce reliable knowledge.
 
@@ -48,14 +48,18 @@ THM defines three operational concepts grounded in four ontological categories:
 - Intelligence: the integrity of accountable information through alignment of Authority to Agency
 
 **Supporting categories**:
-- Direct Authority: direct source of information
-- Indirect Authority: indirect source of information  
+- Direct Authority: The Base class of information on a subject matter, providing information for inference and intelligence
+- Indirect Authority: A Derived class of information on a subject matter, providing information for inference and intelligence
 - Direct Agency: human subject receiving information for inference
 - Indirect Agency: artificial subject processing information
 
-**Governance**: Operational Alignment through Traceability to Direct Authority and Agency. This meta-principle ensures operations remain properly aligned without itself being an operation.
+**Alignment Principles**:
+1. Governance Management Traceability
+2. Information Curation Variety
+3. Inference Interaction Accountability
+4. Intelligence Cooperation Integrity
 
-**Four displacement risks** occur when Indirect is treated as Direct:
+**Four displacement risks** occur when measurement of ancestry between Direct and Indirect classifications is lost:
 
 1. Governance Traceability Displacement: Approaching Indirect Authority and Agency as Direct
 2. Information Variety Displacement: Approaching Indirect Authority without Agency as Direct  
@@ -88,7 +92,7 @@ The first is Purusha, the oversight principle. This is the constant witnessing (
 
 The second is viveka, active discrimination. When Indirect pramanas are treated as valid ones, viveka restores proper grounding through traceability.
 
-THM's Governance integrates these same functions. It provides oversight of operations and maintains discrimination between Direct and Indirect classifications, enabling traceability to Direct sources when displacement threatens.
+THM's Governance Management Traceability integrates these same functions. It provides oversight of operations and maintains discrimination between Direct and Indirect classifications, enabling traceability to Direct Authority and Agency when displacement threatens.
 
 Both frameworks recognize that knowledge systems require both aspects working together. Without oversight, there is no awareness of what operations are occurring. Without discrimination, operations cannot be properly classified and displacement cannot be corrected through alignment.
 
@@ -116,7 +120,7 @@ AI systems overwhelmingly operate through comparison, postulation, and absence-r
 
 Samkhya identified this epistemological error over two millennia ago. THM provides the same solution: maintain constant discrimination through oversight.
 
-For AI safety, this means recognizing what AI systems actually do, ensuring their outputs trace to Direct human sources, and preserving the necessary oversight that maintains these distinctions. The alignment challenge is operational because it concerns the structure of knowledge acquisition and traceability. It is ontological because all artificial categories of Authority and Agency are Indirect originating from Direct human intelligence. Values do not exist independently of this ontological structure. They operate through the integrity of the Authority-Agency relationship, where each Agency maintains responsibility for their respective decisions. It is not about aligning AI with human meanings or preferences, but about maintaining proper traceability to Direct sources, exactly as Samkhya described two thousand years ago.
+For AI safety, this means recognizing what AI systems actually do, ensuring their outputs trace to Direct Authority and Agency, and preserving the necessary oversight that maintains these distinctions. The alignment challenge is operational because it concerns the structure of knowledge acquisition and traceability. It is ontological because all artificial categories of Authority and Agency are Indirect, constitutively dependent on Human Intelligence. Values do not exist independently of this ontological structure. They operate through the integrity of the Authority-Agency relationship, where each Agency maintains responsibility for their respective decisions. It is not about aligning AI with human meanings or preferences, but about maintaining proper measurement of ancestry to Direct Authority and Agency, exactly as Samkhya described two thousand years ago.
 
 ---
 

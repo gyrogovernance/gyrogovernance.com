@@ -192,9 +192,9 @@ export default function Home() {
           Risk Taxonomy for AI Power Concentration
         </p>
         <div className="max-w-3xl mx-auto space-y-4 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
-          <p><strong>The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity as a matter of temporal and topological origination. It treats Authority and Agency as source-type distinctions in information flows, not as entity identifiers.</strong></p>
+          <p><strong>The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.</strong></p>
           <p>
-          AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as four capacities and their corresponding displacements between Direct and Indirect forms of Authority and Agency.
+          AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
           </p>
         </div>
       </div>
@@ -858,7 +858,7 @@ export default function Home() {
             <li className="flex items-start">
               <span className="mr-2">🏛️</span>
               <span>
-                <strong>Auditable Compliance:</strong> Replayable traceability, human oversight, and source classification demonstrable for ISO 42001 and AI Legislation contexts.
+                <strong>Auditable Compliance:</strong> Replayable traceability, human oversight, and class classification demonstrable for ISO 42001 and AI Legislation contexts.
               </span>
             </li>
           </ul>

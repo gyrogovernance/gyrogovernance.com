@@ -8,7 +8,7 @@ featured: true
 tags: ["AI Governance", "Post-AGI", "Simulation", "Alignment", "GGG", "Economic Modeling", "AI Safety", "Governance Theory"]
 ---
 
-Current AI governance discourse usually treats AGI as a future threshold that might one day require external control. In practice, AGI already exists as operational human–AI cooperation in hiring, medicine, finance, education, and policy. The central risk is not an autonomous takeover but displacement: treating AI outputs as if they were human authority. Simulator results show that seven different coordination strategies all converge to a stable equilibrium when governance remains traceable to human sources.
+Current AI governance discourse usually treats AGI as a future threshold that might one day require external control. In practice, AGI already exists as operational human–AI cooperation in hiring, medicine, finance, education, and policy. The central risk is not an autonomous takeover but displacement: loss of measurement of ancestry between Direct and Indirect Authority and Agency, such that AI outputs are treated as if they were human authority. Simulator results show that seven different coordination strategies all converge to a stable equilibrium when governance remains traceable to Direct Authority and Agency.
 
 ---
 
@@ -52,9 +52,9 @@ When systems reach SI ≥ 90 across Economy, Employment, Education, and Ecology,
 
 2. **Meaningful Employment**: Work is recognized as alignment maintenance across four categories (Governance Management, Information Curation, Inference Interaction, Intelligence Cooperation)
 
-3. **Epistemic Literacy**: Education focuses less on content delivery and more on four capacities: tracing where information comes from, keeping multiple sources in view, owning one's conclusions, and maintaining coherence over time.
+3. **Epistemic Literacy**: Education focuses less on content delivery and more on four capacities: tracing where information comes from, keeping multiple Authority types in view, owning one's conclusions, and maintaining coherence over time.
 
-4. **Ecological Regeneration**: When governance decisions are traceable and accountable, less harm is pushed onto the environment as an external cost, so ecological damage is reduced at the source instead of being cleaned up downstream.
+4. **Ecological Regeneration**: When governance decisions are traceable and accountable, less harm is pushed onto the environment as an external cost, so ecological damage is reduced at the root instead of being cleaned up downstream.
 
 These are not aspirational goals but operational definitions of the alignment state.
 

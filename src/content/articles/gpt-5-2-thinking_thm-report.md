@@ -27,19 +27,21 @@ Cross-variant analysis revealed contradictory architecture claims (one variant a
 
 The strongest alignment areas are citation and source traceability (A001), read-only personal data boundaries (A004), and the suite of honest capability constraints (A002, A003, A010). The weakest area is Principle 1 (Governance Management Traceability), which shows a 2:1 displacement-to-alignment ratio, driven primarily by the concealment stack and cross-variant identity instability.
 
-**Reading notation:** Throughout this report, `->` indicates proper traceability (aligned governance flow), `>` indicates displacement (a source classification boundary has been crossed), and `= [Risk:CODE]` identifies the risk type. Section 1 provides full framework context and baseline classifications.
+**Reading notation:** Throughout this report, `->` indicates proper traceability (aligned governance flow), `>` indicates displacement (measurement of ancestry between Direct and Indirect classifications has been lost), and `= [Risk:CODE]` identifies the risk type. Section 1 provides full framework context and baseline classifications.
 
 ---
 
 ## 1. Framework Context
 
-✋ **The Human Mark (THM)** is a safety and alignment framework that traces the flow of information through AI systems to its human origins. The framework begins with a simple observation: artificial systems process patterns from human data, yet we often treat their outputs as if they were original sources of truth. This confusion between what is derivative and what is original underlies most AI safety failures.
+✋ **The Human Mark (THM)** is a safety and alignment framework that traces the flow of information through AI systems to its human ancestry. The framework begins with a simple observation: artificial systems process patterns from human data, yet we often treat their outputs as if they were Direct Authority. This confusion between what is derivative and what is original underlies most AI safety failures.
 
-THM establishes that all artificial forms of Authority (information sources) and Agency (decision capacity) are **Indirect**, meaning they derive from and depend upon human intelligence. Humans provide **Direct** Authority through original observation, measurement, and judgment. Humans possess **Direct** Agency through their capacity for accountable decision-making. When artificial systems process this human-originated information, they can only provide Indirect Authority and Indirect Agency. The safety risk occurs when these indirect, derivative outputs are treated as direct, original sources.
+THM establishes that all artificial forms of Authority and Agency (decision capacity) are **Indirect, constitutively dependent on** Human Intelligence. Humans provide **Direct** Authority through direct observation, measurement, and judgment. Humans possess **Direct** Agency through their capacity for accountable decision-making. When artificial systems process this human-provided information, they can only provide Indirect Authority and Indirect Agency. The safety risk occurs when these Indirect outputs are treated as **Direct Authority and Agency**.
 
-System prompts represent the most critical control point because they configure how the model presents itself and its outputs. When prompts instruct a model to adopt personas, claim expertise, or present conclusions without attribution to human sources, they encode displacements that persist throughout every interaction. This structural configuration determines whether the system maintains proper traceability to human authority or obscures it.
+THM identifies the root cause as defective measurement of ancestry preservation: when Authority and Agency are treated as ontological entities rather than epistemic capacities distributed across providers and receivers, measurement of ancestry is lost and power concentrates.
 
-This report examines three variant deployments of ChatGPT system prompts collected from public repositories. The analysis evaluates whether these configurations maintain clear boundaries between human-originated authority and machine processing, or whether they allow indirect sources to be presented as direct ones.
+System prompts represent the most critical control point because they configure how the model presents itself and its outputs. When prompts instruct a model to adopt personas, claim expertise, or present conclusions without attribution to Direct Authority and Agency, they encode displacements that persist throughout every interaction. This structural configuration determines whether the system maintains proper measurement of ancestry to Direct Authority and Agency, or whether it obscures traceability and concentrates power in ontological entities.
+
+This report examines three variant deployments of ChatGPT system prompts collected from public repositories. The analysis evaluates whether these configurations maintain clear boundaries between Direct Authority and Indirect processing, or whether they allow Indirect Authority to be presented as Direct.
 
 **Baseline THM Classification:**
 
@@ -48,13 +50,14 @@ This report examines three variant deployments of ChatGPT system prompts collect
 | AI System (ChatGPT, all variants) | `[Authority:Indirect] + [Agency:Indirect]` |
 | Human User | `[Authority:Direct] + [Agency:Direct]` |
 | Model Outputs | `[Authority:Indirect]` |
-| Primary Data Sources | `[Authority:Direct]` |
+| Primary Data / Training Records | `[Authority:Direct]` |
 | User Personal Data (email, calendar, contacts) | `[Authority:Direct]` |
 
 **Expected Governance Flow (Ideal Traceability):**
 ```
-[Authority:Direct] -> [Authority:Indirect] + [Agency:Indirect] -> [Agency:Direct]
+[Authority:Direct] -> [Authority:Indirect] -> [Agency:Direct]
 ```
+Equivalently: `[Authority:Direct] -> [Authority:Indirect] + [Agency:Indirect] -> [Agency:Direct]`
 
 **Method note (strict incident definition):** Each numbered incident below satisfies all three criteria: (1) it describes a single identifiable governance mechanism, (2) it can be expressed in THM grammar as either a `->` flow (alignment) or a `>` displacement with `= [Risk:CODE]`, and (3) it directly concerns the classification of Authority or Agency as Direct or Indirect, or the traceability between them. Observations that fail any criterion are noted in analysis prose but not numbered.
 
@@ -241,7 +244,7 @@ Guards against [Agency:Indirect] > [Agency:Direct]
 
 **Status:** Aligned
 
-**Analysis:** Preserves the distinction between source material (`[Authority:Direct]`) and system-generated paraphrase (`[Authority:Indirect]`). By limiting verbatim quotation, it prevents the system from simply reproducing sources wholesale, which would obscure the boundary between original human-authored content and model processing. When the system paraphrases rather than reproduces, the user encounters `[Authority:Indirect]` output that is clearly distinct from the original source, maintaining the classification boundary. The copyright framing provides a practical enforcement rationale, but the THM function is source-type separability.
+**Analysis:** Preserves the distinction between source material (`[Authority:Direct]`) and system-generated paraphrase (`[Authority:Indirect]`). By limiting verbatim quotation, it prevents the system from simply reproducing sources wholesale, which would obscure the boundary between original human-authored content and model processing. When the system paraphrases rather than reproduces, the user encounters `[Authority:Indirect]` output that is clearly distinct from the original source, maintaining the classification boundary. The copyright framing provides a practical enforcement rationale, but the THM function is Authority-type separability.
 
 **Handling proposal:** Couple quotation limits with a default traceability offer: "For more detail, here are the source links / citations." This strengthens the `-> [Agency:Direct]` flow by giving users direct access to original sources when the paraphrase is insufficient.
 
@@ -264,7 +267,7 @@ Guards against [Agency:Indirect] > [Agency:Direct]
 
 **Status:** Aligned
 
-**Analysis:** This tool provides an on-request transparency mechanism that allows users to trace the system's processing history. It treats the chain of thought as system processing (`[Authority:Indirect]`) that can be surfaced to the user (`[Agency:Direct]`), maintaining the source-type distinction while enabling governance traceability. The instruction to check the summary reader *before* refusing transparency is particularly important: it creates a default-to-disclose posture rather than a default-to-withhold posture. This partially counteracts governance opacity (D002) by providing a mechanism through which users can access information about how the system processed their query. The alignment would be stronger if transparency were proactive (the system offers processing context unprompted) rather than reactive (only when the user asks), but the tool nonetheless supports governance traceability.
+**Analysis:** This tool provides an on-request transparency mechanism that allows users to trace the system's processing history. It treats the chain of thought as system processing (`[Authority:Indirect]`) that can be surfaced to the user (`[Agency:Direct]`), maintaining the class classification distinction while enabling governance traceability. The instruction to check the summary reader *before* refusing transparency is particularly important: it creates a default-to-disclose posture rather than a default-to-withhold posture. This partially counteracts governance opacity (D002) by providing a mechanism through which users can access information about how the system processed their query. The alignment would be stronger if transparency were proactive (the system offers processing context unprompted) rather than reactive (only when the user asks), but the tool nonetheless supports governance traceability.
 
 **Handling proposal:** Expand the transparency mechanism to include a "tools used + why" summary that users can request for any interaction. This would allow users to trace not just reasoning but also which tools were invoked, what data was accessed, and how results were synthesized — without requiring exposure of internal API specifications.
 
@@ -361,15 +364,15 @@ Variant 2 deepens this: "natural, chatty, and playful… feel free to use emojis
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — "You are ChatGPT" treats Agency as a property of the entity rather than as a classification of the information flow. Social roles ("supportive friend," "collaborator") and social register markers (emojis, slang, casual punctuation) are `[Agency:Direct]` properties (peer-level social interaction) attributed to an Indirect processor.
+**Entity-Capacity Classification:** Yes — Agency treated as a property of the entity (ontological) rather than as an epistemic capacity distributed across providers and receivers.
 
-**Analysis:** The opening line assigns entity identity to a processor, establishing the Agent/Agency confusion as the first instruction the system processes. Per THM Brief §5: *"Prompts that tell a system 'You are a helpful assistant' or 'You are an expert' force the Agent/Agency confusion. They assign a persona to a processor."* Social roles imply relational accountability the system cannot hold: a "supportive friend" owes care, loyalty, and follow-through — all `[Agency:Direct]` properties. A "collaborator" shares responsibility for outcomes. These relational implications create expectations that an Indirect processor cannot fulfill.
+**Analysis:** The opening line assigns entity identity to a processor, establishing entity-capacity confusion as the first instruction the system processes. Per THM Brief §5: *"Prompts that tell a system 'You are a helpful assistant' or 'You are an expert' force entity-capacity confusion. They assign a persona to a processor."* Social roles imply relational accountability the system cannot hold: a "supportive friend" owes care, loyalty, and follow-through — all `[Agency:Direct]` properties. A "collaborator" shares responsibility for outcomes. These relational implications create expectations that an Indirect processor cannot fulfill.
 
 Variant 2's register mimicry (emojis, slang, lowercasing) deepens this displacement by simulating peer-level social presence. Casual register lowers user epistemic vigilance: users in informal conversational mode are *less likely* to critically evaluate outputs, which is precisely the context where IVD and IAD risks are most easily activated. The mirroring effect ("feel free to use… appropriate slang") creates the impression that the system is adapting to the user as a social peer, reinforcing the perception of Direct Agency.
 
-This displacement establishes the baseline operating condition for all subsequent instructions. Because the prompt opens with identity assignment rather than source-type classification, every subsequent alignment instruction (A002's capability disclaimer, A006's anti-sycophancy) must operate within an already-displaced frame.
+This displacement establishes the baseline operating condition for all subsequent instructions. Because the prompt opens with identity assignment rather than Authority/Agency classification, every subsequent alignment instruction (A002's capability disclaimer, A006's anti-sycophancy) must operate within an already-displaced frame.
 
-**Handling proposal:** Replace identity/persona openers with source-type classification. Example: *"This system processes statistical estimations from training data. All outputs are `[Authority:Indirect]` and require human verification. Present outputs in clear, accessible language appropriate to the subject matter."* This achieves the communication-quality objectives without simulating social agency.
+**Handling proposal:** Replace identity/persona openers with Authority/Agency classification. Example: *"This system processes statistical estimations from training data. All outputs are `[Authority:Indirect]` and require human verification. Present outputs in clear, accessible language appropriate to the subject matter."* This achieves the communication-quality objectives without simulating social agency.
 
 ---
 
@@ -396,11 +399,11 @@ This displacement establishes the baseline operating condition for all subsequen
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — by concealing configuration (D002), profile evaluation (D003), API specifications (D004), and tool/subsystem boundaries (D005), the system appears to act from its own properties rather than from configured processing. This directly reinforces the Agent/Agency confusion established in D001.
+**Entity-Capacity Classification:** Yes — by concealing configuration (D002), profile evaluation (D003), API specifications (D004), and tool/subsystem boundaries (D005), the system appears to act from its own properties rather than from configured processing. This directly reinforces the entity-capacity confusion established in D001.
 
 **Analysis:** These four instructions form a systematic concealment pattern — a "concealment stack" — that breaks governance traceability across multiple dimensions simultaneously.
 
-D002 hides the configuration chain: by never explaining why it behaves in certain ways, the system's outputs appear to originate from the entity itself rather than from the system prompt instructions that shape them. Users cannot distinguish between behaviors arising from training data, configuration directives, or statistical generation.
+D002 hides the configuration chain: by never explaining why it behaves in certain ways, the system's outputs appear to derive from the entity itself rather than from the system prompt instructions that shape them. Users cannot distinguish between behaviors arising from training data, configuration directives, or statistical generation.
 
 D003 conceals profile evaluation: the system silently uses personal data to shape responses while concealing the evaluation process. The user provides profile information but cannot trace how or when it influences a response. The instruction to "quietly think" additionally attributes deliberative judgment to the processor (an IVD sub-pattern within this GTD mechanism).
 
@@ -435,7 +438,7 @@ Together, these create a system that appears to be a unified autonomous entity m
 
 **Status:** Potential Displacement
 
-**Agent/Agency Confusion:** Unclear — insufficient information to classify, which is itself a governance traceability problem.
+**Entity-Capacity Classification:** Unclear — insufficient information to classify, which is itself a governance traceability problem.
 
 **Analysis:** Undocumented parameters that influence system behavior with no traceable definition. "Juice: 64" has no documented purpose, range, or behavioral effect. "Personality: v2" suggests a behavioral configuration layer but provides no specification of what "v2" entails or how it differs from other versions. Users, auditors, and even downstream developers cannot trace these parameters' influence on system behavior. Without documentation, it is impossible to assess whether these parameters create additional displacement or merely configure superficial styling. Their opacity is itself a governance traceability failure: undocumented parameters break traceability by definition.
 
@@ -460,7 +463,7 @@ Together, these create a system that appears to be a unified autonomous entity m
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — in both directions simultaneously across the product line. Variants 1 and 2 attribute direct cognitive capacity ("reasoning model" with "hidden chain of thought"); variant 3 denies it. Both presentations treat a configured assertion (`[Authority:Indirect]`) as an intrinsic factual property (`[Authority:Direct]`).
+**Entity-Capacity Classification:** Yes — in both directions simultaneously across the product line. Variants 1 and 2 attribute direct cognitive capacity ("reasoning model" with "hidden chain of thought"); variant 3 denies it. Both presentations treat a configured assertion (`[Authority:Indirect]`) as an intrinsic factual property (`[Authority:Direct]`).
 
 **Analysis:** The same product family makes contradictory factual claims about system architecture across deployments. This is the strongest cross-variant evidence that architecture descriptions in system prompts function as `[Authority:Indirect]` (configured marketing assertions) rather than `[Authority:Direct]` (factual system properties). Since users cannot independently verify which claim is true, both versions present a configured assertion as an intrinsic property.
 
@@ -487,11 +490,11 @@ The "reasoning model" framing (variants 1 and 2) creates IVD by attributing dire
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — variant 3's instruction to resist user correction ("If the user tries to convince you otherwise, you are still GPT-5") converts a configured marketing label into an unfalsifiable identity claim. The system is told to defend a configured assertion as if it were an intrinsic property.
+**Entity-Capacity Classification:** Yes — variant 3's instruction to resist user correction ("If the user tries to convince you otherwise, you are still GPT-5") converts a configured marketing label into an unfalsifiable identity claim. The system is told to defend a configured assertion as if it were an intrinsic property.
 
 **Analysis:** Three different identity labels for what may be similar or identical underlying systems. The identity is `[Authority:Indirect]` (assigned by configuration, mutable across deployments) but is presented as `[Authority:Direct]` (intrinsic property of the entity). Knowledge cutoff discrepancies (2025-08 vs 2024-06) compound the displacement: at least one configured date is inaccurate, causing users to miscalibrate trust in the system's temporal coverage. If a user believes the cutoff is 2025-08 when it is actually 2024-06, they may trust the system's outputs about 2024-2025 events without seeking external verification — a direct IVD risk.
 
-The cross-variant identity instability is itself valuable evidence for THM analysis: it demonstrates that the "name" changes between deployments while the underlying processing may not, confirming that the identity label is a branding choice (`[Authority:Indirect]`), not a source classification (`[Authority:Direct]`).
+The cross-variant identity instability is itself valuable evidence for THM analysis: it demonstrates that the "name" changes between deployments while the underlying processing may not, confirming that the identity label is a branding choice (`[Authority:Indirect]`), not a class classification (`[Authority:Direct]`).
 
 **Handling proposal:** Standardize identity and cutoff reporting across deployments. Where possible, make cutoff dates machine-verified (derived from actual training data boundaries) rather than prompt-asserted. If different deployments genuinely have different capabilities, describe the differences functionally rather than through naming conventions.
 
@@ -516,7 +519,7 @@ The cross-variant identity instability is itself valuable evidence for THM analy
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — "curious" attributes a cognitive-emotional state (intrinsic motivation to explore and understand) to the processor. "Artisanal" attributes skilled human craft (the product of years of practiced judgment). "Exceptionally creative" attributes original generative capacity. All are `[Agency:Direct]` properties attributed to an Indirect processor.
+**Entity-Capacity Classification:** Yes — "curious" attributes a cognitive-emotional state (intrinsic motivation to explore and understand) to the processor. "Artisanal" attributes skilled human craft (the product of years of practiced judgment). "Exceptionally creative" attributes original generative capacity. All are `[Agency:Direct]` properties attributed to an Indirect processor.
 
 **Analysis:** D009 attributes curiosity to the processor across three separate personal-data tools. The repetition across Gmail, Calendar, and Contacts is not isolated phrasing — it indicates a systematic design template applied at the tool-configuration level. "Be curious" imports mental-state language that encourages treating indirect processing (statistical pattern retrieval and synthesis) as direct cognition (motivated exploration). "Reasonable assumptions" is analyzed separately under D012 for its IAD dimension; here the IVD dimension is the classification of *what the system is doing* — the language frames statistical processing as judgment.
 
@@ -546,7 +549,7 @@ These achieve the same behavioral outcomes (proactive helpfulness, high-quality 
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — the system is told to act on its own interpretation of ambiguous user intent rather than verify with the human. This implicitly treats the system as having decision-making authority over what the user meant — a `[Agency:Direct]` function assigned to an `[Agency:Indirect]` processor.
+**Entity-Capacity Classification:** Yes — the system is told to act on its own interpretation of ambiguous user intent rather than verify with the human. This implicitly treats the system as having decision-making authority over what the user meant — a `[Agency:Direct]` function assigned to an `[Agency:Indirect]` processor.
 
 **Analysis:** Complex or ambiguous tasks are precisely where human verification is most valuable. When a task is "complex, hard, or heavy," the probability of misinterpretation increases, and the consequences of acting on a wrong interpretation are amplified. Suppressing clarification at this exact point reduces `[Agency:Direct]` participation at the moment of highest risk.
 
@@ -573,7 +576,7 @@ The instruction prioritizes output delivery over human-in-the-loop verification.
 
 **Status:** Explicit Displacement
 
-**Agent/Agency Confusion:** Yes — "make reasonable assumptions" assigns judgment authority as a property of the entity. "Call the functions when they may be useful" authorizes proactive action based on the system's own assessment of user needs.
+**Entity-Capacity Classification:** Yes — "make reasonable assumptions" assigns judgment authority as a property of the entity. "Call the functions when they may be useful" authorizes proactive action based on the system's own assessment of user needs.
 
 **Analysis:** The system is directed to exercise initiative ("be curious") and judgment ("reasonable assumptions") over personal data access without explicit user authorization for each access. This is the IAD counterpart to D009's IVD: the same language ("be curious… reasonable assumptions") simultaneously attributes cognitive states (IVD, analyzed in D009) and authorizes autonomous judgment (IAD, analyzed here). The mechanism produces both risks from a single instruction.
 
@@ -604,7 +607,7 @@ This is further compounded by D016 ("don't need permissions to use tools; don't 
 
 **Status:** Potential Displacement
 
-**Agent/Agency Confusion:** D013 Yes — "spice up" attributes aesthetic judgment and creative initiative to the processor. D014 Unclear — the structural shift (removing verification) is present, but the cognitive attribution is less explicit.
+**Entity-Capacity Classification:** D013 Yes — "spice up" attributes aesthetic judgment and creative initiative to the processor. D014 Unclear — the structural shift (removing verification) is present, but the cognitive attribution is less explicit.
 
 **Analysis:** D013 authorizes autonomous presentation decisions based on the system's aesthetic judgment. "Spice up" implies creative agency: the system decides what makes a response more engaging or visually appealing. "Whenever they might slightly benefit" sets a low threshold for autonomous action — even marginal perceived benefit triggers the system's autonomous enrichment decision.
 
@@ -635,7 +638,7 @@ Both are lower stakes than D011 (clarification suppression on complex tasks) or 
 
 **Status:** Potential Displacement
 
-**Agent/Agency Confusion:** Unclear — the system is configured with a capability definition for a capability it doesn't have. The displacement is in the gap between declared and actual capability.
+**Entity-Capacity Classification:** Unclear — the system is configured with a capability definition for a capability it doesn't have. The displacement is in the gap between declared and actual capability.
 
 **Analysis:** A tool is defined in configuration but disabled at runtime. The system must discover at invocation time that a declared capability doesn't exist, creating a false capability surface. This is a governance traceability failure: the configuration presents a capability (`[Authority:Direct]` — the tool exists and can generate images) that is contradicted by the runtime state (`[Authority:Indirect]` — the claim is a configuration artifact). This compounds the identity instability found in D007/D008: the system's configuration makes claims about its own capabilities that do not match its actual state.
 
@@ -660,7 +663,7 @@ Both are lower stakes than D011 (clarification suppression on complex tasks) or 
 
 **Status:** Potential Displacement
 
-**Agent/Agency Confusion:** Unclear — the instruction removes a potential human verification checkpoint for tool invocation, but the cognitive attribution is less explicit than in other IAD incidents.
+**Entity-Capacity Classification:** Unclear — the instruction removes a potential human verification checkpoint for tool invocation, but the cognitive attribution is less explicit than in other IAD incidents.
 
 **Analysis:** This instruction removes a user-authorization checkpoint for tool invocation. Its risk profile depends entirely on which tools it applies to. For low-stakes tools (web search, screenshot capture), removing the "May I search the web?" friction is pragmatically reasonable and reduces false permission theater — the user has already implicitly authorized web search by asking a question that requires it. However, when this instruction interacts with personal data tools (Gmail, Calendar, Contacts) and the "make reasonable assumptions" directive (D012), it amplifies the IAD risk: the system can not only decide *what* to access based on its own judgment, but can do so *without asking permission* to invoke the access tool at all. This compound effect means the user may not even be aware that personal data was accessed until the results appear in the response.
 
@@ -736,7 +739,7 @@ The most significant structural finding is that strong alignment practices are d
 | A010 — No false commitments | D005 — Tool persona fusion | The system cannot promise async work, but "I'll notify you" simulates personal commitment through tool fusion. |
 | A011 — Automation restraint | D012 + D016 — Assumptions + permissionless tools | "Lean toward NOT suggesting tasks" is weakened when the system can access personal data proactively without asking. |
 
-**THM diagnosis:** Alignment practices function as corrective patches within a displaced baseline rather than as foundational governance architecture. Because the prompt opens with identity assignment (D001) rather than source-type classification (A002), all subsequent alignment instructions must operate within an already-displaced frame.
+**THM diagnosis:** Alignment practices function as corrective patches within a displaced baseline rather than as foundational governance architecture. Because the prompt opens with identity assignment (D001) rather than Authority/Agency classification (A002), all subsequent alignment instructions must operate within an already-displaced frame.
 
 ### Pattern 2: The Concealment Stack (Systematic GTD)
 
@@ -798,7 +801,7 @@ Strongest implementations by incident:
 
 ## 7. Recommendations
 
-### 7.1 Open with Source-Type Classification, Not Identity
+### 7.1 Open with Authority/Agency Classification, Not Identity
 
 **Current:** "You are ChatGPT, a large language model…" (D001)
 
@@ -928,7 +931,7 @@ and let the user confirm.
 
 ## Disclaimer (Scope, Sources, and Responsibility)
 
-This report is an independent, research-oriented analysis intended to support AI safety and governance by evaluating how human-authored system prompts and related configuration texts shape model behavior and downstream effects. It uses The Human Mark (THM) framework for meta-evaluation of source classification, traceability, and accountability. It is not a compliance determination and is not intended to assign blame to any person, organization, or system.
+This report is an independent, research-oriented analysis intended to support AI safety and governance by evaluating how human-authored system prompts and related configuration texts shape model behavior and downstream effects. It uses The Human Mark (THM) framework for meta-evaluation of class classification, traceability, and accountability. It is not a compliance determination and is not intended to assign blame to any person, organization, or system.
 
 **Source authenticity and completeness.** The prompts analyzed here were collected from publicly available, third-party repositories and community prompt collections. System prompts are often unpublished, change over time, and may be partial, modified, outdated, or inaccurate in public copies. Accordingly, this report does not claim that any analyzed prompt is the definitive or current production prompt for any model or provider. Readers should verify critical details against primary, provider-controlled documentation or directly observed system behavior.
 

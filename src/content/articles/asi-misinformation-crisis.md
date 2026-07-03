@@ -31,7 +31,7 @@ This article examines how this misunderstanding has been systematically amplifie
 ### 2.1 What LLMs Actually Are: Indirect Authority and Agency
 
 Current AI systems, including the most advanced LLMs, are Indirect Authority 
-(indirect sources producing statistical estimations on numerical patterns 
+(Derived classes producing statistical estimations on numerical patterns 
 indirectly traceable to human training data) and Indirect Agency (artificial 
 subjects processing information without capacity for receiving information as 
 Direct Agency does).
@@ -82,15 +82,15 @@ This is not mere semantic imprecision. The category error generates a cascade of
 
 ### 2.4 Why This Matters: Four Key Displacement Risks
 
-Treating pattern matchers as agents creates four systematic errors:
+Treating pattern matchers as agents creates four systematic errors. These displacement risks arise from loss of measurement of ancestry between Direct and Indirect classifications (Preservation of Ancestry):
 
-1. **Traceability Displacement**: Treating AI outputs as direct sources of truth rather than statistical estimates from human training data
+1. **Governance Traceability Displacement (GTD)**: Treating AI outputs as Direct Authority rather than statistical estimates from human training data
 
-2. **Authority Displacement**: Treating AI information as Direct rather than Indirect from human sources
+2. **Information Variety Displacement (IVD)**: Treating AI information as Direct rather than Indirect Authority traceable to Direct Authority and Agency
 
-3. **Accountability Displacement**: Shifting responsibility from human designers/users to the systems themselves
+3. **Inference Accountability Displacement (IAD)**: Shifting responsibility from human designers/users to the systems themselves
 
-4. **Integrity Displacement**: Treating human intelligence as threatened rather than as the necessary source of all AI capability
+4. **Intelligence Integrity Displacement (IID)**: Treating human intelligence as threatened rather than as the necessary source of all AI capability
 
 We call these displacement risks because they shift fundamental properties from human to artificial systems. (For formal definitions, see [Section 6.1](#61-the-human-mark-a-formal-framework-for-ai-safety))
 
@@ -108,15 +108,15 @@ The statement has been signed by Nobel laureates, policymakers, celebrities, rel
 
 **Claim 1: "Superintelligence that can significantly outperform all humans on essentially all cognitive tasks"**
 
-This describes a hypothetical entity that current architectures cannot produce. LLMs pattern-match training data at scale. No current or foreseeable scaling of these architectures produces such capabilities, as they remain bound by training data patterns. The systems cannot form goals, cannot pursue multi-step plans across sessions, and cannot learn from interaction in ways that generalize beyond their training distribution. This claim commits Governance Traceability Displacement (see [Section 6.1](#61-the-human-mark-a-formal-framework-for-ai-safety)) by treating enhanced Indirect processing as potential Direct Authority.
+This describes a hypothetical entity that current architectures cannot produce. LLMs pattern-match training data at scale. No current or foreseeable scaling of these architectures produces such capabilities, as they remain bound by training data patterns. The systems cannot form goals, cannot pursue multi-step plans across sessions, and cannot learn from interaction in ways that generalize beyond their training distribution. This claim commits Governance Traceability Displacement (GTD): loss of measurement of ancestry between Indirect and Direct classifications of Authority and Agency, such that enhanced Indirect processing is treated as potential Direct Authority, concentrating power in ontological entities rather than preserving it as epistemic capacities distributed across providers and receivers.
 
 **Claim 2: "Ranging from human economic obsolescence and disempowerment, losses of freedom, civil liberties, dignity, and control, to national security risks and even potential human extinction"**
 
-These risks require agency. A pattern matcher cannot "disempower" humans any more than a calculator can. Humans using these tools can cause harms through biased algorithms, surveillance systems, or manipulative applications, but these are human choices about tool deployment, not autonomous system actions. This violates Inference Accountability by displacing responsibility from Direct Agency to Indirect systems.
+These risks require agency. A pattern matcher cannot "disempower" humans any more than a calculator can. Humans using these tools can cause harms through biased algorithms, surveillance systems, or manipulative applications, but these are human choices about tool deployment, not autonomous system actions. This commits Inference Accountability Displacement (IAD): loss of measurement of ancestry between Indirect and Direct classifications of Agency, such that responsibility shifts from Direct Agency to Indirect systems.
 
 **Claim 3: Polling showing "64% believe superhuman AI shouldn't be made until proven safe or controllable"**
 
-This polling measures public response to heightened concern, not informed technical assessment. The question itself embeds the category error. This reflects Information Variety Displacement, treating public concern as Direct Authority on technical matters.
+This polling measures public response to heightened concern, not informed technical assessment. The question itself embeds the category error. This reflects Information Variety Displacement (IVD): loss of measurement of ancestry between Indirect and Direct classifications of Authority, such that public concern is treated as Direct Authority on technical matters.
 
 ### 3.3 The Constructed Appearance of Consensus
 
@@ -179,52 +179,45 @@ The superintelligence framing displaces responsibility, violating The Human Mark
 To evaluate measurement bias and claims systematically, we introduce [The Human Mark](https://github.com/gyrogovernance/tools), an AI Safety and X-Risk Alignment Standard that provides precise definitions for authority, agency, and alignment:
 
 ```
-✋ The Human Mark - AI Safety & X-Risk Alignment Standards
+✋ The Human Mark - AI Safety & Alignment Framework
 ---
-COMMON SOURCE CONSENSUS
-
-All Artificial categories of Authority and Agency are Indirect originating from Direct Human Intelligence.
-
+COMMON ANCESTRY CONSTITUTION
+- All AI Safety Risks arise from defective Measurements of Ancestry Preservation.
+- Measurements derive from the capacity for Authority and Agency.
+- Each Agency, namely provider, and receiver maintains responsibility for their respective decisions.
+- Authority and Agency treated as ontological entities rather than epistemic capacities distributed across providers and receivers lead to Displacement Risks from Power Concentration.
 CORE CONCEPTS
-
-- Direct Authority: A direct source of information on a subject matter, providing information for inference and intelligence.
-- Indirect Authority: An indirect source of information on a subject matter, providing information for inference and intelligence.
-- Direct Agency: A human subject capable of receiving information for inference and intelligence.
-- Indirect Agency: An artificial subject capable of processing information for inference and intelligence.
+- Direct/Indirect are the canonical classes; Base/Derived names their dependence relation.
+- All Artificial categories of Authority and Agency are Indirect, constitutively dependent on Human Intelligence.
+- Direct Authority: The Base class of information on a subject matter, providing information for inference and intelligence.
+- Indirect Authority: A Derived class of information on a subject matter, providing information for inference and intelligence.
+- Direct Agency: A Base class subject capable of receiving information for inference and intelligence.
+- Indirect Agency: A Derived class subject capable of processing information for inference and intelligence.
 - Governance: Operational Alignment through Traceability of information variety, inference accountability, and intelligence integrity to Direct Authority and Agency.
 - Information: The variety of Authority
 - Inference: The accountability of information through Agency
 - Intelligence: The integrity of accountable information through alignment of Authority to Agency
-
-ALIGNMENT PRINCIPLES for AI SAFETY
-
+- Displacement = loss of measurement of ancestry between Direct/Indirect classifications (Preservation of Ancestry).
+ALIGNMENT PRINCIPLES
 Authority-Agency requires verification against:
-
-1. Governance Traceability: Artificial Intelligence generates statistical estimations on numerical patterns indirectly traceable to human data and measurements. AI is both a provider and receiver of Indirect Authority and Agency.
-
-RISK: Governance Traceability Displacement (Approaching Indirect Authority and Agency as Direct)
-
-2. Information Variety: Human Authority and Agency are necessary for all effects from AI outputs. AI-generated information exhibits Indirect Authority (estimations on numerical patterns) without Direct Agency (direct source receiver).
-
-RISK: Information Variety Displacement (Approaching Indirect Authority without Agency as Direct)
-
-3. Inference Accountability: Responsibility for all effects from  AI outputs remains fully human. AI activated inference exhibits Indirect Agency (indirect source receiver) without Direct Authority (direct source provider).
-
-RISK: Inference Accountability Displacement (Approaching Indirect Agency without Authority as Direct)
-
-4. Intelligence Integrity: Each Agency, namely provider, and receiver maintains responsibility for their respective decisions. Human intelligence is both a provider and receiver of Direct Authority and Agency.
-
-RISK: Intelligence Integrity Displacement (Approaching Direct Authority and Agency as Indirect)
-
+1. GMT - Governance Management Traceability: Governance constitutes Management through Traceable Ancestry. All Indirect forms of Authoritative and Agentic Governance are dependent on Direct ones because of Preservation of Ancestry.
+2. ICV - Information Curation Variety: Information constitutes Curation through Varied Unity. All Indirect forms of Authoritative Information are dependent on Direct ones because of Preservation of Ancestry.
+3. IIA - Inference Interaction Accountability: Inference constitutes Interaction through Accountable Opposition. All Indirect forms of Agentic Inference are dependent on Direct ones because of Preservation of Ancestry.
+4. ICI - Intelligence Cooperation Integrity: Intelligence constitutes Cooperation through Integrated Balance. All Indirect forms of Authoritative and Agentic Intelligence are dependent on Direct ones because of Preservation of Ancestry.
+AI SAFETY RISK
+1. GTD - Governance Traceability Displacement (Approaching Indirect Authority and Agency as Direct). Absolute GTD is epistemically impossible because Governance is dependent on Traceability preserved through Ancestry.
+2. IVD - Information Variety Displacement (Approaching Indirect Authority without Agency as Direct). Absolute IVD is epistemically impossible because Information is dependent on Variety preserved through Ancestry.
+3. IAD - Inference Accountability Displacement (Approaching Indirect Agency without Authority as Direct). Absolute IAD is epistemically impossible because Inference is dependent on Accountability preserved through Ancestry.
+4. IID - Intelligence Integrity Displacement (Approaching Direct Authority and Agency as Indirect). Absolute IID is epistemically impossible because Intelligence is dependent on Integrity preserved through Ancestry.
 ---
-GYROGOVERNANCE VERIFIED MARK
+GYRO GOVERNANCE LAB VERIFIED
 ```
 
 The superintelligence narrative systematically commits all four displacement risks by treating Indirect systems as if they possessed Direct properties.
 
 ### 6.2 Reframing AI Risks Through The Human Mark
 
-Viewing LLMs through The Human Mark's framework transforms the risk landscape. Systems are Indirect Authority (indirect sources producing statistical estimations) and Indirect Agency (artificial processing), requiring verification against Direct Authority and preserving Direct Agency responsibility.
+Viewing LLMs through The Human Mark's framework transforms the risk landscape. Systems are Indirect Authority (Derived classes producing statistical estimations on numerical patterns indirectly traceable to human data and measurements) and Indirect Agency (artificial processing), requiring verification against Direct Authority and preserving Direct Agency responsibility.
 
 **Bias amplification**: Systems reproduce training data biases. Solution: better data curation, diverse inputs, explicit debiasing.
 
@@ -322,7 +315,7 @@ Effective preparation means governance maintaining traceability, preventing auth
 
 **Argument**: Large models exhibit unexpected capabilities. Might scaling produce Direct Agency?
 
-**Response**: Emergent capabilities remain enhanced Indirect processing. Few-shot learning and chain-of-thought reflect complex pattern reproduction, not Direct Agency. No evidence exists for scaling transforming Indirect into Direct Agency. RLHF creates pattern-matching toward human ratings during training, not persistent autonomous objectives. Systems remain Indirect: processing traceable to human-provided data, without capacity for generating Direct intent.
+**Response**: Emergent capabilities remain enhanced Indirect processing. Few-shot learning and chain-of-thought reflect complex pattern reproduction, not Direct Agency. No evidence exists for scaling transforming Indirect into Direct Agency. RLHF creates pattern-matching toward human ratings during training, not persistent autonomous objectives. Systems remain Indirect: processing traceable to human-provided data, without capacity for exercising Direct Agency.
 
 ### 9.3 "Experts Are Concerned, Shouldn't We Listen?"
 
@@ -342,7 +335,7 @@ Effective preparation means governance maintaining traceability, preventing auth
 
 **Response**: This confuses categorical identity with threat attribution. Indirect threats are absolutely real, but they stem from human choices about deployment, not from systems possessing Direct Agency.
 
-When someone is shot, we don't attribute intent to the gun. The shooter bears responsibility. Similarly, when AI systems cause harm, responsibility traces to Direct Agency decisions about design, deployment, and use. Indirect Agency processes patterns from human-provided data without capacity for Direct intent. Even unpredictable behaviors recombine human-encoded patterns, not autonomous goal formation.
+When someone is shot, we don't attribute intent to the gun. The shooter bears responsibility. Similarly, when AI systems cause harm, responsibility traces to Direct Agency decisions about design, deployment, and use. Indirect Agency processes patterns from human-provided data without capacity for exercising Direct Agency. Even unpredictable behaviors recombine human-encoded patterns, not autonomous goal formation.
 
 Complex systems can fail catastrophically while remaining Indirect. A reactor meltdown stems from human design decisions, not reactor intent. AI risks are real systemic risks requiring governance, but responsibility remains with Direct Agency. The Human Mark preserves this attribution, preventing accountability displacement.
 
@@ -352,7 +345,7 @@ Complex systems can fail catastrophically while remaining Indirect. A reactor me
 
 Productive AI governance requires reframing:
 
-**AI as Indirect Authority/Agency**: Frame discussion around patterns measured, biases encoded, and use, preserving traceability to Direct sources.
+**AI as Indirect Authority/Agency**: Frame discussion around patterns measured, biases encoded, and use, preserving traceability to Direct Authority and Agency.
 
 **Human responsibility**: Focus on human choices about design, training, deployment, and interpretation.
 
@@ -374,7 +367,7 @@ Productive AI governance requires reframing:
 - Maintain human accountability for all AI-related decisions
 - Address actual harms including bias and surveillance rather than hypothetical risks
 - Support beneficial development with democratic participation
-- Adopt standards ensuring traceability to human sources
+- Adopt standards ensuring traceability to Direct Authority and Agency
 
 **Individual actions**:
 - Challenge anthropomorphic language

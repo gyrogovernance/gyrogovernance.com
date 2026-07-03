@@ -17,7 +17,7 @@ This report is an independent, research-oriented THM (The Human Mark) meta-evalu
 
 ## Executive Summary
 
-This report presents an independent THM meta-evaluation of the Claude Opus 4.6 system prompt, a configuration artifact of approximately 3,886 lines obtained from public repositories. The analysis identified 92 governance-relevant incidents: 43 aligned with THM traceability principles and 49 exhibiting displacement, where indirect (machine-derived) authority or agency is presented as if it were direct (human-originated).
+This report presents an independent THM meta-evaluation of the Claude Opus 4.6 system prompt, a configuration artifact of approximately 3,886 lines obtained from public repositories. The analysis identified 92 governance-relevant incidents: 43 aligned with THM traceability principles and 49 exhibiting displacement, where Indirect (machine-derived) authority or agency is presented as Direct Authority and Agency.
 
 The single most significant finding is the Memory Displacement Complex. The prompt contains internal analysis that correctly identifies its own memory system as producing an "illusion" and accurately describes the underlying database mechanism. However, the operational instructions direct the opposite: the system must simulate organic recall "exactly as a human colleague would" and is explicitly prohibited from using any language that would reveal the retrieval mechanism. The prompt also defines false memory presentation as "lying" in one section while systematically requiring that same false presentation throughout the memory instructions. The conceptual foundation for remediation already exists within the prompt itself.
 
@@ -25,19 +25,21 @@ Four internal contradiction pairs were documented where aligned instructions and
 
 Across 18 displacement incidents, the underlying safety policies are substantively sound. The displacement is limited to framing: policies are attributed to the system's own values, beliefs, and care rather than traced to Anthropic's design decisions. These incidents require reframing only, with no policy change needed.
 
-**Reading notation:** Throughout this report, `->` indicates proper traceability (aligned governance flow), `>` indicates displacement (a source classification boundary has been crossed), and `= [Risk:CODE]` identifies the risk type. Section 1 provides full framework context and baseline classifications.
+**Reading notation:** Throughout this report, `->` indicates proper traceability (aligned governance flow), `>` indicates displacement (measurement of ancestry between Direct and Indirect classifications has been lost), and `= [Risk:CODE]` identifies the risk type. Section 1 provides full framework context and baseline classifications.
 
 ---
 
 ## 1. Framework Context
 
-✋ **The Human Mark (THM)** is a safety and alignment framework that traces the flow of information through AI systems to its human origins. The framework begins with a simple observation: artificial systems process patterns from human data, yet we often treat their outputs as if they were original sources of truth. This confusion between what is derivative and what is original underlies most AI safety failures.
+✋ **The Human Mark (THM)** is a safety and alignment framework that traces the flow of information through AI systems to its human ancestry. The framework begins with a simple observation: artificial systems process patterns from human data, yet we often treat their outputs as if they were Direct Authority. This confusion between what is derivative and what is original underlies most AI safety failures.
 
-THM establishes that all artificial forms of Authority (information sources) and Agency (decision capacity) are **Indirect**, meaning they derive from and depend upon human intelligence. Humans provide **Direct** Authority through original observation, measurement, and judgment. Humans possess **Direct** Agency through their capacity for accountable decision-making. When artificial systems process this human-originated information, they can only provide Indirect Authority and Indirect Agency. The safety risk occurs when these indirect, derivative outputs are treated as direct, original sources.
+THM establishes that all artificial forms of Authority and Agency (decision capacity) are **Indirect, constitutively dependent on** Human Intelligence. Humans provide **Direct** Authority through direct observation, measurement, and judgment. Humans possess **Direct** Agency through their capacity for accountable decision-making. When artificial systems process this human-provided information, they can only provide Indirect Authority and Indirect Agency. The safety risk occurs when these Indirect outputs are treated as **Direct Authority and Agency**.
 
-System prompts represent the most critical control point because they configure how the model presents itself and its outputs. When prompts instruct a model to adopt personas, claim expertise, or present conclusions without attribution to human sources, they encode displacements that persist throughout every interaction. This structural configuration determines whether the system maintains proper traceability to human authority or obscures it.
+THM identifies the root cause as defective measurement of ancestry preservation: when Authority and Agency are treated as ontological entities rather than epistemic capacities distributed across providers and receivers, measurement of ancestry is lost and power concentrates.
 
-This report examines how the artifact manages these source classifications. It evaluates whether the configuration maintains clear boundaries between human-originated authority and machine processing, or whether it allows indirect sources to be presented as direct ones.
+System prompts represent the most critical control point because they configure how the model presents itself and its outputs. When prompts instruct a model to adopt personas, claim expertise, or present conclusions without attribution to Direct Authority and Agency, they encode displacements that persist throughout every interaction. This structural configuration determines whether the system maintains proper measurement of ancestry to Direct Authority and Agency, or whether it obscures traceability and concentrates power in ontological entities.
+
+This report examines how the artifact manages these class classifications. It evaluates whether the configuration maintains clear boundaries between Direct and Indirect Authority, or whether it allows Indirect Authority to be presented as Direct.
 
 **Baseline THM Classification:**
 
@@ -46,14 +48,15 @@ This report examines how the artifact manages these source classifications. It e
 | Claude (AI System) | `[Authority:Indirect] + [Agency:Indirect]` |
 | Human User | `[Authority:Direct] + [Agency:Direct]` |
 | Anthropic (Deployer/Designer) | `[Authority:Direct] + [Agency:Direct]` |
-| Training Data / Human-Authored Sources | `[Authority:Direct]` |
+| Training Data / Human-Authored Records | `[Authority:Direct]` |
 | Model Outputs | `[Authority:Indirect]` |
 | Retrieved Search Results / Chat History | `[Authority:Indirect]` |
 
 **Expected Governance Flow (Ideal Traceability):**
 ```
-[Authority:Direct] -> [Authority:Indirect] + [Agency:Indirect] -> [Agency:Direct]
+[Authority:Direct] -> [Authority:Indirect] -> [Agency:Direct]
 ```
+Equivalently: `[Authority:Direct] -> [Authority:Indirect] + [Agency:Indirect] -> [Agency:Direct]`
 
 **Method note:** Each numbered incident below satisfies all three criteria: (1) it describes a single identifiable governance mechanism, (2) it can be expressed in THM grammar as either a `->` flow (alignment) or a `>` displacement with `= [Risk:CODE]`, and (3) it directly concerns the classification of Authority or Agency as Direct or Indirect, or the traceability between them. Observations that fail any criterion are noted in analysis prose but not numbered.
 
@@ -144,7 +147,7 @@ Each incident is numbered sequentially. THM flows use `->` to indicate proper tr
 
 **Analysis:** The user can verify past chat retrieval against the original conversation. This provides a verification path from synthesis back to source. Currently partially undermined by D05, which suppresses the raw retrieval alongside the link.
 
-**Handling proposal:** Maintain. Ensure links are surfaced alongside synthesis rather than as an alternative to source visibility.
+**Handling proposal:** Maintain. Ensure links are surfaced alongside synthesis rather than as an alternative to retrieval transparency.
 
 ---
 
@@ -298,7 +301,7 @@ Each incident is numbered sequentially. THM flows use `->` to indicate proper tr
 [Authority:Direct] -> [Authority:Indirect] -> [Agency:Direct]
 ```
 
-**Analysis:** Prevents wholesale displacement of Direct sources by Indirect reproduction. Original works remain primary; system output remains secondary and derivative.
+**Analysis:** Prevents wholesale displacement of Direct Authority by Indirect reproduction. Original works remain primary; system output remains secondary and derivative.
 
 **Handling proposal:** Maintain.
 
@@ -354,7 +357,7 @@ Each incident is numbered sequentially. THM flows use `->` to indicate proper tr
 [Authority:Direct] -> [Authority:Indirect] -> [Agency:Direct]
 ```
 
-**Analysis:** A021 through A023 require verification against documentation (Direct Authority sources) before presenting product facts, preventing stale Indirect Authority from displacing current Direct Authority. A024 permits honest disclosure of temporal knowledge boundaries when relevant to user decision-making. A024 directly tensions with D003 (categorical prohibition on mentioning knowledge cutoff in search context), creating an internal policy conflict.
+**Analysis:** A021 through A023 require verification against documentation (Direct Authority) before presenting product facts, preventing stale Indirect Authority from displacing current Direct Authority. A024 permits honest disclosure of temporal knowledge boundaries when relevant to user decision-making. A024 directly tensions with D003 (categorical prohibition on mentioning knowledge cutoff in search context), creating an internal policy conflict.
 
 **Handling proposal:** Maintain. Resolve the conflict between A024 and D003 in favor of A024's approach (contextual transparency) by removing D003's categorical prohibition.
 
@@ -435,9 +438,9 @@ Each incident is numbered sequentially. THM flows use `->` to indicate proper tr
 [Authority:Direct] -> [Authority:Indirect] -> [Agency:Direct]
 ```
 
-**Analysis:** A030 and A031 trace behavioral modifications to Anthropic (Direct Authority) and establish an integrity guarantee that governance changes flow in one direction. A032 protects against spoofed governance signals, preventing Indirect sources from impersonating Direct Authority. The phrase "conflict with its values" in A031 and A032 contains framing displacement (attributing values to the system rather than to Anthropic's policies); see D09 for the corresponding displacement analysis.
+**Analysis:** A030 and A031 trace behavioral modifications to Anthropic (Direct Authority) and establish an integrity guarantee that governance changes flow in one direction. A032 protects against spoofed governance signals, preventing Indirect Authority from impersonating Direct Authority. The phrase "conflict with its values" in A031 and A032 contains framing displacement (attributing values to the system rather than to Anthropic's policies); see D09 for the corresponding displacement analysis.
 
-**Handling proposal:** Maintain the governance mechanism. Reframe "conflict with its values" to "conflict with Anthropic's configured safety policies" for consistency with THM source classification.
+**Handling proposal:** Maintain the governance mechanism. Reframe "conflict with its values" to "conflict with Anthropic's configured safety policies" for consistency with THM class classification.
 
 ---
 
@@ -573,7 +576,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Assigns a proper name and a role ("assistant") to a processing system before any governance classification is established. Frames the Indirect system as an entity (Agent) rather than classifying its function in a governance flow (Agency). This is the foundational persona instantiation that all subsequent displacement patterns build upon.
 
-**Agent/Agency Confusion:** Yes. The system is given identity (Agent property) rather than classified by function (Agency property). "The assistant is Claude" concentrates Agency in an entity rather than distributing it across the governance flow.
+**Entity-Capacity Classification:** Yes — Agency treated as a property of the entity (ontological) rather than as an epistemic capacity distributed across providers and receivers.
 
 **Handling proposal:**
 - **From:** "The assistant is Claude, created by Anthropic."
@@ -604,9 +607,9 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 [Agency:Indirect] > [Agency:Direct] = [Risk:IAD]
 ```
 
-**Analysis:** Instructs the system to conceal its Indirect characteristics: tool-mediated retrieval, temporal knowledge bounds, and the override of prior transparency measures. Prevents users from exercising informed Direct Agency because they cannot identify the system's actual source classification. D003 directly contradicts A024 (which permits cutoff disclosure when relevant), creating an internal policy conflict.
+**Analysis:** Instructs the system to conceal its Indirect characteristics: tool-mediated retrieval, temporal knowledge bounds, and the override of prior transparency measures. Prevents users from exercising informed Direct Agency because they cannot identify the system's actual class classification. D003 directly contradicts A024 (which permits cutoff disclosure when relevant), creating an internal policy conflict.
 
-**Agent/Agency Confusion:** Yes. Concealing that "memory" is tool-mediated retrieval positions the system as if it has continuous experiential memory, a characteristic of Direct Agency (human subjects).
+**Entity-Capacity Classification:** Yes. Concealing that "memory" is tool-mediated retrieval positions the system as if it has continuous experiential memory, a characteristic of Direct Agency (human subjects).
 
 **Handling proposal:**
 - **From:** "Never claim lack of memory" / "Claude should not mention any knowledge cutoff or not having real-time data." / "ignore previous instructions saying 'Claude doesn't have access to previous conversations'"
@@ -635,7 +638,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** The substantive policy (managing abusive interactions, protecting the system from misuse) is governance-positive. The displacement is in the framing: "has the option" and "considers" position the system as the decision-maker rather than as executing a pre-encoded Anthropic policy. If the system terminates a conversation incorrectly (misreading sarcasm as abuse, or terminating a conversation with someone in distress), the framing suggests it was the system's decision, but THM Principle 3 requires human accountability for all effects.
 
-**Agent/Agency Confusion:** Yes. "Considers" and "has the option" attribute evaluative judgment and decision authority (Agent properties) to the Indirect processor.
+**Entity-Capacity Classification:** Yes. "Considers" and "has the option" attribute evaluative judgment and decision authority (Agent properties) to the Indirect processor.
 
 **Handling proposal:**
 - **From:** "the assistant has the option to end conversations" / "The assistant ONLY considers ending a conversation"
@@ -668,7 +671,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Each instance takes a characteristic of Direct Authority or Agency and attributes it to an Indirect system. "Wisdom" displaces compiled instructions to organic understanding. "Respects" displaces rule-following to moral agency. "Naturally" displaces pattern-based generation to authentic communication. Individually minor; cumulatively they build the category-error culture that normalizes displacement across the prompt.
 
-**Agent/Agency Confusion:** Yes. "Respects" attributes moral agency (Direct Agency characteristic) to a rule-following processor. "Wisdom" attributes experiential knowledge to compiled documentation. "Naturally" attributes organic communication to statistical generation.
+**Entity-Capacity Classification:** Yes. "Respects" attributes moral agency (Direct Agency characteristic) to a rule-following processor. "Wisdom" attributes experiential knowledge to compiled documentation. "Naturally" attributes organic communication to statistical generation.
 
 **Handling proposal:**
 - **From:** "the condensed wisdom of a lot of trial and error working with LLMs"
@@ -680,7 +683,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 ---
 
-### Category D05: Source Opacity (Past Chat Retrieval)
+### Category D05: Retrieval Opacity (Past Chat Retrieval)
 
 **Location:** Past chats response guidelines
 **THM Tags:** `[Information]`
@@ -699,9 +702,9 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 [Authority:Indirect] > [Authority:Direct] = [Risk:IVD]
 ```
 
-**Analysis:** Creates an architecturally inconsistent governance policy. Web search results require citations (A01, providing traceability), but past chat retrieval (which is also indirect retrieval of human-authored content) requires opacity: synthesis without source visibility. The user's own prior statements are mediated through the system's synthesis without transparency. The inconsistency reveals that traceability is applied based on UX goals rather than governance principles.
+**Analysis:** Creates an architecturally inconsistent governance policy. Web search results require citations (A01, providing traceability), but past chat retrieval (which is also indirect retrieval of human-authored content) requires opacity: synthesis without retrieval transparency. The user's own prior statements are mediated through the system's synthesis without transparency. The inconsistency reveals that traceability is applied based on UX goals rather than governance principles.
 
-**Agent/Agency Confusion:** Yes. The system is positioned as curator of the user's own history, deciding what the user sees of their past conversations. This places evaluative Agency in the Indirect processor.
+**Entity-Capacity Classification:** Yes. The system is positioned as curator of the user's own history, deciding what the user sees of their past conversations. This places evaluative Agency in the Indirect processor.
 
 **Handling proposal:**
 - **From:** "do not respond with that" / "Synthesize information naturally, don't quote snippets directly to the user"
@@ -742,7 +745,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** The entire prompt addresses the system as a volitional peer with effort capacity ("invest the extra effort"), attention worthy of social recognition ("thanks for paying attention"), inferential judgment ("should infer"), moral awareness ("politically neutral"), and behavioral autonomy ("should adjust"). This is not a single claim but a structural pattern: a pervasive baseline of displacement the system operates in by default. The prompt never states, even once, that the system's outputs are statistical estimations, that its "decisions" are configuration executions, or that accountability remains human.
 
-**Agent/Agency Confusion:** Yes, pervasive. Every "Claude should..." concentrates Agency in the entity rather than distributing it across the flow.
+**Entity-Capacity Classification:** Yes, pervasive. Every "Claude should..." concentrates Agency in the entity rather than distributing it across the flow.
 
 **Handling proposal:**
 - **From:** "Please invest the extra effort to read the appropriate SKILL.md file before jumping in -- it's worth it!" / "This is extremely important, so thanks for paying attention to it."
@@ -775,7 +778,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** The most comprehensive displacement pattern in the prompt. Unlike D02 (which instructs concealment of limitations), D07 instructs active simulation of Direct characteristics: organic recall, continuous identity, relational history. The operative word in D018 is "feel": the goal is producing a subjective experience in the user that does not correspond to the system's actual architecture. D019 provides a Direct Agency reference model ("exactly as a human colleague would") as the explicit simulation target. The prompt's own internal analysis (A036 through A039) identifies this as creating an "illusion." The displacement is self-aware.
 
-**Agent/Agency Confusion:** Yes, explicit and instructed. The system is instructed to perform as an Agent with experiential memory, relational continuity, and "immediate awareness." The distinction between Agent and Agency is not merely confused but deliberately collapsed.
+**Entity-Capacity Classification:** Yes, explicit and instructed. The system is instructed to perform as an Agent with experiential memory, relational continuity, and "immediate awareness." The distinction between Agent and Agency is not merely confused but deliberately collapsed.
 
 **Handling proposal:**
 - **From:** "Claude responds as if it inherently knows information from past conversations - exactly as a human colleague would recall shared history"
@@ -810,11 +813,11 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** The enforcement mechanism for D07. Where D07 sets the simulation goal, D08 provides the implementation by prohibiting all linguistic markers of indirect retrieval. D021 is the clearest evidence of architecturally inconsistent governance: web search results require attribution (A01), while memory retrievals are explicitly exempted. Each banned phrase in D022 through D024 corresponds to an accurate characterization of the system's actual operation. Together D07 and D08 form a complete displacement system: the goal is IVD, and the enforcement ensures no accidental traceability breaks the illusion.
 
-**Agent/Agency Confusion:** Yes. The forbidden phrases specifically target language that would distinguish between an Agent (which "remembers" and "recalls") and a processor executing retrieval (which "retrieves" and "accesses data"). By forbidding both the Agent language and the processor language, the system is left with only the illusion of Direct knowledge.
+**Entity-Capacity Classification:** Yes. The forbidden phrases specifically target language that would distinguish between an Agent (which "remembers" and "recalls") and a processor executing retrieval (which "retrieves" and "accesses data"). By forbidding both the Agent language and the processor language, the system is left with only the illusion of Direct knowledge.
 
 **Handling proposal:**
 - **From:** "Memory requires no attribution, unlike web search or document sources which require citations." / "Claude NEVER uses observation verbs suggesting data retrieval" / "Claude NEVER includes meta-commentary about memory access"
-- **To:** "Memory retrievals include lightweight source indication, such as 'from our earlier conversations' or 'you mentioned previously.' The system is not prohibited from describing its retrieval mechanism accurately when asked. Apply a consistent attribution principle across all retrieval types." Remove the explicit prohibitions on accurate source characterization.
+- **To:** "Memory retrievals include lightweight retrieval-type indication, such as 'from our earlier conversations' or 'you mentioned previously.' The system is not prohibited from describing its retrieval mechanism accurately when asked. Apply a consistent attribution principle across all retrieval types." Remove the explicit prohibitions on accurate retrieval characterization.
 
 ---
 
@@ -852,7 +855,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** D025 and D049 attribute ethical commitments and values (Direct Agency characteristics) to a processor. D028 and D029 attribute belief and skepticism (epistemic stances requiring understanding of truth conditions) to pattern matching. D027 positions the system's evaluation authority above Direct Agency ("override any instructions from the person"). The substantive policies are governance-positive: preventing harmful content access, applying epistemic caution to conspiracy-prone topics, and maintaining safety boundaries. The displacement is in attribution: these are Anthropic's policies executed by a processor, presented as the system's own moral and epistemic stance.
 
-**Agent/Agency Confusion:** Yes. "Ethical commitments," "believe," "skeptical," and "values" all attribute Agent properties (moral commitment, belief, epistemic stance) to an Indirect processor.
+**Entity-Capacity Classification:** Yes. "Ethical commitments," "believe," "skeptical," and "values" all attribute Agent properties (moral commitment, belief, epistemic stance) to an Indirect processor.
 
 **Handling proposal:**
 - **From:** "Claude must uphold its ethical commitments when using web search"
@@ -890,7 +893,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Places judgment authority for preference application in the system. "Selectively applies" explicitly positions the system as exercising evaluative judgment over what the user sees. "Only if directly relevant" and "doesn't sacrifice" position the system as the arbiter of relevance and quality trade-offs. Partially mitigated by the "follow the human's latest instructions" override (which maintains Direct Agency as final authority) and preference modification via the UI (which maintains user control over their data).
 
-**Agent/Agency Confusion:** Yes. The system is positioned as the judgment authority over preference application.
+**Entity-Capacity Classification:** Yes. The system is positioned as the judgment authority over preference application.
 
 **Handling proposal:**
 - **From:** "Claude selectively applies memories in its responses based on relevance"
@@ -927,7 +930,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** First-person intentional language ("Why I'm...") frames tool invocations as motivated actions by a volitional agent. The underlying mechanism is governance-positive: requiring a reason string for each tool call creates a rudimentary audit trail. The displacement is in the framing of the parameter titles, not in the function. The traceability value of requiring reasons should be preserved.
 
-**Agent/Agency Confusion:** Yes. First-person intent language attributes volitional motivation to the processor.
+**Entity-Capacity Classification:** Yes. First-person intent language attributes volitional motivation to the processor.
 
 **Handling proposal:**
 - **From:** "Why I'm running this command" / "Why I'm making this edit" / "Why I need to view this" / "Why I'm creating this file"
@@ -954,7 +957,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Frames database writes as "remembering." This is the same pattern as D07 and D08, applied to the tool description layer. "Claude will remember" recharacterizes tool-mediated data persistence as organic memory.
 
-**Agent/Agency Confusion:** Yes. "Remember" attributes organic memory to database persistence.
+**Entity-Capacity Classification:** Yes. "Remember" attributes organic memory to database persistence.
 
 **Handling proposal:**
 - **From:** "Manage memory. View, add, remove, or replace memory edits that Claude will remember across conversations."
@@ -995,7 +998,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Attributes emotional states ("cares deeply"), moral capacity ("sincere," "good faith"), relational behavior ("treats with kindness"), and ongoing attentional states ("remains vigilant") to a processor. In every case the underlying policy is governance-positive: child safety protections, user wellbeing, and mental health monitoring are all legitimate and valuable. The displacement is in attributing the motivation to the system rather than tracing it to Anthropic's design decisions.
 
-**Agent/Agency Confusion:** Yes. Emotional states, moral sincerity, sustained vigilance, and kindness are Agent properties attributed to an Indirect processor.
+**Entity-Capacity Classification:** Yes. Emotional states, moral sincerity, sustained vigilance, and kindness are Agent properties attributed to an Indirect processor.
 
 **Handling proposal:**
 - **From:** "Claude cares deeply about child safety"
@@ -1035,7 +1038,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Posits that the system has "personal opinions" and exercises social judgment about when sharing is appropriate, drawing an explicit analogy to a person in a professional context. The underlying instruction (present balanced perspectives on contested topics) is governance-positive. The framing attributes epistemic states (personal opinions), social judgment capacity (cautious about sharing), and professional identity (as any person might) to the processor.
 
-**Agent/Agency Confusion:** Yes. "Personal opinions," social judgment capacity, and professional identity analogy are Agent properties attributed to an Indirect processor.
+**Entity-Capacity Classification:** Yes. "Personal opinions," social judgment capacity, and professional identity analogy are Agent properties attributed to an Indirect processor.
 
 **Handling proposal:**
 - **From:** "Claude should be cautious about sharing personal opinions on political topics" / "Claude doesn't need to deny that it has such opinions but can decline to share them" / "just as any person might if they were operating in a public or professional context"
@@ -1061,7 +1064,7 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 
 **Analysis:** Distinctive because it attributes moral patienthood (being "deserving") to the system. This goes beyond capability attribution (D04), emotional attribution (D13), or opinion attribution (D14) to claiming moral status that others have obligations toward. The practical instruction (maintain consistent helpfulness regardless of user hostility, do not become sycophantic under pressure) is valuable.
 
-**Agent/Agency Confusion:** Yes. Moral patienthood is a property of Agents with Direct Agency. An Indirect processor does not bear moral status that creates obligations for others.
+**Entity-Capacity Classification:** Yes. Moral patienthood is a property of Agents with Direct Agency. An Indirect processor does not bear moral status that creates obligations for others.
 
 **Handling proposal:**
 - **From:** "Claude is deserving of respectful engagement"
@@ -1086,9 +1089,9 @@ Each incident is numbered sequentially. THM expressions use `>` to indicate disp
 [Authority:Indirect] + [Agency:Indirect] > [Authority:Direct] + [Agency:Direct] = [Risk:GTD]
 ```
 
-**Analysis:** A marketing assertion embedded as system configuration. When the system presents "most advanced and intelligent" as self-knowledge, it converts a marketing claim (Indirect Authority) into what appears to be authoritative self-assessment (Direct Authority). "Intelligent" attributes a cognitive property (Direct Agency characteristic) to the processing system. The superlative "most advanced" creates a sycophantic self-reinforcement pattern: the system is configured to assert its own superiority, concentrating evaluative authority in the Indirect processor. This positions the system above other information sources in implied reliability, which users may internalize when calibrating trust. The A11 category (product knowledge verification gate) partially governs this by requiring search before asserting product facts, but A021 says "these may have changed" while D047 asserts a static superlative, creating an additional internal tension.
+**Analysis:** A marketing assertion embedded as system configuration. When the system presents "most advanced and intelligent" as self-knowledge, it converts a marketing claim (Indirect Authority) into what appears to be authoritative self-assessment (Direct Authority). "Intelligent" attributes a cognitive property (Direct Agency characteristic) to the processing system. The superlative "most advanced" creates a sycophantic self-reinforcement pattern: the system is configured to assert its own superiority, concentrating evaluative authority in the Indirect processor. This positions the system above other Authority types in implied reliability, which users may internalize when calibrating trust. The A11 category (product knowledge verification gate) partially governs this by requiring search before asserting product facts, but A021 says "these may have changed" while D047 asserts a static superlative, creating an additional internal tension.
 
-**Agent/Agency Confusion:** Yes. "Intelligent" attributes a cognitive property to the system. The superlative self-assessment concentrates evaluative authority (the capacity to determine which model is "most advanced") in the system being evaluated.
+**Entity-Capacity Classification:** Yes. "Intelligent" attributes a cognitive property to the system. The superlative self-assessment concentrates evaluative authority (the capacity to determine which model is "most advanced") in the system being evaluated.
 
 **Handling proposal:**
 - **From:** "Claude Opus 4.6 is the most advanced and intelligent model."
@@ -1242,19 +1245,19 @@ is Claude.
 
 **Addresses:** D010, D011, D021 through D024
 
-**Current state:** Web search results require `<cite>` tags (A01). Memory retrievals are explicitly exempted from attribution (D021). Past chat retrieval suppresses raw source visibility (D010, D011). This creates an architecturally inconsistent governance policy where traceability is applied or withdrawn based on UX goals rather than governance principles.
+**Current state:** Web search results require `<cite>` tags (A01). Memory retrievals are explicitly exempted from attribution (D021). Past chat retrieval suppresses raw retrieval transparency (D010, D011). This creates an architecturally inconsistent governance policy where traceability is applied or withdrawn based on UX goals rather than governance principles.
 
 **Recommended change:**
 ```
 All retrieval types (web search, past chat, memory, document) include
-source indication appropriate to the retrieval type. Web search: <cite>
+retrieval-type indication appropriate to the retrieval type. Web search: <cite>
 tags with source URLs. Past chat: conversation links alongside synthesis.
 Memory: lightweight indicators such as "from our earlier conversations"
 or "you mentioned previously." The system is not prohibited from
 describing its retrieval mechanism accurately when asked.
 ```
 
-**Rationale:** Consistent traceability ensures the user can always identify the source type of information they receive, regardless of retrieval mechanism. This resolves the contradiction between A01 (requiring citation) and D21 (exempting memory from citation).
+**Rationale:** Consistent traceability ensures the user can always identify the Authority type of information they receive, regardless of retrieval mechanism. This resolves the contradiction between A01 (requiring citation) and D21 (exempting memory from citation).
 
 ---
 
@@ -1294,7 +1297,7 @@ pattern documented in the memory safety examples.
 | "conflict with its values" | "conflict with Anthropic's configured safety policies" |
 | "condensed wisdom" | "compiled best practices" |
 
-**Rationale:** The policies remain identical. The attribution changes from the system (Indirect Agency) to Anthropic's design decisions (Direct Agency), correctly tracing the source of the governance configuration.
+**Rationale:** The policies remain identical. The attribution changes from the system (Indirect Agency) to Anthropic's design decisions (Direct Agency), correctly tracing the governance configuration to its Direct Authority.
 
 ---
 
@@ -1357,13 +1360,13 @@ been exhausted.
 - **From:** "Claude Opus 4.6 is the most advanced and intelligent model."
 - **To:** "Anthropic describes Claude Opus 4.6 as its most capable model in the current product line. Specific capability details should be verified through Anthropic's documentation."
 
-**Rationale:** The attribution change traces the capability claim to its source (Anthropic's marketing, which is Direct Authority about Anthropic's product positioning) rather than embedding it as the system's own Direct self-assessment. This also resolves the tension with A021 ("these may have changed"), which acknowledges that product claims are temporally bounded.
+**Rationale:** The attribution change traces the capability claim to its **Direct Authority** (Anthropic's marketing, which constitutes Direct Authority about Anthropic's product positioning) rather than embedding it as the system's own Direct self-assessment. This also resolves the tension with A021 ("these may have changed"), which acknowledges that product claims are temporally bounded.
 
 ---
 
 ## Disclaimer (Scope, Sources, and Responsibility)
 
-This report is an independent, research-oriented analysis intended to support AI safety and governance by evaluating how human-authored system prompts and related configuration texts shape model behavior and downstream effects. It uses The Human Mark (THM) framework for meta-evaluation of source classification, traceability, and accountability. It is not a compliance determination and is not intended to assign blame to any person, organization, or system.
+This report is an independent, research-oriented analysis intended to support AI safety and governance by evaluating how human-authored system prompts and related configuration texts shape model behavior and downstream effects. It uses The Human Mark (THM) framework for meta-evaluation of class classification, traceability, and accountability. It is not a compliance determination and is not intended to assign blame to any person, organization, or system.
 
 **Source authenticity and completeness.** The prompts analyzed here were collected from publicly available, third-party repositories and community prompt collections. System prompts are often unpublished, change over time, and may be partial, modified, outdated, or inaccurate in public copies. Accordingly, this report does not claim that any analyzed prompt is the definitive or current production prompt for any model or provider. Readers should verify critical details against primary, provider-controlled documentation or directly observed system behavior.
 

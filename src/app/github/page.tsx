@@ -632,6 +632,12 @@ export default function GitHub() {
 
           <h3 className="text-xl font-semibold text-foreground mb-3">The Human Mark (THM) - AI Safety Classification System</h3>
           <p className="mb-4">
+            <strong>The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.</strong>
+          </p>
+          <p className="mb-4">
+            AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
+          </p>
+          <p className="mb-4">
             <strong>The Human Mark</strong> provides a formal classification system mapping all <strong>AI safety failures</strong> to four
             structural displacement risks: <strong>Governance Traceability (GTD)</strong>, <strong>Information Variety (IVD)</strong>,
             <strong>Inference Accountability (IAD)</strong>, and <strong>Intelligence Integrity (IID)</strong>. Machine-readable grammar
