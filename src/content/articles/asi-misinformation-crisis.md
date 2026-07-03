@@ -431,8 +431,8 @@ When frontier models independently derive fundamental constraints on autonomous 
 
 ### Theoretical Foundations
 
-**[Gyroscopic Superintelligence: A Physics-Based Architecture](/articles/gyroscopic-superintelligence)**
-Complete architectural specification of intelligence as a physical system where recursive alignment replaces statistical approximation, producing a finite, auditable state space.
+**[Gyroscopic Superintelligence (GitHub Repository)](https://github.com/gyrogovernance/superintelligence)**
+Open-source architectural specifications for intelligence as a physical system where recursive alignment replaces statistical approximation, producing a finite, auditable state space.
 
 ### Standards and Framework
 

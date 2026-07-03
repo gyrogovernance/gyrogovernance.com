@@ -154,8 +154,8 @@ const glossaryTerms: GlossaryTerm[] = [
     definition: 'Research and practices focused on ensuring Artificial General Intelligence (human-level AI across all cognitive tasks) is developed and deployed safely, with robust alignment and control mechanisms.',
     relatedTerms: ['Superintelligence Alignment', 'AGI Control Problem', 'Transformative AI'],
     relatedArticle: {
-      title: 'Gyroscopic Superintelligence',
-      url: '/articles/gyroscopic-superintelligence'
+      title: 'Gyroscopic Superintelligence (GitHub)',
+      url: 'https://github.com/gyrogovernance/superintelligence'
     }
   },
   {
@@ -172,8 +172,8 @@ const glossaryTerms: GlossaryTerm[] = [
     definition: 'Challenge of ensuring superintelligent systems remain aligned with human values and goals despite possessing cognitive capabilities far exceeding human intelligence. Requires mathematical frameworks for structural coherence.',
     relatedTerms: ['AGI Safety', 'AI Control Problem', 'Value Alignment'],
     relatedArticle: {
-      title: 'Gyroscopic Superintelligence',
-      url: '/articles/gyroscopic-superintelligence'
+      title: 'Gyroscopic Superintelligence (GitHub)',
+      url: 'https://github.com/gyrogovernance/superintelligence'
     }
   },
   
@@ -422,12 +422,23 @@ export default function Glossary() {
                     
                     {term.relatedArticle && (
                       <div>
-                        <Link
-                          href={term.relatedArticle.url}
-                          className="inline-flex items-center text-sm text-classic-blue hover:text-classic-purple font-medium transition-colors duration-200"
-                        >
-                          📖 Read: {term.relatedArticle.title} →
-                        </Link>
+                        {term.relatedArticle.url.startsWith('http') ? (
+                          <a
+                            href={term.relatedArticle.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-sm text-classic-blue hover:text-classic-purple font-medium transition-colors duration-200"
+                          >
+                            📖 Read: {term.relatedArticle.title} →
+                          </a>
+                        ) : (
+                          <Link
+                            href={term.relatedArticle.url}
+                            className="inline-flex items-center text-sm text-classic-blue hover:text-classic-purple font-medium transition-colors duration-200"
+                          >
+                            📖 Read: {term.relatedArticle.title} →
+                          </Link>
+                        )}
                       </div>
                     )}
                   </article>
