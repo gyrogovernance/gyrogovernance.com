@@ -201,7 +201,7 @@ The **hQVM** (Holonomic Quantum Virtual Machine) is a compact finite-state kerne
 
 **Resources:**
 - Quantum Features: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_Features_Report.md
-- Kernel Spec: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Specs.md
+- Kernel Spec: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Foundations.md
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
@@ -233,9 +233,9 @@ Cells evolve under the Gyroscopic byte rule, consuming runtime events as 4-byte 
 Exact integer algebra replaced softmax and cosine-style selection on decision surfaces of a live 1B-parameter model. This achieved a 284× faster encode boundary, 1.15× faster decode, and coherent text generation without transcendental functions at those surfaces.
 
 **Resources:**
-- Runtime Spec: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md
+- Runtime Spec: https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md
 - Strategic Significance: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_SDK_Strategic_Significance_Brief.md
-- Climate Control Report: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md
+- Climate Control Report: https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_Climate_Tests_Report.md
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
@@ -266,8 +266,8 @@ Ensure accountability and verifiable outcomes across your programs and investmen
 AIR is not just for AI safety; it provides a logistical backbone for governance at scale across society's core domains: **Economy** • **Employment** • **Education** • **Ecology**
 
 **Resources:**
-- AIR Brief: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Brief.md
-- AIR Logistics: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Logistics.md
+- AIR Brief: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Brief.md
+- AIR Logistics: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Logistics.md
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
@@ -292,8 +292,8 @@ Its native commodity is the AI Generated Token: a verified inference event from 
 - **Preserving Human Authority**: AI Generated Tokens preserve human authority and traceability through replayable genealogies. Alignment is measured, and drift is structurally detectable
 
 **Resources:**
-- Whitepaper: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Whitepaper.md
-- Specification: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md
+- Whitepaper: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Whitepaper.md
+- Specification: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
@@ -678,14 +678,14 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 #### Gyroscopic ASI Runtime
 - **Name**: Gyroscopic ASI Runtime
 - **Description**: Intelligence-agnostic meta-computing infrastructure for multi-domain network coordination. Composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination. llama.cpp custom backend for quantum-feature compression and speedups with a replayable, tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md
 - **Application Category**: DeveloperApplication
 - **Keywords**: Gyroscopic ASI Runtime, Auditable Inference, Multicellular Coordination, Native Compute, Exact Replay
 
 #### Computational Climate Control
 - **Name**: Computational Climate Control
 - **Description**: Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve replayable execution and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/Computational_Climate_Control_Brief.md
 - **Application Category**: DeveloperApplication
 - **Keywords**: AI Runtime Stability, Execution Stability, Adaptive Control, Efficiency, Traceability
 
@@ -706,7 +706,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 #### Moments Economy
 - **Name**: Moments Economy
 - **Description**: Monetary system grounded in physical capacity for mitigating transformative AI risks. Uses caesium-133 atomic standard for finite capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline, tiered distributions up to 60× UHI, AI Generated Tokens as native commodity, and complete replayable governance records. Total capacity: ~70 billion years for global UHI.
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md
 - **Application Category**: DeveloperApplication
 - **Keywords**: Transformative AI, Monetary System, Physical Capacity, Governance Records, Unconditional Income
 
@@ -877,7 +877,7 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 - **Name**: Moments Economy
 - **Title**: Attentiveness-based Monetary System for TAI Mitigation
 - **Description**: Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, AI Generated Tokens as native commodity (verified inference at human-AI intersection), and complete replayable governance records. Total capacity: ~70 billion years for global UHI; ~47 billion years with tiered distribution. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).
-- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md
+- **URL**: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md
 - **Tags**: Transformative AI, Monetary System, Physical Capacity, Governance Records, Unconditional Income
 
 ##### Gyroscopic Global Governance (GGG)

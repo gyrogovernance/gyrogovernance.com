@@ -128,7 +128,7 @@ The Gyroscopic ASI architecture answers this question at two levels.
 
 At the state level, the hQVM provides a finite algebraic medium where distance is integer Hamming distance, ensemble structure is given by algebraic sectors with known multiplicities, phase is carried natively by the state representation, and thermodynamics is polynomial. On this medium, the six pathologies are replaced by integer operations that produce equivalent structural decisions.
 
-The [QuBEC Theory](QuBEC_Theory.md) formalizes this replacement in full: the exact partition function, the shell algebra, the Krawtchouk spectral basis, the gauge decomposition, and the multi-cell scaling rule. Together, these provide the mathematical foundation for computing AI decision surfaces on exact finite structures rather than on floating-point approximations of continuous geometry.
+The [QuBEC Theory](../specs/hQVM_QuBEC_Theory.md) formalizes this replacement in full: the exact partition function, the shell algebra, the Krawtchouk spectral basis, the gauge decomposition, and the multi-cell scaling rule. Together, these provide the mathematical foundation for computing AI decision surfaces on exact finite structures rather than on floating-point approximations of continuous geometry.
 
 ---
 

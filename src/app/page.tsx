@@ -630,7 +630,7 @@ export default function Home() {
           Quantum Features
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Specs.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Foundations.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
@@ -753,7 +753,7 @@ export default function Home() {
 
       <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -772,7 +772,7 @@ export default function Home() {
           Strategic Significance
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/QuBEC_Climate_Tests_Report.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_Climate_Tests_Report.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
@@ -901,7 +901,7 @@ export default function Home() {
           View on GitHub
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Brief.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Brief.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
@@ -910,7 +910,7 @@ export default function Home() {
           AIR Brief
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Logistics.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Logistics.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
@@ -1030,7 +1030,7 @@ export default function Home() {
 
       <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Whitepaper.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Whitepaper.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -1039,7 +1039,7 @@ export default function Home() {
           Read the Whitepaper
         </a>
         <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md"
+          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"

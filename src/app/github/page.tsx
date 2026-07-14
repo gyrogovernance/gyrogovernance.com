@@ -164,14 +164,14 @@ export default function GitHub() {
     {
       name: "Gyroscopic ASI Runtime",
       description: "Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a replayable, tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Gyroscopic ASI Runtime", "Auditable Inference", "Multicellular Coordination", "Native Compute", "Exact Replay"]
     },
     {
       name: "Computational Climate Control",
       description: "Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve replayable execution and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/Computational_Climate_Control_Brief.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["AI Runtime Stability", "Execution Stability", "Adaptive Control", "Efficiency", "Traceability"]
     },
@@ -192,7 +192,7 @@ export default function GitHub() {
     {
       name: "Moments Economy",
       description: "Monetary system grounded in physical capacity for mitigating transformative AI risks. Uses caesium-133 atomic standard for finite capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline, tiered distributions up to 60× UHI, AI Generated Tokens as native commodity, and complete replayable governance records. Total capacity: ~70 billion years for global UHI.",
-      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md",
+      url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Transformative AI", "Monetary System", "Physical Capacity", "Governance Records", "Unconditional Income"]
     },
@@ -290,7 +290,7 @@ export default function GitHub() {
       name: 'Gyroscopic ASI Runtime',
       title: 'Intelligence-Agnostic Meta-Computing',
       description: 'Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a replayable, tamper-evident zero-trust governance substrate. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/Gyroscopic_ASI_Runtime_Specs.md',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md',
       tags: ['Gyroscopic ASI Runtime', 'Native Compute Backend', 'Multicellular Coordination', 'Auditable Inference', 'Exact Replay'],
       gradient: 'from-cyan-500/10 via-sky-500/10 to-blue-500/10',
       borderColor: 'border-cyan-500/20',
@@ -301,7 +301,7 @@ export default function GitHub() {
       name: 'Computational Climate Control',
       title: 'AI Execution Stability Layer',
       description: 'Runtime control layer for AI execution stability and hidden inefficiency reduction. Applies adaptive controls that preserve replayable execution and traceability in production environments. Enables efficient resource utilization while maintaining verifiable execution traces.',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/theory/QuBEC_Climate_Control_Brief.md',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/Computational_Climate_Control_Brief.md',
       tags: ['Computational Climate', 'Execution Stability', 'Efficiency', 'Adaptive Control', 'Traceability'],
       gradient: 'from-sky-500/10 via-cyan-500/10 to-blue-500/10',
       borderColor: 'border-sky-500/20',
@@ -334,7 +334,7 @@ export default function GitHub() {
       name: 'Moments Economy',
       title: 'Attentiveness-based Monetary System for TAI Mitigation',
       description: 'Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, AI Generated Tokens as native commodity (verified inference at human-AI intersection), and complete replayable governance records. Total capacity: ~70 billion years for global UHI. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).',
-      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/AIR_Moments_Economy_Specs.md',
+      url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md',
       tags: ['Transformative AI', 'Physical Capacity', 'Unconditional Income', 'Governance Records', 'Monetary System'],
       gradient: 'from-emerald-500/10 via-teal-500/10 to-cyan-500/10',
       borderColor: 'border-emerald-500/20',
