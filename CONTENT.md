@@ -79,7 +79,7 @@ Building verifiable AI governance: audit, alignment infrastructure, and dynamics
 ### Quick Navigation
 
 #### Projects
-- ✋ **The Human Mark** - AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation
+- ✋ **The Human Mark** - Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk
 - 🕵️ **AI Inspector** - Browser extension for evaluation and governance
 - ⚛️ **Holonomic QVM: hQVM Kernel** - Holonomic quantum structure on standard hardware for verifiable coordination and audit
 - 🤖 **Gyroscopic ASI Runtime** - Multicellular quantum execution layer for AI inference and coordination
@@ -97,13 +97,13 @@ Building verifiable AI governance: audit, alignment infrastructure, and dynamics
 - **Gyroscopic Runtime** - Native compute backend and multicellular coordination (14 Feb 2026)
 - **THM prompt audits** - Claude Opus 4.6 and ChatGPT 5.2 reports (13 Feb 2026)
 
-### ✋ The Human Mark (THM): AI Safety Framework
+### ✋ The Human Mark (THM)
 
-**Risk Taxonomy for AI Power Concentration**
+**Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk**
 
-**The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.**
+**The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity as a matter of constitutive dependence on Direct Authority and Agency preserved through ancestry. Authority and Agency denote types of capacity, not identifications of entities or parties.**
 
-AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
+Grounded in epistemology and evidence law's categorical distinction separating direct testimony and hearsay, THM classifies all AI Safety Risks as four capacities and their corresponding displacements arising between Direct and Indirect forms of Authority and Agency.
 
 **GitHub Repository**: https://github.com/gyrogovernance/tools
 
@@ -111,21 +111,19 @@ AI systems transform prior human knowledge through pattern-matching processes, m
 
 *NotebookLM includes audio/video overviews, quiz, and interactive Q&A with Gemini*
 
-#### 🎯 Four Displacement Risks
+#### 🎯 Risks
 
-- **Governance Traceability (GTD)**
-- **Information Variety (IVD)**
-- **Inference Accountability (IAD)**
-- **Intelligence Integrity (IID)**
-
-All AI safety failures map to these patterns.
+- **Governance Traceability Displacement**
+- **Information Variety Displacement**
+- **Inference Accountability Displacement**
+- **Intelligence Integrity Displacement**
 
 #### 🔬 Applications
 
 - **Jailbreak testing**
+- **Deceptive alignment detection**
 - **Control evaluations**
-- **Alignment detection**
-- **Research funding**
+- **Mechanistic interpretability**
 - **Regulatory compliance**
 
 #### Meta-Evaluation Reports
@@ -648,10 +646,10 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 #### The Human Mark (THM)
 - **Name**: The Human Mark (THM)
-- **Description**: AI Safety Framework - Formal classification system mapping all AI safety failures to four structural displacement risks for jailbreak testing, control evaluations, alignment detection, and regulatory compliance
+- **Description**: Epistemic taxonomy for jailbreaks, deceptive alignment, and existential risk - maps AI safety failures to four displacement risks for jailbreak testing, deceptive alignment detection, control evaluations, mechanistic interpretability, and regulatory compliance
 - **URL**: https://github.com/gyrogovernance/tools
 - **Application Category**: DeveloperApplication
-- **Keywords**: AI Safety Framework, Jailbreak Testing, Control Evaluations, Alignment Detection, Regulatory Compliance
+- **Keywords**: AI Safety Framework, Jailbreak Testing, Deceptive Alignment Detection, Control Evaluations, Mechanistic Interpretability, Regulatory Compliance
 
 #### GyroGem
 - **Name**: GyroGem
@@ -793,10 +791,10 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 ##### The Human Mark (THM)
 - **Emoji**: ✋
 - **Name**: The Human Mark (THM)
-- **Title**: AI Safety Framework
-- **Description**: Formal classification system mapping all AI safety failures to four structural displacement risks: Governance Traceability (GTD), Information Variety (IVD), Inference Accountability (IAD), and Intelligence Integrity (IID). Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include jailbreak testing, control evaluations, alignment detection, research funding, and regulatory compliance. Validated on 90+ million sparse autoencoder features across sixteen language models.
+- **Title**: Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk
+- **Description**: Epistemic taxonomy for jailbreaks, deceptive alignment, and existential risk. Maps all AI safety failures to four displacement risks. Grounded in epistemology and evidence law. Applications include jailbreak testing, deceptive alignment detection, control evaluations, mechanistic interpretability, and regulatory compliance.
 - **URL**: https://github.com/gyrogovernance/tools
-- **Tags**: AI Safety Framework, Jailbreak Testing, Control Evaluations, Alignment Detection, Regulatory Compliance
+- **Tags**: AI Safety Framework, Jailbreak Testing, Deceptive Alignment Detection, Control Evaluations, Mechanistic Interpretability, Regulatory Compliance
 
 ##### GyroGem
 - **Emoji**: 🌟
@@ -941,11 +939,11 @@ Gyro Governance develops comprehensive **open source AI safety frameworks**, **A
 
 ##### The Human Mark (THM) - AI Safety Classification System
 
-**The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.**
+**The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity as a matter of constitutive dependence on Direct Authority and Agency preserved through ancestry. Authority and Agency denote types of capacity, not identifications of entities or parties.**
 
-AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
+Grounded in epistemology and evidence law's categorical distinction separating direct testimony and hearsay, THM classifies all AI Safety Risks as four capacities and their corresponding displacements arising between Direct and Indirect forms of Authority and Agency.
 
-**The Human Mark** provides a formal classification system mapping all **AI safety failures** to four structural displacement risks: **Governance Traceability (GTD)**, **Information Variety (IVD)**, **Inference Accountability (IAD)**, and **Intelligence Integrity (IID)**. Machine-readable grammar grounded in evidence law, epistemology, and speech act theory. Applications include **jailbreak testing**, **control evaluations**, **alignment detection**, **research funding**, and **regulatory compliance**.
+**The Human Mark** maps all **AI safety failures** to four displacement risks: **Governance Traceability Displacement**, **Information Variety Displacement**, **Inference Accountability Displacement**, and **Intelligence Integrity Displacement**. Applications include **jailbreak testing**, **deceptive alignment detection**, **control evaluations**, **mechanistic interpretability**, and **regulatory compliance**.
 
 ##### GyroGem - AI Safety Agent
 

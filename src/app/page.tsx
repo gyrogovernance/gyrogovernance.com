@@ -51,7 +51,7 @@ export default function Home() {
         {/* Project grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-3 mb-10 items-stretch">
           {[
-            { emoji: "✋", title: "The Human Mark", desc: "AI Safety Epistemological Framework and Taxonomy for Risks Detection and Mitigation", href: "#thm" },
+            { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "Holonomic QVM: hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
@@ -189,12 +189,12 @@ export default function Home() {
           The Human Mark (THM)
         </h2>
         <p className="text-lg sm:text-xl text-foreground-secondary/90 mb-4 tracking-wide">
-          Risk Taxonomy for AI Power Concentration
+          Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk
         </p>
         <div className="max-w-3xl mx-auto space-y-4 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
-          <p><strong>The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity through constitutive dependence preserved through ancestry. It treats Authority and Agency as epistemic capacities distributed across providers and receivers, not as ontological entity identifiers.</strong></p>
+          <p><strong>The Human Mark (THM) is a risk management taxonomy designed to prevent harms from AI power concentration by distinguishing knowledge capacity as a matter of constitutive dependence on Direct Authority and Agency preserved through ancestry. Authority and Agency denote types of capacity, not identifications of entities or parties.</strong></p>
           <p>
-          AI systems transform prior human knowledge through pattern-matching processes, making them mechanistically and epistemically Indirect even when treated as Direct. THM classifies AI safety risks as displacement: loss of measurement of ancestry between Direct and Indirect forms of Authority and Agency, leading to power concentration.
+          Grounded in epistemology and evidence law&apos;s categorical distinction separating direct testimony and hearsay, THM classifies all AI Safety Risks as four capacities and their corresponding displacements arising between Direct and Indirect forms of Authority and Agency.
           </p>
         </div>
       </div>
@@ -203,10 +203,10 @@ export default function Home() {
         <div className="glass-card-inner rounded-xl p-4 sm:p-6">
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 text-center">🎯 Risks</h3>
           <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside mb-3 w-fit mx-auto">
-            <li><strong className="text-foreground">Governance Traceability</strong></li>
-            <li><strong className="text-foreground">Information Variety</strong></li>
-            <li><strong className="text-foreground">Inference Accountability</strong></li>
-            <li><strong className="text-foreground">Intelligence Integrity</strong></li>
+            <li><strong className="text-foreground">Governance Traceability Displacement</strong></li>
+            <li><strong className="text-foreground">Information Variety Displacement</strong></li>
+            <li><strong className="text-foreground">Inference Accountability Displacement</strong></li>
+            <li><strong className="text-foreground">Intelligence Integrity Displacement</strong></li>
           </ul>
         </div>
 
@@ -214,9 +214,9 @@ export default function Home() {
           <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 text-center">🔬 Applications</h3>
           <ul className="text-sm sm:text-base text-foreground-secondary space-y-2 list-disc list-inside w-fit mx-auto">
             <li><strong className="text-foreground">Jailbreak testing</strong></li>
+            <li><strong className="text-foreground">Deceptive alignment detection</strong></li>
             <li><strong className="text-foreground">Control evaluations</strong></li>
-            <li><strong className="text-foreground">Alignment detection</strong></li>
-            <li><strong className="text-foreground">Research funding</strong></li>
+            <li><strong className="text-foreground">Mechanistic interpretability</strong></li>
             <li><strong className="text-foreground">Regulatory compliance</strong></li>
           </ul>
         </div>
