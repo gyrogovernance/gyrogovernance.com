@@ -144,7 +144,6 @@ Machine-readable grammar. Grounded in evidence law, epistemology, and speech act
 GyroGem is a tailored AI safety assistant built on The Human Mark (THM), a framework that maps common AI failure patterns and guides safer choices. It also supports technological literacy, the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and how they affect people and society.
 
 **Chat on:**
-- **Instagram**: https://aistudio.instagram.com/ai/969993888957313/?utm_source=share
 - **Google Gemini**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
 
 ### 🕵️ AI Inspector Browser Extension
@@ -657,7 +656,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 #### GyroGem
 - **Name**: GyroGem
 - **Description**: AI Safety Agent - Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy, built on The Human Mark framework to guide safer choices and support practical technological literacy
-- **URL**: https://aistudio.instagram.com/ai/969993888957313/?utm_source=share
+- **URL**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
 - **Application Category**: AI Safety Agent
 - **Keywords**: AI Safety, Technological Literacy, AI Assistant, Risk Mitigation
 
@@ -804,7 +803,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **Name**: GyroGem
 - **Title**: AI Safety Agent
 - **Description**: Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy. Built on The Human Mark framework to map common AI failure patterns and guide safer choices. Supports technological literacy: the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.
-- **URL**: https://aistudio.instagram.com/ai/969993888957313/?utm_source=share
+- **URL**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
 - **Tags**: AI Safety, Technological Literacy, AI Assistant, Risk Mitigation
 
 ##### AI Inspector Browser Extension

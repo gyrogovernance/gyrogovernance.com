@@ -7,7 +7,6 @@ import NotionIcon from "@/components/icons/NotionIcon";
 import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import GoogleIcon from "@/components/icons/GoogleIcon";
-import InstagramIcon from "@/components/icons/InstagramIcon";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
 import StatBadge from "@/components/StatBadge";
@@ -311,16 +310,6 @@ export default function Home() {
               Chat on:
             </p>
             <div className="mt-2 flex flex-col sm:flex-row justify-center gap-3">
-              <a
-                href="https://aistudio.instagram.com/ai/969993888957313/?utm_source=share"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-purple-600 hover:to-pink-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="Chat with GyroGem on Instagram (opens in new tab)"
-              >
-                <InstagramIcon className="w-5 h-5 mr-2" />
-                Instagram
-              </a>
               <a
                 href="https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing"
                 target="_blank"

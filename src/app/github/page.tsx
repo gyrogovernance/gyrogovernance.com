@@ -143,7 +143,7 @@ export default function GitHub() {
     {
       name: "GyroGem",
       description: "AI Safety Agent - Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy, built on The Human Mark framework to guide safer choices and support practical technological literacy",
-      url: "https://aistudio.instagram.com/ai/969993888957313/?utm_source=share",
+      url: "https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing",
       applicationCategory: "AI Safety Agent",
       keywords: ["AI Safety", "Technological Literacy", "AI Assistant", "Risk Mitigation"]
     },
@@ -257,7 +257,7 @@ export default function GitHub() {
       name: 'GyroGem',
       title: 'AI Safety Agent',
       description: 'Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy. Built on The Human Mark framework to map common AI failure patterns and guide safer choices. Supports technological literacy: the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.',
-      url: 'https://aistudio.instagram.com/ai/969993888957313/?utm_source=share',
+      url: 'https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing',
       tags: ['AI Safety', 'Technological Literacy', 'AI Assistant', 'Risk Mitigation'],
       gradient: 'from-purple-500/10 via-pink-500/10 to-rose-500/10',
       borderColor: 'border-purple-500/20',
