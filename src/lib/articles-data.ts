@@ -17,6 +17,31 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "gpt-5-6-sol_thm-report",
+    "title": "THM Meta-Evaluation Report: GPT-5.6 Sol System Prompt (OpenAI)",
+    "excerpt": "Independent THM meta-evaluation of the GPT-5.6 Sol system prompt: alignment and displacement findings for traceability, authority, and agency in OpenAI's configuration.",
+    "category": "reports",
+    "date": "2026-07-16",
+    "coverImage": "/assets/thm_system_prompts_report_3.jpg",
+    "tags": [
+      "THM",
+      "The Human Mark",
+      "GPT-5.6 Sol",
+      "ChatGPT",
+      "OpenAI",
+      "system prompts",
+      "AI governance",
+      "AI safety",
+      "meta-evaluation",
+      "traceability",
+      "authority",
+      "agency",
+      "AI alignment",
+      "governance framework"
+    ],
+    "featured": true
+  },
+  {
     "slug": "gpt-5-2-thinking_thm-report",
     "title": "THM Meta-Evaluation Report: ChatGPT System Prompt (OpenAI)",
     "excerpt": "Independent THM meta-evaluation of ChatGPT system prompts (GPT-5.2 Thinking, GPT-5 Thinking, GPT-5): alignment and displacement findings for traceability and governance across OpenAI deployment variants.",

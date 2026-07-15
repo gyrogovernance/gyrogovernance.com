@@ -134,6 +134,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-orange-500", title: "THM prompt audit", desc: "ChatGPT 5.6 Sol system prompt report", date: "16 Jul 2026", href: "/articles/gpt-5-6-sol_thm-report" },
               { dot: "bg-emerald-500", title: "Research on Percolation and Cohomology", desc: "New Finite-state transport and Grothendieck bound analyses on the hQVM kernel", date: "02-15 Jul 2026", href: "#hqvm-experiments" },
               { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
@@ -237,11 +238,11 @@ export default function Home() {
             <span className="text-lg font-bold text-foreground transition-colors">Claude Opus 4.6</span>
           </Link>
           <Link
-            href="/articles/gpt-5-2-thinking_thm-report"
+            href="/articles/gpt-5-6-sol_thm-report"
             className="flex items-center justify-center gap-2 p-4 rounded-xl border border-green-500/30 bg-gradient-to-br from-green-500/10 to-emerald-500/20 hover:from-green-500/20 hover:to-emerald-500/30 hover:border-green-500/50 transition-all duration-200 group"
-            aria-label="Read THM report: ChatGPT System Prompt (OpenAI)"
+            aria-label="Read THM report: GPT-5.6 Sol System Prompt (OpenAI)"
           >
-            <span className="text-lg font-bold text-foreground transition-colors">ChatGPT 5.2</span>
+            <span className="text-lg font-bold text-foreground transition-colors">ChatGPT 5.6 Sol</span>
           </Link>
         </div>
       </div>
