@@ -757,7 +757,13 @@ tr:hover td { background: var(--bg-surface); }
 .prose {
   max-width: 68ch;
   font-size: var(--text-base);
+  line-height: 1.75;
   color: var(--text-primary);
+}
+
+.prose.prose-lg {
+  font-size: var(--text-lg);
+  line-height: 1.75;
 }
 
 .prose.max-w-none { max-width: none; }
@@ -785,7 +791,7 @@ tr:hover td { background: var(--bg-surface); }
   margin-top: 0;
 }
 
-.prose p { margin: 0.75em 0; }
+.prose p { margin: 1em 0; }
 
 /* Prose Lists */
 .prose ul:not(.toc-list):not(.toc-sublist),
