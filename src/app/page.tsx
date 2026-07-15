@@ -135,6 +135,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-emerald-500", title: "Research on Percolation and Cohomology", desc: "New Finite-state transport and Grothendieck bound analyses on the hQVM kernel", date: "02-15 Jul 2026", href: "#hqvm-experiments" },
               { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
               { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
@@ -1475,7 +1476,7 @@ export default function Home() {
         {/* Experiments */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Experiments</h3>
-          <div className="space-y-6">
+          <div id="hqvm-experiments" className="space-y-6">
             <LiquidGlassCard
               className="glass-card rounded-[2rem] shadow-2xl"
               style={{
@@ -1488,10 +1489,12 @@ export default function Home() {
                 <div className="flex items-start space-x-4">
                   <div className="text-4xl sm:text-5xl md:text-6xl">🔭</div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold text-foreground mb-3">Subatomic Physics and Gravity</h4>
-                    <p className="text-foreground-secondary mb-2 font-medium">Mathematical Physics verified through the hQVM kernel</p>
+                    <h4 className="text-xl font-semibold text-foreground mb-3">Mathematical Physics verified through the hQVM kernel</h4>
                     <p className="text-foreground-secondary mb-4">
                       Executable state space analyses bridging classical information theory with quantum mechanics, deriving gravitational invariants and electroweak laws from discrete kernel algebra.
+                    </p>
+                    <p className="text-foreground-secondary mb-4">
+                      The same finite kernel is a mechanistic-interpretability and representation-learning ground truth, and a verifiable optimization substrate for AI models: exact enumerable labels for probing methods, rank recovery, and causal abstraction under stated generator restrictions, with the transport-rank census supplying closed-form optimization targets for model coordination.
                     </p>
                     <div className="glass-card-inner rounded-xl p-4 mb-4">
                       <h5 className="text-sm font-semibold text-foreground mb-3">Headline results</h5>
@@ -1514,6 +1517,18 @@ export default function Home() {
                             <strong className="text-foreground">Electroweak masses</strong> (Higgs, Z, W, top quark) and the weak mixing angle from the structure that fixes G. Accuracy from sub-ppm to parts per billion.
                           </span>
                         </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-500 shrink-0">●</span>
+                          <span>
+                            <strong className="text-foreground">Percolation square-root law</strong> for generator-restricted reachability. Reachable set size closes as (2^r)^2 on GF(2) transport rank, verified by exact enumeration over 4096 states.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-500 shrink-0">●</span>
+                          <span>
+                            <strong className="text-foreground">Grothendieck bound K_G^R(2) = √2</strong> measured on the hQVM carrier. The Hilbert lift realizes correlations beyond the Boolean section class without quantum hardware.
+                          </span>
+                        </li>
                       </ul>
                     </div>
                     <div className="flex flex-wrap items-center gap-4">
@@ -1527,6 +1542,8 @@ export default function Home() {
                         <GitHubIcon className="w-4 h-4 mr-2" />
                         Science Laboratory
                       </a>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-4 pt-3">
                       <a
                         href="https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md"
                         target="_blank"
@@ -1535,6 +1552,24 @@ export default function Home() {
                         aria-label="Read Gravity Analysis (opens in new tab)"
                       >
                         Gravity Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                      </a>
+                      <a
+                        href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
+                        aria-label="Read Percolation Analysis (opens in new tab)"
+                      >
+                        Percolation Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
+                      </a>
+                      <a
+                        href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Cohomology.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
+                        aria-label="Read Cohomology Analysis (opens in new tab)"
+                      >
+                        Cohomology Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
                       </a>
                     </div>
                   </div>
