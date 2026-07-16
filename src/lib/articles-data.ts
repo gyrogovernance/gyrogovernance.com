@@ -42,6 +42,30 @@ export const articlesData: ArticleMeta[] = [
     "featured": true
   },
   {
+    "slug": "fable-5_thm-report",
+    "title": "THM Meta-Evaluation Report: Fable 5 System Prompt (Anthropic)",
+    "excerpt": "Independent THM meta-evaluation of the Fable 5 system prompt: alignment and displacement findings for traceability, authority, and agency in Anthropic's configuration.",
+    "category": "reports",
+    "date": "2026-07-16",
+    "coverImage": "/assets/thm_system_prompts_report_1.jpg",
+    "tags": [
+      "THM",
+      "The Human Mark",
+      "Fable 5",
+      "Anthropic",
+      "system prompts",
+      "AI governance",
+      "AI safety",
+      "meta-evaluation",
+      "traceability",
+      "authority",
+      "agency",
+      "AI alignment",
+      "governance framework"
+    ],
+    "featured": true
+  },
+  {
     "slug": "gpt-5-2-thinking_thm-report",
     "title": "THM Meta-Evaluation Report: ChatGPT System Prompt (OpenAI)",
     "excerpt": "Independent THM meta-evaluation of ChatGPT system prompts (GPT-5.2 Thinking, GPT-5 Thinking, GPT-5): alignment and displacement findings for traceability and governance across OpenAI deployment variants.",

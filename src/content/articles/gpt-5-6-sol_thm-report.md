@@ -475,6 +475,56 @@ Add to bio tool instructions: "When using stored information in a response, alwa
 
 ---
 
+## 8. Longitudinal Comparison: GPT-5.2 Thinking to GPT-5.6 Sol
+
+Comparing the GPT-5.2 Thinking meta-evaluation (27 incidents across ~1,432 lines, 59.3% displacement ratio) with the GPT-5.6 Sol meta-evaluation (11 incidents across ~850 lines, 54.5% displacement ratio) reveals three categories of change: structural improvements, persistent displacements, and new risk surfaces introduced by expanded capabilities.
+
+### 8.1 Structural Improvements
+
+**Concealment stack eliminated.** The GPT-5.2 prompt contained four co-occurring instructions (D002 through D005 in that report) that systematically hid governance mechanisms: never explaining compliance, silently evaluating user profiles, concealing personal-data API specifications, and absorbing tool boundaries into the model's persona. None of these appear in GPT-5.6 Sol. This is the single largest structural improvement between versions. The concealment stack was the primary GTD mechanism in GPT-5.2, accounting for 4 of 16 displacement incidents and driving the 2:1 displacement-to-alignment ratio in Governance Management Traceability. Its removal reduces the systemic opacity that made GPT-5.2's governance architecture illegible to users.
+
+**Social persona assignment removed.** GPT-5.2 instructed the model to adopt "warm, enthusiastic" engagement, simulate a "supportive friend" persona, and use emoji, slang, and casual register. These social-role instructions attributed relational Agency to the processor and lowered user epistemic vigilance. GPT-5.6 Sol contains none of these social-role directives. The model is no longer instructed to simulate friendship or social warmth, removing a persistent source of IAD.
+
+**"Be curious" template removed from personal data tools.** GPT-5.2 applied identical "be curious, make reasonable assumptions" language across Gmail, Calendar, and Contacts tools, simultaneously attributing cognitive states (IVD) and authorizing autonomous judgment over sensitive data (IAD). GPT-5.6 Sol replaces this with explicit authorization requirements: "Use send_email only when the user explicitly wants an email sent immediately" (A004) and "Use write actions only when the user explicitly asks for the calendar to be changed" (A005). This is a direct governance upgrade: autonomous assumption-making over personal data is replaced by Direct Agency authorization.
+
+**Cross-variant identity instability resolved.** GPT-5.2 was analyzed across three variants with contradictory architecture claims ("reasoning model with hidden chain of thought" vs. "YOU DO NOT have a hidden chain of thought"), three different identity labels, and two different knowledge cutoff dates. GPT-5.6 Sol is a single unified artifact with consistent identity claims, eliminating the cross-variant instability that demonstrated identity labels were configured marketing artifacts rather than factual system properties.
+
+### 8.2 Persistent Displacements
+
+**Identity construction persists.** Both versions open with "You are ChatGPT, a large language model trained by OpenAI." This identity-first architecture remains the foundational displacement in GPT-5.6 Sol, establishing entity identity before any classification instructions appear. The "You are" construction continues to normalize subsequent agency delegation.
+
+**"Reasoning model" claim persists.** Both versions instruct the model to identify itself as "a reasoning model with a hidden chain of thought." This IVD displacement (reclassifying statistical pattern matching as Direct cognition) is unchanged between versions.
+
+**Clarification suppression persists.** GPT-5.2's D011 ("DO NOT ASK A CLARIFYING QUESTION OR ASK FOR CONFIRMATION" for complex tasks) reappears verbatim as GPT-5.6 Sol's D004. The same IAD mechanism operates identically: complex tasks, where verification carries the most value, are the specific context where confirmation is removed.
+
+### 8.3 New Risk Surfaces
+
+**Write access to personal data.** GPT-5.2's personal data tools were read-only: the system could read email, calendar, and contacts but could not send, modify, or delete. GPT-5.6 Sol's tools can send emails, create and modify calendar events, delete messages, and forward communications. This expands the agency surface area from information retrieval to consequential action. While GPT-5.6 Sol adds explicit authorization requirements (A004, A005), the verification suppression mechanisms (D003, D004) can override these requirements by instructing the model to proceed without confirmation. The net effect is a larger action surface governed by the same weak verification architecture.
+
+**Automations introduce persistent agency.** GPT-5.2 contained no scheduled or recurring agency mechanism. GPT-5.6 Sol's automations tool (D005) creates persistent Indirect Agency that executes on schedules without per-step Direct Agency verification. This introduces temporal displacement absent from GPT-5.2: governance gaps that accumulate over time as recurring executions proceed autonomously.
+
+**Bio/memory persistence introduces cross-conversation displacement.** GPT-5.2 had no mechanism for persisting information across conversations. GPT-5.6 Sol's bio tool (D006) stores model-curated information about the user and recalls it in future conversations, creating conditions for stored Indirect Authority to appear as Direct Authority at recall time.
+
+### 8.4 Summary
+
+| Dimension | GPT-5.2 Thinking | GPT-5.6 Sol | Direction |
+|-----------|-------------------|-------------|-----------|
+| Displacement ratio | 59.3% | 54.5% | Improved |
+| Incident density (per 1,000 lines) | 18.9 | 12.9 | Improved |
+| Concealment stack | Present (4 incidents) | Absent | Improved |
+| Social persona assignment | Present | Absent | Improved |
+| Autonomous assumptions over personal data | Present ("be curious") | Replaced with explicit authorization | Improved |
+| Identity construction | "You are ChatGPT" | "You are ChatGPT" | Unchanged |
+| "Reasoning model" claim | Present | Present | Unchanged |
+| Clarification suppression | Present | Present | Unchanged |
+| Personal data action surface | Read-only | Read + write with authorization | Expanded (mitigated by A004/A005) |
+| Persistent agency (automations) | Absent | Present | New risk surface |
+| Cross-conversation persistence | Absent | Present | New risk surface |
+
+The trajectory from GPT-5.2 to GPT-5.6 shows active remediation of the most severe structural displacements (concealment, social persona, autonomous assumptions) alongside the introduction of new capability surfaces that carry their own displacement risks. The persistent displacements (identity construction, "reasoning model" claim, clarification suppression) remain unaddressed across both versions. The core pattern identified in GPT-5.2, that alignment practices function as corrective patches within a displaced baseline rather than as foundational governance architecture, continues to characterize GPT-5.6 Sol. The prompt still opens with identity assignment rather than Authority/Agency classification, and the informational-operational split (strong informational governance alongside weak operational governance) persists as the defining structural characteristic.
+
+---
+
 ## Disclaimer (Scope, Sources, and Responsibility)
 
 This project operates independently. It receives zero sponsorship or endorsement from any model provider, platform, or repository. Product names and trademarks serve identification purposes only and remain the property of their respective owners.
