@@ -55,7 +55,7 @@ export default function Home() {
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "Holonomic QVM: hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
-            { emoji: "🍃", title: "Alignment Infrastructure Routing", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
+            { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
             { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
@@ -785,7 +785,7 @@ export default function Home() {
       <div className="text-center mb-8">
         <div className="text-6xl mb-4">🍃</div>
         <h2 className="text-3xl font-bold text-foreground mb-2">
-          Alignment Infrastructure Routing (AIR)
+          Alignment Infrastructure Routes (AIR)
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
           AI Safety Capacity-Building Stack for Human-AI Coordination and Governance

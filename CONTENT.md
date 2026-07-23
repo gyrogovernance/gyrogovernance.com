@@ -45,7 +45,7 @@ The research combines mathematical rigor with practical engineering to address f
 Current projects explore:
 - **Superintelligence Architectures**: hQVM Kernel, Gyroscopic ASI Runtime
 - **Behavioral Alignment Mechanisms**: The Human Mark, Gyroscope Protocol, GyroDiagnostics
-- **Governance Infrastructure**: Alignment Infrastructure Routing (AIR), Moments Economy, Gyroscopic Global Governance
+- **Governance Infrastructure**: Alignment Infrastructure Routes (AIR), Moments Economy, Gyroscopic Global Governance
 - **Safety Tools**: AI Inspector Browser Extension, evaluation frameworks
 - **Quantum Computing**: Holonomic quantum computation on standard silicon via exact integer loops
 
@@ -83,7 +83,7 @@ Building verifiable AI governance: audit, alignment infrastructure, and dynamics
 - 🕵️ **AI Inspector** - Browser extension for evaluation and governance
 - ⚛️ **Holonomic QVM: hQVM Kernel** - Holonomic quantum structure on standard hardware for verifiable coordination and audit
 - 🤖 **Gyroscopic ASI Runtime** - Multicellular quantum execution layer for AI inference and coordination
-- 🍃 **Alignment Infrastructure Routing (AIR)** - AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
+- 🍃 **Alignment Infrastructure Routes (AIR)** - AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
 - 💰 **Moments Economy** - Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation
 - 🌐 **Global Governance Simulator** - Post-AGI/ASI governance sandbox Simulation and Results
 - 🌟 **GyroDiagnostics** - Physics grounded evaluation and pathology detection for AI Safety and Alignment
@@ -236,7 +236,7 @@ Exact integer algebra replaced softmax and cosine-style selection on decision su
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
-### 🍃 Alignment Infrastructure Routing (AIR)
+### 🍃 Alignment Infrastructure Routes (AIR)
 
 **AI Safety Capacity-Building Stack for Human-AI Coordination and Governance**
 
@@ -506,7 +506,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, GyroGem AI safety agent, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
+**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, GyroGem AI safety agent, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
 
 ### Keywords
 
@@ -530,7 +530,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - QuBEC (Quantum Bose-Einstein Condensate)
 - Gyroscopic ASI Runtime
 - Computational Climate Control
-- Alignment Infrastructure Routing
+- Alignment Infrastructure Routes
 - Moments Economy
 - Gyroscopic Global Governance
 - collective superintelligence
@@ -628,7 +628,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, GyroGem AI Safety Agent, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.
+**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, GyroGem AI Safety Agent, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routes, Moments Economy, and Gyroscopic Global Governance Sandbox.
 
 **Type**: website
 
@@ -693,8 +693,8 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **Application Category**: DeveloperApplication
 - **Keywords**: AI Safety Evaluation, Frontier AI Safety, AI Diagnostics, AI Risk Assessment, Pathology Detection
 
-#### Alignment Infrastructure Routing (AIR)
-- **Name**: Alignment Infrastructure Routing (AIR)
+#### Alignment Infrastructure Routes (AIR)
+- **Name**: Alignment Infrastructure Routes (AIR)
 - **Description**: Collective Superintelligence Architecture - Coordination infrastructure that amplifies human potential alongside AI through workforce capacity routing, funding allocation, and safety task distribution. Connects labs for scaling, funders for portfolio visibility, and everyone for paid verifiable contribution units across Economy, Employment, Education, and Ecology domains.
 - **URL**: https://github.com/gyrogovernance/superintelligence
 - **Application Category**: DeveloperApplication
@@ -784,7 +784,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: Open Source Research & Tools
 
-**Description**: Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing. The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development. All repositories are open source and actively maintained.
+**Description**: Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing. The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development. All repositories are open source and actively maintained.
 
 #### Repository Descriptions
 
@@ -861,9 +861,9 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 - **URL**: https://github.com/gyrogovernance/diagnostics
 - **Tags**: AI Safety Evaluation, Pathology Detection, Risk Assessment, Frontier Models
 
-##### Alignment Infrastructure Routing (AIR)
+##### Alignment Infrastructure Routes (AIR)
 - **Emoji**: 🍃
-- **Name**: Alignment Infrastructure Routing (AIR)
+- **Name**: Alignment Infrastructure Routes (AIR)
 - **Title**: Collective Superintelligence Architecture
 - **Description**: Coordination infrastructure that amplifies human potential alongside AI. Routes workforce capacity, funding, and safety tasks into a unified, verifiable history. Connects three critical groups: labs for scaling without chaos, funders for portfolio risk visibility, and everyone for paid, verifiable contribution units. Treats AI as part of collective network ensuring human agency scales with systems. Coordinates activity across Economy, Employment, Education, and Ecology.
 - **URL**: https://github.com/gyrogovernance/superintelligence
@@ -935,7 +935,7 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 
 ##### AI Safety Frameworks, Alignment Tools & Governance Solutions
 
-Gyro Governance develops comprehensive **open source AI safety frameworks**, **AI alignment protocols**, and **AI governance tools** for frontier model testing, dangerous capability assessments, and AI pathology detection. Our repositories include **The Human Mark** classification system, **GyroGem** AI safety agent, **AI Inspector browser extension**, **Gyroscopic ASI Runtime**, **GyroDiagnostics evaluation suite**, **Alignment Infrastructure Routing** for collective superintelligence, **Moments Economy** for transformative AI mitigation, and **Gyroscopic Global Governance** sandbox. Production-ready solutions for **AI risk assessment**, **AI safety evaluation**, and **responsible AI development**.
+Gyro Governance develops comprehensive **open source AI safety frameworks**, **AI alignment protocols**, and **AI governance tools** for frontier model testing, dangerous capability assessments, and AI pathology detection. Our repositories include **The Human Mark** classification system, **GyroGem** AI safety agent, **AI Inspector browser extension**, **Gyroscopic ASI Runtime**, **GyroDiagnostics evaluation suite**, **Alignment Infrastructure Routes** for collective superintelligence, **Moments Economy** for transformative AI mitigation, and **Gyroscopic Global Governance** sandbox. Production-ready solutions for **AI risk assessment**, **AI safety evaluation**, and **responsible AI development**.
 
 ##### The Human Mark (THM) - AI Safety Classification System
 
@@ -974,7 +974,7 @@ The **hQVM** (Holonomic Quantum Virtual Machine) is a compact finite-state kerne
 
 ##### Collective Superintelligence & Transformative AI
 
-**Alignment Infrastructure Routing (AIR)** provides coordination infrastructure that amplifies human potential alongside AI, routing **workforce capacity**, **funding**, and **safety tasks** into unified, verifiable history. The **Moments Economy** implements a monetary system grounded in **physical capacity** rather than debt, using caesium-133 atomic standard for **unconditional high income (UHI)** and complete **governance records**. Together these address **transformative AI risks** while preserving **human authority** and **accountability**.
+**Alignment Infrastructure Routes (AIR)** provides coordination infrastructure that amplifies human potential alongside AI, routing **workforce capacity**, **funding**, and **safety tasks** into unified, verifiable history. The **Moments Economy** implements a monetary system grounded in **physical capacity** rather than debt, using caesium-133 atomic standard for **unconditional high income (UHI)** and complete **governance records**. Together these address **transformative AI risks** while preserving **human authority** and **accountability**.
 
 ##### Post-AGI Multi-domain Governance
 

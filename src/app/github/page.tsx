@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     'Quantum Bose-Einstein Condensate',
     'Gyroscopic ASI Runtime',
     'Computational Climate Control',
-    'Alignment Infrastructure Routing',
+    'Alignment Infrastructure Routes',
     'Moments Economy',
     'Gyroscopic Global Governance',
     'collective superintelligence',
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routing, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routes, Moments Economy, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -183,7 +183,7 @@ export default function GitHub() {
       keywords: ["AI Safety Evaluation", "Frontier AI Safety", "AI Diagnostics", "AI Risk Assessment", "Pathology Detection"]
     },
     {
-      name: "Alignment Infrastructure Routing (AIR)",
+      name: "Alignment Infrastructure Routes (AIR)",
       description: "Collective Superintelligence Architecture - Coordination infrastructure that amplifies human potential alongside AI through workforce capacity routing, funding allocation, and safety task distribution. Connects labs for scaling, funders for portfolio visibility, and everyone for paid verifiable contribution units across Economy, Employment, Education, and Ecology domains.",
       url: "https://github.com/gyrogovernance/superintelligence",
       applicationCategory: "DeveloperApplication",
@@ -320,7 +320,7 @@ export default function GitHub() {
     },
     {
       emoji: '🍃',
-      name: 'Alignment Infrastructure Routing (AIR)',
+      name: 'Alignment Infrastructure Routes (AIR)',
       title: 'Collective Superintelligence Architecture',
       description: 'Coordination infrastructure that amplifies human potential alongside AI. Routes workforce capacity, funding, and safety tasks into a unified, verifiable history. Connects three critical groups: labs for scaling without chaos, funders for portfolio risk visibility, and everyone for paid, verifiable contribution units. Treats AI as part of collective network ensuring human agency scales with systems. Coordinates activity across Economy, Employment, Education, and Ecology.',
       url: 'https://github.com/gyrogovernance/superintelligence',
@@ -463,7 +463,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routing for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -586,7 +586,7 @@ export default function GitHub() {
             <strong>AI Inspector browser extension</strong>,
             <strong>hQVM Kernel</strong> for holonomic quantum structure on silicon, <strong>QuBEC</strong> quantum byte medium,
             <strong>Gyroscopic ASI Runtime</strong> for auditable inference and multicellular coordination,
-            <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routing</strong> for collective superintelligence,
+            <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routes</strong> for collective superintelligence,
             <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
             Production-ready solutions for <strong>AI risk assessment</strong>, <strong>AI safety evaluation</strong>, and <strong>responsible AI development</strong>.
           </p>
@@ -674,7 +674,7 @@ export default function GitHub() {
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Collective Superintelligence & Transformative AI</h3>
           <p className="mb-4">
-            <strong>Alignment Infrastructure Routing (AIR)</strong> provides coordination infrastructure that amplifies human potential alongside AI,
+            <strong>Alignment Infrastructure Routes (AIR)</strong> provides coordination infrastructure that amplifies human potential alongside AI,
             routing <strong>workforce capacity</strong>, <strong>funding</strong>, and <strong>safety tasks</strong> into unified, verifiable history.
             The <strong>Moments Economy</strong> implements a monetary system grounded in <strong>physical capacity</strong> rather than debt,
             using caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units), <strong>unconditional high income (UHI)</strong>
