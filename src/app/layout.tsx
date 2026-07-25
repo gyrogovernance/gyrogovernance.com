@@ -12,6 +12,7 @@ import CookieBanner from '@/components/CookieBanner';
 import GitHubIcon from '@/components/icons/GitHubIcon';
 import MobileMenu from '@/components/MobileMenu';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import HashScroll from '@/components/HashScroll';
 import { LiquidGlassNav } from '@/components/LiquidGlassNav';
 import "./globals.css";
 
@@ -122,7 +123,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true} className="scroll-smooth scroll-pt-24">
+    <html lang="en" suppressHydrationWarning={true} className="scroll-pt-24">
       <head>
         <meta httpEquiv="Cache-Control" content="public, max-age=31536000, immutable" />
         <style dangerouslySetInnerHTML={{
@@ -339,6 +340,7 @@ export default function RootLayout({
 
           <CookieBanner />
           <ScrollToTopButton />
+          <HashScroll />
         </ThemeProvider>
       </body>
     </html>

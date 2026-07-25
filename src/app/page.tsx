@@ -60,7 +60,7 @@ export default function Home() {
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
           ].map((p) => (
-            <Link key={p.title} href={p.href} className="block rounded-[1rem] h-full">
+            <a key={p.title} href={p.href} className="block rounded-[1rem] h-full">
               <LiquidGlassCard
                 className="group glass-card glass-card-translucent rounded-[1rem] shadow-lg hover:shadow-xl transition-all duration-200 h-full hover:!bg-white/60 dark:hover:!bg-black/60"
                 intensity="subtle"
@@ -82,7 +82,7 @@ export default function Home() {
                   </span>
                 </div>
               </LiquidGlassCard>
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -134,7 +134,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
-              { dot: "bg-orange-500", title: "THM prompt audits", desc: "ChatGPT 5.6 Sol and Claude Fable 5 system prompts", date: "16 Jul 2026", href: "/#thm" },
+              { dot: "bg-orange-500", title: "THM prompt audits", desc: "ChatGPT 5.6 Sol and Claude Fable 5 system prompts", date: "16 Jul 2026", href: "#thm" },
               { dot: "bg-emerald-500", title: "Research on Percolation and Cohomology", desc: "New Finite-state transport and Grothendieck bound analyses on the hQVM kernel", date: "02-15 Jul 2026", href: "#hqvm-experiments" },
               { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
