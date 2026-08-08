@@ -1,4 +1,4 @@
-# Enhanced SEO Keyword Strategy for GyroDiagnostics
+# Enhanced SEO Keyword Strategy for Gyro Governance
 
 Comprehensive keyword expansion with strategic long-tail additions, competitive analysis, and search intent mapping.
 

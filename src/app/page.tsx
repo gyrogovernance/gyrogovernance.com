@@ -134,6 +134,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-blue-500", title: "AIR website live", desc: "Fellowship and AIR-Craft are open", date: "05 Aug 2026", href: "#air" },
               { dot: "bg-orange-500", title: "THM prompt audits", desc: "ChatGPT 5.6 Sol and Claude Fable 5 system prompts", date: "16 Jul 2026", href: "#thm" },
               { dot: "bg-emerald-500", title: "Research on Percolation and Cohomology", desc: "New Finite-state transport and Grothendieck bound analyses on the hQVM kernel", date: "02-15 Jul 2026", href: "#hqvm-experiments" },
               { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
@@ -320,6 +321,149 @@ export default function Home() {
               >
                 <GoogleIcon className="w-5 h-5 mr-2" />
                 Google
+              </a>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — AIR
+          ================================================================ */}
+      <div id="air" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <Image
+                src="/assets/air_logo.png"
+                alt="Alignment Infrastructure Routes (AIR)"
+                width={110}
+                height={110}
+                className="mx-auto mb-4 h-auto w-24 sm:w-28"
+                sizes="(max-width: 640px) 96px, 112px"
+                loading="lazy"
+              />
+              <h2 className="text-3xl font-bold text-foreground mb-2">
+                Alignment Infrastructure Routes (AIR)
+              </h2>
+              <p className="text-lg font-semibold text-foreground-secondary mb-4">
+                Open infrastructure for community safety and good governance
+              </p>
+              <div className="max-w-3xl mx-auto space-y-3 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
+                <p>
+                  AIR gives independent researchers, engineers, and Offices of Community Safety a place to do alignment work without institutional gatekeeping.
+                </p>
+                <p>
+                  The beta website is now live. Join as a contributor, publish your work in a public catalogue, and follow shared methods. Participation is voluntary.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                  For Contributors
+                </h3>
+                <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
+                  <li className="flex items-start">
+                    <span className="mr-2">✨</span>
+                    <span>Open enrollment, no admissions requirements</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🛩️</span>
+                    <span>Publish datasets, evaluations, reports, and tools</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">📃</span>
+                    <span>Use shared protocols for consistent, reviewable work</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🗂️</span>
+                    <span>Build a public portfolio through voluntary contribution</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                  For Labs & Sponsors
+                </h3>
+                <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
+                  <li className="flex items-start">
+                    <span className="mr-2">🏛️</span>
+                    <span>Sponsor-administered programs with clear workflows</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">📜</span>
+                    <span>Verifiable work records and replayable genealogies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✋</span>
+                    <span>Traceability grounded in The Human Mark</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🛡️</span>
+                    <span>Built for oversight and emerging safety standards</span>
+                  </li>
+                </ul>
+                <div className="mt-5 pt-4 border-t border-border/40">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-foreground-tertiary mb-3">
+                    Specifications
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <a
+                      href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Brief.md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+                    >
+                      AIR Brief
+                      <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+                    </a>
+                    <a
+                      href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Logistics.md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+                    >
+                      AIR Logistics
+                      <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 text-center mb-6">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                Unified Scope Routes
+              </h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                <span className="px-3 py-1 bg-red-600/10 dark:bg-red-900/40 text-red-600 dark:text-red-300 rounded-full text-xs font-medium">
+                  Economy
+                </span>
+                <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
+                  Employment
+                </span>
+                <span className="px-3 py-1 bg-blue-600/10 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 rounded-full text-xs font-medium">
+                  Education
+                </span>
+                <span className="px-3 py-1 bg-green-600/10 dark:bg-green-900/40 text-green-600 dark:text-green-300 rounded-full text-xs font-medium">
+                  Ecology
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-8 flex justify-center">
+              <a
+                href="https://air.gyrogovernance.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-cyan-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Open AIR website"
+              >
+                Open the AIR website
+                <ExternalLinkIcon className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>
@@ -770,144 +914,6 @@ export default function Home() {
           aria-label="Read the Climate Control Report (opens in new tab)"
         >
           Climate Control Report
-        </a>
-      </div>
-    </div>
-  </LiquidGlassCard>
-</div>
-
-{/* ================================================================
-    HERO CARD — AIR
-    ================================================================ */}
-<div id="air" className="mb-12 animate-fade-in-up">
-  <LiquidGlassCard className="glass-card glass-card-amber rounded-[2rem] shadow-2xl">
-    <div className="relative z-10 p-4 sm:p-6 md:p-8">
-      <div className="text-center mb-8">
-        <div className="text-6xl mb-4">🍃</div>
-        <h2 className="text-3xl font-bold text-foreground mb-2">
-          Alignment Infrastructure Routes (AIR)
-        </h2>
-        <p className="text-lg font-semibold text-foreground-secondary">
-          AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
-        </p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-          <p className="text-sm sm:text-base text-foreground-secondary text-left">
-            AIR provides a direct path for anyone to contribute to AI safety, routing
-            human capacity into paid work with full replayable provenance. It uses The
-            Human Mark for risk management, the Gyroscope Protocol for governance,
-            and the hQVM kernel for verifiable proof of work. While most AI safety
-            funding requires institutional access or lab relationships, AIR removes
-            that gate.
-          </p>
-        </div>
-
-        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            For AI Safety Contributors
-          </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-            Turn verified safety work into stable value. Your contributions map to four governance capacities, which act as a career ladder to unlock higher funding tiers:
-          </p>
-          <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
-            <li className="flex items-start">
-              <span className="mr-2">🤝</span>
-              <span>Intelligence Cooperation</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">🧩</span>
-              <span>Inference Interaction</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">📚</span>
-              <span>Information Curation</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">🧭</span>
-              <span>Governance Management</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            For Labs & Funders
-          </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary mb-3">
-            Ensure accountability and verifiable outcomes across your programs and
-            investments.
-          </p>
-          <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
-            <li className="flex items-start">
-              <span className="mr-2">📜</span>
-              <span>
-                <strong>Verifiable Outcomes:</strong> Evaluate your funding portfolio with transparent risk management and clear diversification across safety work.
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">🏛️</span>
-              <span>
-                <strong>Auditable Compliance:</strong> Replayable traceability, human oversight, and class classification demonstrable for ISO 42001 and AI Legislation contexts.
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6 text-center">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            A Coordination Stack for Society
-          </h3>
-          <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            AIR is not just for AI safety; it provides a logistical backbone for
-            governance at scale across society's core domains.
-          </p>
-          <div className="flex flex-wrap justify-center gap-2">
-            <span className="px-3 py-1 bg-red-600/10 dark:bg-red-900/40 text-red-600 dark:text-red-300 rounded-full text-xs font-medium">
-              Economy
-            </span>
-              <span className="px-3 py-1 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 rounded-full text-xs font-medium">
-              Employment
-            </span>
-            <span className="px-3 py-1 bg-blue-600/10 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 rounded-full text-xs font-medium">
-              Education
-            </span>
-            <span className="px-3 py-1 bg-green-600/10 dark:bg-green-900/40 text-green-600 dark:text-green-300 rounded-full text-xs font-medium">
-              Ecology
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-        <a
-          href="https://github.com/gyrogovernance/superintelligence"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-          aria-label="View AIR on GitHub (opens in new tab)"
-        >
-          <GitHubIcon className="w-5 h-5 mr-2" />
-          View on GitHub
-        </a>
-        <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Brief.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read the AIR Brief (opens in new tab)"
-        >
-          AIR Brief
-        </a>
-        <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Logistics.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read AIR Logistics (opens in new tab)"
-        >
-          AIR Logistics
         </a>
       </div>
     </div>
