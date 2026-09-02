@@ -19,11 +19,11 @@ The Common Governance Model (CGM) provides an alternative approach based on geom
 The CGM framework identifies four stages of geometric evolution, each characterized by a threshold parameter:
 
 - **CS (Common Source)**: s_p = π/2 [dimensionless]
-- **UNA (Unity Non-Absolute)**: u_p = cos(π/4) = 1/√2 [dimensionless]
-- **ONA (Opposition Non-Absolute)**: o_p = π/4 [dimensionless]
-- **BU (Balance Universal)**:  m_a = 1/(2√(2π)) ≈ 0.1995 [dimensionless]
+- **UNA (Unity Non-Absolute)**: u_p = cos(π/4) = 1/√2 [dimensionless]; rotational motion (3 DOF)
+- **ONA (Opposition Non-Absolute)**: o_p = π/4 [dimensionless]; translational motion (3 DOF)
+- **BU (Balance Universal)**: m_a = 1/(2√(2π)) ≈ 0.199471140201 [dimensionless]; vibrational motion at depth-four closure (oscillation amplitude, not a 7th DOF)
 
-The parameter  m_a serves as the fundamental aperture parameter, governing the relationship between different stages.
+The parameter m_a is the observational aperture scale. It bounds vibrational amplitude at BU and governs normalization of stage actions. Optical conjugacy places the observable IR focus at E_BU^IR (electroweak scale).
 
 ### 2.2 Action Mapping
 
@@ -33,14 +33,14 @@ From these thresholds, we derive stage actions through the mapping:
 S_CS = s_p /  m_a ≈ 7.875
 S_UNA = u_p /  m_a ≈ 3.545
 S_ONA = o_p /  m_a ≈ 3.937
-S_BU =  m_a ≈ 0.199
+S_BU =  m_a ≈ 0.199471140201
 ```
 
 All actions are dimensionless. The BU stage serves as a fixed point where S_BU = m_a, while other stages scale inversely with m_a.
 
 ### 2.3 GUT Action Construction
 
-The GUT action emerges from treating UNA and ONA as parallel constraints with CS memory:
+The GUT action emerges from treating UNA and ONA as parallel conditions with CS memory:
 
 ```
 1/S_GUT = 1/S_UNA + 1/S_ONA + η/S_CS
@@ -177,7 +177,7 @@ The framework hypothesizes a primordial sterile neutrino background residing at 
 - Cannot be directly detected by any experiment
 - May influence large-scale structure formation through gravitational effects alone
 
-We hypothesise that no future cosmological probe (CMB-S4, 21cm, structure surveys) will ever see sterile features. Only indirect gravitational constraints (e.g. effective N_eff) are consistent.
+We hypothesise that no future cosmological probe (CMB-S4, 21cm, structure surveys) will ever see sterile features. Only indirect gravitational conditions (e.g. effective N_eff) are consistent.
 
 ### 4.4.5 Experimental Predictions and Falsification
 
@@ -241,7 +241,7 @@ All gauge anomalies cancel per generation:
 
 ### 6.3 Involution Property
 
-The optical conjugacy satisfies an involution property—applying the transformation twice returns the Direct energy:
+The optical conjugacy satisfies an involution property: applying the transformation twice returns the original energy.
 
 ```
 (E^UV → E^IR) → E^UV
@@ -320,7 +320,7 @@ All calculations maintain at least 10 significant figures internally, with resul
         1. CS (Common Source): s_p = π/2 [dimensionless]
         2. UNA (Unity Non-Absolute): u_p = cos(π/4) = 1/√2 [dimensionless]
         3. ONA (Opposition Non-Absolute): o_p = π/4 [dimensionless]
-        4. BU (Balance Universal):  m_a = 1/(2√(2π)) ≈ 0.1995 [dimensionless]
+        4. BU (Balance Universal):  m_a = 1/(2√(2π)) ≈ 0.199471140201 [dimensionless]
         5. Geometric constant
             - m_a² = 1/(8π)
             - s_p/m_a² = 4π²
@@ -328,7 +328,7 @@ All calculations maintain at least 10 significant figures internally, with resul
         1. S_CS = s_p /  m_a ≈ 7.875
         2. S_UNA = u_p /  m_a ≈ 3.545
         3. S_ONA = o_p /  m_a ≈ 3.937
-        4. S_BU =  m_a ≈ 0.199 [identity]
+        4. S_BU =  m_a ≈ 0.199471140201 [identity]
     5. **Union Formation:**
         1. 1/S_UNI = η/S_CS + 1/S_UNA + 1/S_ONA
         2. For η = 1: S_UNI ≈ 1.508, hence S_UNI/S_CS ≈ 0.192

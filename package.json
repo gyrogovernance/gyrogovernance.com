@@ -24,6 +24,7 @@
     "deps:why": "bun pm why",
     "kill-nodes": "taskkill /f /im node.exe /t 2>nul || echo No Node.js processes to kill",
     "check-links": "bun scripts/link-checker.js",
+    "sync:docs": "bun scripts/sync-docs-from-repos.mjs",
     "test:links": "echo 'Make sure dev server is running with: bun run dev' && playwright test link-checker.spec.ts",
     "test:e2e": "echo 'Make sure dev server is running with: bun run dev' && playwright test"
   },

@@ -495,3 +495,5 @@ Calculations employ CODATA 2018 values for fundamental constants and cosmologica
 ## References
 
 [Standard references to CODATA, Planck Collaboration, SH0ES, and relevant CGM framework papers would be included in a formal publication]
+
+

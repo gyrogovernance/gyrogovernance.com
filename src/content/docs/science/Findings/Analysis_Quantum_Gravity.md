@@ -5,14 +5,14 @@
 
 ### Executive Summary
 
-The computational analysis has yielded a consistent framework where quantum gravity emerges from a geometric invariant Q_G = 4π, representing the complete solid angle required for coherent observation. The framework predicts the fine-structure constant α = 0.0072997 within 0.03% of the measured value through pure geometric relations, without electromagnetic inputs. All computations converge on a fundamental surplus factor ρ = 0.979, suggesting reality maintains a ~2.1% aperture enabling observation through available reserve.
+The computational analysis has yielded a consistent framework where quantum gravity emerges from a geometric invariant Q_G = 4π, representing the complete solid angle required for coherent observation. The electromagnetic kernel coupling is α₀ = δ_BU⁴ / m_a ≈ 0.007299683573 (about 319.43 ppm versus CODATA 2018). The full transport-corrected chain reaches α ≈ 0.007297352816 (about 33.8 ppb versus CODATA 2018). All computations converge on the closure ratio ρ = δ_BU / m_a ≈ 0.979300454497, so that the aperture gap Δ = 1 − ρ ≈ 0.020699545503 (2.07%) enables observation through available reserve.
 
 ### 1. Core Geometric Structure
 
 #### 1.1 The Fundamental Invariant
 The analysis confirms Q_G = L_horizon/t_aperture = 4π exactly, where:
 - L_horizon = √(2π) = 2.5066 (horizon length)
-- t_aperture =  m_a = 0.19947 (aperture time)
+- t_aperture = m_a ≈ 0.199471140200 (aperture time)
 - Q_G = 12.5664 = 4π (geometric invariant)
 
 This ratio represents the closure requirement for observation, not a velocity. The factor 4π appears as the complete solid angle of three-dimensional space, necessary for coherent perspective.
@@ -26,14 +26,14 @@ The gyrotriangle defect δ = π - (α + β + γ) = 0 confirms exact closure. Num
 ### 2. Fine-Structure Constant Prediction
 
 #### 2.1 The Quartic Formula
-The electromagnetic coupling emerges as:
+The electromagnetic kernel coupling emerges as:
 ```
-α = δ_BU^4 /  m_a = 0.0072997
+α₀ = δ_BU⁴ / m_a ≈ 0.007299683573
 ```
-compared to α_CODATA = 0.0072974, yielding 0.0316% deviation.
+with δ_BU = 4·arctan(k(π/4)·k(m_a)) ≈ 0.195342178258 and m_a = 1/(2√(2π)) ≈ 0.199471140200. Versus CODATA 2018 α = 0.007297352569 this is about 319.43 ppm. The transport-corrected laboratory chain yields α ≈ 0.007297352816 (about 33.8 ppb).
 
 #### 2.2 Geometric Origin
-The dual-pole monodromy δ_BU = 0.19534 rad arises from measuring the BU stage traversal. The quartic scaling emerges from:
+The BU dual-pole loop angle δ_BU arises from the dual-pole BU stage traversal. The quartic scaling emerges from:
 - Two commutators (each contributing quadratic scaling)
 - Two poles (BU+ and BU-)
 - Combined: δ^4 ∝ θ^8 in the small-angle regime
@@ -78,11 +78,11 @@ This hierarchy explains why α ∝ δ^4: two quadratic factors compound.
 ### 5. The Surplus Factor
 
 #### 5.1 The Critical Ratio
-The ratio ρ = δ_BU/ m_a = 0.97930 appears throughout:
-- ρ^4 = 0.91973
-- 1 - ρ^4 = 0.08027 (8.03% surplus)
+The ratio ρ = δ_BU / m_a ≈ 0.979300454497 appears throughout:
+- ρ^4 ≈ 0.919737
+- 1 - ρ^4 ≈ 0.080263 (8.03% surplus)
 
-This 2.1% deviation from unity, when raised to the fourth power, produces exactly the correction needed for α.
+This 2.07% deviation from unity, when raised to the fourth power, produces the leading scale for the α₀ residual before transport corrections.
 
 #### 5.2 Structural Significance
 The surplus enables:
@@ -101,80 +101,3 @@ The analysis confirms multiple exact identities:
 
 These form a closed algebra requiring no additional parameters.
 
-### 7. Dimensional Bridge Framework
-
-#### 7.1 Without Circular Dependencies
-Avoiding Planck units, the framework provides:
-```
-c = Q_G × (ℓ_ref/τ_ref)
-G = 8π^2 × (ℓ_ref^3)/(M_ref × τ_ref^2)
-```
-where (ℓ_ref, τ_ref, M_ref) are anthropometric reference scales.
-
-#### 7.2 Force at Horizon
-For symmetric bodies of mass M at separation L:
-```
-F = 4π × (M × ℓ_ref)/τ_ref^2
-```
-The factor 4π directly encodes the geometric invariant.
-
-### 8. Numerical Stability
-
-#### 8.1 Sensitivity Analysis
-The quartic relation shows:
-- Δα/α ≈ 4(Δδ/δ)
-- 1% change in δ produces 4% change in α
-- Current precision implies δ known to ~0.008%
-
-#### 8.2 Convergence Tests
-- Gyrotriangle closure: exact to machine precision
-- BU periodicity: confirmed to 10^-12
-- Holonomy gauge invariance: verified to 10^-12
-- Decomposition invariance: confirmed exactly
-
-### 9. Physical Interpretation
-
-The results suggest:
-1. Reality maintains a fundamental ~2% surplus enabling observation
-2. The fine-structure constant measures this surplus to the fourth power
-3. The 120° rotor creates a frustrated closure driving cosmic dynamics
-4. Six degrees of freedom emerge from Z_6 vacuum structure
-5. Quantum gravity requires no background metric, only geometric closure
-
-### 10. Falsifiable Predictions
-
-The framework makes specific testable predictions:
-- CMB multipole enhancement at ℓ = 37, 74, 111...
-- Horizon transmission: T = 19.95% ± 0.01%
-- Modified Hawking spectrum with 20% deviation
-- Gravitational coupling follows 8π^2 scaling
-
-### Conclusions
-
-The analysis demonstrates that quantum gravity emerges from the geometric requirement Q_G = 4π without assuming spacetime or dimensional constants. The fine-structure constant prediction achieving 0.03% accuracy through pure geometry, combined with exact closure relations and consistent hyperbolic structure, provides strong numerical evidence for the framework. The universal surplus factor ρ = 0.979 appears to be the fundamental constant determining both electromagnetic coupling and gravitational effects through different powers.
-
-The 120° rotor creating a 3-fold oscillator, rather than closure to ±I, indicates reality operates through frustrated equilibrium rather than absolute balance. This geometric structure, emerging from first principles without fine-tuning, suggests a path toward quantum gravity that begins with observation itself rather than quantizing classical fields.
-
----
-
-## Appendix: Anomalous Observations
-
-### A1. The 37 Coincidence
-- N* = 37 (recursive index)
-- 37°C (human body temperature)
-- 10^3 - 1 = 999 = 27 × 37 (base-10 arithmetic)
-- Multiplicative order of 10 mod 37 = 3 (links decimal to triad)
-
-### A2. Near-Dyadic Structure
-- δ_BU = 0.19534 ≈ π/16 = 0.19635 (0.51% deviation)
-- Suggests underlying 2^n hierarchy
-
-### A3. Hand-Body Correlations
-- Q_cavity = 5.013 (relates to 5 fingers)
--  m_a ≈ 0.2 (20% ~ thumb opposition ratio)
-- Base-10 arithmetic (10 digits)
-- These require further dimensional analysis to validate or refute
-
-### A4. Golden Ratio Proximity
-- Various attempts to connect ρ to φ (golden ratio) yield close but not exact matches
-- May indicate deeper geometric relationship or coincidence

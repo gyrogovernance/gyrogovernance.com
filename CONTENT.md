@@ -82,13 +82,20 @@ Building verifiable AI governance: audit, alignment infrastructure, and dynamics
 - ✋ **The Human Mark** - Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk
 - 🕵️ **AI Inspector** - Browser extension for evaluation and governance
 - ⚛️ **Holonomic QVM: hQVM Kernel** - Holonomic quantum structure on standard hardware for verifiable coordination and audit
+- 🧠 **hQVM AE Autoencoder** - Group-equivariant autoencoder that opens the black box using the hQVM as a known universe
 - 🤖 **Gyroscopic ASI Runtime** - Multicellular quantum execution layer for AI inference and coordination
 - 🍃 **Alignment Infrastructure Routes (AIR)** - AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
 - 💰 **Moments Economy** - Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation
 - 🌐 **Global Governance Simulator** - Post-AGI/ASI governance sandbox Simulation and Results
 - 🌟 **GyroDiagnostics** - Physics grounded evaluation and pathology detection for AI Safety and Alignment
+- ⚗️ **Common Governance Model** - Mathematical physics foundation that grounds every other project on this site
 
 #### What's New
+- **AIR website live** - Fellowship and AIR-Craft are open (05 Aug 2026)
+- **THM prompt audits** - ChatGPT 5.6 Sol and Claude Fable 5 system prompts (16 Jul 2026)
+- **Research on Percolation and Cohomology** - New Finite-state transport and Grothendieck bound analyses on the hQVM kernel (02-15 Jul 2026)
+- **Ethical Travel** - New Collective Superintelligence Program (02 Jun 2026)
+- **smartbites.github.io** - Updated (28 Apr 2026)
 - **GyroGem** - New AI Safety Agent for technological literacy (15 Apr 2026)
 - **Gyroscopic ASI Runtime** - New llama.cpp Backend (14 Apr 2026)
 - **AI Compute Optimizations** - Replaced floating-point math and eliminated expensive overhead (17 Mar 2026)
@@ -130,10 +137,8 @@ Grounded in epistemology and evidence law's categorical distinction separating d
 
 Analysis of frontier model system prompts: alignment and displacement findings.
 
-- **Claude Opus 4.6** - /articles/claude-opus-4.6_thm-report
-- **ChatGPT 5.2** - /articles/gpt-5-2-thinking_thm-report
-
-Machine-readable grammar. Grounded in evidence law, epistemology, and speech act theory. Validated on real-world adversarial prompts and on 90+ million sparse autoencoder features across sixteen language models, confirming that assistant personas and safety refusals dominate self-referential representations while non-agentive process descriptions are not used for model self-description.
+- **Claude Fable 5** - /articles/fable-5_thm-report
+- **ChatGPT 5.6 Sol** - /articles/gpt-5-6-sol_thm-report
 
 ### 🌟 GyroGem: AI Safety Agent
 
@@ -143,6 +148,51 @@ GyroGem is a tailored AI safety assistant built on The Human Mark (THM), a frame
 
 **Chat on:**
 - **Google Gemini**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
+
+### 🍃 Alignment Infrastructure Routes (AIR)
+
+**Open infrastructure for community safety and good governance**
+
+AIR gives independent researchers, engineers, and Offices of Community Safety a place to do alignment work without institutional gatekeeping.
+
+The beta website is now live. Join as a contributor, publish your work in a public catalogue, and follow shared methods. Participation is voluntary.
+
+#### ✨ For Contributors
+
+- **Open enrollment**, no admissions requirements
+- **Publish** datasets, evaluations, reports, and tools
+- **Use shared protocols** for consistent, reviewable work
+- **Build a public portfolio** through voluntary contribution
+
+#### 🏛️ For Labs & Sponsors
+
+- **Sponsor-administered programs** with clear workflows
+- **Verifiable work records** and replayable genealogies
+- **Traceability grounded in The Human Mark**
+- **Built for oversight** and emerging safety standards
+
+**Specifications:**
+- AIR Brief: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Brief.md
+- AIR Logistics: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Logistics.md
+
+#### A Coordination Stack for Society
+
+Unified Scope Routes across society's core domains: **Economy** • **Employment** • **Education** • **Ecology**
+
+**Website**: https://air.gyrogovernance.com
+
+### 🧭 Ethical Travel
+
+**Collective Superintelligence**
+
+AI helping Humans getting better together.
+
+- 🧠 **AI safety research** turned into practical travel guides
+- 🧭 **Four clear domains** for where your money goes and how you treat people
+- 🤖 **AI prompts** that do the research while you keep the final say
+- 🤝 **Trusted booking partners** for flights, stays, and experiences
+
+**Website**: https://travel.gyrogovernance.com
 
 ### 🕵️ AI Inspector Browser Extension
 
@@ -184,11 +234,11 @@ The **hQVM** (Holonomic Quantum Virtual Machine) is a compact finite-state kerne
 
 **33% holographic compression**: The boundary identity |H|² = |Ω| compresses 12-bit states into 8-bit boundary coordinates with exactly uniform multiplicity.
 
-**Self-dual error detecting code**: 64 masks form a self-dual [12,6,2] binary linear code. All odd-weight bit errors detected unconditionally.
+**Self-dual error detecting code**: 64 masks form a self-dual [12,6,2] binary linear code. All odd-weight bit errors detected unconditionally. Every tamper miss algebraically explained.
 
 #### 🌡️ Computational Medium: QuBEC
 
-**QuBEC (Quantum Bose-Einstein Condensate)** is a quantum byte medium: a condensed computational state with six internal binary orientation modes (dipoles), a four-phase spinorial gauge structure, and intrinsic ensemble stochasticity induced by the byte rule. One step yields an exact 128-state future cone; two steps yield exact uniformization over all 4,096 reachable states. Together they replace costly continuous approximation with exact integer algebra on standard CPUs and GPUs.
+**QuBEC (Quantum Bose-Einstein Condensate)** is a quantum byte medium: a condensed computational state with six internal binary orientation modes (dipoles), a four-phase spinorial gauge structure, and intrinsic ensemble stochasticity induced by the byte rule. Together they replace costly continuous approximation with exact integer algebra on standard CPUs and GPUs.
 
 #### 🏆 Achievements
 
@@ -236,41 +286,9 @@ Exact integer algebra replaced softmax and cosine-style selection on decision su
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
-### 🍃 Alignment Infrastructure Routes (AIR)
-
-**AI Safety Capacity-Building Stack for Human-AI Coordination and Governance**
-
-AIR provides a direct path for anyone to contribute to AI safety, routing human capacity into paid work with full replayable provenance. It uses The Human Mark for risk management, the Gyroscope Protocol for governance, and the hQVM kernel for verifiable proof of work. While most AI safety funding requires institutional access or lab relationships, AIR removes that gate.
-
-#### For AI Safety Contributors
-
-Turn verified safety work into stable value. Your contributions map to four governance capacities, which act as a career ladder to unlock higher funding tiers:
-
-- 🤝 Intelligence Cooperation
-- 🧩 Inference Interaction
-- 📚 Information Curation
-- 🧭 Governance Management
-
-#### For Labs & Funders
-
-Ensure accountability and verifiable outcomes across your programs and investments.
-
-- 📜 **Verifiable Outcomes**: Evaluate your funding portfolio with transparent risk management and clear diversification across safety work
-- 🏛️ **Auditable Compliance**: Replayable traceability, human oversight, and class classification demonstrable for ISO 42001 and AI Legislation contexts
-
-#### A Coordination Stack for Society
-
-AIR is not just for AI safety; it provides a logistical backbone for governance at scale across society's core domains: **Economy** • **Employment** • **Education** • **Ecology**
-
-**Resources:**
-- AIR Brief: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Brief.md
-- AIR Logistics: https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Logistics.md
-
-**GitHub**: https://github.com/gyrogovernance/superintelligence
-
 ### 💰 Moments Economy
 
-**Attentiveness-based Monetary System for Post-AGI Transformative AI Risks Mitigation**
+**Mitigating Risks of Transformative AI (TAI)**
 
 **The Moments Economy is a civil governance framework where coordination capacity is not artificially scarce but physically abundant and verifiable.** Its total settlement envelope is derived from first principles, anchored in the atomic standard of the SI second, and the verifiable state-space of the hQVM kernel, yielding a fixed capacity of 7.94 × 10²⁶ Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value).
 
@@ -418,18 +436,26 @@ Search across all entries by keyword, category, or tag.
 
 #### Experiments
 
-**🔭 Subatomic Physics and Gravity**
-*Mathematical Physics verified through the hQVM kernel*
+**🔭 Mathematical Physics verified through the hQVM kernel**
 
 Executable state space analyses bridging classical information theory with quantum mechanics, deriving gravitational invariants and electroweak laws from discrete kernel algebra.
+
+The same finite kernel is a mechanistic-interpretability and representation-learning ground truth, and a verifiable optimization substrate for AI models: exact enumerable labels for probing methods, rank recovery, and causal abstraction under stated generator restrictions, with the transport-rank census supplying closed-form optimization targets for model coordination.
 
 **Headline results:**
 - **Newton's constant G** from framework geometry with the electroweak Higgs scale as the only measured input. Matches CODATA to 0.074 ppm.
 - **Fine-structure constant α** from the same geometry. Matches the experimental value to 0.043 parts per billion.
 - **Electroweak masses** (Higgs, Z, W, top quark) and the weak mixing angle from the structure that fixes G. Accuracy from sub-ppm to parts per billion.
+- **Genetic code** mapped onto the kernel: middle-base identity confirmed by hydropathy, with natural variant codes opening only at two permitted directions.
+- **Percolation square-root law** for generator-restricted reachability. Reachable set size closes as (2^r)^2 on GF(2) transport rank, verified by exact enumeration over 4096 states across the hQVM(d) family.
+- **Grothendieck bound K_G^R(2) = √2** measured on the hQVM carrier. The Hilbert lift realizes correlations beyond the Boolean section class without quantum hardware.
+- **Operator group G of order 8192**: 2080 multiplicity-free irreducible sectors and exact two-step uniform mixing with sixteen witnesses per target on the 4096-state carrier.
+- **Nuclear structure on a shared ruler**: deuteron binding energy, thorium-229m isomer, and the canonical magic numbers 2, 8, 20, 28, 50, 82, 126 from carrier algebra, with no free nuclear parameters.
 
 - **Science Laboratory**: https://github.com/gyrogovernance/science
 - **Gravity Analysis**: https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md
+- **Percolation Analysis**: https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation.md
+- **Cohomology Analysis**: https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Cohomology.md
 
 **⚛️ Quantum AI Research**
 *Architecting Qubit-Tensor-Chain (QTC)*
@@ -452,7 +478,15 @@ The QTC Protocol harnesses the unique properties of Quantum Computing as the fou
 #### Guides
 
 **🍟 Smart Bites**
-Practical Prompt Engineering
+
+**GenAI Prompt Engineering for AI-Empowered Governance & Change Management**
+
+Smart Bites aims to Democratize Change Management, Making it Accessible to People from All Walks of Life.
+
+I've developed a Formal Process for AI-Augmented Governance, enabling Decentralized Decision-Making and Data-empowered Insights.
+
+Open and serving Free Bite-sized AI Guides at smartbites.github.io.
+
 - **Website**: https://smartbites.github.io/
 
 **🛡️ Crisis Resolutions**
@@ -464,10 +498,6 @@ AI Safety & Risk Management
 **AI Quality Governance**
 Human Data Evaluation and Responsible AI Behavior Alignment
 - **Publication**: http://doi.org/10.17613/43wc1-mvn58
-
-**AI Canon**
-Sensory Ethics for Biological and Artificial Entities
-- **Publication**: https://doi.org/10.17613/txwg-v619
 
 #### Media
 

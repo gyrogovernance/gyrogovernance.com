@@ -53,12 +53,14 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
-            { emoji: "⚛️", title: "Holonomic QVM: hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
+            { emoji: "⚛️", title: "hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
+            { emoji: "🧠", title: "hQVM AE Autoencoder", desc: "Group-equivariant autoencoder for Mechanistic Interpretability", href: "#hqvm-ae" },
             { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
             { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
             { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
+            { emoji: "⚗️", title: "Common Governance Model", desc: "Mathematical physics foundation that grounds every other project on this site in first-principles", href: "#cgm" },
           ].map((p) => (
             <a key={p.title} href={p.href} className="block rounded-[1rem] h-full">
               <LiquidGlassCard
@@ -134,6 +136,8 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-indigo-500", title: "hQVM AE", desc: "Group-Equivariant Autoencoder", date: "02 Sep 2026", href: "#hqvm-ae" },
+              { dot: "bg-emerald-500", title: "Research on Genomics", desc: "Genetic code decoded on the hQVM Kernel", date: "08 Aug 2026", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Genomics.md" },
               { dot: "bg-blue-500", title: "AIR website live", desc: "Fellowship and AIR-Craft are open", date: "05 Aug 2026", href: "#air" },
               { dot: "bg-orange-500", title: "THM prompt audits", desc: "ChatGPT 5.6 Sol and Claude Fable 5 system prompts", date: "16 Jul 2026", href: "#thm" },
               { dot: "bg-emerald-500", title: "Research on Percolation and Cohomology", desc: "New Finite-state transport and Grothendieck bound analyses on the hQVM kernel", date: "02-15 Jul 2026", href: "#hqvm-experiments" },
@@ -621,7 +625,7 @@ export default function Home() {
 
 
 {/* ================================================================
-    HERO CARD — Holonomic QVM: hQVM Kernel & QuBEC
+    HERO CARD — hQVM Kernel & QuBEC
     ================================================================ */}
 <div id="hqvm" className="mb-12 animate-fade-in-up">
   <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
@@ -629,10 +633,10 @@ export default function Home() {
       <div className="text-center mb-8">
         <div className="text-6xl mb-4">⚛️</div>
         <h2 className="text-3xl font-bold text-foreground mb-2">
-          Holonomic QVM: hQVM Kernel
+          Gyroscopic ASI hQVM Kernel
         </h2>
         <p className="text-lg font-semibold text-foreground-secondary">
-          Holonomic Quantum Virtual Machine on Standard Silicon
+          Holonomic Quantum Virtual Machine for ASI Governance
         </p>
       </div>
 
@@ -773,6 +777,110 @@ export default function Home() {
         >
           Kernel Spec
         </a>
+      </div>
+    </div>
+  </LiquidGlassCard>
+</div>
+
+{/* ================================================================
+    HERO CARD — hQVM AE Group-Equivariant Autoencoder
+    ================================================================ */}
+<div id="hqvm-ae" className="mb-12 animate-fade-in-up">
+  <LiquidGlassCard className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl">
+    <div className="relative z-10 p-4 sm:p-6 md:p-8">
+      <div className="text-center mb-8">
+        <div className="text-6xl mb-4">🔬</div>
+        <h2 className="text-3xl font-bold text-foreground mb-2">
+          hQVM AE
+        </h2>
+        <p className="text-lg font-semibold text-foreground-secondary">
+          Group-Equivariant Autoencoder
+        </p>
+      </div>
+
+      <div className="max-w-3xl mx-auto space-y-4 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify mb-6">
+        <p>
+          An autoencoder is a neural network that learns to compress an input into a short code, then rebuilds the input from that code. What it keeps in the code is what it decided was important.
+        </p>
+        <p>
+          We build a family of these models on top of the hQVM, the small known engine at the center of our work. Because every state and every rule of the hQVM is fully described, the network is not guessing about the world it is learning. It is learning on ground truth, and we can score what it finds.
+        </p>
+      </div>
+
+      <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 max-w-3xl mx-auto">
+        <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+          <li className="flex items-start gap-3">
+            <span className="mt-0.5 text-lg shrink-0">🧪</span>
+            <span>
+              <strong className="text-foreground">A clean lab for interpretability.</strong>{" "}
+              We can open the network and watch which features survive compression, and which ones the model quietly throws away. The kernel supplies percolation benchmarks with known ground truth, so we can score every feature against a verified answer.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-0.5 text-lg shrink-0">🧬</span>
+            <span>
+              <strong className="text-foreground">A tool for real science.</strong>{" "}
+              We use the same machinery to study genomes, languages, and other structured data, with every result verified against the underlying rules.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+        <a
+          href="https://github.com/gyrogovernance/superintelligence#%EF%B8%8F-new---hqvm-ae-group-equivariant-autoencoder"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-violet-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          aria-label="View hQVM AE on GitHub (opens in new tab)"
+        >
+          <GitHubIcon className="w-5 h-5 mr-2" />
+          View on GitHub
+        </a>
+      </div>
+
+      <div className="max-w-3xl mx-auto pt-4 border-t border-border/40">
+        <p className="text-[11px] font-semibold uppercase tracking-wider text-foreground-tertiary mb-3 text-center">
+          Related research
+        </p>
+        <div className="flex flex-wrap justify-center gap-2">
+          <a
+            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Group_Theory.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+          >
+            Group Theory
+            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+          </a>
+          <a
+            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+          >
+            Percolation
+            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+          </a>
+          <a
+            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation_Note.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+          >
+            Percolation Note
+            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+          </a>
+          <a
+            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Genomics.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+          >
+            Genomics
+            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+          </a>
+        </div>
       </div>
     </div>
   </LiquidGlassCard>
@@ -1404,16 +1512,28 @@ export default function Home() {
           </LiquidGlassCard>
         </div>
 
-        {/* CGM Theory */}
+        {/* CGM & Science Lab */}
         <div id="cgm" className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Foundational Theory</h3>
-          <LiquidGlassCard className="glass-card glass-card-green glass-card-translucent rounded-[2rem] shadow-2xl">
+          <LiquidGlassCard className="glass-card glass-card-green rounded-[2rem] shadow-2xl">
             <div className="relative z-10 p-6">
               <div className="text-center mb-6">
                 <div className="text-5xl mb-4">⚗️</div>
-                <h4 className="text-2xl font-bold text-foreground mb-2">Common Governance Model (CGM)</h4>
+                <h4 className="text-2xl font-bold text-foreground mb-1">Common Governance Model (CGM)</h4>
+                <p className="text-xs font-extrabold uppercase tracking-wider text-foreground-tertiary mb-3">
+                  Gyroscopic Alignment Research Lab
+                </p>
                 <p className="text-foreground-secondary max-w-2xl mx-auto">
                   The mathematical physics foundation for all research on this website. Formal proofs, geometric analyses, and axioms that ground our work in AI safety and governance.
+                </p>
+              </div>
+
+              <div id="hqvm-experiments" className="max-w-3xl mx-auto mb-6 space-y-4 text-foreground-secondary text-base text-left sm:text-justify">
+                <p>
+                  Every prediction is checked on the hQVM, a small known engine with 4096 states and 256 reversible byte moves. The Science Lab hosts 50+ analyses and 100+ verification scripts, from gravity and genomics to percolation benchmarks for machine learning.
+                </p>
+                <p>
+                  The same kernel is also a ground-truth testbed for interpretability: exact labels, known rules, and verified answers you can score a model against.
                 </p>
               </div>
 
@@ -1456,10 +1576,102 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="text-center">
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 max-w-3xl mx-auto">
+                <h5 className="text-sm font-semibold text-foreground mb-3 text-center">Headline results</h5>
+                <ul className="space-y-2.5 text-sm text-foreground-secondary list-none">
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Newton&apos;s constant G</strong> from framework geometry with the electroweak Higgs scale as the only measured input. Matches CODATA to 0.074 ppm.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Fine-structure constant α</strong> from the same geometry. Matches the experimental value to 0.043 parts per billion.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Electroweak masses</strong> (Higgs, Z, W, top quark) and the weak mixing angle from the structure that fixes G. Accuracy from sub-ppm to parts per billion.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Genetic code</strong> mapped onto the kernel: middle-base identity confirmed by hydropathy, with natural variant codes opening only at two permitted directions.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Percolation square-root law</strong> for generator-restricted reachability. Reachable set size closes as (2^r)² on GF(2) transport rank, verified by exact enumeration over 4096 states across the hQVM(d) family.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Grothendieck bound K_G^R(2) = √2</strong> measured on the hQVM carrier. The Hilbert lift realizes correlations beyond the Boolean section class without quantum hardware.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Operator group G of order 8192</strong>: 2080 multiplicity-free irreducible sectors and exact two-step uniform mixing with sixteen witnesses per target on the 4096-state carrier.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500 shrink-0">●</span>
+                    <span>
+                      <strong className="text-foreground">Nuclear structure on a shared ruler</strong>: deuteron binding energy, thorium-229m isomer, and the canonical magic numbers 2, 8, 20, 28, 50, 82, 126 from carrier algebra, with no free nuclear parameters.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="max-w-3xl mx-auto mb-6">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-foreground-tertiary mb-3 text-center">
+                  Key analyses
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {[
+                    { label: "Gravity", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_Gravity.md" },
+                    { label: "Group Theory", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Group_Theory.md" },
+                    { label: "Percolation", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation.md" },
+                    { label: "Cohomology", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Cohomology.md" },
+                    { label: "Genomics", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Genomics.md" },
+                    { label: "Trestleboard", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Trestleboard.md" },
+                    { label: "Yang–Mills Gap", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_YM_Mass_Gap.md" },
+                  ].map((doc) => (
+                    <a
+                      key={doc.label}
+                      href={doc.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+                    >
+                      {doc.label}
+                      <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row justify-center gap-3">
+                <a
+                  href="https://github.com/gyrogovernance/science"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Visit Science Lab on GitHub (opens in new tab)"
+                >
+                  <GitHubIcon className="w-5 h-5 mr-2" />
+                  Visit Science Lab
+                </a>
                 <Link
                   href="/docs/science"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
                   aria-label="Read CGM Documentation"
                 >
                   Read Full Documentation
@@ -1472,107 +1684,7 @@ export default function Home() {
         {/* Experiments */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Experiments</h3>
-          <div id="hqvm-experiments" className="space-y-6">
-            <LiquidGlassCard
-              className="glass-card rounded-[2rem] shadow-2xl"
-              style={{
-                boxShadow: "var(--glass-card-shadow-lg)",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
-                borderStyle: "solid",
-              }}
-            >
-              <div className="relative z-10 p-4 sm:p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="text-4xl sm:text-5xl md:text-6xl">🔭</div>
-                  <div className="flex-1">
-                    <h4 className="text-xl font-semibold text-foreground mb-3">Mathematical Physics verified through the hQVM kernel</h4>
-                    <p className="text-foreground-secondary mb-4">
-                      Executable state space analyses bridging classical information theory with quantum mechanics, deriving gravitational invariants and electroweak laws from discrete kernel algebra.
-                    </p>
-                    <p className="text-foreground-secondary mb-4">
-                      The same finite kernel is a mechanistic-interpretability and representation-learning ground truth, and a verifiable optimization substrate for AI models: exact enumerable labels for probing methods, rank recovery, and causal abstraction under stated generator restrictions, with the transport-rank census supplying closed-form optimization targets for model coordination.
-                    </p>
-                    <div className="glass-card-inner rounded-xl p-4 mb-4">
-                      <h5 className="text-sm font-semibold text-foreground mb-3">Headline results</h5>
-                      <ul className="space-y-2.5 text-sm text-foreground-secondary list-none">
-                        <li className="flex items-start gap-2">
-                          <span className="text-emerald-500 shrink-0">●</span>
-                          <span>
-                            <strong className="text-foreground">Newton&apos;s constant G</strong> from framework geometry with the electroweak Higgs scale as the only measured input. Matches CODATA to 0.074 ppm.
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-emerald-500 shrink-0">●</span>
-                          <span>
-                            <strong className="text-foreground">Fine-structure constant α</strong> from the same geometry. Matches the experimental value to 0.043 parts per billion.
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-emerald-500 shrink-0">●</span>
-                          <span>
-                            <strong className="text-foreground">Electroweak masses</strong> (Higgs, Z, W, top quark) and the weak mixing angle from the structure that fixes G. Accuracy from sub-ppm to parts per billion.
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-emerald-500 shrink-0">●</span>
-                          <span>
-                            <strong className="text-foreground">Percolation square-root law</strong> for generator-restricted reachability. Reachable set size closes as (2^r)^2 on GF(2) transport rank, verified by exact enumeration over 4096 states.
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-emerald-500 shrink-0">●</span>
-                          <span>
-                            <strong className="text-foreground">Grothendieck bound K_G^R(2) = √2</strong> measured on the hQVM carrier. The Hilbert lift realizes correlations beyond the Boolean section class without quantum hardware.
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="flex flex-wrap items-center gap-4">
-                      <a
-                        href="https://github.com/gyrogovernance/science"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium rounded-full transition-colors duration-300"
-                        aria-label="View Science Laboratory on GitHub (opens in new tab)"
-                      >
-                        <GitHubIcon className="w-4 h-4 mr-2" />
-                        Science Laboratory
-                      </a>
-                    </div>
-                    <div className="flex flex-wrap items-center gap-4 pt-3">
-                      <a
-                        href="https://github.com/gyrogovernance/science/blob/main/docs/references/Analysis_Gravity.md"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
-                        aria-label="Read Gravity Analysis (opens in new tab)"
-                      >
-                        Gravity Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
-                      </a>
-                      <a
-                        href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation.md"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
-                        aria-label="Read Percolation Analysis (opens in new tab)"
-                      >
-                        Percolation Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
-                      </a>
-                      <a
-                        href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Cohomology.md"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-classic-blue hover:text-classic-purple transition-colors duration-300 font-medium"
-                        aria-label="Read Cohomology Analysis (opens in new tab)"
-                      >
-                        Cohomology Analysis <ExternalLinkIcon className="ml-2 w-4 h-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </LiquidGlassCard>
-
+          <div className="space-y-6">
             <LiquidGlassCard
               className="glass-card rounded-[2rem] shadow-2xl"
               style={{

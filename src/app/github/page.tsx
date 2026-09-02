@@ -162,6 +162,13 @@ export default function GitHub() {
       keywords: ["Holonomic Quantum Virtual Machine", "hQVM Kernel", "hQVM SDK", "QuBEC", "Holographic Compression", "Tensor Engine"]
     },
     {
+      name: "hQVM AE Group-Equivariant Autoencoder",
+      description: "Group-equivariant autoencoder built on the hQVM kernel. Used as a clean lab for mechanistic interpretability and as a tool for verified science on genomes, languages, and other structured data.",
+      url: "https://github.com/gyrogovernance/superintelligence/tree/main/src/tools/autoencoder",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["Group-Equivariant Autoencoder", "Mechanistic Interpretability", "Percolation Benchmarks", "Genomics", "Verified Representations"]
+    },
+    {
       name: "Gyroscopic ASI Runtime",
       description: "Gyroscopic ASI establishes structural conditions for Collective Superintelligence Governance and human-machine cooperation. The Runtime composes the hQVM kernel into a universal computational condenser with native execution and multicellular coordination. Its llama.cpp custom backend leverages quantum features for compression and speedups with a replayable, tamper-evident zero-trust governance substrate. Multicellular quantum cellular automaton coordinating runtime events as 4-byte words. Verified exact integer algebra on decision surfaces of a live 1B-parameter model.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md",
@@ -439,8 +446,9 @@ export default function GitHub() {
           "The Human Mark",
           "GyroGem",
           "AI Inspector",
-          "hQVM Kernel",
-          "Gyroscopic ASI Runtime",
+    "hQVM Kernel",
+    "hQVM AE Group-Equivariant Autoencoder",
+    "Gyroscopic ASI Runtime",
           "QuBEC",
           "Collective Superintelligence",
           "Post-AGI Governance",
@@ -584,7 +592,7 @@ export default function GitHub() {
             <strong>AI governance tools</strong>, and a <strong>quantum advantage compute kernel</strong> for frontier model testing, dangerous capability assessments, and AI pathology detection.
             Our repositories include <strong>The Human Mark</strong> classification system, <strong>GyroGem</strong> AI safety agent,
             <strong>AI Inspector browser extension</strong>,
-            <strong>hQVM Kernel</strong> for holonomic quantum structure on silicon, <strong>QuBEC</strong> quantum byte medium,
+            <strong>hQVM Kernel</strong> for holonomic quantum structure on silicon, <strong>hQVM AE</strong> group-equivariant autoencoder for interpretability and verified science adapters, <strong>QuBEC</strong> quantum byte medium,
             <strong>Gyroscopic ASI Runtime</strong> for auditable inference and multicellular coordination,
             <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routes</strong> for collective superintelligence,
             <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
@@ -609,6 +617,21 @@ export default function GitHub() {
               <strong>Full inventory:</strong>{' '}
               <a href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_Features_Report.md" target="_blank" rel="noopener noreferrer">
                 hQVM Features Report
+              </a>
+            </li>
+          </ul>
+
+          <h3 className="text-xl font-semibold text-foreground mb-3">hQVM AE - Group-Equivariant Autoencoder</h3>
+          <p className="mb-4">
+            The <strong>hQVM AE</strong> is an autoencoder built on the hQVM kernel. Because every state, rule, and symmetry of the kernel is exactly known, the AE is used as a clean lab for mechanistic interpretability, including percolation benchmarks, and as a tool for verified science on genomes, languages, and other structured data, with every result checked against the underlying rules.
+          </p>
+          <ul className="mb-4">
+            <li><strong>Interpretability lab:</strong> which features survive compression, and which the model quietly throws away</li>
+            <li><strong>Science adapters:</strong> learned representations verified against the hQVM carrier, with genomics as a flagship application</li>
+            <li>
+              <strong>Read the tour:</strong>{' '}
+              <a href="https://github.com/gyrogovernance/superintelligence/tree/main/src/tools/autoencoder" target="_blank" rel="noopener noreferrer">
+                autoencoder README
               </a>
             </li>
           </ul>
