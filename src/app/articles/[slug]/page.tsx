@@ -7,6 +7,7 @@ import CopyControls from "@/components/CopyControls";
 import ArticleStructuredData from "@/components/ArticleStructuredData";
 import ArticleContent from "@/components/ArticleContent";
 import { LiquidGlassCard } from "@/components/LiquidGlassCard";
+import GooglePreferredSourceButton from "@/components/GooglePreferredSourceButton";
 
 interface Params {
   slug: string;
@@ -173,7 +174,10 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
               <div id="article-content" className="w-full">
                 <ArticleContent html={html} />
               </div>
-              <CopyControls className="mt-4" targetElementId="article-content" />
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                <CopyControls targetElementId="article-content" />
+                <GooglePreferredSourceButton />
+              </div>
             </article>
 
             <div className="mt-10 mb-8">

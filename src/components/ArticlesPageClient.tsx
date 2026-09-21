@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getArticlesData, getFeaturedArticlesData } from "@/lib/articles-data";
 import { useState, useEffect, useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import GooglePreferredSourceButton from "@/components/GooglePreferredSourceButton";
 
 const categories = [
   { key: undefined, label: "All" },
@@ -88,6 +89,9 @@ export default function ArticlesPageClient() {
         <p className="text-foreground-secondary max-w-2xl mx-auto">
           Explore featured insights and quarterly reports on AI governance and alignment.
         </p>
+        <div className="mt-5 flex justify-center">
+          <GooglePreferredSourceButton />
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-2 justify-center mb-8">

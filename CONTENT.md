@@ -69,7 +69,9 @@ AI Governance Lead with over two decades of multidisciplinary experience spannin
 
 **Gyro Governance**
 
-Building verifiable AI governance: audit, alignment infrastructure, and dynamics-based coordination.
+*Collective Superintelligence Labs*
+
+We ensure AI safety is epistemically grounded in mathematical physics and delivered through human capacity building. Our Open-Source work mitigates gradual disempowerment and power concentration from transformative AI, advancing existential risk preparedness.
 
 ### Stats
 - **7** Projects & Apps
@@ -417,6 +419,9 @@ Testing across multiple leading AI models shows Gyroscope delivers substantial p
 A Journey of Self-Discovery, Augmented Intelligence (AI) & Good Governance. One step at a time. Weekly insights on AI adoption, alignment, and ethical governance.
 
 - **LinkedIn Newsletter**: https://www.linkedin.com/newsletters/the-walk-7115036597602967553/
+
+**Google Preferred Sources** button appears under What's New, under the Articles carousel, on Articles pages, individual articles, and the site footer.
+- **Deeplink**: https://www.google.com/preferences/source?q=gyrogovernance.com
 
 #### Foundational Theory
 

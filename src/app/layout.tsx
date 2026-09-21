@@ -14,6 +14,7 @@ import MobileMenu from '@/components/MobileMenu';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import HashScroll from '@/components/HashScroll';
 import { LiquidGlassNav } from '@/components/LiquidGlassNav';
+import GooglePreferredSourceButton from '@/components/GooglePreferredSourceButton';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -73,9 +74,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/assets/gyrogovernance_logo.svg', type: 'image/svg+xml' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' }
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
@@ -162,7 +164,21 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://news.google.com" />
         <StructuredData />
+        <Script id="google-preferred-sources" strategy="afterInteractive">
+          {`
+            (function () {
+              if (document.querySelector('script[data-gg-preferred-sources]')) return;
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://news.google.com/swg/js/v1/publisher.js';
+              s.setAttribute('preferred-sources-control', 'manual');
+              s.setAttribute('data-gg-preferred-sources', '1');
+              document.head.appendChild(s);
+            })();
+          `}
+        </Script>
         <Script id="google-analytics-delayed" strategy="lazyOnload">
           {`
             let gaLoaded = false;
@@ -321,6 +337,10 @@ export default function RootLayout({
                       <Link href="/cookie-policy" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Cookie Policy</Link>
                     </div>
                   </nav>
+
+                  <div className="mt-6 flex justify-center">
+                    <GooglePreferredSourceButton />
+                  </div>
 
                   <div className="mt-4 flex justify-center">
                     <Image

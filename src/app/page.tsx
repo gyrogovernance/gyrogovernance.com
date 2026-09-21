@@ -3,6 +3,7 @@ import Image from "next/image";
 import GitHubIcon from "@/components/icons/GitHubIcon";
 import ExternalLinkIcon from "@/components/icons/ExternalLinkIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
+import GooglePreferredSourceButton from "@/components/GooglePreferredSourceButton";
 import NotionIcon from "@/components/icons/NotionIcon";
 import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
@@ -19,13 +20,16 @@ export default function Home() {
           HERO
           ================================================================ */}
       <div className="text-center mb-8 animate-fade-in-up">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3">
           <span className="bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink bg-clip-text text-transparent">
             Gyro Governance
           </span>
         </h1>
-        <p className="mt-6 text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-          Building verifiable AI governance: audit, alignment infrastructure, and dynamics-based coordination.
+        <p className="text-sm sm:text-base font-extrabold uppercase tracking-wider text-foreground-tertiary mb-6">
+          Collective Superintelligence Labs
+        </p>
+        <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
+          We ensure AI safety is epistemically grounded in mathematical physics and delivered through human capacity building. Our Open-Source work mitigates gradual disempowerment and power concentration from transformative AI, advancing existential risk preparedness.
         </p>
       </div>
 
@@ -180,6 +184,10 @@ export default function Home() {
               );
             })}
           </div>
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <GooglePreferredSourceButton />
         </div>
       </div>
 
@@ -1967,7 +1975,7 @@ export default function Home() {
         <div id="articles" className="mb-8">
           <h3 className="text-2xl font-semibold text-foreground-secondary mb-6 text-center">Articles</h3>
           <ArticlesCarousel articles={listFeaturedArticles()} />
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex flex-col items-center gap-4">
             <Link
               href="/articles"
               className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -1975,6 +1983,7 @@ export default function Home() {
             >
               View All Articles
             </Link>
+            <GooglePreferredSourceButton />
           </div>
         </div>
       </section>
