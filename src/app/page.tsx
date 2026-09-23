@@ -140,6 +140,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
               { dot: "bg-indigo-500", title: "hQVM AE", desc: "Group-Equivariant Autoencoder", date: "02 Sep 2026", href: "#hqvm-ae" },
               { dot: "bg-emerald-500", title: "Research on Genomics", desc: "Genetic code decoded on the hQVM Kernel", date: "08 Aug 2026", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Genomics.md" },
               { dot: "bg-blue-500", title: "AIR website live", desc: "Fellowship and AIR-Craft are open", date: "05 Aug 2026", href: "#air" },
@@ -808,10 +809,10 @@ export default function Home() {
 
       <div className="max-w-3xl mx-auto space-y-4 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify mb-6">
         <p>
-          An autoencoder is a neural network that learns to compress an input into a short code, then rebuilds the input from that code. What it keeps in the code is what it decided was important.
+          A neuro-symbolic autoencoder suite over a finite group-structured state space, with applications that run from mechanistic interpretability to genomics.
         </p>
         <p>
-          We build a family of these models on top of the hQVM, the small known engine at the center of our work. Because every state and every rule of the hQVM is fully described, the network is not guessing about the world it is learning. It is learning on ground truth, and we can score what it finds.
+          Three model classes (narrow, general, and super) learn to compress and reconstruct symmetries and rules derived from mathematical physics and our Gyroscopic ASI theory rather than fitting them to empirical datasets. The kernel generates the datasets, the grammar, and the labels used for training and evaluation.
         </p>
       </div>
 
@@ -825,7 +826,7 @@ export default function Home() {
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-0.5 text-lg shrink-0">🧬</span>
+            <span className="mt-0.5 text-lg shrink-0">🔭</span>
             <span>
               <strong className="text-foreground">A tool for real science.</strong>{" "}
               We use the same machinery to study genomes, languages, and other structured data, with every result verified against the underlying rules.
@@ -834,9 +835,74 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center gap-3 mb-6">
+      <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 max-w-3xl mx-auto border border-indigo-500/20 bg-indigo-500/5">
+        <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+          🧬 Genomics Program
+        </h3>
+        <div className="space-y-3 text-sm sm:text-base text-foreground-secondary text-left sm:text-justify mb-5">
+          <p>
+            The Genomics Program advances programmable nucleic acid research on DNA and RNA through grammar-trained autoencoders of the hQVM AE suite, grounded in first principles. The models read biological sequences through the group-equivariant coordinate system and a formal algebra for nucleotides, codons, and codon-pair transitions derived from our CGM theory.
+          </p>
+          <p>
+            With training restricted to that coordinate system and no biological sequence in the corpus, every reproducible contact between readout and genomic structure that survives composition controls is a signature of the underlying physics. Even the faintest of those marks remains informative, and opens a concrete frontier for genomics.
+          </p>
+        </div>
+
+        <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground-tertiary mb-3">
+          Results
+        </h4>
+        <div className="overflow-x-auto rounded-lg border border-border/40">
+          <table className="w-full text-sm text-left">
+            <thead>
+              <tr className="border-b border-border/40 bg-surface-elevated/40">
+                <th className="px-3 py-2.5 font-semibold text-foreground w-[7.5rem] align-top">Domain</th>
+                <th className="px-3 py-2.5 font-semibold text-foreground">Capacity delivered</th>
+              </tr>
+            </thead>
+            <tbody className="text-foreground-secondary">
+              <tr className="border-b border-border/30">
+                <td className="px-3 py-3 font-semibold text-foreground align-top">Synthesis</td>
+                <td className="px-3 py-3 leading-relaxed">
+                  Scores and ranks synonymous codon-order designs under fixed protein and composition, on a grammar fixed before any biological catalog is read. Across <em>E. coli</em>, yeast, SARS-CoV-2, and human chromosome 22, trained Super keeps order memory and climate discrimination under composition controls, with exact K4 symmetry at{" "}
+                  <code className="text-xs font-mono text-foreground">3.32e-11</code>.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3 py-3 font-semibold text-foreground align-top">Topology</td>
+                <td className="px-3 py-3 leading-relaxed">
+                  Reads membrane-topology climate inside individual genes and ranks synonymous expression under fixed peptide identity. In 492 of 590 <em>E. coli</em> membrane genes, transmembrane coding follows lower-shell codon-pair paths than the cytoplasmic stretches of the same gene. A frozen Narrow read lifts held-out membrane classification. Super climate ranks expression across 28,504 yeast variants.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-5 flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3">
+          <span className="text-sm text-foreground-tertiary sm:self-center shrink-0">Documentation:</span>
+          <a
+            href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/hQVM_AE_Genomics_Specs.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+          >
+            hQVM AE Genomics Specification
+            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+          </a>
+          <a
+            href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/reports/hQVM_AE_Genomics_Report.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
+          >
+            hQVM AE Genomics Report
+            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
+          </a>
+        </div>
+      </div>
+
+      <div className="flex flex-col sm:flex-row justify-center gap-3 mb-2">
         <a
-          href="https://github.com/gyrogovernance/superintelligence#%EF%B8%8F-new---hqvm-ae-group-equivariant-autoencoder"
+          href="https://github.com/gyrogovernance/superintelligence#%EF%B8%8F-hqvm-ae-group-equivariant-autoencoder"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-violet-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -845,50 +911,6 @@ export default function Home() {
           <GitHubIcon className="w-5 h-5 mr-2" />
           View on GitHub
         </a>
-      </div>
-
-      <div className="max-w-3xl mx-auto pt-4 border-t border-border/40">
-        <p className="text-[11px] font-semibold uppercase tracking-wider text-foreground-tertiary mb-3 text-center">
-          Related research
-        </p>
-        <div className="flex flex-wrap justify-center gap-2">
-          <a
-            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Group_Theory.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
-          >
-            Group Theory
-            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
-          </a>
-          <a
-            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
-          >
-            Percolation
-            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
-          </a>
-          <a
-            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_Percolation_Note.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
-          >
-            Percolation Note
-            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
-          </a>
-          <a
-            href="https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Genomics.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium secondary-button"
-          >
-            Genomics
-            <ExternalLinkIcon className="w-3.5 h-3.5 ml-1.5" />
-          </a>
-        </div>
       </div>
     </div>
   </LiquidGlassCard>
