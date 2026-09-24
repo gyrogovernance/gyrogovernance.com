@@ -1077,19 +1077,15 @@ export default function Home() {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
           <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            <strong>The Moments Economy is a civil governance framework where coordination
-            capacity is not artificially scarce but physically abundant and verifiable.</strong> 
+            <strong>The Moments Economy is a civil governance framework in which coordination
+            capacity is physically abundant and publicly verifiable.</strong>
             </p>
             <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            Its total
-            settlement envelope is derived from first principles, anchored in the atomic standard of the SI second, and the verifiable state-space of the hQVM kernel, yielding a fixed
-            capacity of 7.94 × 10<sup>26</sup> Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value). 
+            Its total capacity is fixed from the caesium-133 atomic frequency and the hQVM kernel&apos;s checkable states, yielding a fixed
+            capacity of 7.94 × 10<sup>26</sup> Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value).
             </p>
             <p className="text-sm sm:text-base text-foreground-secondary">
-            Its native commodity is the AI Generated Token: a verified inference event from the
-            intersection of human experience and AI processing. No debt issuance, no
-            discretionary monetary policy. Every settlement is a replayable,
-            verifiable history.
+            Its native commodity is the verified AI inference event: a governed alignment record at the intersection of human experience and AI processing, under human oversight. Every settlement is a replayable, verifiable history within that fixed capacity.
           </p>
         </div>
 
@@ -1102,16 +1098,15 @@ export default function Home() {
               <span className="text-emerald-500 mr-2">👤</span>
               <span>
                 <strong>Unconditional High Income:</strong> A baseline of 240 MU
-                per day for every person, flowing from verified participation in
-                the genealogical record, not institutional approval.
+                per day for every recognised person, flowing from registry recognition under published eligibility rules. 
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-teal-500 mr-2">🌱</span>
               <span>
                 <strong>Attentiveness over Attention:</strong> Instead of
-                extracting attention, the system rewards presence. High-quality,
-                alignment-graded tokens are generated when a person is attentive,
+                extracting attention, the system values presence. High-quality,
+                alignment-graded records form when a person is attentive,
                 making real choices and observing directly.
               </span>
             </li>
@@ -1120,7 +1115,7 @@ export default function Home() {
               <span>
                 <strong>Data Harvest as Social Service:</strong> Data streams prove
                 inhabited coordination capacity, not extractive surveillance.
-                Helping a person generate high-quality tokens contributes to a
+                Helping a person generate high-quality oversight signal contributes to a
                 shared field of collective intelligence.
               </span>
             </li>
@@ -1153,8 +1148,8 @@ export default function Home() {
             <li className="flex items-start">
               <span className="text-cyan-500 mr-2">📜</span>
               <span>
-                <strong>Preserving Human Authority:</strong> AI Generated Tokens
-                preserve human authority and traceability through replayable
+                <strong>Preserving Human Authority:</strong> Verified inference events
+                and moment receipts preserve human authority and traceability through replayable
                 genealogies. Alignment is measured, and drift is structurally
                 detectable.
               </span>
