@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   const article = getArticleBySlug(slug);
   if (!article) {
     return (
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-x-hidden">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-x-hidden">
         <p className="text-foreground-secondary">Article not found.</p>
         <Link href="/articles" className="text-classic-blue font-semibold">
           Back to Articles
@@ -128,7 +128,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         tags={article.tags}
         category={article.category}
       />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 overflow-x-hidden">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 overflow-x-hidden">
         <div className="mb-6">
           <Link href="/articles" className="text-classic-blue hover:text-classic-purple">
             ← Back to Articles
