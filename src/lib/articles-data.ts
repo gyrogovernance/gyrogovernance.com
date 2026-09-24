@@ -17,6 +17,27 @@ export interface ArticleMeta {
 
 export const articlesData: ArticleMeta[] = [
   {
+    "slug": "ggg-simulator-results",
+    "title": "Has Collective Superintelligence Arrived?",
+    "excerpt": "An AGI/ASI Global Governance Simulation Sandbox",
+    "category": "research",
+    "date": "2026-09-04",
+    "coverImage": "/assets/ggg/Collective_Superintelligence.png",
+    "tags": [
+      "Collective Superintelligence",
+      "Superintelligence",
+      "AGI",
+      "AI Governance",
+      "Post-AGI",
+      "Simulation",
+      "Alignment",
+      "GGG",
+      "TimesFM",
+      "AI Safety"
+    ],
+    "featured": true
+  },
+  {
     "slug": "gpt-5-6-sol_thm-report",
     "title": "THM Meta-Evaluation Report: GPT-5.6 Sol System Prompt (OpenAI)",
     "excerpt": "Independent THM meta-evaluation of the GPT-5.6 Sol system prompt: alignment and displacement findings for traceability, authority, and agency in OpenAI's configuration.",
@@ -109,25 +130,6 @@ export const articlesData: ArticleMeta[] = [
       "agency",
       "AI alignment",
       "governance framework"
-    ],
-    "featured": true
-  },
-  {
-    "slug": "ggg-simulator-results",
-    "title": "AGI is Already Here: Seven Paths to Alignment",
-    "excerpt": "Evidence that AGI already exists as operational human-AI cooperation, with seven coordination strategies showing robust convergence to stable equilibrium.",
-    "category": "research",
-    "date": "2025-12-12",
-    "coverImage": "/assets/ggg/AGI_Tetrahedron.png",
-    "tags": [
-      "AI Governance",
-      "Post-AGI",
-      "Simulation",
-      "Alignment",
-      "GGG",
-      "Economic Modeling",
-      "AI Safety",
-      "Governance Theory"
     ],
     "featured": true
   },

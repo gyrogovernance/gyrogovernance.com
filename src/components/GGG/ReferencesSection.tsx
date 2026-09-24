@@ -10,10 +10,19 @@ export default function ReferencesSection() {
           Bregman, R. (2017). <em>Utopia for Realists: How We Can Build the Ideal World</em>. Bloomsbury Publishing.
         </p>
         <p>
+          Das, A., Kong, W., Sen, R., & Zhou, Y. (2024). A decoder-only foundation model for time-series forecasting. <em>Proceedings of the 41st International Conference on Machine Learning</em>, 10517–10534. PMLR. https://arxiv.org/abs/2310.10688
+        </p>
+        <p>
           Forget, E. L. (2011). The town with no poverty: The health effects of a Canadian guaranteed annual income field experiment. <em>Canadian Public Policy</em>, 37(3), 283–305. https://doi.org/10.3138/cpp.37.3.283
         </p>
         <p>
+          Google Research. (2026). <em>TimesFM: A time series foundation model</em> (version 3.0) [Computer software]. https://github.com/google-research/timesfm
+        </p>
+        <p>
           Haushofer, J., & Shapiro, J. (2016). The short-term impact of unconditional cash transfers to the poor: Experimental evidence from Kenya. <em>Quarterly Journal of Economics</em>, 131(4), 1973–2042. https://doi.org/10.1093/qje/qjw025
+        </p>
+        <p>
+          Korompilias, B. (2026). <em>Gyroscopic Global Governance: Post-AGI Economy, Employment, Education and Ecology</em> (Edition 2). https://github.com/gyrogovernance/tools/blob/main/docs/post-agi-economy/GGG_Paper.md
         </p>
         <p>
           Kremer, M., & Miguel, E. (2007). The illusion of sustainability. <em>Quarterly Journal of Economics</em>, 122(3), 1007–1065. https://doi.org/10.1162/qjec.122.3.1007

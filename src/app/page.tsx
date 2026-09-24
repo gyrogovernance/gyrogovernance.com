@@ -140,6 +140,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-blue-500", title: "GGG Second Edition", desc: "AGI/ASI Governance Simulation Sandbox", date: "25 Sep 2026", href: "#ggg" },
               { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
               { dot: "bg-indigo-500", title: "hQVM AE", desc: "Group-Equivariant Autoencoder", date: "02 Sep 2026", href: "#hqvm-ae" },
               { dot: "bg-emerald-500", title: "Research on Genomics", desc: "Genetic code decoded on the hQVM Kernel", date: "08 Aug 2026", href: "https://github.com/gyrogovernance/science/blob/main/docs/Findings/Analysis_hQVM_CGM_Genomics.md" },
@@ -1204,7 +1205,7 @@ export default function Home() {
                 Gyroscopic Global Governance (GGG)
               </h2>
               <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
-                A Post-AGI Multi-domain Governance Sandbox
+                A Collective Superintelligence Multi-domain Governance Sandbox
               </p>
             </div>
 
