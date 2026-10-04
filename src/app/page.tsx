@@ -12,6 +12,7 @@ import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
 import StatBadge from "@/components/StatBadge";
 import { LiquidGlassCard } from "@/components/LiquidGlassCard";
+import EvidenceSources from "@/app/exodus/EvidenceSources";
 
 export default function Home() {
   return (
@@ -1438,6 +1439,8 @@ export default function Home() {
                 <strong className="text-foreground">Exodus</strong> is a planetary-scale operation for addressing active existential risks through a science-backed governance framework: the Moments Economy.
               </p>
             </div>
+
+            <EvidenceSources />
 
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Link

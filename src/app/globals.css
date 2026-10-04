@@ -721,6 +721,96 @@ button, a, input, textarea, select,
   100% { background-position: calc(200px + 100%) 0; }
 }
 
+@keyframes evidence-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.evidence-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.evidence-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0.85rem;
+  animation: evidence-marquee 36s linear infinite;
+}
+
+.evidence-marquee:hover .evidence-marquee-track {
+  animation-play-state: paused;
+}
+
+.evidence-marquee-group {
+  display: flex;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.evidence-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-shrink: 0;
+  padding: 0.7rem 1.2rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-primary);
+  background: color-mix(in srgb, var(--bg-elevated) 72%, transparent);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.evidence-pill:hover {
+  border-color: color-mix(in srgb, var(--classic-orange) 55%, var(--border-primary));
+  background: color-mix(in srgb, var(--bg-elevated) 92%, transparent);
+  transform: translateY(-1px);
+}
+
+.evidence-pill-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.evidence-pill-org {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.evidence-pill-sep {
+  color: var(--text-secondary);
+  opacity: 0.55;
+}
+
+.evidence-pill-label {
+  color: var(--text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .evidence-marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .evidence-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .evidence-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }

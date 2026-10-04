@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LiquidGlassCard } from "@/components/LiquidGlassCard";
+import EvidenceSources from "./EvidenceSources";
 import JoinForm from "./JoinForm";
 import ShareButtons from "./ShareButtons";
 
@@ -184,6 +185,8 @@ export default function Exodus() {
                   increases the pressure for irresponsible deployment.
                 </p>
               </div>
+
+              <EvidenceSources />
 
               <div className="glass-card-inner rounded-xl p-4 sm:p-6 space-y-3">
                 <h3 className="text-xl font-bold text-foreground">
