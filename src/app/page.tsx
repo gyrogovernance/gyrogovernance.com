@@ -63,7 +63,7 @@ export default function Home() {
             { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
             { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
-            { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
+            { emoji: "🪙", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "⚗️", title: "Common Governance Model", desc: "Mathematical physics foundation that grounds every other project on this site in first-principles", href: "#cgm" },
           ].map((p) => (
             <a key={p.title} href={p.href} className="block rounded-[1rem] h-full">
@@ -1278,7 +1278,7 @@ export default function Home() {
         <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
           <div className="relative z-10 p-4 sm:p-6 md:p-8">
             <div className="text-center mb-8">
-              <div className="text-6xl mb-4">💰</div>
+              <div className="text-6xl mb-4">🪙</div>
               <h2 className="text-3xl font-bold text-foreground mb-2">
                 Moments Economy
               </h2>

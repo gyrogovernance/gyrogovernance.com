@@ -87,7 +87,7 @@ We ensure AI safety is epistemically grounded in mathematical physics and delive
 - 🧠 **hQVM AE Autoencoder** - Group-equivariant autoencoder that opens the black box using the hQVM as a known universe
 - 🤖 **Gyroscopic ASI Runtime** - Multicellular quantum execution layer for AI inference and coordination
 - 🍃 **Alignment Infrastructure Routes (AIR)** - AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
-- 💰 **Moments Economy** - Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation
+- 🪙 **Moments Economy** - Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation
 - 🌐 **Global Governance Simulator** - Post-AGI/ASI governance sandbox Simulation and Results
 - 🌟 **GyroDiagnostics** - Physics grounded evaluation and pathology detection for AI Safety and Alignment
 - ⚗️ **Common Governance Model** - Mathematical physics foundation that grounds every other project on this site
@@ -288,7 +288,7 @@ Exact integer algebra replaced softmax and cosine-style selection on decision su
 
 **GitHub**: https://github.com/gyrogovernance/superintelligence
 
-### 💰 Moments Economy
+### 🪙 Moments Economy
 
 **Mitigating Risks of Transformative AI (TAI)**
 
@@ -905,7 +905,7 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 - **Tags**: Collective Superintelligence, Workforce Routing, Safety Tasks, Human-AI Integration, Coordination Infrastructure
 
 ##### Moments Economy
-- **Emoji**: 💰
+- **Emoji**: 🪙
 - **Name**: Moments Economy
 - **Title**: Attentiveness-based Monetary System for TAI Mitigation
 - **Description**: Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, AI Generated Tokens as native commodity (verified inference at human-AI intersection), and complete replayable governance records. Total capacity: ~70 billion years for global UHI; ~47 billion years with tiered distribution. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).

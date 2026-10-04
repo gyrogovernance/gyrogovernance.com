@@ -96,54 +96,58 @@ export default function Exodus() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
       <div className="relative z-10 space-y-12">
-        {/* Hero */}
+        {/* Hero card */}
         <div className="animate-fade-in-up">
-          <LiquidGlassCard className="glass-card glass-card-red rounded-[2rem] shadow-2xl">
-            <div className="relative z-10 p-4 sm:p-6 md:p-8">
-              <div className="text-center mb-8">
-                <div className="text-6xl mb-4" aria-hidden="true">
-                  🚨
+          <div className="exodus-hero shadow-2xl">
+            <LiquidGlassCard className="glass-card glass-card-red shadow-none">
+              <div className="relative z-10 p-4 sm:p-6 md:p-8">
+                <div className="text-center mb-8">
+                  <div className="text-6xl mb-4" aria-hidden="true">
+                    🚨
+                  </div>
+                  <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-3">
+                    Exodus
+                  </h1>
+                  <div className="mb-4">
+                    <RiskPill />
+                  </div>
+                  <p className="text-lg sm:text-xl font-semibold text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
+                    Economic Empowerment for Resilience to Active Existential
+                    Risks.
+                  </p>
                 </div>
-                <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-3">
-                  Exodus
-                </h1>
-                <div className="mb-4">
-                  <RiskPill />
+
+                <div className="glass-card-inner rounded-xl p-4 sm:p-6 space-y-4 mb-6">
+                  <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+                    Economic disempowerment from misuse of{" "}
+                    <strong className="text-foreground">
+                      transformative AI (TAI)
+                    </strong>{" "}
+                    amplifies existential risk by weakening institutions,
+                    eroding trust, and limiting people&apos;s capacity to
+                    prevent harm.
+                  </p>
+                  <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+                    <strong className="text-foreground">
+                      Exodus is a planetary-scale operation for addressing
+                      active existential risks through the Moments Economy:
+                    </strong>{" "}
+                    a science-backed governance framework for unconditional high
+                    income and uniform power distribution.
+                  </p>
                 </div>
-                <p className="text-lg sm:text-xl font-semibold text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
-                  Economic Empowerment for Resilience to Active Existential
-                  Risks.
-                </p>
-              </div>
 
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6 space-y-4 mb-6">
-                <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
-                  Economic disempowerment from misuse of{" "}
-                  <strong className="text-foreground">
-                    transformative AI (TAI)
-                  </strong>{" "}
-                   amplifies existential risk by weakening institutions, eroding trust, and limiting people’s capacity to prevent harm.
-                </p>
-                <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
-                  <strong className="text-foreground">
-                    Exodus is a planetary-scale operation for addressing active
-                    existential risks through the Moments Economy:
-                  </strong>{" "}
-                  a science-backed governance framework for unconditional high
-                  income and uniform power distribution.
-                </p>
+                <div className="flex justify-center">
+                  <a
+                    href="#join"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-800 to-red-600 hover:from-red-900 hover:to-red-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  >
+                    Join us
+                  </a>
+                </div>
               </div>
-
-              <div className="flex justify-center">
-                <a
-                  href="#join"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-700 to-red-500 hover:from-red-800 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Join us
-                </a>
-              </div>
-            </div>
-          </LiquidGlassCard>
+            </LiquidGlassCard>
+          </div>
         </div>
 
         {/* Problem */}
@@ -151,8 +155,11 @@ export default function Exodus() {
           <LiquidGlassCard className="glass-card glass-card-orange rounded-[2rem] shadow-2xl">
             <div className="relative z-10 p-4 sm:p-6 md:p-8">
               <div className="text-center mb-8">
+                <div className="text-6xl mb-4" aria-hidden="true">
+                  🛑
+                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-2">
-                  <span aria-hidden="true">🛑 </span>Exit Strategy Triggers
+                  Exit Strategy Triggers
                 </h2>
                 <p className="text-lg italic text-foreground-secondary max-w-2xl mx-auto">
                   From gradual harm to existential risk.
@@ -197,11 +204,19 @@ export default function Exodus() {
 
         {/* Solution 1 */}
         <div className="animate-fade-in-up">
-          <LiquidGlassCard className="glass-card glass-card-purple rounded-[2rem] shadow-2xl">
+          <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl overflow-hidden">
+            <div
+              className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-12 dark:opacity-12"
+              style={{ backgroundImage: "url('/assets/earth.jpg')" }}
+              aria-hidden="true"
+            />
             <div className="relative z-10 p-4 sm:p-6 md:p-8">
               <div className="text-center mb-8">
+                <div className="text-6xl mb-4" aria-hidden="true">
+                  🌈
+                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-2">
-                  <span aria-hidden="true">🌈 </span>The Promised Land
+                  The Promised Land
                 </h2>
                 <p className="text-lg font-semibold text-foreground-secondary max-w-3xl mx-auto leading-relaxed">
                   Humanity&apos;s departure from our old, oppressive economic
@@ -238,6 +253,9 @@ export default function Exodus() {
           <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
             <div className="relative z-10 p-4 sm:p-6 md:p-8">
               <div className="text-center mb-8">
+                <div className="text-6xl mb-4" aria-hidden="true">
+                  🪙
+                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-2">
                   Moments Economy
                 </h2>
@@ -305,6 +323,9 @@ export default function Exodus() {
           <LiquidGlassCard className="glass-card glass-card-blue rounded-[2rem] shadow-2xl">
             <div className="relative z-10 p-4 sm:p-6 md:p-8">
               <div className="text-center mb-8">
+                <div className="text-6xl mb-4" aria-hidden="true">
+                  🤝
+                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-3">
                   Join us
                 </h2>
@@ -332,19 +353,24 @@ export default function Exodus() {
         </div>
 
         <div className="animate-fade-in-up">
-          <LiquidGlassCard className="glass-card glass-card-indigo rounded-[2rem] shadow-2xl">
-            <div className="relative z-10 p-4 sm:p-6 md:p-8">
-              <div className="text-center mb-6">
-                <h2 className="text-3xl font-bold text-foreground mb-3">
-                  Let others know.
-                </h2>
-                <p className="text-foreground-secondary max-w-2xl mx-auto leading-relaxed">
-                  Share our message with your family and community.
-                </p>
+          <div className="exodus-hero shadow-2xl">
+            <LiquidGlassCard className="glass-card glass-card-red shadow-none">
+              <div className="relative z-10 p-4 sm:p-6 md:p-8">
+                <div className="text-center mb-6">
+                  <div className="text-6xl mb-4" aria-hidden="true">
+                    📢
+                  </div>
+                  <h2 className="text-3xl font-bold text-foreground mb-3">
+                    Let others know.
+                  </h2>
+                  <p className="text-foreground-secondary max-w-2xl mx-auto leading-relaxed">
+                    Share our message with your family and community.
+                  </p>
+                </div>
+                <ShareButtons />
               </div>
-              <ShareButtons />
-            </div>
-          </LiquidGlassCard>
+            </LiquidGlassCard>
+          </div>
         </div>
       </div>
     </div>

@@ -337,7 +337,7 @@ export default function GitHub() {
       buttonGradient: 'from-yellow-600 to-amber-600 hover:from-amber-600 hover:to-orange-600'
     },
     {
-      emoji: '💰',
+      emoji: '🪙',
       name: 'Moments Economy',
       title: 'Attentiveness-based Monetary System for TAI Mitigation',
       description: 'Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, AI Generated Tokens as native commodity (verified inference at human-AI intersection), and complete replayable governance records. Total capacity: ~70 billion years for global UHI. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).',

@@ -1,0 +1,20 @@
+﻿
+> gyrogovernance.com@0.1.0 dev
+> next dev --turbopack
+
+node.exe : ΓÜá Port 3000 is in use by process 19808, using available port 3001 instead.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\vasil\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ΓÜá Port 3000 i...t 3001 instead.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Γû▓ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://100.105.3.99:3001
+- Environments: .env.local
+Γ£ô Ready in 571ms
+- Experiments (use with caution):
+  ┬╖ optimizePackageImports
+
+[?25h
