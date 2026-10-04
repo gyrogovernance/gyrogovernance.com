@@ -108,7 +108,7 @@ export default function Home() {
                     Exodus
                   </span>
                   <span className="block text-sm text-foreground-tertiary leading-snug mt-0.5">
-                    Scarcity-driven misuse of transformative AI is now an active civilisational risk.
+                  Economic Scarcity-driven misuse of transformative AI is now an ongoing Active Existential Risk.
                   </span>
                 </span>
               </div>
@@ -164,7 +164,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
-              { dot: "bg-red-500", title: "Exodus Program Initiated", desc: "High-Risk TAI Threshold Triggered", date: "04 Oct 2026", href: "#exodus" },
+              { dot: "bg-red-500", title: "Exodus Program Initiated", desc: "High Risks Triggered", date: "04 Oct 2026", href: "#exodus" },
               { dot: "bg-blue-500", title: "GGG Second Edition", desc: "AGI/ASI Governance Simulation Sandbox", date: "25 Sep 2026", href: "#ggg" },
               { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
               { dot: "bg-indigo-500", title: "hQVM AE", desc: "Group-Equivariant Autoencoder", date: "02 Sep 2026", href: "#hqvm-ae" },
@@ -1409,27 +1409,33 @@ export default function Home() {
           HERO CARD — Exodus
           ================================================================ */}
       <div id="exodus" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-orange rounded-[2rem] shadow-2xl">
+        <LiquidGlassCard className="glass-card glass-card-red rounded-[2rem] shadow-2xl">
           <div className="relative z-10 p-4 sm:p-6 md:p-8">
             <div className="text-center mb-8">
-              <div className="text-6xl mb-4">🚨</div>
+              <div className="text-6xl mb-4" aria-hidden="true">🚨</div>
               <h2 className="text-3xl font-bold text-foreground mb-3">
                 Exodus
               </h2>
               <div className="mb-4">
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-500/45 bg-red-600/15 dark:bg-red-900/40 text-red-700 dark:text-red-300 text-xs font-bold uppercase tracking-wider">
                   <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse" />
-                  High-Risk TAI Triggered
+                  High Risks Triggered
                 </span>
               </div>
               <p className="text-lg font-semibold text-foreground-secondary max-w-2xl mx-auto">
-                Scarcity-driven misuse of transformative AI is now an active civilisational risk.
+                Scarcity-driven misuse of transformative AI (TAI) is now an ongoing Active Existential Risk
               </p>
             </div>
 
-            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 border border-red-500/25 bg-red-500/5">
-              <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed text-center">
-                We initiate <strong className="text-foreground">Exodus:</strong> a departure program to mitigate TAI risks and end poverty through a new economic medium.
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 space-y-4">
+              <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+                <strong className="text-foreground">The power of artificial intelligence demands a high level of responsibility.</strong>
+              </p>
+              <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+                Misuse of AI and automated systems already threatens humanity and our planet, enabling abuses of power and deepening inequality and economic disempowerment.
+              </p>
+              <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
+                <strong className="text-foreground">Exodus</strong> is a planetary-scale operation for addressing active existential risks through a science-backed governance framework: the Moments Economy.
               </p>
             </div>
 
@@ -1437,9 +1443,9 @@ export default function Home() {
               <Link
                 href="/exodus"
                 className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-red-700 to-red-500 hover:from-red-800 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="Open the Exodus program page"
+                aria-label="Take action on the Exodus program page"
               >
-                Join us
+                Take action
               </Link>
             </div>
           </div>
