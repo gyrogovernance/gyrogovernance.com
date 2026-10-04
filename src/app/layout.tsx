@@ -277,6 +277,9 @@ export default function RootLayout({
                       <Link href="/about" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="About Gyro Governance">
                         About
                       </Link>
+                      <Link href="/exodus" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Exodus program">
+                        Exodus
+                      </Link>
                       <Link href="/articles" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Articles">
                         Articles
                       </Link>
@@ -323,6 +326,8 @@ export default function RootLayout({
                       <Link href="/" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Home</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
                       <Link href="/about" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">About Gyro Governance</Link>
+                      <span className="text-foreground-tertiary flex items-center px-1">•</span>
+                      <Link href="/exodus" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Exodus</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
                       <Link href="/articles" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Articles</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>

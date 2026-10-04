@@ -101,6 +101,17 @@ export default function MobileMenu() {
               </div>
             </Link>
             <Link
+              href="/exodus"
+              className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
+              aria-label="Exodus program"
+              onClick={closeMenu}
+            >
+              <div className="flex items-center">
+                <span className="mr-3 text-xl">🌍</span>
+                <span>Exodus</span>
+              </div>
+            </Link>
+            <Link
               href="/articles"
               className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
               aria-label="Articles"

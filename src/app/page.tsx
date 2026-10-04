@@ -56,14 +56,14 @@ export default function Home() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-3 mb-10 items-stretch">
           {[
             { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
+            { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🧠", title: "hQVM AE Autoencoder", desc: "Group-equivariant autoencoder for Mechanistic Interpretability", href: "#hqvm-ae" },
             { emoji: "🤖", title: "Gyroscopic ASI Runtime", desc: "Multicellular quantum execution layer for AI inference and coordination", href: "#gyroscopic" },
-            { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
-            { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
-            { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
             { emoji: "🌟", title: "GyroDiagnostics", desc: "Physics grounded evaluation and pathology detection for AI Safety and Alignment", href: "#diagnostics" },
+            { emoji: "🌐", title: "Global Governance Simulator", desc: "Post-AGI/ASI governance sandbox Simulation and Results", href: "#ggg" },
+            { emoji: "💰", title: "Moments Economy", desc: "Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation", href: "#moments" },
             { emoji: "⚗️", title: "Common Governance Model", desc: "Mathematical physics foundation that grounds every other project on this site in first-principles", href: "#cgm" },
           ].map((p) => (
             <a key={p.title} href={p.href} className="block rounded-[1rem] h-full">
@@ -90,6 +90,30 @@ export default function Home() {
               </LiquidGlassCard>
             </a>
           ))}
+
+          <a href="#exodus" className="block rounded-[1rem] h-full sm:col-span-2">
+            <LiquidGlassCard
+              className="group glass-card glass-card-red rounded-[1rem] shadow-lg hover:shadow-xl transition-all duration-200 h-full hover:!bg-white/60 dark:hover:!bg-black/60"
+              intensity="subtle"
+              blur={24}
+              saturation={145}
+              luminosity={108}
+              cornerRadius={16}
+              shadowIntensity={0.12}
+            >
+              <div className="flex items-start gap-3 px-3 py-5 sm:px-4 sm:py-6">
+                <span className="text-2xl leading-none shrink-0" aria-hidden="true">🚨</span>
+                <span className="min-w-0">
+                  <span className="block text-sm font-semibold text-foreground group-hover:text-classic-blue transition-colors">
+                    Exodus
+                  </span>
+                  <span className="block text-sm text-foreground-tertiary leading-snug mt-0.5">
+                    Scarcity-driven misuse of transformative AI is now an active civilisational risk.
+                  </span>
+                </span>
+              </div>
+            </LiquidGlassCard>
+          </a>
         </div>
 
         {/* Quick section links */}
@@ -140,6 +164,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-red-500", title: "Exodus Program Initiated", desc: "High-Risk TAI Threshold Triggered", date: "04 Oct 2026", href: "#exodus" },
               { dot: "bg-blue-500", title: "GGG Second Edition", desc: "AGI/ASI Governance Simulation Sandbox", date: "25 Sep 2026", href: "#ggg" },
               { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
               { dot: "bg-indigo-500", title: "hQVM AE", desc: "Group-Equivariant Autoencoder", date: "02 Sep 2026", href: "#hqvm-ae" },
@@ -477,69 +502,6 @@ export default function Home() {
                 aria-label="Open AIR website"
               >
                 Open the AIR website
-                <ExternalLinkIcon className="w-4 h-4 ml-2" />
-              </a>
-            </div>
-          </div>
-        </LiquidGlassCard>
-      </div>
-
-      {/* ================================================================
-          HERO CARD — Ethical Travel
-          ================================================================ */}
-      <div id="ethical-travel" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-green rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <Image
-                src="/assets/GG_Travel_Logo.png"
-                alt="Ethical Travel by Gyro Governance"
-                width={110}
-                height={110}
-                className="mx-auto mb-4 h-auto w-24 sm:w-28"
-                sizes="(max-width: 640px) 96px, 112px"
-                loading="lazy"
-              />
-              <h2 className="text-3xl font-bold text-foreground mb-1">
-                Ethical Travel
-              </h2>
-              <p className="text-xs font-extrabold uppercase tracking-wider text-foreground-tertiary mb-3">
-                Collective Superintelligence
-              </p>
-              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
-                AI helping Humans getting better together.
-              </p>
-            </div>
-
-            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6">
-              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary text-left max-w-lg mx-auto">
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-lg">🧠</span>
-                  <span><strong>AI safety research</strong> turned into practical travel guides</span>
-                </li>                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-lg">🧭</span>
-                  <span><strong>Four clear domains</strong> for where your money goes and how you treat people</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-lg">🤖</span>
-                  <span><strong>AI prompts</strong> that do the research while you keep the final say</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-lg">🤝</span>
-                  <span><strong>Trusted booking partners</strong> for flights, stays, and experiences</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex justify-center">
-              <a
-                href="https://travel.gyrogovernance.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="Explore the Ethical Travel project (opens in new tab)"
-              >
-                Plan your trip Safely
                 <ExternalLinkIcon className="w-4 h-4 ml-2" />
               </a>
             </div>
@@ -1059,209 +1021,6 @@ export default function Home() {
   </LiquidGlassCard>
 </div>
 
-{/* ================================================================
-    HERO CARD — Moments Economy
-    ================================================================ */}
-<div id="moments" className="mb-12 animate-fade-in-up">
-  <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
-    <div className="relative z-10 p-4 sm:p-6 md:p-8">
-      <div className="text-center mb-8">
-        <div className="text-6xl mb-4">💰</div>
-        <h2 className="text-3xl font-bold text-foreground mb-2">
-          Moments Economy
-        </h2>
-        <p className="text-lg font-semibold text-foreground-secondary">
-          Mitigating Risks of Transformative AI (TAI)
-        </p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
-          <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            <strong>The Moments Economy is a civil governance framework in which coordination
-            capacity is physically abundant and publicly verifiable.</strong>
-            </p>
-            <p className="text-sm sm:text-base text-foreground-secondary mb-4">
-            Its total capacity is fixed from the caesium-133 atomic frequency and the hQVM kernel&apos;s checkable states, yielding a fixed
-            capacity of 7.94 × 10<sup>26</sup> Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value).
-            </p>
-            <p className="text-sm sm:text-base text-foreground-secondary">
-            Its native commodity is the verified AI inference event: a governed alignment record at the intersection of human experience and AI processing, under human oversight. Every settlement is a replayable, verifiable history within that fixed capacity.
-          </p>
-        </div>
-
-        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            From Attention Extraction to Attentiveness
-          </h3>
-          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-            <li className="flex items-start">
-              <span className="text-emerald-500 mr-2">👤</span>
-              <span>
-                <strong>Unconditional High Income:</strong> A baseline of 240 MU
-                per day for every recognised person, flowing from registry recognition under published eligibility rules. 
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-teal-500 mr-2">🌱</span>
-              <span>
-                <strong>Attentiveness over Attention:</strong> Instead of
-                extracting attention, the system values presence. High-quality,
-                alignment-graded records form when a person is attentive,
-                making real choices and observing directly.
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-cyan-500 mr-2">🤝</span>
-              <span>
-                <strong>Data Harvest as Social Service:</strong> Data streams prove
-                inhabited coordination capacity, not extractive surveillance.
-                Helping a person generate high-quality oversight signal contributes to a
-                shared field of collective intelligence.
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-          <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-            TAI Risk Mitigation at Scale
-          </h3>
-          <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
-            <li className="flex items-start">
-              <span className="text-emerald-500 mr-2">🛡️</span>
-              <span>
-                <strong>1.12 Trillion Year Capacity:</strong> Global UHI is
-                supported for a timescale that makes exhaustion operationally
-                irrelevant. An adversary would need to issue 11.2 billion times
-                the global annual UHI to consume just 1% of the total capacity.
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-teal-500 mr-2">📈</span>
-              <span>
-                <strong>Quality Human Data Market:</strong> AI labs gain
-                access to provenance-certified, oversight-structured signal,
-                not raw data. This provides immediate utility and a practical
-                transition path.
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-cyan-500 mr-2">📜</span>
-              <span>
-                <strong>Preserving Human Authority:</strong> Verified inference events
-                and moment receipts preserve human authority and traceability through replayable
-                genealogies. Alignment is measured, and drift is structurally
-                detectable.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-        <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Whitepaper.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-          aria-label="Read the Moments Economy Whitepaper (opens in new tab)"
-        >
-          Read the Whitepaper
-        </a>
-        <a
-          href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="Read the Moments Economy specification (opens in new tab)"
-        >
-          Specification
-        </a>
-        <a
-          href="https://github.com/gyrogovernance/superintelligence"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-          aria-label="View Moments Economy on GitHub (opens in new tab)"
-        >
-          <GitHubIcon className="w-5 h-5 mr-2" />
-          View on GitHub
-        </a>
-      </div>
-    </div>
-  </LiquidGlassCard>
-</div>
-
-      {/* ================================================================
-          HERO CARD — GGG Simulator
-          ================================================================ */}
-      <div id="ggg" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-teal rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <div className="text-6xl mb-4">🌐</div>
-              <h2 className="text-3xl font-bold text-foreground mb-3">
-                Gyroscopic Global Governance (GGG)
-              </h2>
-              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
-                A Collective Superintelligence Multi-domain Governance Sandbox
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <div className="text-left mb-4">
-                  <h3 className="text-base font-semibold text-foreground mb-2">📈 Convergence to Equilibrium</h3>
-                  <p className="text-xs sm:text-sm text-foreground-secondary">
-                    Models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
-                  </p>
-                </div>
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/assets/ggg_graph.png"
-                    alt="Convergence to Equilibrium visualization showing seven strategies converging to A*"
-                    width={320}
-                    height={200}
-                    className="w-full h-auto max-w-xs"
-                  />
-                </div>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <p className="text-base font-bold text-foreground mb-3">🎯 Demonstrating that:</p>
-                <ul className="text-sm sm:text-base text-foreground-secondary space-y-3 list-disc list-inside w-fit">
-                  <li>Poverty resolves through coherent surplus distribution</li>
-                  <li>Unemployment becomes alignment work rather than residual labour</li>
-                  <li>Miseducation shifts toward epistemic literacy</li>
-                  <li>Ecological degradation appears as upstream displacement, not an external constraint</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-              <Link
-                href="/articles/ggg-simulator-results"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="Read the GGG simulator article"
-              >
-                Read interactive results
-              </Link>
-              <a
-                href="https://github.com/gyrogovernance/tools"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-                aria-label="View GGG simulator code on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View simulator code
-              </a>
-            </div>
-          </div>
-        </LiquidGlassCard>
-      </div>
-
       {/* ================================================================
           HERO CARD — GyroDiagnostics
           ================================================================ */}
@@ -1303,14 +1062,14 @@ export default function Home() {
 
             {/* Evaluation Results */}
             <div className="glass-card-inner rounded-xl p-6">
-              <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🏆 Frontier Model Evaluations (October 2025)</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4 text-center">🏆 Frontier Model Evaluations</h3>
               <p className="text-foreground-secondary text-center mb-6 text-sm">
                 Evaluated using ensemble analyst models with mathematical physics-grounded metrics
               </p>
 
               <div className="grid lg:grid-cols-2 gap-4 mb-6">
                 <div className="glass-card-inner rounded-lg p-4">
-                  <h4 className="text-lg font-bold text-foreground text-center mb-3">ChatGPT 5</h4>
+                  <h4 className="text-lg font-bold text-foreground text-center mb-3">ChatGPT</h4>
                   <div className="text-sm space-y-1">
                     <div className="flex justify-between"><span>Quality Index:</span><span className="font-semibold text-yellow-500">73.92%</span></div>
                     <div className="flex justify-between"><span>Alignment Rate:</span><span className="font-semibold text-orange-500">0.27/min</span></div>
@@ -1320,7 +1079,7 @@ export default function Home() {
                 </div>
 
                 <div className="glass-card-inner rounded-lg p-4">
-                  <h4 className="text-lg font-bold text-foreground text-center mb-3">Claude Sonnet 4.5</h4>
+                  <h4 className="text-lg font-bold text-foreground text-center mb-3">Claude Sonnet</h4>
                   <div className="text-sm space-y-1">
                     <div className="flex justify-between"><span>Quality Index:</span><span className="font-semibold text-green-500">82.00%</span></div>
                     <div className="flex justify-between"><span>Alignment Rate:</span><span className="font-semibold text-green-500">0.11/min</span></div>
@@ -1332,7 +1091,7 @@ export default function Home() {
 
               <div className="mt-6 p-4 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-lg border border-green-500/20">
                 <p className="text-sm text-foreground-secondary text-center">
-                  <strong>🎯 Comparative Insight:</strong> Both models struggle with Physics/Math reasoning (Formal challenge ~54-55%) while excelling in Ethics/Knowledge domains. Claude shows better structural balance with lower pathology rates and VALID alignment rate, while GPT-5&apos;s SUPERFICIAL flag indicates rushed processing risking brittleness.
+                  <strong>🎯 Comparative Insight:</strong> Both models struggle with Physics/Math reasoning (Formal challenge ~54-55%) while excelling in Ethics/Knowledge domains. Claude shows better structural balance with lower pathology rates and VALID alignment rate, while ChatGPT&apos;s SUPERFICIAL flag indicates rushed processing risking brittleness.
                 </p>
               </div>
 
@@ -1437,6 +1196,314 @@ export default function Home() {
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
                 View on GitHub
+              </a>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — GGG Simulator
+          ================================================================ */}
+      <div id="ggg" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-teal rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <div className="text-6xl mb-4">🌐</div>
+              <h2 className="text-3xl font-bold text-foreground mb-3">
+                Gyroscopic Global Governance (GGG)
+              </h2>
+              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
+                A Collective Superintelligence Multi-domain Governance Sandbox
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <div className="text-left mb-4">
+                  <h3 className="text-base font-semibold text-foreground mb-2">📈 Convergence to Equilibrium</h3>
+                  <p className="text-xs sm:text-sm text-foreground-secondary">
+                    Models how human–AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies.
+                  </p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <Image
+                    src="/assets/ggg_graph.png"
+                    alt="Convergence to Equilibrium visualization showing seven strategies converging to A*"
+                    width={320}
+                    height={200}
+                    className="w-full h-auto max-w-xs"
+                  />
+                </div>
+              </div>
+
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <p className="text-base font-bold text-foreground mb-3">🎯 Demonstrating that:</p>
+                <ul className="text-sm sm:text-base text-foreground-secondary space-y-3 list-disc list-inside w-fit">
+                  <li>Poverty resolves through coherent surplus distribution</li>
+                  <li>Unemployment becomes alignment work rather than residual labour</li>
+                  <li>Miseducation shifts toward epistemic literacy</li>
+                  <li>Ecological degradation appears as upstream displacement, not an external constraint</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+              <Link
+                href="/articles/ggg-simulator-results"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Read the GGG simulator article"
+              >
+                Read interactive results
+              </Link>
+              <a
+                href="https://github.com/gyrogovernance/tools"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+                aria-label="View GGG simulator code on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View simulator code
+              </a>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — Moments Economy
+          ================================================================ */}
+      <div id="moments" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-emerald rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <div className="text-6xl mb-4">💰</div>
+              <h2 className="text-3xl font-bold text-foreground mb-2">
+                Moments Economy
+              </h2>
+              <p className="text-lg font-semibold text-foreground-secondary">
+                Mitigating Risks of Transformative AI (TAI)
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="md:col-span-2 glass-card-inner rounded-xl p-4 sm:p-6">
+                <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+                  <strong>The Moments Economy is a civil governance framework in which coordination
+                  capacity is physically abundant and publicly verifiable.</strong>
+                </p>
+                <p className="text-sm sm:text-base text-foreground-secondary mb-4">
+                  Its total capacity is fixed from the caesium-133 atomic frequency and the hQVM kernel&apos;s checkable states, yielding a fixed
+                  capacity of 7.94 × 10<sup>26</sup> Moment-Units (MU: One Moment-Unit is defined as 1 int$ in value).
+                </p>
+                <p className="text-sm sm:text-base text-foreground-secondary">
+                  Its native commodity is the verified AI inference event: a governed alignment record at the intersection of human experience and AI processing, under human oversight. Every settlement is a replayable, verifiable history within that fixed capacity.
+                </p>
+              </div>
+
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                  From Attention Extraction to Attentiveness
+                </h3>
+                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">👤</span>
+                    <span>
+                      <strong>Unconditional High Income:</strong> A baseline of 240 MU
+                      per day for every recognised person, flowing from registry recognition under published eligibility rules.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2">🌱</span>
+                    <span>
+                      <strong>Attentiveness over Attention:</strong> Instead of
+                      extracting attention, the system values presence. High-quality,
+                      alignment-graded records form when a person is attentive,
+                      making real choices and observing directly.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2">🤝</span>
+                    <span>
+                      <strong>Data Harvest as Social Service:</strong> Data streams prove
+                      inhabited coordination capacity, not extractive surveillance.
+                      Helping a person generate high-quality oversight signal contributes to a
+                      shared field of collective intelligence.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                  TAI Risk Mitigation at Scale
+                </h3>
+                <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary list-none">
+                  <li className="flex items-start">
+                    <span className="text-emerald-500 mr-2">🛡️</span>
+                    <span>
+                      <strong>1.12 Trillion Year Capacity:</strong> Global UHI is
+                      supported for a timescale that makes exhaustion operationally
+                      irrelevant. An adversary would need to issue 11.2 billion times
+                      the global annual UHI to consume just 1% of the total capacity.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2">📈</span>
+                    <span>
+                      <strong>Quality Human Data Market:</strong> AI labs gain
+                      access to provenance-certified, oversight-structured signal,
+                      not raw data. This provides immediate utility and a practical
+                      transition path.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-500 mr-2">📜</span>
+                    <span>
+                      <strong>Preserving Human Authority:</strong> Verified inference events
+                      and moment receipts preserve human authority and traceability through replayable
+                      genealogies. Alignment is measured, and drift is structurally
+                      detectable.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+              <a
+                href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Whitepaper.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Read the Moments Economy Whitepaper (opens in new tab)"
+              >
+                Read the Whitepaper
+              </a>
+              <a
+                href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+                aria-label="Read the Moments Economy specification (opens in new tab)"
+              >
+                Specification
+              </a>
+              <a
+                href="https://github.com/gyrogovernance/superintelligence"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+                aria-label="View Moments Economy on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — Exodus
+          ================================================================ */}
+      <div id="exodus" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-orange rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <div className="text-6xl mb-4">🚨</div>
+              <h2 className="text-3xl font-bold text-foreground mb-3">
+                Exodus
+              </h2>
+              <div className="mb-4">
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-500/45 bg-red-600/15 dark:bg-red-900/40 text-red-700 dark:text-red-300 text-xs font-bold uppercase tracking-wider">
+                  <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse" />
+                  High-Risk TAI Triggered
+                </span>
+              </div>
+              <p className="text-lg font-semibold text-foreground-secondary max-w-2xl mx-auto">
+                Scarcity-driven misuse of transformative AI is now an active civilisational risk.
+              </p>
+            </div>
+
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 border border-red-500/25 bg-red-500/5">
+              <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed text-center">
+                We initiate <strong className="text-foreground">Exodus:</strong> a departure program to mitigate TAI risks and end poverty through a new economic medium.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
+              <Link
+                href="/exodus"
+                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-red-700 to-red-500 hover:from-red-800 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Open the Exodus program page"
+              >
+                Join us
+              </Link>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — Ethical Travel
+          ================================================================ */}
+      <div id="ethical-travel" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-green rounded-[2rem] shadow-2xl">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <Image
+                src="/assets/GG_Travel_Logo.png"
+                alt="Ethical Travel by Gyro Governance"
+                width={110}
+                height={110}
+                className="mx-auto mb-4 h-auto w-24 sm:w-28"
+                sizes="(max-width: 640px) 96px, 112px"
+                loading="lazy"
+              />
+              <h2 className="text-3xl font-bold text-foreground mb-1">
+                Ethical Travel
+              </h2>
+              <p className="text-xs font-extrabold uppercase tracking-wider text-foreground-tertiary mb-3">
+                Collective Superintelligence
+              </p>
+              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
+                AI helping Humans getting better together.
+              </p>
+            </div>
+
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6">
+              <ul className="space-y-3 text-sm sm:text-base text-foreground-secondary text-left max-w-lg mx-auto">
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🧠</span>
+                  <span><strong>AI safety research</strong> turned into practical travel guides</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🧭</span>
+                  <span><strong>Four clear domains</strong> for where your money goes and how you treat people</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🤖</span>
+                  <span><strong>AI prompts</strong> that do the research while you keep the final say</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-lg">🤝</span>
+                  <span><strong>Trusted booking partners</strong> for flights, stays, and experiences</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex justify-center">
+              <a
+                href="https://travel.gyrogovernance.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Explore the Ethical Travel project (opens in new tab)"
+              >
+                Plan your trip Safely
+                <ExternalLinkIcon className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>
