@@ -721,26 +721,35 @@ button, a, input, textarea, select,
   100% { background-position: calc(200px + 100%) 0; }
 }
 
-@keyframes evidence-marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
 .evidence-marquee {
-  overflow: hidden;
+  position: relative;
   mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.evidence-marquee-scroller {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  cursor: grab;
+  scrollbar-width: none;
+}
+
+.evidence-marquee-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.evidence-marquee-scroller:active {
+  cursor: grabbing;
 }
 
 .evidence-marquee-track {
   display: flex;
   width: max-content;
   gap: 0.85rem;
-  animation: evidence-marquee 36s linear infinite;
-}
-
-.evidence-marquee:hover .evidence-marquee-track {
-  animation-play-state: paused;
+  padding: 0.15rem 0.25rem;
 }
 
 .evidence-marquee-group {
@@ -791,24 +800,6 @@ button, a, input, textarea, select,
 
 .evidence-pill-label {
   color: var(--text-secondary);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .evidence-marquee {
-    mask-image: none;
-    -webkit-mask-image: none;
-  }
-
-  .evidence-marquee-track {
-    animation: none;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .evidence-marquee-group[aria-hidden="true"] {
-    display: none;
-  }
 }
 
 .animate-fade-in-up {
