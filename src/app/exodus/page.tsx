@@ -274,8 +274,7 @@ export default function Exodus() {
                 <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
                   Through Exodus, we initiate a planetary-scale operation to
                   address active existential risks through the Moments Economy:
-                  a science-backed governance framework for unconditional high
-                  income and uniform power distribution, supported by the
+                  a science-backed governance framework for uniform power distribution, supported by the
                   issuance of a globally verifiable economic medium based on the
                   atomic frequency (caesium standard).
                 </p>
