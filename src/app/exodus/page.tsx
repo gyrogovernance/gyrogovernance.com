@@ -84,6 +84,44 @@ const abundancePoints = [
   },
 ];
 
+const stackFeatures = {
+  top: [
+    {
+      emoji: "⚙️",
+      title: "Kernel",
+      description: "Open-Source deterministic system for issuance and verification.",
+      color: "glass-card-blue",
+    },
+    {
+      emoji: "🚛",
+      title: "Logistics",
+      description: "Protocols for work, salaries, funding, and shared administration.",
+      color: "glass-card-green",
+    },
+    {
+      emoji: "📜",
+      title: "Genealogies",
+      description: "AI-empowered replayable histories of participation and review.",
+      color: "glass-card-amber",
+    },
+  ],
+  bottom: [
+    {
+      emoji: "🧾",
+      title: "Receipts",
+      description:
+        "QR-Coded claims anyone can check on ordinary devices.",
+      color: "glass-card-orange",
+    },
+    {
+      emoji: "💳",
+      title: "Wallet",
+      description: "Civic interface for identification, purchasing, and coordination.",
+      color: "glass-card-red",
+    },
+  ],
+};
+
 function RiskPill() {
   return (
     <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-500/45 bg-red-600/15 dark:bg-red-900/40 text-red-700 dark:text-red-300 text-xs font-bold uppercase tracking-wider">
@@ -124,9 +162,8 @@ export default function Exodus() {
                     <strong className="text-foreground">
                       transformative AI (TAI)
                     </strong>{" "}
-                    amplifies existential risk by weakening institutions,
-                    eroding trust, and limiting people&apos;s capacity to
-                    prevent harm.
+                    amplifies existential risk by concentrating power, eroding
+                    trust, and limiting people&apos;s capacity to prevent harm.
                   </p>
                   <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
                     <strong className="text-foreground">
@@ -237,14 +274,18 @@ export default function Exodus() {
                 <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
                   Through Exodus, we initiate a planetary-scale operation to
                   address active existential risks through the Moments Economy:
-                  a civil governance framework supported by the issuance of a
-                  globally verifiable economic medium based on the atomic
-                  frequency (caesium standard).
+                  a science-backed governance framework for unconditional high
+                  income and uniform power distribution, supported by the
+                  issuance of a globally verifiable economic medium based on the
+                  atomic frequency (caesium standard).
                 </p>
                 <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
                   The medium has a fixed issuance capacity of 794 Septillion
                   Units (7.94 × 10<sup>26</sup>), with each Unit defined as 1
-                  international dollar (int$) in value.
+                  international dollar (int$) in value. Settlement integrity
+                  rests on replayable moment receipts that any party can check
+                  under the public transition rule, including on ordinary
+                  smartphones.
                 </p>
               </div>
             </div>
@@ -274,11 +315,12 @@ export default function Exodus() {
                   </strong>
                 </p>
                 <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
-                  Governance depends on how institutions maintain the medium,
-                  keep registries accurate, and coordinate under shared rules.
-                  Economic participation centres on attentiveness instead of
-                  attention: the care people bring to their responsibilities,
-                  communities, and shared resources.
+                  Governance is the distributed exercise of Authority and Agency
+                  across providers and receivers under shared rules, with
+                  uniform power distribution as the measurable aim. Registries,
+                  banks, fiscal hosts, and community stewards can contribute
+                  administration when available. Economic participation centres on
+                  attentiveness instead of attention: the care people bring to their responsibilities, communities, and shared resources.
                 </p>
               </div>
 
@@ -306,15 +348,57 @@ export default function Exodus() {
                 </div>
               </div>
 
+              <div className="mb-6">
+                <h3 className="text-xl font-bold text-foreground text-center mb-4">
+                  Technical Infrastructure
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                  {stackFeatures.top.map((item) => (
+                    <div
+                      key={item.title}
+                      className={`glass-card-inner rounded-xl p-4 sm:p-5 ${item.color}`}
+                    >
+                      <div className="text-2xl mb-2" aria-hidden="true">
+                        {item.emoji}
+                      </div>
+                      <h4 className="text-base font-bold text-foreground mb-1">
+                        {item.title}
+                      </h4>
+                      <p className="text-sm text-foreground-secondary leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                  <div className="sm:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                    {stackFeatures.bottom.map((item) => (
+                      <div
+                        key={item.title}
+                        className={`glass-card-inner rounded-xl p-4 sm:p-5 ${item.color}`}
+                      >
+                        <div className="text-2xl mb-2" aria-hidden="true">
+                          {item.emoji}
+                        </div>
+                        <h4 className="text-base font-bold text-foreground mb-1">
+                          {item.title}
+                        </h4>
+                        <p className="text-sm text-foreground-secondary leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               <div className="flex justify-center">
                 <a
-                  href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md"
+                  href="https://github.com/gyrogovernance/superintelligence#moments-economy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                  aria-label="Read the Moments Economy specifications (opens in new tab)"
+                  aria-label="Read the Moments Economy section on GitHub (opens in new tab)"
                 >
-                  Specifications
+                  Documentation
                 </a>
               </div>
             </div>
