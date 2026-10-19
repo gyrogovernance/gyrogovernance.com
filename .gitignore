@@ -92,3 +92,6 @@ ignore.*
 /test/
 
 dev_docs/_notes
+
+.agents/
+programs/

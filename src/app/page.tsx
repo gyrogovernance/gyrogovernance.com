@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <LiquidGlassCard className="glass-card glass-card-stats rounded-[2rem] shadow-2xl">
             <div className="flex justify-center gap-3 sm:gap-6 md:gap-10 py-4 px-2 sm:py-6 sm:px-8 md:py-8 md:px-10">
-              <StatBadge value={7} label="Projects & Apps" color="from-purple-500 to-indigo-500 dark:from-purple-300 dark:to-indigo-300" delay={0} />
+              <StatBadge value={8} label="Projects & Apps" color="from-purple-500 to-indigo-500 dark:from-purple-300 dark:to-indigo-300" delay={0} />
               <StatBadge value={20} label="Papers & Specs" color="from-blue-500 to-cyan-500 dark:from-blue-300 dark:to-cyan-300" delay={200} />
               <StatBadge value={60} label="Experiments & Reports" color="from-emerald-500 to-teal-500 dark:from-emerald-300 dark:to-teal-300" delay={400} />
               </div>
@@ -58,6 +58,7 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
             { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
+            { emoji: "🖥️", title: "AIR Office", desc: "Coming soon: AI-native workspace for agentic research and policy analysis", href: "#air-office" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🧠", title: "hQVM AE Autoencoder", desc: "Group-equivariant autoencoder for Mechanistic Interpretability", href: "#hqvm-ae" },
@@ -92,7 +93,7 @@ export default function Home() {
             </a>
           ))}
 
-          <a href="#exodus" className="block rounded-[1rem] h-full sm:col-span-2">
+          <a href="#exodus" className="block rounded-[1rem] h-full">
             <LiquidGlassCard
               className="group glass-card glass-card-red rounded-[1rem] shadow-lg hover:shadow-xl transition-all duration-200 h-full hover:!bg-white/60 dark:hover:!bg-black/60"
               intensity="subtle"
@@ -165,6 +166,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
+              { dot: "bg-cyan-500", title: "AIR Office", desc: "Coming soon: agentic research and policy workspace", date: "19 Oct 2026", href: "#air-office" },
               { dot: "bg-red-500", title: "Exodus Program Initiated", desc: "High Risks Triggered", date: "04 Oct 2026", href: "#exodus" },
               { dot: "bg-blue-500", title: "GGG Second Edition", desc: "AGI/ASI Governance Simulation Sandbox", date: "25 Sep 2026", href: "#ggg" },
               { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
@@ -504,6 +506,110 @@ export default function Home() {
               >
                 Open the AIR website
                 <ExternalLinkIcon className="w-4 h-4 ml-2" />
+              </a>
+            </div>
+          </div>
+        </LiquidGlassCard>
+      </div>
+
+      {/* ================================================================
+          HERO CARD — AIR Office
+          ================================================================ */}
+      <div id="air-office" className="mb-12 animate-fade-in-up">
+        <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] overflow-hidden shadow-2xl">
+          <div className="relative z-10 w-full flex justify-center bg-gradient-to-b from-cyan-900/20 to-transparent px-4 pt-6">
+            <Image
+              src="/assets/AIR_Office_welcome.webp"
+              alt="AIR Office welcome screen"
+              width={1024}
+              height={576}
+              className="w-full max-w-2xl h-auto object-contain rounded-2xl"
+              sizes="(max-width: 768px) 100vw, 672px"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="relative z-10 p-4 sm:p-6 md:p-8">
+            <div className="text-center mb-8">
+              <span className="inline-block mb-3 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-cyan-500/15 text-cyan-700 dark:text-cyan-300">
+                Coming Soon
+              </span>
+              <h2 className="text-3xl font-bold text-foreground mb-2">
+                AIR Office
+              </h2>
+              <p className="text-lg font-semibold text-foreground-secondary mb-4">
+                An AI-native workspace for agentic research, policy analysis, and knowledge management
+              </p>
+              <div className="max-w-3xl mx-auto space-y-3 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
+                <p>
+                  AIR Office brings sources, AI conversations, and working documents into one place for researchers, policy analysts, and governance teams who prepare analysis on transformative AI and its consequences.
+                </p>
+                <p>
+                  You keep judgement over the questions, corrections, and final brief. Selected review tools come from AI Inspector, and the desktop app is designed for local use without account registration.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                  In the workspace
+                </h3>
+                <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
+                  <li className="flex items-start">
+                    <span className="mr-2">📁</span>
+                    <span>Programs, Knowledge collections, and Notes beside chat</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🔎</span>
+                    <span>Claim and evidence review, policy reporting, and Human Mark meta-evaluation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">📚</span>
+                    <span>EU AI Act, NIST AI RMF, OECD AI Principles, and The Human Mark</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🤖</span>
+                    <span>Agents, prompts, and skills for repeatable research methods</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                  Built for
+                </h3>
+                <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
+                  <li className="flex items-start">
+                    <span className="mr-2">🔬</span>
+                    <span>Researchers who own a policy area from evidence to brief</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🏛️</span>
+                    <span>Policy advisers on frontier AI, safety, and governance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🧭</span>
+                    <span>Think tanks building AI-native research practice</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🛡️</span>
+                    <span>Teams reviewing evaluations, risk assessments, and guidance</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 flex justify-center">
+              <a
+                href="https://github.com/gyrogovernance/air-office"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="View AIR Office on GitHub (opens in new tab)"
+              >
+                <GitHubIcon className="w-5 h-5 mr-2" />
+                View on GitHub
               </a>
             </div>
           </div>

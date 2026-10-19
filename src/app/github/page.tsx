@@ -6,7 +6,7 @@ import ResearchProjectSchema from "@/components/ResearchProjectSchema";
 
 export const metadata: Metadata = {
   title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes, Moments Economy, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
+  description: 'Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes, Moments Economy, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.',
   keywords: [
     // Core AI Safety - High Priority
     'AI safety evaluation',
@@ -30,6 +30,8 @@ export const metadata: Metadata = {
     'Computational Climate Control',
     'Alignment Infrastructure Routes',
     'Moments Economy',
+    'Exodus',
+    'active existential risk',
     'Gyroscopic Global Governance',
     'collective superintelligence',
     'transformative AI',
@@ -116,7 +118,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance',
-    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routes, Moments Economy, and Gyroscopic Global Governance Sandbox.',
+    description: 'Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, GyroGem AI Safety Agent, AI Inspector Browser Extension, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routes, Moments Economy, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance Sandbox.',
     type: 'website',
     url: 'https://gyrogovernance.com/github',
   },
@@ -198,14 +200,21 @@ export default function GitHub() {
     },
     {
       name: "Moments Economy",
-      description: "Monetary system grounded in physical capacity for mitigating transformative AI risks. Uses caesium-133 atomic standard for finite capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline, tiered distributions up to 60× UHI, AI Generated Tokens as native commodity, and complete replayable governance records. Total capacity: ~70 billion years for global UHI.",
+      description: "Monetary system grounded in physical capacity for mitigating transformative AI risks. Uses caesium-133 atomic standard for finite capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline, tiered distributions up to 60× UHI, verified AI inference events as native commodity, and complete replayable governance records. Total capacity: ~70 billion years for global UHI.",
       url: "https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md",
       applicationCategory: "DeveloperApplication",
       keywords: ["Transformative AI", "Monetary System", "Physical Capacity", "Governance Records", "Unconditional Income"]
     },
     {
+      name: "Exodus",
+      description: "Planetary-scale operation for addressing active existential risks through the Moments Economy. Economic disempowerment from misuse of transformative AI amplifies existential risk by concentrating power, eroding trust, and limiting people's capacity to prevent harm. Science-backed governance framework for unconditional high income and uniform power distribution, supported by a globally verifiable economic medium based on the atomic frequency (caesium standard). Fixed issuance capacity of 7.94 × 10²⁶ Units, with each Unit defined as 1 international dollar (int$) in value.",
+      url: "https://gyrogovernance.com/exodus",
+      applicationCategory: "DeveloperApplication",
+      keywords: ["Active Existential Risk", "Transformative AI", "Moments Economy", "Economic Empowerment", "Unconditional Income", "Atomic Standard"]
+    },
+    {
       name: "Gyroscopic Global Governance (GGG)",
-      description: "Post-AGI Multi-domain Governance Sandbox - Models human-AI systems alignment across Economy, Employment, Education, and Ecology showing robust convergence to stable equilibrium under seven coordination strategies. Demonstrates poverty resolution, employment as alignment work, educational shifts to epistemic literacy, and ecological degradation as upstream displacement.",
+      description: "Collective Superintelligence Multi-domain Governance Sandbox - Models human-AI systems alignment across Economy, Employment, Education, and Ecology showing robust convergence to stable equilibrium under seven coordination strategies. Demonstrates poverty resolution, employment as alignment work, educational shifts to epistemic literacy, and ecological degradation as upstream displacement.",
       url: "https://github.com/gyrogovernance/tools",
       applicationCategory: "DeveloperApplication",
       keywords: ["Post-AGI Governance", "Multi-domain Governance", "Human-AI Alignment", "Economic Modeling", "Governance Simulation"]
@@ -340,7 +349,7 @@ export default function GitHub() {
       emoji: '🪙',
       name: 'Moments Economy',
       title: 'Attentiveness-based Monetary System for TAI Mitigation',
-      description: 'Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, AI Generated Tokens as native commodity (verified inference at human-AI intersection), and complete replayable governance records. Total capacity: ~70 billion years for global UHI. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).',
+      description: 'Grounded in physical capacity rather than debt. Uses caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units). Provides unconditional high income baseline (240 MU/day), tiered distributions up to 60× for higher responsibility, verified AI inference events as native commodity, and complete replayable governance records. Total capacity: ~70 billion years for global UHI. Adversarial exhaustion operationally impossible (requires 11.2 billion× global annual UHI to consume 1%).',
       url: 'https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Specs.md',
       tags: ['Transformative AI', 'Physical Capacity', 'Unconditional Income', 'Governance Records', 'Monetary System'],
       gradient: 'from-emerald-500/10 via-teal-500/10 to-cyan-500/10',
@@ -348,9 +357,20 @@ export default function GitHub() {
       buttonGradient: 'from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600'
     },
     {
+      emoji: '🚨',
+      name: 'Exodus',
+      title: 'Planetary-Scale Operation for Active Existential Risk Mitigation',
+      description: 'Exodus is a planetary-scale operation for addressing active existential risks through the Moments Economy. Economic disempowerment from misuse of transformative AI amplifies existential risk by concentrating power, eroding trust, and limiting people\'s capacity to prevent harm. Through Exodus, we initiate a science-backed governance framework for unconditional high income and uniform power distribution, supported by a globally verifiable economic medium based on the atomic frequency (caesium standard). The medium has a fixed issuance capacity of 7.94 × 10²⁶ Units, with each Unit defined as 1 international dollar (int$) in value.',
+      url: 'https://gyrogovernance.com/exodus',
+      tags: ['Active Existential Risk', 'Transformative AI', 'Moments Economy', 'Economic Empowerment', 'Unconditional Income', 'Atomic Standard'],
+      gradient: 'from-red-500/10 via-rose-500/10 to-orange-500/10',
+      borderColor: 'border-red-500/20',
+      buttonGradient: 'from-red-600 to-rose-600 hover:from-rose-600 hover:to-orange-600'
+    },
+    {
       emoji: '🌐',
       name: 'Gyroscopic Global Governance (GGG)',
-      title: 'Post-AGI Multi-domain Governance Sandbox',
+      title: 'Collective Superintelligence Multi-domain Governance Sandbox',
       description: 'Models how human-AI systems align across Economy, Employment, Education, and Ecology, showing robust convergence to a stable equilibrium under seven coordination strategies. Demonstrates that poverty resolves through coherent surplus distribution, unemployment becomes alignment work rather than residual labour, miseducation shifts toward epistemic literacy, and ecological degradation appears as upstream displacement, not external constraint.',
       url: 'https://github.com/gyrogovernance/tools',
       tags: ['Post-AGI Governance', 'Multi-domain Modeling', 'Economic Equilibrium', 'Alignment Strategies', 'Governance Simulation'],
@@ -433,7 +453,7 @@ export default function GitHub() {
       {/* Research Project Schema */}
       <ResearchProjectSchema
         name="Gyro Governance AI Safety Research"
-        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, and post-AGI governance modeling."
+        description="Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and post-AGI governance modeling."
         url="https://gyrogovernance.com/github"
         keywords={[
           "AI Safety Research",
@@ -446,14 +466,16 @@ export default function GitHub() {
           "The Human Mark",
           "GyroGem",
           "AI Inspector",
-    "hQVM Kernel",
-    "hQVM AE Group-Equivariant Autoencoder",
-    "Gyroscopic ASI Runtime",
+  "hQVM Kernel",
+  "hQVM AE Group-Equivariant Autoencoder",
+  "Gyroscopic ASI Runtime",
           "QuBEC",
           "Collective Superintelligence",
           "Post-AGI Governance",
           "Transformative AI",
           "Moments Economy",
+          "Exodus",
+          "Active Existential Risk",
           "Gyroscopic Global Governance",
           "Quantum Advantage",
           "Technological Literacy"
@@ -471,7 +493,7 @@ export default function GitHub() {
           </h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed mb-6">
             Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing.
-            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, and Gyroscopic Global Governance sandbox.
+            The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, QuBEC quantum byte medium, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Computational Climate Control for execution stability, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance sandbox.
             Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development.
             All repositories are open source and actively maintained.
           </p>
@@ -595,7 +617,7 @@ export default function GitHub() {
             <strong>hQVM Kernel</strong> for holonomic quantum structure on silicon, <strong>hQVM AE</strong> group-equivariant autoencoder for interpretability and verified science adapters, <strong>QuBEC</strong> quantum byte medium,
             <strong>Gyroscopic ASI Runtime</strong> for auditable inference and multicellular coordination,
             <strong>GyroDiagnostics evaluation suite</strong>, <strong>Alignment Infrastructure Routes</strong> for collective superintelligence,
-            <strong>Moments Economy</strong> for transformative AI mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
+            <strong>Moments Economy</strong> for transformative AI mitigation, <strong>Exodus</strong> for active existential risk mitigation, and <strong>Gyroscopic Global Governance</strong> sandbox.
             Production-ready solutions for <strong>AI risk assessment</strong>, <strong>AI safety evaluation</strong>, and <strong>responsible AI development</strong>.
           </p>
 
@@ -703,6 +725,11 @@ export default function GitHub() {
             using caesium-133 atomic standard for finite, verifiable capacity (7.94 × 10²⁶ Moment-Units), <strong>unconditional high income (UHI)</strong>
             at 240 MU/day baseline, AI Generated Tokens as native commodity, and complete <strong>governance records</strong>.
             Together these address <strong>transformative AI risks</strong> while preserving <strong>human authority</strong> and <strong>accountability</strong>.
+          </p>
+
+          <h3 className="text-xl font-semibold text-foreground mb-3">Exodus - Active Existential Risk Mitigation</h3>
+          <p className="mb-4">
+            <strong>Exodus</strong> is a planetary-scale operation for addressing active existential risks through the Moments Economy. Economic disempowerment from misuse of <strong>transformative AI (TAI)</strong> amplifies existential risk by concentrating power, eroding trust, and limiting people&apos;s capacity to prevent harm. The program initiates a science-backed governance framework for <strong>unconditional high income</strong> and uniform power distribution, supported by a globally verifiable economic medium based on the <strong>atomic frequency (caesium standard)</strong>. The medium has a fixed issuance capacity of 7.94 × 10²⁶ Units, with each Unit defined as 1 international dollar (int$) in value, providing a foundation for economic resilience against AI-driven disempowerment.
           </p>
 
           <h3 className="text-xl font-semibold text-foreground mb-3">Post-AGI Multi-domain Governance</h3>
