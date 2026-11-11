@@ -46,7 +46,7 @@ Current projects explore:
 - **Superintelligence Architectures**: hQVM Kernel, Gyroscopic ASI Runtime
 - **Behavioral Alignment Mechanisms**: The Human Mark, Gyroscope Protocol, GyroDiagnostics
 - **Governance Infrastructure**: Alignment Infrastructure Routes (AIR), Moments Economy, Exodus Program, Gyroscopic Global Governance
-- **Safety Tools**: AI Inspector Browser Extension, evaluation frameworks
+- **Safety Tools**: AI Inspector Browser Extension, AIR Office desktop workspace, evaluation frameworks
 - **Quantum Computing**: Holonomic quantum computation on standard silicon via exact integer loops
 
 All developments are documented through open-source repositories and educational resources.
@@ -87,6 +87,7 @@ We ensure AI safety is epistemically grounded in mathematical physics and delive
 - 🧠 **hQVM AE Autoencoder** - Group-equivariant autoencoder that opens the black box using the hQVM as a known universe
 - 🤖 **Gyroscopic ASI Runtime** - Multicellular quantum execution layer for AI inference and coordination
 - 🍃 **Alignment Infrastructure Routes (AIR)** - AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
+- 🖥️ **AIR Office** - AI-native desktop workspace for agentic research and knowledge management
 - 🪙 **Moments Economy** - Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation
 - 🚨 **Exodus** - Planetary-scale operation for active existential risk mitigation through the Moments Economy
 - 🌐 **Global Governance Simulator** - Post-AGI/ASI governance sandbox Simulation and Results
@@ -94,6 +95,7 @@ We ensure AI safety is epistemically grounded in mathematical physics and delive
 - ⚗️ **Common Governance Model** - Mathematical physics foundation that grounds every other project on this site
 
 #### What's New
+- **AIR Office Alpha** - Desktop builds for Windows and macOS (11 Nov 2026)
 - **Exodus Program Initiated** - High Risks Triggered (04 Oct 2026)
 - **GGG Second Edition** - AGI/ASI Governance Simulation Sandbox (25 Sep 2026)
 - **hQVM AE Genomics Program** - Frontier applications in DNA and RNA Design (22 Sep 2026)
@@ -104,7 +106,6 @@ We ensure AI safety is epistemically grounded in mathematical physics and delive
 - **Research on Percolation and Cohomology** - New Finite-state transport and Grothendieck bound analyses on the hQVM kernel (02-15 Jul 2026)
 - **Ethical Travel** - New Collective Superintelligence Program (02 Jun 2026)
 - **smartbites.github.io** - Updated (28 Apr 2026)
-- **GyroGem** - New AI Safety Agent for technological literacy (15 Apr 2026)
 - **Gyroscopic ASI Runtime** - New llama.cpp Backend (14 Apr 2026)
 - **AI Compute Optimizations** - Replaced floating-point math and eliminated expensive overhead (17 Mar 2026)
 - **hQVM Kernel** - Verified uniform mixing and holographic compression (11 Mar 2026)
@@ -148,15 +149,6 @@ Analysis of frontier model system prompts: alignment and displacement findings.
 - **Claude Fable 5** - /articles/fable-5_thm-report
 - **ChatGPT 5.6 Sol** - /articles/gpt-5-6-sol_thm-report
 
-### 🌟 GyroGem: AI Safety Agent
-
-**Explaining AI and Mitigating Risks of Technological Illiteracy**
-
-GyroGem is a tailored AI safety assistant built on The Human Mark (THM), a framework that maps common AI failure patterns and guides safer choices. It also supports technological literacy, the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and how they affect people and society.
-
-**Chat on:**
-- **Google Gemini**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
-
 ### 🍃 Alignment Infrastructure Routes (AIR)
 
 **Open infrastructure for community safety and good governance**
@@ -188,6 +180,74 @@ The beta website is now live. Join as a contributor, publish your work in a publ
 Unified Scope Routes across society's core domains: **Economy** • **Employment** • **Education** • **Ecology**
 
 **Website**: https://air.gyrogovernance.com
+
+### 🖥️ AIR Office
+
+**An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.**
+
+**Alpha 0.1.0**
+
+Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.
+
+Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints.
+
+Workspace records stay on your computer. Choose local models for on-machine inference or cloud providers for their models and tools.
+
+#### Capabilities & Services
+
+- **Integrated AI Safety Fellowship and Crafts.** Develop research and workflows into reusable infrastructure and contribute them to the community through our frictionless embedded protocols.
+- **Market.** Discover reusable resources (Policy documentation, AI Skills, etc), and add them to your AI chat with one click.
+- **AI Teams.** Reach out to our pre-configured selection of agents, or create your own.
+- **Code.** Run diagnostic tools, scripts, and edit your code without leaving the app, through our own integrated VS Code workbench.
+- **Calendar.** Keep events and run recurring AI automations.
+- **Compare.** Run two models side by side on the same prompt.
+- **Chat.** Edit local files, search the web, and run AI safety diagnostics directly from the chat interface.
+- **Media.** Generate images and capture microphone or camera input when the work needs it.
+- **Arcade.** Release stress and recover from occupational overburn by playing arcade video games.
+
+#### Products & Workflows
+
+**Grounded Knowledge Management**
+
+Build searchable Knowledge collections from reports, papers, specifications, legislation, and standards, then ask your AI agent for grounded answers and follow up drafts. Rich-text Notes hold literature synthesis, evaluation write-ups, design docs, memos, and chat history, all at direct reach by you and your favorite AI automations.
+
+Seeded reference standards include the **EU AI Act**, the **NIST AI Risk Management Framework**, the **NIST Generative AI Profile**, and the **OECD AI Principles**. Companion collections for development and evaluation work cover **UN SDG goals**, **OECD-DAC evaluation**, and **UNDP DPI** guidance, with NGO Playbook evidence notes available alongside them. Each collection records its edition and source, and you can add your own research and guidance beside them.
+
+**Specialized AI Actions**
+
+Actions are ordered AI workflows you create, adapt, or schedule for review, reporting, preparation, or any multi-step method your practice needs.
+
+AI safety and governance startup kit:
+- **Quality Improvement** reviews structure, evidence, alternatives, and uncertainty.
+- **Policy Auditing** connects claims to evidence and flags unsupported claims.
+- **Policy Reporting** prepares attributed reports with recommendations and limitations.
+- **Meta-Evaluation** reviews provenance and accountability.
+- **Text Sanitization** removes AI slop and fixes formatting problems.
+
+Actions are ported from our Chrome Extension AI Inspector.
+
+While humans remain responsible for continuous oversight and final judgement, AIR Office helps your AI be aware of that and leverage its capacity for aligned augmentation.
+
+**Frontier AI Safety Research Tools by Gyro Governance Lab**
+
+Two Lab methods sit at the center of how AIR Office treats authority, agency, and lasting human direction in AI-assisted work.
+
+- **The Human Mark:** A structural taxonomy of AI safety risks.
+- **Gyroscopic Reasoning:** A formal protocol for AI alignment.
+
+**Community Playbooks**
+
+Craft Standards package skills, agents, and Actions you can enable for structured work instead of ad-hoc prompting. Two shipped playbooks are ready to adopt:
+
+- **Security Playbook:** OWASP-grounded assessment methods for AI agents, applications, and code, with companion security Reference packs.
+- **NGO Playbook:** Program design, SDG alignment, monitoring and evaluation, and funding strategy skills adapted from NGO Agent Skills by Lijie Zhou, with related development Reference packs.
+
+**GitHub Repository**: https://github.com/gyrogovernance/air-office
+
+**Downloads (Alpha 0.1.0):**
+- Windows (x64): https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-Setup-0.1.0-x64.exe
+- macOS Apple Silicon: https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-arm64.dmg
+- macOS Intel: https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-x64.dmg
 
 ### 🧭 Ethical Travel
 
@@ -565,7 +625,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, GyroGem AI safety agent, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
+**Description**: Open source AI safety frameworks, alignment protocols, and governance tools. The Human Mark AI safety classification, AI Inspector browser extension, AIR Office desktop workspace, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime for auditable inference and multicellular coordination, Computational Climate Control, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for frontier AI safety and responsible AI development.
 
 ### Keywords
 
@@ -582,7 +642,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 #### New Projects & Initiatives
 - The Human Mark
 - AI Inspector
-- GyroGem
+- AIR Office
 - hQVM Kernel
 - hQVM SDK
 - Holonomic Quantum Virtual Machine
@@ -689,7 +749,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: GitHub Repositories - AI Safety, Alignment & Governance Tools | Gyro Governance
 
-**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, GyroGem AI Safety Agent, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routes, Moments Economy, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance Sandbox.
+**Description**: Explore Gyro Governance open source repositories: The Human Mark AI Safety Framework, AI Inspector Browser Extension, AIR Office desktop workspace, hQVM Kernel, QuBEC quantum byte medium, Gyroscopic ASI Runtime specs, Computational Climate Control, GyroDiagnostics Evaluation Suite, Alignment Infrastructure Routes, Moments Economy, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance Sandbox.
 
 **Type**: website
 
@@ -711,13 +771,6 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **URL**: https://github.com/gyrogovernance/tools
 - **Application Category**: DeveloperApplication
 - **Keywords**: AI Safety Framework, Jailbreak Testing, Deceptive Alignment Detection, Control Evaluations, Mechanistic Interpretability, Regulatory Compliance
-
-#### GyroGem
-- **Name**: GyroGem
-- **Description**: AI Safety Agent - Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy, built on The Human Mark framework to guide safer choices and support practical technological literacy
-- **URL**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
-- **Application Category**: AI Safety Agent
-- **Keywords**: AI Safety, Technological Literacy, AI Assistant, Risk Mitigation
 
 #### AI Inspector Browser Extension
 - **Name**: AI Inspector Browser Extension
@@ -760,6 +813,13 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **URL**: https://github.com/gyrogovernance/superintelligence
 - **Application Category**: DeveloperApplication
 - **Keywords**: Collective Superintelligence, AI Coordination, Workforce Capacity, Safety Tasks, Human-AI Integration
+
+#### AIR Office
+- **Name**: AIR Office
+- **Description**: An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety. Human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams. Local-first workplace with Specialized AI Actions, The Human Mark, Gyroscopic Reasoning, Fellowship, Crafts, Market, and Grounded Knowledge collections.
+- **URL**: https://github.com/gyrogovernance/air-office
+- **Application Category**: DesktopApplication
+- **Keywords**: AIR Office, AI Safety Workspace, Local-first, Agentic Research, Knowledge Management, Microsoft Copilot SDK
 
 #### Moments Economy
 - **Name**: Moments Economy
@@ -821,7 +881,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Name**: Gyro Governance AI Safety Research
 
-**Description**: Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, GyroGem AI safety agent, AI Inspector tools, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and post-AGI governance modeling.
+**Description**: Open source research initiative for AI safety evaluation, alignment metrics, and governance frameworks using mathematical physics foundations. Includes The Human Mark classification system, AI Inspector tools, hQVM Kernel for holonomic quantum structure on silicon, Gyroscopic ASI Runtime, QuBEC quantum byte medium, collective superintelligence architecture, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and post-AGI governance modeling.
 
 **URL**: https://gyrogovernance.com/github
 
@@ -834,7 +894,6 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - AGI Safety
 - Superintelligence
 - The Human Mark
-- GyroGem
 - AI Inspector
 - hQVM Kernel
 - Gyroscopic ASI Runtime
@@ -846,7 +905,6 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - Active Existential Risk
 - Gyroscopic Global Governance
 - Quantum Advantage
-- Technological Literacy
 
 ### Page Content
 
@@ -854,7 +912,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 **Title**: Open Source Research & Tools
 
-**Description**: Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing. The Human Mark classification system, GyroGem AI safety agent, AI Inspector browser extension, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development. All repositories are open source and actively maintained.
+**Description**: Independent AI safety evaluation frameworks, alignment protocols, and governance tools for frontier model testing. The Human Mark classification system, AI Inspector browser extension, AIR Office desktop workspace, Gyroscopic ASI Runtime, GyroDiagnostics evaluation suite, Alignment Infrastructure Routes for collective superintelligence, Moments Economy for transformative AI mitigation, Exodus program for active existential risk mitigation, and Gyroscopic Global Governance sandbox. Production-ready solutions for AI risk assessment, dangerous capability evaluations, AI pathology detection, and responsible AI development. All repositories are open source and actively maintained.
 
 #### Repository Descriptions
 
@@ -865,14 +923,6 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 - **Description**: Epistemic taxonomy for jailbreaks, deceptive alignment, and existential risk. Maps all AI safety failures to four displacement risks. Grounded in epistemology and evidence law. Applications include jailbreak testing, deceptive alignment detection, control evaluations, mechanistic interpretability, and regulatory compliance.
 - **URL**: https://github.com/gyrogovernance/tools
 - **Tags**: AI Safety Framework, Jailbreak Testing, Deceptive Alignment Detection, Control Evaluations, Mechanistic Interpretability, Regulatory Compliance
-
-##### GyroGem
-- **Emoji**: 🌟
-- **Name**: GyroGem
-- **Title**: AI Safety Agent
-- **Description**: Tailored AI safety assistant explaining AI and mitigating risks of technological illiteracy. Built on The Human Mark framework to map common AI failure patterns and guide safer choices. Supports technological literacy: the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.
-- **URL**: https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing
-- **Tags**: AI Safety, Technological Literacy, AI Assistant, Risk Mitigation
 
 ##### AI Inspector Browser Extension
 - **Emoji**: 🔍
@@ -938,6 +988,14 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 - **Description**: Coordination infrastructure that amplifies human potential alongside AI. Routes workforce capacity, funding, and safety tasks into a unified, verifiable history. Connects three critical groups: labs for scaling without chaos, funders for portfolio risk visibility, and everyone for paid, verifiable contribution units. Treats AI as part of collective network ensuring human agency scales with systems. Coordinates activity across Economy, Employment, Education, and Ecology.
 - **URL**: https://github.com/gyrogovernance/superintelligence
 - **Tags**: Collective Superintelligence, Workforce Routing, Safety Tasks, Human-AI Integration, Coordination Infrastructure
+
+##### AIR Office
+- **Emoji**: 🖥️
+- **Name**: AIR Office
+- **Title**: AI-native desktop workspace for agentic research and knowledge management
+- **Description**: Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer.
+- **URL**: https://github.com/gyrogovernance/air-office
+- **Tags**: AIR Office, Local-first, Agentic Research, Knowledge Management, AI Safety, Microsoft Copilot SDK
 
 ##### Moments Economy
 - **Emoji**: 🪙
@@ -1013,7 +1071,7 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 
 ##### AI Safety Frameworks, Alignment Tools & Governance Solutions
 
-Gyro Governance develops comprehensive **open source AI safety frameworks**, **AI alignment protocols**, and **AI governance tools** for frontier model testing, dangerous capability assessments, and AI pathology detection. Our repositories include **The Human Mark** classification system, **GyroGem** AI safety agent, **AI Inspector browser extension**, **Gyroscopic ASI Runtime**, **GyroDiagnostics evaluation suite**, **Alignment Infrastructure Routes** for collective superintelligence, **Moments Economy** for transformative AI mitigation, **Exodus** for active existential risk mitigation, and **Gyroscopic Global Governance** sandbox. Production-ready solutions for **AI risk assessment**, **AI safety evaluation**, and **responsible AI development**.
+Gyro Governance develops comprehensive **open source AI safety frameworks**, **AI alignment protocols**, and **AI governance tools** for frontier model testing, dangerous capability assessments, and AI pathology detection. Our repositories include **The Human Mark** classification system, **AI Inspector browser extension**, **AIR Office** desktop workspace, **Gyroscopic ASI Runtime**, **GyroDiagnostics evaluation suite**, **Alignment Infrastructure Routes** for collective superintelligence, **Moments Economy** for transformative AI mitigation, **Exodus** for active existential risk mitigation, and **Gyroscopic Global Governance** sandbox. Production-ready solutions for **AI risk assessment**, **AI safety evaluation**, and **responsible AI development**.
 
 ##### The Human Mark (THM) - AI Safety Classification System
 
@@ -1022,10 +1080,6 @@ Gyro Governance develops comprehensive **open source AI safety frameworks**, **A
 Grounded in epistemology and evidence law's categorical distinction separating direct testimony and hearsay, THM classifies all AI Safety Risks as four capacities and their corresponding displacements arising between Direct and Indirect forms of Authority and Agency.
 
 **The Human Mark** maps all **AI safety failures** to four displacement risks: **Governance Traceability Displacement**, **Information Variety Displacement**, **Inference Accountability Displacement**, and **Intelligence Integrity Displacement**. Applications include **jailbreak testing**, **deceptive alignment detection**, **control evaluations**, **mechanistic interpretability**, and **regulatory compliance**.
-
-##### GyroGem - AI Safety Agent
-
-**GyroGem** is a tailored AI safety assistant explaining AI and mitigating **technological illiteracy risks**. Built on The Human Mark framework to map common AI failure patterns and guide safer choices. Supports **technological literacy**: the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and societal impacts.
 
 ##### AI Inspector Browser Extension
 
@@ -1049,6 +1103,10 @@ The **hQVM** (Holonomic Quantum Virtual Machine) is a compact finite-state kerne
 - **Dangerous Capability Evaluations**: Assess **AI scheming**, **AI autonomy risks**, and potential for catastrophic failure in **large language models (LLMs)** and **frontier models**
 - **AI Alignment Metrics**: Measure **structural AI alignment**, behavioral integrity, and **AI transparency** using physics-informed quantitative methods
 - **Third-Party AI Evaluation**: **External AI evaluation** framework enabling **democratic AI evaluation** and **independent AI testing** by researchers worldwide
+
+##### AIR Office
+
+**AIR Office** is an AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety. Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer. Alpha 0.1.0 desktop builds are available for Windows and macOS.
 
 ##### Collective Superintelligence & Transformative AI
 

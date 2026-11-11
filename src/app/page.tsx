@@ -7,7 +7,9 @@ import GooglePreferredSourceButton from "@/components/GooglePreferredSourceButto
 import NotionIcon from "@/components/icons/NotionIcon";
 import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
-import GoogleIcon from "@/components/icons/GoogleIcon";
+import WindowsIcon from "@/components/icons/WindowsIcon";
+import AppleIcon from "@/components/icons/AppleIcon";
+import AIROfficeWelcomeImage from "@/components/AIROfficeWelcomeImage";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
 import StatBadge from "@/components/StatBadge";
@@ -58,7 +60,7 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
             { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
-            { emoji: "🖥️", title: "AIR Office", desc: "Coming soon: AI-native workspace for agentic research and policy analysis", href: "#air-office" },
+            { emoji: "🖥️", title: "AIR Office", desc: "AI-native desktop workspace for agentic research and knowledge management", href: "#air-office" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🧠", title: "hQVM AE Autoencoder", desc: "Group-equivariant autoencoder for Mechanistic Interpretability", href: "#hqvm-ae" },
@@ -166,7 +168,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
-              { dot: "bg-cyan-500", title: "AIR Office", desc: "Coming soon: agentic research and policy workspace", date: "19 Oct 2026", href: "#air-office" },
+              { dot: "bg-cyan-500", title: "AIR Office Alpha", desc: "Desktop builds for Windows and macOS", date: "11 Nov 2026", href: "#air-office" },
               { dot: "bg-red-500", title: "Exodus Program Initiated", desc: "High Risks Triggered", date: "04 Oct 2026", href: "#exodus" },
               { dot: "bg-blue-500", title: "GGG Second Edition", desc: "AGI/ASI Governance Simulation Sandbox", date: "25 Sep 2026", href: "#ggg" },
               { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
@@ -177,7 +179,6 @@ export default function Home() {
               { dot: "bg-emerald-500", title: "Research on Percolation and Cohomology", desc: "New Finite-state transport and Grothendieck bound analyses on the hQVM kernel", date: "02-15 Jul 2026", href: "#hqvm-experiments" },
               { dot: "bg-green-500", title: "Ethical Travel", desc: "New Collective Superintelligence Program", date: "02 Jun 2026", href: "#ethical-travel" },
               { dot: "bg-amber-500", title: "smartbites.github.io", desc: "Updated", date: "28 Apr 2026", href: "#smart-bites" },
-              { dot: "bg-violet-500", title: "GyroGem", desc: "New AI Safety Agent for technological literacy", date: "15 Apr 2026", href: "#gyrogem" },
               { dot: "bg-cyan-500", title: "Gyroscopic ASI Runtime", desc: "New llama.cpp Backend", date: "14 Apr 2026", href: "#gyroscopic" },
               { dot: "bg-cyan-500", title: "AI Compute Optimizations", desc: "Replaced floating-point math and eliminated expensive overhead.", date: "17 Mar 2026", href: "#hqvm" },
               { dot: "bg-blue-500", title: "hQVM Kernel", desc: "Verified uniform mixing and holographic compression", date: "11 Mar 2026", href: "#hqvm" },
@@ -320,55 +321,6 @@ export default function Home() {
     </div>
   </LiquidGlassCard>
 </div>
-      {/* ================================================================
-          HERO CARD — GyroGem
-          ================================================================ */}
-      <div id="gyrogem" className="mb-12 animate-fade-in-up">
-        <LiquidGlassCard className="glass-card glass-card-purple rounded-[2rem] shadow-2xl">
-          <div className="relative z-10 p-4 sm:p-6 md:p-8">
-            <div className="text-center mb-8">
-              <Image
-                src="/assets/GyroGem.png"
-                alt="GyroGem AI Safety Agent"
-                width={110}
-                height={110}
-                className="mx-auto mb-4 h-auto w-24 sm:w-28"
-                sizes="(max-width: 640px) 96px, 112px"
-                loading="lazy"
-              />
-              <h2 className="text-3xl font-bold text-foreground mb-3">
-                GyroGem: AI Safety Agent
-              </h2>
-              <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
-                Explaining AI and Mitigating Risks of technological illiteracy
-              </p>
-            </div>
-
-            <div className="glass-card-inner rounded-xl p-4 sm:p-6 text-center mb-6">
-              <p className="text-sm sm:text-base text-foreground-secondary">
-                GyroGem is a tailored AI safety assistant built on The Human Mark (THM), a framework that maps common AI failure patterns and guides safer choices. It also supports technological literacy, the practical ability to use technology well, question outputs critically, and understand where tools help, where they fail, and how they affect people and society.
-              </p>
-            </div>
-
-            <p className="text-sm text-foreground-tertiary text-center mb-3">
-              Chat on:
-            </p>
-            <div className="mt-2 flex flex-col sm:flex-row justify-center gap-3">
-              <a
-                href="https://gemini.google.com/gem/1B-gQt-M3aKfsv9HDp_8gTQHG89bCfqlO?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
-                aria-label="Chat with GyroGem on Google Gemini (opens in new tab)"
-              >
-                <GoogleIcon className="w-5 h-5 mr-2" />
-                Google
-              </a>
-            </div>
-          </div>
-        </LiquidGlassCard>
-      </div>
-
       {/* ================================================================
           HERO CARD — AIR
           ================================================================ */}
@@ -517,100 +469,224 @@ export default function Home() {
           ================================================================ */}
       <div id="air-office" className="mb-12 animate-fade-in-up">
         <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] overflow-hidden shadow-2xl">
-          <div className="relative z-10 w-full flex justify-center bg-gradient-to-b from-cyan-900/20 to-transparent px-4 pt-6">
-            <Image
-              src="/assets/AIR_Office_welcome.webp"
-              alt="AIR Office welcome screen"
-              width={1024}
-              height={576}
-              className="w-full max-w-2xl h-auto object-contain rounded-2xl"
-              sizes="(max-width: 768px) 100vw, 672px"
-              loading="lazy"
-            />
-          </div>
-
           <div className="relative z-10 p-4 sm:p-6 md:p-8">
             <div className="text-center mb-8">
+              <Image
+                src="/assets/air_office_icon.png"
+                alt="AIR Office"
+                width={110}
+                height={110}
+                className="mx-auto mb-4 h-auto w-24 sm:w-28"
+                sizes="(max-width: 640px) 96px, 112px"
+                loading="lazy"
+              />
               <span className="inline-block mb-3 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-cyan-500/15 text-cyan-700 dark:text-cyan-300">
-                Coming Soon
+                Alpha 0.1.0
               </span>
               <h2 className="text-3xl font-bold text-foreground mb-2">
                 AIR Office
               </h2>
-              <p className="text-lg font-semibold text-foreground-secondary mb-4">
-                An AI-native workspace for agentic research, policy analysis, and knowledge management
+              <p className="text-lg font-semibold text-foreground-secondary mb-6">
+                An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.
               </p>
+              <div className="w-full flex justify-center bg-gradient-to-b from-cyan-500/10 dark:from-cyan-900/20 to-transparent mb-6">
+                <AIROfficeWelcomeImage />
+              </div>
               <div className="max-w-3xl mx-auto space-y-3 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
                 <p>
-                  AIR Office brings sources, AI conversations, and working documents into one place for researchers, policy analysts, and governance teams who prepare analysis on transformative AI and its consequences.
+                  Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.
                 </p>
                 <p>
-                  You keep judgement over the questions, corrections, and final brief. Selected review tools come from AI Inspector, and the desktop app is designed for local use without account registration.
+                  Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints.
+                </p>
+                <p>
+                  Workspace records stay on your computer. Choose local models for on-machine inference or cloud providers for their models and tools.
                 </p>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-                  In the workspace
-                </h3>
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6">
+              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
+                Capabilities &amp; Services
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
                 <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
                   <li className="flex items-start">
-                    <span className="mr-2">📁</span>
-                    <span>Programs, Knowledge collections, and Notes beside chat</span>
+                    <span className="mr-2">🏛️</span>
+                    <span><strong>Integrated AI Safety Fellowship and Crafts.</strong> Develop research and workflows into reusable infrastructure and contribute them to the community through our frictionless embedded protocols.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2">🔎</span>
-                    <span>Claim and evidence review, policy reporting, and Human Mark meta-evaluation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">📚</span>
-                    <span>EU AI Act, NIST AI RMF, OECD AI Principles, and The Human Mark</span>
+                    <span className="mr-2">🛒</span>
+                    <span><strong>Market.</strong> Discover reusable resources (Policy documentation, AI Skills, etc), and add them to your AI chat with one click.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">🤖</span>
-                    <span>Agents, prompts, and skills for repeatable research methods</span>
+                    <span><strong>AI Teams.</strong> Reach out to our pre-configured selection of agents, or create your own.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">💻</span>
+                    <span><strong>Code.</strong> Run diagnostic tools, scripts, and edit your code without leaving the app, through our own integrated VS Code workbench.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">📅</span>
+                    <span><strong>Calendar.</strong> Keep events and run recurring AI automations.</span>
                   </li>
                 </ul>
-              </div>
-
-              <div className="glass-card-inner rounded-xl p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-                  Built for
-                </h3>
                 <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
                   <li className="flex items-start">
-                    <span className="mr-2">🔬</span>
-                    <span>Researchers who own a policy area from evidence to brief</span>
+                    <span className="mr-2">⚖️</span>
+                    <span><strong>Compare.</strong> Run two models side by side on the same prompt.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2">🏛️</span>
-                    <span>Policy advisers on frontier AI, safety, and governance</span>
+                    <span className="mr-2">🔎</span>
+                    <span><strong>Chat.</strong> Edit local files, search the web, and run AI safety diagnostics directly from the chat interface.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2">🧭</span>
-                    <span>Think tanks building AI-native research practice</span>
+                    <span className="mr-2">🖼️</span>
+                    <span><strong>Media.</strong> Generate images and capture microphone or camera input when the work needs it.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2">🛡️</span>
-                    <span>Teams reviewing evaluations, risk assessments, and guidance</span>
+                    <span className="mr-2">🕹️</span>
+                    <span><strong>Arcade.</strong> Release stress and recover from occupational overburn by playing arcade video games.</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="mt-8 flex justify-center">
-              <a
-                href="https://github.com/gyrogovernance/air-office"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                aria-label="View AIR Office on GitHub (opens in new tab)"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View on GitHub
-              </a>
+            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 space-y-6 text-sm sm:text-base text-foreground-secondary">
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+                  Products &amp; Workflows
+                </h3>
+                <h4 className="text-base font-semibold text-foreground mb-2">
+                  Grounded Knowledge Management
+                </h4>
+                <p className="mb-3">
+                  Build searchable Knowledge collections from reports, papers, specifications, legislation, and standards, then ask your AI agent for grounded answers and follow up drafts. Rich-text Notes hold literature synthesis, evaluation write-ups, design docs, memos, and chat history, all at direct reach by you and your favorite AI automations.
+                </p>
+                <p>
+                  Seeded reference standards include the <strong>EU AI Act</strong>, the <strong>NIST AI Risk Management Framework</strong>, the <strong>NIST Generative AI Profile</strong>, and the <strong>OECD AI Principles</strong>. Companion collections for development and evaluation work cover <strong>UN SDG goals</strong>, <strong>OECD-DAC evaluation</strong>, and <strong>UNDP DPI</strong> guidance, with NGO Playbook evidence notes available alongside them. Each collection records its edition and source, and you can add your own research and guidance beside them.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-base font-semibold text-foreground mb-2">
+                  Specialized AI Actions
+                </h4>
+                <p className="mb-3">
+                  Actions are ordered AI workflows you create, adapt, or schedule for review, reporting, preparation, or any multi-step method your practice needs.
+                </p>
+                <p className="mb-2 font-medium text-foreground">
+                  AI safety and governance startup kit:
+                </p>
+                <ul className="space-y-2 list-none mb-3">
+                  <li className="flex items-start">
+                    <span className="mr-2">✍️</span>
+                    <span><strong>Quality Improvement</strong> reviews structure, evidence, alternatives, and uncertainty.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🔎</span>
+                    <span><strong>Policy Auditing</strong> connects claims to evidence and flags unsupported claims.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">📋</span>
+                    <span><strong>Policy Reporting</strong> prepares attributed reports with recommendations and limitations.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🧭</span>
+                    <span><strong>Meta-Evaluation</strong> reviews provenance and accountability.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">✨</span>
+                    <span><strong>Text Sanitization</strong> removes AI slop and fixes formatting problems.</span>
+                  </li>
+                </ul>
+                <p className="mb-3 italic">
+                  Actions are ported from our Chrome Extension <a href="#inspector" className="underline hover:text-foreground transition-colors">AI Inspector</a>.
+                </p>
+                <p>
+                  While humans remain responsible for continuous oversight and final judgement, AIR Office helps your AI be aware of that and leverage its capacity for aligned augmentation.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-base font-semibold text-foreground mb-2">
+                  Frontier AI Safety Research Tools by Gyro Governance Lab
+                </h4>
+                <p className="mb-3">
+                  Two Lab methods sit at the center of how AIR Office treats authority, agency, and lasting human direction in AI-assisted work.
+                </p>
+                <ul className="space-y-2 list-none">
+                  <li className="flex items-start">
+                    <span className="mr-2">🤚</span>
+                    <span><strong>The Human Mark:</strong> A structural taxonomy of AI safety risks. <a href="#thm" className="underline hover:text-foreground transition-colors">Learn More</a></span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🎓</span>
+                    <span><strong>Gyroscopic Reasoning:</strong> A formal protocol for AI alignment. <a href="#gyroscope" className="underline hover:text-foreground transition-colors">Learn More</a></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-base font-semibold text-foreground mb-2">
+                  Community Playbooks
+                </h4>
+                <p className="mb-3">
+                  Craft Standards package skills, agents, and Actions you can enable for structured work instead of ad-hoc prompting. Two shipped playbooks are ready to adopt:
+                </p>
+                <ul className="space-y-2 list-none">
+                  <li className="flex items-start">
+                    <span className="mr-2">🛡️</span>
+                    <span><strong>Security Playbook:</strong> OWASP-grounded assessment methods for AI agents, applications, and code, with companion security Reference packs.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2">🌍</span>
+                    <span><strong>NGO Playbook:</strong> Program design, SDG alignment, monitoring and evaluation, and funding strategy skills adapted from NGO Agent Skills by Lijie Zhou, with related development Reference packs.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 space-y-4">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+                <a
+                  href="https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-Setup-0.1.0-x64.exe"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Download AIR Office for Windows"
+                >
+                  <WindowsIcon className="w-5 h-5 mr-2" />
+                  Windows
+                </a>
+                <a
+                  href="https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-arm64.dmg"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Download AIR Office for Mac with Apple Silicon"
+                >
+                  <AppleIcon className="w-5 h-5 mr-2" />
+                  Mac (Apple Silicon)
+                </a>
+                <a
+                  href="https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-x64.dmg"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Download AIR Office for Mac with Intel"
+                >
+                  <AppleIcon className="w-5 h-5 mr-2" />
+                  Mac (Intel)
+                </a>
+              </div>
+              <div className="flex justify-center">
+                <a
+                  href="https://github.com/gyrogovernance/air-office"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-xl transition-all duration-300 font-medium secondary-button"
+                  aria-label="View AIR Office on GitHub (opens in new tab)"
+                >
+                  <GitHubIcon className="w-5 h-5 mr-2" />
+                  View on GitHub
+                </a>
+              </div>
             </div>
           </div>
         </LiquidGlassCard>
