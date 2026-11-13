@@ -6,6 +6,11 @@ interface SoftwareSchemaProps {
   applicationCategory: string;
   operatingSystem?: string;
   keywords?: string[];
+  softwareVersion?: string;
+  datePublished?: string;
+  downloadUrl?: string | string[];
+  screenshot?: string | string[];
+  license?: string;
 }
 
 export default function SoftwareSchema({
@@ -16,45 +21,61 @@ export default function SoftwareSchema({
   applicationCategory,
   operatingSystem = "Cross-platform",
   keywords = [],
+  softwareVersion = "Latest",
+  datePublished = "2024",
+  downloadUrl,
+  screenshot,
+  license = "https://opensource.org/licenses/MIT",
 }: SoftwareSchemaProps) {
-  const structuredData = {
+  const structuredData: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": name,
-    "description": description,
-    "url": url,
-    "applicationCategory": applicationCategory,
-    "operatingSystem": operatingSystem,
-    "offers": {
+    name,
+    description,
+    url,
+    applicationCategory,
+    operatingSystem,
+    offers: {
       "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
+      price: "0",
+      priceCurrency: "USD",
     },
-    "author": {
+    author: {
       "@type": "Organization",
-      "name": "Gyro Governance",
-      "url": "https://gyrogovernance.com"
+      name: "Gyro Governance",
+      url: "https://gyrogovernance.com",
     },
-    "codeRepository": codeRepository,
-    "programmingLanguage": ["Python", "TypeScript"],
-    "license": "https://opensource.org/licenses/MIT",
-    "keywords": keywords.join(", "),
-    "isAccessibleForFree": true,
-    "softwareVersion": "Latest",
-    "datePublished": "2024",
-    "softwareHelp": {
+    publisher: {
+      "@type": "Organization",
+      name: "Gyro Governance",
+      url: "https://gyrogovernance.com",
+    },
+    codeRepository,
+    programmingLanguage: ["TypeScript", "Python"],
+    license,
+    keywords: keywords.join(", "),
+    isAccessibleForFree: true,
+    softwareVersion,
+    datePublished,
+    softwareHelp: {
       "@type": "CreativeWork",
-      "url": `${codeRepository}#readme`
-    }
+      url: `${codeRepository}#readme`,
+    },
   };
+
+  if (downloadUrl) {
+    structuredData.downloadUrl = downloadUrl;
+  }
+  if (screenshot) {
+    structuredData.screenshot = screenshot;
+  }
 
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(structuredData, null, 2),
+        __html: JSON.stringify(structuredData),
       }}
     />
   );
 }
-

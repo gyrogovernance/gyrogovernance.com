@@ -9,6 +9,21 @@
   <link rel="icon" type="image/png" sizes="128x128" href="./air_Icon-128.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="./air_Icon-256.png"/>
   <title>AIR Office</title>
+  <!-- Website embed: force Settings → Liquid Glass & Transparency off
+       (appearance.flat-materials) before the app bootstraps. -->
+  <script>
+    (function () {
+      try {
+        var key = 'air-office:settings-personal';
+        var raw = localStorage.getItem(key);
+        var prefs = raw ? JSON.parse(raw) : {};
+        if (!prefs || typeof prefs !== 'object' || Array.isArray(prefs)) prefs = {};
+        prefs['appearance.flat-materials'] = true;
+        localStorage.setItem(key, JSON.stringify(prefs));
+        document.documentElement.setAttribute('data-reduced-transparency', 'force');
+      } catch (e) {}
+    })();
+  </script>
   <!-- Critical first paint: keep the canvas dark until the splash dismisses.
        Module CSS sets a light :root surface that would otherwise flash white. -->
   <style>
@@ -64,6 +79,6 @@
       <img class="startup-intro__logo" src="./air_logo_rainbow.png" alt="" width="96" height="96"/>
     </div>
   </div>
-  <div id="root"></div>
+  <div id="root"></div>
 </body>
 </html>

@@ -8,31 +8,40 @@ import AppleIcon from "@/components/icons/AppleIcon";
 import AIROfficeStaticDemo from "@/components/AIROfficeStaticDemo";
 import AIROfficeWalkthroughVideo from "@/components/AIROfficeWalkthroughVideo";
 import ZoomableImage from "@/components/ZoomableImage";
+import SoftwareSchema from "@/components/SoftwareSchema";
+
+const PAGE_TITLE = "AIR Office — Local-First AI Safety Workspace | Gyro Governance";
+const PAGE_DESCRIPTION =
+  "Download AIR Office, a free local-first desktop workspace for AI safety research and knowledge management. Open source for Windows and macOS, with grounded knowledge, specialized AI Actions, and human oversight tools.";
 
 export const metadata: Metadata = {
-  title: "AIR Office | Gyro Governance",
-  description:
-    "AIR Office is an AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety. Local-first, open source, Windows and macOS.",
+  title: {
+    absolute: PAGE_TITLE,
+  },
+  description: PAGE_DESCRIPTION,
   keywords: [
     "AIR Office",
     "Alignment Infrastructure Routes",
     "AI safety workspace",
     "agentic research",
     "knowledge management",
-    "local-first",
+    "local-first desktop app",
     "Microsoft Copilot SDK",
     "AI safety",
     "transformative AI",
     "existential risk",
     "The Human Mark",
     "Gyroscopic Reasoning",
+    "open source AI tools",
   ],
   authors: [{ name: "Gyro Governance" }],
+  creator: "Gyro Governance",
+  publisher: "Gyro Governance",
+  category: "technology",
   metadataBase: new URL("https://gyrogovernance.com"),
   openGraph: {
-    title: "AIR Office | Gyro Governance",
-    description:
-      "An AI-native desktop workspace for agentic research and knowledge management. Local-first, open source, Windows and macOS.",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     url: "https://gyrogovernance.com/air-office",
     siteName: "Gyro Governance",
     type: "website",
@@ -49,9 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIR Office | Gyro Governance",
-    description:
-      "An AI-native desktop workspace for agentic research and knowledge management. Local-first, open source, Windows and macOS.",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     images: ["/assets/air-office/welcome_dark.webp"],
     creator: "@gyrogovernance",
   },
@@ -117,9 +125,98 @@ function DownloadButtons() {
   );
 }
 
+const AIR_OFFICE_SCHEMA_KEYWORDS = [
+  "AIR Office",
+  "AI safety workspace",
+  "local-first",
+  "agentic research",
+  "knowledge management",
+  "Microsoft Copilot SDK",
+  "The Human Mark",
+  "Gyroscopic Reasoning",
+];
+
+function AirOfficeStructuredData() {
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://gyrogovernance.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "AIR Office",
+        item: "https://gyrogovernance.com/air-office",
+      },
+    ],
+  };
+
+  const webPage = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: "https://gyrogovernance.com/air-office",
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Gyro Governance",
+      url: "https://gyrogovernance.com",
+    },
+    about: {
+      "@type": "SoftwareApplication",
+      name: "AIR Office",
+      url: "https://gyrogovernance.com/air-office",
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://gyrogovernance.com/assets/air-office/welcome_dark.webp",
+    },
+  };
+
+  return (
+    <>
+      <SoftwareSchema
+        name="AIR Office"
+        description={PAGE_DESCRIPTION}
+        url="https://gyrogovernance.com/air-office"
+        codeRepository="https://github.com/gyrogovernance/air-office"
+        applicationCategory="DesktopApplication"
+        operatingSystem="Windows 10+, macOS 12+"
+        keywords={AIR_OFFICE_SCHEMA_KEYWORDS}
+        softwareVersion="0.1.0-AIR_Office_Alpha"
+        datePublished="2026-11-11"
+        downloadUrl={[
+          "https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-Setup-0.1.0-x64.exe",
+          "https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-arm64.dmg",
+          "https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-x64.dmg",
+        ]}
+        screenshot={[
+          "https://gyrogovernance.com/assets/air-office/welcome_dark.webp",
+          "https://gyrogovernance.com/assets/air-office/workspace.webp",
+          "https://gyrogovernance.com/assets/air-office/apps.webp",
+        ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPage) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+    </>
+  );
+}
+
 export default function AIROfficePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+      <AirOfficeStructuredData />
       {/* Hero */}
       <div className="mb-12 animate-fade-in-up">
         <LiquidGlassCard className="glass-card glass-card-cyan rounded-[2rem] overflow-hidden shadow-2xl">
@@ -127,7 +224,7 @@ export default function AIROfficePage() {
             <div className="text-center">
               <Image
                 src="/assets/air_office_icon.png"
-                alt="AIR Office"
+                alt="AIR Office app icon"
                 width={110}
                 height={110}
                 className="mx-auto mb-4 h-auto w-24 sm:w-28"
