@@ -178,7 +178,7 @@ export default function Exodus() {
                 <div className="flex justify-center">
                   <a
                     href="#join"
-                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-red-800 to-red-600 hover:from-red-900 hover:to-red-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="inline-flex items-center px-6 py-3 bg-linear-45 from-red-800 to-red-600 hover:from-red-900 hover:to-red-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Join us
                   </a>
@@ -394,7 +394,7 @@ export default function Exodus() {
                   href="https://github.com/gyrogovernance/superintelligence#moments-economy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center px-6 py-3 bg-linear-45 from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                   aria-label="Read the Moments Economy section on GitHub (opens in new tab)"
                 >
                   Documentation

@@ -10,6 +10,7 @@ import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import WindowsIcon from "@/components/icons/WindowsIcon";
 import AppleIcon from "@/components/icons/AppleIcon";
 import AIROfficeWelcomeImage from "@/components/AIROfficeWelcomeImage";
+import AIROfficeWalkthroughVideo from "@/components/AIROfficeWalkthroughVideo";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
 import StatBadge from "@/components/StatBadge";
@@ -60,7 +61,7 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
             { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
-            { emoji: "🖥️", title: "AIR Office", desc: "AI-native desktop workspace for agentic research and knowledge management", href: "#air-office" },
+            { emoji: "🖥️", title: "AIR Office", desc: "AI-native desktop workspace for agentic research and knowledge management", href: "/air-office" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🧠", title: "hQVM AE Autoencoder", desc: "Group-equivariant autoencoder for Mechanistic Interpretability", href: "#hqvm-ae" },
@@ -168,7 +169,7 @@ export default function Home() {
 
           <div className="space-y-1.5 h-50 overflow-y-auto pr-1">
             {[
-              { dot: "bg-cyan-500", title: "AIR Office Alpha", desc: "Desktop builds for Windows and macOS", date: "11 Nov 2026", href: "#air-office" },
+              { dot: "bg-cyan-500", title: "AIR Office Alpha", desc: "Desktop builds for Windows and macOS", date: "11 Nov 2026", href: "/air-office" },
               { dot: "bg-red-500", title: "Exodus Program Initiated", desc: "High Risks Triggered", date: "04 Oct 2026", href: "#exodus" },
               { dot: "bg-blue-500", title: "GGG Second Edition", desc: "AGI/ASI Governance Simulation Sandbox", date: "25 Sep 2026", href: "#ggg" },
               { dot: "bg-indigo-500", title: "hQVM AE Genomics Program", desc: "Frontier applications in DNA and RNA Design", date: "22 Sep 2026", href: "#hqvm-ae" },
@@ -296,7 +297,7 @@ export default function Home() {
           href="https://github.com/gyrogovernance/tools"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-gray-800 hover:to-gray-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center px-6 py-3 bg-linear-45 from-blue-700 to-blue-500 hover:from-gray-800 hover:to-gray-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
           aria-label="View The Human Mark on GitHub (opens in new tab)"
         >
           <GitHubIcon className="w-5 h-5 mr-2" />
@@ -453,7 +454,7 @@ export default function Home() {
                 href="https://air.gyrogovernance.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-cyan-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-blue-700 to-blue-500 hover:from-blue-600 hover:to-cyan-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Open AIR website"
               >
                 Open the AIR website
@@ -497,154 +498,11 @@ export default function Home() {
                   Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.
                 </p>
                 <p>
-                  Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints.
-                </p>
-                <p>
                   Workspace records stay on your computer. Choose local models for on-machine inference or cloud providers for their models and tools.
                 </p>
               </div>
-            </div>
-
-            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6">
-              <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">
-                Capabilities &amp; Services
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="mr-2">🏛️</span>
-                    <span><strong>Integrated AI Safety Fellowship and Crafts.</strong> Develop research and workflows into reusable infrastructure and contribute them to the community through our frictionless embedded protocols.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🛒</span>
-                    <span><strong>Market.</strong> Discover reusable resources (Policy documentation, AI Skills, etc), and add them to your AI chat with one click.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🤖</span>
-                    <span><strong>AI Teams.</strong> Reach out to our pre-configured selection of agents, or create your own.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">💻</span>
-                    <span><strong>Code.</strong> Run diagnostic tools, scripts, and edit your code without leaving the app, through our own integrated VS Code workbench.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">📅</span>
-                    <span><strong>Calendar.</strong> Keep events and run recurring AI automations.</span>
-                  </li>
-                </ul>
-                <ul className="space-y-2 text-sm sm:text-base text-foreground-secondary list-none">
-                  <li className="flex items-start">
-                    <span className="mr-2">⚖️</span>
-                    <span><strong>Compare.</strong> Run two models side by side on the same prompt.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🔎</span>
-                    <span><strong>Chat.</strong> Edit local files, search the web, and run AI safety diagnostics directly from the chat interface.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🖼️</span>
-                    <span><strong>Media.</strong> Generate images and capture microphone or camera input when the work needs it.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🕹️</span>
-                    <span><strong>Arcade.</strong> Release stress and recover from occupational overburn by playing arcade video games.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="glass-card-inner rounded-xl p-4 sm:p-6 mb-6 space-y-6 text-sm sm:text-base text-foreground-secondary">
-              <div>
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
-                  Products &amp; Workflows
-                </h3>
-                <h4 className="text-base font-semibold text-foreground mb-2">
-                  Grounded Knowledge Management
-                </h4>
-                <p className="mb-3">
-                  Build searchable Knowledge collections from reports, papers, specifications, legislation, and standards, then ask your AI agent for grounded answers and follow up drafts. Rich-text Notes hold literature synthesis, evaluation write-ups, design docs, memos, and chat history, all at direct reach by you and your favorite AI automations.
-                </p>
-                <p>
-                  Seeded reference standards include the <strong>EU AI Act</strong>, the <strong>NIST AI Risk Management Framework</strong>, the <strong>NIST Generative AI Profile</strong>, and the <strong>OECD AI Principles</strong>. Companion collections for development and evaluation work cover <strong>UN SDG goals</strong>, <strong>OECD-DAC evaluation</strong>, and <strong>UNDP DPI</strong> guidance, with NGO Playbook evidence notes available alongside them. Each collection records its edition and source, and you can add your own research and guidance beside them.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-base font-semibold text-foreground mb-2">
-                  Specialized AI Actions
-                </h4>
-                <p className="mb-3">
-                  Actions are ordered AI workflows you create, adapt, or schedule for review, reporting, preparation, or any multi-step method your practice needs.
-                </p>
-                <p className="mb-2 font-medium text-foreground">
-                  AI safety and governance startup kit:
-                </p>
-                <ul className="space-y-2 list-none mb-3">
-                  <li className="flex items-start">
-                    <span className="mr-2">✍️</span>
-                    <span><strong>Quality Improvement</strong> reviews structure, evidence, alternatives, and uncertainty.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🔎</span>
-                    <span><strong>Policy Auditing</strong> connects claims to evidence and flags unsupported claims.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">📋</span>
-                    <span><strong>Policy Reporting</strong> prepares attributed reports with recommendations and limitations.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🧭</span>
-                    <span><strong>Meta-Evaluation</strong> reviews provenance and accountability.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">✨</span>
-                    <span><strong>Text Sanitization</strong> removes AI slop and fixes formatting problems.</span>
-                  </li>
-                </ul>
-                <p className="mb-3 italic">
-                  Actions are ported from our Chrome Extension <a href="#inspector" className="underline hover:text-foreground transition-colors">AI Inspector</a>.
-                </p>
-                <p>
-                  While humans remain responsible for continuous oversight and final judgement, AIR Office helps your AI be aware of that and leverage its capacity for aligned augmentation.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-base font-semibold text-foreground mb-2">
-                  Frontier AI Safety Research Tools by Gyro Governance Lab
-                </h4>
-                <p className="mb-3">
-                  Two Lab methods sit at the center of how AIR Office treats authority, agency, and lasting human direction in AI-assisted work.
-                </p>
-                <ul className="space-y-2 list-none">
-                  <li className="flex items-start">
-                    <span className="mr-2">🤚</span>
-                    <span><strong>The Human Mark:</strong> A structural taxonomy of AI safety risks. <a href="#thm" className="underline hover:text-foreground transition-colors">Learn More</a></span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🎓</span>
-                    <span><strong>Gyroscopic Reasoning:</strong> A formal protocol for AI alignment. <a href="#gyroscope" className="underline hover:text-foreground transition-colors">Learn More</a></span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-base font-semibold text-foreground mb-2">
-                  Community Playbooks
-                </h4>
-                <p className="mb-3">
-                  Craft Standards package skills, agents, and Actions you can enable for structured work instead of ad-hoc prompting. Two shipped playbooks are ready to adopt:
-                </p>
-                <ul className="space-y-2 list-none">
-                  <li className="flex items-start">
-                    <span className="mr-2">🛡️</span>
-                    <span><strong>Security Playbook:</strong> OWASP-grounded assessment methods for AI agents, applications, and code, with companion security Reference packs.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">🌍</span>
-                    <span><strong>NGO Playbook:</strong> Program design, SDG alignment, monitoring and evaluation, and funding strategy skills adapted from NGO Agent Skills by Lijie Zhou, with related development Reference packs.</span>
-                  </li>
-                </ul>
+              <div className="mt-6 max-w-3xl mx-auto">
+                <AIROfficeWalkthroughVideo />
               </div>
             </div>
 
@@ -652,30 +510,37 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3">
                 <a
                   href="https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-Setup-0.1.0-x64.exe"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-border bg-white/80 text-foreground hover:bg-white dark:bg-white/10 dark:hover:bg-white/15 text-sm font-semibold tracking-wide transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-classic-blue/40"
                   aria-label="Download AIR Office for Windows"
                 >
-                  <WindowsIcon className="w-5 h-5 mr-2" />
+                  <WindowsIcon className="w-4 h-4 mr-2" />
                   Windows
                 </a>
                 <a
                   href="https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-arm64.dmg"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-border bg-white/80 text-foreground hover:bg-white dark:bg-white/10 dark:hover:bg-white/15 text-sm font-semibold tracking-wide transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-classic-blue/40"
                   aria-label="Download AIR Office for Mac with Apple Silicon"
                 >
-                  <AppleIcon className="w-5 h-5 mr-2" />
+                  <AppleIcon className="w-4 h-4 mr-2" />
                   Mac (Apple Silicon)
                 </a>
                 <a
                   href="https://github.com/gyrogovernance/air-office/releases/download/0.1.0-AIR_Office_Alpha/AIR-Office-0.1.0-x64.dmg"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-border bg-white/80 text-foreground hover:bg-white dark:bg-white/10 dark:hover:bg-white/15 text-sm font-semibold tracking-wide transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-classic-blue/40"
                   aria-label="Download AIR Office for Mac with Intel"
                 >
-                  <AppleIcon className="w-5 h-5 mr-2" />
+                  <AppleIcon className="w-4 h-4 mr-2" />
                   Mac (Intel)
                 </a>
               </div>
-              <div className="flex justify-center">
+              <div className="flex flex-col sm:flex-row justify-center gap-3">
+                <Link
+                  href="/air-office"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-linear-45 from-blue-700 to-cyan-500 hover:from-blue-600 hover:to-cyan-400 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Open the AIR Office page"
+                >
+                  Learn more
+                </Link>
                 <a
                   href="https://github.com/gyrogovernance/air-office"
                   target="_blank"
@@ -757,7 +622,7 @@ export default function Home() {
                 href="https://chromewebstore.google.com/detail/ai-inspector/hcblmheihnlngnogobgclhfahjljnbok?utm_source=item-share-cb"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-purple-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Add AI Inspector to Chrome (opens in new tab)"
               >
                 <Image src="/assets/chrome.png" alt="Chrome" width={20} height={20} className="mr-2" />
@@ -908,7 +773,7 @@ export default function Home() {
           href="https://github.com/gyrogovernance/superintelligence"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center px-6 py-3 bg-linear-45 from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-purple-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
           aria-label="View the Gyroscopic ASI Infrastructure on GitHub (opens in new tab)"
         >
           <GitHubIcon className="w-5 h-5 mr-2" />
@@ -1051,7 +916,7 @@ export default function Home() {
           href="https://github.com/gyrogovernance/superintelligence#%EF%B8%8F-hqvm-ae-group-equivariant-autoencoder"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-violet-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center justify-center px-6 py-3 bg-linear-45 from-indigo-600 to-purple-600 hover:from-purple-600 hover:to-violet-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
           aria-label="View hQVM AE on GitHub (opens in new tab)"
         >
           <GitHubIcon className="w-5 h-5 mr-2" />
@@ -1175,7 +1040,7 @@ export default function Home() {
           href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/specs/Gyroscopic_ASI_Runtime_Specs.md"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center px-6 py-3 bg-linear-45 from-cyan-600 to-blue-600 hover:from-blue-600 hover:to-indigo-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
           aria-label="View the Gyroscopic ASI Runtime on GitHub (opens in new tab)"
         >
           <GitHubIcon className="w-5 h-5 mr-2" />
@@ -1296,7 +1161,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/diagnostics"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="View GyroDiagnostics on GitHub (opens in new tab)"
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
@@ -1374,7 +1239,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/tools"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="View Gyroscope on GitHub (opens in new tab)"
               >
                 <GitHubIcon className="w-5 h-5 mr-2" />
@@ -1434,7 +1299,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
               <Link
                 href="/articles/ggg-simulator-results"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-blue-600 to-teal-600 hover:from-teal-600 hover:to-emerald-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Read the GGG simulator article"
               >
                 Read interactive results
@@ -1559,7 +1424,7 @@ export default function Home() {
                 href="https://github.com/gyrogovernance/superintelligence/blob/main/docs/programs/AIR_Moments_Economy_Whitepaper.md"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-emerald-600 to-teal-600 hover:from-teal-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Read the Moments Economy Whitepaper (opens in new tab)"
               >
                 Read the Whitepaper
@@ -1627,7 +1492,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Link
                 href="/exodus"
-                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-red-700 to-red-500 hover:from-red-800 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-6 py-3 bg-linear-45 from-red-700 to-red-500 hover:from-red-800 hover:to-orange-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Take action on the Exodus program page"
               >
                 Take action
@@ -1690,7 +1555,7 @@ export default function Home() {
                 href="https://travel.gyrogovernance.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-linear-45 from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Explore the Ethical Travel project (opens in new tab)"
               >
                 Plan your trip Safely
@@ -1947,7 +1812,7 @@ export default function Home() {
                   href="https://github.com/gyrogovernance/science"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-linear-45 from-green-600 to-emerald-600 hover:from-emerald-600 hover:to-teal-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                   aria-label="Visit Science Lab on GitHub (opens in new tab)"
                 >
                   <GitHubIcon className="w-5 h-5 mr-2" />
@@ -2041,10 +1906,10 @@ export default function Home() {
                       <h4 className="text-xl font-semibold text-foreground mb-3">{ds.title}</h4>
                       <p className="text-foreground-secondary mb-4">{ds.desc}</p>
                       <div className="flex flex-wrap gap-2">
-                        <a href={ds.hf} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl" aria-label={`View ${ds.title} dataset on HuggingFace (opens in new tab)`}>
+                        <a href={ds.hf} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 bg-linear-45 from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl" aria-label={`View ${ds.title} dataset on HuggingFace (opens in new tab)`}>
                           HuggingFace <ExternalLinkIcon className="ml-2 w-3 h-3" />
                         </a>
-                        <a href={ds.kaggle} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl" aria-label={`View ${ds.title} dataset on Kaggle (opens in new tab)`}>
+                        <a href={ds.kaggle} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 bg-linear-45 from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl" aria-label={`View ${ds.title} dataset on Kaggle (opens in new tab)`}>
                           Kaggle <ExternalLinkIcon className="ml-2 w-3 h-3" />
                         </a>
                       </div>
@@ -2098,7 +1963,7 @@ export default function Home() {
                           href="https://smartbites.github.io/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white text-sm font-medium rounded-full transition-all duration-300"
+                          className="inline-flex items-center px-4 py-2 bg-linear-45 from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white text-sm font-medium rounded-full transition-all duration-300"
                           aria-label="Open Smart Bites site (opens in new tab)"
                         >
                           Open Site
@@ -2254,7 +2119,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-center gap-4">
             <Link
               href="/articles"
-              className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-linear-45 from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               aria-label="View all articles"
             >
               View All Articles

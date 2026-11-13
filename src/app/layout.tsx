@@ -11,6 +11,7 @@ import StructuredData from '@/components/StructuredData';
 import CookieBanner from '@/components/CookieBanner';
 import GitHubIcon from '@/components/icons/GitHubIcon';
 import MobileMenu from '@/components/MobileMenu';
+import ProgramsDropdown from '@/components/ProgramsDropdown';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import HashScroll from '@/components/HashScroll';
 import { LiquidGlassNav } from '@/components/LiquidGlassNav';
@@ -277,9 +278,7 @@ export default function RootLayout({
                       <Link href="/about" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="About Gyro Governance">
                         About
                       </Link>
-                      <Link href="/exodus" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Exodus program">
-                        Exodus
-                      </Link>
+                      <ProgramsDropdown />
                       <Link href="/articles" className="nav-link text-foreground-secondary hover:text-classic-blue text-sm font-bold transition-all duration-200 focus:outline-none" aria-label="Articles">
                         Articles
                       </Link>
@@ -295,7 +294,7 @@ export default function RootLayout({
                       href="https://github.com/gyrogovernance"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="github-cta-button hidden sm:inline-flex items-center ml-auto mr-2 md:mr-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50"
+                      className="github-cta-button hidden sm:inline-flex items-center ml-auto mr-2 md:mr-0 bg-linear-45 from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50"
                       aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
                     >
                       <GitHubIcon className="w-4 h-4 mr-2" />
@@ -326,6 +325,8 @@ export default function RootLayout({
                       <Link href="/" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Home</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
                       <Link href="/about" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">About Gyro Governance</Link>
+                      <span className="text-foreground-tertiary flex items-center px-1">•</span>
+                      <Link href="/air-office" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">AIR Office</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>
                       <Link href="/exodus" className="text-foreground-secondary hover:text-classic-blue transition-colors duration-200 font-medium">Exodus</Link>
                       <span className="text-foreground-tertiary flex items-center px-1">•</span>

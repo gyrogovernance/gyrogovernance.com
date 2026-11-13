@@ -8,7 +8,7 @@
     "dev:stable": "next dev",
     "clean": "bun scripts/clean-build.mjs",
     "clean-processes": "bun scripts/clean-processes.mjs",
-    "prebuild": "bun scripts/clean-build.mjs && bun scripts/generate-articles-data.mjs",
+    "prebuild": "bun scripts/clean-build.mjs && bun scripts/generate-articles-data.mjs && bun scripts/sync-air-office-demo.mjs",
     "build": "next build --turbopack",
     "postbuild": "bun scripts/clean-build.mjs --post-build",
     "build:stable": "next build",
@@ -25,6 +25,7 @@
     "kill-nodes": "taskkill /f /im node.exe /t 2>nul || echo No Node.js processes to kill",
     "check-links": "bun scripts/link-checker.js",
     "sync:docs": "bun scripts/sync-docs-from-repos.mjs",
+    "sync:air-office-demo": "bun scripts/sync-air-office-demo.mjs",
     "test:links": "echo 'Make sure dev server is running with: bun run dev' && playwright test link-checker.spec.ts",
     "test:e2e": "echo 'Make sure dev server is running with: bun run dev' && playwright test"
   },

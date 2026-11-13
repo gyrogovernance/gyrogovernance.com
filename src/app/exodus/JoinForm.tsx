@@ -170,7 +170,7 @@ export default function JoinForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-60 disabled:pointer-events-none"
+        className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-linear-45 from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-60 disabled:pointer-events-none"
       >
         {submitting ? "Registering…" : "Register"}
       </button>

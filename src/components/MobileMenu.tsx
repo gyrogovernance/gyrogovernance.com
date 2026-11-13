@@ -100,6 +100,20 @@ export default function MobileMenu() {
                 <span>About</span>
               </div>
             </Link>
+            <div className="px-6 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-foreground-tertiary">
+              Programs
+            </div>
+            <Link
+              href="/air-office"
+              className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
+              aria-label="AIR Office program"
+              onClick={closeMenu}
+            >
+              <div className="flex items-center">
+                <span className="mr-3 text-xl">🖥️</span>
+                <span>AIR Office</span>
+              </div>
+            </Link>
             <Link
               href="/exodus"
               className="mobile-nav-link text-foreground hover:text-classic-blue hover:bg-classic-blue/10 px-6 py-3 text-base font-bold transition-all duration-200 focus:outline-none focus:bg-classic-blue/10 active:scale-[0.98]"
@@ -141,7 +155,7 @@ export default function MobileMenu() {
               href="https://github.com/gyrogovernance"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center mx-6 my-2 px-6 py-3 text-base font-bold bg-gradient-to-r from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-classic-blue/50 active:scale-[0.98]"
+              className="inline-flex items-center justify-center mx-6 my-2 px-6 py-3 text-base font-bold bg-linear-45 from-classic-blue via-classic-purple to-classic-pink hover:from-classic-purple hover:via-classic-pink hover:to-classic-blue text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-classic-blue/50 active:scale-[0.98]"
               aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
               onClick={closeMenu}
             >

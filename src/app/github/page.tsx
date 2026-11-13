@@ -343,7 +343,7 @@ export default function GitHub() {
       tags: ['AIR Office', 'Local-first', 'Agentic Research', 'Knowledge Management', 'AI Safety', 'Microsoft Copilot SDK'],
       gradient: 'from-cyan-500/10 via-teal-500/10 to-emerald-500/10',
       borderColor: 'border-cyan-500/20',
-      buttonGradient: 'from-cyan-700 to-teal-500 hover:from-cyan-600 hover:to-emerald-500'
+      buttonGradient: 'from-blue-700 to-cyan-500 hover:from-blue-600 hover:to-cyan-400'
     },
     {
       emoji: '🪙',
@@ -501,7 +501,7 @@ export default function GitHub() {
               href="https://github.com/gyrogovernance"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center px-6 py-3 bg-linear-45 from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               aria-label="Visit Gyro Governance GitHub organization (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />
@@ -509,7 +509,7 @@ export default function GitHub() {
             </a>
             <Link
               href="/"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center px-6 py-3 bg-linear-45 from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               aria-label="Return to Gyro Governance homepage"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -563,7 +563,7 @@ export default function GitHub() {
                     href={repo.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`inline-flex items-center px-6 py-3 bg-gradient-to-r ${repo.buttonGradient} text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105`}
+                    className={`inline-flex items-center px-6 py-3 bg-linear-45 ${repo.buttonGradient} text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105`}
                     aria-label={`View ${repo.name} on GitHub (opens in new tab)`}
                   >
                     <GitHubIcon className="w-5 h-5 mr-2" />
@@ -589,7 +589,7 @@ export default function GitHub() {
               href="https://github.com/gyrogovernance"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-linear-45 from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
               aria-label="Explore all repositories on GitHub (opens in new tab)"
             >
               <GitHubIcon className="w-5 h-5 mr-2" />

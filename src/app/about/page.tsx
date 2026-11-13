@@ -267,7 +267,7 @@ export default function About() {
                     href="https://korompilias.github.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink transition-all duration-300 shadow-lg"
+                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-linear-45 from-classic-blue to-classic-purple hover:from-classic-purple hover:to-classic-pink transition-all duration-300 shadow-lg"
                     aria-label="Visit Basil Korompilias personal website (opens in new tab)"
                   >
                     Website
@@ -276,7 +276,7 @@ export default function About() {
                     href="https://www.linkedin.com/in/korompilias"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:to-blue-800 transition-all duration-300"
+                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-white bg-linear-45 from-blue-600 to-blue-700 hover:to-blue-800 transition-all duration-300"
                     aria-label="Visit Basil Korompilias LinkedIn profile (opens in new tab)"
                   >
                     <LinkedInIcon className="w-4 h-4 mr-2" />
@@ -284,7 +284,7 @@ export default function About() {
                   </a>
                   <a
                     href="mailto:basilkorompilias@gmail.com?subject=Contact from Gyro Governance Website"
-                    className="inline-flex items-center justify-center h-9 w-9 rounded-full text-white bg-gradient-to-r from-foreground/70 to-foreground/50 hover:to-foreground/70 transition-colors"
+                    className="inline-flex items-center justify-center h-9 w-9 rounded-full text-white bg-linear-45 from-foreground/70 to-foreground/50 hover:to-foreground/70 transition-colors"
                     aria-label="Send email to Basil Korompilias"
                     title="Send email to basilkorompilias@gmail.com"
                   >

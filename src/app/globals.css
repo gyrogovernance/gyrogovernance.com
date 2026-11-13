@@ -411,10 +411,15 @@ button, a, input, textarea, select,
 .glass-card,
 .glass-card-inner {
   position: relative;
+}
+
+.glass-card,
+.glass-card-inner {
   overflow: hidden;
 }
 
 .glass-nav {
+  overflow: visible;
   background: var(--glass-nav-bg);
   border-radius: 2rem;
   border: 1px solid var(--glass-nav-border);
@@ -595,6 +600,31 @@ button, a, input, textarea, select,
 .dark .glass-card-orange {
   background-image: linear-gradient(135deg, rgba(249,115,22,0.21) 0%, rgba(239,68,68,0.15) 50%, rgba(245,158,11,0.21) 100%);
   border-color: rgba(249, 115, 22, 0.55);
+}
+
+.glass-card-slate {
+  --glass-card-bg: rgba(18, 18, 20, 0.58);
+  --glass-card-fallback: rgba(18, 18, 20, 0.72);
+  background-color: rgba(18, 18, 20, 0.58);
+  background-image: linear-gradient(135deg, rgba(24,24,27,0.62) 0%, rgba(12,12,14,0.54) 50%, rgba(28,28,32,0.6) 100%);
+  border-color: rgba(63, 63, 70, 0.55);
+  color: #f4f4f5;
+}
+
+.glass-card-slate .text-foreground {
+  color: #fafafa;
+}
+
+.glass-card-slate .text-foreground-secondary {
+  color: #d4d4d8;
+}
+
+.dark .glass-card-slate {
+  --glass-card-bg: rgba(10, 10, 12, 0.62);
+  --glass-card-fallback: rgba(10, 10, 12, 0.74);
+  background-color: rgba(10, 10, 12, 0.62);
+  background-image: linear-gradient(135deg, rgba(16,16,18,0.66) 0%, rgba(6,6,8,0.58) 50%, rgba(20,20,24,0.64) 100%);
+  border-color: rgba(82, 82, 91, 0.45);
 }
 
 .dark .glass-card-red {
