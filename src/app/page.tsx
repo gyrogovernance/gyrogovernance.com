@@ -9,7 +9,6 @@ import SpotifyIcon from "@/components/icons/SpotifyIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import WindowsIcon from "@/components/icons/WindowsIcon";
 import AppleIcon from "@/components/icons/AppleIcon";
-import AIROfficeWelcomeImage from "@/components/AIROfficeWelcomeImage";
 import AIROfficeWalkthroughVideo from "@/components/AIROfficeWalkthroughVideo";
 import ArticlesCarousel from "@/components/ArticlesCarousel";
 import { listFeaturedArticles } from "@/lib/articles";
@@ -490,8 +489,8 @@ export default function Home() {
               <p className="text-lg font-semibold text-foreground-secondary mb-6">
                 An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.
               </p>
-              <div className="w-full flex justify-center bg-gradient-to-b from-cyan-500/10 dark:from-cyan-900/20 to-transparent mb-6">
-                <AIROfficeWelcomeImage />
+              <div className="w-full max-w-3xl mx-auto mb-6">
+                <AIROfficeWalkthroughVideo />
               </div>
               <div className="max-w-3xl mx-auto space-y-3 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
                 <p>
@@ -500,9 +499,6 @@ export default function Home() {
                 <p>
                   Workspace records stay on your computer. Choose local models for on-machine inference or cloud providers for their models and tools.
                 </p>
-              </div>
-              <div className="mt-6 max-w-3xl mx-auto">
-                <AIROfficeWalkthroughVideo />
               </div>
             </div>
 
