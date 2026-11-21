@@ -193,7 +193,7 @@ export default function GitHub() {
     },
     {
       name: "AIR Office",
-      description: "An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety. Human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams. Local-first workplace with Specialized AI Actions, The Human Mark, Gyroscopic Reasoning, Fellowship, Crafts, Market, and Grounded Knowledge collections.",
+      description: "A free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness. Personal AI safety lab in an app with grounded knowledge management, guardrails tooling, and shareable AI agent harness automations. Local-first workplace with Specialized AI Actions, The Human Mark, Gyroscopic Reasoning, Fellowship, Crafts, Market, and Grounded Knowledge collections.",
       url: "https://github.com/gyrogovernance/air-office",
       applicationCategory: "DesktopApplication",
       keywords: ["AIR Office", "AI Safety Workspace", "Local-first", "Agentic Research", "Knowledge Management", "Microsoft Copilot SDK"]
@@ -337,8 +337,8 @@ export default function GitHub() {
     {
       emoji: '🖥️',
       name: 'AIR Office',
-      title: 'AI-native desktop workspace for agentic research and knowledge management',
-      description: 'Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer. Alpha 0.1.0 desktop builds for Windows and macOS.',
+      title: 'Free, open-source, local-first desktop app for agentic research and knowledge management',
+      description: 'AIR Office is a personal AI safety lab in an app, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow. Designed for scientists, engineers, evaluators, policy teams, and independent researchers working on transformative AI and its consequences, it keeps your work private, structured, and consistent across sessions. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer. Alpha 0.1.0 desktop builds for Windows and macOS.',
       url: 'https://github.com/gyrogovernance/air-office',
       tags: ['AIR Office', 'Local-first', 'Agentic Research', 'Knowledge Management', 'AI Safety', 'Microsoft Copilot SDK'],
       gradient: 'from-cyan-500/10 via-teal-500/10 to-emerald-500/10',
@@ -711,9 +711,9 @@ export default function GitHub() {
 
           <h3 className="text-xl font-semibold text-foreground mb-3">AIR Office</h3>
           <p className="mb-4">
-            <strong>AIR Office</strong> is an AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.
-            Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences.
-            It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.
+            <strong>AIR Office</strong> is a free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness.
+            It is your personal AI safety lab in an app, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow.
+            Designed for scientists, engineers, evaluators, policy teams, and independent researchers, it keeps your work private, structured, and consistent across sessions.
             Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints.
             Workspace records stay on your computer. Alpha 0.1.0 desktop builds are available for Windows and macOS.
           </p>

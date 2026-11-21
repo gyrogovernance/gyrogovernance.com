@@ -60,7 +60,7 @@ export default function Home() {
           {[
             { emoji: "✋", title: "The Human Mark", desc: "Epistemic Taxonomy for Jailbreaks, Deceptive Alignment, and Existential Risk", href: "#thm" },
             { emoji: "🍃", title: "Alignment Infrastructure Routes", desc: "AI Safety Capacity-Building Stack for Human-AI Coordination and Governance", href: "#air" },
-            { emoji: "🖥️", title: "AIR Office", desc: "AI-native desktop workspace for agentic research and knowledge management", href: "/air-office" },
+            { emoji: "🖥️", title: "AIR Office", desc: "Free, open-source, local-first desktop app for agentic research and knowledge management", href: "/air-office" },
             { emoji: "🕵️", title: "AI Inspector", desc: "Browser extension for evaluation and governance", href: "#inspector" },
             { emoji: "⚛️", title: "hQVM Kernel", desc: "Holonomic quantum structure on standard hardware for verifiable coordination and audit", href: "#hqvm" },
             { emoji: "🧠", title: "hQVM AE Autoencoder", desc: "Group-equivariant autoencoder for Mechanistic Interpretability", href: "#hqvm-ae" },
@@ -487,14 +487,14 @@ export default function Home() {
                 AIR Office
               </h2>
               <p className="text-lg font-semibold text-foreground-secondary mb-6">
-                An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.
+                A free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness.
               </p>
               <div className="w-full max-w-3xl mx-auto mb-6">
                 <AIROfficeWalkthroughVideo />
               </div>
               <div className="max-w-3xl mx-auto space-y-3 text-foreground-secondary text-base sm:text-lg text-left sm:text-justify">
                 <p>
-                  Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.
+                  AIR Office is your personal AI safety lab in an app, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow. Designed for scientists, engineers, evaluators, policy teams, and independent researchers working on transformative AI and its consequences, it keeps your work private, structured, and consistent across sessions instead of scattering across disconnected tools.
                 </p>
                 <p>
                   Workspace records stay on your computer. Choose local models for on-machine inference or cloud providers for their models and tools.

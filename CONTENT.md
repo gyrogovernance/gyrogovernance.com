@@ -87,7 +87,7 @@ We ensure AI safety is epistemically grounded in mathematical physics and delive
 - 🧠 **hQVM AE Autoencoder** - Group-equivariant autoencoder that opens the black box using the hQVM as a known universe
 - 🤖 **Gyroscopic ASI Runtime** - Multicellular quantum execution layer for AI inference and coordination
 - 🍃 **Alignment Infrastructure Routes (AIR)** - AI Safety Capacity-Building Stack for Human-AI Coordination and Governance
-- 🖥️ **AIR Office** - AI-native desktop workspace for agentic research and knowledge management
+- 🖥️ **AIR Office** - Free, open-source, local-first desktop app for agentic research and knowledge management
 - 🪙 **Moments Economy** - Attentiveness-based monetary system for Post-AGI Transformative AI Risks Mitigation
 - 🚨 **Exodus** - Planetary-scale operation for active existential risk mitigation through the Moments Economy
 - 🌐 **Global Governance Simulator** - Post-AGI/ASI governance sandbox Simulation and Results
@@ -183,11 +183,11 @@ Unified Scope Routes across society's core domains: **Economy** • **Employment
 
 ### 🖥️ AIR Office
 
-**An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.**
+**A free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness.**
 
 **Alpha 0.1.0**
 
-Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.
+AIR Office is your personal AI safety lab in an app, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow. Designed for scientists, engineers, evaluators, policy teams, and independent researchers working on transformative AI and its consequences, it keeps your work private, structured, and consistent across sessions instead of scattering across disconnected tools. Together, these capabilities democratize access while supporting human capacity building and open infrastructure across the AI safety and governance ecosystem.
 
 Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints.
 
@@ -203,7 +203,7 @@ Workspace records stay on your computer. Choose local models for on-machine infe
 - **Compare.** Run two models side by side on the same prompt.
 - **Chat.** Edit local files, search the web, and run AI safety diagnostics directly from the chat interface.
 - **Media.** Generate images and capture microphone or camera input when the work needs it.
-- **Arcade.** Release stress and recover from occupational overburn by playing arcade video games.
+- **Arcade.** Release stress and recover from occupational burnout by playing arcade video games.
 
 #### Products & Workflows
 
@@ -816,7 +816,7 @@ Informing AI Research through timeless Renaissance Insights on Linear Perspectiv
 
 #### AIR Office
 - **Name**: AIR Office
-- **Description**: An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety. Human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams. Local-first workplace with Specialized AI Actions, The Human Mark, Gyroscopic Reasoning, Fellowship, Crafts, Market, and Grounded Knowledge collections.
+- **Description**: A free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness. Personal AI safety lab in an app with grounded knowledge management, guardrails tooling, and shareable AI agent harness automations. Local-first workplace with Specialized AI Actions, The Human Mark, Gyroscopic Reasoning, Fellowship, Crafts, Market, and Grounded Knowledge collections.
 - **URL**: https://github.com/gyrogovernance/air-office
 - **Application Category**: DesktopApplication
 - **Keywords**: AIR Office, AI Safety Workspace, Local-first, Agentic Research, Knowledge Management, Microsoft Copilot SDK
@@ -992,8 +992,8 @@ The Runtime composes the hQVM kernel into a universal computational condenser wi
 ##### AIR Office
 - **Emoji**: 🖥️
 - **Name**: AIR Office
-- **Title**: AI-native desktop workspace for agentic research and knowledge management
-- **Description**: Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer.
+- **Title**: Free, open-source, local-first desktop app for agentic research and knowledge management
+- **Description**: AIR Office is a personal AI safety lab in an app, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow. Designed for scientists, engineers, evaluators, policy teams, and independent researchers working on transformative AI and its consequences, it keeps your work private, structured, and consistent across sessions. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer.
 - **URL**: https://github.com/gyrogovernance/air-office
 - **Tags**: AIR Office, Local-first, Agentic Research, Knowledge Management, AI Safety, Microsoft Copilot SDK
 
@@ -1106,7 +1106,7 @@ The **hQVM** (Holonomic Quantum Virtual Machine) is a compact finite-state kerne
 
 ##### AIR Office
 
-**AIR Office** is an AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety. Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer. Alpha 0.1.0 desktop builds are available for Windows and macOS.
+**AIR Office** is a free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness. It is your personal AI safety lab in an app, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow. Designed for scientists, engineers, evaluators, policy teams, and independent researchers working on transformative AI and its consequences, it keeps your work private, structured, and consistent across sessions. Agentic chat and tool use run on the Microsoft Copilot SDK harness, including bring-your-own-key and local model endpoints. Workspace records stay on your computer. Alpha 0.1.0 desktop builds are available for Windows and macOS.
 
 ##### Collective Superintelligence & Transformative AI
 

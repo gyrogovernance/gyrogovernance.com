@@ -238,7 +238,7 @@ export default function AIROfficePage() {
                 AIR Office
               </h1>
               <p className="text-lg font-semibold text-foreground-secondary max-w-3xl mx-auto mb-6">
-                An AI-native desktop workspace for agentic research and knowledge management, built to maximize counterfactual impact in existential risk preparedness and transformative AI safety.
+                A free, open-source, local-first desktop app for agentic research and knowledge management, built to strengthen capacity in transformative AI safety and existential risk preparedness.
               </p>
               <DownloadButtons />
             </div>
@@ -255,7 +255,7 @@ export default function AIROfficePage() {
               <h2 className="text-2xl font-bold text-foreground">About</h2>
             </div>
             <p>
-              <strong className="text-foreground">Alignment Infrastructure Routes (AIR) Office is human-capacity-building infrastructure for AI safety researchers, engineers, and governance teams working on transformative AI and its consequences. It keeps investigation, writing, review methods, and reusable tools in one durable and user-friendly workplace.</strong>
+              <strong className="text-foreground">AIR Office is your personal AI safety lab in an app</strong>, bringing grounded knowledge management, guardrails tooling, and shareable AI agent harness automations into a user-friendly workspace that adapts to your workflow. Designed for scientists, engineers, evaluators, policy teams, and independent researchers working on transformative AI and its consequences, it keeps your work private, structured, and consistent across sessions instead of scattering across disconnected tools. Together, these capabilities democratize access while supporting human capacity building and open infrastructure across the AI safety and governance ecosystem.
             </p>
             <p>
               AIR Office is developed by{" "}
@@ -305,7 +305,7 @@ export default function AIROfficePage() {
               <h2 className="text-2xl font-bold text-foreground">Theory of Change</h2>
             </div>
             <p className="text-foreground-secondary text-base sm:text-lg">
-              Mitigating risks from transformative AI requires rapid, high-rigor research and governance, yet safety teams currently rely on fragmented, cloud-dependent AI tools that erode human oversight, lack provenance, and expose sensitive work. AIR Office addresses this bottleneck by providing free, open-source, local-first desktop infrastructure tailored for AI safety and policy workflows. By integrating grounded knowledge collections, automated auditing tools, and structured memory, the workspace prevents AI-induced epistemic drift while keeping humans in final control. Furthermore, embedded Fellowship and Market protocols allow independent researchers to package their methods into reusable community tools, compounding ecosystem capacity and accelerating high-trust safety interventions that would not occur using general-purpose commercial tools.
+              Mitigating risks from transformative AI requires rapid, high-rigor research and governance, yet capable tooling remains concentrated inside frontier labs while safety practitioners outside them rely on fragmented, cloud-dependent tools that erode human oversight, lack provenance, and expose sensitive work. AIR Office addresses both bottlenecks by putting free, open-source, local-first desktop infrastructure tailored for AI safety and policy workflows within anyone's reach. By integrating grounded knowledge management, automated auditing tools, and structured memory, the workspace prevents AI-induced epistemic drift while keeping humans in final control. Furthermore, its embedded fellowship program and open market allow practitioners across the field to package their methods into reusable community tools, compounding ecosystem capacity and accelerating high-trust safety interventions that would not occur using general-purpose commercial tools.
             </p>
           </div>
         </LiquidGlassCard>
@@ -365,7 +365,7 @@ export default function AIROfficePage() {
               </li>
               <li className="flex items-start">
                 <span className="mr-2">🕹️</span>
-                <span><strong className="text-foreground">Arcade.</strong> Release stress and recover from occupational overburn by playing arcade video games.</span>
+                <span><strong className="text-foreground">Arcade.</strong> Release stress and recover from occupational burnout by playing arcade video games.</span>
               </li>
             </ul>
             <div className="grid sm:grid-cols-2 gap-4 mb-4">
@@ -533,7 +533,7 @@ export default function AIROfficePage() {
               <h3 className="text-xl font-bold text-foreground mb-3">Release Audit</h3>
               <div className="space-y-3 text-foreground-secondary text-base sm:text-lg">
                 <p>
-                  AIR Office is open source, and its code can be publically inspected. Before a release is accepted, we check the shipped software with open-source tools for secrets that should never ship, known problems in third-party libraries, license and dependency policy issues in native code, and risky patterns in our own source and in shipped Lab skills. A review that did not finish does not count as a clean result. To report a security issue, see{" "}
+                  AIR Office is open source, and its code can be publicly inspected. Before a release is accepted, we check the shipped software with open-source tools for secrets that should never ship, known problems in third-party libraries, license and dependency policy issues in native code, and risky patterns in our own source and in shipped Lab skills. A review that did not finish does not count as a clean result. To report a security issue, see{" "} 
                   <a
                     href="https://github.com/gyrogovernance/air-office/blob/main/SECURITY.md"
                     target="_blank"
